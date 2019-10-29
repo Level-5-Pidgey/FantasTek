@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Maven-Artifact: tyra314:toolprogression-core:1.12.2-1.6.7
+FMLCorePlugin: tyra314.toolprogression.core.ToolProgressionPlugin
+
