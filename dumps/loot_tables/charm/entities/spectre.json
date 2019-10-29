@@ -1,0 +1,9 @@
+{
+  "pools": [
+    {
+      "name": "charm:spectre",
+      "entries": [],
+      "rolls": 1.0
+    }
+  ]
+}
