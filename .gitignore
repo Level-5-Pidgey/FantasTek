@@ -12,6 +12,7 @@
 /[Ss]aves/
 /[Vv]alkyrielib/
 /.mixin.out/
+/[Mm]ods/[Mm]emory_repo/
 
 #Never ignore script files
 !/[Ss]cripts/**/*.zs
@@ -20,12 +21,12 @@
 hs_err_pid*
 
 #Other root directory files
-.curseclient
 BotaniaVars.dat
-crafftweaker.log
 minecraftinstance.json
 options.txt
 patchouli_data.json
 usercache.json
 usernamecache.json
 .ReAuth.cfg
+crafttweaker.log
+knownkeys.txt

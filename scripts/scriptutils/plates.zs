@@ -310,14 +310,25 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 	//4 Cost -- Plate Presser, Tinker's Casting
 	for ingot4 in oreDict.get(craftingMaterial).items
 	{
-    	mods.advancedrocketry.PlatePresser.addRecipe(ingot4 * 4, oreDict.get(craftingPlate).firstItem);
+    	mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem, ingot4 * 4);
 	}
 
 	if (molten.name != "water")
 	{
 		if (materialPrefix == "ingot" | materialPrefix == "dust")
 		{
-		mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 576, false, 80);
+			if (materialPrefix == "Silicon" | materialPrefix == "Carbon" ) //Silicon and Carbon are made in 1000mb Increments
+			{
+				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 4000, false, 80);
+			}
+			else if (materialPrefix == "Coal") //1 Coal = 100mb of Liquifacted Coal
+			{
+				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
+			}
+			else
+			{
+				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 576, false, 80);
+			}
 		}
 		else
 		{
@@ -330,7 +341,18 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 	{
 		if (materialPrefix == "ingot" | materialPrefix == "dust")
 		{
-			mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 432, <embers:stamp_plate>, null);
+			if (materialPrefix == "Silicon" | materialPrefix == "Carbon" )
+			{
+				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 3000, <embers:stamp_plate>, null);
+			}
+			else if (materialPrefix == "Coal")
+			{
+				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 300, <embers:stamp_plate>, null);
+			}
+			else
+			{
+				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 432, <embers:stamp_plate>, null);
+			}
 		}
 		else
 		{

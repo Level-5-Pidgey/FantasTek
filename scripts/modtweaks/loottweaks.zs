@@ -5,6 +5,8 @@ import loottweaker.vanilla.loot.Conditions;
 import loottweaker.vanilla.loot.Functions;
 import crafttweaker.item.IItemStack;
 
+print("~~~ Begin Loottweaker Init ~~~");
+
 //Add Nautilus Shell to Fishing Loot table
 val fishing = LootTables.getTable("minecraft:gameplay/fishing/treasure").getPool("main");
 fishing.addItemEntry(<conduit:nautilus_shell>, 1, 1, "nautilusshell");
@@ -85,3 +87,5 @@ for pool in IceAndFireGen {
 //Monsters
 val witherSkeleton = LootTables.getTable("minecraft:entities/wither_skeleton"); //Wither Skeleton (remove extra bones, remove drops of evil)
 witherSkeleton.removePool("xuLootDropOfEvil");
+
+print("### Loottweaker Init Complete ###");
