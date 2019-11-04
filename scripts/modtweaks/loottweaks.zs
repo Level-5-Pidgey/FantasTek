@@ -73,17 +73,23 @@ for pool in IceAndFireGen {
 }
 
 //Remove Botania Loots
-	//val BotaniaGen =
-	//	[
-	//		LootTables.getTable("botania:inject/simple_dungeon"),
-	//		LootTables.getTable("botania:inject/stronghold_corridor")
-	//	] as LootTable[];
-	//
-	//for pool in BotaniaGen {
-	//	pool.getPool("main").removeEntry("botania:manaResource");
-	//	pool.getPool("main").removeEntry("botania:lexicon");
-	//	pool.getPool("main").removeEntry("botania:manaBottle");
-	//}
+val BotaniaGen =
+	[
+		LootTables.getTable("botania:inject/simple_dungeon"),
+		LootTables.getTable("botania:inject/stronghold_corridor")
+	] as LootTable[];
+
+for pool in BotaniaGen {
+	pool.getPool("main").removeEntry("botania:manaResource");
+}
+
+LootTables.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:lexicon"); //Remove Lexica Botania
+LootTables.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:manaBottle"); //Remove Mana Bottles from appearing too
+
+//Add bottled Ender Air to End Loot Tables
+LootTables.getTable("minecraft:chests/end_city_treasure").getPool("main").addItemEntry(<botania:manaresource:15>, 13, 1, "enderair");
+
+
 //Monsters
 val witherSkeleton = LootTables.getTable("minecraft:entities/wither_skeleton"); //Wither Skeleton (remove extra bones, remove drops of evil)
 witherSkeleton.removePool("xuLootDropOfEvil");

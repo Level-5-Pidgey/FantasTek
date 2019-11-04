@@ -3,6 +3,7 @@
 /[Aa]stralsorcery/
 /[Bb]ackups/
 /[Dd]ownloads/
+/[Dd]umps/
 /[Ff]onts/
 /[Jj]ourneymap/
 /[Ll]library/
@@ -22,7 +23,6 @@ hs_err_pid*
 
 #Other root directory files
 BotaniaVars.dat
-minecraftinstance.json
 options.txt
 patchouli_data.json
 usercache.json
