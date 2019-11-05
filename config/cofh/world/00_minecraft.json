@@ -206,34 +206,291 @@
 			}
 		},
 
-		"silverfish": {
+		"iron_densevein": {
 			"distribution": "uniform",
 			"generator": {
-				"block": {
-					"name": "monster_egg",
-					"properties": {
-						"variant": "stone"
-					}
-				},
+				"type": "cluster",
+				"block": [
+						{
+							"name": "contenttweaker:sub_block_holder_9",
+							"metadata": 3,
+							"weight": 33
+						},
+						{
+							"name": "contenttweaker:sub_block_holder_4",
+							"weight": 66
+						}
+				],
 				"material": "minecraft:stone",
-				"cluster-size": 9
+				"cluster-size": 50,
 			},
-			"cluster-count": 7,
-			"min-height": 0,
-			"max-height": 64,
-			"retrogen": false,
+			"cluster-count": 1,
+			"chunk-chance": 5,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
 					{
-						"type": "id",
-						"entry": [
-							"extreme_hills",
-							"smaller_extreme_hills",
-							"extreme_hills_with_trees",
-							"mutated_extreme_hills",
-							"mutated_extreme_hills_with_trees"
-						]
+						"type": "dictionary",
+						"entry": "PLAINS"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"gold_densevein": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": [
+						{
+							"name": "contenttweaker:sub_block_holder_10",
+							"weight": 33
+						},
+						{
+							"name": "contenttweaker:sub_block_holder_9",
+							"metadata": 2,
+							"weight": 66
+						}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 45,
+			},
+			"cluster-count": 1,
+			"chunk-chance": 6,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SANDY"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"lapis_densevein": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": [
+						{
+							"name": "contenttweaker:sub_block_holder_10",
+							"metadata": 8,
+							"weight": 33
+						},
+						{
+							"name": "contenttweaker:sub_block_holder_5",
+							"metadata": 6,
+							"weight": 66
+						}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 45,
+			},
+			"cluster-count": 1,
+			"chunk-chance": 7,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SANDY"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"diamond_densevein": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": [
+						{
+							"name": "contenttweaker:sub_block_holder_1",
+							"metadata": 2,
+							"weight": 33
+						},
+						{
+							"name": "contenttweaker:sub_block_holder_10",
+							"metadata": 1,
+							"weight": 66
+						}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30,
+			},
+			"cluster-count": 1,
+			"chunk-chance": 8,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SANDY"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"emerald_densevein": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": [
+						{
+							"name": "contenttweaker:sub_block_holder_9",
+							"metadata": 11,
+							"weight": 33
+						},
+						{
+							"name": "contenttweaker:sub_block_holder_6",
+							"metadata": 1,
+							"weight": 66
+						}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30,
+			},
+			"cluster-count": 1,
+			"chunk-chance": 8,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "MOUNTAIN"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"redstone_densevein": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": [
+						{
+							"name": "contenttweaker:sub_block_holder_1",
+							"metadata": 9,
+							"weight": 20
+						},
+						{
+							"name": "thermalfoundation:ore_fluid",
+							"metadata": 2,
+							"weight": 33
+						},
+						{
+							"name": "contenttweaker:sub_block_holder_1",
+							"metadata": 15,
+							"weight": 66
+						}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 45,
+			},
+			"cluster-count": 1,
+			"chunk-chance": 6,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SWAMP"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"coal_densevein": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": [
+						{
+							"name": "contenttweaker:sub_block_holder_7",
+							"metadata": 14,
+							"weight": 33
+						},
+						{
+							"name": "contenttweaker:sub_block_holder_5",
+							"metadata": 2,
+							"weight": 66
+						}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40,
+			},
+			"cluster-count": 1,
+			"chunk-chance": 4,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "WET"
 					}
 				]
 			},

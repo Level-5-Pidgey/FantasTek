@@ -1,0 +1,259 @@
+{
+	"priority": 1000000000000,
+	"populate": {
+		"dirt": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": "dirt",
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"gravel": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "gravel",
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 8,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"diorite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "diorite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"granite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "granite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"andesite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "stone",
+					"properties": {
+						"variant": "andesite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"cave_fancy": {
+
+			"distribution": "cave",
+			"generator": {
+				"block": [{
+						"name": "minecraft:cobblestone",
+						"weight": 15
+					},
+					{
+						"name": "minecraft:mossy_cobblestone",
+						"weight": 5
+					},
+					{
+						"name": "minecraft:grass",
+						"weight": 10
+					},
+					{
+						"name": "minecraft:dirt",
+						"weight": 10
+					},
+					{
+						"name": "minecraft:mossy_cobblestone",
+						"weight": 5
+					},
+					{
+						"name": "minecraft:gravel",
+						"weight": 10
+					},
+					{
+						"name": "minecraft:stone",
+						"weight": 75
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 35
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cold_rock": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "quark:biome_cobblestone",
+					"metadata": 1
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 18
+			},
+			"cluster-count": 5,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "COLD"
+				}]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"hot_rock": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "quark:biome_cobblestone",
+					"metadata": 0
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 18
+			},
+			"cluster-count": 5,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "HOT"
+				}]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"silverfish": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "monster_egg",
+					"properties": {
+						"variant": "stone"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 15,
+			"min-height": 0,
+			"max-height": 64,
+			"retrogen": false,
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}
