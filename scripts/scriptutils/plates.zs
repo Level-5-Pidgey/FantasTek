@@ -21,6 +21,7 @@ val emberPlates =
 [
 	<embers:plate_copper>,
 	<embers:plate_lead>,
+	<contenttweaker:material_part:855>,
 	<embers:plate_silver>,
 	<embers:plate_dawnstone>,
 	<embers:plate_iron>,
@@ -35,6 +36,9 @@ val emberPlates =
 	<contenttweaker:material_part:593>,
 	<contenttweaker:material_part:574>,
 	<contenttweaker:material_part:613>,
+	<contenttweaker:material_part:835>,
+	<jaopca:item_platetungsten>,
+	<contenttweaker:material_part:845>,
 	<jaopca:item_plateardite>,
 	<jaopca:item_plateastralstarmetal>,
 	<jaopca:item_platecobalt>,
@@ -42,15 +46,35 @@ val emberPlates =
 	<libvulpes:productplate:10>,
 	<thermalfoundation:material:328>,
 	<jaopca:item_plateosmium>,
-	<techreborn:plates:27>,
-	<libvulpes:productplate:7>,
-	<techreborn:plates:32>
+	<libvulpes:productplate:7>
 ] as crafttweaker.item.IItemStack[];
 
 for emberPlate in emberPlates
 {
 	recipes.remove(emberPlate);
 	mods.embers.Stamper.remove(emberPlate);
+}
+
+//Magneticraft plates
+val magneticraftPlates =
+[
+	<minecraft:iron_block>,
+	<thermalfoundation:storage>,
+	<minecraft:gold_block>,
+	<magneticraft:storage_blocks:3>,
+	<thermalfoundation:storage:3>,
+	<magneticraft:ingots:6>,
+	<tconstruct:ingots:1>,
+	<tconstruct:ingots>,
+	<astralsorcery:itemcraftingcomponent:1>,
+	<magneticraft:ingots:11>,
+	<draconicevolution:draconium_ingot>,
+	<magneticraft:ingots:5>
+] as crafttweaker.item.IItemStack[];
+
+for magneticraftPlate in magneticraftPlates
+{
+	mods.magneticraft.CrushingTable.removeRecipe(magneticraftPlate);
 }
 
 //Tinkers Construct Plate Casting
@@ -62,12 +86,10 @@ val TConplates =
 	<thermalfoundation:material:326>,
 	<thermalfoundation:material:357>,
 	<thermalfoundation:material:358>,
-	<techreborn:plates:31>,
 	<jaopca:item_plateosmium>,
 	<thermalfoundation:material:327>,
 	<thermalfoundation:material:354>,
 	<thermalfoundation:material:324>,
-	<techreborn:plates:34>,
 	<jaopca:item_platecobalt>,
 	<jaopca:item_plateardite>,
 	<thermalfoundation:material:320>,
@@ -77,22 +99,27 @@ val TConplates =
 	<thermalfoundation:material:353>,
 	<thermalfoundation:material:352>,
 	<thermalfoundation:material:33>,
-	<techreborn:plates:18>,
 	<thermalfoundation:material:321>,
 	<thermalfoundation:material:325>,
 	<thermalfoundation:material:32>,
 	<contenttweaker:material_part:5>,
 	<contenttweaker:material_part:55>,
-	<techreborn:plates:32>,
 	<contenttweaker:material_part:25>,
 	<contenttweaker:material_part:35>,
 	<thermalfoundation:material:328>,
 	<jaopca:item_platedraconium>,
 	<jaopca:item_plateastralstarmetal>,
+	<embers:plate_dawnstone>,
 	<contenttweaker:material_part:603>,
 	<contenttweaker:material_part:593>,
+	<contenttweaker:material_part:855>,
 	<contenttweaker:material_part:574>,
-	<contenttweaker:material_part:613>
+	<contenttweaker:material_part:613>,
+	<contenttweaker:material_part:845>,
+	<contenttweaker:material_part:835>,
+	<libvulpes:productplate:7>,
+	<thaumcraft:plate>,
+	<jaopca:item_platetungsten>
 ] as crafttweaker.item.IItemStack[];
 
 for TConplate in TConplates
@@ -100,48 +127,10 @@ for TConplate in TConplates
 	mods.tconstruct.Casting.removeTableRecipe(TConplate);
 }
 
-//Tech Reborn Compactor
-val TRCompactorPlates =
-[
-	<jaopca:item_plateaquamarine>,
-	<jaopca:item_platedilithium>,
-	<jaopca:item_plateamber>,
-	<jaopca:item_platemalachite>,
-	<jaopca:item_platetanzanite>,
-	<jaopca:item_platetopaz>,
-	<jaopca:item_plateamethyst>,
-	<jaopca:item_plateapatite>,
-	<techreborn:plates:14>,
-	<techreborn:plates:13>,
-	<techreborn:plates:12>,
-	<techreborn:plates:8>,
-	<jaopca:item_platequartz>,
-	<techreborn:plates:6>,
-	<techreborn:plates:4>,
-	<techreborn:plates:5>,
-	<jaopca:item_platelapis>,
-	<techreborn:plates:15>,
-	<techreborn:plates:16>,
-	<techreborn:plates:9>,
-	<techreborn:plates:10>,
-	<techreborn:plates:3>,
-	<techreborn:plates:2>,
-	<techreborn:plates:36>
-] as crafttweaker.item.IItemStack[];
-
-for CompactorPlate in TRCompactorPlates
-{
-	mods.techreborn.compressor.removeRecipe(CompactorPlate);
-}
-
 //TE Compactor
 val CompactorPlates =
 [
-	<techreborn:ingot:8>,
 	<iceandfire:sapphire_gem>,
-	<techreborn:ingot:14>,
-	<techreborn:ingot:18>,
-	<techreborn:ingot:6>,
 	<minecraft:diamond>,
 	<embers:ingot_bronze>,
 	<rftools:dimensional_shard>,
@@ -152,23 +141,15 @@ val CompactorPlates =
 	<biomesoplenty:gem:2>,
 	<tconstruct:ingots>,
 	<libvulpes:productingot:9>,
-	<extrautils2:ingredients>,
-	<techreborn:gem:3>,
-	<techreborn:ingot:15>,
 	<draconicevolution:draconium_ingot>,
-	<techreborn:ingot:17>,
 	<appliedenergistics2:material:1>,
 	<thermalfoundation:material:167>,
 	<libvulpes:productingot:5>,
 	<biomesoplenty:gem:4>,
 	<contenttweaker:material_part:577>,
-	<techreborn:ingot:22>,
 	<thermalfoundation:material:164>,
 	<biomesoplenty:gem:5>,
-	<techreborn:ingot:19>,
-	<techreborn:gem>,
 	<thermalfoundation:material:165>,
-	<techreborn:ingot:1>,
 	<minecraft:iron_ingot>,
 	<libvulpes:productingot:10>,
 	<biomesoplenty:gem:7>,
@@ -190,21 +171,26 @@ val CompactorPlates =
 	<biomesoplenty:gem:3>,
 	<minecraft:coal>,
 	<minecraft:quartz>,
-	<techreborn:ingot:20>,
 	<appliedenergistics2:material>,
 	<thaumcraft:ingot>,
 	<tconstruct:ingots:1>,
 	<forestry:ingot_copper>,
+	<contenttweaker:material_part:858>,
 	<embers:ingot_nickel>,
 	<thermalfoundation:material:134>,
 	<contenttweaker:material_part:616>,
 	<redstonearsenal:material:32>,
-	<techreborn:ingot:3>,
-	<techreborn:gem:4>,
 	<advancedrocketry:productingot>,
 	<contenttweaker:material_part:606>,
 	<minecraft:gold_ingot>,
-	<advancedrocketry:misc:1>
+	<contenttweaker:material_part:838>,
+	<thaumcraft:ingot:2>,
+	<biomesoplenty:gem:1>,
+	<magneticraft:ingots:5>,
+	<thermalfoundation:material:162>,
+	<embers:ingot_lead>,
+	<libvulpes:productingot:7>,
+	<magneticraft:ingots:14>
 ] as crafttweaker.item.IItemStack[];
 
 for CompactorPlate in CompactorPlates
@@ -215,41 +201,16 @@ for CompactorPlate in CompactorPlates
 //Advanced Rocketry Plates
 val RocketryPlates =
 [
-	<techreborn:plates:23>,
-	<techreborn:plates:20>,
-	<techreborn:plates:30>,
 	<embers:plate_dawnstone>,
-	<techreborn:plates:34>,
-	<techreborn:plates:22>,
-	<techreborn:plates:2>,
-	<techreborn:plates:29>,
 	<thaumcraft:plate:2>,
 	<thermalfoundation:material:328>,
 	<advancedrocketry:productplate>,
 	<redstonearsenal:material:128>,
-	<techreborn:plates:11>,
-	<techreborn:plates:25>,
-	<techreborn:plates:32>,
-	<techreborn:plates:27>,
-	<techreborn:plates>,
-	<techreborn:plates:18>,
-	<techreborn:plates:33>,
-	<techreborn:plates:24>,
-	<techreborn:plates:28>,
 	<embers:plate_aluminum>,
-	<techreborn:plates:1>,
-	<techreborn:plates:19>,
 	<thermalfoundation:material:359>,
 	<thaumcraft:plate:3>,
-	<techreborn:plates:21>,
-	<techreborn:plates:38>,
-	<techreborn:plates:35>,
 	<thermalfoundation:material:357>,
-	<techreborn:plates:31>,
-	<techreborn:plates:36>,
-	<techreborn:plates:26>,
 	<thermalfoundation:material:358>,
-	<techreborn:plates:17>,
 	<jaopca:item_plateardite>,
 	<jaopca:item_platedraconium>,
 	<contenttweaker:material_part:25>,
@@ -264,7 +225,21 @@ val RocketryPlates =
 	<contenttweaker:material_part:603>,
 	<contenttweaker:material_part:593>,
 	<contenttweaker:material_part:574>,
-	<contenttweaker:material_part:613>
+	<contenttweaker:material_part:613>,
+	<thermalfoundation:material:322>,
+	<thermalfoundation:material:355>,
+	<thermalfoundation:material:320>,
+	<thermalfoundation:material:325>,
+	<thermalfoundation:material:321>,
+	<contenttweaker:material_part:845>,
+	<contenttweaker:material_part:848>,
+	<thermalfoundation:material:353>,
+	<thermalfoundation:material:352>,
+	<thermalfoundation:material:323>,
+	<contenttweaker:material_part:855>,
+	<contenttweaker:material_part:858>,
+	<thermalfoundation:material:327>,
+	<thermalfoundation:material:324>
 ] as crafttweaker.item.IItemStack[];
 
 for RocketryPlate in RocketryPlates
@@ -289,7 +264,9 @@ val SimpleRocketryPlates =
 	<jaopca:item_platedraconium>,
 	<jaopca:item_platecobalt>,
 	<jaopca:item_plateastralstarmetal>,
-	<jaopca:item_plateardite>
+	<jaopca:item_plateardite>,
+	<jaopca:item_platetungsten>,
+	<contenttweaker:material_part:593>
 ] as crafttweaker.item.IItemStack[];
 
 for SimpleRocketryPlate in SimpleRocketryPlates
@@ -305,14 +282,21 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 	val craftingPlate = "plate" ~ materialOreDict;
 
 	//5 Cost -- Manual
-	recipes.addShapeless(oreDict.get(craftingPlate).firstItem, [<embers:tinker_hammer>, oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial)]);
-
-	//4 Cost -- Plate Presser, Tinker's Casting
-	for ingot4 in oreDict.get(craftingMaterial).items
+	//Check if an OreDict version exists
+	if (!oreDict.get(craftingMaterial).empty)
 	{
-    	mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem, ingot4 * 4);
+		recipes.addShapeless("plateCrafting" ~ materialOreDict, oreDict.get(craftingPlate).firstItem, [<embers:tinker_hammer>, oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial)]);
 	}
 
+	//4.5 Cost - Plate Presser
+	for plateMaterial in oreDict.get(craftingMaterial).items
+	{
+		val blockMat = "block" ~ materialOreDict;
+		print(blockMat);
+    	mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem * 2, oreDict.get(blockMat).firstItem);
+	}
+
+	//4 Cost -- Tinker's Casting
 	if (molten.name != "water")
 	{
 		if (materialPrefix == "ingot" | materialPrefix == "dust")
@@ -332,7 +316,7 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 		}
 		else
 		{
-		mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
+			mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
 		}
 	}
 
@@ -368,7 +352,7 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 	//2 Cost
 	for ingot in oreDict.get(craftingMaterial).items
 	{
-    	mods.techreborn.rollingMachine.addShapeless(oreDict.get(craftingPlate).firstItem, [ingot, ingot]);
+    	//Implement 2-cost smashing
 	}
 
 	//1 Cost
@@ -383,7 +367,6 @@ val PlateMaterials =
 {
 	"Iron" : <liquid:iron>,
 	"Gold" : <liquid:gold>,
-	"Carbon" : <liquid:fluidcarbonfiber>,
 	"Wood" : <liquid:water>,
 	"Redstone" : <liquid:redstone>,
 	"Diamond" : <liquid:water>,
@@ -395,12 +378,9 @@ val PlateMaterials =
 	"Ruby" : <liquid:water>,
 	"Sapphire" : <liquid:water>,
 	"Peridot" : <liquid:water>,
-	"RedGarnet" : <liquid:water>,
-	"YellowGarnet" : <liquid:water>,
 	"Aluminum" : <liquid:aluminum>,
 	"Brass" : <liquid:brass>,
 	"Bronze" : <liquid:bronze>,
-	"Chrome" : <liquid:water>,
 	"Copper" : <liquid:copper>,
 	"Electrum" : <liquid:electrum>,
 	"Invar" : <liquid:invar>,
@@ -415,18 +395,12 @@ val PlateMaterials =
 	"Tungsten" : <liquid:tungsten>,
 	"Tungstensteel" : <liquid:water>,
 	"Zinc" : <liquid:zinc>,
-	"RefinedIron" : <liquid:water>,
-	"AdvancedAlloy" : <liquid:water>,
-	"Magnalium" : <liquid:water>,
-	"IridiumAlloy" : <liquid:water>,
 	"Mithril" : <liquid:mithril>,
 	"Constantan" : <liquid:constantan>,
 	"Signalum" : <liquid:signalum>,
 	"Lumium" : <liquid:lumium>,
 	"Enderium" : <liquid:enderium>,
 	"ElectrumFlux" : <liquid:water>,
-	"TitaniumAluminide" : <liquid:water>,
-	"TitaniumIridium" : <liquid:water>,
 	"Thaumium" : <liquid:thaumium>,
 	"Void" : <liquid:voidmetal>,
 	"Yellorium" : <liquid:yellorium>,
@@ -434,11 +408,12 @@ val PlateMaterials =
 	"Necrodermis" : <liquid:necrodermis>,
 	"Thorium" : <liquid:thorium>,
 	"Dawnstone" : <liquid:dawnstone>,
-	"Chromium" : <liquid:water>,
+	"Chromium" : <liquid:chromium>,
 	"Ardite" : <liquid:ardite>,
 	"AstralStarmetal" : <liquid:astral_starmetal>,
 	"Cobalt" : <liquid:cobalt>,
 	"Draconium" : <liquid:draconium>,
+	"Uranium" : <liquid:uranium>,
 	"Osmium" : <liquid:osmium>,
 	"Amber" : <liquid:water>,
 	"Amethyst" : <liquid:water>,

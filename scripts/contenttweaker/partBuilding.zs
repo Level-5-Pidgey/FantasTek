@@ -75,7 +75,10 @@ var new_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.M
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Vibranium").setColor(mods.contenttweaker.Color.fromHex("4f2de3")).build() : <ore:ingotVibranium>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Yellorium").setColor(mods.contenttweaker.Color.fromHex("cff73e")).build() : <ore:ingotYellorium>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Thorium").setColor(mods.contenttweaker.Color.fromHex("70270c")).build() : <ore:ingotThorium>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Necrodermis").setColor(mods.contenttweaker.Color.fromHex("15bf20")).build() : <ore:ingotNecrodermis>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Necrodermis").setColor(mods.contenttweaker.Color.fromHex("15bf20")).build() : <ore:ingotNecrodermis>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Chrome").setColor(mods.contenttweaker.Color.fromHex("e2e1db")).build() : <ore:ingotChrome>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Zinc").setColor(mods.contenttweaker.Color.fromHex("bac4c8")).build() : <ore:ingotZinc>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Uranium").setColor(mods.contenttweaker.Color.fromHex("a5a500")).build() : <ore:ingotUranium>
 	//Material : OreDictEntry
 };
 
@@ -94,16 +97,16 @@ for material, materialIngot in new_oreMaterials {
 //Needs:
 //Poor Ore, Dense Ore, Dense Plating, Sheet Metal
 var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Copper").setColor(mods.contenttweaker.Color.fromHex("eb9336")).build() : <ore:ingotCopper>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Tin").setColor(mods.contenttweaker.Color.fromHex("d3f1f5")).build() : <ore:ingotTin>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Silver").setColor(mods.contenttweaker.Color.fromHex("e4f4f5")).build() : <ore:ingotSilver>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Lead").setColor(mods.contenttweaker.Color.fromHex("4277bd")).build() : <ore:ingotLead>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Copper").setColor(mods.contenttweaker.Color.fromHex("b87333")).build() : <ore:ingotCopper>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Tin").setColor(mods.contenttweaker.Color.fromHex("dd3d4d5")).build() : <ore:ingotTin>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Silver").setColor(mods.contenttweaker.Color.fromHex("d5d5d7")).build() : <ore:ingotSilver>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Lead").setColor(mods.contenttweaker.Color.fromHex("425055")).build() : <ore:ingotLead>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("f09089")).build() : <ore:ingotAluminum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Nickel").setColor(mods.contenttweaker.Color.fromHex("f0dea5")).build() : <ore:ingotNickel>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Platinum").setColor(mods.contenttweaker.Color.fromHex("66edff")).build() : <ore:ingotPlatinum>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("ffedf5")).build() : <ore:ingotIridium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("393339")).build() : <ore:ingotIridium>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Mithril").setColor(mods.contenttweaker.Color.fromHex("7ffacd")).build() : <ore:ingotMithril>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminium").setColor(mods.contenttweaker.Color.fromHex("f09089")).build() : <ore:ingotAluminum>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminium").setColor(mods.contenttweaker.Color.fromHex("848789")).build() : <ore:ingotAluminum>
 	//Material : OreDictEntry
 };
 
@@ -143,13 +146,13 @@ for material, materialIngot in modded_Materials {
 //Needs:
 //Poor Ore, Deep Ore, Dense Ore, Dense Plating, Sheet Metal
 var vanilla_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iron").setColor(mods.contenttweaker.Color.fromHex("d6c9c5")).build() : <ore:ingotIron>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iron").setColor(mods.contenttweaker.Color.fromHex("ddbca7")).build() : <ore:ingotIron>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Gold").setColor(mods.contenttweaker.Color.fromHex("f5f231")).build() : <ore:ingotGold>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Diamond").setColor(mods.contenttweaker.Color.fromHex("45f3ff")).build() : <ore:gemDiamond>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(mods.contenttweaker.Color.fromHex("f22816")).build() : <ore:dustRedstone>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Lapis Lazuli").setColor(mods.contenttweaker.Color.fromHex("164df2")).build() : <ore:gemLapis>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Emerald").setColor(mods.contenttweaker.Color.fromHex("19d150")).build() : <ore:gemEmerald>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Coal").setColor(mods.contenttweaker.Color.fromHex("170401")).build() : <ore:coal>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Coal").setColor(mods.contenttweaker.Color.fromHex("060607")).build() : <ore:coal>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Quartz").setColor(mods.contenttweaker.Color.fromHex("ffedeb")).build() : <ore:gemQuartz>
 	//Material : OreDictEntry
 };

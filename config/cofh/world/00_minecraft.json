@@ -5,7 +5,16 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": "coal_ore",
-				"material": "minecraft:stone",
+				"material": [
+					"minecraft:stone",
+					"minecraft:dirt"
+					"quark:elder_prismarine",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone",
+					"minecraft:cobblestone"
+				],
 				"cluster-size": 17
 			},
 			"cluster-count": 20,
@@ -26,7 +35,16 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": "iron_ore",
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 9
 			},
 			"cluster-count": 20,
@@ -47,7 +65,16 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": "gold_ore",
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 9
 			},
 			"cluster-count": 2,
@@ -68,7 +95,16 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": "redstone_ore",
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 8
 			},
 			"cluster-count": 8,
@@ -89,7 +125,16 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": "diamond_ore",
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 8
 			},
 			"cluster-count": 1,
@@ -110,7 +155,16 @@
 			"distribution": "gaussian",
 			"generator": {
 				"block": "lapis_ore",
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 7
 			},
 			"cluster-count": 1,
@@ -134,7 +188,16 @@
 				"block": {
 					"name": "gold_ore"
 				},
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 9
 			},
 			"cluster-count": 20,
@@ -172,7 +235,16 @@
 				"block": {
 					"name": "emerald_ore"
 				},
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 1
 			},
 			"cluster-count": {
@@ -221,7 +293,16 @@
 							"weight": 66
 						}
 				],
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 50,
 			},
 			"cluster-count": 1,
@@ -262,7 +343,16 @@
 							"weight": 66
 						}
 				],
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 45,
 			},
 			"cluster-count": 1,
@@ -304,7 +394,16 @@
 							"weight": 66
 						}
 				],
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 45,
 			},
 			"cluster-count": 1,
@@ -346,7 +445,16 @@
 							"weight": 66
 						}
 				],
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 30,
 			},
 			"cluster-count": 1,
@@ -388,7 +496,16 @@
 							"weight": 66
 						}
 				],
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 30,
 			},
 			"cluster-count": 1,
@@ -435,7 +552,16 @@
 							"weight": 66
 						}
 				],
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 45,
 			},
 			"cluster-count": 1,
@@ -477,7 +603,16 @@
 							"weight": 66
 						}
 				],
-				"material": "minecraft:stone",
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt"
+				  "quark:elder_prismarine",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
 				"cluster-size": 40,
 			},
 			"cluster-count": 1,

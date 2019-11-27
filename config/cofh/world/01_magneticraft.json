@@ -1,0 +1,50 @@
+{
+	"priority": 1000000000000,
+	"populate": {
+		"oil_deposit": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": {
+					"name": "magneticraft:oil_source"
+				},
+				"material": [
+					"minecraft:stone",
+					"minecraft:dirt"
+					"quark:elder_prismarine",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone",
+					"minecraft:cobblestone"
+				],
+				"cluster-size": 130,
+			},
+			"cluster-count": 1,
+			"chunk-chance": 15,
+			"min-height": 10,
+			"max-height": 50,
+			"retrogen": "false",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "HOT"
+					},
+					{
+						"type": "dictionary",
+						"entry": "OCEAN"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

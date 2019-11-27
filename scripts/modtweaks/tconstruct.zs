@@ -2,7 +2,7 @@
 print("~~~ Begin TConstruct Init ~~~");
 
 //Remove all casting-based sharpening kits
-recipes.removeByRecipeName("tconstruct:repair"); //Not sure if this works but let's try lol
+recipes.removeByRecipeName("tconstruct:repair");
 
 //Remove tool forge crafting recipes
 val forgeCrafts =
@@ -50,7 +50,20 @@ val forgeCrafts =
 	"tconstruct:tools/forge/blockalubrass",
 	"tconstruct:tools/forge/blocksignalum",
 	"tconstruct:tools/forge/blockmanasteel",
-	"tconstruct:tools/forge/blocklead"
+	"tconstruct:tools/forge/blocklead",
+	"tconstruct:tools/forge/blockenergeticalloy",
+	"tconstruct:tools/forge/blockredstonealloy",
+	"tconstruct:tools/forge/blockconstructionalloy",
+	"tconstruct:tools/forge/blockender",
+	"tconstruct:tools/forge/blockglowstone",
+	"tconstruct:tools/forge/blockvibrantalloy",
+	"tconstruct:tools/forge/blocksoularium",
+	"tconstruct:tools/forge/blockconductiveiron",
+	"tconstruct:tools/forge/blockdarksteel",
+	"tconstruct:tools/forge/blockpulsatingiron",
+	"tconstruct:tools/forge/blockelectricalsteel",
+	"tconstruct:tools/forge/blockendsteel",
+	"tconstruct:tools/forge/blockredstone"
 ] as string[];
 
 for item in forgeCrafts
