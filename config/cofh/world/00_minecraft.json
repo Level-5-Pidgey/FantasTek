@@ -7,13 +7,13 @@
 				"block": "coal_ore",
 				"material": [
 					"minecraft:stone",
-					"minecraft:dirt"
 					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
 					"quark:limestone",
 					"quark:slate",
 					"quark:jasper",
-					"minecraft:sandstone",
-					"minecraft:cobblestone"
+					"minecraft:sandstone"
 				],
 				"cluster-size": 17
 			},
@@ -37,8 +37,9 @@
 				"block": "iron_ore",
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -69,6 +70,8 @@
 				  "minecraft:stone",
 				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -99,6 +102,8 @@
 				  "minecraft:stone",
 				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -129,6 +134,8 @@
 				  "minecraft:stone",
 				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -159,6 +166,8 @@
 				  "minecraft:stone",
 				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -190,8 +199,9 @@
 				},
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -239,6 +249,8 @@
 				  "minecraft:stone",
 				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -295,8 +307,9 @@
 				],
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -345,8 +358,9 @@
 				],
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -396,8 +410,9 @@
 				],
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -447,8 +462,9 @@
 				],
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -498,8 +514,9 @@
 				],
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -554,8 +571,9 @@
 				],
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",
@@ -605,8 +623,9 @@
 				],
 				"material": [
 				  "minecraft:stone",
-				  "minecraft:dirt"
 				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
 				  "quark:limestone",
 				  "quark:slate",
 				  "quark:jasper",

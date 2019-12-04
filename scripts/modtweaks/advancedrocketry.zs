@@ -35,4 +35,21 @@ for item in platePress
 	mods.advancedrocketry.PlatePresser.removeRecipe(item);
 }
 
+//Hide AR plates (since they aren't craftable)
+val ARPlates =
+[
+	<libvulpes:productplate:1>,
+	<libvulpes:productplate:2>,
+	<libvulpes:productplate:5>,
+	<libvulpes:productplate:6>,
+	<libvulpes:productplate:4>,
+	<libvulpes:productplate:9>,
+	<libvulpes:productplate:10>
+] as crafttweaker.item.IItemStack[];
+
+for ARPlate in ARPlates
+{
+	mods.jei.JEI.hide(ARPlate);
+}
+
 print("### Advanced Rocketry Init Complete ###");

@@ -16,7 +16,7 @@ var DensePlating = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("
 var metalPlating = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("sheetmetal_block").setPartType(mods.contenttweaker.MaterialSystem.getPartType("block")).setOreDictName("blockSheetmetal").build();
 
 //Function to easily register new parts and items to ores/materials
-function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre as bool, needsAlternateOres as bool, needsCommonparts as bool, needsSheetsorDensePlating as bool)
+function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre as bool, needsAlternateOres as bool, needsCommonparts as bool, needsSheetsorDensePlating as bool, needsIngot as bool)
 {
 	//Generate regular ore block if necessary
 	if(needsRegularOre)
@@ -52,7 +52,13 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 	//Generate common items for materials that need them (eg completely new materials)
 	if(needsCommonparts)
 	{
-		mat.registerParts(["gear", "plate", "nugget", "dust", "ingot"] as string[]);
+		mat.registerParts(["gear", "plate", "dust"] as string[]);
+	}
+
+	//Generate ingots for parts that do not have ingots
+	if(needsIngot)
+	{
+		mat.registerParts(["ingot", "nugget"] as string[]);
 	}
 
 	//Generate sheetmetal block if needed
@@ -89,8 +95,9 @@ for material, materialIngot in new_oreMaterials {
 	// needsAlternateOres
 	// needsCommonparts
 	// needsSheetsorDensePlating
+	// needsIngot
 
-	RegisterMaterials(material, true, true, true, true);
+	RegisterMaterials(material, true, true, true, true, true);
 }
 
 //Modded ores that already exist
@@ -104,9 +111,9 @@ var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweake
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("f09089")).build() : <ore:ingotAluminum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Nickel").setColor(mods.contenttweaker.Color.fromHex("f0dea5")).build() : <ore:ingotNickel>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Platinum").setColor(mods.contenttweaker.Color.fromHex("66edff")).build() : <ore:ingotPlatinum>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("393339")).build() : <ore:ingotIridium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("c7c6d8")).build() : <ore:ingotIridium>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Mithril").setColor(mods.contenttweaker.Color.fromHex("7ffacd")).build() : <ore:ingotMithril>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminium").setColor(mods.contenttweaker.Color.fromHex("848789")).build() : <ore:ingotAluminum>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminium").setColor(mods.contenttweaker.Color.fromHex("cacbcc")).build() : <ore:ingotAluminum>
 	//Material : OreDictEntry
 };
 
@@ -117,17 +124,54 @@ for material, materialIngot in modded_oreMaterials {
 	// needsAlternateOres
 	// needsCommonparts
 	// needsSheetsorDensePlating
+	// needsIngot
 
-	RegisterMaterials(material, false, true, false, true);
+	RegisterMaterials(material, false, true, false, true, false);
 }
 
-//Modded materials/alloys that already exist
+//Modded alloys that already exist
+//Needs:
+//Dense Plating, Sheet Metal, Basic Items (Plate, Gear, etc.)
+var modded_alloys as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Electrical Steel").setColor(mods.contenttweaker.Color.fromHex("e0dfd7")).build() : <ore:ingotElectricalSteel>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Energetic Alloy").setColor(mods.contenttweaker.Color.fromHex("ff9b4a")).build() : <ore:ingotEnergeticAlloy>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Vibrant Alloy").setColor(mods.contenttweaker.Color.fromHex("a3e653")).build() : <ore:ingotVibrantAlloy>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Redstone Alloy").setColor(mods.contenttweaker.Color.fromHex("ed4e4e")).build() : <ore:ingotRedstoneAlloy>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Conductive Iron").setColor(mods.contenttweaker.Color.fromHex("ff9696")).build() : <ore:ingotConductiveIron>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Pulsating Iron").setColor(mods.contenttweaker.Color.fromHex("afff96")).build() : <ore:ingotPulsatingIron>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Dark Steel").setColor(mods.contenttweaker.Color.fromHex("4f4c4c")).build() : <ore:ingotDarkSteel>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Soularium").setColor(mods.contenttweaker.Color.fromHex("a66e1f")).build() : <ore:ingotSoularium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("End Steel").setColor(mods.contenttweaker.Color.fromHex("fff9ba")).build() : <ore:ingotEndSteel>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Construction Alloy").setColor(mods.contenttweaker.Color.fromHex("484c54")).build() : <ore:ingotConstructionAlloy>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Neutronium").setColor(mods.contenttweaker.Color.fromHex("363038")).build() : <ore:ingotNeutronium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Infinity").setColor(mods.contenttweaker.Color.fromHex("ff52e8")).build() : <ore:ingotInfinity>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Electrum").setColor(mods.contenttweaker.Color.fromHex("cfc05c")).build() : <ore:ingotElectrum>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Constantan").setColor(mods.contenttweaker.Color.fromHex("cca15f")).build() : <ore:ingotConstantan>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Enderium").setColor(mods.contenttweaker.Color.fromHex("297474")).build() : <ore:ingotEnderium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Lumium").setColor(mods.contenttweaker.Color.fromHex("e6e59d")).build() : <ore:ingotLumium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Signalum").setColor(mods.contenttweaker.Color.fromHex("c85620")).build() : <ore:ingotSignalum>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Invar").setColor(mods.contenttweaker.Color.fromHex("929b97")).build() : <ore:ingotInvar>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Bronze").setColor(mods.contenttweaker.Color.fromHex("cc8c42")).build() : <ore:ingotBronze>,
+	//Material : OreDictEntry
+};
+
+for material, materialIngot in modded_alloys {
+	//Remember arguments:
+	// material (Material Variable)
+	// needsRegularOre
+	// needsAlternateOres
+	// needsCommonparts
+	// needsSheetsorDensePlating
+	// needsIngot
+
+	RegisterMaterials(material, false, false, true, true, false);
+}
+
+//Modded materials that already exist
 //Needs:
 //Dense Plating, Sheet Metal
 var modded_Materials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Steel").setColor(mods.contenttweaker.Color.fromHex("757575")).build() : <ore:ingotSteel>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Neutronium").setColor(mods.contenttweaker.Color.fromHex("363038")).build() : <ore:ingotNeutronium>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Infinity").setColor(mods.contenttweaker.Color.fromHex("ff52e8")).build() : <ore:ingotInfinity>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Steel").setColor(mods.contenttweaker.Color.fromHex("757575")).build() : <ore:ingotSteel>
 	//Material : OreDictEntry
 };
 
@@ -138,8 +182,9 @@ for material, materialIngot in modded_Materials {
 	// needsAlternateOres
 	// needsCommonparts
 	// needsSheetsorDensePlating
+	// needsIngot
 
-	RegisterMaterials(material, false, false, false, true);
+	RegisterMaterials(material, false, false, false, true, false);
 }
 
 //Vanilla Ores that already exist
@@ -164,8 +209,9 @@ for material, materialIngot in vanilla_oreMaterials {
 	// needsAlternateOres
 	// needsCommonparts
 	// needsSheetsorDensePlating
+	// needsIngot
 
-	RegisterMaterials(material, false, true, false, true);
+	RegisterMaterials(material, false, true, false, true, false);
 }
 
 print("### PartBuilder Init Complete ###");

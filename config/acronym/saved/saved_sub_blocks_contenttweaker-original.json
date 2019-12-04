@@ -190,7 +190,7 @@
       "6": "silver_dense_ore_minecraft_stone",
       "7": "nickel_dense_ore_minecraft_end_stone",
       "8": "lapis_lazuli_poor_ore_minecraft_stone",
-      "9": "chrome_ore_minecraft_stone",
+      "9": "end_steel_sheetmetal_block",
       "10": "zinc_ore_minecraft_stone",
       "11": "uranium_poor_ore_minecraft_end_stone",
       "12": "uranium_poor_ore_minecraft_netherrack",
@@ -199,7 +199,7 @@
       "15": "chrome_dense_ore_minecraft_stone"
     },
     "11": {
-      "0": "chrome_ore_minecraft_netherrack",
+      "0": "dark_steel_sheetmetal_block",
       "1": "uranium_dense_ore_minecraft_end_stone",
       "2": "uranium_ore_minecraft_end_stone",
       "3": "chrome_sheetmetal_block",
@@ -208,7 +208,7 @@
       "6": "zinc_ore_minecraft_end_stone",
       "7": "zinc_dense_ore_minecraft_stone",
       "8": "chrome_dense_ore_minecraft_end_stone",
-      "9": "chrome_ore_minecraft_end_stone",
+      "9": "construction_alloy_sheetmetal_block",
       "10": "chrome_poor_ore_minecraft_stone",
       "11": "uranium_poor_ore_minecraft_stone",
       "12": "chrome_poor_ore_minecraft_netherrack",
@@ -223,9 +223,27 @@
       "3": "zinc_dense_ore_minecraft_netherrack",
       "4": "zinc_dense_ore_minecraft_end_stone",
       "5": "uranium_dense_ore_minecraft_netherrack",
-      "6": "zinc_ore_minecraft_netherrack"
+      "6": "zinc_ore_minecraft_netherrack",
+      "7": "electrical_steel_sheetmetal_block",
+      "8": "redstone_alloy_sheetmetal_block",
+      "9": "vibrant_alloy_sheetmetal_block",
+      "10": "pulsating_iron_sheetmetal_block",
+      "11": "energetic_alloy_sheetmetal_block",
+      "12": "conductive_iron_sheetmetal_block",
+      "13": "soularium_sheetmetal_block",
+      "14": "chrome_ore_minecraft_stone",
+      "15": "chrome_ore_minecraft_netherrack"
     },
-    "13": {},
+    "13": {
+      "0": "chrome_ore_minecraft_end_stone",
+      "1": "invar_sheetmetal_block",
+      "2": "electrum_sheetmetal_block",
+      "3": "enderium_sheetmetal_block",
+      "4": "constantan_sheetmetal_block",
+      "5": "lumium_sheetmetal_block",
+      "6": "signalum_sheetmetal_block",
+      "7": "bronze_sheetmetal_block"
+    },
     "14": {},
     "15": {},
     "16": {}

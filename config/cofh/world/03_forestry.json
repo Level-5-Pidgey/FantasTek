@@ -10,8 +10,9 @@
 				},
 				"material": [
 					"minecraft:stone",
-					"minecraft:dirt"
 					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
 					"quark:limestone",
 					"quark:slate",
 					"quark:jasper",

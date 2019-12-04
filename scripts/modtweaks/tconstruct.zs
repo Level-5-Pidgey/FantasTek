@@ -1,3 +1,4 @@
+import crafttweaker.liquid.ILiquidStack;
 
 print("~~~ Begin TConstruct Init ~~~");
 
@@ -7,14 +8,7 @@ recipes.removeByRecipeName("tconstruct:repair");
 //Remove tool forge crafting recipes
 val forgeCrafts =
 [
-	"tconstruct:tools/forge/blockrefinedobsidian",
 	"tconstruct:tools/forge/blockiron",
-	"tconstruct:tools/forge/blocknickel",
-	"tconstruct:tools/forge/blockfiredragonsteel",
-	"tconstruct:tools/forge/blockreinforcedpinkslime",
-	"tconstruct:tools/forge/blocksilver",
-	"tconstruct:tools/forge/blockplatinum",
-	"tconstruct:tools/forge/blockosmiridium",
 	"tconstruct:tools/forge/blockgold",
 	"tconstruct:tools/forge/blockbrass",
 	"tconstruct:tools/forge/blockterrasteel",
@@ -70,5 +64,82 @@ for item in forgeCrafts
 {
 	recipes.removeByRecipeName(item);
 }
+
+//Hide Tables from JEI (So we can add only the craftable tables back in later)
+val TConForges =
+[
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 1 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 2 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 3 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 4 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 5 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 6 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 7 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 8 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 9 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:iron_block", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 4 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 3 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 5 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "chisel:blockcobalt", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 1 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 2 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "forestry:resource_storage", Count: 1 as byte, Damage: 1 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "forestry:resource_storage", Count: 1 as byte, Damage: 3 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage", Count: 1 as byte, Damage: 3 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage", Count: 1 as byte, Damage: 2 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 1 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:gold_block", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 5 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 4 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 2 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage", Count: 1 as byte, Damage: 7 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage", Count: 1 as byte, Damage: 6 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "iceandfire:dragonsteel_ice_block", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "iceandfire:dragonsteel_fire_block", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage", Count: 1 as byte, Damage: 4 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "jaopca:block_blockzinc", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage", Count: 1 as byte, Damage: 5 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "forestry:resource_storage", Count: 1 as byte, Damage: 2 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thaumcraft:metal_brass", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 6 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:glowstone", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:redstone_block", Count: 1 as byte, Damage: 0 as short}})
+] as crafttweaker.item.IItemStack[];
+
+for TConForge in TConForges
+{
+	mods.jei.JEI.hide(TConForge);
+}
+
+//Chunk Melting in TCon Smeltery
+val chunkMaterials =
+{
+	"Lead" : <liquid:lead>,
+	"Yellorium" : <liquid:yellorium>,
+	"Vibranium" : <liquid:vibranium>,
+	"Uranium" : <liquid:uranium>,
+	"Titanium" : <liquid:titanium>,
+	"Thorium" : <liquid:thorium>,
+	"Platinum" : <liquid:platinum>,
+	"Necrodermis" : <liquid:necrodermis>,
+	"Iridium" : <liquid:iridium>,
+	"Draconium" : <liquid:draconium>,
+	"Chromium" : <liquid:chromium>,
+	"AstralStarmetal" : <liquid:astral_starmetal>,
+	"Ardite" : <liquid:ardite>
+} as ILiquidStack[string];
+
+for materialString, molten in chunkMaterials
+{
+	mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("chunk" ~ materialString).firstItem, 404);
+	mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("rockyChunk" ~ materialString).firstItem, 404);
+}
+
+//Nerf Demonic Metal Damage
+<ticmat:xu_demonic_metal>.attackHead = 5.7;
 
 print("### TConstruct Init Complete ###");

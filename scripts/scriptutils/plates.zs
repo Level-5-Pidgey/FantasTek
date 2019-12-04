@@ -3,6 +3,9 @@ import crafttweaker.liquid.ILiquidStack;
 
 print("~~~ Begin Plate Management Init ~~~");
 
+//Add compressed obsidian as a plate
+<ore:plateObsidian>.add(<mekanism:compressedobsidian>);
+
 val ThaumcraftPlates =
 [
 	<thaumcraft:plate>,
@@ -46,7 +49,8 @@ val emberPlates =
 	<libvulpes:productplate:10>,
 	<thermalfoundation:material:328>,
 	<jaopca:item_plateosmium>,
-	<libvulpes:productplate:7>
+	<libvulpes:productplate:7>,
+	<thermalfoundation:material:326>
 ] as crafttweaker.item.IItemStack[];
 
 for emberPlate in emberPlates
@@ -55,26 +59,26 @@ for emberPlate in emberPlates
 	mods.embers.Stamper.remove(emberPlate);
 }
 
-//Magneticraft plates
-val magneticraftPlates =
-[
-	<minecraft:iron_block>,
-	<thermalfoundation:storage>,
-	<minecraft:gold_block>,
-	<magneticraft:storage_blocks:3>,
-	<thermalfoundation:storage:3>,
-	<magneticraft:ingots:6>,
-	<tconstruct:ingots:1>,
-	<tconstruct:ingots>,
-	<astralsorcery:itemcraftingcomponent:1>,
-	<magneticraft:ingots:11>,
-	<draconicevolution:draconium_ingot>,
-	<magneticraft:ingots:5>
-] as crafttweaker.item.IItemStack[];
-
-for magneticraftPlate in magneticraftPlates
+//Embers plate melting
+val emberMelterPlates =
 {
-	mods.magneticraft.CrushingTable.removeRecipe(magneticraftPlate);
+	<thermalfoundation:material:32> : <liquid:iron>,
+	<thermalfoundation:material:33> : <liquid:gold>,
+	<thermalfoundation:material:322> : <liquid:silver>,
+	<thermalfoundation:material:320> : <liquid:copper>,
+	<thermalfoundation:material:323> : <liquid:lead>,
+	<thermalfoundation:material:324> : <liquid:aluminum>,
+	<thermalfoundation:material:325> : <liquid:nickel>,
+	<thermalfoundation:material:321> : <liquid:tin>,
+	<embers:plate_dawnstone> : <liquid:dawnstone>,
+	<thermalfoundation:material:355> : <liquid:bronze>,
+	<thermalfoundation:material:353> : <liquid:electrum>
+} as ILiquidStack[crafttweaker.item.IItemStack];
+
+for plate, liquid in emberMelterPlates
+{
+	mods.embers.Melter.remove(plate); //Remove existing plate recipe
+	mods.embers.Melter.add(liquid * 144, plate); //Re-add plates but only give 1 ingot's worth each time
 }
 
 //Tinkers Construct Plate Casting
@@ -117,9 +121,19 @@ val TConplates =
 	<contenttweaker:material_part:613>,
 	<contenttweaker:material_part:845>,
 	<contenttweaker:material_part:835>,
+	<contenttweaker:material_part:915>,
 	<libvulpes:productplate:7>,
 	<thaumcraft:plate>,
-	<jaopca:item_platetungsten>
+	<jaopca:item_platetungsten>,
+	<contenttweaker:material_part:920>,
+	<contenttweaker:material_part:930>,
+	<contenttweaker:material_part:935>,
+	<contenttweaker:material_part:970>,
+	<contenttweaker:material_part:965>,
+	<contenttweaker:material_part:960>,
+	<contenttweaker:material_part:955>,
+	<contenttweaker:material_part:945>,
+	<contenttweaker:material_part:940>
 ] as crafttweaker.item.IItemStack[];
 
 for TConplate in TConplates
@@ -190,7 +204,19 @@ val CompactorPlates =
 	<thermalfoundation:material:162>,
 	<embers:ingot_lead>,
 	<libvulpes:productingot:7>,
-	<magneticraft:ingots:14>
+	<magneticraft:ingots:14>,
+	<enderio:item_alloy_ingot>,
+	<enderio:item_alloy_ingot:1>,
+	<enderio:item_alloy_ingot:2>,
+	<enderio:item_alloy_ingot:3>,
+	<enderio:item_alloy_ingot:4>,
+	<enderio:item_alloy_ingot:5>,
+	<enderio:item_alloy_ingot:6>,
+	<enderio:item_alloy_ingot:7>,
+	<enderio:item_alloy_ingot:8>,
+	<enderio:item_alloy_ingot:9>,
+	<avaritia:resource:6>,
+	<avaritia:resource:4>
 ] as crafttweaker.item.IItemStack[];
 
 for CompactorPlate in CompactorPlates
@@ -223,6 +249,7 @@ val RocketryPlates =
 	<advancedrocketry:productplate:1>,
 	<thermalfoundation:material:356>,
 	<contenttweaker:material_part:603>,
+	<contenttweaker:material_part:835>,
 	<contenttweaker:material_part:593>,
 	<contenttweaker:material_part:574>,
 	<contenttweaker:material_part:613>,
@@ -230,6 +257,7 @@ val RocketryPlates =
 	<thermalfoundation:material:355>,
 	<thermalfoundation:material:320>,
 	<thermalfoundation:material:325>,
+	<contenttweaker:material_part:915>,
 	<thermalfoundation:material:321>,
 	<contenttweaker:material_part:845>,
 	<contenttweaker:material_part:848>,
@@ -239,7 +267,18 @@ val RocketryPlates =
 	<contenttweaker:material_part:855>,
 	<contenttweaker:material_part:858>,
 	<thermalfoundation:material:327>,
-	<thermalfoundation:material:324>
+	<thermalfoundation:material:324>,
+	<contenttweaker:material_part:920>,
+	<contenttweaker:material_part:925>,
+	<contenttweaker:material_part:930>,
+	<contenttweaker:material_part:935>,
+	<contenttweaker:material_part:970>,
+	<contenttweaker:material_part:965>,
+	<contenttweaker:material_part:960>,
+	<contenttweaker:material_part:955>,
+	<contenttweaker:material_part:950>,
+	<contenttweaker:material_part:945>,
+	<contenttweaker:material_part:940>
 ] as crafttweaker.item.IItemStack[];
 
 for RocketryPlate in RocketryPlates
@@ -281,84 +320,96 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 	val craftingMaterial = materialPrefix ~ materialOreDict; //The material (ingot, dust, etc) used to craft
 	val craftingPlate = "plate" ~ materialOreDict;
 
-	//5 Cost -- Manual
-	//Check if an OreDict version exists
-	if (!oreDict.get(craftingMaterial).empty)
+	if(!oreDict.get(craftingPlate).empty)
 	{
-		recipes.addShapeless("plateCrafting" ~ materialOreDict, oreDict.get(craftingPlate).firstItem, [<embers:tinker_hammer>, oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial)]);
-	}
-
-	//4.5 Cost - Plate Presser
-	for plateMaterial in oreDict.get(craftingMaterial).items
-	{
-		val blockMat = "block" ~ materialOreDict;
-		print(blockMat);
-    	mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem * 2, oreDict.get(blockMat).firstItem);
-	}
-
-	//4 Cost -- Tinker's Casting
-	if (molten.name != "water")
-	{
-		if (materialPrefix == "ingot" | materialPrefix == "dust")
+		//5 Cost -- Manual
+		//Check if an OreDict version exists
+		if (!oreDict.get(craftingMaterial).empty)
 		{
-			if (materialPrefix == "Silicon" | materialPrefix == "Carbon" ) //Silicon and Carbon are made in 1000mb Increments
+			recipes.addShapeless("plateCrafting_" ~ materialOreDict, oreDict.get(craftingPlate).firstItem, [<embers:tinker_hammer>, oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial)]);
+		}
+
+		//4.5 Cost - Plate Presser
+		//for plateMaterial in oreDict.get(craftingMaterial).items
+		//{
+			val blockMat = "block" ~ materialOreDict;
+			if(!oreDict.get(blockMat).empty)
 			{
-				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 4000, false, 80);
+				for block in oreDict.get(blockMat).items
+				{
+					mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem * 2, block);
+				}
 			}
-			else if (materialPrefix == "Coal") //1 Coal = 100mb of Liquifacted Coal
+		//}
+
+		//4 Cost -- Tinker's Casting
+		if (molten.name != "water")
+		{
+			if (materialPrefix == "ingot" | materialPrefix == "dust")
+			{
+				if (materialPrefix == "Silicon" | materialPrefix == "Carbon" ) //Silicon and Carbon are made in 1000mb Increments
+				{
+					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 4000, false, 80);
+				}
+				else if (materialPrefix == "Coal") //1 Coal = 100mb of Liquifacted Coal
+				{
+					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
+				}
+				else
+				{
+					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 576, false, 80);
+				}
+			}
+			else
 			{
 				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
 			}
-			else
-			{
-				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 576, false, 80);
-			}
 		}
-		else
-		{
-			mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
-		}
-	}
 
-	//3 Cost -- Embers Plate Press, Compactor
-	if (molten.name != "water")
-	{
-		if (materialPrefix == "ingot" | materialPrefix == "dust")
+		//3 Cost -- Embers Plate Press, Compactor
+		if (molten.name != "water")
 		{
-			if (materialPrefix == "Silicon" | materialPrefix == "Carbon" )
+			if (materialPrefix == "ingot" | materialPrefix == "dust")
 			{
-				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 3000, <embers:stamp_plate>, null);
+				if (materialPrefix == "Silicon" | materialPrefix == "Carbon" )
+				{
+					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 3000, <embers:stamp_plate>, null);
+				}
+				else if (materialPrefix == "Coal")
+				{
+					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 300, <embers:stamp_plate>, null);
+				}
+				else
+				{
+					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 432, <embers:stamp_plate>, null);
+				}
 			}
-			else if (materialPrefix == "Coal")
+			else
 			{
 				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 300, <embers:stamp_plate>, null);
 			}
-			else
-			{
-				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 432, <embers:stamp_plate>, null);
-			}
 		}
-		else
+
+		if (craftingMaterial != "ingotCoal") //For some reason ingotCoal gets passed into this function even though it doesn't exist
 		{
-			mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 300, <embers:stamp_plate>, null);
+			mods.thermalexpansion.Compactor.addStorageRecipe(oreDict.get(craftingPlate).firstItem, oreDict.get(craftingMaterial).firstItem * 3, 10000);
+		}
+
+		//2 Cost
+		for ingot in oreDict.get(craftingMaterial).items
+		{
+	    	//Implement 2-cost smashing
+		}
+
+		//1 Cost
+		for ingot1 in oreDict.get(craftingMaterial).items
+		{
+	    	mods.advancedrocketry.RollingMachine.addRecipe(oreDict.get(craftingPlate).firstItem, 60, 5000, 100, ingot1);
 		}
 	}
-
-	if (craftingMaterial != "ingotCoal") //For some reason ingotCoal gets passed into this function even though it doesn't exist
+	else
 	{
-		mods.thermalexpansion.Compactor.addStorageRecipe(oreDict.get(craftingPlate).firstItem, oreDict.get(craftingMaterial).firstItem * 3, 10000);
-	}
-
-	//2 Cost
-	for ingot in oreDict.get(craftingMaterial).items
-	{
-    	//Implement 2-cost smashing
-	}
-
-	//1 Cost
-	for ingot1 in oreDict.get(craftingMaterial).items
-	{
-    	mods.advancedrocketry.RollingMachine.addRecipe(oreDict.get(craftingPlate).firstItem, 60, 5000, 100, ingot1);
+		print("Could not find a plate for the material" ~ materialOreDict);
 	}
 }
 
@@ -372,9 +423,9 @@ val PlateMaterials =
 	"Diamond" : <liquid:water>,
 	"Emerald" : <liquid:emerald>,
 	"Coal" : <liquid:coal>,
+	"Chrome" : <liquid:chromium>,
 	"Obsidian" : <liquid:obsidian>,
-	"Lazurite" : <liquid:water>,
-	"Silicon" : <liquid:fluidsilicon>,
+	"Silicon" : <liquid:water>,
 	"Ruby" : <liquid:water>,
 	"Sapphire" : <liquid:water>,
 	"Peridot" : <liquid:water>,
@@ -393,7 +444,6 @@ val PlateMaterials =
 	"Tin" : <liquid:tin>,
 	"Titanium" : <liquid:titanium>,
 	"Tungsten" : <liquid:tungsten>,
-	"Tungstensteel" : <liquid:water>,
 	"Zinc" : <liquid:zinc>,
 	"Mithril" : <liquid:mithril>,
 	"Constantan" : <liquid:constantan>,
@@ -428,7 +478,20 @@ val PlateMaterials =
 	"Malachite" : <liquid:water>,
 	"Quartz" : <liquid:water>,
 	"Tanzanite" : <liquid:water>,
-	"Topaz" : <liquid:water>
+	"Topaz" : <liquid:water>,
+	"ElectricalSteel" : <liquid:electrical_steel>,
+	"EndSteel" : <liquid:end_steel>,
+	"Neutronium" : <liquid:water>,
+	"EnergeticAlloy" : <liquid:energetic_alloy>,
+	"RedstoneAlloy" : <liquid:redstone_alloy>,
+	"ConstructionAlloy" : <liquid:construction_alloy>,
+	"VibrantAlloy" : <liquid:vibrant_alloy>,
+	"Soularium" : <liquid:soularium>,
+	"PulsatingIron" : <liquid:pulsating_iron>,
+	"Infinity" : <liquid:water>,
+	"DarkSteel" : <liquid:dark_steel>,
+	"ConductiveIron" : <liquid:conductive_iron>,
+	"Neutronium" : <liquid:water>
 } as ILiquidStack[string];
 
 for materialString, molten in PlateMaterials
