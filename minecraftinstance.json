@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2019-12-04T01:52:16.7726511Z",
+  "lastPlayed": "2019-12-10T16:15:25.2780778Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -3564,85 +3564,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 229002,
-      "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
-      "installedFile": {
-        "id": 2735197,
-        "displayName": "MrTJPCore-1.12.2-2.1.4.43-universal.jar",
-        "fileName": "MrTJPCore-1.12.2-2.1.4.43-universal.jar",
-        "fileDate": "2019-07-04T00:12:13.943Z",
-        "fileLength": 803400,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2735/197/MrTJPCore-1.12.2-2.1.4.43-universal.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 242818,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2768922478,
-            "type": 0
-          },
-          {
-            "foldername": "mrtjp",
-            "fingerprint": 2347380327,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 963349118,
-            "type": 0
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 1849455686,
-            "type": 0
-          },
-          {
-            "foldername": "Changelog",
-            "fingerprint": 513525721,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 4068050300,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "MrTJPCore-1.12.2-2.1.4.43-universal.jar"
-      },
-      "dateInstalled": "2019-12-04T01:32:06.8046157Z",
-      "dateUpdated": "2019-12-04T01:32:06.8105993Z",
-      "dateLastUpdateAttempted": "2019-12-04T01:32:06.8105993Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
       "addonID": 274799,
       "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
       "installedFile": {
@@ -3724,6 +3645,85 @@
       "dateInstalled": "2019-10-29T00:49:37.8139946Z",
       "dateUpdated": "2018-10-29T00:49:37.8139946Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 229002,
+      "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
+      "installedFile": {
+        "id": 2735197,
+        "displayName": "MrTJPCore-1.12.2-2.1.4.43-universal.jar",
+        "fileName": "MrTJPCore-1.12.2-2.1.4.43-universal.jar",
+        "fileDate": "2019-07-04T00:12:13.943Z",
+        "fileLength": 803400,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2735/197/MrTJPCore-1.12.2-2.1.4.43-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 242818,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2768922478,
+            "type": 0
+          },
+          {
+            "foldername": "mrtjp",
+            "fingerprint": 2347380327,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 963349118,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 1849455686,
+            "type": 0
+          },
+          {
+            "foldername": "Changelog",
+            "fingerprint": 513525721,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 4068050300,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "MrTJPCore-1.12.2-2.1.4.43-universal.jar"
+      },
+      "dateInstalled": "2019-12-04T01:32:06.8046157Z",
+      "dateUpdated": "2019-12-04T01:32:06.8105993Z",
+      "dateLastUpdateAttempted": "2019-12-04T01:32:06.8105993Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -4612,7 +4612,7 @@
       "dateInstalled": "2019-12-04T01:32:08.9712726Z",
       "dateUpdated": "2019-12-04T01:32:08.9742646Z",
       "dateLastUpdateAttempted": "2019-12-04T01:32:08.9742646Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4621,7 +4621,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 237989,
@@ -4801,7 +4801,7 @@
       "dateInstalled": "2019-12-04T01:35:56.8194823Z",
       "dateUpdated": "2019-12-04T01:35:56.9670862Z",
       "dateLastUpdateAttempted": "2019-12-04T01:35:56.9670862Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4810,7 +4810,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 238003,
@@ -4990,93 +4990,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 229073,
-      "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
-      "installedFile": {
-        "id": 2801266,
-        "displayName": "Hats-1.12.2-7.1.0.jar",
-        "fileName": "Hats-1.12.2-7.1.0.jar",
-        "fileDate": "2019-10-04T00:43:35.187Z",
-        "fileLength": 314009,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2801/266/Hats-1.12.2-7.1.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 229060,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1564410937,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2946954883,
-            "type": 0
-          },
-          {
-            "foldername": "hatslogo.png",
-            "fingerprint": 2237899708,
-            "type": 0
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 555142677,
-            "type": 0
-          },
-          {
-            "foldername": "me",
-            "fingerprint": 3929478764,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1627227710,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 2048477145,
-        "gameVersion": [
-          "1.12",
-          "1.12.1",
-          "Forge",
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "Hats-1.12.2-7.1.0.jar"
-      },
-      "dateInstalled": "2019-12-04T01:35:58.1260316Z",
-      "dateUpdated": "2019-12-04T01:35:58.1459775Z",
-      "dateLastUpdateAttempted": "2019-12-04T01:35:58.1459775Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
       "addonID": 308380,
       "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
       "installedFile": {
@@ -5158,6 +5071,93 @@
       "installedTargets": null
     },
     {
+      "addonID": 229073,
+      "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
+      "installedFile": {
+        "id": 2801266,
+        "displayName": "Hats-1.12.2-7.1.0.jar",
+        "fileName": "Hats-1.12.2-7.1.0.jar",
+        "fileDate": "2019-10-04T00:43:35.187Z",
+        "fileLength": 314009,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2801/266/Hats-1.12.2-7.1.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 229060,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1564410937,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2946954883,
+            "type": 0
+          },
+          {
+            "foldername": "hatslogo.png",
+            "fingerprint": 2237899708,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 555142677,
+            "type": 0
+          },
+          {
+            "foldername": "me",
+            "fingerprint": 3929478764,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1627227710,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2048477145,
+        "gameVersion": [
+          "1.12",
+          "1.12.1",
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Hats-1.12.2-7.1.0.jar"
+      },
+      "dateInstalled": "2019-12-04T01:35:58.1260316Z",
+      "dateUpdated": "2019-12-04T01:35:58.1459775Z",
+      "dateLastUpdateAttempted": "2019-12-04T01:35:58.1459775Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 229076,
       "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
       "installedFile": {
@@ -5219,7 +5219,7 @@
       "dateInstalled": "2019-12-04T01:36:00.6127396Z",
       "dateUpdated": "2019-12-04T01:36:00.6267019Z",
       "dateLastUpdateAttempted": "2019-12-04T01:36:00.6267019Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5228,7 +5228,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 321792,
@@ -6675,7 +6675,7 @@
       "dateInstalled": "2019-10-29T00:49:37.8240198Z",
       "dateUpdated": "2018-10-29T00:49:37.8240198Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7117,7 +7117,7 @@
       "dateInstalled": "2019-10-29T00:49:37.8129972Z",
       "dateUpdated": "2018-10-29T00:49:37.8129972Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14800,7 +14800,7 @@
       "dateInstalled": "2019-10-29T00:49:37.8190335Z",
       "dateUpdated": "2019-11-22T03:09:18.3819684Z",
       "dateLastUpdateAttempted": "2019-11-22T03:09:18.3819684Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15977,7 +15977,7 @@
       "dateInstalled": "2019-10-29T00:49:37.817039Z",
       "dateUpdated": "2018-10-29T00:49:37.817039Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16462,7 +16462,7 @@
       "dateInstalled": "2019-10-29T00:49:37.5636643Z",
       "dateUpdated": "2018-10-29T00:49:37.5636643Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16897,7 +16897,7 @@
       "dateInstalled": "2019-10-29T00:49:37.5746354Z",
       "dateUpdated": "2018-10-29T00:49:37.5746354Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19298,7 +19298,7 @@
       "dateInstalled": "2019-12-04T01:32:07.3048905Z",
       "dateUpdated": "2019-12-04T01:32:07.3068851Z",
       "dateLastUpdateAttempted": "2019-12-04T01:32:07.3068851Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19307,7 +19307,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 301310,
@@ -19483,7 +19483,7 @@
       "dateInstalled": "2019-10-29T00:49:37.8230227Z",
       "dateUpdated": "2018-10-29T00:49:37.8230227Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22926,7 +22926,7 @@
       "dateInstalled": "2019-10-29T00:49:37.5746354Z",
       "dateUpdated": "2018-10-29T00:49:37.5746354Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

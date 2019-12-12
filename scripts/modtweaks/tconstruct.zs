@@ -115,10 +115,11 @@ for TConForge in TConForges
 	mods.jei.JEI.hide(TConForge);
 }
 
-//Chunk Melting in TCon Smeltery
+//Native Clusters and Rocky Chunks in TCon Smeltery
 val chunkMaterials =
 {
 	"Lead" : <liquid:lead>,
+	"Aluminum" : <liquid:aluminum>,
 	"Yellorium" : <liquid:yellorium>,
 	"Vibranium" : <liquid:vibranium>,
 	"Uranium" : <liquid:uranium>,
@@ -135,8 +136,20 @@ val chunkMaterials =
 
 for materialString, molten in chunkMaterials
 {
-	mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("chunk" ~ materialString).firstItem, 404);
-	mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("rockyChunk" ~ materialString).firstItem, 404);
+	if(!oreDict.get("cluster" ~ materialString).empty)
+	{
+		mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("nativeCluster" ~ materialString).firstItem, 291);
+	}
+
+	if(!oreDict.get("chunk" ~ materialString).empty)
+	{
+		mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("chunk" ~ materialString).firstItem, 291);
+	}
+
+	if(!oreDict.get("rockyChunk" ~ materialString).empty)
+	{
+		mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("rockyChunk" ~ materialString).firstItem, 291);
+	}
 }
 
 //Nerf Demonic Metal Damage

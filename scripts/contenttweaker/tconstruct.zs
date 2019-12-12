@@ -17,7 +17,7 @@ nuclearTrait.afterHit = function(trait, tool, attacker, target, damageDealt, was
 		if(!target.isUndead)
 		{
 			//If the target is not an undead monster, give it a wither effect.
-			target.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(15, 8));
+			target.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(3, 5));
 		}
 	}
 };
@@ -41,7 +41,9 @@ nanoscarabTrait.register();
 //Yellorium
 val yelloriumMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("yellorium");
 yelloriumMat.color = 0xcff73e;
-yelloriumMat.castable = true;
+yelloriumMat.craftable = true;
+yelloriumMat.addItem(<item:contenttweaker:material_part:606>);
+yelloriumMat.addItem(<item:jaopca:block_blockyellorium>, 1, 9);
 yelloriumMat.liquid = <liquid:yellorium>;
 yelloriumMat.representativeItem = <item:contenttweaker:material_part:606>;
 yelloriumMat.addHeadMaterialStats(800 /*Durability*/, 5.0f /*MiningSpeed*/, 7.5f /*AttackDamage*/, 4 /*HarvestLevel*/);
@@ -54,7 +56,9 @@ yelloriumMat.register();
 
 val necrodermisMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("necrodermis");
 necrodermisMat.color = 0x15bf20;
-necrodermisMat.castable = true;
+necrodermisMat.craftable = true;
+necrodermisMat.addItem(<item:contenttweaker:material_part:616>);
+necrodermisMat.addItem(<item:jaopca:block_blocknecrodermis>, 1, 9);
 necrodermisMat.liquid = <liquid:necrodermis>;
 necrodermisMat.representativeItem = <item:contenttweaker:material_part:616>;
 necrodermisMat.addHeadMaterialStats(900 /*Durability*/, 8.5f /*MiningSpeed*/, 12.0f /*AttackDamage*/, 5 /*HarvestLevel*/);

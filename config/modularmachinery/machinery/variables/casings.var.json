@@ -11,16 +11,47 @@
     "casings_decorative": [
         "modularmachinery:blockcasing"
     ],
-    "casings_fluid": [
-        "modularmachinery:blockfluidinputhatch",
+	"general_item_input": [
+        "modularmachinery:blockinputbus"
+    ],
+	"general_item_output": [
+        "modularmachinery:blockoutputbus"
+    ],
+	"general_fluid_input": [
+        "modularmachinery:blockfluidinputhatch"
+    ],
+	"general_fluid_output": [
         "modularmachinery:blockfluidoutputhatch"
     ],
-    "casings_energy": [
-        "modularmachinery:blockenergyinputhatch",
+	"general_energy_input": [
+        "modularmachinery:blockenergyinputhatch"
+    ],
+	"general_energy_output": [
         "modularmachinery:blockenergyoutputhatch"
     ],
-    "casings_item": [
-        "modularmachinery:blockinputbus",
-        "modularmachinery:blockoutputbus"
+	"small_item_output": [
+        "modularmachinery:blockoutputbus@0",
+		"modularmachinery:blockoutputbus@1",
+		"modularmachinery:blockoutputbus@2"
+    ],
+	"small_fluid_input": [
+        "modularmachinery:blockfluidinputhatch@0",
+		"modularmachinery:blockfluidinputhatch@1",
+		"modularmachinery:blockfluidinputhatch@2"
+    ],
+	"small_fluid_output": [
+        "modularmachinery:blockfluidoutputhatch@0",
+		"modularmachinery:blockfluidoutputhatch@1",
+		"modularmachinery:blockfluidoutputhatch@2"
+    ],
+	"small_energy_input": [
+        "modularmachinery:blockenergyinputhatch@0",
+		"modularmachinery:blockenergyinputhatch@1",
+		"modularmachinery:blockenergyinputhatch@2"
+    ],
+	"small_energy_output": [
+        "modularmachinery:blockenergyoutputhatch@0",
+		"modularmachinery:blockenergyoutputhatch@1",
+		"modularmachinery:blockenergyoutputhatch@2"
     ]
 }

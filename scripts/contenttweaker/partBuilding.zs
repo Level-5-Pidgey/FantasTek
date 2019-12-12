@@ -27,6 +27,8 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		ore.addDataValue("resistance", "15,15,15");
 		ore.addDataValue("harvestLevel", "1,1,2");
 		ore.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
+
+		mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
 	}
 
 	//generate alternate ore types (dense, poor) if boolean is true
