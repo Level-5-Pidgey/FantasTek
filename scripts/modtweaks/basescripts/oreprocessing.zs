@@ -82,6 +82,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 	var oreGem = oreDict.get("gem" ~ craftingMaterial);
 	var oreClump = oreDict.get("clump" ~ craftingMaterial);
 	var oreShard = oreDict.get("shard" ~ craftingMaterial);
+	var oreDirtyDust = oreDict.get("dirtyDust" ~ craftingMaterial);
 	var orePoor = oreDict.get("poorOre" ~ craftingMaterial);
 	var oreDustSmall = oreDict.get("dustSmall" ~ craftingMaterial);
 	var oreNugget = oreDict.get("nugget" ~ craftingMaterial);
@@ -415,23 +416,36 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		//Mekanism Chemical Injection Chamber -- Tier 6 (4x)
 		if(tier <= 6)
 		{
-			if(!oreShard.empty)
+			for ore in oreBlock.items
 			{
-				for ore in oreBlock.items
+				if(!oreShard.empty)
 				{
-					mods.mekanism.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreShard.firstItem * 4);
+					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreShard.firstItem * 4);
+
+					//Add other mekanism oreprocessing for compat
+					if(!oreClump.empty)
+					{
+						mods.mekanism.enrichment.addRecipe(oreShard.firstItem, oreClump.firstItem);
+
+						if(!oreDirtyDust.empty)
+						{
+							mods.mekanism.enrichment.addRecipe(oreClump.firstItem, oreDirtyDust.firstItem);
+						}
+					}
+				}
+				else if(!oreGem.empty)
+				{
+					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * 12);
+				}
+				else
+				{
+					print("Skipped Mekanism Chemical Injection Chamber outputs for " ~ ore.name ~ " as no possible outputs were found.");
 				}
 			}
-			else if(!oreGem.empty)
+
+			for ore in oreBlock.items
 			{
-				for ore in oreBlock.items
-				{
-					mods.mekanism.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * 12);
-				}
-			}
-			else
-			{
-				print("Skipped Mekanism Chemical Injection Chamber outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+				mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * 12);
 			}
 		}
 
@@ -464,7 +478,6 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 
 		//Further ore processing goes here
 	}
-
 }
 
 function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILiquidStack)
@@ -501,12 +514,82 @@ mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:lapis_ore>);
 //Electric Arc Furnace Titanium Ingot
 mods.advancedrocketry.ArcFurnace.removeRecipe(<libvulpes:productingot:7>);
 
-//Remove Galena Ore Mekanism Processing
-mods.mekanism.purification.removeRecipe(<mekanism:clump:6> * 3, <magneticraft:ores:1>);
-mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:6> * 4, <magneticraft:ores:1>);
+//Remove Mekanism Ore Processing Recipes
+mods.mekanism.chemical.injection.removeAllRecipes();
+mods.mekanism.purification.removeAllRecipes();
+mods.mekanism.enrichment.removeRecipe(<minecraft:stonebrick:1>);
 
-//Remove Purification Chamber Recipes
-mods.mekanism.enrichment.removeRecipe(<rftools:dimensional_shard> * 2);
+//Remove Enrichment Chamber Recipes
+val EnrichmentChamber = [
+	<mekanism:dirtydust:1>,
+	<mekanism:dirtydust>,
+	<mekanism:dirtydust:3>,
+	<mekanism:dirtydust:2>,
+	<mekanism:dirtydust:5>,
+	<mekanism:dirtydust:4>,
+	<mekanism:dirtydust:6>,
+	<draconicevolution:draconium_ore:1>,
+	<draconicevolution:draconium_ore>,
+	<draconicevolution:draconium_ore:2>,
+	<biomesoplenty:gem_ore:2>,
+	<biomesoplenty:gem_ore:3>,
+	<biomesoplenty:gem_ore:1>,
+	<biomesoplenty:gem_ore:7>,
+	<biomesoplenty:gem_ore>,
+	<iceandfire:silver_ore>,
+	<biomesoplenty:gem_ore:5>,
+	<biomesoplenty:gem_ore:6>,
+	<minecraft:coal_ore>,
+	<biomesoplenty:gem_ore:4>,
+	<embers:ore_silver>,
+	<libvulpes:ore0:9>,
+	<appliedenergistics2:quartz_ore>,
+	<libvulpes:ore0:10>,
+	<minecraft:lapis_ore>,
+	<forestry:resources>,
+	<forestry:resources:2>,
+	<forestry:resources:1>,
+	<libvulpes:ore0:5>,
+	<libvulpes:ore0:4>,
+	<minecraft:gold_ore>,
+	<minecraft:diamond_ore>,
+	<magneticraft:ores>,
+	<magneticraft:ores:1>,
+	<thaumcraft:ore_amber>,
+	<mekanism:oreblock>,
+	<mekanism:oreblock:1>,
+	<mekanism:oreblock:2>,
+	<minecraft:quartz_ore>,
+	<contenttweaker:sub_block_holder_10:14>,
+	<contenttweaker:sub_block_holder_11:2>,
+	<contenttweaker:sub_block_holder_11:4>,
+	<minecraft:emerald_ore>,
+	<embers:ore_quartz>,
+	<embers:ore_tin>,
+	<minecraft:redstone_ore>,
+	<embers:ore_nickel>,
+	<embers:ore_aluminum>,
+	<minecraft:iron_ore>,
+	<embers:ore_lead>,
+	<appliedenergistics2:charged_quartz_ore>,
+	<thermalfoundation:ore:8>,
+	<thermalfoundation:ore:3>,
+	<thermalfoundation:ore:2>,
+	<thermalfoundation:ore:1>,
+	<thermalfoundation:ore>,
+	<thermalfoundation:ore:7>,
+	<thermalfoundation:ore:6>,
+	<thermalfoundation:ore:4>,
+	<thermalfoundation:ore:5>,
+	<iceandfire:sapphire_ore>,
+	<embers:ore_copper>,
+	<thaumcraft:ore_quartz>
+] as crafttweaker.item.IItemStack[];
+
+for ore in EnrichmentChamber
+{
+	mods.mekanism.enrichment.removeRecipe(ore);
+}
 
 //Magneticraft Grinder Ores
 val GrinderOres = [

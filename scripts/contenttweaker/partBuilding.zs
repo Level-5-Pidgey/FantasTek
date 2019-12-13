@@ -110,7 +110,6 @@ var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweake
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Tin").setColor(mods.contenttweaker.Color.fromHex("dd3d4d5")).build() : <ore:ingotTin>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Silver").setColor(mods.contenttweaker.Color.fromHex("d5d5d7")).build() : <ore:ingotSilver>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Lead").setColor(mods.contenttweaker.Color.fromHex("425055")).build() : <ore:ingotLead>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("f09089")).build() : <ore:ingotAluminum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Nickel").setColor(mods.contenttweaker.Color.fromHex("f0dea5")).build() : <ore:ingotNickel>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Platinum").setColor(mods.contenttweaker.Color.fromHex("66edff")).build() : <ore:ingotPlatinum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("c7c6d8")).build() : <ore:ingotIridium>,

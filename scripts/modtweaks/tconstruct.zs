@@ -136,7 +136,7 @@ val chunkMaterials =
 
 for materialString, molten in chunkMaterials
 {
-	if(!oreDict.get("cluster" ~ materialString).empty)
+	if(!oreDict.get("nativeCluster" ~ materialString).empty)
 	{
 		mods.tconstruct.Melting.addRecipe(molten * 288, oreDict.get("nativeCluster" ~ materialString).firstItem, 291);
 	}
