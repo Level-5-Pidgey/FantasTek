@@ -65,7 +65,7 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 
 		if((!oreDict.get("ingot" ~ mat.getName()).empty) | needsIngot)
 		{
-			if(!oreDict.get("crystal" ~ mat.getName()).empty)
+			if(oreDict.get("crystal" ~ mat.getName()).empty)
 			{
 				//Get Mekanism Ore Processing Parts
 				mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);

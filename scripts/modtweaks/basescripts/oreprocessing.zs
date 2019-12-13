@@ -283,11 +283,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if (!oreGem.empty)
 				{
-					mods.magneticraft.Sieve.addRecipe(processedChunk.firstItem, oreGem.firstItem * 2, 1.0, oreGem.firstItem, 0.5, oreGem.firstItem, 0.25, (tier + 1) * 40, true);
+					mods.magneticraft.Sieve.addRecipe(rockyChunk.firstItem, processedChunk.firstItem, 1.0, oreGem.firstItem, 0.5, oreGem.firstItem, 0.25, (tier + 1) * 40, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Sieve.addRecipe(processedChunk.firstItem, oreDust.firstItem * 2, 1.0, oreDust.firstItem, 0.5, oreDust.firstItem, 0.25, (tier + 1) * 40, true);
+					mods.magneticraft.Sieve.addRecipe(rockyChunk.firstItem, processedChunk.firstItem, 1.0, oreDust.firstItem, 0.5, oreDust.firstItem, 0.25, (tier + 1) * 40, true);
 				}
 				else
 				{
@@ -507,6 +507,62 @@ function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILi
 		print("Could not add melting recipes for " ~ craftingMaterial ~ " as no ore blocks were found.");
 	}
 }
+
+function markwithProcessingTier(craftingMaterial as string, tier as int)
+{
+	if(craftingMaterial != "Chromium"  & craftingMaterial != "ChargedCertusQuartz")
+	{
+		var oreBlock = oreDict.get("ore" ~ craftingMaterial);
+
+		//Check if ore even exists
+		if(!oreBlock.empty)
+		{
+			for ore in oreBlock.items
+			{
+				if(tier == 0)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.darkGray("0")));
+				}
+				else if(tier == 1)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.gray("1")));
+				}
+				else if(tier == 2)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.yellow("2")));
+				}
+				else if(tier == 3)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.gold("3")));
+				}
+				else if(tier == 4)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.red("4")));
+				}
+				else if(tier == 5)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.darkRed("5")));
+				}
+				if(tier == 6)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.aqua("6")));
+				}
+				if(tier == 7)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.darkGreen("7")));
+				}
+				if(tier == 8)
+				{
+					ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.green("8")));
+				}
+			}
+		}
+	}
+}
+
+//Stop Issues with Galena Ore!
+<ore:oreSilver>.remove(<magneticraft:ores:1>);
+<ore:oreLead>.remove(<magneticraft:ores:1>);
 
 //Embers Melter
 val EmberMelting = [
@@ -1018,6 +1074,9 @@ for materialString, oreValue in OreTypes
 	{
 		AddMeltedRecipes(materialString, oreValue, LiquidTypes[materialString]);
 	}
+
+	//Mark each ore with it's tier
+	markwithProcessingTier(materialString, oreValue);
 }
 
 print("### Ore Processing Init Complete ###");

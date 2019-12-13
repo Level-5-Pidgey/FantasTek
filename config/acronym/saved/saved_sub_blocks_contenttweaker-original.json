@@ -14,9 +14,9 @@
       "10": "iridium_dense_ore_minecraft_end_stone",
       "11": "coal_poor_ore_minecraft_end_stone",
       "12": "yellorium_poor_ore_minecraft_end_stone",
-      "13": "aluminium_poor_ore_minecraft_stone",
+      "13": "aluminum_poor_ore_minecraft_stone",
       "14": "lead_dense_ore_minecraft_stone",
-      "15": "aluminium_dense_ore_minecraft_end_stone"
+      "15": "aluminum_sheetmetal_block"
     },
     "1": {
       "0": "necrodermis_dense_ore_minecraft_netherrack",
@@ -81,7 +81,7 @@
       "5": "copper_poor_ore_minecraft_end_stone",
       "6": "vibranium_ore_minecraft_end_stone",
       "7": "necrodermis_ore_minecraft_stone",
-      "8": "aluminium_poor_ore_minecraft_netherrack",
+      "8": "aluminum_dense_ore_minecraft_end_stone",
       "9": "coal_poor_ore_minecraft_netherrack",
       "10": "quartz_poor_ore_minecraft_stone",
       "11": "cobalt_dense_ore_minecraft_end_stone",
@@ -159,7 +159,7 @@
       "11": "silver_sheetmetal_block",
       "12": "iridium_poor_ore_minecraft_netherrack",
       "13": "platinum_dense_ore_minecraft_stone",
-      "14": "aluminium_sheetmetal_block",
+      "14": "aluminum_dense_ore_minecraft_stone",
       "15": "mithril_poor_ore_minecraft_stone"
     },
     "9": {
@@ -176,15 +176,15 @@
       "10": "vibranium_poor_ore_minecraft_stone",
       "11": "emerald_poor_ore_minecraft_stone",
       "12": "necrodermis_poor_ore_minecraft_end_stone",
-      "13": "aluminium_dense_ore_minecraft_netherrack",
-      "14": "aluminium_dense_ore_minecraft_stone",
+      "13": "aluminum_poor_ore_minecraft_netherrack",
+      "14": "aluminum_poor_ore_minecraft_end_stone",
       "15": "gold_sheetmetal_block"
     },
     "10": {
       "0": "gold_poor_ore_minecraft_stone",
       "1": "diamond_dense_ore_minecraft_stone",
       "2": "diamond_dense_ore_minecraft_netherrack",
-      "3": "aluminium_poor_ore_minecraft_end_stone",
+      "3": "aluminum_dense_ore_minecraft_netherrack",
       "4": "yellorium_sheetmetal_block",
       "5": "ardite_poor_ore_minecraft_end_stone",
       "6": "silver_dense_ore_minecraft_stone",
