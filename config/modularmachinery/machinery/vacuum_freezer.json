@@ -1,0 +1,138 @@
+{
+  "registryname": "vacuum_freezer",
+	"localizedname": "Vacuum Freezer",
+	"color": "7f7fff",
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements":"modularmachinery:blockcasing@0"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements":"general_item_input"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements":"general_energy_input"
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements":"modularmachinery:blockcasing@1"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements":"modularmachinery:blockcasing@0"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements":"modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements":"modularmachinery:blockcasing@1"
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements":"modularmachinery:blockcasing@1"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements":"general_item_output"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements":"general_fluid_input"
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements":"quark:biome_cobblestone@1"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements":"modularmachinery:blockcasing@1"
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements":"modularmachinery:blockcasing@1"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements":"modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements":"quark:biome_cobblestone@1"
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements":"quark:biome_cobblestone@1"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements":"modularmachinery:blockcasing@1"
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements":"modularmachinery:blockcasing@1"
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements":"quark:biome_cobblestone@1"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements":"quark:biome_cobblestone@1"
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements":"modularmachinery:blockcasing@0"
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements":"modularmachinery:blockcasing@1"
+        }
+    ]}
