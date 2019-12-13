@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2019-12-12T23:45:28.6040655Z",
+  "lastPlayed": "2019-12-13T05:14:36.2727721Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -15813,6 +15813,86 @@
       "installedTargets": null
     },
     {
+      "addonID": 310059,
+      "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
+      "installedFile": {
+        "id": 2812165,
+        "displayName": "Future MC 0.1.13",
+        "fileName": "future-mc-0.1.13.jar",
+        "fileDate": "2019-10-19T06:39:22.877Z",
+        "fileLength": 4822482,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2812/165/future-mc-0.1.13.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 203558487,
+            "type": 0
+          },
+          {
+            "foldername": "invtweaks",
+            "fingerprint": 783127171,
+            "type": 0
+          },
+          {
+            "foldername": "thedarkcolour",
+            "fingerprint": 1718068852,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1192446770,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 3457085405,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3653635594,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2034647773,
+        "gameVersion": [
+          "1.12",
+          "1.12.1",
+          "1.12.2",
+          "1.12-Snapshot"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "future-mc-0.1.13.jar"
+      },
+      "dateInstalled": "2019-12-13T04:34:53.8181875Z",
+      "dateUpdated": "2019-12-13T04:34:53.8560954Z",
+      "dateLastUpdateAttempted": "2019-12-13T04:34:53.8560954Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 285492,
       "gameInstanceID": "42549267-f832-4849-8d92-199e4d49e1d3",
       "installedFile": {
@@ -24494,7 +24574,7 @@
       "dateInstalled": "2019-10-29T00:49:37.8160897Z",
       "dateUpdated": "2019-11-22T03:08:14.8078324Z",
       "dateLastUpdateAttempted": "2019-11-22T03:08:14.8078324Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

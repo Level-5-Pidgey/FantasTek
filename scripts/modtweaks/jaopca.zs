@@ -46,7 +46,8 @@ val JAOPCAPlates =
 	<jaopca:item_platedenseruby>,
 	<jaopca:item_platedensesapphire>,
 	<jaopca:item_platedensetanzanite>,
-	<jaopca:item_platedensetopaz>
+	<jaopca:item_platedensetopaz>,
+	<jaopca:item_platedensechromium>
 ] as crafttweaker.item.IItemStack[];
 
 for JAOPCAPlate in JAOPCAPlates

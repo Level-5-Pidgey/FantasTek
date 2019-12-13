@@ -27,8 +27,18 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		ore.addDataValue("resistance", "15,15,15");
 		ore.addDataValue("harvestLevel", "1,1,2");
 		ore.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
+	}
 
-		mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
+	//Generate common items for materials that need them (eg completely new materials)
+	if(needsCommonparts)
+	{
+		mat.registerParts(["gear", "plate", "dust"] as string[]);
+	}
+
+	//Generate ingots for parts that do not have ingots
+	if(needsIngot)
+	{
+		mat.registerParts(["ingot", "nugget"] as string[]);
 	}
 
 	//generate alternate ore types (dense, poor) if boolean is true
@@ -49,18 +59,30 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		denseOre.addDataValue("resistance", "15,15,15");
 		denseOre.addDataValue("harvestLevel", "1,1,2");
 		denseOre.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
-	}
 
-	//Generate common items for materials that need them (eg completely new materials)
-	if(needsCommonparts)
-	{
-		mat.registerParts(["gear", "plate", "dust"] as string[]);
-	}
+		//DELETE ME
+		print("MATERIAL INGOT OREDICT: " ~ "ingot" ~ mat.getName());
 
-	//Generate ingots for parts that do not have ingots
-	if(needsIngot)
-	{
-		mat.registerParts(["ingot", "nugget"] as string[]);
+		if((!oreDict.get("ingot" ~ mat.getName()).empty) | needsIngot)
+		{
+			if(!oreDict.get("crystal" ~ mat.getName()).empty)
+			{
+				//Get Mekanism Ore Processing Parts
+				mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
+
+				//Create Ore Processing Slurries
+				val oreFluid = mods.contenttweaker.VanillaFactory.createFluid("slurry_" ~ mat.getUnlocalizedName(), mat.getColor());
+				val oreCleanFluid = mods.contenttweaker.VanillaFactory.createFluid("slurry_clean_" ~ mat.getUnlocalizedName(), mat.getColor());
+				oreFluid.gaseous = true;
+				oreCleanFluid.gaseous = true;
+				oreFluid.register();
+				oreCleanFluid.register();
+			}
+			else
+			{
+				print("Mekanism Ore Processing already exists for " ~ mat.getName());
+			}
+		}
 	}
 
 	//Generate sheetmetal block if needed
@@ -114,7 +136,7 @@ var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweake
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Platinum").setColor(mods.contenttweaker.Color.fromHex("66edff")).build() : <ore:ingotPlatinum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("c7c6d8")).build() : <ore:ingotIridium>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Mithril").setColor(mods.contenttweaker.Color.fromHex("7ffacd")).build() : <ore:ingotMithril>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminium").setColor(mods.contenttweaker.Color.fromHex("cacbcc")).build() : <ore:ingotAluminum>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("cacbcc")).build() : <ore:ingotAlumnum>
 	//Material : OreDictEntry
 };
 
@@ -153,6 +175,7 @@ var modded_alloys as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Mate
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Signalum").setColor(mods.contenttweaker.Color.fromHex("c85620")).build() : <ore:ingotSignalum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Invar").setColor(mods.contenttweaker.Color.fromHex("929b97")).build() : <ore:ingotInvar>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Bronze").setColor(mods.contenttweaker.Color.fromHex("cc8c42")).build() : <ore:ingotBronze>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Manyullyn").setColor(mods.contenttweaker.Color.fromHex("b928de")).build() : <ore:ingotManyullyn>
 	//Material : OreDictEntry
 };
 
@@ -199,7 +222,9 @@ var vanilla_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweak
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Lapis Lazuli").setColor(mods.contenttweaker.Color.fromHex("164df2")).build() : <ore:gemLapis>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Emerald").setColor(mods.contenttweaker.Color.fromHex("19d150")).build() : <ore:gemEmerald>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Coal").setColor(mods.contenttweaker.Color.fromHex("060607")).build() : <ore:coal>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Quartz").setColor(mods.contenttweaker.Color.fromHex("ffedeb")).build() : <ore:gemQuartz>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Quartz").setColor(mods.contenttweaker.Color.fromHex("ffedeb")).build() : <ore:gemQuartz>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Ardite").setColor(mods.contenttweaker.Color.fromHex("c73e0c")).build() : <ore:ingotArdite>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Cobalt").setColor(mods.contenttweaker.Color.fromHex("1882de")).build() : <ore:ingotCobalt>
 	//Material : OreDictEntry
 };
 

@@ -133,7 +133,8 @@ val TConplates =
 	<contenttweaker:material_part:960>,
 	<contenttweaker:material_part:955>,
 	<contenttweaker:material_part:945>,
-	<contenttweaker:material_part:940>
+	<contenttweaker:material_part:940>,
+	<contenttweaker:material_part:1073>
 ] as crafttweaker.item.IItemStack[];
 
 for TConplate in TConplates
@@ -330,8 +331,8 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 		}
 
 		//4.5 Cost - Plate Presser
-		//for plateMaterial in oreDict.get(craftingMaterial).items
-		//{
+		for plateMaterial in oreDict.get(craftingMaterial).items
+		{
 			val blockMat = "block" ~ materialOreDict;
 			if(!oreDict.get(blockMat).empty)
 			{
@@ -340,7 +341,7 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 					mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem * 2, block);
 				}
 			}
-		//}
+		}
 
 		//4 Cost -- Tinker's Casting
 		if (molten.name != "water")
@@ -460,6 +461,7 @@ val PlateMaterials =
 	"Dawnstone" : <liquid:dawnstone>,
 	"Chromium" : <liquid:chromium>,
 	"Ardite" : <liquid:ardite>,
+	"Manyullyn" : <liquid:manyullyn>,
 	"AstralStarmetal" : <liquid:astral_starmetal>,
 	"Cobalt" : <liquid:cobalt>,
 	"Draconium" : <liquid:draconium>,
@@ -499,26 +501,25 @@ for materialString, molten in PlateMaterials
 	val plateDict = "plate" ~ materialString;
 	if (oreDict has plateDict)
 	{
-		val IngotDict = "ingot" ~ materialString;
-		if(oreDict has IngotDict)
+		if(!oreDict.get("ingot" ~ materialString).empty)
 		{
 			AddPlateCrafting(materialString, "ingot", molten);
 		}
-		else if (oreDict has "gem" ~ materialString)
+		else if (!oreDict.get("gem" ~ materialString).empty)
 		{
 			AddPlateCrafting(materialString, "gem", molten);
 		}
-		else if (oreDict has "plank" ~ materialString)
+		else if (!oreDict.get("plank" ~ materialString).empty)
 		{
 			AddPlateCrafting(materialString, "plank", molten);
 		}
-		else if (oreDict has "dust" ~ materialString)
+		else if (!oreDict.get("dust" ~ materialString).empty)
 		{
 			AddPlateCrafting(materialString, "dust", molten);
 		}
 		else
 		{
-			print("Could not find a matching material for " ~ IngotDict);
+			print("Could not find a matching material for " ~ materialString);
 		}
 	}
 	else
