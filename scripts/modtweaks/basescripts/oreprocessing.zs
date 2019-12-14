@@ -231,7 +231,14 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * 2, 0.5, oreDust.firstItem, 0.15, <minecraft:cobblestone>, true);
+					if(!oreDustSmall.empty)
+					{
+						mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * 2, 0.5, oreDustSmall.firstItem * 2, 0.33, oreDustSmall.firstItem, 0.15, <minecraft:cobblestone>, true);
+					}
+					else
+					{
+						mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * 2, 0.5, oreDust.firstItem * 1, 0.15, <minecraft:cobblestone>, true);
+					}
 				}
 				else
 				{
@@ -248,7 +255,14 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, processedChunk.firstItem, 0.5, oreDust.firstItem * 2, 0.15, <minecraft:cobblestone>, true);
+					if(!oreDustSmall.empty)
+					{
+						mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, processedChunk.firstItem, 0.5, oreDustSmall.firstItem * 2, 0.33, oreDustSmall.firstItem, 0.15, <minecraft:cobblestone>, true);
+					}
+					else
+					{
+						mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, processedChunk.firstItem, 0.5, oreDust.firstItem * 1, 0.15, <minecraft:cobblestone>, true);
+					}
 				}
 				else
 				{
@@ -351,13 +365,24 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Rich Slag
 				mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 12, <thermalfoundation:material:864>, oreBlock.firstItem, (tier + 1) * 9000, oreGem.firstItem * 4, 80);
 			}
-			else if(!oreDust.empty)
+			else if(!oreIngot.empty)
 			{
-				//Normal Slag
-				mods.thermalexpansion.InductionSmelter.addRecipe(oreDust.firstItem * 3, <thermalfoundation:material:864>, oreBlock.firstItem, (tier + 1) * 9000, oreDust.firstItem, 33);
+				if(!oreDustSmall.empty)
+				{
+					//Normal Slag
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 3, <thermalfoundation:material:864>, oreBlock.firstItem, (tier + 1) * 9000, oreDustSmall.firstItem * 3, 33);
 
-				//Rich Slag
-				mods.thermalexpansion.InductionSmelter.addRecipe(oreDust.firstItem * 4, <thermalfoundation:material:865>, oreBlock.firstItem, (tier + 1) * 9000, oreDust.firstItem * 2, 80);
+					//Rich Slag
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 4, <thermalfoundation:material:865>, oreBlock.firstItem, (tier + 1) * 9000, oreDustSmall.firstItem * 6, 80);
+				}
+				else
+				{
+					//Normal Slag
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 3, <thermalfoundation:material:864>, oreBlock.firstItem, (tier + 1) * 9000, oreIngot.firstItem, 33);
+
+					//Rich Slag
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 4, <thermalfoundation:material:865>, oreBlock.firstItem, (tier + 1) * 9000, oreIngot.firstItem * 2, 80);
+				}
 			}
 			else
 			{
@@ -444,7 +469,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				}
 				else if(!oreGem.empty)
 				{
-					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * 12);
+					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * 8);
 				}
 				else
 				{
@@ -460,14 +485,14 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				for ore in oreBlock.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * 12, ((tier + 1) * 60) / 6, (tier + 1) * 75, ore, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * 8, ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
 				}
 			}
 			else if(!oreIngot.empty)
 			{
 				for ore in oreBlock.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * 4, 12, (tier + 1) * 75, ore, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * 4, ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
 				}
 			}
 			else
@@ -478,7 +503,14 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		}
 
 		//Mekanism Chemical Dissolution Chamber -- Tier 7 (5x)
-		//TODO
+		if(tier <= 7)
+		{
+			//Use method in mmhelper.zs
+			if (craftingMaterial != "Redstone")
+			{
+				scripts.mmhelper.ChemicalOreFactoryRecipe(craftingMaterial, tier);
+			}
+		}
 
 		//Further ore processing goes here
 	}
@@ -510,7 +542,7 @@ function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILi
 
 function markwithProcessingTier(craftingMaterial as string, tier as int)
 {
-	if(craftingMaterial != "Chromium"  & craftingMaterial != "ChargedCertusQuartz")
+	if(craftingMaterial != "Chromium" & craftingMaterial != "ChargedCertusQuartz")
 	{
 		var oreBlock = oreDict.get("ore" ~ craftingMaterial);
 
@@ -583,6 +615,7 @@ for ore in EmberMelting
 
 //Remove some specific Furnace Recipes that still manage to persist
 furnace.remove(<minecraft:redstone>);
+furnace.remove(<magneticraft:ingots:3>, <magneticraft:ores:1>);
 furnace.remove(<draconicevolution:draconium_ingot>);
 furnace.remove(<libvulpes:productdust>);
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:redstone_ore>);
@@ -777,7 +810,8 @@ val MeltingMaterials =
 	"Cobalt" : <liquid:cobalt>,
 	"Draconium" : <liquid:draconium>,
 	"Uranium" : <liquid:uranium>,
-	"Osmium" : <liquid:osmium>
+	"Osmium" : <liquid:osmium>,
+	"Galena" : <liquid:lead>
 } as ILiquidStack[string];
 
 for oreString, molten in MeltingMaterials
@@ -1010,7 +1044,7 @@ val LiquidTypes =
 } as ILiquidStack[string];
 
 //List of ores to change processing rules for
-val OreTypes =
+static OreTypes as int[string] =
 {
 	"Iron" : 0,
 	"Gold" : 0,
@@ -1035,8 +1069,8 @@ val OreTypes =
 	"Zinc" : 1,
 	"Mithril" : 3,
 	"Yellorium" : 4,
-	"Vibranium" : 7,
-	"Necrodermis" : 7,
+	"Vibranium" : 8,
+	"Necrodermis" : 8,
 	"Thorium" : 5,
 	"Chromium" : 5,
 	"Ardite" : 2,
@@ -1047,7 +1081,7 @@ val OreTypes =
 	"Osmium" : 4,
 	"Amber" : 0,
 	"Amethyst" : 0,
-	"Apatite" : 0,
+	"Apatite" : 1,
 	"Aquamarine" : 0,
 	"CertusQuartz" : 2,
 	"ChargedCertusQuartz" : 2,
@@ -1059,7 +1093,7 @@ val OreTypes =
 	"Quartz" : 0,
 	"Tanzanite" : 0,
 	"Topaz" : 0
-} as int[string];
+};
 
 for materialString, oreValue in OreTypes
 {
