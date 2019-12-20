@@ -1,0 +1,313 @@
+{
+  "coal_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "contenttweaker:sub_block_holder_7",
+  		"meta": 14,
+        "weight": 67
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_5",
+		"meta": 2,
+        "weight": 34
+	  },
+	  {
+		  "block": "minecraft:diamond_ore",
+		  "weight": 2
+	  }
+    ],
+    "indicator": {
+      "blocks": "minecraftfuture:flowerblack",
+      "rarity": 40
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 40,
+    "min_y": 15,
+    "max_y": 55,
+    "density": 180,
+    "vertical_size": 8,
+    "horizontal_size": 20,
+	"biomes": [
+      "wet"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  },
+  "iron_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "contenttweaker:sub_block_holder_9",
+  		"meta": 3,
+        "weight": 67
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_4",
+		"meta": 0,
+        "weight": 34
+	  }
+    ],
+    "indicator": {
+      "blocks": "minecraftfuture:flowerwhite",
+      "rarity": 40
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 25,
+    "min_y": 15,
+    "max_y": 55,
+    "density": 180,
+    "vertical_size": 20,
+    "horizontal_size": 9,
+	"biomes": [
+      "plains"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  },
+  "gold_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "contenttweaker:sub_block_holder_10",
+  		"meta": 0,
+        "weight": 67
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_9",
+		"meta": 2,
+        "weight": 34
+	  }
+    ],
+    "indicator": {
+      "blocks": { "block": "biomesoplenty:flower_1", "meta": 1 },
+      "rarity": 40
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 60,
+    "min_y": 15,
+    "max_y": 55,
+    "density": 180,
+    "vertical_size": 13,
+    "horizontal_size": 18,
+	"biomes": [
+      "mesa"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  },
+  "lapis_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "contenttweaker:sub_block_holder_10",
+  		"meta": 8,
+        "weight": 67
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_5",
+		"meta": 6,
+        "weight": 34
+	  }
+    ],
+    "indicator": {
+      "blocks": { "block": "biomesoplenty:flower_0", "meta": 13 },
+	  "blocks_under": "minecraft:sand",
+      "rarity": 40
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 70,
+    "min_y": 15,
+    "max_y": 55,
+    "density": 180,
+    "vertical_size": 10,
+    "horizontal_size": 16,
+	"biomes": [
+      "sandy"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  },
+  "diamond_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "contenttweaker:sub_block_holder_1",
+  		"meta": 2,
+        "weight": 67
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_10",
+		"meta": 1,
+        "weight": 34
+	  }
+    ],
+    "indicator": {
+      "blocks": { "block": "biomesoplenty:flower_1", "meta": 4 },
+      "rarity": 15
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 80,
+    "min_y": 15,
+    "max_y": 55,
+    "density": 180,
+    "vertical_size": 7,
+    "horizontal_size": 3,
+	"biomes": [
+      "wet"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  },
+  "emerald_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "contenttweaker:sub_block_holder_9",
+  		"meta": 11,
+        "weight": 67
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_6",
+		"meta": 1,
+        "weight": 34
+	  }
+    ],
+    "indicator": {
+      "blocks": { "block": "biomesoplenty:plant_1", "meta": 3 },
+      "rarity": 15
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 80,
+    "min_y": 15,
+    "max_y": 55,
+    "density": 180,
+    "vertical_size": 3,
+    "horizontal_size": 6,
+	"biomes": [
+      "mountain"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  },
+  "redstone_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "contenttweaker:sub_block_holder_1",
+  		"meta": 9,
+        "weight": 67
+      },
+	  {
+		"block": "thermalfoundation:ore_fluid",
+  		"meta": 2,
+        "weight": 18
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_1",
+		"meta": 15,
+        "weight": 34
+	  }
+    ],
+    "indicator": {
+      "blocks": { "block": "biomesoplenty:flower_1", "meta": 5 },
+      "rarity": 40
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 60,
+    "min_y": 15,
+    "max_y": 55,
+    "density": 180,
+    "vertical_size": 10,
+    "horizontal_size": 13,
+	"biomes": [
+      "swamp"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  }
+}

@@ -405,7 +405,7 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 		//1 Cost
 		for ingot1 in oreDict.get(craftingMaterial).items
 		{
-	    	mods.advancedrocketry.RollingMachine.addRecipe(oreDict.get(craftingPlate).firstItem, 60, 5000, 100, ingot1);
+	    	mods.advancedrocketry.RollingMachine.addRecipe(oreDict.get(craftingPlate).firstItem, 60, 4000, 100, ingot1);
 		}
 	}
 	else

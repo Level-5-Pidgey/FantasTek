@@ -1,0 +1,32 @@
+{
+  "oil_generation": {
+    "type": "cone",
+    "ore": "magneticraft:oil_source",
+    "indicator": {
+      "blocks": { "block": "biomesoplenty:flower_0", "meta": 2 },
+      "rarity": 50
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 90,
+    "min_y": 15,
+    "max_y": 50,
+    "density": 400,
+    "vertical_size": 10,
+    "horizontal_size": 15,
+	"biomes": [
+      "hot",
+	  "ocean",
+	  "wet"
+  	]
+  }
+}

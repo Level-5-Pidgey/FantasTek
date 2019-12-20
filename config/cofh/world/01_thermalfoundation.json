@@ -1,0 +1,310 @@
+{
+	"priority": 1000000000000,
+	"populate": {
+		"copper": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "copper"
+					}
+				},
+				"material": [
+				  "minecraft:stone",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 8,
+			"min-height": 40,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"tin": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "tin"
+					}
+				},
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 7,
+			"min-height": 20,
+			"max-height": 55,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"silver": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "embers:ore_silver"
+				},
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 4,
+			"min-height": 5,
+			"max-height": 30,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"lead": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block":
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "lead"
+						},
+						"weight": 90
+					}
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 4,
+			"min-height": 10,
+			"max-height": 35,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"nickel": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "nickel"
+					}
+				},
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
+				"cluster-size": 4
+			},
+			"cluster-count": 2,
+			"min-height": 5,
+			"max-height": 20,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"aluminum": {
+			"enabled": "false",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "aluminum"
+					}
+				},
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone",
+				  "minecraft:cobblestone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 8,
+			"min-height": 40,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"copper_ocean": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "copper"
+					}
+				},
+				"material": [
+				  "minecraft:stone",
+				  "minecraft:dirt",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 4,
+			"min-height": 20,
+			"max-height": 55,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "OCEAN"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"copper_high": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "copper"
+					}
+				},
+				"material": [
+				  "minecraft:stone",
+				  "quark:elder_prismarine",
+				  "minecraft:packed_ice",
+				  "quark:biome_cobblestone",
+				  "quark:limestone",
+				  "quark:slate",
+				  "quark:jasper",
+				  "minecraft:sandstone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 8,
+			"min-height": 48,
+			"max-height": 96,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

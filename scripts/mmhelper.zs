@@ -24,5 +24,28 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 	{
 		print("Failed to add Multiblock Ore Washing Factory Recipe for " ~ ore ~ " as no ore block was found.");
 	}
+}
 
+//Chemical Ore Factory
+function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
+{
+	var oreString = "ore" ~ ore;
+	var OreBlock = oreDict.get(oreString);
+	var oreCrystal = oreDict.get("crystal" ~ ore);
+
+	if(!OreBlock.empty & !oreCrystal.empty)
+	{
+		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore, "chemical_ore_factory", 160);
+		RecipeToAdd.addItemInput(OreBlock);
+		RecipeToAdd.addGasInput("sulfuricacid", 100);
+		RecipeToAdd.addFluidInput(<liquid:water> * 200);
+		RecipeToAdd.addEnergyPerTickInput(120 * (oreTier + 1));
+
+		RecipeToAdd.addItemOutput(oreCrystal.firstItem * 5);
+		RecipeToAdd.build();
+	}
+	else
+	{
+		print("Failed to add Chemical Ore Factory Recipe for " ~ ore ~ " as no ore block or Mekanism Crystal was found.");
+	}
 }
