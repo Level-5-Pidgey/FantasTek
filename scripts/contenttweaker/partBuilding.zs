@@ -27,6 +27,19 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		ore.addDataValue("resistance", "15,15,15");
 		ore.addDataValue("harvestLevel", "1,1,2");
 		ore.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
+
+		if((!oreDict.get("ingot" ~ mat.getName()).empty) | needsIngot)
+		{
+			if(oreDict.get("crystal" ~ mat.getName()).empty)
+			{
+				//Get Mekanism Ore Processing Parts
+				mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
+			}
+			else
+			{
+				print("Mekanism Ore Processing already exists for " ~ mat.getName());
+			}
+		}
 	}
 
 	//Generate common items for materials that need them (eg completely new materials)
@@ -59,30 +72,6 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		denseOre.addDataValue("resistance", "15,15,15");
 		denseOre.addDataValue("harvestLevel", "1,1,2");
 		denseOre.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
-
-		//DELETE ME
-		print("MATERIAL INGOT OREDICT: " ~ "ingot" ~ mat.getName());
-
-		if((!oreDict.get("ingot" ~ mat.getName()).empty) | needsIngot)
-		{
-			if(oreDict.get("crystal" ~ mat.getName()).empty)
-			{
-				//Get Mekanism Ore Processing Parts
-				mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
-
-				//Create Ore Processing Slurries
-				val oreFluid = mods.contenttweaker.VanillaFactory.createFluid("slurry_" ~ mat.getUnlocalizedName(), mat.getColor());
-				val oreCleanFluid = mods.contenttweaker.VanillaFactory.createFluid("slurry_clean_" ~ mat.getUnlocalizedName(), mat.getColor());
-				oreFluid.gaseous = true;
-				oreCleanFluid.gaseous = true;
-				oreFluid.register();
-				oreCleanFluid.register();
-			}
-			else
-			{
-				print("Mekanism Ore Processing already exists for " ~ mat.getName());
-			}
-		}
 	}
 
 	//Generate sheetmetal block if needed
