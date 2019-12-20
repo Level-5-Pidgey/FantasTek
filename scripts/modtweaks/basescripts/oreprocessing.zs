@@ -559,10 +559,9 @@ function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILi
 		if(tier <= 1)
 		{
 			for ore in oreBlock.items
-			{
-				var meltingTemp = (tier + 1) * 150;
+			{	
 				//TCon Smeltery -- Tier 1 (1x)
-				mods.tconstruct.Melting.addRecipe(molten * 144, ore, meltingTemp);
+				mods.tconstruct.Melting.addRecipe(molten * 144, ore);
 
 				//Embers Melter -- Tier 1 (2x)
 				mods.embers.Melter.add(molten * 288, ore);
