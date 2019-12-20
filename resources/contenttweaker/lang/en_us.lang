@@ -2,3 +2,6 @@ contenttweaker.part.dense_plating=Dense %s Plating
 contenttweaker.part.deep_ore=Deep %s Ore
 contenttweaker.part.sheetmetal_block=%s Sheetmetal
 fluid.lubricant=Lubricant
+fluid.troll_marrow=Troll Bone Marrow
+item.contenttweaker.steel_blend.name=Crude Steel Blend
+item.contenttweaker.coke_dust.name=Coal Coke Dust

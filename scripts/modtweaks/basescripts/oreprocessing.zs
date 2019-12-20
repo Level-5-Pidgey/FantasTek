@@ -171,6 +171,41 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 		}
 
+		//Magneticraft Crushing Table -- Tier 1 (2x)
+		if(tier <= 1)
+		{
+			if(tier < 1)
+			{
+				if(!rockyChunk.empty)
+				{
+					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, rockyChunk.firstItem, true);
+				}
+				else if (!nativeCluster.empty)
+				{
+					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, nativeCluster.firstItem, true);
+				}
+				else if (!oreDust.empty)
+				{
+					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, oreDust.firstItem * 2, true);
+				}
+				else
+				{
+					print("Skipped Magneticraft Crushing Table outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+				}
+			}
+			else
+			{
+				if (!oreDust.empty)
+				{
+					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, oreDust.firstItem, true);
+				}
+				else
+				{
+					print("Skipped Magneticraft Crushing Table outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+				}
+			}
+		}
+
 		//Magneticraft Grinder -- Tier 2 (2x)
 		if(tier <= 2)
 		{
@@ -494,8 +529,9 @@ function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILi
 		{
 			for ore in oreBlock.items
 			{
+				var meltingTemp = (tier + 1) * 150;
 				//TCon Smeltery -- Tier 1 (1x)
-				mods.tconstruct.Melting.addRecipe(molten * 144, ore, (tier + 1) * 150);
+				mods.tconstruct.Melting.addRecipe(molten * 144, ore, meltingTemp);
 
 				//Embers Melter -- Tier 1 (2x)
 				mods.embers.Melter.add(molten * 288, ore);
