@@ -252,7 +252,15 @@
       "14": "ardite_dense_ore_minecraft_stone",
       "15": "cobalt_poor_ore_minecraft_netherrack"
     },
-    "14": {},
+    "14": {
+      "0": "draconium_poor_ore_minecraft_stone",
+      "1": "draconium_poor_ore_minecraft_end_stone",
+      "2": "draconium_dense_ore_minecraft_netherrack",
+      "3": "draconium_dense_ore_minecraft_end_stone",
+      "4": "draconium_dense_ore_minecraft_stone",
+      "5": "draconium_sheetmetal_block",
+      "6": "draconium_poor_ore_minecraft_netherrack"
+    },
     "15": {},
     "16": {}
   }

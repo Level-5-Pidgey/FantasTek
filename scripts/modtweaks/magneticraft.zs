@@ -3,9 +3,9 @@ print("~~~ Begin Magneticraft Init ~~~");
 
 //Disable Crushing Table and Hydraulic Press
 mods.jei.JEI.hideCategory("magneticraft.hydraulic_press");
-//mods.jei.JEI.hideCategory("magneticraft.crushing_table");
+mods.jei.JEI.hideCategory("magneticraft.crushing_table");
 mods.jei.JEI.removeAndHide(<magneticraft:hydraulic_press>);
-//mods.jei.JEI.removeAndHide(<magneticraft:crushing_table>);
+mods.jei.JEI.removeAndHide(<magneticraft:crushing_table>);
 
 //Hide Magneticraft Plates
 val magneticraftPlates =
@@ -64,18 +64,6 @@ function removeChunkSmelt(material as string)
 	}
 }
 
-function addCrushingTableRecipe(material as string)
-{
-	//Obtaining oreDicts
-	var ingot = oreDict.get("ingot" ~ material);
-	var dust = oreDict.get("dust" ~ material);
-
-	if(!ingot.empty & !dust.empty)
-	{
-		mods.magneticraft.CrushingTable.addRecipe(ing, dust.firstItem, true);
-	}
-}
-
 val oreMaterials =
 [
 	"Ardite",
@@ -108,47 +96,6 @@ val oreMaterials =
 for materialString in oreMaterials
 {
 	removeChunkSmelt(materialString);
-
-	addCrushingTableRecipe(materialString);
 }
-
-//Remove some Crushing Table Recipes
-val crushingTable =
-[
-	<magneticraft:ingots:5>,
-	<mekanism:ingot:1>,
-	<draconicevolution:draconium_ingot>,
-	<magneticraft:ingots:4>,
-	<astralsorcery:itemcraftingcomponent:1>,
-	<tconstruct:ingots:1>,
-	<thermalfoundation:material:160>,
-	<magneticraft:storage_blocks:3>,
-	<chisel:blocklead:2>,
-	<chisel:blockcopper:1>,
-	<minecraft:gold_block>,
-	<minecraft:iron_block>,
-	<contenttweaker:sub_block_holder_11:6>,
-	<mekanism:oreblock:2>,
-	<embers:ore_silver>,
-	<mekanism:oreblock>,
-	<thermalfoundation:ore:5>,
-	<thermalfoundation:ore:8>,
-	<magneticraft:ores:3>,
-	<thermalfoundation:ore:4>,
-	<magneticraft:ores:2>,
-	<thermalfoundation:ore:3>,
-	<mekanism:oreblock:1>,
-	<minecraft:gold_ore>,
-	<minecraft:iron_ore>
-] as crafttweaker.item.IItemStack[];
-
-for inputItem in crushingTable
-{
-	mods.magneticraft.CrushingTable.removeRecipe(inputItem);
-}
-
-//Add Coal Coke Crushing Recipe
-mods.magneticraft.CrushingTable.addRecipe(<thermalfoundation:material:802>, <contenttweaker:coke_dust> * 2, true);
-mods.magneticraft.CrushingTable.addRecipe(<thermalfoundation:storage_resource:1>, <contenttweaker:coke_dust> * 18, true);
 
 print("### Magneticraft Init Complete ###");

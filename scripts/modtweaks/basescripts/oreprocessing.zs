@@ -171,33 +171,49 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 		}
 
-		//Magneticraft Crushing Table -- Tier 1 (2x)
+		//AE2 Grindstone -- Tier 1 (2x)
 		if(tier <= 1)
 		{
 			if(tier < 1)
 			{
-				if(!rockyChunk.empty)
+				for ore in oreBlock.items
 				{
-					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, rockyChunk.firstItem, true);
-				}
-				else if (!nativeCluster.empty)
-				{
-					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, nativeCluster.firstItem, true);
-				}
-				else if (!oreDust.empty)
-				{
-					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, oreDust.firstItem * 2, true);
-				}
-				else
-				{
-					print("Skipped Magneticraft Crushing Table outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+					if (!nativeCluster.empty)
+					{
+						mods.appliedenergistics2.Grinder.addRecipe(nativeCluster.firstItem, ore, (tier + 1) * 4);
+					}
+					else if (!oreDust.empty)
+					{
+						if(!oreDustSmall.empty)
+						{
+							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * 1, ore, (tier + 1) * 4, oreDustSmall.firstItem * 3, 0.66, oreDustSmall.firstItem, 0.33);
+						}
+						else
+						{
+							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * 1, ore, (tier + 1) * 4);
+						}
+					}
+					else
+					{
+						print("Skipped Magneticraft Crushing Table outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+					}
 				}
 			}
 			else
 			{
 				if (!oreDust.empty)
 				{
-					mods.magneticraft.CrushingTable.addRecipe(oreBlock.firstItem, oreDust.firstItem, true);
+					for ore in oreBlock.items
+					{
+						if(!oreDustSmall.empty)
+						{
+							mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * 3, ore, (tier + 1) * 4, oreDustSmall.firstItem * 2, 0.66, oreDustSmall.firstItem, 0.33);
+						}
+						else
+						{
+							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem, ore, (tier + 1) * 4);
+						}
+					}
 				}
 				else
 				{
@@ -559,7 +575,7 @@ function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILi
 		if(tier <= 1)
 		{
 			for ore in oreBlock.items
-			{	
+			{
 				//TCon Smeltery -- Tier 1 (1x)
 				mods.tconstruct.Melting.addRecipe(molten * 144, ore);
 

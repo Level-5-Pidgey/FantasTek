@@ -141,7 +141,8 @@ val densePlateMaterials =
 	"Lumium",
 	"Signalum",
 	"Invar",
-	"Bronze"
+	"Bronze",
+	"Draconium"
 ] as string[];
 
 for plateMaterial in densePlateMaterials

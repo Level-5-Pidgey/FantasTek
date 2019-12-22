@@ -37,13 +37,13 @@ extrautils2:xu.boomereaperang
 openblocks:explosive
 randomthings:magnetic
 advancedrocketry:spacebreathing
-endercore:autosmelt
 endercore:xpboost
-enderio:witherweapon
+endercore:autosmelt
 enderio:repellent
-enderio:soulbound
+enderio:witherweapon
 enderio:shimmer
 enderio:witherarrow
+enderio:soulbound
 minecraftfuture:channeling
 minecraftfuture:impaling
 minecraftfuture:loyalty

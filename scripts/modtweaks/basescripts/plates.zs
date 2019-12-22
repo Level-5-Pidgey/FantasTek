@@ -6,6 +6,9 @@ print("~~~ Begin Plate Management Init ~~~");
 //Add compressed obsidian as a plate
 <ore:plateObsidian>.add(<mekanism:compressedobsidian>);
 
+//Add wooden plate to oreDict
+<ore:plateWood>.add(<contenttweaker:wood_plate>);
+
 val ThaumcraftPlates =
 [
 	<thaumcraft:plate>,
@@ -493,7 +496,8 @@ val PlateMaterials =
 	"Infinity" : <liquid:water>,
 	"DarkSteel" : <liquid:dark_steel>,
 	"ConductiveIron" : <liquid:conductive_iron>,
-	"Neutronium" : <liquid:water>
+	"Neutronium" : <liquid:water>,
+	"AwakenedDraconium" : <liquid:molten_awakened_draconium>
 } as ILiquidStack[string];
 
 for materialString, molten in PlateMaterials

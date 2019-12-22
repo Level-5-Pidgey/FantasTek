@@ -52,4 +52,8 @@ for ARPlate in ARPlates
 	mods.jei.JEI.hide(ARPlate);
 }
 
+//Modify Heatproof Brick Recipe
+recipes.remove(<advancedrocketry:blastbrick>);
+recipes.addShaped("heatproof_bricks", <advancedrocketry:blastbrick> * 2, [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <minecraft:magma_cream>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]]);
+
 print("### Advanced Rocketry Init Complete ###");

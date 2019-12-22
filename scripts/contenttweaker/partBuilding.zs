@@ -27,19 +27,6 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		ore.addDataValue("resistance", "15,15,15");
 		ore.addDataValue("harvestLevel", "1,1,2");
 		ore.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
-
-		if((!oreDict.get("ingot" ~ mat.getName()).empty) | needsIngot)
-		{
-			if(oreDict.get("crystal" ~ mat.getName()).empty)
-			{
-				//Get Mekanism Ore Processing Parts
-				mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
-			}
-			else
-			{
-				print("Mekanism Ore Processing already exists for " ~ mat.getName());
-			}
-		}
 	}
 
 	//Generate common items for materials that need them (eg completely new materials)
@@ -85,6 +72,22 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 
 		mat.registerPart("dense_plating");
 	}
+
+	if(needsRegularOre | needsAlternateOres)
+	{
+		if((!oreDict.get("ingot" ~ mat.getName()).empty) | needsIngot)
+		{
+			if(oreDict.get("crystal" ~ mat.getName()).empty)
+			{
+				//Get Mekanism Ore Processing Parts
+				mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
+			}
+			else
+			{
+				print("Mekanism Ore Processing already exists for " ~ mat.getName());
+			}
+		}
+	}
 }
 
 //Completely new ores that don't exist in the game files at all
@@ -125,7 +128,8 @@ var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweake
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Platinum").setColor(mods.contenttweaker.Color.fromHex("66edff")).build() : <ore:ingotPlatinum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("c7c6d8")).build() : <ore:ingotIridium>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Mithril").setColor(mods.contenttweaker.Color.fromHex("7ffacd")).build() : <ore:ingotMithril>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("cacbcc")).build() : <ore:ingotAlumnum>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("cacbcc")).build() : <ore:ingotAluminum>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Draconium").setColor(mods.contenttweaker.Color.fromHex("8c1fbf")).build() : <ore:ingotDraconium>
 	//Material : OreDictEntry
 };
 
@@ -184,7 +188,8 @@ for material, materialIngot in modded_alloys {
 //Needs:
 //Dense Plating, Sheet Metal
 var modded_Materials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Steel").setColor(mods.contenttweaker.Color.fromHex("757575")).build() : <ore:ingotSteel>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Steel").setColor(mods.contenttweaker.Color.fromHex("757575")).build() : <ore:ingotSteel>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Awakened Draconium").setColor(mods.contenttweaker.Color.fromHex("ff4917")).build() : <ore:ingotAwakenedDraconium>
 	//Material : OreDictEntry
 };
 
@@ -210,7 +215,7 @@ var vanilla_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweak
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Redstone").setColor(mods.contenttweaker.Color.fromHex("f22816")).build() : <ore:dustRedstone>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Lapis Lazuli").setColor(mods.contenttweaker.Color.fromHex("164df2")).build() : <ore:gemLapis>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Emerald").setColor(mods.contenttweaker.Color.fromHex("19d150")).build() : <ore:gemEmerald>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Coal").setColor(mods.contenttweaker.Color.fromHex("060607")).build() : <ore:coal>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Coal").setColor(mods.contenttweaker.Color.fromHex("212020")).build() : <ore:coal>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Quartz").setColor(mods.contenttweaker.Color.fromHex("ffedeb")).build() : <ore:gemQuartz>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Ardite").setColor(mods.contenttweaker.Color.fromHex("c73e0c")).build() : <ore:ingotArdite>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Cobalt").setColor(mods.contenttweaker.Color.fromHex("1882de")).build() : <ore:ingotCobalt>

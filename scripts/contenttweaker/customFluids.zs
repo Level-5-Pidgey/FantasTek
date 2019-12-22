@@ -11,4 +11,7 @@ liquidLubricant.register();
 var troll_marrow = VanillaFactory.createFluid("troll_marrow", Color.fromHex("e3dbaa"));
 troll_marrow.register();
 
+var moltenAwakenedDraconium = VanillaFactory.createFluid("molten_awakened_draconium", Color.fromHex("ff4917"));
+moltenAwakenedDraconium.register();
+
 print("### Custom Fluid Creator Init Complete ###");
