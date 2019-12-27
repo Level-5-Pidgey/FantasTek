@@ -3,7 +3,9 @@ print("~~~ Begin Dense Plate Management Init ~~~");
 
 <ore:densePlatingLapis>.add(<contenttweaker:material_part:692>); //Simplify oreDict for Lapis Lazuli Dense Plating
 <ore:blockSheetmetalLapis>.add(<contenttweaker:sub_block_holder_7:8>); //Simplify oreDict for Lapis Lazuli Sheet Metal Block
-
+<ore:ingotAwakenedDraconium>.add(<draconicevolution:draconic_ingot>);
+<ore:densePlatingAwakenedDraconium>.add(<contenttweaker:material_part:1271>);
+<ore:blockSheetmetalAwakenedDraconium>.add(<contenttweaker:sub_block_holder_14:7>);
 //Function for generating Dense Plating Recipes
 function densePlateRecipeCreate(densePlateDict as crafttweaker.item.IItemStack, craftingMaterial as string)
 {
@@ -15,15 +17,25 @@ function densePlateRecipeCreate(densePlateDict as crafttweaker.item.IItemStack, 
 
 	if (!plate.empty)
 	{
-		if (!nugget.empty)
+		if (!ingot.empty)
+		{
+			//Craft using plates and ingots
+			recipes.addShaped("densePlate_" ~ craftingMaterial, densePlateDict, [[ingot, plate, ingot], [ingot, plate, ingot], [ingot, plate, ingot]]);
+		}
+		else if (!gem.empty)
+		{
+			//Craft using plates and gems
+			recipes.addShaped("densePlate_" ~ craftingMaterial, densePlateDict, [[gem, plate, gem], [gem, plate, gem], [gem, plate, gem]]);
+		}
+		else if (!nugget.empty)
 		{
 			//Craft using plates and nuggets
-			recipes.addShaped("densePlate_" ~ craftingMaterial ~ "_plate", densePlateDict, [[nugget, plate, nugget], [nugget, plate, nugget], [nugget, plate, nugget]]);
+			recipes.addShaped("densePlate_" ~ craftingMaterial, densePlateDict, [[nugget, plate, nugget], [nugget, plate, nugget], [nugget, plate, nugget]]);
 		}
 		else
 		{
 			//Craft with plates only
-			recipes.addShaped("densePlate_" ~ craftingMaterial ~ "_plate", densePlateDict, [[null, plate, null], [plate, plate, plate], [null, plate, null]]);
+			recipes.addShaped("densePlate_" ~ craftingMaterial, densePlateDict, [[null, plate, null], [plate, plate, plate], [null, plate, null]]);
 		}
 	}
 	else if (!block.empty)
@@ -31,17 +43,17 @@ function densePlateRecipeCreate(densePlateDict as crafttweaker.item.IItemStack, 
 		if (!ingot.empty)
 		{
 			//Craft using blocks and ingots
-			recipes.addShaped("densePlate_" ~ craftingMaterial ~ "_block", densePlateDict, [[ingot, block, ingot],[ingot, null, ingot], [ingot, block, ingot]]);
+			recipes.addShaped("densePlate_" ~ craftingMaterial, densePlateDict, [[ingot, block, ingot],[ingot, null, ingot], [ingot, block, ingot]]);
 		}
 		else if (!gem.empty)
 		{
 			//Craft using blocks and ingots
-			recipes.addShaped("densePlate_" ~ craftingMaterial ~ "_block", densePlateDict, [[gem, block, gem],[gem, null, gem], [gem, block, gem]]);
+			recipes.addShaped("densePlate_" ~ craftingMaterial, densePlateDict, [[gem, block, gem],[gem, null, gem], [gem, block, gem]]);
 		}
 		else
 		{
 			//Craft using blocks
-			recipes.addShaped("densePlate_" ~ craftingMaterial ~ "_block", densePlateDict, [[null, block, null], [block, null, block], [null, block, null]]);
+			recipes.addShaped("densePlate_" ~ craftingMaterial, densePlateDict, [[null, block, null], [block, null, block], [null, block, null]]);
 		}
 	}
 	else
@@ -142,7 +154,8 @@ val densePlateMaterials =
 	"Signalum",
 	"Invar",
 	"Bronze",
-	"Draconium"
+	"Draconium",
+	"AwakenedDraconium"
 ] as string[];
 
 for plateMaterial in densePlateMaterials

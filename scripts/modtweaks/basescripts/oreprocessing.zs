@@ -608,7 +608,9 @@ function markwithProcessingTier(craftingMaterial as string, tier as int)
 			oreDict.get("dustSmall" ~ craftingMaterial),
 			oreDict.get("rockyChunk" ~ craftingMaterial),
 			oreDict.get("chunk" ~ craftingMaterial),
-			oreDict.get("dustDirty" ~ craftingMaterial)
+			oreDict.get("dustDirty" ~ craftingMaterial),
+			oreDict.get("nugget" ~ craftingMaterial),
+			oreDict.get("block" ~ craftingMaterial)
 		] as crafttweaker.oredict.IOreDictEntry[];
 
 		for oreDict in OreDicts

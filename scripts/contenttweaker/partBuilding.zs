@@ -189,7 +189,7 @@ for material, materialIngot in modded_alloys {
 //Dense Plating, Sheet Metal
 var modded_Materials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Steel").setColor(mods.contenttweaker.Color.fromHex("757575")).build() : <ore:ingotSteel>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Awakened Draconium").setColor(mods.contenttweaker.Color.fromHex("ff4917")).build() : <ore:ingotAwakenedDraconium>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Awakened Draconium").setColor(mods.contenttweaker.Color.fromHex("ff4917")).build() : <ore:ingotDraconiumAwakened>
 	//Material : OreDictEntry
 };
 

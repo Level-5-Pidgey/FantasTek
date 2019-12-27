@@ -7,7 +7,6 @@ import mods.contenttweaker.Commands;
 
 //Life Ingot
 var lifeingot = VanillaFactory.createItem("lifeingot");
-lifeingot.maxStackSize = 64;
 lifeingot.rarity = "UNCOMMON";
 lifeingot.register();
 
@@ -22,3 +21,9 @@ steelBlend.register();
 //Wooden Plate
 var woodPlate = VanillaFactory.createItem("wood_plate");
 woodPlate.register();
+
+//Strange Treasure
+var strangeTreasure = VanillaFactory.createItem("strange_treasure");
+strangeTreasure.maxStackSize = 1;
+strangeTreasure.rarity = "RARE";
+strangeTreasure.register();

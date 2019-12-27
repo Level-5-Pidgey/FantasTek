@@ -33,4 +33,8 @@ for materialString, oreValue in scripts.modtweaks.basescripts.oreprocessing.OreT
 	}
 }
 
+//Change Tinkers Hammer Recipe
+recipes.remove(<embers:tinker_hammer>);
+recipes.addShaped("tinker_hammer", <embers:tinker_hammer>.withTag({}), [[null, <ore:ingotIron>, <ore:obsidian>],[null, <ore:stickWood>, <ore:ingotIron>], [<ore:stickWood>, null, null]]);
+
 print("### Embers Init Complete ###");

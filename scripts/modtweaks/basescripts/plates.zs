@@ -497,7 +497,7 @@ val PlateMaterials =
 	"DarkSteel" : <liquid:dark_steel>,
 	"ConductiveIron" : <liquid:conductive_iron>,
 	"Neutronium" : <liquid:water>,
-	"AwakenedDraconium" : <liquid:molten_awakened_draconium>
+	"DraconiumAwakened" : <liquid:molten_awakened_draconium>
 } as ILiquidStack[string];
 
 for materialString, molten in PlateMaterials

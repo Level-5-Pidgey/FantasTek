@@ -55,4 +55,13 @@ for JAOPCAPlate in JAOPCAPlates
 	mods.jei.JEI.hide(JAOPCAPlate);
 }
 
+//Make Coal Nuggets burn
+if(!<ore:nuggetCoal>.empty)
+{
+	for coal in <ore:nuggetCoal>.items
+	{
+		furnace.setFuel(coal, 200);
+		scripts.helpers.AddTooltip(coal, ["Can be used in a furnace to smelt 1 single item!"]);
+	}
+}
 print("### JAOPCA Init Complete ###");
