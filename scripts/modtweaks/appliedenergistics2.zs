@@ -73,4 +73,5 @@ for obsidianBlock in <ore:obsidian>.items
 {
   mods.appliedenergistics2.Grinder.addRecipe(<ore:dustObsidian>.firstItem, obsidianBlock, 6);
 }
+
 print("### AE2 Init Complete ###");

@@ -1,7 +1,7 @@
 print("~~~ Begin Compact Storage Init ~~~");
 
 //Change Chest Builder Recipe
-recipes.remove(<compactstorage:chestbuilder>);
+recipes.removeByRecipeName("compactstorage:chest_builder");
 recipes.addShaped("chest_builder", <compactstorage:chestbuilder>, [[<ore:ingotIron>, null, <ore:ingotIron>], [<ore:plateIron>, <ore:workbench>, <ore:plateIron>], [<ore:ingotIron>, <ore:plateDiamond>, <ore:ingotIron>]]);
 
 //Hide Drum and Barrel

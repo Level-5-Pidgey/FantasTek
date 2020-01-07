@@ -174,44 +174,23 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		//AE2 Grindstone -- Tier 1 (2x)
 		if(tier <= 1)
 		{
-			if(tier < 1)
+			for ore in oreBlock.items
 			{
-				for ore in oreBlock.items
+				if (!nativeCluster.empty & tier < 1)
 				{
-					if (!nativeCluster.empty)
-					{
-						mods.appliedenergistics2.Grinder.addRecipe(nativeCluster.firstItem, ore, (tier + 1) * 4);
-					}
-					else if (!oreDust.empty)
-					{
-						if(!oreDustSmall.empty)
-						{
-							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * 1, ore, (tier + 1) * 4, oreDustSmall.firstItem * 3, 0.66, oreDustSmall.firstItem, 0.33);
-						}
-						else
-						{
-							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * 1, ore, (tier + 1) * 4);
-						}
-					}
-					else
-					{
-						print("Skipped Magneticraft Crushing Table outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
-					}
+					mods.appliedenergistics2.Grinder.addRecipe(nativeCluster.firstItem, ore, (tier + 1) * 4);
 				}
-			}
-			else
-			{
-				if (!oreDust.empty)
+				else if (!oreDust.empty)
 				{
 					for ore in oreBlock.items
 					{
 						if(!oreDustSmall.empty)
 						{
-							mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * 3, ore, (tier + 1) * 4, oreDustSmall.firstItem * 2, 0.66, oreDustSmall.firstItem, 0.33);
+							mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (3 * (2 - tier)), ore, (tier + 1) * 4, oreDustSmall.firstItem * (3 - tier), 0.66, oreDustSmall.firstItem  * (2 - tier), 0.33);
 						}
 						else
 						{
-							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem, ore, (tier + 1) * 4);
+							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * (2 - tier), ore, (tier + 1) * 4);
 						}
 					}
 				}
@@ -489,36 +468,6 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				if(!oreShard.empty)
 				{
 					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreShard.firstItem * 4);
-
-					//Add other mekanism oreprocessing for compat
-					if(!oreCrystal.empty)
-					{
-						mods.mekanism.chemical.injection.addRecipe(oreCrystal.firstItem, <gas:hydrogenchloride> * 200, oreShard.firstItem);
-
-						if(!oreClump.empty)
-						{
-							mods.mekanism.purification.addRecipe(oreShard.firstItem, <gas:oxygen> * 200, oreClump.firstItem);
-
-							if(!oreDirtyDust.empty)
-							{
-								mods.mekanism.crusher.addRecipe(oreClump.firstItem, oreDirtyDust.firstItem);
-
-								if(!oreDust.empty)
-								{
-									mods.mekanism.enrichment.addRecipe(oreDirtyDust.firstItem, oreDust.firstItem);
-								}
-							}
-							else if (!oreDict.get("dustDirty" ~ craftingMaterial).empty)
-							{
-								mods.mekanism.crusher.addRecipe(oreClump.firstItem, oreDict.get("dustDirty" ~ craftingMaterial).firstItem);
-
-								if(!oreDust.empty)
-								{
-									mods.mekanism.enrichment.addRecipe(oreDict.get("dustDirty" ~ craftingMaterial).firstItem, oreDust.firstItem);
-								}
-							}
-						}
-					}
 				}
 				else if(!oreGem.empty)
 				{
@@ -552,7 +501,6 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				print("Skipped Mekanism Chemical Injection Chamber outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
 			}
-
 		}
 
 		//Mekanism Chemical Dissolution Chamber -- Tier 7 (5x)
@@ -560,6 +508,36 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		{
 			//Use method in mmhelper.zs file.
 			scripts.mmhelper.ChemicalOreFactoryRecipe(craftingMaterial, tier);
+
+			//Add other mekanism oreprocessing for compat
+			if(!oreCrystal.empty)
+			{
+				mods.mekanism.chemical.injection.addRecipe(oreCrystal.firstItem, <gas:hydrogenchloride> * 200, oreShard.firstItem);
+
+				if(!oreClump.empty)
+				{
+					mods.mekanism.purification.addRecipe(oreShard.firstItem, <gas:oxygen> * 200, oreClump.firstItem);
+
+					if(!oreDirtyDust.empty)
+					{
+						mods.mekanism.crusher.addRecipe(oreClump.firstItem, oreDirtyDust.firstItem);
+
+						if(!oreDust.empty)
+						{
+							mods.mekanism.enrichment.addRecipe(oreDirtyDust.firstItem, oreDust.firstItem);
+						}
+					}
+					else if (!oreDict.get("dustDirty" ~ craftingMaterial).empty)
+					{
+						mods.mekanism.crusher.addRecipe(oreClump.firstItem, oreDict.get("dustDirty" ~ craftingMaterial).firstItem);
+
+						if(!oreDust.empty)
+						{
+							mods.mekanism.enrichment.addRecipe(oreDict.get("dustDirty" ~ craftingMaterial).firstItem, oreDust.firstItem);
+						}
+					}
+				}
+			}
 		}
 
 		//Further ore processing goes here

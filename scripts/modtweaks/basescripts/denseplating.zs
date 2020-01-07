@@ -6,6 +6,7 @@ print("~~~ Begin Dense Plate Management Init ~~~");
 <ore:ingotAwakenedDraconium>.add(<draconicevolution:draconic_ingot>);
 <ore:densePlatingAwakenedDraconium>.add(<contenttweaker:material_part:1271>);
 <ore:blockSheetmetalAwakenedDraconium>.add(<contenttweaker:sub_block_holder_14:7>);
+<ore:blockAwakenedDraconium>.add(<draconicevolution:draconic_block>);
 //Function for generating Dense Plating Recipes
 function densePlateRecipeCreate(densePlateDict as crafttweaker.item.IItemStack, craftingMaterial as string)
 {
@@ -155,7 +156,8 @@ val densePlateMaterials =
 	"Invar",
 	"Bronze",
 	"Draconium",
-	"AwakenedDraconium"
+	"AwakenedDraconium",
+	"Titanium"
 ] as string[];
 
 for plateMaterial in densePlateMaterials

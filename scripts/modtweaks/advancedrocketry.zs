@@ -58,6 +58,6 @@ recipes.addShaped("heatproof_bricks", <advancedrocketry:blastbrick> * 2, [[<tcon
 
 //Modify Small Plate Presser Recipe
 recipes.remove(<advancedrocketry:platepress>);
-recipes.addShaped("small_plate_presser", <advancedrocketry:platepress>, [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:ingotIron>, null]]);
+recipes.addShaped("small_plate_presser", <advancedrocketry:platepress>, [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]]);
 
 print("### Advanced Rocketry Init Complete ###");

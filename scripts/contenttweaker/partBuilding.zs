@@ -32,7 +32,20 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 	//Generate common items for materials that need them (eg completely new materials)
 	if(needsCommonparts)
 	{
-		mat.registerParts(["gear", "plate", "dust"] as string[]);
+		if(oreDict.get("gear" ~ mat.getName()).empty)
+		{
+			mat.registerPart("gear");
+		}
+
+		if(oreDict.get("dust" ~ mat.getName()).empty)
+		{
+			mat.registerPart("dust");
+		}
+
+		if(oreDict.get("plate" ~ mat.getName()).empty)
+		{
+			mat.registerPart("plate");
+		}
 	}
 
 	//Generate ingots for parts that do not have ingots
@@ -129,7 +142,9 @@ var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweake
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Iridium").setColor(mods.contenttweaker.Color.fromHex("c7c6d8")).build() : <ore:ingotIridium>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Mithril").setColor(mods.contenttweaker.Color.fromHex("7ffacd")).build() : <ore:ingotMithril>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("cacbcc")).build() : <ore:ingotAluminum>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Draconium").setColor(mods.contenttweaker.Color.fromHex("8c1fbf")).build() : <ore:ingotDraconium>
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Draconium").setColor(mods.contenttweaker.Color.fromHex("8c1fbf")).build() : <ore:ingotDraconium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Titanium").setColor(mods.contenttweaker.Color.fromHex("b2669e")).build() : <ore:ingotTitanium>,
+	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Dilithium").setColor(mods.contenttweaker.Color.fromHex("ddcecb")).build() : <ore:gemDilithium>
 	//Material : OreDictEntry
 };
 

@@ -105,6 +105,10 @@ astralsorcery:entityliquidspark
 astralsorcery:entityobservatoryhelper
 astralsorcery:entityshootingstar
 astralsorcery:entityitemdamageresistant
+quark:flat_item_frame
+quark:leash_knot
+quark:colored_item_frame
+quark:glass_item_frame
 quark:pickarang
 quark:arrow_ender
 quark:arrow_explosive
@@ -112,6 +116,8 @@ quark:arrow_torch
 quark:dragon_breath_bottle
 quark:soul_powder
 quark:parrot_egg
+quark:seat
+quark:gravisand
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -119,12 +125,6 @@ quark:dweller
 quark:ashen
 quark:pirate
 quark:wraith
-quark:gravisand
-quark:seat
-quark:flat_item_frame
-quark:leash_knot
-quark:colored_item_frame
-quark:glass_item_frame
 quark:chest_passenger
 avaritia:endest_pearl
 avaritia:gaping_void
@@ -423,9 +423,9 @@ mutantbeasts:spider_pig
 mutantbeasts:throwable_block
 thaumicperiphery:magic_arrow
 thermaldynamics:transport
+forestry:butterflyge
 forestry:cart.beehouse
 forestry:cart.apiary
-forestry:butterflyge
 creativecore:sit
 littletiles:sizetnt
 littletiles:dooranimation

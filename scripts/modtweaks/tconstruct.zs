@@ -155,4 +155,8 @@ for materialString, molten in chunkMaterials
 //Nerf Demonic Metal Damage
 <ticmat:xu_demonic_metal>.attackHead = 5.7;
 
+//Change Pattern Recipe
+recipes.remove(<tconstruct:pattern>);
+recipes.addShaped("pattern", <tconstruct:pattern> * 4, [[<ore:stickWood>, <ore:plateWood>], [<ore:plateWood>, <ore:stickWood>]]);
+
 print("### TConstruct Init Complete ###");

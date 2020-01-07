@@ -3,9 +3,6 @@ import crafttweaker.liquid.ILiquidStack;
 
 print("~~~ Begin Plate Management Init ~~~");
 
-//Add compressed obsidian as a plate
-<ore:plateObsidian>.add(<mekanism:compressedobsidian>);
-
 //Add wooden plate to oreDict
 <ore:plateWood>.add(<contenttweaker:wood_plate>);
 
