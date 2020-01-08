@@ -67,6 +67,10 @@ for item in StageLessItems
 
 //Stage Liquid Starlight
 mods.ItemStages.stageLiquid(stageName, <liquid:astralsorcery.liquidstarlight>);
+mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_fire_crystal>);
+mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_water_crystal>);
+mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_earth_crystal>);
+mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_air_crystal>);
 
 //Stage Astral Sorcery Enchantments
 mods.ItemStages.stageEnchant(stageName, <enchantment:astralsorcery:enchantment.as.smelting>);
@@ -74,5 +78,11 @@ mods.ItemStages.stageEnchant(stageName, <enchantment:astralsorcery:enchantment.a
 
 //Stage Parchment Crafting
 mods.recipestages.Recipes.setRecipeStage(stageName, <astralsorcery:itemcraftingcomponent:5>);
+
+//Stage Elemental Crystals
+mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_air>);
+mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_water>);
+mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_fire>);
+mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_earth>);
 
 print("### Stage 1 Astral Sorcery Complete ###");

@@ -107,7 +107,10 @@ val denseAndPoorOresList =
 	"Lapis",
 	"Emerald",
 	"Coal",
-	"Quartz"
+	"Quartz",
+	"Titanium",
+	"Dilithium",
+	"Draconium"
 ] as string[];
 
 for ore in denseAndPoorOresList

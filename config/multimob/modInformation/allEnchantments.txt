@@ -40,10 +40,10 @@ advancedrocketry:spacebreathing
 endercore:xpboost
 endercore:autosmelt
 enderio:witherweapon
-enderio:soulbound
+enderio:witherarrow
 enderio:shimmer
 enderio:repellent
-enderio:witherarrow
+enderio:soulbound
 minecraftfuture:channeling
 minecraftfuture:impaling
 minecraftfuture:loyalty

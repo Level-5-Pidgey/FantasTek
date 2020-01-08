@@ -8,6 +8,7 @@ mods.tconstruct.Alloy.removeRecipe(<liquid:energetic_alloy>);
 mods.tconstruct.Alloy.addRecipe(<liquid:energetic_alloy> * 72, [<liquid:redstone> * 50, <liquid:glowstone> * 125, <liquid:electrum> * 72]);
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:1>);
 mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_ingot:1>, [<ore:dustRedstone>, <ore:ingotElectrum>, <ore:dustGlowstone>], 10000);
+
 //Remove power gen options
 val enderIOGenerators =
 [
@@ -39,4 +40,9 @@ for category in enderIOCategories
 	mods.jei.JEI.hideCategory(category);
 }
 
+//Remove Dark Steel Crafting Recipes
+mods.tconstruct.Alloy.removeRecipe(<liquid:dark_steel>);
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:6>);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:ingotSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
 print("### EnderIO Init Complete ###");

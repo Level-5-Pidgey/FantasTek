@@ -260,9 +260,24 @@
       "4": "draconium_dense_ore_minecraft_stone",
       "5": "draconium_sheetmetal_block",
       "6": "draconium_poor_ore_minecraft_netherrack",
-      "7": "awakened_draconium_sheetmetal_block"
+      "7": "awakened_draconium_sheetmetal_block",
+      "8": "dilithium_dense_ore_minecraft_stone",
+      "9": "dilithium_dense_ore_minecraft_end_stone",
+      "10": "dilithium_sheetmetal_block",
+      "11": "titanium_sheetmetal_block",
+      "12": "titanium_dense_ore_minecraft_netherrack",
+      "13": "titanium_dense_ore_minecraft_stone",
+      "14": "dilithium_poor_ore_minecraft_stone",
+      "15": "dilithium_poor_ore_minecraft_netherrack"
     },
-    "15": {},
+    "15": {
+      "0": "dilithium_dense_ore_minecraft_netherrack",
+      "1": "titanium_dense_ore_minecraft_end_stone",
+      "2": "dilithium_poor_ore_minecraft_end_stone",
+      "3": "titanium_poor_ore_minecraft_end_stone",
+      "4": "titanium_poor_ore_minecraft_netherrack",
+      "5": "titanium_poor_ore_minecraft_stone"
+    },
     "16": {}
   }
 }

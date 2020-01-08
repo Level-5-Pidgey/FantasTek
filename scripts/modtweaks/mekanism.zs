@@ -31,6 +31,7 @@ val MekanismPaxels = [
 for paxel in MekanismPaxels
 {
 	paxel.maxDamage = paxel.maxDamage * 2 / 3;
-	scripts.helpers.AddTooltip(paxel, ["Paxels are usable as a Pickaxe, Shovel and Axe at once, but have a 33% durability penalty."]);
+	scripts.helpers.AddTooltip(paxel, ["Paxels are usable as a Pickaxe, Shovel", "and Axe at once, but have a 33% durability penalty."]);
 }
+
 print("### Mekanism Init Complete ###");

@@ -79,4 +79,47 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminator", <
  <astralsorcery:itemusabledust>, <ore:blockglowstone>, <astralsorcery:itemusabledust>
 ]);
 
+//Astral Sorcery -- Add sooty marble chiselability
+mods.chisel.Carving.addGroup("sootyMarble");
+val sootyMarbles =
+[
+	<astralsorcery:blockblackmarble>,
+	<astralsorcery:blockblackmarble:1>,
+	<astralsorcery:blockblackmarble:2>,
+	<astralsorcery:blockblackmarble:3>,
+	<astralsorcery:blockblackmarble:4>,
+	<astralsorcery:blockblackmarble:5>,
+	<astralsorcery:blockblackmarble:6>
+] as crafttweaker.item.IItemStack[];
+
+for item in sootyMarbles {
+	mods.chisel.Carving.addVariation("sootyMarble", item);
+}
+
+//Add elemental crystal crafting
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_air", <contenttweaker:astral_crystal_air>, 200, 80,
+[
+ null, <ore:feather>, null,
+ <ore:dyeGray>, mods.astralsorcery.Utils.getCrystalORIngredient(false, false), <ore:string>,
+ null, <ore:blockGlassColorless>, null
+]); //Air
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_fire", <contenttweaker:astral_crystal_fire>, 200, 80,
+[
+ null, <ore:cropNetherWart>, null,
+ <ore:dyeOrange>, mods.astralsorcery.Utils.getCrystalORIngredient(false, false), <ore:ingotBrickNether>,
+ null, <ore:gunpowder>, null
+]); //Fire
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_water", <contenttweaker:astral_crystal_water>, 200, 80,
+[
+ null, <contenttweaker:prismarine_nugget>, null,
+ <ore:dyeLightBlue>, mods.astralsorcery.Utils.getCrystalORIngredient(false, false), <ore:sugarcane>,
+ null, <ore:gemLapis>, null
+]); //Water
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_earth", <contenttweaker:astral_crystal_earth>, 200, 80,
+[
+ null, <ore:obsidian>, null,
+ <ore:dyeLime>, mods.astralsorcery.Utils.getCrystalORIngredient(false, false), <ore:cropWheat>,
+ null, <ore:treeLeaves>, null
+]); //Earth
+
 print("### Astral Sorcery Init Complete ###");

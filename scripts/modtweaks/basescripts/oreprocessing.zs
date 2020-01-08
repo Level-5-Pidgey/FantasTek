@@ -176,17 +176,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		{
 			for ore in oreBlock.items
 			{
-				if (!nativeCluster.empty & tier < 1)
-				{
-					mods.appliedenergistics2.Grinder.addRecipe(nativeCluster.firstItem, ore, (tier + 1) * 4);
-				}
-				else if (!oreDust.empty)
+				if (!oreDust.empty)
 				{
 					for ore in oreBlock.items
 					{
 						if(!oreDustSmall.empty)
 						{
-							mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (3 * (2 - tier)), ore, (tier + 1) * 4, oreDustSmall.firstItem * (3 - tier), 0.66, oreDustSmall.firstItem  * (2 - tier), 0.33);
+							mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (3 * (3 - tier)), ore, (tier + 1) * 4, oreDustSmall.firstItem * (4 - tier), 0.66, oreDustSmall.firstItem  * (2 - tier), 0.33);
 						}
 						else
 						{
@@ -510,7 +506,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			scripts.mmhelper.ChemicalOreFactoryRecipe(craftingMaterial, tier);
 
 			//Add other mekanism oreprocessing for compat
-			if(!oreCrystal.empty)
+			if(!oreCrystal.empty & !oreShard.empty)
 			{
 				mods.mekanism.chemical.injection.addRecipe(oreCrystal.firstItem, <gas:hydrogenchloride> * 200, oreShard.firstItem);
 
@@ -555,7 +551,7 @@ function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILi
 			for ore in oreBlock.items
 			{
 				//TCon Smeltery -- Tier 1 (1x)
-				mods.tconstruct.Melting.addRecipe(molten * 144, ore);
+				mods.tconstruct.Melting.addRecipe(molten * ((2 - tier) * 144), ore);
 
 				//Embers Melter -- Tier 1 (2x)
 				mods.embers.Melter.add(molten * 288, ore);

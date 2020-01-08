@@ -353,36 +353,6 @@
 				"value": [-1]
 			}
 		},
-		"nether_mithril": {
-			"distribution": "uniform",
-			"generator": {
-				"type": "cluster",
-				"block": [
-						{
-							"name": "contenttweaker:sub_block_holder_6",
-							"metadata": 7,
-							"weight": 33
-						},
-						{
-							"name": "contenttweaker:sub_block_holder_8",
-							"metadata": 1,
-							"weight": 66
-						}
-				],
-				"material": "minecraft:netherrack",
-				"cluster-size": 12,
-			},
-			"cluster-count": 10,
-			"chunk-chance": 7,
-			"min-height": 15,
-			"max-height": 200,
-			"retrogen": false,
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [-1]
-			}
-		},
 		"nether_uranium": {
 			"distribution": "uniform",
 			"generator": {

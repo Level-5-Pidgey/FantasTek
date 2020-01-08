@@ -98,39 +98,6 @@
 				"value": [-11325]
 			}
 		},
-		"deep_dark_mithril": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": {
-					"name": "thermalfoundation:ore",
-					"metadata": 8
-				},
-				"material": [
-				  "minecraft:stone",
-				  "minecraft:dirt",
-				  "quark:elder_prismarine",
-				  "minecraft:packed_ice",
-				  "quark:biome_cobblestone",
-				  "quark:limestone",
-				  "quark:slate",
-				  "quark:jasper",
-				  "minecraft:sandstone",
-				  "minecraft:cobblestone"
-				],
-				"cluster-size": 15
-			},
-			"cluster-count": 2,
-			"chunk-chance": 2,
-			"min-height": 15,
-			"max-height": 250,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [-11325]
-			}
-		},
 		"deep_dark_tungsten": {
 			"distribution": "uniform",
 			"generator": {

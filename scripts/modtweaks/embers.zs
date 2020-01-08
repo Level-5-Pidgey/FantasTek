@@ -37,4 +37,7 @@ for materialString, oreValue in scripts.modtweaks.basescripts.oreprocessing.OreT
 recipes.remove(<embers:tinker_hammer>);
 recipes.addShaped("tinker_hammer", <embers:tinker_hammer>.withTag({}), [[null, <ore:ingotIron>, <ore:obsidian>],[null, <ore:stickWood>, <ore:ingotIron>], [<ore:stickWood>, null, null]]);
 
+//Add Tooltip for Tinker's Hammer.
+scripts.helpers.AddTooltip(<embers:tinker_hammer>, ["Tinkers Hammers can be used to craft plates using ingots.", "They can also be used to crush most ingots into dusts."]);
+
 print("### Embers Init Complete ###");

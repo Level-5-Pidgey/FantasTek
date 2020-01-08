@@ -12,4 +12,12 @@ for wood in <ore:logWood>.items
 	mods.advancedrocketry.PlatePresser.addRecipe(<contenttweaker:wood_plate> * 2, wood);
 }
 
+//Add Prismarine Shard Crafting
+for prismarine in <ore:prismarine>.items
+{
+	mods.advancedrocketry.PlatePresser.addRecipe(<contenttweaker:prismarine_nugget> * 16, prismarine);
+	scripts.helpers.AddTooltip(prismarine, ["Prismarine can be found in Ocean Monuments,", "or obtained by mining Prismarine Boulders", "found on the seabed."]);
+}
+recipes.addShapeless("prismarine_shards", <contenttweaker:prismarine_nugget> * 2, [<embers:tinker_hammer>, <ore:shardPrismarine>]);
+
 print("### ContentTweaker recipes Init Complete ###");

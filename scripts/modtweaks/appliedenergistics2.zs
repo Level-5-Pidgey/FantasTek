@@ -61,7 +61,7 @@ for cokeBlock in <ore:blockFuelCoke>.items
 
 //Quartz Grinstone Block
 recipes.remove(<appliedenergistics2:grindstone>);
-recipes.addShaped("grindstone", <appliedenergistics2:grindstone>, [[<ore:cobblestone>, <ore:stickWood>, <ore:cobblestone>], [<ore:cobblestone>, <ore:plateQuartz>, <ore:cobblestone>], [<ore:cobblestone>, <ore:densePlatingIron>, <ore:cobblestone>]]);
+recipes.addShaped("grindstone", <appliedenergistics2:grindstone>, [[<ore:cobblestone>, <ore:stickWood>, <ore:cobblestone>], [<ore:cobblestone>, <ore:plateQuartz>, <ore:cobblestone>], [<ore:cobblestone>, <ore:ingotSteel>, <ore:cobblestone>]]);
 
 //Grindstone Crankshaft
 recipes.remove(<appliedenergistics2:crank>);
