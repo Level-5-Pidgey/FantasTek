@@ -15,28 +15,28 @@ mods.tconstruct.Casting.addTableRecipe(<modularmachinery:itemmodularium>, <tcons
 //List of ores to change processing rules for
 var MachineParts1 =
 {
-	0 : <contenttweaker:wood_plate>,
-	1 : <extendedcrafting:material>,
-	2 : <contenttweaker:material_part:662>, //Steel Plating
-	3 : <contenttweaker:material_part:889>,	//Redstone Alloy Plating
-	4 : <enderio:block_reinforced_obsidian>,
-	5 : <ore:plateDiamond>.firstItem, //PLACEHOLDER
-	6 : <ore:plateEmerald>.firstItem, //PLACEHOLDER
-	7 : <ore:plateElectrum>.firstItem, //PLACEHOLDER
-	8 : <ore:plateElectrumFlux>.firstItem //PLACEHOLDER
+	1 : <contenttweaker:wood_plate>,
+	2 : <extendedcrafting:material>,
+	3 : <contenttweaker:material_part:662>, //Steel Plating
+	4 : <contenttweaker:material_part:889>,	//Redstone Alloy Plating
+	5 : <enderio:block_reinforced_obsidian>,
+	6 : <ore:plateDiamond>.firstItem, //PLACEHOLDER
+	7 : <ore:plateEmerald>.firstItem, //PLACEHOLDER
+	8 : <ore:plateElectrum>.firstItem, //PLACEHOLDER
+	9 : <ore:plateElectrumFlux>.firstItem //PLACEHOLDER
 } as IItemStack[int];
 
 var MachineParts2 =
 {
-	0 : <thermalfoundation:material:32>, //Iron Plate
-	1 : <thermalfoundation:material:33>, //Gold Plate
-	2 : <thermalfoundation:material:26>, //Diamond Gear
-	3 : <minecraft:redstone_block>,
-	4 : <contenttweaker:material_part:945>, //Dark Steel Plate
-	5 : <ore:plateDiamond>.firstItem, //PLACEHOLDER
-	6 : <ore:plateEmerald>.firstItem, //PLACEHOLDER
-	7 : <ore:plateElectrum>.firstItem, //PLACEHOLDER
-	8 : <ore:plateElectrumFlux>.firstItem //PLACEHOLDER
+	1 : <thermalfoundation:material:32>, //Iron Plate
+	2 : <thermalfoundation:material:33>, //Gold Plate
+	3 : <thermalfoundation:material:26>, //Diamond Gear
+	4 : <minecraft:redstone_block>,
+	5 : <contenttweaker:material_part:945>, //Dark Steel Plate
+	6 : <ore:plateDiamond>.firstItem, //PLACEHOLDER
+	7 : <ore:plateEmerald>.firstItem, //PLACEHOLDER
+	8 : <ore:plateElectrum>.firstItem, //PLACEHOLDER
+	9 : <ore:plateElectrumFlux>.firstItem //PLACEHOLDER
 } as IItemStack[int];
 
 //Hatch Crafting Changes
@@ -144,7 +144,7 @@ var ItemOutput =
 	7 : <modularmachinery:blockoutputbus:6>
 } as IItemStack[int];
 
-for i in 1 .. 8
+for i in 1 .. 9
 {
 	var j = i - 1;
 
@@ -163,9 +163,9 @@ for i in 1 .. 8
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 
 	//Fluid Input Crafting
-	recipes.addShaped(FluidOutput[i].name, FluidOutput[i], [
+	recipes.addShaped(FluidInput[i].name, FluidInput[i], [
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
-	[MachineParts2[i], FluidOutput[j], MachineParts2[i]],
+	[MachineParts2[i], FluidInput[j], MachineParts2[i]],
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 
 	//Fluid Output Crafting
@@ -175,7 +175,7 @@ for i in 1 .. 8
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 }
 
-for i in 1 .. 7
+for i in 1 .. 8
 {
 	var j = i - 1;
 	//Item Input Crafting
@@ -195,13 +195,13 @@ for i in 1 .. 7
 //Machine Controller
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcontroller>, [
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
-	[<ore:blockGlassColorless>, scripts.helpers.BotaniaT1Runes, <ore:blockGlassColorless>],
+	[<ore:blockGlassColorless>, scripts.helpers.GetBotaniaCraftingMaterials(1), <ore:blockGlassColorless>],
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
 ]);
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcontroller>, [
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
-	[<ore:blockGlassColorless>, scripts.helpers.AstralT1Crystals, <ore:blockGlassColorless>],
+	[<ore:blockGlassColorless>, scripts.helpers.GetAstralCraftingMaterials(1), <ore:blockGlassColorless>],
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
 ]);
 

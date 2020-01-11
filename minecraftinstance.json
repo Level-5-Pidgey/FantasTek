@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-01-08T03:25:34.0238347Z",
+  "lastPlayed": "2020-01-10T23:15:45.3425523Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -7709,7 +7709,7 @@
       "dateInstalled": "2019-12-13T01:14:26.9138408Z",
       "dateUpdated": "2018-12-13T01:14:26.9138408Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17595,14 +17595,14 @@
       "addonID": 273279,
       "gameInstanceID": "42fe5f96-2254-4be8-8fbf-95780ce809b2",
       "installedFile": {
-        "id": 2458392,
-        "displayName": "antighost-1.12-forge14.21.1.2387-1.1.jar",
-        "fileName": "antighost-1.12-forge14.21.1.2387-1.1.jar",
-        "fileDate": "2017-07-31T12:18:15.933Z",
-        "fileLength": 7391,
+        "id": 2856128,
+        "displayName": "antighost-1.12-forge14.21.1.2387-1.1.1.jar",
+        "fileName": "antighost-1.12-forge14.21.1.2387-1.1.1.jar",
+        "fileDate": "2020-01-07T11:18:44.293Z",
+        "fileLength": 142727,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2458/392/antighost-1.12-forge14.21.1.2387-1.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2856/128/antighost-1.12-forge14.21.1.2387-1.1.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -17610,69 +17610,56 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2464251221,
-            "type": 3
+            "fingerprint": 3066657661,
+            "type": 0
           },
           {
             "foldername": "de",
-            "fingerprint": 168011659,
-            "type": 3
+            "fingerprint": 467380332,
+            "type": 0
+          },
+          {
+            "foldername": "Antighost.xcf",
+            "fingerprint": 4207191792,
+            "type": 0
+          },
+          {
+            "foldername": "Antighost.png",
+            "fingerprint": 3380568324,
+            "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 128807176,
-            "type": 3
+            "fingerprint": 52477492,
+            "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 4012826996,
-            "type": 3
+            "fingerprint": 3638587692,
+            "type": 0
           }
         ],
-        "packageFingerprint": 813295039,
+        "packageFingerprint": 2590580451,
         "gameVersion": [
           "1.12",
           "1.12.1",
+          "Forge",
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012",
-            "gameVersion": "1.12",
-            "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000001",
-            "gameVersion": "1.12.1",
-            "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
-        "isCompatibleWithClient": true,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 75525,
-        "projectId": 273279,
-        "packageFingerprintId": 194141305,
-        "gameVersionDateReleased": "2017-06-07T05:00:00Z",
-        "gameVersionMappingId": 1398674,
-        "gameVersionId": 6580,
-        "gameId": 432,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "antighost-1.12-forge14.21.1.2387-1.1.jar"
+        "FileNameOnDisk": "antighost-1.12-forge14.21.1.2387-1.1.1.jar"
       },
       "dateInstalled": "2019-10-29T00:49:37.5706454Z",
-      "dateUpdated": "2018-10-29T00:49:37.5706454Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "dateUpdated": "2020-01-08T07:55:24.0870087Z",
+      "dateLastUpdateAttempted": "2020-01-08T07:55:24.0870087Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -19868,16 +19855,16 @@
       "addonID": 236542,
       "gameInstanceID": "42fe5f96-2254-4be8-8fbf-95780ce809b2",
       "installedFile": {
-        "id": 2852641,
-        "displayName": "AdvancedRocketry 1.12.2-1.6.0-191-UNSTABLE build -191 for 1.12.2",
-        "fileName": "AdvancedRocketry-1.12.2-1.6.0-191-universal.jar",
-        "fileDate": "2020-01-01T00:58:20.497Z",
-        "fileLength": 12603817,
+        "id": 2856532,
+        "displayName": "AdvancedRocketry 1.12.2-1.6.0-194-UNSTABLE build -194 for 1.12.2",
+        "fileName": "AdvancedRocketry-1.12.2-1.6.0-194-universal.jar",
+        "fileDate": "2020-01-08T00:58:19.17Z",
+        "fileLength": 12616460,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2852/641/AdvancedRocketry-1.12.2-1.6.0-191-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2856/532/AdvancedRocketry-1.12.2-1.6.0-194-universal.jar",
         "isAlternate": false,
-        "alternateFileId": 2852642,
+        "alternateFileId": 2856533,
         "dependencies": [
           {
             "id": 0,
@@ -19890,12 +19877,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1701736607,
+            "fingerprint": 4048178538,
             "type": 0
           },
           {
             "foldername": "zmaster587",
-            "fingerprint": 1304352233,
+            "fingerprint": 3890873580,
             "type": 0
           },
           {
@@ -19905,11 +19892,11 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3728014853,
+            "fingerprint": 2590194156,
             "type": 0
           }
         ],
-        "packageFingerprint": 1661907526,
+        "packageFingerprint": 936930582,
         "gameVersion": [
           "1.12.2"
         ],
@@ -19922,11 +19909,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "AdvancedRocketry-1.12.2-1.6.0-191-universal.jar"
+        "FileNameOnDisk": "AdvancedRocketry-1.12.2-1.6.0-194-universal.jar"
       },
       "dateInstalled": "2019-12-30T07:16:36.3915824Z",
-      "dateUpdated": "2020-01-01T02:04:22.9433031Z",
-      "dateLastUpdateAttempted": "2020-01-01T02:04:22.9433031Z",
+      "dateUpdated": "2020-01-08T07:54:37.8685726Z",
+      "dateLastUpdateAttempted": "2020-01-08T07:54:37.8685726Z",
       "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,

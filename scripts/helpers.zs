@@ -7,6 +7,24 @@ function AddTooltip(item as crafttweaker.item.IItemStack, lines as crafttweaker.
     }
 }
 
-static BotaniaT1Runes as crafttweaker.item.IIngredient = <ore:runeWaterB>.firstItem | <ore:runeFireB>.firstItem | <ore:runeEarthB>.firstItem | <ore:runeAirB>.firstItem;
+function GetAstralCraftingMaterials(tier as int) as crafttweaker.item.IIngredient
+{
+	var IngredientToReturn = null;
+	if(tier == 1)
+	{
+		IngredientToReturn = <contenttweaker:astral_crystal_air> | <contenttweaker:astral_crystal_fire> | <contenttweaker:astral_crystal_water> | <contenttweaker:astral_crystal_earth>;
+	}
 
-static AstralT1Crystals as crafttweaker.item.IIngredient = <contenttweaker:astral_crystal_air> | <contenttweaker:astral_crystal_fire> | <contenttweaker:astral_crystal_water> | <contenttweaker:astral_crystal_earth>;
+	return IngredientToReturn;
+}
+
+function GetBotaniaCraftingMaterials(tier as int) as crafttweaker.item.IIngredient
+{
+	var IngredientToReturn = null;
+	if(tier == 1)
+	{
+		IngredientToReturn = <ore:runeWaterB>.firstItem | <ore:runeFireB>.firstItem | <ore:runeEarthB>.firstItem | <ore:runeAirB>.firstItem;
+	}
+
+	return IngredientToReturn;
+}

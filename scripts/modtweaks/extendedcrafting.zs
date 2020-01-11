@@ -28,9 +28,9 @@ recipes.addShaped("basic_component", <extendedcrafting:material:14>, [[null, <ex
 //Basic Crafting Table (Tier 1)
 recipes.remove(<extendedcrafting:table_basic>);
 
-mods.recipestages.Recipes.addShaped("basic_table_botania", "botania-i", <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.BotaniaT1Runes, <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Botania Recipe
+mods.recipestages.Recipes.addShaped("basic_table_botania", "botania-i", <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.GetBotaniaCraftingMaterials(1), <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Botania Recipe
 
-mods.recipestages.Recipes.addShaped("basic_table_astral", "astral-i", <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.AstralT1Crystals, <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Astral Sorcery Recipe
+mods.recipestages.Recipes.addShaped("basic_table_astral", "astral-i", <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.GetAstralCraftingMaterials(1), <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Astral Sorcery Recipe
 
 
 print("### ExtendedCrafting Init Complete ###");

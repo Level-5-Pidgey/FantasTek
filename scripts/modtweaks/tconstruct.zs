@@ -162,5 +162,6 @@ recipes.addShaped("pattern", <tconstruct:pattern> * 4, [[<ore:stickWood>, <ore:p
 //Change Grout Crafting
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
-mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 20, <liquid:creosote>, [<ore:stoneLimestone> * 2, <ore:gravel> * 2, <ore:sand> * 2, <ore:itemClay> * 2], true);
+mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 4, <liquid:creosote>, <ore:gravel> * 4, true);
+
 print("### TConstruct Init Complete ###");
