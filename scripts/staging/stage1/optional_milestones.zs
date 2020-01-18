@@ -1,3 +1,5 @@
+#priority 100
+
 print("~~~ Begin Stage 1 Optional Milestone Staging ~~~");
 
 //Stage 1 Currency Wallet

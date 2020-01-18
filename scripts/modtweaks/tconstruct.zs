@@ -79,6 +79,7 @@ val TConForges =
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 8 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 9 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:iron_block", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:gold_block", Count: 1 as byte, Damage: 0 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 4 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 3 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 5 as short}}),
@@ -91,7 +92,6 @@ val TConForges =
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage", Count: 1 as byte, Damage: 2 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 1 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 0 as short}}),
-	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:gold_block", Count: 1 as byte, Damage: 0 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 5 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 4 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 2 as short}}),
@@ -162,6 +162,52 @@ recipes.addShaped("pattern", <tconstruct:pattern> * 4, [[<ore:stickWood>, <ore:p
 //Change Grout Crafting
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
-mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 4, <liquid:creosote>, <ore:gravel> * 4, true);
+mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 10, <liquid:creosote>, <ore:gravel> * 10, true);
+
+//Change TCon Multiblock Component Crafting
+val multiblockComponents =
+[
+	<tconstruct:smeltery_controller>,
+	<tconstruct:tinker_tank_controller>,
+	<tconstruct:channel>,
+	<tconstruct:smeltery_io>,
+	<tconstruct:casting>,
+	<tconstruct:seared_tank:2>,
+	<tconstruct:seared_furnace_controller>,
+	<tconstruct:seared_tank>,
+	<tconstruct:casting:1>,
+	<tconstruct:faucet>
+] as crafttweaker.item.IItemStack[];
+
+for item in multiblockComponents
+{
+	recipes.remove(item);
+}
+
+for item in scripts.helpers.AllFireT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <tconstruct:smeltery_controller>, [
+		[<ore:ingotBrickSeared>, <ore:ingotBrickSeared>, <ore:ingotBrickSeared>],
+		[<ore:ingotBrickSeared>, item, <ore:ingotBrickSeared>],
+		[<ore:ingotBrickSeared>, <ore:ingotBrickSeared>, <ore:ingotBrickSeared>]
+	]);
+}
+
+//Re-adding the rest of the smeltery components
+val componentRecipes = {
+		<tconstruct:tinker_tank_controller> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <minecraft:bucket>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
+		<tconstruct:channel> : [[null, null, null],[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
+		<tconstruct:smeltery_io> : [[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>]],
+		<tconstruct:casting> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>]],
+		<tconstruct:seared_tank:2> : [[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>]],
+		<tconstruct:seared_furnace_controller> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <minecraft:furnace>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
+		<tconstruct:seared_tank> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
+		<tconstruct:casting:1> : [[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
+		<tconstruct:faucet> : [[null, null, null],[<tconstruct:materials>, null, <tconstruct:materials>],[null, <tconstruct:materials>, null]]
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in componentRecipes {
+	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
+}
 
 print("### TConstruct Init Complete ###");

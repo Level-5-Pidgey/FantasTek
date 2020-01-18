@@ -1,3 +1,5 @@
+#priority 110
+
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.liquid.ILiquidStack;
 

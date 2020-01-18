@@ -193,17 +193,26 @@ for i in 1 .. 8
 
 //Add Crafting Recipes for Machine Casings
 //Machine Controller
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcontroller>, [
-	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
-	[<ore:blockGlassColorless>, scripts.helpers.GetBotaniaCraftingMaterials(1), <ore:blockGlassColorless>],
-	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
-]);
+val controllerBlockOptions =
+[
+<botania:rune>,
+<botania:rune:1>,
+<botania:rune:2>,
+<botania:rune:3>,
+<contenttweaker:astral_crystal_air>,
+<contenttweaker:astral_crystal_fire>,
+<contenttweaker:astral_crystal_water>,
+<contenttweaker:astral_crystal_earth>
+] as crafttweaker.item.IItemStack[];
 
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcontroller>, [
-	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
-	[<ore:blockGlassColorless>, scripts.helpers.GetAstralCraftingMaterials(1), <ore:blockGlassColorless>],
-	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
-]);
+for item in controllerBlockOptions
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcontroller>, [
+		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
+		[<ore:blockGlassColorless>, item, <ore:blockGlassColorless>],
+		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
+	]);
+}
 
 //Machine Casings
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcasing> * 4, [

@@ -1,3 +1,5 @@
+#priority 111
+
 import crafttweaker.liquid.ILiquidStack;
 import mods.modularmachinery.RecipeBuilder;
 import crafttweaker.data.IData;

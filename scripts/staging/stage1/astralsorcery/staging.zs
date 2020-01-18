@@ -1,3 +1,5 @@
+#priority 100
+
 print("~~~ Begin Stage 1 Astral Sorcery Staging ~~~");
 
 //Variable for stage name so it's easy to change later
@@ -17,6 +19,7 @@ val Stage1AstralItems = [
 for item in Stage1AstralItems
 {
   mods.ItemStages.removeItemStage(item);
+  mods.ItemStages.addItemStage(stageName, item);
 }
 
 //Items that should not have a stage associated with them at all
@@ -80,9 +83,9 @@ mods.ItemStages.stageEnchant(stageName, <enchantment:astralsorcery:enchantment.a
 mods.recipestages.Recipes.setRecipeStage(stageName, <astralsorcery:itemcraftingcomponent:5>);
 
 //Stage Elemental Crystals
-mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_air>);
-mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_water>);
-mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_fire>);
-mods.recipestages.Recipes.setRecipeStage(stageName, <contenttweaker:astral_crystal_earth>);
+mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_air>);
+mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_water>);
+mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_fire>);
+mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_earth>);
 
 print("### Stage 1 Astral Sorcery Complete ###");
