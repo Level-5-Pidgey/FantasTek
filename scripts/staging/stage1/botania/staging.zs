@@ -1,13 +1,11 @@
-#priority 100
+#priority 99
+import scripts.staging.stages;
 
 print("~~~ Begin Stage 1 Botania Staging ~~~");
 
-//Variable for stage name so it's easy to change later
-var stageName = "botania-i";
-
 //Mod Staging
-mods.ItemStages.stageModItems(stageName, "botania");
-mods.ItemStages.stageModItems(stageName, "botania_tweaks");
+mods.ItemStages.stageModItems(stages.Botania1.stage, "botania");
+mods.ItemStages.stageModItems(stages.Botania1.stage, "botania_tweaks");
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List
@@ -24,7 +22,7 @@ val Stage1BotaniaItems = [
 for item in Stage1BotaniaItems
 {
   mods.ItemStages.removeItemStage(item);
-  mods.ItemStages.addItemStage(stageName, item);
+  mods.ItemStages.addItemStage(stages.Botania1.stage, item);
 }
 
 //Items that should not have a stage associated with them at all

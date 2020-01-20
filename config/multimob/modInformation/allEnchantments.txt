@@ -39,11 +39,11 @@ randomthings:magnetic
 advancedrocketry:spacebreathing
 endercore:autosmelt
 endercore:xpboost
-enderio:shimmer
-enderio:witherweapon
 enderio:repellent
-enderio:soulbound
+enderio:shimmer
 enderio:witherarrow
+enderio:soulbound
+enderio:witherweapon
 minecraftfuture:channeling
 minecraftfuture:impaling
 minecraftfuture:loyalty

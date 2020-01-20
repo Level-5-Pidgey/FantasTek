@@ -138,8 +138,8 @@
 			"generator": {
 				"type": "cluster",
 				"block": {
-					"name": "contenttweaker:sub_block_holder_9",
-					"metadata": 2
+					"name": "contenttweaker:sub_block_holder_3",
+					"metadata": 12
 				},
 				"material": "minecraft:end_stone",
 				"cluster-size": 6,
@@ -300,7 +300,7 @@
 			},
 			"cluster-count": 4,
 			"chunk-chance": 5,
-			"min-height": 150,
+			"min-height": 80,
 			"max-height": 250,
 			"retrogen": false,
 			"biome": "all",
@@ -322,7 +322,7 @@
 			},
 			"cluster-count": 3,
 			"chunk-chance": 6,
-			"min-height": 150,
+			"min-height": 80,
 			"max-height": 250,
 			"retrogen": false,
 			"biome": "all",

@@ -19,12 +19,13 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
     oreDict.get("block" ~ materialString),
     oreDict.get("ingot" ~ materialString),
     oreDict.get("nugget" ~ materialString),
-    oreDict.get("poorOre" ~ materialString),
     oreDict.get("cluster" ~ materialString),
     oreDict.get("dust" ~ materialString),
     oreDict.get("dustSmall" ~ materialString),
     oreDict.get("dustTiny" ~ materialString),
     oreDict.get("ore" ~ materialString),
+	//oreDict.get("denseOre" ~ materialString),
+	//oreDict.get("poorOre" ~ materialString),
     oreDict.get("ingot" ~ materialString),
     oreDict.get("gem" ~ materialString),
     oreDict.get("crystal" ~ materialString),
@@ -32,7 +33,6 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
     oreDict.get("shard" ~ materialString),
     oreDict.get("dirtyDust" ~ materialString),
     oreDict.get("rockyChunk" ~ materialString),
-    oreDict.get("denseOre" ~ materialString),
     oreDict.get("blockSheetmetal" ~ materialString),
     oreDict.get("densePlating" ~ materialString),
     oreDict.get("stick" ~ materialString),
@@ -40,7 +40,7 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
     oreDict.get("gear" ~ materialString),
     oreDict.get("fan" ~ materialString),
     oreDict.get("coin" ~ materialString),
-    oreDict.get("coil" ~ materialString),
+    oreDict.get("coil" ~ materialString)
   ] as IOreDictEntry[];
 
   return oreDicts;
@@ -48,7 +48,7 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
 
 
 //OreDict Materials that should be restricted to this stage
-for materialString, oreValue in scripts.modtweaks.basescripts.oreprocessing.OreTypes
+for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
   for oreEntry in GetOreDictsForMaterial(materialString)
   {
@@ -87,7 +87,9 @@ for materialString in ExtraMaterialsToStage
 var extraOreDicts = [
   <ore:treeLeaves>,
   <ore:plankWood>,
-  <ore:logWood>
+  <ore:logWood>,
+  <ore:fuelCoke>,
+  <ore:blockFuelCoke>
 ] as IOreDictEntry[];
 
 for oreBlockEntry in extraOreDicts

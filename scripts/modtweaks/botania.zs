@@ -57,7 +57,7 @@ for oreString in oreChidOres
 	mods.botania.Orechid.removeOre(oreString);
 }
 
-for materialString, oreValue in scripts.modtweaks.basescripts.oreprocessing.OreTypes
+for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
   var oreBlock = oreDict.get("ore" ~ materialString);
   var oreGem = oreDict.get("gem" ~ materialString);
@@ -69,11 +69,25 @@ for materialString, oreValue in scripts.modtweaks.basescripts.oreprocessing.OreT
     {
       if(!oreIngot.empty)
       {
-        mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1500);
+		  if(materialString == "Mithril")
+		  {
+        	mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1800);
+		  }
+		  else
+		  {
+		  	mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1500);
+		  }
       }
       else if (!oreGem.empty)
       {
-        mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 150);
+	  	if(materialString == "Coal")
+		{
+			mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1800);
+		}
+		else
+		{
+			mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 425);
+		}
       }
       else
       {

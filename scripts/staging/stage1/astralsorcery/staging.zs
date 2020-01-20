@@ -1,12 +1,10 @@
-#priority 100
+#priority 99
+import scripts.staging.stages;
 
 print("~~~ Begin Stage 1 Astral Sorcery Staging ~~~");
 
-//Variable for stage name so it's easy to change later
-var stageName = "astral-i";
-
 //Mod Staging
-mods.ItemStages.stageModItems(stageName, "astralsorcery");
+mods.ItemStages.stageModItems(stages.AstralSorcery1.stage, "astralsorcery");
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List
@@ -19,7 +17,7 @@ val Stage1AstralItems = [
 for item in Stage1AstralItems
 {
   mods.ItemStages.removeItemStage(item);
-  mods.ItemStages.addItemStage(stageName, item);
+  mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, item);
 }
 
 //Items that should not have a stage associated with them at all
@@ -68,24 +66,17 @@ for item in StageLessItems
   mods.ItemStages.removeItemStage(item);
 }
 
-//Stage Liquid Starlight
-mods.ItemStages.stageLiquid(stageName, <liquid:astralsorcery.liquidstarlight>);
-mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_fire_crystal>);
-mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_water_crystal>);
-mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_earth_crystal>);
-mods.ItemStages.stageLiquid(stageName, <liquid:molten_elemental_air_crystal>);
-
 //Stage Astral Sorcery Enchantments
-mods.ItemStages.stageEnchant(stageName, <enchantment:astralsorcery:enchantment.as.smelting>);
-mods.ItemStages.stageEnchant(stageName, <enchantment:astralsorcery:enchantment.as.nightvision>);
+mods.ItemStages.stageEnchant(stages.AstralSorcery1.stage, <enchantment:astralsorcery:enchantment.as.smelting>);
+mods.ItemStages.stageEnchant(stages.AstralSorcery1.stage, <enchantment:astralsorcery:enchantment.as.nightvision>);
 
 //Stage Parchment Crafting
-mods.recipestages.Recipes.setRecipeStage(stageName, <astralsorcery:itemcraftingcomponent:5>);
+mods.recipestages.Recipes.setRecipeStage(stages.AstralSorcery1.stage, <astralsorcery:itemcraftingcomponent:5>);
 
 //Stage Elemental Crystals
-mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_air>);
-mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_water>);
-mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_fire>);
-mods.ItemStages.addItemStage(stageName, <contenttweaker:astral_crystal_earth>);
+mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_air>);
+mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_water>);
+mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_fire>);
+mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_earth>);
 
 print("### Stage 1 Astral Sorcery Complete ###");

@@ -1,7 +1,7 @@
 #priority 110
 
-import crafttweaker.oredict.IOreDict;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDict;
 
 print("~~~ Begin Ore Processing Init ~~~");
 
@@ -1052,111 +1052,7 @@ for ore in ChemicalCrystallizer
 //Remove all chemical washer recipes
 mods.mekanism.chemical.washer.removeAllRecipes();
 
-//Ore Types with Liquids Attached
-val LiquidTypes =
-{
-	"Iron" : <liquid:iron>,
-	"Gold" : <liquid:gold>,
-	"Redstone" : <liquid:redstone>,
-	"Diamond" : <liquid:water>,
-	"Emerald" : <liquid:emerald>,
-	"Coal" : <liquid:coal>,
-	"Chrome" :<liquid:chromium>,
-	"Ruby" : <liquid:water>,
-	"Sapphire" : <liquid:water>,
-	"Peridot" : <liquid:water>,
-	"Aluminum" : <liquid:aluminum>,
-	"Copper" : <liquid:copper>,
-	"Iridium" : <liquid:iridium>,
-	"Lead" : <liquid:lead>,
-	"Nickel" : <liquid:nickel>,
-	"Platinum" : <liquid:platinum>,
-	"Silver" : <liquid:silver>,
-	"Tin" : <liquid:tin>,
-	"Titanium" : <liquid:titanium>,
-	"Tungsten" : <liquid:tungsten>,
-	"Zinc" : <liquid:zinc>,
-	"Mithril" : <liquid:mithril>,
-	"Yellorium" : <liquid:yellorium>,
-	"Vibranium" : <liquid:vibranium>,
-	"Necrodermis" : <liquid:necrodermis>,
-	"Thorium" : <liquid:thorium>,
-	"Chromium" : <liquid:chromium>,
-	"Ardite" : <liquid:ardite>,
-	"AstralStarmetal" : <liquid:astral_starmetal>,
-	"Cobalt" : <liquid:cobalt>,
-	"Draconium" : <liquid:draconium>,
-	"Uranium" : <liquid:uranium>,
-	"Osmium" : <liquid:osmium>,
-	"Amber" : <liquid:water>,
-	"Amethyst" : <liquid:water>,
-	"Apatite" : <liquid:water>,
-	"Aquamarine" : <liquid:water>,
-	"CertusQuartz" : <liquid:water>,
-	"ChargedCertusQuartz" : <liquid:water>,
-	"Dilithium" : <liquid:water>,
-	"DimensionalShard" : <liquid:water>,
-	"EnderBiotite" : <liquid:water>,
-	"Lapis" : <liquid:water>,
-	"Malachite" : <liquid:water>,
-	"Quartz" : <liquid:water>,
-	"Tanzanite" : <liquid:water>,
-	"Topaz" : <liquid:water>
-} as ILiquidStack[string];
-
-//List of ores to change processing rules for
-static OreTypes as int[string] =
-{
-	"Iron" : 0,
-	"Gold" : 0,
-	"Redstone" : 0,
-	"Diamond" : 0,
-	"Emerald" : 0,
-	"Coal" : 0,
-	"Chrome" : 5,
-	"Ruby" : 0,
-	"Sapphire" : 0,
-	"Peridot" : 0,
-	"Aluminum" : 1,
-	"Copper" : 1,
-	"Iridium" : 5,
-	"Lead" : 1,
-	"Nickel" : 1,
-	"Platinum" : 3,
-	"Silver" : 1,
-	"Tin" : 1,
-	"Titanium" : 6,
-	"Tungsten" : 5,
-	"Zinc" : 1,
-	"Mithril" : 3,
-	"Yellorium" : 4,
-	"Vibranium" : 8,
-	"Necrodermis" : 8,
-	"Thorium" : 5,
-	"Chromium" : 5,
-	"Ardite" : 2,
-	"AstralStarmetal" : 0,
-	"Cobalt" : 2,
-	"Draconium" : 7,
-	"Uranium" : 4,
-	"Osmium" : 4,
-	"Amber" : 0,
-	"Amethyst" : 0,
-	"Apatite" : 1,
-	"Aquamarine" : 0,
-	"CertusQuartz" : 2,
-	"ChargedCertusQuartz" : 2,
-	"Dilithium" : 7,
-	"DimensionalShard" : 6,
-	"EnderBiotite" : 3,
-	"Lapis" : 0,
-	"Malachite" : 0,
-	"Quartz" : 0,
-	"Tanzanite" : 0,
-	"Topaz" : 0
-};
-
-for materialString, oreValue in OreTypes
+for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
 	//Remove the existing ore processing methods available
 	removeExistingCraftingRecipes(materialString);
@@ -1165,9 +1061,9 @@ for materialString, oreValue in OreTypes
 	addNewRecipe(materialString, oreValue);
 
 	//Add Melting Processing too
-	if(LiquidTypes[materialString].name != "water")
+	if(scripts.helpers.OresWithMolten[materialString].name != "water")
 	{
-		AddMeltedRecipes(materialString, oreValue, LiquidTypes[materialString]);
+		AddMeltedRecipes(materialString, oreValue, scripts.helpers.OresWithMolten[materialString]);
 	}
 
 	//Mark each ore with it's tier

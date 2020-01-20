@@ -1,8 +1,8 @@
 #priority 101
+import mods.zenstages.Stage;
+import scripts.staging.stages;
 
 print("~~~ Begin Stage 2 Staging ~~~");
-
-var stageName = "ii";
 
 //Mods to restrict to this stage
 val StageMods = [
@@ -30,6 +30,7 @@ val StageMods = [
   "rftools",
   "rftoolsdim",
   "psi",
+  "jaopca",
   "contenttweaker",
   "enderio",
   "environmentaltech",
@@ -38,7 +39,7 @@ val StageMods = [
 
 for modTag in StageMods
 {
-  mods.ItemStages.stageModItems(stageName, modTag);
+  mods.ItemStages.stageModItems(stages.Locked.stage, modTag);
 }
 
 print("### Stage 2 Staging Complete ###");

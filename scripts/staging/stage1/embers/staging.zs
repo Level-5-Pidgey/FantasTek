@@ -1,12 +1,10 @@
-#priority 100
+#priority 99
+import scripts.staging.stages;
 
 print("~~~ Begin Stage 1 Embers Staging ~~~");
 
-//Variable for stage name so it's easy to change later
-var stageName = "embers-i";
-
 //Mod Staging
-mods.ItemStages.stageModItems(stageName, "embers");
+mods.ItemStages.stageModItems(stages.Embers1.stage, "embers");
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List
@@ -19,7 +17,7 @@ val Stage1EmbersItems = [
 for item in Stage1EmbersItems
 {
   mods.ItemStages.removeItemStage(item);
-  mods.ItemStages.addItemStage(stageName, item);
+  mods.ItemStages.addItemStage(stages.Embers1.stage, item);
 }
 
 //Items that should not have a stage associated with them at all
@@ -57,9 +55,5 @@ for item in StageLessItems
 {
   mods.ItemStages.removeItemStage(item);
 }
-
-//Stage Thaumcraft Liquids
-mods.ItemStages.stageLiquid(stageName, <liquid:dawnstone>);
-mods.ItemStages.stageLiquid(stageName, <liquid:alchemical_redstone>);
 
 print("### Stage 1 Embers Complete ###");
