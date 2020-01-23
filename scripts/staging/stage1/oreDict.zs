@@ -65,7 +65,7 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 //Extra Materials that aren't necessarily ores that should be tied to this stage
 val ExtraMaterialsToStage =
 [
-  "Steel",
+  "CrudeSteel",
   "Wood",
   "ElectricalSteel",
   "RedstoneAlloy",

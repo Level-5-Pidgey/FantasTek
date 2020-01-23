@@ -5,6 +5,8 @@ print("~~~ Begin Plate Management Init ~~~");
 
 //Add wooden plate to oreDict
 <ore:plateWood>.add(<contenttweaker:wood_plate>);
+<ore:plateSealedWood>.add(<contenttweaker:sealed_wood_plate>);
+<ore:plankSealedWood>.add(<embers:sealed_planks>);
 
 val ThaumcraftPlates =
 [
@@ -494,7 +496,8 @@ val PlateMaterials =
 	"DarkSteel" : <liquid:dark_steel>,
 	"ConductiveIron" : <liquid:conductive_iron>,
 	"Neutronium" : <liquid:water>,
-	"DraconiumAwakened" : <liquid:molten_awakened_draconium>
+	"DraconiumAwakened" : <liquid:molten_awakened_draconium>,
+	"SealedWood" : <liquid:water>
 } as ILiquidStack[string];
 
 for materialString, molten in PlateMaterials

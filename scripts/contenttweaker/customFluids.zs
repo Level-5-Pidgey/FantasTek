@@ -15,6 +15,10 @@ var moltenAwakenedDraconium = VanillaFactory.createFluid("molten_awakened_dracon
 moltenAwakenedDraconium.register();
 
 var molten_black_iron = VanillaFactory.createFluid("molten_black_iron", Color.fromHex("262626"));
+molten_black_iron.temperature = 500;
+molten_black_iron.luminosity = 5;
+molten_black_iron.density = 800;
+molten_black_iron.viscosity = 800;
 molten_black_iron.register();
 
 //Molten Elemental Crystals (Astral Sorcery)
@@ -28,6 +32,17 @@ var molten_elemental_air_crystal = VanillaFactory.createFluid("molten_elemental_
 molten_elemental_air_crystal.register();
 
 var molten_modularium = VanillaFactory.createFluid("molten_modularium", Color.fromHex("757575"));
+molten_modularium.temperature = 500;
+molten_modularium.luminosity = 5;
+molten_modularium.density = 800;
+molten_modularium.viscosity = 800;
 molten_modularium.register();
+
+var molten_crude_steel = VanillaFactory.createFluid("molten_crude_steel", Color.fromHex("ccccb3"));
+molten_crude_steel.temperature = 500;
+molten_crude_steel.luminosity = 5;
+molten_crude_steel.density = 800;
+molten_crude_steel.viscosity = 800;
+molten_crude_steel.register();
 
 print("### Custom Fluid Creator Init Complete ###");

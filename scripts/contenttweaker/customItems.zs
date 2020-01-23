@@ -48,3 +48,7 @@ astral_crystal_water.register();
 //Prismarine Nugget
 var prismarine_nugget = VanillaFactory.createItem("prismarine_nugget"); //Water
 prismarine_nugget.register();
+
+//Sealed Wooden Plate
+var sealedWoodPlate = VanillaFactory.createItem("sealed_wood_plate");
+sealedWoodPlate.register();

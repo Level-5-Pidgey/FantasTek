@@ -3,8 +3,13 @@ print("~~~ Begin ContentTweaker recipes Init ~~~");
 //Steel Blend Crafting
 recipes.addShaped("steel_blend_crafting", <contenttweaker:steel_blend> * 2, [[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>],[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>], [<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>]]);
 
-//Melt Steel Blend into Steel
-mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144, <contenttweaker:steel_blend>);
+//Melt Steel Blend into Crude Steel
+mods.tconstruct.Melting.addRecipe(<liquid:molten_crude_steel> * 144, <contenttweaker:steel_blend>, 450);
+
+//Cast Crude Steel into Ingots or Blocks or Nuggets
+mods.tconstruct.Casting.addTableRecipe(<ore:ingotCrudeSteel>.firstItem, <tconstruct:cast_custom>, <liquid:molten_crude_steel>, 144, false);
+mods.tconstruct.Casting.addTableRecipe(<ore:nuggetCrudeSteel>.firstItem, <tconstruct:cast_custom:1>, <liquid:molten_crude_steel>, 16, false);
+mods.tconstruct.Casting.addBasinRecipe(<ore:blockCrudeSteel>.firstItem, null, <liquid:molten_crude_steel>, 1296);
 
 //Add Plate Press for Wooden Boards
 for wood in <ore:logWood>.items
