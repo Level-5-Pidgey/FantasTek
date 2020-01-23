@@ -159,8 +159,6 @@ static OresWithMolten as ILiquidStack[string]=
 };
 
 //Gamestages for each Ore Processing Tier
-
-//Ore Types with Liquids Attached
 static StageForProcessingTier as Stage[int]=
 {
 	0 : stages.progression1,
@@ -173,3 +171,32 @@ static StageForProcessingTier as Stage[int]=
 	7 : stages.Locked,
 	8 : stages.Locked,
 };
+
+function getLiquidStringFromObject(liquid as ILiquidStack) as string
+{
+	return liquid.name;
+}
+
+//Gets a Bucket Item from a Liquid String
+function formatBucket(liquidName as string) as crafttweaker.item.IItemStack {
+	//Unique Buckets
+	if (liquidName == "lava")
+	{
+		return <minecraft:lava_bucket>;
+	}
+	else if (liquidName == "water")
+	{
+		return <minecraft:water_bucket>;
+	}
+	else if (liquidName == "milk")
+	{
+		return <minecraft:milk_bucket>;
+	}
+
+	var liquidData as crafttweaker.data.IData = {
+		FluidName: liquidName,
+		Amount: 1000
+	};
+
+	return <forge:bucketfilled>.withTag(liquidData);
+}

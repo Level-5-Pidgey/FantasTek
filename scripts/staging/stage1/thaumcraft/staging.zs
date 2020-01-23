@@ -25,12 +25,6 @@ for item in Stage1ThaumcraftItems
 val StageLessItems = [
   <thaumcraft:thaumonomicon>,
   <thaumcraft:salis_mundus>,
-  <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}),
-  <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),
-  <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),
-  <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}),
-  <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}),
-  <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}),
   <thaumcraft:shimmerleaf>,
   <thaumcraft:cinderpearl>,
   <thaumcraft:vishroom>,
@@ -55,19 +49,13 @@ val StageLessItems = [
   <thaumcraft:taint_geyser>,
   <thaumcraft:taint_feature>,
   <thaumcraft:taint_log>,
-  <thaumcraft:crystal_aer>,
-  <thaumcraft:crystal_ignis>,
-  <thaumcraft:crystal_aqua>,
-  <thaumcraft:crystal_terra>,
-  <thaumcraft:crystal_ordo>,
-  <thaumcraft:crystal_perditio>,
   <thaumcraft:flesh_block>,
   <thaumcraft:loot_bag>,
   <thaumcraft:loot_bag:1>,
   <thaumcraft:loot_bag:2>,
   <thaumcraft:brain>,
   <thaumcraft:brain>,
-  <thaumcraft:crystal_vitium>
+  <thaumcraft:ore_quartz>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

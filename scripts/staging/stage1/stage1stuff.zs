@@ -1,4 +1,4 @@
-#priority 100
+#priority 98
 
 print("~~~ Begin Stage 1 Staging ~~~");
 

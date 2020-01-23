@@ -117,6 +117,20 @@ LootTables.getTable("minecraft:chests/end_city_treasure").getPool("main").addIte
 val witherSkeleton = LootTables.getTable("minecraft:entities/wither_skeleton"); //Wither Skeleton (remove extra bones, remove drops of evil)
 witherSkeleton.removePool("xuLootDropOfEvil");
 
+//Make Astral Sorcery chests not generate Aquamarine/Constellation Papers
+val shrineChest = LootTables.getTable("astralsorcery:chest_shrine");
+val astralShrineChestPools =
+	[
+		"astralsorcery:itemconstellationpaper",
+		"astralsorcery:itemcraftingcomponent"
+	] as string[];
+
+for pool in astralShrineChestPools
+{
+	shrineChest.removePool(pool);
+}
+
+
 val enderman = LootTables.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
 enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
 enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.parse({

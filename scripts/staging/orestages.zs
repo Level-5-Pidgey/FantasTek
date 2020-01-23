@@ -276,14 +276,147 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 	{
 		for ore in oreDict.get("ore" ~ materialString).items
 		{
-			if(ore.definition.owner != "contenttweaker")
+			if (ore.definition.owner != "contenttweaker")
 			{
-				if(scripts.helpers.StageForProcessingTier[oreValue].stage != "stage_i")
+				if (scripts.helpers.StageForProcessingTier[oreValue].stage == "stage_i")
 				{
-					mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[oreValue].stage, ore, <minecraft:stone>);
+					if(scripts.helpers.StageForProcessingTier[oreValue + 1].stage != "stage_i")
+					{
+						mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[oreValue + 1].stage, ore);
+
+						print("[OreStaging] Staged " + ore.name + " to stage " + scripts.helpers.StageForProcessingTier[oreValue].stage + "[" + oreValue + "].");
+					}
+					else
+					{
+						print("[OreStaging] Skipped " + ore.name + " as it is available at Stage 1.");
+					}
+				}
+				else
+				{
+					mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[oreValue].stage, ore);
+
+					print("[OreStaging] Staged " + ore.name + " to stage " + scripts.helpers.StageForProcessingTier[oreValue].stage + "[" + oreValue + "].");
 				}
 			}
+			else
+			{
+				print("[OreStaging] Skipped " + ore.name + " as it was created by ContentTweaker.");
+			}
 		}
+	}
+	else
+	{
+		print("[OreStaging] Skipped " + materialString + " as its one of the excluded ores.");
+	}
+}
+
+var OtherStagingReplacements as crafttweaker.item.IItemStack[crafttweaker.item.IItemStack] =
+{
+	<astralsorcery:blockcustomsandore> : <minecraft:sand>,
+	<magneticraft:oil_source:*> : <minecraft:stone>,
+	<thaumcraft:crystal_ignis:*> : <quark:crystal:1>,
+	<thaumcraft:crystal_terra:*> : <quark:crystal:4>,
+	<thaumcraft:crystal_aqua:*> : <quark:crystal:5>,
+	<thaumcraft:crystal_perditio:*> : <quark:crystal:8>,
+	<thaumcraft:crystal_ordo:*> : <quark:crystal>,
+	<thaumcraft:crystal_aer:*> : <quark:crystal:3>,
+	<thaumcraft:crystal_vitium:*> : <quark:crystal:7>,
+	<magneticraft:ores:2> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_13:11> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_4:2> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_13:12> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_4:11> : <minecraft:end_stone>,
+	<tconstruct:ore> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_13:10> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_13:15> : <minecraft:netherrack>,
+	<tconstruct:ore:1> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_6:5> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_6:13> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_10:5> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_13:13> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_13:14> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_3:6> : <minecraft:stone>,
+	<astralsorcery:blockcustomore:1> : <minecraft:iron_ore>,
+	<astralsorcery:blockcustomore> : <thaumcraft:ore_quartz>,
+	<draconicevolution:draconium_ore:2> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_14:3> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_14:1> : <minecraft:end_stone>,
+	<rftools:dimensional_shard_ore:2> : <minecraft:end_stone>,
+	<quark:biotite_ore> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_1:8> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_5:12> : <minecraft:end_stone>,
+	<contenttweaker:sub_block_holder_14:6> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_14:2> : <minecraft:netherrack>,
+	<draconicevolution:draconium_ore:1> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_8:2> : <minecraft:netherrack>,
+	<contenttweaker:sub_block_holder_2:13> : <minecraft:netherrack>,
+	<rftools:dimensional_shard_ore:1> : <minecraft:netherrack>,
+	<draconicevolution:draconium_ore> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_14> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_14:4> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_3:15> : <minecraft:stone>,
+	<contenttweaker:sub_block_holder_4:10> : <minecraft:stone>,
+	<embers:ore_quartz> : <minecraft:stone>,
+	<thaumcraft:ore_quartz> : <minecraft:stone>,
+	<rftools:dimensional_shard_ore> : <minecraft:stone>
+};
+
+var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
+{
+	<astralsorcery:blockcustomsandore> : stages.AstralSorcery1,
+	<magneticraft:oil_source:*> : stages.Locked,
+	<thaumcraft:crystal_ignis:*> : stages.Thaumcraft1,
+	<thaumcraft:crystal_terra:*> : stages.Thaumcraft1,
+	<thaumcraft:crystal_aqua:*> : stages.Thaumcraft1,
+	<thaumcraft:crystal_perditio:*> : stages.Thaumcraft1,
+	<thaumcraft:crystal_ordo:*> : stages.Thaumcraft1,
+	<thaumcraft:crystal_aer:*> : stages.Thaumcraft1,
+	<thaumcraft:crystal_vitium:*> : stages.Thaumcraft1,
+	<magneticraft:ores:2> : stages.Locked,
+	<contenttweaker:sub_block_holder_13:11> : stages.Locked,
+	<contenttweaker:sub_block_holder_4:2> : stages.Locked,
+	<contenttweaker:sub_block_holder_13:12> : stages.Locked,
+	<contenttweaker:sub_block_holder_4:11> : stages.Locked,
+	<tconstruct:ore> : stages.Locked,
+	<contenttweaker:sub_block_holder_13:10> : stages.Locked,
+	<contenttweaker:sub_block_holder_13:15> : stages.Locked,
+	<tconstruct:ore:1> : stages.Locked,
+	<contenttweaker:sub_block_holder_6:5> : stages.Locked,
+	<contenttweaker:sub_block_holder_6:13> : stages.Locked,
+	<contenttweaker:sub_block_holder_10:5> : stages.Locked,
+	<contenttweaker:sub_block_holder_13:13> :stages.Locked,
+	<contenttweaker:sub_block_holder_13:14> : stages.Locked,
+	<contenttweaker:sub_block_holder_3:6> : stages.Locked,
+	<astralsorcery:blockcustomore:1> : stages.AstralSorcery1,
+	<astralsorcery:blockcustomore> : stages.AstralSorcery1,
+	<draconicevolution:draconium_ore:2> : stages.Locked,
+	<contenttweaker:sub_block_holder_14:3> : stages.Locked,
+	<contenttweaker:sub_block_holder_14:1> : stages.Locked,
+	<rftools:dimensional_shard_ore:2> : stages.Locked,
+	<quark:biotite_ore> : stages.Locked,
+	<contenttweaker:sub_block_holder_1:8> : stages.Locked,
+	<contenttweaker:sub_block_holder_5:12> : stages.Locked,
+	<contenttweaker:sub_block_holder_14:6> : stages.Locked,
+	<contenttweaker:sub_block_holder_14:2> : stages.Locked,
+	<draconicevolution:draconium_ore:1> : stages.Locked,
+	<contenttweaker:sub_block_holder_8:2> : stages.progression1,
+	<contenttweaker:sub_block_holder_2:13> : stages.progression1,
+	<rftools:dimensional_shard_ore:1> : stages.Locked,
+	<draconicevolution:draconium_ore> : stages.Locked,
+	<contenttweaker:sub_block_holder_14> : stages.Locked,
+	<contenttweaker:sub_block_holder_14:4> : stages.Locked,
+	<contenttweaker:sub_block_holder_3:15> : stages.Locked,
+	<contenttweaker:sub_block_holder_4:10> : stages.Locked,
+	<embers:ore_quartz> : stages.Locked,
+	<thaumcraft:ore_quartz> : stages.Locked,
+	<rftools:dimensional_shard_ore> : stages.Locked
+};
+
+for blockToReplace in OtherStagingReplacements
+{
+	if(StageForReplacement[blockToReplace].stage != "stage_i")
+	{
+		mods.orestages.OreStages.addReplacement(StageForReplacement[blockToReplace].stage, blockToReplace, OtherStagingReplacements[blockToReplace]);
 	}
 }
 
