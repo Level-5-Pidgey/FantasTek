@@ -42,4 +42,6 @@ for modTag in StageMods
   mods.ItemStages.stageModItems(stages.Locked.stage, modTag);
 }
 
+//Add Cinderpearl to Blaze Powder crafting to stage 2.
+mods.recipestages.Recipes.setRecipeStage(stages.Locked.stage, "thaumcraft:cinderpearltoblazepowder");
 print("### Stage 2 Staging Complete ###");

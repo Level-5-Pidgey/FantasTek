@@ -22,9 +22,7 @@ for item in Stage1AstralItems
 
 //Items that should not have a stage associated with them at all
 val StageLessItems = [
-  <astralsorcery:blockcustomsandore>,
   <astralsorcery:blockcustomflower>,
-  <astralsorcery:itemcraftingcomponent>,
   <astralsorcery:blockblackmarble>,
   <astralsorcery:blockblackmarble:1>,
   <astralsorcery:blockblackmarble:2>,
