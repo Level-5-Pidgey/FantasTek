@@ -87,6 +87,7 @@ val StageLessItems = [
   <contenttweaker:coke_dust>,
   <contenttweaker:steel_blend>,
   <contenttweaker:wood_plate>,
+  <contenttweaker:sealed_wood_plate>,
   <thermalfoundation:armor.helmet_steel>,
   <thermalfoundation:armor.plate_steel>,
   <thermalfoundation:armor.legs_steel>,
@@ -128,7 +129,28 @@ val StageLessItems = [
   <thermalfoundation:tool.bow_iron>,
   <thermalfoundation:tool.sickle_iron>,
   <thermalfoundation:tool.hammer_iron>,
-  <thermalfoundation:tool.excavator_iron>
+  <thermalfoundation:tool.excavator_iron>,
+  <iceandfire:lectern>,
+  <iceandfire:podium>,
+  <iceandfire:podium:1>,
+  <iceandfire:podium:2>,
+  <iceandfire:podium:3>,
+  <iceandfire:podium:4>,
+  <iceandfire:podium:5>,
+  <iceandfire:pixie_house>,
+  <iceandfire:pixie_house:1>,
+  <iceandfire:pixie_house:2>,
+  <iceandfire:pixie_house:3>,
+  <iceandfire:pixie_house:4>,
+  <iceandfire:pixie_house:5>,
+  <iceandfire:jar_empty>,
+  <iceandfire:jar_pixie>,
+  <iceandfire:jar_pixie:1>,
+  <iceandfire:jar_pixie:2>,
+  <iceandfire:jar_pixie:3>,
+  <iceandfire:jar_pixie:4>,
+  <iceandfire:manuscript>,
+  <iceandfire:sapphire_gem>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

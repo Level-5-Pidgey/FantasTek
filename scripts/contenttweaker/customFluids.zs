@@ -12,10 +12,14 @@ var troll_marrow = VanillaFactory.createFluid("troll_marrow", Color.fromHex("e3d
 troll_marrow.register();
 
 var moltenAwakenedDraconium = VanillaFactory.createFluid("molten_awakened_draconium", Color.fromHex("ff4917"));
+moltenAwakenedDraconium.temperature = 800;
+moltenAwakenedDraconium.luminosity = 5;
+moltenAwakenedDraconium.density = 800;
+moltenAwakenedDraconium.viscosity = 800;
 moltenAwakenedDraconium.register();
 
 var molten_black_iron = VanillaFactory.createFluid("molten_black_iron", Color.fromHex("262626"));
-molten_black_iron.temperature = 500;
+molten_black_iron.temperature = 800;
 molten_black_iron.luminosity = 5;
 molten_black_iron.density = 800;
 molten_black_iron.viscosity = 800;
@@ -32,14 +36,14 @@ var molten_elemental_air_crystal = VanillaFactory.createFluid("molten_elemental_
 molten_elemental_air_crystal.register();
 
 var molten_modularium = VanillaFactory.createFluid("molten_modularium", Color.fromHex("757575"));
-molten_modularium.temperature = 500;
+molten_modularium.temperature = 800;
 molten_modularium.luminosity = 5;
 molten_modularium.density = 800;
 molten_modularium.viscosity = 800;
 molten_modularium.register();
 
 var molten_crude_steel = VanillaFactory.createFluid("molten_crude_steel", Color.fromHex("ccccb3"));
-molten_crude_steel.temperature = 500;
+molten_crude_steel.temperature = 800;
 molten_crude_steel.luminosity = 5;
 molten_crude_steel.density = 800;
 molten_crude_steel.viscosity = 800;

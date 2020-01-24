@@ -18,6 +18,11 @@ function StageSoulVial(entityString as string, stageToSetTo as mods.zenstages.St
 	stageToSetTo.addIngredient(<enderio:item_soul_vial:1>.withTag({entityId: entityString}));
 }
 
+function StageSpawnEgg(entityString as string, stageToSetTo as mods.zenstages.Stage)
+{
+	stageToSetTo.addIngredient(<minecraft:spawn_egg>.withTag({EntityTag: {id: entityString}}));
+}
+
 var entityStages as mods.zenstages.Stage[string] =
 {
 	"advancedrocketry:arabducteditem" : stages.Locked,
@@ -311,36 +316,6 @@ var entityStages as mods.zenstages.Stage[string] =
 	"openblocks:player_magnet" : stages.progression1,
 	"openblocks:xp_orb_no_fly" : stages.progression1,
 	"openmods:block" : stages.progression1,
-	"primitivemobs:baby_spider" : stages.Locked,
-	"primitivemobs:bewitched_tome" : stages.Locked,
-	"primitivemobs:blazing_juggernaut" : stages.Locked,
-	"primitivemobs:brain_slime" : stages.Locked,
-	"primitivemobs:chameleon" : stages.progression1,
-	"primitivemobs:dodo" : stages.Locked,
-	"primitivemobs:festive_creeper" : stages.Locked,
-	"primitivemobs:filch_lizard" : stages.Locked,
-	"primitivemobs:flame_spewer" : stages.Locked,
-	"primitivemobs:flame_spit" : stages.Locked,
-	"primitivemobs:goblin" : stages.Locked,
-	"primitivemobs:grovesprite" : stages.Locked,
-	"primitivemobs:harpy" : stages.Locked,
-	"primitivemobs:haunted_tool" : stages.Locked,
-	"primitivemobs:lily_lurker" : stages.Locked,
-	"primitivemobs:lost_miner" : stages.Locked,
-	"primitivemobs:mimic" : stages.Locked,
-	"primitivemobs:mother_spider" : stages.Locked,
-	"primitivemobs:primitive_egg" : stages.Locked,
-	"primitivemobs:primitive_tnt_primed" : stages.Locked,
-	"primitivemobs:rocket_creeper" : stages.Locked,
-	"primitivemobs:sheepman" : stages.Locked,
-	"primitivemobs:skeleton_warrior" : stages.Locked,
-	"primitivemobs:spider_egg" : stages.Locked,
-	"primitivemobs:support_creeper" : stages.Locked,
-	"primitivemobs:thrown_block" : stages.Locked,
-	"primitivemobs:traveling_merchant" : stages.Locked,
-	"primitivemobs:treasure_slime" : stages.Locked,
-	"primitivemobs:trollager" : stages.Locked,
-	"primitivemobs:void_eye" : stages.Locked,
 	"psi:spell_charge" : stages.progression1,
 	"psi:spell_circle" : stages.progression1,
 	"psi:spell_grenade" : stages.progression1,
@@ -453,6 +428,15 @@ for entityName, zenStageObject in entityStages
 
 		//Stage the Mob Morb
 		StageMorb(entityName, zenStageObject);
+
+		//Stage Broken Spawners
+		StageBrokenSpawner(entityName, zenStageObject);
+
+		//Stage Soul Vials
+		StageSoulVial(entityName, zenStageObject);
+
+		//Stage Spawn Eggs
+		StageSpawnEgg(entityName, zenStageObject);
 	}
 }
 

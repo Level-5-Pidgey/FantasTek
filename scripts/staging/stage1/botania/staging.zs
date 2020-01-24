@@ -186,7 +186,8 @@ val StageLessItems = [
   <botania:quartztypedark:2>,
   <botania:quartzslabdarkhalf>,
   <botania:quartzstairsdark>,
-  <botania:blazeblock>
+  <botania:blazeblock>,
+  <botania:overgrowthseed>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

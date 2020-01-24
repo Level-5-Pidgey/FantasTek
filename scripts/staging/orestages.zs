@@ -195,7 +195,6 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 	for oreBlock, replaceWith in DenseAndPoorOres
 	{
 		//Replace each dense ore/poor ore block with their proper dimension equivalent block unless the player has the right stage for them.
-
 		if(oreValue <= 1)
 		{
 			mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[2].stage, oreBlock, replaceWith);
@@ -235,17 +234,6 @@ var CustomContenttweakerOres as crafttweaker.item.IItemStack[crafttweaker.item.I
 		<contenttweaker:sub_block_holder_4:7> : <minecraft:stone>,
 		<contenttweaker:sub_block_holder_8:4> : <minecraft:stone>
 };
-
-for materialString, oreValue in scripts.helpers.OresWithProcessingTier
-{
-	for oreBlock, replaceWith in CustomContenttweakerOres
-	{
-		if(scripts.helpers.StageForProcessingTier[oreValue].stage != "stage_i")
-		{
-			mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[oreValue].stage, oreBlock, replaceWith);
-		}
-	}
-}
 
 //Hide non-custom ore blocks properly
 for materialString, oreValue in scripts.helpers.OresWithProcessingTier

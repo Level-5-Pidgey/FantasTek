@@ -1,11 +1,23 @@
-{ 
+{
 	Profession:"minecraft:farmer",
 	Career:"shepherd",
 
 	Offers:{
 		Recipes:[
-
-			{action:"add", buy:{id:"minecraft:emerald",Count:{min:12,max:15}},sell:{id:"minecraft:shears",Count:1,tag:{ench:"random"}}, CareerLevel:3}
+			{action:"clear"},
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"minecraft:feather",
+					Count:{min:15,max:20}
+				},
+				sell:
+				{
+					id:"minecraft:emerald",
+					Count:1
+				}
+			}
 
 		]
 	}

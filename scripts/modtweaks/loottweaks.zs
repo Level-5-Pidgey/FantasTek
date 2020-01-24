@@ -118,7 +118,7 @@ val witherSkeleton = LootTables.getTable("minecraft:entities/wither_skeleton"); 
 witherSkeleton.removePool("xuLootDropOfEvil");
 
 //Make Astral Sorcery chests not generate Aquamarine/Constellation Papers
-val shrineChest = LootTables.getTable("astralsorcery:chest_shrine");
+val shrineChest = LootTables.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine");
 val astralShrineChestPools =
 	[
 		"astralsorcery:itemconstellationpaper",
@@ -127,10 +127,10 @@ val astralShrineChestPools =
 
 for pool in astralShrineChestPools
 {
-	shrineChest.removePool(pool);
+	shrineChest.removeEntry(pool);
 }
 
-
+//Ender Man Loottable
 val enderman = LootTables.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
 enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
 enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.parse({
@@ -140,5 +140,16 @@ enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Func
   },
   "function": "minecraft:looting_enchant"
 })], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
+
+//Random Things Summoning Pendulum
+LootTables.getTable("minecraft:chests/simple_dungeon").getPool("summoningpendulum").removeEntry("item");
+LootTables.getTable("minecraft:chests/stronghold_corridor").getPool("summoningpendulum").removeEntry("item");
+
+//bountifulbaubles loot pools
+LootTables.getTable("minecraft:chests/simple_dungeon").removePool("bountifulbaubles_dungeon");
+LootTables.getTable("minecraft:chests/simple_dungeon").removePool("bountifulbaubles_dungeon_potions");
+
+//Spectre Coils
+LootTables.getTable("minecraft:chests/simple_dungeon").removePool("spectrecoil_number");
 
 print("### Loottweaker Init Complete ###");

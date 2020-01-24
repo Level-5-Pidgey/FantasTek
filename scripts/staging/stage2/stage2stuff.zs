@@ -34,7 +34,8 @@ val StageMods = [
   "contenttweaker",
   "enderio",
   "environmentaltech",
-  "compactmachines3"
+  "compactmachines3",
+  "iceandfire"
 ] as string[];
 
 for modTag in StageMods

@@ -217,7 +217,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 
 for liquidObject, zenStageObject in liquidStages
 {
-	if(zenStageObject.stage != "stage-i")
+	if(zenStageObject.stage != "stage_i")
 	{
 		//Stage the liquid itself
 		zenStageObject.addLiquid(liquidObject);
