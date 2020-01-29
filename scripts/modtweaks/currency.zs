@@ -19,4 +19,5 @@ for money in moneyItems
 {
 	scripts.helpers.AddTooltip(money, ["Money will be destroyed if it is in your inventory when you die.", "A wallet can store money safely!"]);
 }
+
 print("### Good Ol' Currency Mod Init Complete ###");

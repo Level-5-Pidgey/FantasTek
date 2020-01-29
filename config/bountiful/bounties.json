@@ -1,66 +1,183 @@
 [
   {
-    "content": "minecraft:dirt",
+    "content": "contenttweaker:strange_treasure",
     "amount": {
-      "min": 16,
-      "max": 128
+      "min": 1,
+      "max": 1
     },
-    "unitWorth": 5,
-    "weight": 100
+    "unitWorth": 9000,
+    "weight": 10
   },
   {
-    "content": "minecraft:stone",
+    "content": "minecraft:wool:0",
     "amount": {
-      "min": 16,
-      "max": 128
+      "min": 4,
+      "max": 24
     },
-    "unitWorth": 10,
-    "weight": 100
+    "unitWorth": 120,
+    "weight": 5
   },
   {
-    "content": "minecraft:cobblestone",
-    "amount": {
-      "min": 16,
-      "max": 128
-    },
-    "unitWorth": 7,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:fish",
-    "amount": {
-      "min": 2,
-      "max": 32
-    },
-    "unitWorth": 80,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:apple",
-    "amount": {
-      "min": 2,
-      "max": 32
-    },
-    "unitWorth": 70,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:book",
+    "content": "minecraft:wool:13",
     "amount": {
       "min": 2,
       "max": 16
     },
-    "unitWorth": 80,
-    "weight": 100
+    "unitWorth": 165,
+    "weight": 3
   },
   {
-    "content": "minecraft:cactus",
+    "content": "minecraft:wool:12",
     "amount": {
       "min": 2,
-      "max": 32
+      "max": 16
     },
-    "unitWorth": 80,
-    "weight": 100
+    "unitWorth": 165,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:wool:11",
+    "amount": {
+      "min": 2,
+      "max": 16
+    },
+    "unitWorth": 170,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:wool:4",
+    "amount": {
+      "min": 2,
+      "max": 16
+    },
+    "unitWorth": 165,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:wool:15",
+    "amount": {
+      "min": 2,
+      "max": 16
+    },
+    "unitWorth": 165,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:wool:1",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 180,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:2",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 200,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:3",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 180,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:5",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 180,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:1",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 180,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:6",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 180,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:7",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 180,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:8",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 190,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:9",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 190,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:wool:10",
+    "amount": {
+      "min": 2,
+      "max": 12
+    },
+    "unitWorth": 180,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:dye:4",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 50,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:iron_ingot",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 275,
+    "weight": 15
+  },
+  {
+    "content": "minecraft:gold_ingot",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 350,
+    "weight": 12
   },
   {
     "content": "minecraft:diamond",
@@ -68,143 +185,466 @@
       "min": 1,
       "max": 8
     },
-    "unitWorth": 1600,
-    "weight": 100
+    "unitWorth": 2200,
+    "weight": 8
   },
   {
-    "content": "minecraft:dispenser",
+    "content": "minecraft:emerald",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 2300,
+    "weight": 7
+  },
+  {
+    "content": "minecraft:obsidian",
+    "amount": {
+      "min": 4,
+      "max": 12
+    },
+    "unitWorth": 550,
+    "weight": 11
+  },
+  {
+    "content": "minecraft:shulker_shell",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 2100,
+    "weight": 11
+  },
+  {
+    "content": "minecraft:ender_pearl",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 200,
+    "weight": 5
+  },
+  {
+    "content": "minecraft:iron_ore",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 200,
+    "weight": 6
+  },
+  {
+    "content": "minecraft:gold_ore",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 270,
+    "weight": 6
+  },
+  {
+    "content": "minecraft:diamond_ore",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 2900,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:emerald_ore",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 3030,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:lapis_ore",
     "amount": {
       "min": 1,
       "max": 6
     },
-    "unitWorth": 200,
-    "weight": 100
+    "unitWorth": 325,
+    "weight": 3
   },
   {
-    "content": "minecraft:iron_ingot",
+    "content": "minecraft:redstone_ore",
     "amount": {
       "min": 1,
-      "max": 32
+      "max": 5
     },
-    "unitWorth": 200,
-    "weight": 100
+    "unitWorth": 480,
+    "weight": 3
   },
   {
-    "content": "minecraft:bread",
+    "content": "minecraft:quartz_ore",
     "amount": {
       "min": 1,
-      "max": 12
+      "max": 5
+    },
+    "unitWorth": 240,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:coal_ore",
+    "amount": {
+      "min": 1,
+      "max": 5
     },
     "unitWorth": 60,
-    "weight": 100
+    "weight": 3
+  },
+  {
+    "content": "minecraft:quartz",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 180,
+    "weight": 8
+  },
+  {
+    "content": "minecraft:coal",
+    "amount": {
+      "min": 12,
+      "max": 24
+    },
+    "unitWorth": 40,
+    "weight": 8
+  },
+  {
+    "content": "minecraft:coal_block",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 380,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:iron_block",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 2450,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:gold_block",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 3250,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:redstone_block",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 800,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:diamond_block",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 19400,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:emerald_block",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 20500,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:lapis_block",
+    "amount": {
+      "min": 1,
+      "max": 2
+    },
+    "unitWorth": 430,
+    "weight": 2
+  },
+  {
+    "content": "minecraft:mycelium",
+    "amount": {
+      "min": 12,
+      "max": 48
+    },
+    "unitWorth": 10,
+    "weight": 5
+  },
+  {
+    "content": "minecraft:clay_ball",
+    "amount": {
+      "min": 4,
+      "max": 16
+    },
+    "unitWorth": 25,
+    "weight": 14
+  },
+  {
+    "content": "minecraft:vine",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 2,
+    "weight": 16
+  },
+  {
+    "content": "minecraft:cooked_chicken",
+    "amount": {
+      "min": 4,
+      "max": 16
+    },
+    "unitWorth": 60,
+    "weight": 9
+  },
+  {
+    "content": "minecraft:cooked_porkchop",
+    "amount": {
+      "min": 4,
+      "max": 16
+    },
+    "unitWorth": 80,
+    "weight": 9
+  },
+  {
+    "content": "minecraft:cooked_beef",
+    "amount": {
+      "min": 4,
+      "max": 16
+    },
+    "unitWorth": 75,
+    "weight": 9
+  },
+  {
+    "content": "minecraft:cooked_fish",
+    "amount": {
+      "min": 4,
+      "max": 16
+    },
+    "unitWorth": 100,
+    "weight": 9
+  },
+  {
+    "content": "forestry:crated.croppotato",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 80,
+    "weight": 7
+  },
+  {
+    "content": "forestry:crated.minecraft.apple.0",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 260,
+    "weight": 7
+  },
+  {
+    "content": "forestry:crated.cropcarrot",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 80,
+    "weight": 7
+  },
+  {
+    "content": "forestry:crated.minecraft.log.0",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 450,
+    "weight": 3
+  },
+  {
+    "content": "forestry:crated.minecraft.log.1",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 450,
+    "weight": 3
+  },
+  {
+    "content": "forestry:crated.minecraft.log.2",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 450,
+    "weight": 3
+  },
+  {
+    "content": "forestry:crated.minecraft.log.3",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 450,
+    "weight": 3
+  },
+  {
+    "content": "forestry:crated.minecraft.log2.0",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 450,
+    "weight": 3
+  },
+  {
+    "content": "forestry:crated.minecraft.log2.1",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 450,
+    "weight": 3
+  },
+  {
+    "content": "forestry:crated.cropwheat",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 40,
+    "weight": 3
+  },
+  {
+    "content": "minecraft:milk_bucket",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 860,
+    "weight": 12
+  },
+  {
+    "content": "minecraft:lava_bucket",
+    "amount": {
+      "min": 1,
+      "max": 4
+    },
+    "unitWorth": 2000,
+    "weight": 12
+  },
+  {
+    "content": "minecraft:mushroom_stew",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 120,
+    "weight": 14
+  },
+  {
+    "content": "minecraft:red_mushroom",
+    "amount": {
+      "min": 3,
+      "max": 16
+    },
+    "unitWorth": 40,
+    "weight": 8
+  },
+  {
+    "content": "minecraft:brown_mushroom",
+    "amount": {
+      "min": 3,
+      "max": 16
+    },
+    "unitWorth": 40,
+    "weight": 8
+  },
+  {
+    "content": "minecraft:flint",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 10,
+    "weight": 15
+  },
+  {
+    "content": "minecraft:gunpowder",
+    "amount": {
+      "min": 1,
+      "max": 24
+    },
+    "unitWorth": 50,
+    "weight": 13
   },
   {
     "content": "minecraft:rotten_flesh",
     "amount": {
       "min": 1,
-      "max": 24
-    },
-    "unitWorth": 55,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:sign",
-    "amount": {
-      "min": 1,
       "max": 16
     },
-    "unitWorth": 65,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:slime_ball",
-    "amount": {
-      "min": 1,
-      "max": 32
-    },
-    "unitWorth": 60,
-    "weight": 100
+    "unitWorth": 25,
+    "weight": 18
   },
   {
     "content": "minecraft:spider_eye",
     "amount": {
       "min": 1,
-      "max": 16
-    },
-    "unitWorth": 75,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:string",
-    "amount": {
-      "min": 1,
-      "max": 24
-    },
-    "unitWorth": 35,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:sugar",
-    "amount": {
-      "min": 1,
-      "max": 64
-    },
-    "unitWorth": 55,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:tripwire_hook",
-    "amount": {
-      "min": 1,
-      "max": 8
-    },
-    "unitWorth": 70,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:wheat",
-    "amount": {
-      "min": 1,
-      "max": 48
-    },
-    "unitWorth": 20,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:leather",
-    "amount": {
-      "min": 1,
       "max": 12
     },
-    "unitWorth": 90,
-    "weight": 100
+    "unitWorth": 45,
+    "weight": 12
   },
   {
-    "content": "entity:minecraft:zombie",
+    "content": "minecraft:feather",
     "amount": {
-      "min": 1,
-      "max": 8
+      "min": 5,
+      "max": 16
     },
-    "unitWorth": 120,
-    "weight": 300
+    "unitWorth": 20,
+    "weight": 10
   },
   {
-    "content": "entity:minecraft:skeleton",
+    "content": "minecraft:slime_ball",
     "amount": {
-      "min": 1,
-      "max": 6
+      "min": 2,
+      "max": 12
     },
-    "unitWorth": 140,
-    "weight": 250
+    "unitWorth": 160,
+    "weight": 16
   },
   {
-    "content": "minecraft:potion",
+    "content": "minecraft:ghast_tear",
     "amount": {
       "min": 1,
       "max": 3
     },
-    "unitWorth": 300,
-    "weight": 100,
-    "nbt_data": "{Potion: \"minecraft:healing\"}"
+    "unitWorth": 1800,
+    "weight": 10
+  },
+  {
+    "content": "minecraft:blaze_powder",
+    "amount": {
+      "min": 4,
+      "max": 8
+    },
+    "unitWorth": 35,
+    "weight": 9
   }
 ]

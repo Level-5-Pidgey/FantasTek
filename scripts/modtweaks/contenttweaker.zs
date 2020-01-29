@@ -25,4 +25,7 @@ for prismarine in <ore:prismarine>.items
 }
 recipes.addShapeless("prismarine_shards", <contenttweaker:prismarine_nugget> * 2, [<embers:tinker_hammer>, <ore:shardPrismarine>]);
 
+//Add Tooltip for Artifact
+scripts.helpers.AddTooltip(<contenttweaker:strange_treasure>, ["Rare treasure that villagers may have a bounty for!", "Can be sold for a high price."]);
+
 print("### ContentTweaker recipes Init Complete ###");
