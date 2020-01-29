@@ -10,8 +10,6 @@ val StageMods = [
   "mekanismtools",
   "mekanismgenerators",
   "forestry",
-  "morebees",
-  "magicbees",
   "draconicevolution",
   "industrialforegoing",
   "thermalexpansion",
@@ -21,8 +19,6 @@ val StageMods = [
   "thermalcultivation",
   "appliedenergistics2",
   "extracells",
-  "extrabees",
-  "botany",
   "avaritia",
   "advancedrocketry",
   "libvulpes",
@@ -45,4 +41,24 @@ for modTag in StageMods
 
 //Add Cinderpearl to Blaze Powder crafting to stage 2.
 mods.recipestages.Recipes.setRecipeStage(stages.Locked.stage, "thaumcraft:cinderpearltoblazepowder");
+
+//Stage Stubborn Items.
+val otherItems = [
+	<forestry:thermionic_tubes:1>,
+	<forestry:thermionic_tubes:2>,
+	<forestry:thermionic_tubes:4>,
+	<forestry:thermionic_tubes:5>,
+	<forestry:thermionic_tubes:6>,
+	<forestry:thermionic_tubes:7>,
+	<forestry:thermionic_tubes:9>,
+	<forestry:thermionic_tubes:10>,
+	<forestry:thermionic_tubes:11>,
+	<forestry:thermionic_tubes:12>,
+	<forestry:thermionic_tubes:12>
+] as crafttweaker.item.IItemStack[];
+
+for item in otherItems
+{
+	mods.ItemStages.addItemStage(stages.Locked.stage, item);
+}
 print("### Stage 2 Staging Complete ###");

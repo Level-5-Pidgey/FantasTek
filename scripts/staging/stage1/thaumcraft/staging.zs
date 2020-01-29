@@ -56,7 +56,8 @@ val StageLessItems = [
   <thaumcraft:brain>,
   <thaumcraft:brain>,
   <thaumcraft:ore_quartz>,
-  <thaumcraft:nugget:5>
+  <thaumcraft:nugget:5>,
+  <thaumcraft:quicksilver>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

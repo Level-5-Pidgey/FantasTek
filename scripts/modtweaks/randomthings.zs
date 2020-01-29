@@ -31,6 +31,7 @@ val shopItems =
 
 for item in shopItems
 {
+	recipes.remove(item);
 	scripts.helpers.AddTooltip(item, ["Cannot be crafted.", "Purchasable from various villagers."]);
 }
 
