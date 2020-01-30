@@ -11,42 +11,32 @@ liquidLubricant.register();
 var troll_marrow = VanillaFactory.createFluid("troll_marrow", Color.fromHex("e3dbaa"));
 troll_marrow.register();
 
-var moltenAwakenedDraconium = VanillaFactory.createFluid("molten_awakened_draconium", Color.fromHex("ff4917"));
-moltenAwakenedDraconium.temperature = 800;
-moltenAwakenedDraconium.luminosity = 5;
-moltenAwakenedDraconium.density = 800;
-moltenAwakenedDraconium.viscosity = 800;
-moltenAwakenedDraconium.register();
+var moltenAwakenedDraconium = MaterialSystem.getMaterialBuilder().setName("Awakened Draconium").setColor(Color.fromHex("ff4917")).build();
+var liquid_molten_moltenAwakenedDraconium = molten_.registerPart("molten").getData();
+liquid_molten_moltenAwakenedDraconium.addDataValue("density", "2000");
+liquid_molten_moltenAwakenedDraconium.addDataValue("viscosity", 6000);
+liquid_molten_moltenAwakenedDraconium.addDataValue("temperature", 800);
+liquid_molten_moltenAwakenedDraconium.addDataValue("luminosity", 15);
 
-var molten_black_iron = VanillaFactory.createFluid("molten_black_iron", Color.fromHex("262626"));
-molten_black_iron.temperature = 800;
-molten_black_iron.luminosity = 5;
-molten_black_iron.density = 800;
-molten_black_iron.viscosity = 800;
-molten_black_iron.register();
+var molten_black_iron = MaterialSystem.getMaterialBuilder().setName("Black Iron").setColor(Color.fromHex("262626")).build();
+var liquid_molten_black_iron = molten_.registerPart("molten").getData();
+liquid_molten_black_iron.addDataValue("density", "2000");
+liquid_molten_black_iron.addDataValue("viscosity", 6000);
+liquid_molten_black_iron.addDataValue("temperature", 800);
+liquid_molten_black_iron.addDataValue("luminosity", 15);
 
-//Molten Elemental Crystals (Astral Sorcery)
-var molten_elemental_fire_crystal = VanillaFactory.createFluid("molten_elemental_fire_crystal", Color.fromHex("ff4a4a"));
-molten_elemental_fire_crystal.register();
-var molten_elemental_water_crystal = VanillaFactory.createFluid("molten_elemental_water_crystal", Color.fromHex("8fffd0"));
-molten_elemental_water_crystal.register();
-var molten_elemental_earth_crystal = VanillaFactory.createFluid("molten_elemental_earth_crystal", Color.fromHex("bbff78"));
-molten_elemental_earth_crystal.register();
-var molten_elemental_air_crystal = VanillaFactory.createFluid("molten_elemental_air_crystal", Color.fromHex("c7edff"));
-molten_elemental_air_crystal.register();
+var molten_modularium = MaterialSystem.getMaterialBuilder().setName("Modularium").setColor(Color.fromHex("757575")).build();
+var liquid_molten_modularium = molten_.registerPart("molten").getData();
+liquid_molten_modularium.addDataValue("density", "2000");
+liquid_molten_modularium.addDataValue("viscosity", 6000);
+liquid_molten_modularium.addDataValue("temperature", 800);
+liquid_molten_modularium.addDataValue("luminosity", 15);
 
-var molten_modularium = VanillaFactory.createFluid("molten_modularium", Color.fromHex("757575"));
-molten_modularium.temperature = 800;
-molten_modularium.luminosity = 5;
-molten_modularium.density = 800;
-molten_modularium.viscosity = 800;
-molten_modularium.register();
-
-var molten_crude_steel = VanillaFactory.createFluid("molten_crude_steel", Color.fromHex("ccccb3"));
-molten_crude_steel.temperature = 800;
-molten_crude_steel.luminosity = 5;
-molten_crude_steel.density = 800;
-molten_crude_steel.viscosity = 800;
-molten_crude_steel.register();
+var molten_crude_steel = MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(Color.fromHex("ccccb3")).build();
+var liquid_molten_crude_steel = molten_.registerPart("molten").getData();
+liquid_molten_crude_steel.addDataValue("density", 2000);
+liquid_molten_crude_steel.addDataValue("viscosity", 6000);
+liquid_molten_crude_steel.addDataValue("temperature", 800);
+liquid_molten_crude_steel.addDataValue("luminosity", 15);
 
 print("### Custom Fluid Creator Init Complete ###");
