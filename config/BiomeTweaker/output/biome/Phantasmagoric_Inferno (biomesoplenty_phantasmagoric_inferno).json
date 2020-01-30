@@ -20,12 +20,12 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "NETHER",
-    "SPOOKY",
     "HOT",
-    "MAGICAL",
+    "WASTELAND",
+    "NETHER",
     "DRY",
-    "WASTELAND"
+    "MAGICAL",
+    "SPOOKY"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

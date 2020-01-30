@@ -20,12 +20,12 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HILLS",
-    "MAGICAL",
+    "WASTELAND",
     "MOUNTAIN",
     "COLD",
+    "HILLS",
     "DRY",
-    "WASTELAND"
+    "MAGICAL"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
