@@ -31,7 +31,11 @@ val StageMods = [
   "enderio",
   "environmentaltech",
   "compactmachines3",
-  "iceandfire"
+  "iceandfire",
+  "tconstruct",
+  "projectred-core",
+  "magneticraft",
+  "deepmoblearning"
 ] as string[];
 
 for modTag in StageMods

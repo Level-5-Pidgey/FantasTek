@@ -5,8 +5,182 @@
 	Offers:{
 		Recipes:[
 			{action:"clear"},
-			{action:"add", buy:{id:"minecraft:emerald",Count:{min:6,max:8}},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:1}
-
+			{
+                action:"add", CareerLevel:1,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:3,
+                    Damage:4
+                },
+                sell:{
+                    id:"minecraft:wheat",
+                    Count:{min:40,max:60}
+                }
+            },
+			{
+                action:"add", CareerLevel:2,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:8,
+                    Damage:2
+                },
+				buyB:{
+                    id:"minecraft:bucket",
+                    Count:1
+                },
+                sell:{
+                    id:"minecraft:milk_bucket",
+                    Count:1
+                }
+            },
+			{
+                action:"add", CareerLevel:3,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:9,
+                    Damage:4
+                },
+                sell:{
+                    id:"minecraft:brown_mushroom",
+                    Count:{min:12,max:20}
+                }
+            },
+			{
+                action:"add", CareerLevel:3,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:9,
+                    Damage:4
+                },
+                sell:{
+                    id:"minecraft:red_mushroom",
+                    Count:{min:12,max:20}
+                }
+            },
+			{
+                action:"add", CareerLevel:1,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:1,
+                    Damage:4
+                },
+                sell:{
+                    id:"minecraft:carrot",
+                    Count:{min:7,max:9}
+                }
+            },
+			{
+                action:"add", CareerLevel:1,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:1,
+                    Damage:4
+                },
+                sell:{
+                    id:"minecraft:potato",
+                    Count:{min:7,max:9}
+                }
+            },
+			{
+                action:"add", CareerLevel:2,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:2,
+                    Damage:2
+                },
+                sell:{
+                    id:"minecraft:melon",
+                    Count:{min:15,max:25}
+                }
+            },
+			{
+                action:"add", CareerLevel:2,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:1,
+                    Damage:4
+                },
+                sell:{
+                    id:"minecraft:pumpkin",
+                    Count:4
+                }
+            },
+			{
+                action:"add", CareerLevel:4,
+                buy:{
+					id:"modcurrency:coin",
+                    Count:1,
+                    Damage:5
+                },
+				buyB:{
+                    id:"modcurrency:coin",
+                    Count:{min:1,max:3},
+                    Damage:2
+                },
+                sell:{
+                    id:"minecraft:apple",
+                    Count:5
+                }
+            },
+			{
+                action:"add", CareerLevel:4,
+				buy:{
+                    id:"modcurrency:banknote",
+                    Count:1,
+                    Damage:5
+                },
+                sell:{
+                    id:"minecraft:golden_carrot",
+                    Count:2
+                }
+            },
+			{
+                action:"add", CareerLevel:5,
+                buy:{
+					id:"modcurrency:banknote",
+                    Count:1,
+                    Damage:4
+                },
+				buyB:{
+                    id:"modcurrency:banknote",
+                    Count:1,
+                    Damage:2
+                },
+                sell:{
+                    id:"minecraft:golden_apple",
+                    Count:2
+                }
+            },
+			{
+                action:"add", CareerLevel:6,
+                buy:{
+					id:"modcurrency:banknote",
+                    Count:4,
+                    Damage:5
+                },
+				buyB:{
+                    id:"modcurrency:banknote",
+                    Count:1,
+                    Damage:3
+                },
+                sell:{
+                    id:"minecraft:golden_apple",
+					Damage:1,
+                    Count:1
+                }
+            },
+			{
+                action:"add", CareerLevel:6,
+                buy:{
+					id:"modcurrency:banknote",
+                    Count:5,
+                    Damage:5
+                },
+                sell:{
+                    id:"tconstruct:spaghetti",
+                    Count:1
+                }
+            }
 		]
 	}
 

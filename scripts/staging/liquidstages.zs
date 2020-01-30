@@ -37,6 +37,7 @@ function StageForestryCapsule(liquidObject as ILiquidStack, stageToSetTo as mods
 var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 {
 	<liquid:aerotheum> : stages.Locked,
+	<liquid:astralsorcery.liquidstarlight> : stages.AstralSorcery1,
 	<liquid:alchemical_redstone> : stages.Locked,
 	<liquid:alubrass> : stages.Locked,
 	<liquid:aluminum> : stages.Locked,
@@ -137,10 +138,6 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:molten_awakened_draconium> : stages.Locked,
 	<liquid:molten_black_iron> : stages.progression1,
 	<liquid:molten_crude_steel> : stages.progression1,
-	<liquid:molten_elemental_air_crystal> : stages.Locked,
-	<liquid:molten_elemental_earth_crystal> : stages.Locked,
-	<liquid:molten_elemental_fire_crystal> : stages.Locked,
-	<liquid:molten_elemental_water_crystal> : stages.Locked,
 	<liquid:molten_modularium> : stages.progression1,
 	<liquid:molten_reinforced_pink_slime> : stages.Locked,
 	<liquid:mushroom_stew> : stages.progression1,
@@ -205,7 +202,6 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:vibranium> : stages.Locked,
 	<liquid:vibrant_alloy> : stages.Locked,
 	<liquid:voidmetal> : stages.Locked,
-	<liquid:water> : stages.progression1,
 	<liquid:wood_gas> : stages.Locked,
 	<liquid:xpjuice> : stages.Locked,
 	<liquid:xu_demonic_metal> : stages.Locked,

@@ -77,4 +77,7 @@ mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral
 mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_fire>);
 mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_earth>);
 
+//Change tooltip for Astral Sorcery crystals
+mods.ItemStages.setUnfamiliarName("Mysterious Crystal", <astralsorcery:blockcollectorcrystal>);
+
 print("### Stage 1 Astral Sorcery Complete ###");

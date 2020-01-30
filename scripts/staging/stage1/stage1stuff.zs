@@ -1,4 +1,4 @@
-#priority 98
+#priority 97
 
 print("~~~ Begin Stage 1 Staging ~~~");
 
@@ -150,7 +150,43 @@ val StageLessItems = [
   <iceandfire:jar_pixie:3>,
   <iceandfire:jar_pixie:4>,
   <iceandfire:manuscript>,
-  <iceandfire:sapphire_gem>
+  <iceandfire:sapphire_gem>,
+  <projectred-core:resource_item:105>,
+  <projectred-core:resource_item:103>,
+  <projectred-core:resource_item:104>,
+  <projectred-core:resource_item:250>,
+  <projectred-core:resource_item:251>,
+  <projectred-core:resource_item:252>,
+  <projectred-core:resource_item:300>,
+  <projectred-core:resource_item:301>,
+  <projectred-core:resource_item:310>,
+  <projectred-core:resource_item:311>,
+  <projectred-core:resource_item:312>,
+  <projectred-core:resource_item:320>,
+  <projectred-core:resource_item:341>,
+  <projectred-core:resource_item:342>,
+  <projectred-core:resource_item:420>,
+  <projectred-core:resource_item:421>,
+  <projectred-core:resource_item:500>,
+  <projectred-core:resource_item:501>,
+  <projectred-core:resource_item:502>,
+  <projectred-core:resource_item:503>,
+  <projectred-core:resource_item:504>,
+  <projectred-core:resource_item:505>,
+  <projectred-core:resource_item:506>,
+  <projectred-core:resource_item:507>,
+  <projectred-core:resource_item:508>,
+  <projectred-core:resource_item:509>,
+  <projectred-core:resource_item:510>,
+  <projectred-core:resource_item:511>,
+  <projectred-core:resource_item:512>,
+  <projectred-core:resource_item:513>,
+  <projectred-core:resource_item:514>,
+  <projectred-core:resource_item:515>,
+  <projectred-core:resource_item:600>,
+  <projectred-core:drawplate>,
+  <projectred-core:multimeter>,
+  <projectred-core:screwdriver>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

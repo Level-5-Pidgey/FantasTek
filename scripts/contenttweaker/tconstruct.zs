@@ -1,4 +1,4 @@
-#priority 99
+#priority 499
 #loader contenttweaker
 import mods.contenttweaker.tconstruct.MaterialBuilder;
 
