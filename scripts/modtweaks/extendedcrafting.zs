@@ -7,11 +7,11 @@ recipes.removeByRecipeName("extendedcrafting:black_iron_slate");
 
 //Add New Black Iron Crafting
 //Tinkers Melting
-mods.tconstruct.Alloy.addRecipe(<liquid:molten_black_iron> * 2, [<liquid:iron> * 1, <liquid:obsidian> * 1]);
-mods.tconstruct.Casting.addTableRecipe(<ore:ingotBlackIron>.firstItem, <tconstruct:cast_custom>, <liquid:molten_black_iron>, 144, false);
-mods.tconstruct.Casting.addTableRecipe(<ore:nuggetBlackIron>.firstItem, <tconstruct:cast_custom:1>, <liquid:molten_black_iron>, 16, false);
-mods.tconstruct.Casting.addTableRecipe(<extendedcrafting:material:2>, <tconstruct:cast_custom:3>, <liquid:molten_black_iron>, 576, false);
-mods.tconstruct.Casting.addBasinRecipe(<ore:blockBlackIron>.firstItem, null, <liquid:molten_black_iron>, 1296);
+mods.tconstruct.Alloy.addRecipe(<liquid:black_iron> * 2, [<liquid:iron> * 1, <liquid:obsidian> * 1]);
+mods.tconstruct.Casting.addTableRecipe(<ore:ingotBlackIron>.firstItem, <tconstruct:cast_custom>, <liquid:black_iron>, 144, false);
+mods.tconstruct.Casting.addTableRecipe(<ore:nuggetBlackIron>.firstItem, <tconstruct:cast_custom:1>, <liquid:black_iron>, 16, false);
+mods.tconstruct.Casting.addTableRecipe(<extendedcrafting:material:2>, <tconstruct:cast_custom:3>, <liquid:black_iron>, 576, false);
+mods.tconstruct.Casting.addBasinRecipe(<ore:blockBlackIron>.firstItem, null, <liquid:black_iron>, 1296);
 //Machines
 mods.thermalexpansion.InductionSmelter.addRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <ore:obsidian>.firstItem, 3000);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotBlackIron>.firstItem * 2, [<ore:ingotIron>, <ore:obsidian>], 3000);

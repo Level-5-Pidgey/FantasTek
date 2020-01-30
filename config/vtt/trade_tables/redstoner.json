@@ -8,7 +8,8 @@
 			{
 				action:"add", CareerLevel:1,
 				buy:{
-					id:"modcurrency:coin:4",
+					id:"modcurrency:coin",
+					Damage:4,
 					Count:{min:5,max:6}
 				},
 				sell:{
@@ -201,7 +202,7 @@
 					Count:{min:4,max:6}
 				},
 				sell:{
-					id:"randomthings:enderbridge",
+					id:"randomthings:enderanchor",
 					Count:1
 				}
 			}

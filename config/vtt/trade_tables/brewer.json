@@ -35,7 +35,7 @@
                 }
             },
             {
-                action:"add", CareerLevel:1,
+                action:"add", CareerLevel:2,
                 buy:{
                     id:"modcurrency:banknote",
                     Count:1,
@@ -47,7 +47,7 @@
                 }
             },
             {
-                action:"add", CareerLevel:1,
+                action:"add", CareerLevel:2,
                 buy:{
                     id:"modcurrency:coin",
                     Count:3,
@@ -59,7 +59,7 @@
                 }
             },
             {
-                action:"add", CareerLevel:1,
+                action:"add", CareerLevel:2,
                 buy:{
                     id:"modcurrency:coin",
                     Count:3,
@@ -76,7 +76,7 @@
                 }
             },
             {
-                action:"add", CareerLevel:1,
+                action:"add", CareerLevel:3,
                 buy:{
                     id:"modcurrency:banknote",
                     Count:1,

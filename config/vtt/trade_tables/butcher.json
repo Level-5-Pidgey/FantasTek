@@ -147,7 +147,7 @@
                 action:"add", CareerLevel:4,
                 buy:{
 					id:"modcurrency:banknote",
-                    Count:1
+                    Count:1,
                     Damage:2
                 },
                 sell:{
@@ -159,7 +159,7 @@
                 action:"add", CareerLevel:4,
                 buy:{
 					id:"modcurrency:coin",
-                    Count:2
+                    Count:2,
                     Damage:5
                 },
                 sell:{
