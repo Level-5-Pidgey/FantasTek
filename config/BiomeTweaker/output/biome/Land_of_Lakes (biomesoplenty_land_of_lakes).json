@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "SWAMP",
     "DENSE",
-    "WET",
-    "FOREST"
+    "FOREST",
+    "WET"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

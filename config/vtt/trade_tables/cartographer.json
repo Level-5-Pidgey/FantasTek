@@ -6,87 +6,69 @@
 		Recipes:[
 			{action:"clear"},
 			{
-				action:"add", CareerLevel:1,
-				buy:{
+				action:"add", CareerLevel:3,
+				buy:
+				{
 					id:"modcurrency:banknote",
 					Count:3,
 					Damage:2
 				},
+				sell:
+				{
+					id:"antiqueatlas:empty_antique_atlas",
+					Count:1
+				}
 			},
-			sell:{
-				id:"antiqueatlas:empty_antique_atlas",
-				Count:1
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:3
+				},
+				sell:
+				{
+					id:"minecraft:paper",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:{
+					id:"modcurrency:coin",
+					Count:1,
+					Damage:4
+				},
+				sell:{
+					id:"minecraft:book",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"modcurrency:banknote",
+					Count:1,
+					Damage:2
+				},
+				sell:{
+					id:"inspirations:north_compass",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"modcurrency:banknote",
+					Count:1,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:compass",
+					nbt: "{\"quark:compass_calculated\":1, \"quark:compass_in_nether\":0}",
+					Count:1
+				}
 			}
-		},
-		{
-			action:"add", CareerLevel:1,
-			buy:{
-				id:"modcurrency:coin",
-				Count:3,
-			},
-			sell:{
-				id:"minecraft:paper",
-				Count:1
-			}
-		},
-		{
-			action:"add", CareerLevel:1,
-			buy:{
-				id:"modcurrency:coin",
-				Count:1,
-				Damage:4
-			},
-			sell:{
-				id:"minecraft:book",
-				Count:1
-			}
-		},
-		{
-			action:"add", CareerLevel:1,
-			buy:{
-				id:"modcurrency:coin",
-				Count:3,
-				Damage:3
-			},
-			sell:{
-				id:"minecraft:spider_eye",
-				Count:{min:1,max:2}
-			}
-		},
-		{
-			action:"add", CareerLevel:1,
-			buy:{
-				id:"modcurrency:coin",
-				Count:3,
-				Damage:4
-			},
-			buyB:{
-				id:"modcurrency:coin",
-				Count:1,
-				Damage:2
-			},
-			sell:{
-				id:"minecraft:magma_cream",
-				Count:1
-			}
-		},
-		{
-			action:"add", CareerLevel:1,
-			buy:{
-				id:"modcurrency:banknote",
-				Count:1,
-				Damage:1
-			},
-			buyB:{
-				id:"modcurrency:coin",
-				Count:3,
-				Damage:2
-			},
-			sell:{
-				id:"minecraft:speckled_melon",
-				Count:1
-			}
-		}
-	]
-}
+		]
+	}
 }
