@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "SWAMP",
     "SPOOKY",
-    "WET",
-    "SPARSE",
     "DEAD",
+    "SPARSE",
+    "WET",
     "COLD"
   ],
   "BiomeManager Entries": {
