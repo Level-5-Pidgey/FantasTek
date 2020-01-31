@@ -11,7 +11,7 @@ function SetOreDictStage(oredict_entry as crafttweaker.oredict.IOreDictEntry, or
 {
 	for ore in oredict_entry.items
 	{
-		if(oreValue > 0)
+		if(scripts.helpers.StageForProcessingTier[oreValue].stage != "stage_i")
 		{
 			scripts.helpers.StageForProcessingTier[oreValue].addIngredient(ore);
 		}
@@ -34,8 +34,8 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
     oreDict.get("dustSmall" ~ materialString),
     oreDict.get("dustTiny" ~ materialString),
     oreDict.get("ore" ~ materialString),
-	//oreDict.get("denseOre" ~ materialString),
-	//oreDict.get("poorOre" ~ materialString),
+	oreDict.get("denseOre" ~ materialString),
+	oreDict.get("poorOre" ~ materialString),
     oreDict.get("ingot" ~ materialString),
     oreDict.get("gem" ~ materialString),
     oreDict.get("crystal" ~ materialString),
@@ -398,7 +398,8 @@ var OtherStagingReplacements as crafttweaker.item.IItemStack[crafttweaker.item.I
 	<contenttweaker:sub_block_holder_4:10> : <minecraft:stone>,
 	<embers:ore_quartz> : <minecraft:stone>,
 	<thaumcraft:ore_quartz> : <minecraft:stone>,
-	<rftools:dimensional_shard_ore> : <minecraft:stone>
+	<rftools:dimensional_shard_ore> : <minecraft:stone>,
+	<thermalfoundation:ore_fluid:2> : <minecraft:stone>
 };
 
 var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
@@ -449,7 +450,8 @@ var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
 	<contenttweaker:sub_block_holder_4:10> : stages.Locked,
 	<embers:ore_quartz> : stages.Locked,
 	<thaumcraft:ore_quartz> : stages.Locked,
-	<rftools:dimensional_shard_ore> : stages.Locked
+	<rftools:dimensional_shard_ore> : stages.Locked,
+	<thermalfoundation:ore_fluid:2> : stages.Locked
 };
 
 for blockToReplace in OtherStagingReplacements
@@ -467,7 +469,21 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 	{
 		if(!oreEntry.empty)
 		{
-			SetOreDictStage(oreEntry, oreValue);
+			if(oreValue <= 1)
+			{
+				if(scripts.helpers.StageForProcessingTier[oreValue + 1].stage != "stage_i")
+				{
+					SetOreDictStage(oreEntry, oreValue + 1);
+				}
+				else
+				{
+					mods.ItemStages.removeItemStage(oreEntry);
+				}
+			}
+			else
+			{
+				SetOreDictStage(oreEntry, oreValue);
+			}
 		}
 	}
 }
@@ -479,7 +495,10 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Wood" : stages.progression1,
   "ElectricalSteel" : stages.progression1,
   "RedstoneAlloy" : stages.progression1,
-  "ConductiveIron" : stages.progression1
+  "ConductiveIron" : stages.progression1,
+  "NetherStar" : stages.progression1,
+  "fuelCoke" : stages.progression1,
+  "blockFuelCoke" : stages.progression1
 };
 
 for materialString in ExtraMaterialsToStage

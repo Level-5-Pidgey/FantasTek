@@ -15,9 +15,7 @@
 /.mixin.out/
 /[Mm]ods/[Mm]emory_repo/
 /[Cc]rash-reports/
-/[Cc]onfig/BiomeTweaker/[Oo]utput/biome/
-/[Cc]onfig/BiomeTweaker/[Oo]utput/dimension/
-/[Cc]onfig/BiomeTweaker/[Oo]utput/entity/
+/[Cc]onfig/BiomeTweaker/[Oo]utput/**/*.json
 
 #Never ignore script files
 !/[Ss]cripts/**/*.zs
@@ -34,3 +32,7 @@ usernamecache.json
 .ReAuth.cfg
 crafttweaker.log
 knownkeys.txt
+config/jei/bookmarks.ini
+config/jei/worldSettings.cfg
+config/splash.properties
+config/InvTweaks.cfg
