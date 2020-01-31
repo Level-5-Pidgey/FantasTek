@@ -20,10 +20,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
+    "WASTELAND",
     "WET",
-    "DEAD",
     "SWAMP",
-    "WASTELAND"
+    "DEAD"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
