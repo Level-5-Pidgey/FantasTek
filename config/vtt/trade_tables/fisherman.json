@@ -5,7 +5,58 @@
 	Offers:{
 		Recipes:[
 			{action:"clear"},
-			{action:"add", buy:{id:"minecraft:emerald",Count:{min:6,max:8}},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:1}
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:1,
+					Damage:4
+				},
+				buyB:
+				{
+					id:"modcurrency:coin",
+					Count:2,
+					Damage:3
+				},
+				sell:
+				{
+					id:"minecraft:fish",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:1,
+					Damage:4
+				},
+				buyB:{
+					id:"modcurrency:coin",
+					count:2,
+					Damage:3
+				},
+				sell:
+				{
+					id:"minecraft:fish",
+					Count:1,
+					Damage:2
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:{
+					id:"modcurrency:coin",
+					Count:2,
+					Damage:4
+				},
+				sell:{
+					id:"minecraft:fishing_rod",
+					Count:1
+				}
+			}
 
 		]
 	}
