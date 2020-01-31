@@ -19,7 +19,7 @@
                 },
                 sell:{
                     id:"minecraft:mycelium",
-                    Count:{min:5,max:10}
+                    Count:1
                 }
             },
             {
@@ -31,11 +31,11 @@
                 },
                 sell:{
                     id:"minecraft:sugar",
-                    Count:{min:5,max:10}
+                    Count:1
                 }
             },
             {
-                action:"add", CareerLevel:2,
+                action:"add", CareerLevel:1,
                 buy:{
                     id:"modcurrency:banknote",
                     Count:1,
@@ -43,11 +43,11 @@
                 },
                 sell:{
                     id:"minecraft:rabbit_foot",
-                    Count:{min:1,max:3}
+                    Count:1
                 }
             },
             {
-                action:"add", CareerLevel:2,
+                action:"add", CareerLevel:1,
                 buy:{
                     id:"modcurrency:coin",
                     Count:3,
@@ -55,11 +55,11 @@
                 },
                 sell:{
                     id:"minecraft:spider_eye",
-                    Count:{min:3,max:5}
+                    Count:{min:1,max:2}
                 }
             },
             {
-                action:"add", CareerLevel:2,
+                action:"add", CareerLevel:1,
                 buy:{
                     id:"modcurrency:coin",
                     Count:3,
@@ -76,7 +76,7 @@
                 }
             },
             {
-                action:"add", CareerLevel:3,
+                action:"add", CareerLevel:1,
                 buy:{
                     id:"modcurrency:banknote",
                     Count:1,
@@ -89,7 +89,7 @@
                 },
                 sell:{
                     id:"minecraft:speckled_melon",
-                    Count:{min:1,max:2}
+                    Count:1
                 }
             }
         ]

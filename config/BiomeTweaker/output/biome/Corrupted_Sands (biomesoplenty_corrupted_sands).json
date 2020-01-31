@@ -21,10 +21,10 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "DRY",
-    "DENSE",
-    "NETHER",
     "SANDY",
-    "HOT"
+    "DENSE",
+    "HOT",
+    "NETHER"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
