@@ -20,7 +20,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -40,7 +40,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -60,7 +60,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -80,7 +80,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -100,7 +100,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -120,7 +120,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -140,7 +140,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -155,7 +155,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -176,7 +176,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -191,7 +191,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -206,7 +206,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -221,7 +221,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -236,7 +236,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -256,7 +256,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
@@ -276,7 +276,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
