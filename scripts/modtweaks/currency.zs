@@ -20,4 +20,7 @@ for money in moneyItems
 	scripts.helpers.AddTooltip(money, ["Money will be destroyed if it is in your inventory when you die.", "A wallet can store money safely!"]);
 }
 
+//Hide unused currency item.
+mods.jei.JEI.removeAndHide(<modcurrency:banknote>);
+
 print("### Good Ol' Currency Mod Init Complete ###");

@@ -1,13 +1,11 @@
 {
-	Profession:"extrautils2:alchemist",
-	Career:"alchemist",
+	Profession: "minecraft:smith",
+	Career:"weapon",
 
 	Offers:{
 		Recipes:[
 			{action:"clear"},
 			{action:"add", buy:{id:"minecraft:emerald",Count:{min:6,max:8}},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:1}
-
 		]
 	}
-
 }

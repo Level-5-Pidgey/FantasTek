@@ -1,8 +1,60 @@
 #priority 50
 import scripts.staging.stages;
 import mods.zenstages.Stage;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
 
-print("~~~ Begin Block Staging ~~~");
+print("~~~ Begin Ore Block/Material Staging ~~~");
+
+
+function SetOreDictStage(oredict_entry as crafttweaker.oredict.IOreDictEntry, oreValue as int)
+{
+	for ore in oredict_entry.items
+	{
+		if(oreValue > 0)
+		{
+			scripts.helpers.StageForProcessingTier[oreValue].addIngredient(ore);
+		}
+		else
+		{
+			mods.ItemStages.removeItemStage(ore);
+		}
+	}
+}
+
+function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
+{
+  val oreDicts = [
+    oreDict.get("plate" ~ materialString),
+    oreDict.get("block" ~ materialString),
+    oreDict.get("ingot" ~ materialString),
+    oreDict.get("nugget" ~ materialString),
+    oreDict.get("cluster" ~ materialString),
+    oreDict.get("dust" ~ materialString),
+    oreDict.get("dustSmall" ~ materialString),
+    oreDict.get("dustTiny" ~ materialString),
+    oreDict.get("ore" ~ materialString),
+	//oreDict.get("denseOre" ~ materialString),
+	//oreDict.get("poorOre" ~ materialString),
+    oreDict.get("ingot" ~ materialString),
+    oreDict.get("gem" ~ materialString),
+    oreDict.get("crystal" ~ materialString),
+    oreDict.get("clump" ~ materialString),
+    oreDict.get("shard" ~ materialString),
+    oreDict.get("dirtyDust" ~ materialString),
+    oreDict.get("rockyChunk" ~ materialString),
+    oreDict.get("blockSheetmetal" ~ materialString),
+    oreDict.get("densePlating" ~ materialString),
+    oreDict.get("stick" ~ materialString),
+    oreDict.get("rod" ~ materialString),
+    oreDict.get("gear" ~ materialString),
+    oreDict.get("fan" ~ materialString),
+    oreDict.get("coin" ~ materialString),
+    oreDict.get("coil" ~ materialString)
+  ] as IOreDictEntry[];
+
+  return oreDicts;
+}
 
 var DenseAndPoorOres as crafttweaker.item.IItemStack[crafttweaker.item.IItemStack] =
 {
@@ -408,4 +460,78 @@ for blockToReplace in OtherStagingReplacements
 	}
 }
 
-print("### Block Staging Complete ###");
+//Stage All Materials Related to an Ore within the Processing Tiers
+for materialString, oreValue in scripts.helpers.OresWithProcessingTier
+{
+	for oreEntry in GetOreDictsForMaterial(materialString)
+	{
+		if(!oreEntry.empty)
+		{
+			SetOreDictStage(oreEntry, oreValue);
+		}
+	}
+}
+
+//Extra Materials that aren't necessarily ores that should be tied to this stage
+var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
+{
+  "CrudeSteel" : stages.progression1,
+  "Wood" : stages.progression1,
+  "ElectricalSteel" : stages.progression1,
+  "RedstoneAlloy" : stages.progression1,
+  "ConductiveIron" : stages.progression1
+};
+
+for materialString in ExtraMaterialsToStage
+{
+	if(ExtraMaterialsToStage[materialString].stage != "stage_i")
+	{
+		for oreEntry in GetOreDictsForMaterial(materialString)
+		{
+			if(!oreEntry.empty)
+			{
+				if(ExtraMaterialsToStage[materialString].stage != "stage_i")
+				{
+					for ore in oreEntry.items
+					{
+						ExtraMaterialsToStage[materialString].addIngredient(ore);
+					}
+				}
+				else
+				{
+					for ore in oreEntry.items
+					{
+						mods.ItemStages.removeItemStage(ore);
+					}
+				}
+			}
+		}
+	}
+}
+
+//Extra Ore Dict Entries that should be tied to this stage (that aren't materials)
+var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
+{
+  <ore:treeLeaves> : stages.progression1,
+  <ore:plankWood> : stages.progression1,
+  <ore:logWood> : stages.progression1,
+  <ore:fuelCoke> : stages.progression1,
+  <ore:blockFuelCoke> : stages.progression1
+};
+
+for oreBlockEntry in extraOreDicts
+{
+	for ore in oreBlockEntry.items
+	{
+		if(extraOreDicts[oreBlockEntry].stage != "stage_i")
+		{
+			extraOreDicts[oreBlockEntry].addIngredient(ore);
+		}
+		else
+		{
+			mods.ItemStages.removeItemStage(ore);
+		}
+	}
+}
+
+print("### Ore Block/Material Staging Complete ###");

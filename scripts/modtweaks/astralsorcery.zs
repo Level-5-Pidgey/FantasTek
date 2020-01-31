@@ -45,7 +45,7 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/sextant", <astr
 
 //Change Hand Telescope Recipe
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/handtelescope");
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/handtelescope", <astralsorcery:itemsextant>.withTag({astralsorcery: {}}), 200, 40,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/handtelescope", <astralsorcery:itemhandtelescope>.withTag({astralsorcery: {}}), 200, 40,
 [
  null, <ore:plateWood>, <astralsorcery:itemcraftingcomponent:3>,
  <ore:plateWood>, <ore:plateGold>, <ore:plateWood>,

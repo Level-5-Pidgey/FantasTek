@@ -210,4 +210,7 @@ for key, value in componentRecipes {
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
 
+//Remove Easy Book Crafting Recipe.
+recipes.removeByRecipeName("tconstruct:tools/book");
+
 print("### TConstruct Init Complete ###");

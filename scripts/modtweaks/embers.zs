@@ -47,7 +47,7 @@ scripts.helpers.AddTooltip(<embers:sealed_planks>, ["Created by soaking wood in 
 recipes.remove(<embers:sealed_planks>);
 recipes.remove(<embers:wrapped_sealed_planks>);
 mods.inworldcrafting.FluidToItem.transform(<embers:sealed_planks> * 8, <liquid:creosote>, <ore:plankWood> * 8, true);
-mods.tconstruct.Casting.addBasinRecipe(<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <liquid:molten_crude_steel>, 144, true, 30);
+mods.tconstruct.Casting.addBasinRecipe(<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <liquid:crude_steel>, 144, true, 30);
 mods.recipestages.Recipes.addShaped("sealed_planks", scripts.helpers.stages.Locked.stage, <embers:sealed_planks> * 8, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],[<ore:plankWood>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 mods.recipestages.Recipes.addShaped("reinforced_sealed_planks", scripts.helpers.stages.Locked.stage, <embers:wrapped_sealed_planks> * 4, [[<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>],[<embers:sealed_planks>, null, <embers:sealed_planks>], [<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>]]);
 

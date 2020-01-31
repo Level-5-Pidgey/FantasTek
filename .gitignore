@@ -14,6 +14,10 @@
 /[Vv]alkyrielib/
 /.mixin.out/
 /[Mm]ods/[Mm]emory_repo/
+/[Cc]rash-reports/
+/[Cc]onfig/BiomeTweaker/[Oo]utput/biome/
+/[Cc]onfig/BiomeTweaker/[Oo]utput/dimension/
+/[Cc]onfig/BiomeTweaker/[Oo]utput/entity/
 
 #Never ignore script files
 !/[Ss]cripts/**/*.zs

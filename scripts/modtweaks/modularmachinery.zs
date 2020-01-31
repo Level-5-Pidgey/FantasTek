@@ -8,8 +8,8 @@ recipes.removeByRecipeName("modularmachinery:modularium_ingot");
 mods.extendedcrafting.TableCrafting.addShapeless(0, <modularmachinery:itemmodularium> * 4, [<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotGold>, <ore:ingotGold>, <ore:dustRedstone>, <ore:dustGlowstone>]);
 
 //Add Modularium Alloying/Casting
-mods.tconstruct.Alloy.addRecipe(<liquid:molten_modularium> * 288, [<liquid:molten_black_iron> * 288, <liquid:redstone> * 50, <liquid:gold> * 144, <liquid:glowstone> * 125]);
-mods.tconstruct.Casting.addTableRecipe(<modularmachinery:itemmodularium>, <tconstruct:cast_custom>, <liquid:molten_modularium>, 144, false);
+mods.tconstruct.Alloy.addRecipe(<liquid:modularium> * 288, [<liquid:black_iron> * 288, <liquid:redstone> * 50, <liquid:gold> * 144, <liquid:glowstone> * 125]);
+mods.tconstruct.Casting.addTableRecipe(<modularmachinery:itemmodularium>, <tconstruct:cast_custom>, <liquid:modularium>, 144, false);
 
 //Machine Parts
 //List of ores to change processing rules for
