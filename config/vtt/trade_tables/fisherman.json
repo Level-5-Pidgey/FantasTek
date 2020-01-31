@@ -6,7 +6,7 @@
 		Recipes:[
 			{action:"clear"},
 			{
-				action:"add", CareerLevel:3,
+				action:"add", CareerLevel:1,
 				buy:
 				{
 					id:"modcurrency:coin",

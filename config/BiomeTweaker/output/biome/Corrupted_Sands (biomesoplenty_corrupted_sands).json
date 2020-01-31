@@ -23,8 +23,8 @@
     "HOT",
     "DENSE",
     "NETHER",
-    "DRY",
-    "SANDY"
+    "SANDY",
+    "DRY"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
