@@ -72,7 +72,7 @@
                 },
                 sell:{
                     id:"minecraft:magma_cream",
-                    Count:1
+                    Count:{min:1,max:2}
                 }
             },
             {
