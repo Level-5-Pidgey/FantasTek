@@ -20,10 +20,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "PLAINS",
     "DENSE",
-    "WATER",
+    "PLAINS",
     "LUSH",
+    "WATER",
     "MAGICAL"
   ],
   "BiomeManager Entries": {

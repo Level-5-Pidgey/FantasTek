@@ -58,7 +58,10 @@ val otherItems = [
 	<forestry:thermionic_tubes:10>,
 	<forestry:thermionic_tubes:11>,
 	<forestry:thermionic_tubes:12>,
-	<forestry:thermionic_tubes:12>
+	<forestry:thermionic_tubes:12>,
+	<randomthings:ingredient:10>,
+	<randomthings:lotusseeds>,
+	<randomthings:lotus:*>
 ] as crafttweaker.item.IItemStack[];
 
 for item in otherItems

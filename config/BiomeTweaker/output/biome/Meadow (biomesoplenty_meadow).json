@@ -23,9 +23,9 @@
     "PLAINS",
     "FOREST",
     "WET",
-    "COLD",
+    "SPARSE",
     "LUSH",
-    "SPARSE"
+    "COLD"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

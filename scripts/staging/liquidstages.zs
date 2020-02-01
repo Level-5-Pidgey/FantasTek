@@ -7,13 +7,13 @@ print("~~~ Begin Liquid Staging ~~~");
 function StageFlorb(liquidString as string, stageToSetTo as mods.zenstages.Stage)
 {
 	var FlorbData as crafttweaker.data.IData = {Fluid: liquidString};
-	stageToSetTo.addIngredient(<thermalexpansion:florb>.withTag(FlorbData));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <thermalexpansion:florb>.withTag(FlorbData));
 }
 
 function StageFluidPattern(liquidString as string, stageToSetTo as mods.zenstages.Stage)
 {
 	var FluidPatternData as crafttweaker.data.IData = {Fluid: {FluidName: liquidString, Amount: 1000}};
-	stageToSetTo.addIngredient(<extracells:pattern.fluid>.withTag(FluidPatternData));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <extracells:pattern.fluid>.withTag(FluidPatternData));
 }
 
 function StageForestryCapsule(liquidObject as ILiquidStack, stageToSetTo as mods.zenstages.Stage)
@@ -24,14 +24,14 @@ function StageForestryCapsule(liquidObject as ILiquidStack, stageToSetTo as mods
 	if (liquidObject.definition.temperature <= 300)
 	{
 		var WaxCapsuleData as crafttweaker.data.IData = {Fluid: {FluidName: liquidString, Amount: 1000}};
-		stageToSetTo.addIngredient(<forestry:capsule:1>.withTag(WaxCapsuleData));
+		mods.ItemStages.addItemStage(stageToSetTo.stage, <forestry:capsule:1>.withTag(WaxCapsuleData));
 	}
 
 	var TinCanData as crafttweaker.data.IData = {Fluid: {FluidName: liquidString, Amount: 1000}};
-	stageToSetTo.addIngredient(<forestry:can:1>.withTag(TinCanData));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <forestry:can:1>.withTag(TinCanData));
 
 	var FrefractoryCapsuleData as crafttweaker.data.IData = {Fluid: {FluidName: liquidString, Amount: 1000}};
-	stageToSetTo.addIngredient(<forestry:refractory:1>.withTag(FrefractoryCapsuleData));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <forestry:refractory:1>.withTag(FrefractoryCapsuleData));
 }
 
 var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
@@ -216,13 +216,13 @@ for liquidObject, zenStageObject in liquidStages
 	if(zenStageObject.stage != "stage_i")
 	{
 		//Stage the liquid itself
-		zenStageObject.addLiquid(liquidObject);
+		mods.ItemStages.stageLiquid(zenStageObject.stage, liquidObject);
 
 		//Stage the Fluid Morb
 		StageFlorb(scripts.helpers.getLiquidStringFromObject(liquidObject), zenStageObject);
 
 		//Stage the buckets holding the fluid
-		zenStageObject.addIngredient(scripts.helpers.formatBucket(scripts.helpers.getLiquidStringFromObject(liquidObject)));
+		mods.ItemStages.addItemStage(zenStageObject.stage, scripts.helpers.formatBucket(scripts.helpers.getLiquidStringFromObject(liquidObject)));
 
 		//Stage ME Fluid Patterns
 		StageFluidPattern(scripts.helpers.getLiquidStringFromObject(liquidObject), zenStageObject);

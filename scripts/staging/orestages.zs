@@ -13,7 +13,7 @@ function SetOreDictStage(oredict_entry as crafttweaker.oredict.IOreDictEntry, or
 	{
 		if(scripts.helpers.StageForProcessingTier[oreValue].stage != "stage_i")
 		{
-			scripts.helpers.StageForProcessingTier[oreValue].addIngredient(ore);
+			mods.ItemStages.addItemStage(scripts.helpers.StageForProcessingTier[oreValue].stage, ore);
 		}
 		else
 		{
@@ -399,7 +399,15 @@ var OtherStagingReplacements as crafttweaker.item.IItemStack[crafttweaker.item.I
 	<embers:ore_quartz> : <minecraft:stone>,
 	<thaumcraft:ore_quartz> : <minecraft:stone>,
 	<rftools:dimensional_shard_ore> : <minecraft:stone>,
-	<thermalfoundation:ore_fluid:2> : <minecraft:stone>
+	<thermalfoundation:ore_fluid:2> : <minecraft:stone>,
+	<randomthings:lotus:*> : <minecraft:deadbush>,
+	<contenttweaker:infused_stone_ordo> : <minecraft:stone>,
+	<contenttweaker:infused_stone_aer> : <minecraft:stone>,
+	<contenttweaker:infused_stone_aqua> : <minecraft:stone>,
+	<contenttweaker:infused_stone_terra> : <minecraft:stone>,
+	<contenttweaker:infused_stone_ignis> : <minecraft:stone>,
+	<contenttweaker:infused_stone_vitium> : <minecraft:stone>,
+	<contenttweaker:infused_stone_perditio> : <minecraft:stone>
 };
 
 var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
@@ -451,7 +459,15 @@ var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
 	<embers:ore_quartz> : stages.Locked,
 	<thaumcraft:ore_quartz> : stages.Locked,
 	<rftools:dimensional_shard_ore> : stages.Locked,
-	<thermalfoundation:ore_fluid:2> : stages.Locked
+	<thermalfoundation:ore_fluid:2> : stages.Locked,
+	<randomthings:lotus:*> : stages.Locked,
+	<contenttweaker:infused_stone_ordo> : stages.Thaumcraft1,
+	<contenttweaker:infused_stone_aer> : stages.Thaumcraft1,
+	<contenttweaker:infused_stone_aqua> : stages.Thaumcraft1,
+	<contenttweaker:infused_stone_terra> : stages.Thaumcraft1,
+	<contenttweaker:infused_stone_ignis> : stages.Thaumcraft1,
+	<contenttweaker:infused_stone_vitium> : stages.Thaumcraft1,
+	<contenttweaker:infused_stone_perditio> : stages.Thaumcraft1
 };
 
 for blockToReplace in OtherStagingReplacements
@@ -497,8 +513,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "RedstoneAlloy" : stages.progression1,
   "ConductiveIron" : stages.progression1,
   "NetherStar" : stages.progression1,
-  "fuelCoke" : stages.progression1,
-  "blockFuelCoke" : stages.progression1
+  "CrudeSteel" : stages.progression1,
 };
 
 for materialString in ExtraMaterialsToStage
@@ -513,7 +528,7 @@ for materialString in ExtraMaterialsToStage
 				{
 					for ore in oreEntry.items
 					{
-						ExtraMaterialsToStage[materialString].addIngredient(ore);
+						mods.ItemStages.addItemStage(ExtraMaterialsToStage[materialString].stage, ore);
 					}
 				}
 				else
@@ -544,7 +559,7 @@ for oreBlockEntry in extraOreDicts
 	{
 		if(extraOreDicts[oreBlockEntry].stage != "stage_i")
 		{
-			extraOreDicts[oreBlockEntry].addIngredient(ore);
+			mods.ItemStages.addItemStage(extraOreDicts[oreBlockEntry].stage, ore);
 		}
 		else
 		{

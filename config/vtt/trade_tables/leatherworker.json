@@ -89,7 +89,7 @@
                 },
                 sell:{
                     id:"minecraft:leather_helmet",
-					tag:{ench:"random"},
+					tag:"{ench:\"random\"}",
                     Count:1
                 }
             },
@@ -102,7 +102,7 @@
                 },
                 sell:{
                     id:"minecraft:leather_chestplate",
-					tag:{ench:"random"},
+					tag:"{ench:\"random\"}",
                     Count:1
                 }
             },
@@ -115,7 +115,7 @@
                 },
                 sell:{
                     id:"minecraft:leather_leggings",
-					tag:{ench:"random"},
+					tag:"{ench:\"random\"}",
                     Count:1
                 }
             },
@@ -128,7 +128,7 @@
                 },
                 sell:{
                     id:"minecraft:leather_boots",
-					tag:{ench:"random"},
+					tag:"{ench:\"random\"}",
                     Count:1
                 }
             },
@@ -148,7 +148,7 @@
                 action:"add", CareerLevel:3,
 				buy:{
                     id:"modcurrency:banknote",
-                    Count:1
+                    Count:1,
                     Damage:2
                 },
                 sell:{
