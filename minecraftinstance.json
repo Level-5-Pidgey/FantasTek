@@ -39,9 +39,9 @@
   "modpackOverrides": null,
   "isMemoryOverride": true,
   "allocatedMemory": 8180,
-  "guid": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+  "guid": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
   "gameTypeID": 432,
-  "installPath": "D:\\Carl\\Documents\\Curse\\Minecraft\\Instances\\FantasTek\\",
+  "installPath": "C:\\Users\\Emily & Jayne\\Twitch\\Minecraft\\Instances\\FantasTek\\",
   "name": "FantasTek",
   "cachedScans": [
     {
@@ -3659,11 +3659,11 @@
     "LastSyncDate": "0001-01-01T00:00:00"
   },
   "preferenceShowAddOnInfo": true,
-  "installDate": "2020-01-18T07:36:15.328391Z",
+  "installDate": "2020-02-01T05:47:56.0158135Z",
   "installedAddons": [
     {
       "addonID": 225643,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2846950,
         "displayName": "Botania r1.10-363.jar",
@@ -3761,7 +3761,7 @@
     },
     {
       "addonID": 274799,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2468490,
         "displayName": "WinterWonderLand-1.2.2.jar",
@@ -3854,7 +3854,7 @@
     },
     {
       "addonID": 229002,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2735197,
         "displayName": "MrTJPCore-1.12.2-2.1.4.43-universal.jar",
@@ -3945,7 +3945,7 @@
     },
     {
       "addonID": 312778,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2688799,
         "displayName": "BotanicBonsai-1.0.0.5.jar",
@@ -4042,7 +4042,7 @@
     },
     {
       "addonID": 224535,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2443253,
         "displayName": "IvToolkit-1.3.3-1.12.jar",
@@ -4130,7 +4130,7 @@
     },
     {
       "addonID": 227887,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2790649,
         "displayName": "Multi Mine",
@@ -4219,7 +4219,7 @@
     },
     {
       "addonID": 226780,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2441500,
         "displayName": "ShadowMC-1.12-3.8.0.jar",
@@ -4322,7 +4322,7 @@
     },
     {
       "addonID": 241319,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2761319,
         "displayName": "Reliquary-1.12.2-1.3.4.796.jar",
@@ -4401,7 +4401,7 @@
     },
     {
       "addonID": 277064,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2865499,
         "displayName": "mysticallib-1.12.2-1.6.0.jar",
@@ -4474,7 +4474,7 @@
     },
     {
       "addonID": 248027,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2816920,
         "displayName": "ScalingHealth-1.12.2-1.3.42+147.jar",
@@ -4560,7 +4560,7 @@
     },
     {
       "addonID": 336272,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2868514,
         "displayName": "MutantBeasts-1.12.2-0.6.1.jar",
@@ -4637,7 +4637,7 @@
     },
     {
       "addonID": 229045,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2745548,
         "displayName": "ProjectRed-1.12.2-4.9.4.120-integration",
@@ -4723,7 +4723,7 @@
     },
     {
       "addonID": 237989,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2782568,
         "displayName": "RTG-1.12.2-6.1.0.0-snapshot.1",
@@ -4832,7 +4832,7 @@
     },
     {
       "addonID": 229060,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2801262,
         "displayName": "iChunUtil-1.12.2-7.2.2.jar",
@@ -4942,7 +4942,7 @@
     },
     {
       "addonID": 238003,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2559089,
         "displayName": "ThaumicInventoryScanning_1.12.2-2.0.10.jar",
@@ -5028,7 +5028,7 @@
     },
     {
       "addonID": 74924,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2713386,
         "displayName": "Mantle-1.12-1.3.3.55.jar",
@@ -5119,7 +5119,7 @@
     },
     {
       "addonID": 308380,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2806611,
         "displayName": "PackagedAuto-1.12.2-1.0.2.9.jar",
@@ -5200,7 +5200,7 @@
     },
     {
       "addonID": 229073,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2801266,
         "displayName": "Hats-1.12.2-7.1.0.jar",
@@ -5317,7 +5317,7 @@
     },
     {
       "addonID": 229076,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2801267,
         "displayName": "HatStand-1.12.2-7.1.0.jar",
@@ -5420,7 +5420,7 @@
     },
     {
       "addonID": 321792,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2746502,
         "displayName": "FiveFeetSmall-v1.0.1-1.12.2.jar",
@@ -5506,7 +5506,7 @@
     },
     {
       "addonID": 227965,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2432421,
         "displayName": "NoFov-MC1.12-1.0.1.jar",
@@ -5594,7 +5594,7 @@
     },
     {
       "addonID": 309516,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2829714,
         "displayName": "Bountiful-2.2.1.jar",
@@ -5698,7 +5698,7 @@
     },
     {
       "addonID": 289412,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2827655,
         "displayName": "FTBQuests-1.8.0.237.jar",
@@ -5861,7 +5861,7 @@
     },
     {
       "addonID": 255902,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2661187,
         "displayName": "WitherSkeletonTweaks-1.12.2-2.6.3.jar",
@@ -5947,7 +5947,7 @@
     },
     {
       "addonID": 224641,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2861573,
         "displayName": "RFTools - 1.12-7.73",
@@ -6044,7 +6044,7 @@
     },
     {
       "addonID": 70496,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2518031,
         "displayName": "BDLib 1.14.3.12 (MC 1.12.2)",
@@ -6212,7 +6212,7 @@
     },
     {
       "addonID": 280506,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2738135,
         "displayName": "Modular Diversity-1.8.jar",
@@ -6371,7 +6371,7 @@
     },
     {
       "addonID": 246996,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2722575,
         "displayName": "base-1.12.2-3.13.0.jar",
@@ -6455,7 +6455,7 @@
     },
     {
       "addonID": 280510,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2643711,
         "displayName": "AttributeFix-1.12.2-1.0.4.jar",
@@ -6529,7 +6529,7 @@
     },
     {
       "addonID": 247007,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2831253,
         "displayName": "CommonCapabilities-1.12.2-2.4.5.jar",
@@ -6614,7 +6614,7 @@
     },
     {
       "addonID": 250359,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2520136,
         "displayName": "netherbound-1.2.jar",
@@ -6709,7 +6709,7 @@
     },
     {
       "addonID": 250363,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2746011,
         "displayName": "AutoRegLib-1.3-32.jar",
@@ -6788,7 +6788,7 @@
     },
     {
       "addonID": 239197,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2838090,
         "displayName": "CraftTweaker2-1.12-4.1.20",
@@ -6865,7 +6865,7 @@
     },
     {
       "addonID": 231382,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2867147,
         "displayName": "BrandonsCore-1.12.2-2.4.18.210-universal",
@@ -6945,7 +6945,7 @@
     },
     {
       "addonID": 223565,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2867186,
         "displayName": "Draconic-Evolution-1.12.2-2.3.25.351-universal",
@@ -7047,7 +7047,7 @@
     },
     {
       "addonID": 293938,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2652196,
         "displayName": "Pewter-1.4.3.jar",
@@ -7204,7 +7204,7 @@
     },
     {
       "addonID": 271605,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2841144,
         "displayName": "corpsecomplex-1.12.2-1.0.8.jar",
@@ -7271,7 +7271,7 @@
     },
     {
       "addonID": 258205,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2758483,
         "displayName": "RandomTweaks 1.12.2-2.7.1.0",
@@ -7369,7 +7369,7 @@
     },
     {
       "addonID": 280554,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2767378,
         "displayName": "RecipeStages-1.1.3",
@@ -7473,7 +7473,7 @@
     },
     {
       "addonID": 250398,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2857064,
         "displayName": "Controlling-3.0.8",
@@ -7540,7 +7540,7 @@
     },
     {
       "addonID": 291737,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2715787,
         "displayName": "ThermalInnovation-1.12.2-0.3.3.12-universal.jar",
@@ -7626,7 +7626,7 @@
     },
     {
       "addonID": 269398,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2643976,
         "displayName": "DimensionStages-1.12.2-2.0.23.jar",
@@ -7723,7 +7723,7 @@
     },
     {
       "addonID": 295114,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2734703,
         "displayName": "botaniatweaks-1.8.6.jar",
@@ -7838,7 +7838,7 @@
     },
     {
       "addonID": 278359,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2557662,
         "displayName": "MobStages-1.12.2-2.0.8.jar",
@@ -7924,7 +7924,7 @@
     },
     {
       "addonID": 223628,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2629023,
         "displayName": "Thaumcraft-1.12.2-6.1.BETA26.jar",
@@ -8040,7 +8040,7 @@
     },
     {
       "addonID": 267193,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2811832,
         "displayName": "Chunk Pregenerator V1.12-2.2",
@@ -8123,7 +8123,7 @@
     },
     {
       "addonID": 229218,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2653854,
         "displayName": "ExtraCells-1.12.2-2.6.2",
@@ -8207,7 +8207,7 @@
     },
     {
       "addonID": 252676,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2441510,
         "displayName": "Clipboard-1.12-1.3.0.jar",
@@ -8306,7 +8306,7 @@
     },
     {
       "addonID": 268324,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2460821,
         "displayName": "Blur 1.0.4",
@@ -8425,7 +8425,7 @@
     },
     {
       "addonID": 278385,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2482543,
         "displayName": "Diet Hoppers 1.1",
@@ -8532,7 +8532,7 @@
     },
     {
       "addonID": 269452,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2557675,
         "displayName": "WailaStages-1.12.2-2.0.23.jar",
@@ -8630,7 +8630,7 @@
     },
     {
       "addonID": 70631,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2715786,
         "displayName": "RedstoneArsenal-1.12.2-2.6.3.18-universal.jar",
@@ -8716,7 +8716,7 @@
     },
     {
       "addonID": 237065,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2652853,
         "displayName": "ContentTweaker-1.12.2-4.9.1.jar",
@@ -8808,7 +8808,7 @@
     },
     {
       "addonID": 309674,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2699980,
         "displayName": "ItemFilters-1.0.3.12.jar",
@@ -8892,7 +8892,7 @@
     },
     {
       "addonID": 222548,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2506542,
         "displayName": "Creeper Confetti 1.4.2",
@@ -8981,7 +8981,7 @@
     },
     {
       "addonID": 220318,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2715506,
         "displayName": "BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar",
@@ -9075,7 +9075,7 @@
     },
     {
       "addonID": 224791,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2822288,
         "displayName": "BloodMagic-1.12.2-2.4.3-105.jar",
@@ -9173,7 +9173,7 @@
     },
     {
       "addonID": 286230,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2572528,
         "displayName": "unloader-1.2.0.jar",
@@ -9247,7 +9247,7 @@
     },
     {
       "addonID": 310812,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2783832,
         "displayName": "JustEnoughEnergistics-1.12.2-1.0.8.jar",
@@ -9351,7 +9351,7 @@
     },
     {
       "addonID": 284007,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2843007,
         "displayName": "Inspirations 0.2.9 for 1.12.2",
@@ -9473,7 +9473,7 @@
     },
     {
       "addonID": 250498,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2699705,
         "displayName": "Mowzie's Mobs - 1.5.4",
@@ -9564,7 +9564,7 @@
     },
     {
       "addonID": 224808,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2807901,
         "displayName": "Magneticraft_1.12-2.8.2-dev.jar",
@@ -9672,7 +9672,7 @@
     },
     {
       "addonID": 311938,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2664441,
         "displayName": "inworldcrafting-1.12.2-0.13.0-universal.jar",
@@ -9763,7 +9763,7 @@
     },
     {
       "addonID": 237102,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2835289,
         "displayName": "FTBUtilities-5.4.0.124.jar",
@@ -9854,7 +9854,7 @@
     },
     {
       "addonID": 238222,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2803400,
         "displayName": "jei_1.12.2-4.15.0.291.jar",
@@ -9938,7 +9938,7 @@
     },
     {
       "addonID": 223703,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2572444,
         "displayName": "CompactStorage 3.1",
@@ -10027,7 +10027,7 @@
     },
     {
       "addonID": 300777,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2697221,
         "displayName": "EmbersRekindled-1.13-hotfix2.jar",
@@ -10133,7 +10133,7 @@
     },
     {
       "addonID": 268387,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2777071,
         "displayName": "ExtendedCrafting-1.12.2-1.5.6.jar",
@@ -10225,7 +10225,7 @@
     },
     {
       "addonID": 271740,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2707353,
         "displayName": "Toast Control-1.12.2-1.8.1.jar",
@@ -10316,7 +10316,7 @@
     },
     {
       "addonID": 227083,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2518667,
         "displayName": "Baubles-1.12-1.5.2.jar",
@@ -10410,7 +10410,7 @@
     },
     {
       "addonID": 309756,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2755340,
         "displayName": "GasConduits-1.12.2-1.2.2.jar",
@@ -10513,7 +10513,7 @@
     },
     {
       "addonID": 74072,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2809406,
         "displayName": "TConstruct-1.12.2-2.13.0.171.jar",
@@ -10597,7 +10597,7 @@
     },
     {
       "addonID": 260621,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2441265,
         "displayName": "VillagerTrades-1.12-0.6.4.jar",
@@ -10690,7 +10690,7 @@
     },
     {
       "addonID": 278494,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2845668,
         "displayName": "FoamFix 0.10.10 (1.12.2)",
@@ -10768,7 +10768,7 @@
     },
     {
       "addonID": 237167,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2832410,
         "displayName": "FTBLib-5.4.4.5.jar",
@@ -10840,7 +10840,7 @@
     },
     {
       "addonID": 250577,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2648656,
         "displayName": "AkashicTome-1.2-12.jar",
@@ -10926,7 +10926,7 @@
     },
     {
       "addonID": 275153,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2486198,
         "displayName": "WrapUp-1.12-1.1.3.jar",
@@ -11009,7 +11009,7 @@
     },
     {
       "addonID": 296384,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2641781,
         "displayName": "ZenStages 0.4.1-19",
@@ -11164,7 +11164,7 @@
     },
     {
       "addonID": 239418,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2645156,
         "displayName": "Sonar-Core-1.12.2-5.0.19",
@@ -11262,7 +11262,7 @@
     },
     {
       "addonID": 241665,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2724967,
         "displayName": "Psi-r1.1-77.jar",
@@ -11348,7 +11348,7 @@
     },
     {
       "addonID": 223794,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2747063,
         "displayName": "appliedenergistics2-rv6-stable-7.jar",
@@ -11432,7 +11432,7 @@
     },
     {
       "addonID": 230497,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2450900,
         "displayName": "Chameleon-1.12-4.1.3.jar",
@@ -11525,7 +11525,7 @@
     },
     {
       "addonID": 248370,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2490058,
         "displayName": "JEI Bees 0.9.0.5 (MC 1.12.2)",
@@ -11607,7 +11607,7 @@
     },
     {
       "addonID": 223797,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2479308,
         "displayName": "HelpFixer - 1.12.1-1.5.18",
@@ -11693,7 +11693,7 @@
     },
     {
       "addonID": 315391,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2678285,
         "displayName": "ARTweaker-1.12.2-1.0.0.jar",
@@ -11775,7 +11775,7 @@
     },
     {
       "addonID": 74120,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2711439,
         "displayName": "natura-1.12.2-4.3.2.69.jar",
@@ -11861,7 +11861,7 @@
     },
     {
       "addonID": 258426,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2755790,
         "displayName": "ForgeMultipart 1.12.2-2.6.2.83-universal",
@@ -11957,7 +11957,7 @@
     },
     {
       "addonID": 271835,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2715791,
         "displayName": "ThermalCultivation-1.12.2-0.3.3.12-universal.jar",
@@ -12043,7 +12043,7 @@
     },
     {
       "addonID": 252848,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2858168,
         "displayName": "NaturesCompass-1.12.2-1.8.3.jar",
@@ -12111,7 +12111,7 @@
     },
     {
       "addonID": 303122,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2733301,
         "displayName": "jetif-1.12.2-1.5.1.jar",
@@ -12287,7 +12287,7 @@
     },
     {
       "addonID": 232758,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2831241,
         "displayName": "CyclopsCore-1.12.2-1.6.0.jar",
@@ -12360,7 +12360,7 @@
     },
     {
       "addonID": 322124,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2850235,
         "displayName": "conduit-1.0.3.jar",
@@ -12434,7 +12434,7 @@
     },
     {
       "addonID": 242818,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2779848,
         "displayName": "CodeChicken Lib 1.12.2-3.2.3.358-universal",
@@ -12513,7 +12513,7 @@
     },
     {
       "addonID": 257356,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2763309,
         "displayName": "InControl - 1.12-3.9.16",
@@ -12611,7 +12611,7 @@
     },
     {
       "addonID": 241721,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2864069,
         "displayName": "AstralSorcery-1.12.2-1.10.21.jar",
@@ -12698,7 +12698,7 @@
     },
     {
       "addonID": 289753,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2683007,
         "displayName": "JourneyMapStages-1.12.2-2.0.8.jar",
@@ -12801,7 +12801,7 @@
     },
     {
       "addonID": 232791,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2818064,
         "displayName": "itlt-1.12.2-1.0.2.jar",
@@ -12875,7 +12875,7 @@
     },
     {
       "addonID": 270789,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2623090,
         "displayName": "RedstoneFlux-1.12-2.1.0.6-universal.jar",
@@ -12954,7 +12954,7 @@
     },
     {
       "addonID": 240630,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2728585,
         "displayName": "JustEnoughResources-1.12.2-0.9.2.60",
@@ -13045,7 +13045,7 @@
     },
     {
       "addonID": 270790,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2682915,
         "displayName": "ModularMachinery-1.12.2-1.9.6.jar",
@@ -13124,7 +13124,7 @@
     },
     {
       "addonID": 248453,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2785465,
         "displayName": "Forgelin-1.8.4.jar",
@@ -13253,7 +13253,7 @@
     },
     {
       "addonID": 268560,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2835175,
         "displayName": "Mekanism-1.12.2-9.8.3.390.jar",
@@ -13404,7 +13404,7 @@
     },
     {
       "addonID": 268566,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2835177,
         "displayName": "MekanismGenerators-1.12.2-9.8.3.390.jar",
@@ -13478,7 +13478,7 @@
     },
     {
       "addonID": 268567,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2835178,
         "displayName": "MekanismTools-1.12.2-9.8.3.390.jar",
@@ -13552,7 +13552,7 @@
     },
     {
       "addonID": 223891,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2526674,
         "displayName": "malisisdoors-1.12.2-7.3.0.jar",
@@ -13648,7 +13648,7 @@
     },
     {
       "addonID": 223896,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2680892,
         "displayName": "malisiscore-1.12.2-6.5.1.jar",
@@ -13757,7 +13757,7 @@
     },
     {
       "addonID": 284229,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2718649,
         "displayName": "deepmoblearning-1.12.2-2.5.2-universal.jar",
@@ -13848,7 +13848,7 @@
     },
     {
       "addonID": 321092,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2711010,
         "displayName": "GamblingStyle-v1.0.1-1.12.2.jar",
@@ -13939,7 +13939,7 @@
     },
     {
       "addonID": 318872,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2776773,
         "displayName": "Charm-1.12.2-1.3.6.jar",
@@ -14031,7 +14031,7 @@
     },
     {
       "addonID": 235107,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2695044,
         "displayName": "NotEnoughIDs-1.5.4.4",
@@ -14110,7 +14110,7 @@
     },
     {
       "addonID": 59751,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2824425,
         "displayName": "forestry_1.12.2-5.8.2.409.jar",
@@ -14204,7 +14204,7 @@
     },
     {
       "addonID": 245174,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2755787,
         "displayName": "Ender Storage 1.12.2-2.4.6.137-universal",
@@ -14290,7 +14290,7 @@
     },
     {
       "addonID": 312195,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2858475,
         "displayName": "EnderTweaker-1.12.2-1.2.0.jar",
@@ -14365,7 +14365,7 @@
     },
     {
       "addonID": 306612,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2810785,
         "displayName": "[1.14.4] Fabric API 0.4.1 build 245",
@@ -14439,7 +14439,7 @@
     },
     {
       "addonID": 255232,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2830265,
         "displayName": "p455w0rdslib-1.12.2-2.3.161.jar",
@@ -14543,7 +14543,7 @@
     },
     {
       "addonID": 275343,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2557670,
         "displayName": "TinkerStages-1.12.2-2.0.15.jar",
@@ -14647,7 +14647,7 @@
     },
     {
       "addonID": 268655,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2716924,
         "displayName": "GameStages-1.12.2-2.0.115.jar",
@@ -14743,7 +14743,7 @@
     },
     {
       "addonID": 255257,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2865495,
         "displayName": "LootTweaker-0.1.5+MC1.12.2.jar",
@@ -14825,7 +14825,7 @@
     },
     {
       "addonID": 222880,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2715788,
         "displayName": "ThermalFoundation-1.12.2-2.6.3.27-universal.jar",
@@ -14917,7 +14917,7 @@
     },
     {
       "addonID": 297720,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2708711,
         "displayName": "deepmoblearningbm-1.12.2-1.0.1-universal.jar",
@@ -15014,7 +15014,7 @@
     },
     {
       "addonID": 242998,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2851111,
         "displayName": "SilentLib-1.12.2-3.0.14+168.jar",
@@ -15081,7 +15081,7 @@
     },
     {
       "addonID": 59816,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2751591,
         "displayName": "RandomThings-MC1.12.2-4.2.7.3.jar",
@@ -15175,7 +15175,7 @@
     },
     {
       "addonID": 264231,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2803425,
         "displayName": "iceandfire-1.8.3-1.12.2",
@@ -15266,7 +15266,7 @@
     },
     {
       "addonID": 241891,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2508898,
         "displayName": "JAPTA-1.12-1.11.15.jar",
@@ -15350,7 +15350,7 @@
     },
     {
       "addonID": 310029,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2843567,
         "displayName": "Zen Summoning-1.12-1.0.19.jar",
@@ -15422,7 +15422,7 @@
     },
     {
       "addonID": 241895,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2733525,
         "displayName": "KleeSlabs_1.12.2-5.4.12.jar",
@@ -15501,7 +15501,7 @@
     },
     {
       "addonID": 307806,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2820815,
         "displayName": "OreLib-1.12.2-3.6.0.1.jar",
@@ -15665,7 +15665,7 @@
     },
     {
       "addonID": 267602,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2832564,
         "displayName": "CTM - MC1.12.2-1.0.1.30",
@@ -15728,7 +15728,7 @@
     },
     {
       "addonID": 277663,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2744735,
         "displayName": "modelloader-1.1.7.jar",
@@ -15814,7 +15814,7 @@
     },
     {
       "addonID": 231868,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2822401,
         "displayName": "EnderCore - 1.12.2-0.5.73",
@@ -15898,7 +15898,7 @@
     },
     {
       "addonID": 310059,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2812165,
         "displayName": "Future MC 0.1.13",
@@ -15978,7 +15978,7 @@
     },
     {
       "addonID": 285492,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2705304,
         "displayName": "ThaumicJEI-1.12.2-1.6.0-27.jar",
@@ -16070,7 +16070,7 @@
     },
     {
       "addonID": 228525,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2836960,
         "displayName": "Bookshelf-1.12.2-2.3.590.jar",
@@ -16143,7 +16143,7 @@
     },
     {
       "addonID": 245287,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2658176,
         "displayName": "Morph-o-Tool-1.2-21.jar",
@@ -16229,7 +16229,7 @@
     },
     {
       "addonID": 324598,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2726023,
         "displayName": "Hardcore Item Stages MC1.12.2 v1.0",
@@ -16320,7 +16320,7 @@
     },
     {
       "addonID": 266515,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2745321,
         "displayName": "industrialforegoing-1.12.2-1.12.13-237.jar",
@@ -16406,7 +16406,7 @@
     },
     {
       "addonID": 225194,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2491032,
         "displayName": "AE2Stuff 0.7.0.4 (MC 1.12.2)",
@@ -16524,7 +16524,7 @@
     },
     {
       "addonID": 229664,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2838407,
         "displayName": "Animus-1.12-2.1.6.jar",
@@ -16613,7 +16613,7 @@
     },
     {
       "addonID": 250898,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2794895,
         "displayName": "OreExcavation-1.4.143.jar",
@@ -16704,7 +16704,7 @@
     },
     {
       "addonID": 227443,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2716138,
         "displayName": "ThermalDynamics-1.12.2-2.5.5.21-universal.jar",
@@ -16796,7 +16796,7 @@
     },
     {
       "addonID": 277711,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2702080,
         "displayName": "roost-1.12.2-2.0.10.jar",
@@ -16893,7 +16893,7 @@
     },
     {
       "addonID": 290001,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2644749,
         "displayName": "chopdownupdated-1.12.2-1.2.4.jar",
@@ -16974,7 +16974,7 @@
     },
     {
       "addonID": 288885,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2838777,
         "displayName": "FastWorkbench-1.12.2-1.7.3.jar",
@@ -17043,7 +17043,7 @@
     },
     {
       "addonID": 266550,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2831535,
         "displayName": "toolprogression-1.12.2-1.6.9.jar",
@@ -17111,7 +17111,7 @@
     },
     {
       "addonID": 254268,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2829232,
         "displayName": "torchmaster_1.12.2-1.8.1.81.jar",
@@ -17195,7 +17195,7 @@
     },
     {
       "addonID": 235279,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2813538,
         "displayName": "Chisel - MC1.12.2-1.0.1.44",
@@ -17293,7 +17293,7 @@
     },
     {
       "addonID": 306770,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2731963,
         "displayName": "Patchouli-1.0-20.jar",
@@ -17372,7 +17372,7 @@
     },
     {
       "addonID": 229708,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2832659,
         "displayName": "Farseek-1.12-2.4.jar",
@@ -17442,7 +17442,7 @@
     },
     {
       "addonID": 254284,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2709223,
         "displayName": "AmbientSounds_v3.0.9_mc1.12.2.jar",
@@ -17516,7 +17516,7 @@
     },
     {
       "addonID": 225247,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2484148,
         "displayName": "EnderZoo-1.12.1-1.4.0.49.jar",
@@ -17609,7 +17609,7 @@
     },
     {
       "addonID": 273279,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2856128,
         "displayName": "antighost-1.12-forge14.21.1.2387-1.1.1.jar",
@@ -17689,7 +17689,7 @@
     },
     {
       "addonID": 243121,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2759240,
         "displayName": "Quark-r1.6-177.jar",
@@ -17780,7 +17780,7 @@
     },
     {
       "addonID": 271050,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2775870,
         "displayName": "DoggyTalents-1.12.2-1.15.1.4-universal.jar",
@@ -17871,7 +17871,7 @@
     },
     {
       "addonID": 264353,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2508268,
         "displayName": "stg-1.12.2-1.2.3.jar",
@@ -17964,7 +17964,7 @@
     },
     {
       "addonID": 278882,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2716712,
         "displayName": "blockcraftery-1.12.2-1.3.1.jar",
@@ -18055,7 +18055,7 @@
     },
     {
       "addonID": 253211,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2684561,
         "displayName": "MTLib-3.0.6",
@@ -18136,7 +18136,7 @@
     },
     {
       "addonID": 233105,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2745846,
         "displayName": "McJtyLib - 1.12-3.5.4",
@@ -18228,7 +18228,7 @@
     },
     {
       "addonID": 226406,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2857869,
         "displayName": "CustomMainMenu-MC1.12.2-2.0.9.1.jar",
@@ -18300,7 +18300,7 @@
     },
     {
       "addonID": 313536,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2830324,
         "displayName": "Bountiful Baubles-1.12.2-0.1.4.jar",
@@ -18391,7 +18391,7 @@
     },
     {
       "addonID": 285612,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2863699,
         "displayName": "RandomPatches 1.12.2-1.21.0.0",
@@ -18475,7 +18475,7 @@
     },
     {
       "addonID": 254346,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2736225,
         "displayName": " Currency 1.12-1.3.11",
@@ -18559,7 +18559,7 @@
     },
     {
       "addonID": 240950,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2707390,
         "displayName": "RFToolsDimensions - 1.12-5.71",
@@ -18668,7 +18668,7 @@
     },
     {
       "addonID": 268888,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2655413,
         "displayName": "netherchest-1.1.1.jar",
@@ -18752,7 +18752,7 @@
     },
     {
       "addonID": 223094,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2482481,
         "displayName": "Inventory Tweaks 1.63",
@@ -18851,7 +18851,7 @@
     },
     {
       "addonID": 248787,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2496585,
         "displayName": "AppleSkin-mc1.12-1.0.9.jar",
@@ -18954,7 +18954,7 @@
     },
     {
       "addonID": 226447,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2477566,
         "displayName": "ResourceLoader-MC1.12.1-1.5.3.jar",
@@ -19042,7 +19042,7 @@
     },
     {
       "addonID": 319159,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2803184,
         "displayName": "XCPatch-1.12.2-1.0.2.jar",
@@ -19123,7 +19123,7 @@
     },
     {
       "addonID": 224218,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2707509,
         "displayName": "compactmachines3-1.12.2-3.0.18-b278.jar",
@@ -19221,7 +19221,7 @@
     },
     {
       "addonID": 245453,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2691536,
         "displayName": "environmentaltech-1.12.2-2.0.20.1.jar",
@@ -19323,7 +19323,7 @@
     },
     {
       "addonID": 228702,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2745545,
         "displayName": "ProjectRed-1.12.2-4.9.4.120-Base",
@@ -19426,7 +19426,7 @@
     },
     {
       "addonID": 301310,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2863053,
         "displayName": "simpletrophies-1.2.2.1.jar",
@@ -19499,7 +19499,7 @@
     },
     {
       "addonID": 293505,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2766866,
         "displayName": "thaumicperiphery-0.3.1.jar",
@@ -19614,7 +19614,7 @@
     },
     {
       "addonID": 311377,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2859893,
         "displayName": "betternether-0.1.8.6-1.12.2",
@@ -19703,7 +19703,7 @@
     },
     {
       "addonID": 236541,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2841976,
         "displayName": "LibVulpes 1.12.2-0.4.2-69-UNSTABLE build -69 for 1.12.2",
@@ -19770,7 +19770,7 @@
     },
     {
       "addonID": 236542,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2864309,
         "displayName": "AdvancedRocketry 1.12.2-1.6.0-197-UNSTABLE build -197 for 1.12.2",
@@ -19844,7 +19844,7 @@
     },
     {
       "addonID": 245480,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2691542,
         "displayName": "valkyrielib-1.12.2-2.0.20.1.jar",
@@ -19928,7 +19928,7 @@
     },
     {
       "addonID": 278993,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2846217,
         "displayName": "bonsaitrees-1.1.4-b170.jar",
@@ -20002,7 +20002,7 @@
     },
     {
       "addonID": 223150,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2689602,
         "displayName": "RecurrentComplex-1.4.8.2.jar",
@@ -20122,7 +20122,7 @@
     },
     {
       "addonID": 230976,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2463272,
         "displayName": "FastLeafDecay-v14.jar",
@@ -20208,7 +20208,7 @@
     },
     {
       "addonID": 296887,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2828147,
         "displayName": "oreveins-2.0.15.jar",
@@ -20281,7 +20281,7 @@
     },
     {
       "addonID": 60089,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2671937,
         "displayName": "[1.12.2] Mouse Tweaks 2.10",
@@ -20365,7 +20365,7 @@
     },
     {
       "addonID": 229876,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2483393,
         "displayName": "v1.4.8",
@@ -20444,7 +20444,7 @@
     },
     {
       "addonID": 237701,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2560638,
         "displayName": "ReAuth-3.6.0 1.12",
@@ -20532,7 +20532,7 @@
     },
     {
       "addonID": 290201,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2632997,
         "displayName": "OreStages-1.12.2-2.0.37.jar",
@@ -20624,7 +20624,7 @@
     },
     {
       "addonID": 257814,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2860437,
         "displayName": "CreativeCore_v1.9.90_mc1.12.2.jar",
@@ -20691,7 +20691,7 @@
     },
     {
       "addonID": 272335,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2645867,
         "displayName": "Cucumber-1.12.2-1.1.3.jar",
@@ -20775,7 +20775,7 @@
     },
     {
       "addonID": 220954,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2693544,
         "displayName": "modtweaker-4.0.17",
@@ -20861,7 +20861,7 @@
     },
     {
       "addonID": 257818,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2860436,
         "displayName": "LittleTiles_v1.5.0-pre198_mc1.12.2.jar",
@@ -20935,7 +20935,7 @@
     },
     {
       "addonID": 243298,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2704186,
         "displayName": "LLibrary 1.7.19",
@@ -21019,7 +21019,7 @@
     },
     {
       "addonID": 64578,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2858816,
         "displayName": "Ender IO - 5.1.55",
@@ -21224,7 +21224,7 @@
     },
     {
       "addonID": 232131,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2624732,
         "displayName": "DefaultOptions_1.12.2-9.2.8.jar",
@@ -21298,7 +21298,7 @@
     },
     {
       "addonID": 233255,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2560971,
         "displayName": "Login_Shield-1.12.2-3-g7c6e7ac.jar",
@@ -21377,7 +21377,7 @@
     },
     {
       "addonID": 277938,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2676458,
         "displayName": "IntegrationForegoing-1.12.2-1.9.jar",
@@ -21639,7 +21639,7 @@
     },
     {
       "addonID": 242195,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2813586,
         "displayName": "DarkUtils-1.12.2-1.8.230.jar",
@@ -21737,7 +21737,7 @@
     },
     {
       "addonID": 283525,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2821476,
         "displayName": "LagGoggles-FAT-1.12.2-4.9.jar",
@@ -21853,7 +21853,7 @@
     },
     {
       "addonID": 318160,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2756813,
         "displayName": "1.0.0-rc.3",
@@ -21959,7 +21959,7 @@
     },
     {
       "addonID": 266784,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2662364,
         "displayName": "Scannable-MC1.12.2-1.6.3.24.jar",
@@ -22038,7 +22038,7 @@
     },
     {
       "addonID": 228815,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2699055,
         "displayName": "OpenModsLib-1.12.2-0.12.2.jar",
@@ -22127,7 +22127,7 @@
     },
     {
       "addonID": 228816,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2699056,
         "displayName": "OpenBlocks-1.12.2-1.8.1.jar",
@@ -22218,7 +22218,7 @@
     },
     {
       "addonID": 281316,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2696448,
         "displayName": "armoreablemobs-1.12.2-1.1.8.jar",
@@ -22299,7 +22299,7 @@
     },
     {
       "addonID": 228832,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2645992,
         "displayName": "Guide-API-1.12-2.1.8-63.jar",
@@ -22392,7 +22392,7 @@
     },
     {
       "addonID": 69118,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2664449,
         "displayName": "Morpheus-1.12.2-3.5.106.jar",
@@ -22466,7 +22466,7 @@
     },
     {
       "addonID": 261251,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2638317,
         "displayName": "badwithernocookiereloaded-1.12.2-3.3.16.jar",
@@ -22550,7 +22550,7 @@
     },
     {
       "addonID": 32274,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2682920,
         "displayName": "journeymap-1.12.2-5.5.4",
@@ -22667,7 +22667,7 @@
     },
     {
       "addonID": 241160,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2612052,
         "displayName": "NetherPortalFix_1.12.1-5.3.17.jar",
@@ -22746,7 +22746,7 @@
     },
     {
       "addonID": 233342,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2857644,
         "displayName": "fairylights-2.1.10-1.12.2",
@@ -22842,7 +22842,7 @@
     },
     {
       "addonID": 253449,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2568751,
         "displayName": "Hwyla-1.8.26-B41_1.12.2.jar",
@@ -22926,7 +22926,7 @@
     },
     {
       "addonID": 340583,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2836918,
         "displayName": "bettercaves-1.12.2-1.6.0.jar",
@@ -23004,7 +23004,7 @@
     },
     {
       "addonID": 69162,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2716100,
         "displayName": "CoFHCore-1.12.2-4.6.3.27-universal.jar",
@@ -23096,7 +23096,7 @@
     },
     {
       "addonID": 69163,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2715789,
         "displayName": "ThermalExpansion-1.12.2-5.5.4.43-universal.jar",
@@ -23188,7 +23188,7 @@
     },
     {
       "addonID": 314904,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2819669,
         "displayName": "FTBBackups-1.1.0.1.jar",
@@ -23272,7 +23272,7 @@
     },
     {
       "addonID": 318255,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2747710,
         "displayName": "Phosphor 0.2.6",
@@ -23366,7 +23366,7 @@
     },
     {
       "addonID": 228895,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2572722,
         "displayName": "BiomeTweaker-1.12.2 3.2.354",
@@ -23455,7 +23455,7 @@
     },
     {
       "addonID": 294799,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2818052,
         "displayName": "cases-0.3.5.jar",
@@ -23539,7 +23539,7 @@
     },
     {
       "addonID": 254602,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2580052,
         "displayName": "Tesla Core Lib : 1.0.15.13",
@@ -23631,7 +23631,7 @@
     },
     {
       "addonID": 283644,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2694382,
         "displayName": "Placebo-1.12.2-1.6.0.jar",
@@ -23705,7 +23705,7 @@
     },
     {
       "addonID": 225561,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2678374,
         "displayName": "Extra Utilities 2 - 1.12 - 1.9.9",
@@ -23803,7 +23803,7 @@
     },
     {
       "addonID": 227795,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2823030,
         "displayName": "antiqueatlas-1.12.2-4.6.3.jar",
@@ -23891,7 +23891,7 @@
     },
     {
       "addonID": 276951,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2705810,
         "displayName": "comforts-1.12.2-1.4.1.2.jar",
@@ -23985,7 +23985,7 @@
     },
     {
       "addonID": 298187,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2823582,
         "displayName": "BuildingGadgets-2.7.4.jar",
@@ -24153,7 +24153,7 @@
     },
     {
       "addonID": 280316,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2696766,
         "displayName": "ItemStages-1.12.2-2.0.49.jar",
@@ -24250,7 +24250,7 @@
     },
     {
       "addonID": 271384,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2715784,
         "displayName": "CoFHWorld-1.12.2-1.3.1.7-universal.jar",
@@ -24329,7 +24329,7 @@
     },
     {
       "addonID": 261348,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2660801,
         "displayName": "Avaritia-1.12.2-3.3.0.33-universal.jar",
@@ -24420,7 +24420,7 @@
     },
     {
       "addonID": 243478,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2745657,
         "displayName": "moreoverlays-1.15.1-mc1.12.2.jar",
@@ -24506,7 +24506,7 @@
     },
     {
       "addonID": 266936,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2722779,
         "displayName": "JAOPCA-1.12.2-2.2.8.103.jar",
@@ -24592,7 +24592,7 @@
     },
     {
       "addonID": 307152,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2849085,
         "displayName": "champions-1.12.2-1.0.11.3.jar",
@@ -24679,7 +24679,7 @@
     },
     {
       "addonID": 237903,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2863475,
         "displayName": "RebornCore-1.12.2-3.18.1.514-universal.jar",
@@ -24793,7 +24793,7 @@
     },
     {
       "addonID": 270305,
-      "gameInstanceID": "03b9b59e-bcb4-4d47-a6c8-e32aef23c22a",
+      "gameInstanceID": "3ec12f6f-f6f9-4659-8972-c210b2e52d11",
       "installedFile": {
         "id": 2617198,
         "displayName": "oeintegration-2.3.4.jar",

@@ -15,6 +15,20 @@
 				},
 				sell:
 				{
+					id:"minecraft:shears",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1, chance:0.4,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:1,
+					Damage:3
+				},
+				sell:
+				{
 					id:"minecraft:wool",
 					Count:10
 				}
@@ -150,8 +164,7 @@
 				sell:
 				{
 					id:"minecraft:wool",
-					Count:10,
-					Damage:1
+					Count:10
 				}
 			},
 			{

@@ -1,6 +1,6 @@
 {
 	Profession: "minecraft:smith",
-	Career:"armor",
+	Career:"armorer",
 
 	Offers:{
 		Recipes:[
