@@ -1,0 +1,29 @@
+{
+	Profession:"minecraft:smith",
+	Career:"miner",
+
+	Offers:{
+		Recipes:[
+			{action:"clear"},
+			{
+				action:"add", CareerLevel:1, chance:0.4,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:1,
+					Damage:3
+				},
+        buyB: {
+          id:"modcurrency:coin",
+          Count:3,
+          Damage:4
+        },
+				sell:
+				{
+					id:"minecraft:coal",
+					Count:32
+				}
+			}
+    ]
+  }
+}
