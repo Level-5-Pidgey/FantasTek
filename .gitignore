@@ -15,7 +15,7 @@
 /.mixin.out/
 /[Mm]ods/[Mm]emory_repo/
 /[Cc]rash-reports/
-/[Cc]onfig/BiomeTweaker/[Oo]utput/**/*.json
+/[Cc]onfig/BiomeTweaker/Output/*
 
 #Never ignore script files
 !/[Ss]cripts/**/*.zs

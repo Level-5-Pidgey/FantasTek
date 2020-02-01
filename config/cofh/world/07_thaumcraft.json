@@ -1,0 +1,179 @@
+{
+	"priority": 1000000000000,
+	"populate": {
+		"aer": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:infused_stone_aer",
+				"material": [
+					"minecraft:stone",
+					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone"
+				],
+				"cluster-size": 12
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"aqua": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:infused_stone_aqua",
+				"material": [
+					"minecraft:stone",
+					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone"
+				],
+				"cluster-size": 12
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"ignis": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:infused_stone_ignis",
+				"material": [
+					"minecraft:stone",
+					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone"
+				],
+				"cluster-size": 12
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"ordo": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:infused_stone_ordo",
+				"material": [
+					"minecraft:stone",
+					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone"
+				],
+				"cluster-size": 12
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"perditio": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:infused_stone_perditio",
+				"material": [
+					"minecraft:stone",
+					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone"
+				],
+				"cluster-size": 12
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"terra": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:infused_stone_terra",
+				"material": [
+					"minecraft:stone",
+					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone"
+				],
+				"cluster-size": 12
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

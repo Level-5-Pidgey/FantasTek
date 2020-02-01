@@ -21,9 +21,9 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "DENSE",
+    "SWAMP",
     "HOT",
-    "WET",
-    "SWAMP"
+    "WET"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

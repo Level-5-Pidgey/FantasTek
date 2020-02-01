@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "DRY",
-    "WASTELAND",
-    "HOT"
+    "HOT",
+    "WASTELAND"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

@@ -1,3 +1,5 @@
+import mods.dropt.Dropt;
+
 print("~~~ Begin ContentTweaker recipes Init ~~~");
 
 //Steel Blend Crafting
@@ -27,5 +29,67 @@ recipes.addShapeless("prismarine_shards", <contenttweaker:prismarine_nugget> * 2
 
 //Add Tooltip for Artifact
 scripts.helpers.AddTooltip(<contenttweaker:strange_treasure>, ["Rare treasure that villagers may have a bounty for!", "Can be sold for a high price."]);
+
+//Thaumcraft Infused Stones
+//Changing block drops
+Dropt.list("thaumcraft_crystal_ores")
+
+	.add(Dropt.rule()
+		.matchBlocks(["contenttweaker:infused_stone_aer"])
+		.addDrop(Dropt.drop()
+		.items([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]})], Dropt.range(1, 3))
+	))
+	.add(Dropt.rule()
+		.matchBlocks(["contenttweaker:infused_stone_aqua"])
+		.addDrop(Dropt.drop()
+		.items([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})], Dropt.range(1, 3))
+	))
+	.add(Dropt.rule()
+		.matchBlocks(["contenttweaker:infused_stone_ignis"])
+		.addDrop(Dropt.drop()
+		.items([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})], Dropt.range(1, 3))
+	))
+	.add(Dropt.rule()
+		.matchBlocks(["contenttweaker:infused_stone_ordo"])
+		.addDrop(Dropt.drop()
+		.items([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})], Dropt.range(1, 3))
+	))
+	.add(Dropt.rule()
+		.matchBlocks(["contenttweaker:infused_stone_perditio"])
+		.addDrop(Dropt.drop()
+		.items([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})], Dropt.range(1, 3))
+	))
+	.add(Dropt.rule()
+		.matchBlocks(["contenttweaker:infused_stone_terra"])
+		.addDrop(Dropt.drop()
+		.items([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})], Dropt.range(1, 3))
+	))
+	.add(Dropt.rule()
+		.matchBlocks(["contenttweaker:infused_stone_vitium"])
+		.addDrop(Dropt.drop()
+		.items([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})], Dropt.range(1, 3))
+	));
+
+//Adding Smelting Recipes
+furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) * 4, <contenttweaker:infused_stone_aer>, 0.7);
+mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_aer>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) * 4);
+
+furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 4, <contenttweaker:infused_stone_aqua>, 0.7);
+mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_aqua>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 4);
+
+furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 4, <contenttweaker:infused_stone_ignis>, 0.7);
+mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_ignis>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 4);
+
+furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) * 4, <contenttweaker:infused_stone_ordo>, 0.7);
+mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_ordo>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) * 4);
+
+furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 4, <contenttweaker:infused_stone_perditio>, 0.7);
+mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_perditio>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 4);
+
+furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 4, <contenttweaker:infused_stone_terra>, 0.7);
+mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_terra>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 4);
+
+furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) * 4, <contenttweaker:infused_stone_vitium>, 0.7);
+mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_vitium>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) * 4);
 
 print("### ContentTweaker recipes Init Complete ###");

@@ -20,12 +20,12 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HILLS",
+    "THEMED_TREES",
     "FOREST",
+    "HILLS",
     "MEGA_TAIGA_TREES",
-    "COLD",
     "CONIFEROUS",
-    "THEMED_TREES"
+    "COLD"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

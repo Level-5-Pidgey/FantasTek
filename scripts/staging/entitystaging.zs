@@ -5,22 +5,22 @@ print("~~~ Begin Entity Staging ~~~");
 
 function StageMorb(entityString as string, stageToSetTo as mods.zenstages.Stage)
 {
-	stageToSetTo.addIngredient(<thermalexpansion:morb>.withTag({Generic: 1 as byte, id: entityString}));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: entityString}));
 }
 
 function StageBrokenSpawner(entityString as string, stageToSetTo as mods.zenstages.Stage)
 {
-	stageToSetTo.addIngredient(<enderio:item_broken_spawner>.withTag({entityId: entityString}));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <enderio:item_broken_spawner>.withTag({entityId: entityString}));
 }
 
 function StageSoulVial(entityString as string, stageToSetTo as mods.zenstages.Stage)
 {
-	stageToSetTo.addIngredient(<enderio:item_soul_vial:1>.withTag({entityId: entityString}));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <enderio:item_soul_vial:1>.withTag({entityId: entityString}));
 }
 
 function StageSpawnEgg(entityString as string, stageToSetTo as mods.zenstages.Stage)
 {
-	stageToSetTo.addIngredient(<minecraft:spawn_egg>.withTag({EntityTag: {id: entityString}}));
+	mods.ItemStages.addItemStage(stageToSetTo.stage, <minecraft:spawn_egg>.withTag({EntityTag: {id: entityString}}));
 }
 
 var entityStages as mods.zenstages.Stage[string] =
