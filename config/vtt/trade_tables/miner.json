@@ -6,12 +6,112 @@
 		Recipes:[
 			{action:"clear"},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:3,
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:cobblestone",
+					Count:64
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:3
+				},
+				sell:
+				{
+					id:"minecraft:coal",
+					Count:16
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.7,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:3,
+					Damage:2
+				},
+				buyB: {
+					id:"modcurrency:coin",
+					Count:2,
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:iron_ore",
+					Count:{min:3, max:5}
+				}
+			},
+			{
+				action:"add", CareerLevel:1, chance:0.5,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:3,
+					Damage:2
+				},
+				sell:
+				{
+					id:"minecraft:gold_ore",
+					Count:{min:5, max:7}
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:3
+				},
+				sell:
+				{
+					id:"minecraft:redstone",
+					Count:{min:7, max:10}
+				}
+			},
+			{
+				action:"add", CareerLevel:5, chance:0.3,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:5,
+					Damage:3
+				},
+				sell:
+				{
+					id:"minecraft:diamond_ore",
+					Count:{min:1,max:2}
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.6,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:5
+				},
+				sell:
+				{
+					id:"minecraft:lapis_ore",
+					Count:{min:3, max:5}
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.4,
 				buy:
 				{
 					id:"modcurrency:banknote",
 					Count:1,
-					Damage:3
+					Damage:2
 				},
         buyB: {
           id:"modcurrency:coin",
@@ -20,8 +120,8 @@
         },
 				sell:
 				{
-					id:"minecraft:coal",
-					Count:32
+					id:"minecraft:dye",
+					Count:16
 				}
 			}
     ]
