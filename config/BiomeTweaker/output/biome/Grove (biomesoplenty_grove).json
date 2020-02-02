@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "FOREST",
     "PLAINS",
+    "LUSH",
     "WET",
-    "SPARSE",
-    "LUSH"
+    "SPARSE"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
