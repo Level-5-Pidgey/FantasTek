@@ -113,17 +113,17 @@
 					Count:1,
 					Damage:2
 				},
-        buyB: {
-          id:"modcurrency:coin",
-          Count:3,
-          Damage:4
-        },
+				buyB: {
+					id:"modcurrency:coin",
+					Count:3,
+					Damage:4
+				},
 				sell:
 				{
 					id:"minecraft:dye",
 					Count:16
 				}
 			}
-    ]
-  }
+		]
+	}
 }
