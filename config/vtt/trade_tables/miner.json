@@ -1,5 +1,5 @@
 {
-	Profession:"minecraft:smith",
+	Profession:"vtt:redstoner",
 	Career:"miner",
 
 	Offers:{
@@ -24,6 +24,7 @@
 				buy:
 				{
 					id:"modcurrency:banknote",
+					Damage:1,
 					Count:3
 				},
 				sell:
@@ -38,11 +39,11 @@
 				{
 					id:"modcurrency:banknote",
 					Count:3,
-					Damage:2
+					Damage:1
 				},
 				buyB: {
 					id:"modcurrency:coin",
-					Count:2,
+					Count:1,
 					Damage:4
 				},
 				sell:
@@ -70,6 +71,7 @@
 				buy:
 				{
 					id:"modcurrency:banknote",
+					Damage:1,
 					Count:3
 				},
 				sell:
@@ -97,7 +99,8 @@
 				buy:
 				{
 					id:"modcurrency:banknote",
-					Count:5
+					Count:1,
+					Damage:3
 				},
 				sell:
 				{
@@ -113,17 +116,18 @@
 					Count:1,
 					Damage:2
 				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:3,
-					Damage:4
-				},
+		        buyB: {
+		          id:"modcurrency:coin",
+		          Count:3,
+		          Damage:4
+		        },
 				sell:
 				{
 					id:"minecraft:dye",
+					Damage:4,
 					Count:16
 				}
 			}
-		]
-	}
+    	]
+  	}
 }

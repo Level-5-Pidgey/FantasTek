@@ -80,7 +80,7 @@
 			}
 		},
 		{
-			action:"add", CareerLevel:5, chance:0.05,
+			action:"add", CareerLevel:5, chance:0.1,
 			buy:
 			{
 				id:"modcurrency:banknote",
