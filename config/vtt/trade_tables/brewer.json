@@ -1,6 +1,6 @@
 {
-    Profession:"vtt:brewer",
-    Career:"brewer",
+  Profession:"vtt:brewer",
+  Career:"brewer",
 
     Offers:{
         Recipes:[

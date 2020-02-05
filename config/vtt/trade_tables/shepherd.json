@@ -164,7 +164,8 @@
 				sell:
 				{
 					id:"minecraft:wool",
-					Count:10
+					Count:10,
+					Damage:1
 				}
 			},
 			{
