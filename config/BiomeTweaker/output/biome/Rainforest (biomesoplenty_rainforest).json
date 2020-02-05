@@ -23,9 +23,9 @@
     "FOREST",
     "JUNGLE",
     "LUSH",
-    "HILLS",
+    "DENSE",
     "WET",
-    "DENSE"
+    "HILLS"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

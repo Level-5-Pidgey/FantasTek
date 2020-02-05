@@ -174,7 +174,32 @@ val StageLessItems = [
   <extendedcrafting:material:2>,
   <extendedcrafting:material:1>,
   <extendedcrafting:material>,
-  <extendedcrafting:material:14>
+  <extendedcrafting:material:14>,
+  <witherskelefix:fragment>,
+  <forestry:bee_house>,
+  <forestry:cart.beehouse>,
+  <forestry:apiary>,
+  <forestry:apiarist_chest>,
+  <forestry:apiarist_legs>,
+  <forestry:apiarist_boots>,
+  <forestry:apiarist_helmet>,
+  <forestry:cart.beehouse:1>,
+  <forestry:bee_chest>,
+  <forestry:engine_clockwork>,
+  <forestry:carpenter>,
+  <forestry:centrifuge>,
+  <forestry:fabricator>,
+  <forestry:worktable>,
+  <magneticraft:conveyor_belt>,
+  <magneticraft:inserter>,
+  <enderio:block_simple_furnace>,
+  <forestry:squeezer>,
+  <thermaldynamics:duct_0>,
+  <forestry:impregnated_casing>,
+  <forestry:oak_stick>,
+  <forestry:frame_impregnated>,
+  <forestry:broken_bronze_pickaxe>,
+  <forestry:broken_bronze_shovel>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

@@ -13,6 +13,7 @@ function SetOreDictStage(oredict_entry as crafttweaker.oredict.IOreDictEntry, or
 	{
 		if(scripts.helpers.StageForProcessingTier[oreValue].stage != "stage_i")
 		{
+			mods.ItemStages.removeItemStage(ore);
 			mods.ItemStages.addItemStage(scripts.helpers.StageForProcessingTier[oreValue].stage, ore);
 		}
 		else
@@ -481,24 +482,44 @@ for blockToReplace in OtherStagingReplacements
 //Stage All Materials Related to an Ore within the Processing Tiers
 for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
-	for oreEntry in GetOreDictsForMaterial(materialString)
+	//Exclude certain ores and do them manually
+	var excludedOres =
+	[
+		"Aquamarine",
+		"AstralStarmetal"
+	] as string[];
+
+	var isExcluded as bool = false;
+
+	for oreString in excludedOres
 	{
-		if(!oreEntry.empty)
+		if(oreString == materialString)
 		{
-			if(oreValue <= 1)
+			isExcluded = true;
+		}
+	}
+
+	if(!isExcluded)
+	{
+		for oreEntry in GetOreDictsForMaterial(materialString)
+		{
+			if(!oreEntry.empty)
 			{
-				if(scripts.helpers.StageForProcessingTier[oreValue + 1].stage != "stage_i")
+				if(oreValue <= 1)
 				{
-					SetOreDictStage(oreEntry, oreValue + 1);
+					if(scripts.helpers.StageForProcessingTier[oreValue + 1].stage != "stage_i")
+					{
+						SetOreDictStage(oreEntry, oreValue + 1);
+					}
+					else
+					{
+						mods.ItemStages.removeItemStage(oreEntry);
+					}
 				}
 				else
 				{
-					mods.ItemStages.removeItemStage(oreEntry);
+					SetOreDictStage(oreEntry, oreValue);
 				}
-			}
-			else
-			{
-				SetOreDictStage(oreEntry, oreValue);
 			}
 		}
 	}
@@ -513,7 +534,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "RedstoneAlloy" : stages.progression1,
   "ConductiveIron" : stages.progression1,
   "NetherStar" : stages.progression1,
-  "CrudeSteel" : stages.progression1,
+  "CrudeSteel" : stages.progression1
 };
 
 for materialString in ExtraMaterialsToStage
@@ -550,7 +571,8 @@ var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
   <ore:plankWood> : stages.progression1,
   <ore:logWood> : stages.progression1,
   <ore:fuelCoke> : stages.progression1,
-  <ore:blockFuelCoke> : stages.progression1
+  <ore:blockFuelCoke> : stages.progression1,
+  <ore:fruitForestry> : stages.progression1
 };
 
 for oreBlockEntry in extraOreDicts
@@ -568,4 +590,21 @@ for oreBlockEntry in extraOreDicts
 	}
 }
 
+//Stage Thaumcraft Infused Stone
+var InfusedStones as crafttweaker.item.IItemStack[] =
+[
+	<contenttweaker:infused_stone_ordo>,
+	<contenttweaker:infused_stone_aer>,
+	<contenttweaker:infused_stone_aqua>,
+	<contenttweaker:infused_stone_terra>,
+	<contenttweaker:infused_stone_ignis>,
+	<contenttweaker:infused_stone_vitium>,
+	<contenttweaker:infused_stone_perditio>
+];
+
+for stone in InfusedStones
+{
+	mods.ItemStages.removeItemStage(stone);
+	mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, stone);
+}
 print("### Ore Block/Material Staging Complete ###");

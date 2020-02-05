@@ -21,6 +21,6 @@ for money in moneyItems
 }
 
 //Hide unused currency item.
-mods.jei.JEI.removeAndHide(<modcurrency:banknote>);
+scripts.helpers.unstageAndHide(<modcurrency:banknote>);
 
 print("### Good Ol' Currency Mod Init Complete ###");

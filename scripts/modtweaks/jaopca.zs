@@ -52,7 +52,7 @@ val JAOPCAPlates =
 
 for JAOPCAPlate in JAOPCAPlates
 {
-	mods.jei.JEI.hide(JAOPCAPlate);
+	scripts.helpers.unstageAndHide(JAOPCAPlate);
 }
 
 //Make Coal Nuggets burn

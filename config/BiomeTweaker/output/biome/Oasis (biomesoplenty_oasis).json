@@ -22,10 +22,10 @@
   "Dictionary Types": [
     "LUSH",
     "JUNGLE",
-    "WET",
+    "SPARSE",
     "SANDY",
     "HOT",
-    "SPARSE"
+    "WET"
   ],
   "BiomeManager Entries": {
     "DESERT Weights": [

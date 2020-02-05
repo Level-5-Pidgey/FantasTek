@@ -20,12 +20,12 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "THEMED_TREES",
     "FOREST",
-    "HILLS",
     "RARE",
     "DENSE",
-    "MEGA_TAIGA_SPRUCE_TREES"
+    "MEGA_TAIGA_SPRUCE_TREES",
+    "THEMED_TREES",
+    "HILLS"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

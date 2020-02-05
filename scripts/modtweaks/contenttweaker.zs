@@ -92,4 +92,12 @@ mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_terra>
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) * 4, <contenttweaker:infused_stone_vitium>, 0.7);
 mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_vitium>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) * 4);
 
+//Sanguine Ingot
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot> * 4, <liquid:lifeessence>, <ore:ingotGold> * 4, true);
+
+//Sanguine Gem
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_gem>, <liquid:lifeessence>, <ore:gemEmerald>, true);
+
+//Elemental Sanguine Ingots
+
 print("### ContentTweaker recipes Init Complete ###");

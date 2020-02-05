@@ -200,3 +200,29 @@ function formatBucket(liquidName as string) as crafttweaker.item.IItemStack {
 
 	return <forge:bucketfilled>.withTag(liquidData);
 }
+
+function unstageAndHide(item as crafttweaker.item.IItemStack)
+{
+	mods.ItemStages.removeItemStage(item);
+	mods.jei.JEI.removeAndHide(item);
+}
+
+static T1MagicWaterIngredients as crafttweaker.item.IIngredient[] =
+[
+	<contenttweaker:prismarine_nugget>, <ore:sugarcane>, <ore:gemLapis>, <ore:dyeLightBlue>
+];
+
+static T1MagicFireIngredients as crafttweaker.item.IIngredient[] =
+[
+	<ore:cropNetherWart>, <ore:ingotBrickNether>, <ore:gunpowder>, <ore:dyeOrange>
+];
+
+static T1MagicAirIngredients as crafttweaker.item.IIngredient[] =
+[
+	<ore:feather>, <ore:string>, <ore:blockGlassColorless>, <ore:dyeGray>
+];
+
+static T1MagicEarthIngredients as crafttweaker.item.IIngredient[] =
+[
+	<ore:obsidian>, <ore:cropWheat>, <ore:treeLeaves>, <ore:dyeLime>
+];

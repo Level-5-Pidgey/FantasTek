@@ -115,10 +115,10 @@ mods.botania.RuneAltar.removeRecipe(<botania:rune:7>);
 mods.botania.RuneAltar.removeRecipe(<botania:rune:8>);
 
 //T1 Runes
-mods.botania.RuneAltar.addRecipe(<botania:rune> * 2, [<ore:powderMana>, <contenttweaker:prismarine_nugget>, <ore:sugarcane>, <ore:gemLapis>, <ore:dyeLightBlue>], 5000); //Water
-mods.botania.RuneAltar.addRecipe(<botania:rune:1> * 2, [<ore:powderMana>, <ore:cropNetherWart>, <ore:ingotBrickNether>, <ore:gunpowder>, <ore:dyeOrange>], 5000); //Fire
-mods.botania.RuneAltar.addRecipe(<botania:rune:2> * 2, [<ore:powderMana>, <ore:obsidian>, <ore:cropWheat>, <ore:treeLeaves>, <ore:dyeLime>], 5000); //Earth
-mods.botania.RuneAltar.addRecipe(<botania:rune:3> * 2, [<ore:powderMana>, <ore:feather>, <ore:string>, <ore:blockGlassColorless>, <ore:dyeGray>], 5000); //Air
+mods.botania.RuneAltar.addRecipe(<botania:rune> * 2, [<ore:powderMana>, scripts.helpers.T1MagicWaterIngredients[0], scripts.helpers.T1MagicWaterIngredients[1], scripts.helpers.T1MagicWaterIngredients[2], scripts.helpers.T1MagicWaterIngredients[3]], 5000); //Water
+mods.botania.RuneAltar.addRecipe(<botania:rune:1> * 2, [<ore:powderMana>, scripts.helpers.T1MagicFireIngredients[0], scripts.helpers.T1MagicFireIngredients[1], scripts.helpers.T1MagicFireIngredients[2], scripts.helpers.T1MagicFireIngredients[3]], 5000); //Fire
+mods.botania.RuneAltar.addRecipe(<botania:rune:2> * 2, [<ore:powderMana>, scripts.helpers.T1MagicEarthIngredients[0], scripts.helpers.T1MagicEarthIngredients[1], scripts.helpers.T1MagicEarthIngredients[2], scripts.helpers.T1MagicEarthIngredients[3]], 5000); //Earth
+mods.botania.RuneAltar.addRecipe(<botania:rune:3> * 2, [<ore:powderMana>, scripts.helpers.T1MagicAirIngredients[0], scripts.helpers.T1MagicAirIngredients[1], scripts.helpers.T1MagicAirIngredients[2], scripts.helpers.T1MagicAirIngredients[3]], 5000); //Air
 
 //T2 Runes
 mods.botania.RuneAltar.addRecipe(<botania:rune:4>, [<ore:powderMana>, <botania:rune>, <botania:rune:1>, <minecraftfuture:bamboo>, <ore:treeSapling>, <ore:fish>], 8000); //Spring

@@ -23,7 +23,7 @@ val enderIOGenerators =
 
 for generator in enderIOGenerators
 {
-	mods.jei.JEI.hide(generator);
+	scripts.helpers.unstageAndHide(generator);
 }
 
 //Hide some JEI categories

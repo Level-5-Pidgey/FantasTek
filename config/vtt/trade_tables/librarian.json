@@ -34,69 +34,66 @@
 					Count:1
 				}
 			},
-		{
-			action:"add", CareerLevel:3, chance:0.2,
-			buy:
 			{
-				id:"modcurrency:banknote",
-				Count:5,
-				Damage:5
+				action:"add", CareerLevel:3, chance:0.2,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:5,
+					Damage:5
+				},
+				sell:
+				{
+					id:"minecraft:book",
+					tag:{ench:[{lvl:3,id:34}]},
+					Count:1
+				}
 			},
-			sell:
 			{
-				id:"minecraft:book",
-				tag:{ench:[{lvl:3,id:34}]},
-				Count:1
-			}
-		},
-		{
-			action:"add", CareerLevel:3, chance:0.2,
-			buy:
-			{
-				id:"modcurrency:banknote",
-				Count:2,
-				Damage:5
+				action:"add", CareerLevel:3, chance:0.2,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:2,
+					Damage:5
+				},
+				sell:
+				{
+					id:"minecraft:book",
+					tag:{ench:[{lvl:5,id:17}]},
+					Count:1
+				}
 			},
-			sell:
 			{
-				id:"minecraft:book",
-				tag:{ench:[{lvl:5,id:17}]},
-				Count:1
-			}
-		},
-		{
-			action:"add", CareerLevel:3, chance:0.2,
-			buy:
-			{
-				id:"modcurrency:banknote",
-				Count:5,
-				Damage:5
+				action:"add", CareerLevel:3, chance:0.2,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:5,
+					Damage:5
+				},
+				sell:
+				{
+					id:"minecraft:book",
+					tag:{ench:[{lvl:4,id:0}]},
+					Count:1
+				}
 			},
-			sell:
 			{
-				id:"minecraft:book",
-				tag:{ench:[{lvl:4,id:0}]},
-				Count:1
+				action:"add", CareerLevel:5, chance:0.1,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:3,
+					Damage:5
+				},
+				sell:
+				{
+					id:"minecraft:book",
+					tag:{ench:[{lvl:1,id:33}]},
+					Count:1
+				}
 			}
-		},
-		{
-			action:"add", CareerLevel:5, chance:0.1,
-			buy:
-			{
-				id:"modcurrency:banknote",
-				Count:3,
-				Damage:5
-			},
-			sell:
-			{
-				id:"minecraft:book",
-				tag:{ench:[{lvl:1,id:33}]},
-				Count:1
-			}
-		}
-
-
-	]
-}
-
+		]
+	}
 }

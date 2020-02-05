@@ -95,6 +95,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:gold> : stages.progression1,
 	<liquid:heavy_oil> : stages.Locked,
 	<liquid:heavywater> : stages.Locked,
+	<liquid:for.honey> : stages.progression1,
 	<liquid:honey> : stages.progression1,
 	<liquid:hootch> : stages.Locked,
 	<liquid:hot_crude> : stages.Locked,

@@ -4,7 +4,7 @@ print("~~~ Begin Mekanism Init ~~~");
 //Disable Chemical Dissolution Chamber
 mods.mekanism.chemical.dissolution.removeAllRecipes();
 mods.jei.JEI.hideCategory("mekanism.chemicaldissolutionchamber");
-mods.jei.JEI.removeAndHide(<mekanism:machineblock2:6>);
+scripts.helpers.unstageAndHide(<mekanism:machineblock2:6>);
 
 //Add back some Chemical Injection Chamber Recipes
 mods.mekanism.chemical.injection.addRecipe(<minecraft:dirt>, <gas:hydrogenchloride> * 200, <minecraft:clay>);

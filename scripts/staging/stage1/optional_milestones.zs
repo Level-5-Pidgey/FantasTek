@@ -1,4 +1,4 @@
-#priority 100
+#priority 96
 
 print("~~~ Begin Stage 1 Optional Milestone Staging ~~~");
 

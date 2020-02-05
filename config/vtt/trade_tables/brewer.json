@@ -38,7 +38,8 @@
                 action:"add", CareerLevel:1,
                 buy:{
                     id:"modcurrency:banknote",
-                    Count:1
+                    Count:1,
+					Damage:1
                 },
                 sell:{
                     id:"minecraft:rabbit_foot",

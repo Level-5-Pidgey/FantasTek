@@ -49,7 +49,7 @@ val ARPlates =
 
 for ARPlate in ARPlates
 {
-	mods.jei.JEI.hide(ARPlate);
+	scripts.helpers.unstageAndHide(ARPlate);
 }
 
 //Modify Heatproof Brick Recipe

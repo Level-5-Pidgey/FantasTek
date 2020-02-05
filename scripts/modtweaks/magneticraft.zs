@@ -4,8 +4,8 @@ print("~~~ Begin Magneticraft Init ~~~");
 //Disable Crushing Table and Hydraulic Press
 mods.jei.JEI.hideCategory("magneticraft.hydraulic_press");
 mods.jei.JEI.hideCategory("magneticraft.crushing_table");
-mods.jei.JEI.removeAndHide(<magneticraft:hydraulic_press>);
-mods.jei.JEI.removeAndHide(<magneticraft:crushing_table>);
+scripts.helpers.unstageAndHide(<magneticraft:hydraulic_press>);
+scripts.helpers.unstageAndHide(<magneticraft:crushing_table>);
 
 //Hide Magneticraft Plates
 val magneticraftPlates =
@@ -26,7 +26,7 @@ val magneticraftPlates =
 
 for magneticraftPlate in magneticraftPlates
 {
-	mods.jei.JEI.hide(magneticraftPlate);
+	scripts.helpers.unstageAndHide(magneticraftPlate);
 }
 
 //Replace Plates with OreDict
