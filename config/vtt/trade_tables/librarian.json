@@ -29,7 +29,7 @@
 				},
 				sell:
 				{
-					id:"minecraft:book",
+					id:"minecraft:enchanted_book",
 					tag:{ench:[{lvl:5,id:16}]},
 					Count:1
 				}
@@ -44,7 +44,7 @@
 				},
 				sell:
 				{
-					id:"minecraft:book",
+					id:"minecraft:enchanted_book",
 					tag:{ench:[{lvl:3,id:34}]},
 					Count:1
 				}
@@ -59,7 +59,7 @@
 				},
 				sell:
 				{
-					id:"minecraft:book",
+					id:"minecraft:enchanted_book",
 					tag:{ench:[{lvl:5,id:17}]},
 					Count:1
 				}
@@ -74,7 +74,7 @@
 				},
 				sell:
 				{
-					id:"minecraft:book",
+					id:"minecraft:enchanted_book",
 					tag:{ench:[{lvl:4,id:0}]},
 					Count:1
 				}
@@ -89,7 +89,7 @@
 				},
 				sell:
 				{
-					id:"minecraft:book",
+					id:"minecraft:enchanted_book",
 					tag:{ench:[{lvl:1,id:33}]},
 					Count:1
 				}
