@@ -31,4 +31,16 @@ for item in StageLessItems
   mods.ItemStages.removeItemStage(item);
 }
 
+//Stage Sanguine Crystals
+mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_air>);
+mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_water>);
+mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_fire>);
+mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_earth>);
+
+//Stage Sanguine Ingot
+mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_ingot>);
+
+//Stage Sanguine Gem
+mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem>);
+
 print("### Stage 1 Blood Magic Complete ###");

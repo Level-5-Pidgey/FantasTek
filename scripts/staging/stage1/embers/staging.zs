@@ -81,4 +81,10 @@ for item in StageLessItems
   mods.ItemStages.removeItemStage(item);
 }
 
+//Stage Elemental Crystals
+mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_air>);
+mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_water>);
+mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_fire>);
+mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_earth>);
+
 print("### Stage 1 Embers Complete ###");

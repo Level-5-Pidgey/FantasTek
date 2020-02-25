@@ -199,7 +199,21 @@ val StageLessItems = [
   <forestry:oak_stick>,
   <forestry:frame_impregnated>,
   <forestry:broken_bronze_pickaxe>,
-  <forestry:broken_bronze_shovel>
+  <forestry:broken_bronze_shovel>,
+  <contenttweaker:sanguine_gem_air>,
+  <contenttweaker:sanguine_gem_water>,
+  <contenttweaker:sanguine_gem_fire>,
+  <contenttweaker:sanguine_gem_earth>,
+  <contenttweaker:sanguine_ingot>,
+  <contenttweaker:sanguine_gem>,
+  <contenttweaker:salis_mundus_air>,
+  <contenttweaker:salis_mundus_water>,
+  <contenttweaker:salis_mundus_fire>,
+  <contenttweaker:salis_mundus_earth>,
+  <contenttweaker:crystal_ember_air>,
+  <contenttweaker:crystal_ember_water>,
+  <contenttweaker:crystal_ember_fire>,
+  <contenttweaker:crystal_ember_earth>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

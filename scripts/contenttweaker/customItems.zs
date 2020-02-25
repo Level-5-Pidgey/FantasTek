@@ -118,22 +118,22 @@ sanguine_ingot.register();
 var sanguine_gem = VanillaFactory.createItem("sanguine_gem");
 sanguine_gem.register();
 
-//Elemental Sanguine Ingots
-var sanguine_ingot_fire = VanillaFactory.createItem("sanguine_ingot_fire");
-sanguine_ingot_fire.rarity = "UNCOMMON";
-sanguine_ingot_fire.register();
+//Elemental Sanguine Gems
+var sanguine_gem_fire = VanillaFactory.createItem("sanguine_gem_fire");
+sanguine_gem_fire.rarity = "UNCOMMON";
+sanguine_gem_fire.register();
 
-var sanguine_ingot_water = VanillaFactory.createItem("sanguine_ingot_water");
-sanguine_ingot_water.rarity = "UNCOMMON";
-sanguine_ingot_water.register();
+var sanguine_gem_water = VanillaFactory.createItem("sanguine_gem_water");
+sanguine_gem_water.rarity = "UNCOMMON";
+sanguine_gem_water.register();
 
-var sanguine_ingot_air = VanillaFactory.createItem("sanguine_ingot_air");
-sanguine_ingot_air.rarity = "UNCOMMON";
-sanguine_ingot_air.register();
+var sanguine_gem_air = VanillaFactory.createItem("sanguine_gem_air");
+sanguine_gem_air.rarity = "UNCOMMON";
+sanguine_gem_air.register();
 
-var sanguine_ingot_earth = VanillaFactory.createItem("sanguine_ingot_earth");
-sanguine_ingot_earth.rarity = "UNCOMMON";
-sanguine_ingot_earth.register();
+var sanguine_gem_earth = VanillaFactory.createItem("sanguine_gem_earth");
+sanguine_gem_earth.rarity = "UNCOMMON";
+sanguine_gem_earth.register();
 
 //Thaumcraft Elemental Dusts
 var salis_mundus_fire = VanillaFactory.createItem("salis_mundus_fire");
@@ -153,18 +153,18 @@ salis_mundus_earth.rarity = "UNCOMMON";
 salis_mundus_earth.register();
 
 //Embers Elemental Ember Crystals
-var ember_crystal_fire = VanillaFactory.createItem("ember_crystal_fire");
-ember_crystal_fire.rarity = "UNCOMMON";
-ember_crystal_fire.register();
+var crystal_ember_fire = VanillaFactory.createItem("crystal_ember_fire");
+crystal_ember_fire.rarity = "UNCOMMON";
+crystal_ember_fire.register();
 
-var ember_crystal_water = VanillaFactory.createItem("ember_crystal_water");
-ember_crystal_water.rarity = "UNCOMMON";
-ember_crystal_water.register();
+var crystal_ember_water = VanillaFactory.createItem("crystal_ember_water");
+crystal_ember_water.rarity = "UNCOMMON";
+crystal_ember_water.register();
 
-var ember_crystal_air = VanillaFactory.createItem("ember_crystal_air");
-ember_crystal_air.rarity = "UNCOMMON";
-ember_crystal_air.register();
+var crystal_ember_air = VanillaFactory.createItem("crystal_ember_air");
+crystal_ember_air.rarity = "UNCOMMON";
+crystal_ember_air.register();
 
-var ember_crystal_earth = VanillaFactory.createItem("ember_crystal_earth");
-ember_crystal_earth.rarity = "UNCOMMON";
-ember_crystal_earth.register();
+var crystal_ember_earth = VanillaFactory.createItem("crystal_ember_earth");
+crystal_ember_earth.rarity = "UNCOMMON";
+crystal_ember_earth.register();

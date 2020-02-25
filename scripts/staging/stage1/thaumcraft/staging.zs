@@ -71,4 +71,10 @@ for item in StageLessItems
   mods.ItemStages.removeItemStage(item);
 }
 
+//Stage Elemental Salis Mundus
+mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_air>);
+mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_water>);
+mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_fire>);
+mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_earth>);
+
 print("### Stage 1 Thaumcraft Complete ###");
