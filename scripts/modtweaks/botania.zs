@@ -102,7 +102,6 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 }
 
 //Change Rune Crafting
-
 //Crafting Runes
 mods.botania.RuneAltar.removeRecipe(<botania:rune>);
 mods.botania.RuneAltar.removeRecipe(<botania:rune:1>);
@@ -126,5 +125,34 @@ mods.botania.RuneAltar.addRecipe(<botania:rune:5>, [<ore:powderMana>, <botania:r
 mods.botania.RuneAltar.addRecipe(<botania:rune:6>, [<ore:powderMana>, <botania:rune:1>, <botania:rune:3>, <minecraft:lit_pumpkin>, <ore:treeLeaves>, <minecraft:web>], 8000); //Autumn
 mods.botania.RuneAltar.addRecipe(<botania:rune:7>, [<ore:powderMana>, <botania:rune>, <botania:rune:2>, <minecraftfuture:sweetberry>, <ore:quartzMana>, <minecraft:snow>, <minecraft:snow>, <minecraft:snow>], 8000); //Winter
 mods.botania.RuneAltar.addRecipe(<botania:rune:8>, [<ore:powderMana>, <ore:manaPearl>, <ore:manaDiamond>, <ore:quartzMana>], 8000); //Mana
+
+//Make Manasteel require actual steel
+mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
+mods.botania.ManaInfusion.removeRecipe(<botania:storage>);
+mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingotSteel>, 3000);
+mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingotCrudeSteel>, 4000);
+mods.botania.ManaInfusion.addInfusion(<botania:storage>, <ore:blockSteel>, 3000 * 9);
+mods.botania.ManaInfusion.addInfusion(<botania:storage>, <ore:blockCrudeSteel>, 4000 * 9);
+
+//Change Recipes of Botania Flowers
+val botaniaFlowers = {
+  <botania:specialflower>.withTag({type: "endoflame"}) : [<ore:petalBrown>, <ore:petalBrown>, <ore:petalRed>, <ore:petalLightGray>, <ore:runeFireB>],
+  <botania:specialflower>.withTag({type: "hydroangeas"}) : [<ore:petalBlue>, <ore:petalBlue>, <ore:petalCyan>, <ore:petalCyan>],
+  <botania:specialflower>.withTag({type: "thermalily"}) : [<ore:petalRed>, <ore:petalOrange>, <ore:petalOrange>, <ore:runeFireB>],
+  <botania:specialflower>.withTag({type: "munchdew"}) : [<ore:petalGreen>, <ore:petalGreen>, <ore:petalLime>, <ore:petalLime>, <ore:runeEarthB>],
+  <botania:specialflower>.withTag({type: "entropinnyum"}) : [<ore:petalRed>, <ore:petalRed>, <ore:petalWhite>, <ore:petalWhite>, <ore:petalGray>, <ore:petalGray>, <ore:runeAutumnB>],
+  <botania:specialflower>.withTag({type: "kekimurus"}) : [<ore:petalBrown>, <ore:petalBrown>, <ore:petalOrange>, <ore:petalOrange>, <ore:petalWhite>, <ore:petalWhite>, <ore:runeGluttonyB>],
+  <botania:specialflower>.withTag({type: "gourmaryllis"}) : [<ore:petalLightGray>, <ore:petalLightGray>, <ore:petalYellow>, <ore:petalYellow>, <ore:petalRed>, <ore:runeAirB>],
+  <botania:specialflower>.withTag({type: "narslimmus"}) : [<ore:petalLime>, <ore:petalLime>, <ore:petalGreen>, <ore:petalGreen>, <ore:petalBlack>, <ore:runeEarthB>],
+  <botania:specialflower>.withTag({type: "spectrolus"}) : [<ore:petalRed>, <ore:petalRed>, <ore:petalBlue>, <ore:petalBlue>, <ore:petalGreen>, <ore:petalGreen>, <ore:petalWhite>, <ore:petalWhite>, <ore:runeWinterB>],
+  <botania:specialflower>.withTag({type: "rafflowsia"}) : [<ore:petalGreen>, <ore:petalGreen>, <ore:petalPurple>, <ore:petalPurple>, <ore:runeEarthB>],
+  <botania:specialflower>.withTag({type: "shulk_me_not"}) : [<ore:petalPurple>, <ore:petalPurple>, <ore:petalMagenta>, <ore:petalMagenta>, <ore:petalLightGray>, <ore:runeWrathB>, <darkutils:shulker_pearl>],
+  <botania:specialflower>.withTag({type: "dandelifeon"}) : [<ore:petalLime>, <ore:petalPink>, <ore:petalGreen>, <ore:petalPurple>, <ore:netherStar>, <ore:runeWaterB>, <ore:runeFireB>, <ore:runeEarthB>, <ore:runeAirB>]
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+
+for key, value in botaniaFlowers {
+	mods.botania.Apothecary.removeRecipe(key);
+  mods.botania.Apothecary.addRecipe(key, value);
+}
 
 print("### Botania Init Complete ###");

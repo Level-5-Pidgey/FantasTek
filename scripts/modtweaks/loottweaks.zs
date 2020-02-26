@@ -81,7 +81,7 @@ val IceAndFireGen =
 	] as LootTable[];
 
 for pool in IceAndFireGen {
-	pool.removePool("silver_ingot");
+	//pool.removePool("silver_ingot");
 }
 
 //Remove Botania Loots

@@ -96,30 +96,4 @@ for item in sootyMarbles {
 	mods.chisel.Carving.addVariation("sootyMarble", item);
 }
 
-//Add elemental crystal crafting
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_air", <contenttweaker:astral_crystal_air>, 200, 80,
-[
- null, scripts.helpers.T1MagicAirIngredients[0], null,
- scripts.helpers.T1MagicAirIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicAirIngredients[1],
- null, scripts.helpers.T1MagicAirIngredients[2], null
-]); //Air
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_fire", <contenttweaker:astral_crystal_fire>, 200, 80,
-[
- null, scripts.helpers.T1MagicFireIngredients[0], null,
- scripts.helpers.T1MagicFireIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicFireIngredients[1],
- null, scripts.helpers.T1MagicFireIngredients[2], null
-]); //Fire
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_water", <contenttweaker:astral_crystal_water>, 200, 80,
-[
- null, scripts.helpers.T1MagicWaterIngredients[0], null,
- scripts.helpers.T1MagicWaterIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicWaterIngredients[1],
- null, scripts.helpers.T1MagicWaterIngredients[2], null
-]); //Water
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_earth", <contenttweaker:astral_crystal_earth>, 200, 80,
-[
- null, scripts.helpers.T1MagicEarthIngredients[0], null,
- scripts.helpers.T1MagicEarthIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicEarthIngredients[1],
- null, scripts.helpers.T1MagicEarthIngredients[2], null
-]); //Earth
-
 print("### Astral Sorcery Init Complete ###");

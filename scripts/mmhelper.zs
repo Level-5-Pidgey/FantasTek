@@ -51,3 +51,16 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 		print("Failed to add Chemical Ore Factory Recipe for " ~ ore ~ " as no ore block or Mekanism Crystal was found.");
 	}
 }
+
+//Ember Assembly Plant
+function AddEmberAssemblyRecipe(item as crafttweaker.item.IItemStack, input as crafttweaker.item.IItemStack[], emberCost as double)
+{
+	var RecipeToAdd = RecipeBuilder.newBuilder("ember_assembly_" ~ item.name, "ember_assembly_plant", (20 * (emberCost / 10)) as int);
+	for item in input
+	{
+		RecipeToAdd.addItemInput(item);
+	}
+	RecipeToAdd.addEmberInput(emberCost);
+	RecipeToAdd.addItemOutput(item);
+	RecipeToAdd.build();
+}

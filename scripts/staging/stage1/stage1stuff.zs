@@ -69,10 +69,6 @@ val StageLessItems = [
   <rftools:storage_scanner>,
   <rftools:storage_terminal>,
   <contenttweaker:prismarine_nugget>,
-  <contenttweaker:astral_crystal_earth>,
-  <contenttweaker:astral_crystal_air>,
-  <contenttweaker:astral_crystal_fire>,
-  <contenttweaker:astral_crystal_water>,
   <contenttweaker:strange_treasure>,
   <contenttweaker:coke_dust>,
   <contenttweaker:steel_blend>,
@@ -199,21 +195,7 @@ val StageLessItems = [
   <forestry:oak_stick>,
   <forestry:frame_impregnated>,
   <forestry:broken_bronze_pickaxe>,
-  <forestry:broken_bronze_shovel>,
-  <contenttweaker:sanguine_gem_air>,
-  <contenttweaker:sanguine_gem_water>,
-  <contenttweaker:sanguine_gem_fire>,
-  <contenttweaker:sanguine_gem_earth>,
-  <contenttweaker:sanguine_ingot>,
-  <contenttweaker:sanguine_gem>,
-  <contenttweaker:salis_mundus_air>,
-  <contenttweaker:salis_mundus_water>,
-  <contenttweaker:salis_mundus_fire>,
-  <contenttweaker:salis_mundus_earth>,
-  <contenttweaker:crystal_ember_air>,
-  <contenttweaker:crystal_ember_water>,
-  <contenttweaker:crystal_ember_fire>,
-  <contenttweaker:crystal_ember_earth>
+  <forestry:broken_bronze_shovel>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

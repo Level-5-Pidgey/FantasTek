@@ -35,8 +35,8 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
     oreDict.get("dustSmall" ~ materialString),
     oreDict.get("dustTiny" ~ materialString),
     oreDict.get("ore" ~ materialString),
-	oreDict.get("denseOre" ~ materialString),
-	oreDict.get("poorOre" ~ materialString),
+		//oreDict.get("denseOre" ~ materialString),
+		//oreDict.get("poorOre" ~ materialString),
     oreDict.get("ingot" ~ materialString),
     oreDict.get("gem" ~ materialString),
     oreDict.get("crystal" ~ materialString),
@@ -533,31 +533,27 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "ElectricalSteel" : stages.progression1,
   "RedstoneAlloy" : stages.progression1,
   "ConductiveIron" : stages.progression1,
-  "NetherStar" : stages.progression1,
-  "CrudeSteel" : stages.progression1
+  "NetherStar" : stages.progression1
 };
 
 for materialString in ExtraMaterialsToStage
 {
-	if(ExtraMaterialsToStage[materialString].stage != "stage_i")
+	for oreEntry in GetOreDictsForMaterial(materialString)
 	{
-		for oreEntry in GetOreDictsForMaterial(materialString)
+		if(!oreEntry.empty)
 		{
-			if(!oreEntry.empty)
+			if(ExtraMaterialsToStage[materialString].stage != "stage_i")
 			{
-				if(ExtraMaterialsToStage[materialString].stage != "stage_i")
+				for ore in oreEntry.items
 				{
-					for ore in oreEntry.items
-					{
-						mods.ItemStages.addItemStage(ExtraMaterialsToStage[materialString].stage, ore);
-					}
+					mods.ItemStages.addItemStage(ExtraMaterialsToStage[materialString].stage, ore);
 				}
-				else
+			}
+			else
+			{
+				for ore in oreEntry.items
 				{
-					for ore in oreEntry.items
-					{
-						mods.ItemStages.removeItemStage(ore);
-					}
+					mods.ItemStages.removeItemStage(ore);
 				}
 			}
 		}

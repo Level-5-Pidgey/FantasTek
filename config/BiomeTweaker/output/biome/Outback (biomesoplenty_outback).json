@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "SAVANNA",
     "SANDY",
-    "SPARSE",
     "HOT",
-    "DRY"
+    "DRY",
+    "SPARSE"
   ],
   "BiomeManager Entries": {
     "DESERT Weights": [
