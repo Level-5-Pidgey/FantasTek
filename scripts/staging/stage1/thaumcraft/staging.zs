@@ -12,7 +12,10 @@ mods.ItemStages.stageModItems(stages.Thaumcraft1.stage, "thaumicperiphery");
 //and move the general mod staging script line to the next stage up
 
 val Stage1ThaumcraftItems = [
-
+	<contenttweaker:salis_mundus_air>,
+	<contenttweaker:salis_mundus_water>,
+	<contenttweaker:salis_mundus_fire>,
+	<contenttweaker:salis_mundus_earth>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1ThaumcraftItems
@@ -70,11 +73,5 @@ for item in StageLessItems
 {
   mods.ItemStages.removeItemStage(item);
 }
-
-//Stage Elemental Salis Mundus
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_air>);
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_water>);
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_fire>);
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <contenttweaker:salis_mundus_earth>);
 
 print("### Stage 1 Thaumcraft Complete ###");

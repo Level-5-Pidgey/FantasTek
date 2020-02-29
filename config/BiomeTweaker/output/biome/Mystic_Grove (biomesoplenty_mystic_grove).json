@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "MAGICAL",
     "DENSE",
-    "RARE",
-    "FOREST",
     "WET",
+    "FOREST",
+    "RARE",
     "LUSH"
   ],
   "BiomeManager Entries": {

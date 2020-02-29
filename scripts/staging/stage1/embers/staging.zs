@@ -11,7 +11,10 @@ mods.ItemStages.stageModItems(stages.Embers1.stage, "embers");
 //and move the general mod staging script line to the next stage up
 
 val Stage1EmbersItems = [
-
+	<contenttweaker:crystal_ember_air>,
+	<contenttweaker:crystal_ember_water>,
+	<contenttweaker:crystal_ember_fire>,
+	<contenttweaker:crystal_ember_earth>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1EmbersItems
@@ -80,11 +83,5 @@ for item in StageLessItems
 {
   mods.ItemStages.removeItemStage(item);
 }
-
-//Stage Elemental Crystals
-mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_air>);
-mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_water>);
-mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_fire>);
-mods.ItemStages.addItemStage(stages.Embers1.stage, <contenttweaker:crystal_ember_earth>);
 
 print("### Stage 1 Embers Complete ###");

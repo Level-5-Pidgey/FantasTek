@@ -12,7 +12,12 @@ mods.ItemStages.stageModItems(stages.BloodMagic1.stage, "animus");
 //and move the general mod staging script line to the next stage up
 
 val Stage1BloodMagicItems = [
-
+	<contenttweaker:sanguine_gem_air>,
+	<contenttweaker:sanguine_gem_water>,
+	<contenttweaker:sanguine_gem_fire>,
+	<contenttweaker:sanguine_gem_earth>,
+	<contenttweaker:sanguine_ingot>,
+	<contenttweaker:sanguine_gem>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1BloodMagicItems
@@ -30,17 +35,5 @@ for item in StageLessItems
 {
   mods.ItemStages.removeItemStage(item);
 }
-
-//Stage Sanguine Crystals
-mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_air>);
-mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_water>);
-mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_fire>);
-mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_earth>);
-
-//Stage Sanguine Ingot
-mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_ingot>);
-
-//Stage Sanguine Gem
-mods.ItemStages.addItemStage(stages.BloodMagic1.stage, <contenttweaker:sanguine_gem>);
 
 print("### Stage 1 Blood Magic Complete ###");

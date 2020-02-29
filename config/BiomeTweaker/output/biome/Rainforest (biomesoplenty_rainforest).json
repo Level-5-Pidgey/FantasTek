@@ -20,11 +20,11 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "JUNGLE",
     "DENSE",
-    "HILLS",
-    "FOREST",
     "WET",
+    "JUNGLE",
+    "FOREST",
+    "HILLS",
     "LUSH"
   ],
   "BiomeManager Entries": {
@@ -108,7 +108,7 @@
     },
     {
       "Entity Class": "com.github.alexthe666.iceandfire.entity.EntityAmphithere",
-      "Weight": 5,
+      "Weight": 2,
       "Min Group Count": 1,
       "Max Group Count": 3
     }

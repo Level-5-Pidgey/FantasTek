@@ -12,11 +12,6 @@ mods.ItemStages.stageModItems(stages.Botania1.stage, "botania_tweaks");
 //and move the general mod staging script line to the next stage up
 
 val Stage1BotaniaItems = [
-  <botania:specialflower>.withTag({type: "hiveacynth"}),
-  <botania:specialflower>.withTag({type: "hibeescus"}),
-  <botania:floatingspecialflower>.withTag({type: "beegonia"}),
-  <botania:floatingspecialflower>.withTag({type: "hiveacynth"}),
-  <botania:floatingspecialflower>.withTag({type: "hibeescus"})
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1BotaniaItems

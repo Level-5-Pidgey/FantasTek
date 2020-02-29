@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "WATER",
     "DENSE",
-    "SWAMP",
     "WET",
-    "LUSH"
+    "LUSH",
+    "SWAMP"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

@@ -11,7 +11,10 @@ mods.ItemStages.stageModItems(stages.AstralSorcery1.stage, "astralsorcery");
 //and move the general mod staging script line to the next stage up
 
 val Stage1AstralItems = [
-
+	<contenttweaker:astral_crystal_air>,
+	<contenttweaker:astral_crystal_water>,
+	<contenttweaker:astral_crystal_fire>,
+	<contenttweaker:astral_crystal_earth>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1AstralItems
@@ -70,12 +73,6 @@ mods.ItemStages.stageEnchant(stages.AstralSorcery1.stage, <enchantment:astralsor
 
 //Stage Parchment Crafting
 mods.recipestages.Recipes.setRecipeStage(stages.AstralSorcery1.stage, <astralsorcery:itemcraftingcomponent:5>);
-
-//Stage Elemental Crystals
-mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_air>);
-mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_water>);
-mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_fire>);
-mods.ItemStages.addItemStage(stages.AstralSorcery1.stage, <contenttweaker:astral_crystal_earth>);
 
 //Change tooltip for Astral Sorcery crystals
 mods.ItemStages.setUnfamiliarName("Mysterious Crystal", <astralsorcery:blockcollectorcrystal>);

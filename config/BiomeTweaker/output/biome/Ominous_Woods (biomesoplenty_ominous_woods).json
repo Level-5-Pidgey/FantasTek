@@ -20,13 +20,13 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPOOKY",
     "MAGICAL",
     "DENSE",
-    "RARE",
-    "FOREST",
+    "DEAD",
     "WET",
-    "DEAD"
+    "FOREST",
+    "SPOOKY",
+    "RARE"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

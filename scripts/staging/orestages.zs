@@ -35,8 +35,6 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
     oreDict.get("dustSmall" ~ materialString),
     oreDict.get("dustTiny" ~ materialString),
     oreDict.get("ore" ~ materialString),
-		//oreDict.get("denseOre" ~ materialString),
-		//oreDict.get("poorOre" ~ materialString),
     oreDict.get("ingot" ~ materialString),
     oreDict.get("gem" ~ materialString),
     oreDict.get("crystal" ~ materialString),
@@ -408,7 +406,9 @@ var OtherStagingReplacements as crafttweaker.item.IItemStack[crafttweaker.item.I
 	<contenttweaker:infused_stone_terra> : <minecraft:stone>,
 	<contenttweaker:infused_stone_ignis> : <minecraft:stone>,
 	<contenttweaker:infused_stone_vitium> : <minecraft:stone>,
-	<contenttweaker:infused_stone_perditio> : <minecraft:stone>
+	<contenttweaker:infused_stone_perditio> : <minecraft:stone>,
+	<iceandfire:fire_lily> : <biomesoplenty:flower_1:5>,
+	<iceandfire:frost_lily> : <minecraftfuture:flowerblue>
 };
 
 var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
@@ -468,7 +468,9 @@ var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
 	<contenttweaker:infused_stone_terra> : stages.Thaumcraft1,
 	<contenttweaker:infused_stone_ignis> : stages.Thaumcraft1,
 	<contenttweaker:infused_stone_vitium> : stages.Thaumcraft1,
-	<contenttweaker:infused_stone_perditio> : stages.Thaumcraft1
+	<contenttweaker:infused_stone_perditio> : stages.Thaumcraft1,
+	<iceandfire:fire_lily> : stages.Locked,
+	<iceandfire:frost_lily> : stages.Locked
 };
 
 for blockToReplace in OtherStagingReplacements
