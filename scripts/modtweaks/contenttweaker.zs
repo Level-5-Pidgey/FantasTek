@@ -3,7 +3,7 @@ import mods.dropt.Dropt;
 print("~~~ Begin ContentTweaker recipes Init ~~~");
 
 //Steel Blend Crafting
-recipes.addShaped("steel_blend_crafting", <contenttweaker:steel_blend> * 2, [[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>],[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>], [<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<contenttweaker:steel_blend>), <contenttweaker:steel_blend> * 2, [[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>],[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>], [<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>]]);
 
 //Melt Steel Blend into Crude Steel
 mods.tconstruct.Melting.addRecipe(<liquid:crude_steel> * 144, <contenttweaker:steel_blend>, 450);
@@ -25,7 +25,7 @@ for prismarine in <ore:prismarine>.items
 	mods.advancedrocketry.PlatePresser.addRecipe(<contenttweaker:prismarine_nugget> * 16, prismarine);
 	scripts.helpers.AddTooltip(prismarine, ["Prismarine can be found in Ocean Monuments,", "or obtained by mining Prismarine Boulders", "found on the seabed."]);
 }
-recipes.addShapeless("prismarine_shards", <contenttweaker:prismarine_nugget> * 2, [<embers:tinker_hammer>, <ore:shardPrismarine>]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:prismarine_nugget>), <contenttweaker:prismarine_nugget> * 2, [<embers:tinker_hammer>, <ore:shardPrismarine>]);
 
 //Add Tooltip for Artifact
 scripts.helpers.AddTooltip(<contenttweaker:strange_treasure>, ["Rare treasure that villagers may have a bounty for!", "Can be sold for a high price."]);
@@ -106,10 +106,10 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_ingot>, <ore:ingot
 <ore:ingotSanguine>.add(<contenttweaker:sanguine_ingot>);
 
 //Elemental Sanguine Gems
-mods.recipestages.Recipes.addShaped("sanguine_gem_fire", scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_fire>, [[null, scripts.helpers.T1MagicFireIngredients[0], null],[scripts.helpers.T1MagicFireIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicFireIngredients[2]],[null, scripts.helpers.T1MagicFireIngredients[3], null]]);
-mods.recipestages.Recipes.addShaped("sanguine_gem_water", scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_water>, [[null, scripts.helpers.T1MagicWaterIngredients[0], null],[scripts.helpers.T1MagicWaterIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicWaterIngredients[2]],[null, scripts.helpers.T1MagicWaterIngredients[3], null]]);
-mods.recipestages.Recipes.addShaped("sanguine_gem_air", scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_air>, [[null, scripts.helpers.T1MagicAirIngredients[0], null],[scripts.helpers.T1MagicAirIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicAirIngredients[2]],[null, scripts.helpers.T1MagicAirIngredients[3], null]]);
-mods.recipestages.Recipes.addShaped("sanguine_gem_earth", scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_earth>, [[null, scripts.helpers.T1MagicEarthIngredients[0], null],[scripts.helpers.T1MagicEarthIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicEarthIngredients[2]],[null, scripts.helpers.T1MagicEarthIngredients[3], null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<contenttweaker:sanguine_gem_fire>), scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_fire>, [[null, scripts.helpers.T1MagicFireIngredients[0], null],[scripts.helpers.T1MagicFireIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicFireIngredients[2]],[null, scripts.helpers.T1MagicFireIngredients[3], null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<contenttweaker:sanguine_gem_water>), scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_water>, [[null, scripts.helpers.T1MagicWaterIngredients[0], null],[scripts.helpers.T1MagicWaterIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicWaterIngredients[2]],[null, scripts.helpers.T1MagicWaterIngredients[3], null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<contenttweaker:sanguine_gem_air>), scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_air>, [[null, scripts.helpers.T1MagicAirIngredients[0], null],[scripts.helpers.T1MagicAirIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicAirIngredients[2]],[null, scripts.helpers.T1MagicAirIngredients[3], null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<contenttweaker:sanguine_gem_earth>), scripts.staging.stages.BloodMagic1.stage, <contenttweaker:sanguine_gem_earth>, [[null, scripts.helpers.T1MagicEarthIngredients[0], null],[scripts.helpers.T1MagicEarthIngredients[1], <ore:gemSanguine>, scripts.helpers.T1MagicEarthIngredients[2]],[null, scripts.helpers.T1MagicEarthIngredients[3], null]]);
 
 //Elemental Ember Crystals
 scripts.mmhelper.AddEmberAssemblyRecipe(<contenttweaker:crystal_ember_fire>, [<embers:crystal_ember>, scripts.helpers.T1MagicFireIngredients[0].firstItem, scripts.helpers.T1MagicFireIngredients[1].firstItem, scripts.helpers.T1MagicFireIngredients[2].firstItem, scripts.helpers.T1MagicFireIngredients[3].firstItem], 300);
@@ -121,32 +121,32 @@ for leaves in scripts.helpers.T1MagicEarthIngredients[2].items
 scripts.mmhelper.AddEmberAssemblyRecipe(<contenttweaker:crystal_ember_air>, [<embers:crystal_ember>, scripts.helpers.T1MagicAirIngredients[0].firstItem, scripts.helpers.T1MagicAirIngredients[1].firstItem, scripts.helpers.T1MagicAirIngredients[2].firstItem, scripts.helpers.T1MagicAirIngredients[3].firstItem], 300);
 
 //Elemental Salis Mundus
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("salis_mundus_fire", "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_fire>, [[null, scripts.helpers.T1MagicFireIngredients[0], null],[scripts.helpers.T1MagicFireIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicFireIngredients[2]],[null, scripts.helpers.T1MagicFireIngredients[3], null]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("salis_mundus_water", "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_water>, [[null, scripts.helpers.T1MagicWaterIngredients[0], null],[scripts.helpers.T1MagicWaterIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicWaterIngredients[2]],[null, scripts.helpers.T1MagicWaterIngredients[3], null]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("salis_mundus_air", "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_air>, [[null, scripts.helpers.T1MagicAirIngredients[0], null],[scripts.helpers.T1MagicAirIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicAirIngredients[2]],[null, scripts.helpers.T1MagicAirIngredients[3], null]]);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("salis_mundus_earth", "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_earth>, [[null, scripts.helpers.T1MagicEarthIngredients[0], null],[scripts.helpers.T1MagicEarthIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicEarthIngredients[2]],[null, scripts.helpers.T1MagicEarthIngredients[3], null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecipeName(<contenttweaker:salis_mundus_fire>), "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_fire>, [[null, scripts.helpers.T1MagicFireIngredients[0], null],[scripts.helpers.T1MagicFireIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicFireIngredients[2]],[null, scripts.helpers.T1MagicFireIngredients[3], null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecipeName(<contenttweaker:salis_mundus_water>), "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_water>, [[null, scripts.helpers.T1MagicWaterIngredients[0], null],[scripts.helpers.T1MagicWaterIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicWaterIngredients[2]],[null, scripts.helpers.T1MagicWaterIngredients[3], null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecipeName(<contenttweaker:salis_mundus_air>), "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_air>, [[null, scripts.helpers.T1MagicAirIngredients[0], null],[scripts.helpers.T1MagicAirIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicAirIngredients[2]],[null, scripts.helpers.T1MagicAirIngredients[3], null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecipeName(<contenttweaker:salis_mundus_earth>), "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_earth>, [[null, scripts.helpers.T1MagicEarthIngredients[0], null],[scripts.helpers.T1MagicEarthIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicEarthIngredients[2]],[null, scripts.helpers.T1MagicEarthIngredients[3], null]]);
 
 
 //Add elemental crystal crafting
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_air", <contenttweaker:astral_crystal_air>, 200, 80,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_air>), <contenttweaker:astral_crystal_air>, 200, 80,
 [
  null, scripts.helpers.T1MagicAirIngredients[0], null,
  scripts.helpers.T1MagicAirIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicAirIngredients[1],
  null, scripts.helpers.T1MagicAirIngredients[2], null
 ]); //Air
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_fire", <contenttweaker:astral_crystal_fire>, 200, 80,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_fire>), <contenttweaker:astral_crystal_fire>, 200, 80,
 [
  null, scripts.helpers.T1MagicFireIngredients[0], null,
  scripts.helpers.T1MagicFireIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicFireIngredients[1],
  null, scripts.helpers.T1MagicFireIngredients[2], null
 ]); //Fire
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_water", <contenttweaker:astral_crystal_water>, 200, 80,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_water>), <contenttweaker:astral_crystal_water>, 200, 80,
 [
  null, scripts.helpers.T1MagicWaterIngredients[0], null,
  scripts.helpers.T1MagicWaterIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicWaterIngredients[1],
  null, scripts.helpers.T1MagicWaterIngredients[2], null
 ]); //Water
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("elemental_crystal_earth", <contenttweaker:astral_crystal_earth>, 200, 80,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_earth>), <contenttweaker:astral_crystal_earth>, 200, 80,
 [
  null, scripts.helpers.T1MagicEarthIngredients[0], null,
  scripts.helpers.T1MagicEarthIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicEarthIngredients[1],

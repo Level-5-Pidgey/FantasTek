@@ -22,10 +22,10 @@
   "Dictionary Types": [
     "SPARSE",
     "DEAD",
-    "WET",
     "COLD",
     "SPOOKY",
-    "SWAMP"
+    "SWAMP",
+    "WET"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

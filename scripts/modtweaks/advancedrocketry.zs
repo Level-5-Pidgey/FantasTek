@@ -54,10 +54,10 @@ for ARPlate in ARPlates
 
 //Modify Heatproof Brick Recipe
 recipes.remove(<advancedrocketry:blastbrick>);
-recipes.addShaped("heatproof_bricks", <advancedrocketry:blastbrick> * 2, [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <minecraft:magma_cream>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<advancedrocketry:blastbrick>), <advancedrocketry:blastbrick> * 2, [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <minecraft:magma_cream>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]]);
 
 //Modify Small Plate Presser Recipe
 recipes.remove(<advancedrocketry:platepress>);
-recipes.addShaped("small_plate_presser", <advancedrocketry:platepress>, [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<advancedrocketry:platepress>), <advancedrocketry:platepress>, [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]]);
 
 print("### Advanced Rocketry Init Complete ###");

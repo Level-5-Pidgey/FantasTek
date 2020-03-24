@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "DRY",
     "SPARSE",
-    "FOREST",
+    "MOUNTAIN",
     "HILLS",
-    "MOUNTAIN"
+    "FOREST"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

@@ -21,10 +21,10 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "SPARSE",
-    "PLAINS",
-    "WET",
     "COLD",
     "FOREST",
+    "PLAINS",
+    "WET",
     "LUSH"
   ],
   "BiomeManager Entries": {
@@ -279,8 +279,8 @@
   },
   "BOP Owner": "BIOMESOPLENTY",
   "BOP Weight Map": {
-    "BOREAL": 7,
-    "COOL_TEMPERATE": 3
+    "COOL_TEMPERATE": 3,
+    "BOREAL": 7
   },
   "BOP Climate Weights": {
     "BOREAL": [

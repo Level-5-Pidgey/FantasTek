@@ -41,7 +41,7 @@ for item, fluidAmount in honeyOutput
 
 //Change Recipes
 recipes.remove(<forestry:bee_house>);
-recipes.addShaped("bee_house", <forestry:bee_house>, [[<ore:plateSealedWood>, <ore:plateSealedWood>, <ore:plateSealedWood>],[<ore:plankWood>, <minecraftfuture:honeycomb>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]); //Bee House
+recipes.addShaped(scripts.helpers.createRecipeName(<forestry:bee_house>), <forestry:bee_house>, [[<ore:plateSealedWood>, <ore:plateSealedWood>, <ore:plateSealedWood>],[<ore:plankWood>, <minecraftfuture:honeycomb>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]); //Bee House
 mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>); //Impregnated Casing
 mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, [[<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <embers:wrapped_sealed_planks>],[<embers:sealed_planks>, null, <embers:sealed_planks>],[<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <embers:wrapped_sealed_planks>]], 80, <liquid:seed.oil> * 250);
 

@@ -159,9 +159,60 @@ for key, value in botaniaFlowers {
 mods.botania.PureDaisy.removeRecipe(<minecraft:packed_ice>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
-mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>);
-mods.botania.PureDaisy.addRecipe(<ore:plankSealedWood>, <botania:livingwood>);
-
+mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 60);
+mods.botania.PureDaisy.addRecipe(<ore:plankSealedWood>, <botania:livingwood>, 60);
+scripts.helpers.AddTooltip(<botania:livingrock>, ["Can use any type of oreDicted Marble."]);
 //Add Early-Game alternate livingwood recipe
-mods.recipestages.Recipes.addShaped("reinforced_sealed_planks", scripts.helpers.stages.Locked.stage, <embers:wrapped_sealed_planks> * 4, [[<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>],[<embers:sealed_planks>, null, <embers:sealed_planks>], [<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:livingwood>), scripts.staging.stages.Botania1.stage, <botania:livingwood> * 8, [[<ore:logWood>, <ore:plateWood>, <ore:logWood>],[<ore:plateWood>, scripts.helpers.AnyPetalOrShroom, <ore:plateWood>], [<ore:logWood>, <ore:plateWood>, <ore:logWood>]]);
+
+//Petal Apothecary
+recipes.remove(<botania:altar>);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:altar>), scripts.staging.stages.Botania1.stage, <botania:altar>, [[<ore:slabCobblestone>, scripts.helpers.AnyPetalOrShroom, <ore:slabCobblestone>],[null, <minecraft:cauldron>, null], [<ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>]]);
+scripts.helpers.AddTooltip(<botania:altar>, ["A Redstone Comparator attached to the apothecary will output signal strength of 15 when the block is full of water.", "Putting Lava instead of water in the apothecary will turn it into an incinerator, burning all items dropped on top of it.", "Throwing Vines into the Petal Apothecary gives it an overgrown appearance."]);
+
+//Pure Daisy Tooltip
+scripts.helpers.AddTooltip(<botania:specialflower>.withTag({type: "puredaisy"}), ["Processes in more than double the speed of most other Modpacks.", "Waiting for the daisy to process stuff is more boring than watching Paint Dry!"]);
+
+//Basic Mana Spreader
+recipes.remove(<botania:spreader>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <botania:spreader>, [
+	[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>],
+	[<ore:plateGold>, scripts.helpers.AnyPetalOrShroom, null],
+	[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]
+]);
+
+//Runic Altar
+recipes.remove(<botania:runealtar>);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:runealtar>), scripts.staging.stages.Botania1.stage, <botania:runealtar>, [
+	[<ore:livingrock>, <ore:petalLightBlue> | <ore:petalBlue>, <ore:livingrock>],
+	[null, <ore:plateSapphire>, null],
+	[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
+]);
+
+//Marble Slab OreDict
+val marbleSlabs =
+[
+	<quark:stone_marble_slab>,
+	<quark:stone_marble_bricks_slab>,
+	<astralsorcery:blockmarbleslab>
+] as crafttweaker.item.IItemStack[];
+
+for ore in marbleSlabs
+{
+	<ore:slabMarble>.add(ore);
+}
+
+//Mana Pool
+recipes.remove(<botania:pool:*>);
+//Diluted
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:pool:2>), scripts.staging.stages.Botania1.stage, <botania:pool:2>, [
+	[<ore:slabMarble>, <ore:petalLightBlue> | <ore:petalBlue>, <ore:slabMarble>],
+	[<ore:slabMarble>, <ore:slabMarble>, <ore:slabMarble>]
+]);
+//Full
+mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool>, [
+	[<ore:livingrock>, null, <ore:livingrock>],
+	[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
+]);
+
 print("### Botania Init Complete ###");

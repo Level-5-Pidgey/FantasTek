@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "CONIFEROUS",
     "COLD",
-    "SNOWY",
     "FOREST",
-    "HILLS"
+    "HILLS",
+    "SNOWY"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
