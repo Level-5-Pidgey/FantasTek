@@ -23,8 +23,8 @@
     "DENSE",
     "HOT",
     "WET",
-    "JUNGLE",
-    "HILLS"
+    "HILLS",
+    "JUNGLE"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

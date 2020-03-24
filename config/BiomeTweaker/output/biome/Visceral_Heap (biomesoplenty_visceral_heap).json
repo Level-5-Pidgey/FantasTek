@@ -64,9 +64,9 @@
     },
     {
       "Entity Class": "net.minecraft.entity.monster.EntityBlaze",
-      "Weight": 5,
+      "Weight": 30,
       "Min Group Count": 1,
-      "Max Group Count": 2
+      "Max Group Count": 5
     },
     {
       "Entity Class": "vazkii.quark.world.entity.EntityFoxhound",

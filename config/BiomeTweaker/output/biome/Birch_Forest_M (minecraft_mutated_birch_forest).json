@@ -23,8 +23,8 @@
     "THEMED_TREES",
     "DENSE",
     "SUPER_BIRCH_TREES",
-    "FOREST",
     "HILLS",
+    "FOREST",
     "RARE"
   ],
   "BiomeManager Entries": {},

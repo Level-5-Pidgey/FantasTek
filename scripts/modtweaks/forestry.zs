@@ -45,4 +45,21 @@ recipes.addShaped("bee_house", <forestry:bee_house>, [[<ore:plateSealedWood>, <o
 mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>); //Impregnated Casing
 mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, [[<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <embers:wrapped_sealed_planks>],[<embers:sealed_planks>, null, <embers:sealed_planks>],[<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <embers:wrapped_sealed_planks>]], 80, <liquid:seed.oil> * 250);
 
+//Remove Tier 1 Ores being output from Metallic Grains
+val metallicGrainsDusts = [
+	<thermalfoundation:material:64>,
+	<thermalfoundation:material:65>,
+	<thermalfoundation:material:69>,
+	<mekanism:dust:2>,
+	<thermalfoundation:material:66>,
+	<thermalfoundation:material:67>,
+	<thermalfoundation:material:68>
+] as crafttweaker.item.IItemStack[];
+
+for metallicGrainsDustCraft in metallicGrainsDusts
+{
+	mods.forestry.Carpenter.removeRecipe(metallicGrainsDustCraft, <liquid:water>);
+}
+
+
 print("### Forestry Init Complete ###");

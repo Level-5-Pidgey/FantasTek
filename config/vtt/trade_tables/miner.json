@@ -85,8 +85,8 @@
 				buy:
 				{
 					id:"modcurrency:banknote",
-					Count:5,
-					Damage:3
+					Count:1,
+					Damage:5
 				},
 				sell:
 				{

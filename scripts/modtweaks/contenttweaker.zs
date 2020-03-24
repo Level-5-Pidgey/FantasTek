@@ -101,8 +101,10 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_gem>, <ore:gemDiam
 <ore:gemSanguine>.add(<contenttweaker:sanguine_gem>);
 
 //Sanguine Ingots
-mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot> * 2, <liquid:lifeessence>, <ore:ingotGold> * 2, true);
-mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_ingot>, <ore:ingotGold>.firstItem, 0, 500, 25, 35);
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot> * 2, <liquid:lifeessence>, <ore:ingotSteel> * 2, true);
+mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_ingot>, <ore:ingotSteel>.firstItem, 0, 500, 25, 35);
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot>, <liquid:lifeessence>, <ore:ingotCrudeSteel>, true);
+mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_ingot>, <ore:ingotCrudeSteel>.firstItem, 0, 1000, 25, 35);
 <ore:ingotSanguine>.add(<contenttweaker:sanguine_ingot>);
 
 //Elemental Sanguine Gems

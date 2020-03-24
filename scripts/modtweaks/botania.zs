@@ -163,5 +163,6 @@ mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>);
 mods.botania.PureDaisy.addRecipe(<ore:plankSealedWood>, <botania:livingwood>);
 
 //Add Early-Game alternate livingwood recipe
-mods.recipestages.Recipes.addShaped("reinforced_sealed_planks", scripts.helpers.stages.Locked.stage, <embers:wrapped_sealed_planks> * 4, [[<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>],[<embers:sealed_planks>, null, <embers:sealed_planks>], [<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>]]);
+//mods.recipestages.Recipes.addShaped("reinforced_sealed_planks", scripts.helpers.stages.Locked.stage, <embers:wrapped_sealed_planks> * 4, [[<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>],[<embers:sealed_planks>, null, <embers:sealed_planks>], [<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>]]);
+
 print("### Botania Init Complete ###");

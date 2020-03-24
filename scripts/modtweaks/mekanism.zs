@@ -34,4 +34,7 @@ for paxel in MekanismPaxels
 	scripts.helpers.AddTooltip(paxel, ["Paxels are usable as a Pickaxe, Shovel", "and Axe at once, but have a 33% durability penalty."]);
 }
 
+//Remove souped-up rail recipe.
+recipes.removeByRecipeName("mekanism:rail");
+
 print("### Mekanism Init Complete ###");
