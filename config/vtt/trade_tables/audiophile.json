@@ -52,7 +52,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:3,
 				buy:{
 					id:"modcurrency:banknote",
 					Damage:3,
@@ -69,7 +69,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:3,
 				buy:{
 					id:"modcurrency:banknote",
 					Damage:2,

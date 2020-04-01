@@ -180,21 +180,18 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if (!oreDust.empty)
 				{
-					for ore in oreBlock.items
+					if(!oreDustSmall.empty)
 					{
-						if(!oreDustSmall.empty)
-						{
-							mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (3 * (3 - tier)), ore, (tier + 1) * 4, oreDustSmall.firstItem * (4 - tier), 0.66, oreDustSmall.firstItem  * (2 - tier), 0.33);
-						}
-						else
-						{
-							mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * (2 - tier), ore, (tier + 1) * 4);
-						}
+						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (4 * (2 - tier)), ore, (tier + 1) * 5, oreDustSmall.firstItem * (2 - tier), 0.5, oreDustSmall.firstItem  * (2 - tier), 0.5);
+					}
+					else
+					{
+						mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * (2 - tier), ore, (tier + 1) * 5, oreDust.firstItem, 0.5);
 					}
 				}
 				else
 				{
-					print("Skipped Magneticraft Crushing Table outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+					print("Skipped AE2 Grindstone outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
 				}
 			}
 		}
@@ -1051,6 +1048,50 @@ for ore in ChemicalCrystallizer
 
 //Remove all chemical washer recipes
 mods.mekanism.chemical.washer.removeAllRecipes();
+
+//Remove existing Quartz Grindstone Recipes
+val grindstoneOres =
+[
+  <thermalfoundation:ore>,
+  <embers:ore_copper>,
+  <embers:ore_lead>,
+  <thermalfoundation:ore:2>,
+  <embers:ore_nickel>,
+  <iceandfire:silver_ore>,
+  <embers:ore_aluminum>,
+  <libvulpes:ore0:9>,
+  <embers:ore_silver>,
+  <magneticraft:ores>,
+  <thermalfoundation:ore:1>,
+  <minecraft:iron_ore>,
+  <thermalfoundation:ore:4>,
+  <magneticraft:ores:1>,
+  <tconstruct:ore:1>,
+  <forestry:resources:2>,
+  <thermalfoundation:ore:3>,
+  <minecraft:gold_ore>,
+  <embers:ore_tin>,
+  <contenttweaker:sub_block_holder_12:6>,
+  <mekanism:oreblock:2>,
+  <forestry:resources:1>,
+  <minecraft:coal_ore>,
+  <libvulpes:ore0:5>,
+  <mekanism:oreblock:1>,
+  <appliedenergistics2:charged_quartz_ore>,
+  <thermalfoundation:ore:6>,
+  <thermalfoundation:ore:5>,
+  <contenttweaker:sub_block_holder_10:10>,
+  <libvulpes:ore0:4>,
+  <mekanism:oreblock>,
+  <appliedenergistics2:quartz_ore>,
+  <contenttweaker:sub_block_holder_11:6>,
+  <minecraft:quartz_ore>
+] as crafttweaker.item.IItemStack[];
+
+for ore in grindstoneOres
+{
+	mods.appliedenergistics2.Grinder.removeRecipe(ore);
+}
 
 for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {

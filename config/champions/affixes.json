@@ -4,7 +4,7 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 3
   },
   {
     "identifier": "arctic",
@@ -74,7 +74,7 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   },
   {
     "identifier": "hasty",
@@ -102,6 +102,6 @@
     "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
-    "tier": 1
+    "tier": 2
   }
 ]

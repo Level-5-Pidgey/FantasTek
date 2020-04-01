@@ -39,7 +39,7 @@
                 buy:{
                     id:"modcurrency:banknote",
                     Count:1,
-					Damage:1
+                    Damage:1
                 },
                 sell:{
                     id:"minecraft:rabbit_foot",
@@ -79,7 +79,8 @@
                 action:"add", CareerLevel:3,
                 buy:{
                     id:"modcurrency:banknote",
-                    Count:1
+                    Count:1,
+                    Damage:1
                 },
                 buyB:{
                     id:"modcurrency:coin",

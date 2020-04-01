@@ -6,14 +6,13 @@
 		Recipes:[
 			{action:"clear"},
 			{
-				action:"add", CareerLevel:3,
+				action:"add", CareerLevel:2,
 				buy:
 				{
 					id:"modcurrency:coin",
 					Count:2,
 					Damage:4
 				},
-
 				sell:
 				{
 					id:"minecraft:bow",
@@ -21,7 +20,125 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.25,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:2,
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:stick",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1, chance:0.25,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:1,
+					Damage:3
+				},
+				sell:
+				{
+					id:"minecraft:flint",
+					Count:{min:1, max: 4}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.33,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:{min:5, max: 10},
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:tipped_arrow",
+					nbt: "{Potion: \"cofhcore:wither2\"}",
+					Count:{min:8, max: 24}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.45,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:{min:4, max: 9},
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:tipped_arrow",
+					nbt: "{Potion: \"cofhcore:poison3+\"}",
+					Count:{min:8, max: 24}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.33,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:{min:4, max: 9},
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:tipped_arrow",
+					nbt: "{Potion: \"minecraft:strong_harming\"}",
+					Count:{min:8, max: 24}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.5,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:{min:3, max: 8},
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:tipped_arrow",
+					nbt: "{Potion: \"randomthings:strong_collapse\"}",
+					Count:{min:8, max: 12}
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.33,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:{min:3, max: 6},
+					Damage:5
+				},
+				sell:
+				{
+					id:"minecraft:tipped_arrow",
+					nbt: "{Potion: \"cofhcore:harming3\"}",
+					Count:{min:8, max: 24}
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.33,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:{min:5, max: 10},
+					Damage:5
+				},
+				sell:
+				{
+					id:"minecraft:tipped_arrow",
+					nbt: "{Potion: \"cofhcore:harming4\"}",
+					Count:{min:8, max: 24}
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
 				buy:
 				{
 					id:"modcurrency:coin",
@@ -33,8 +150,21 @@
 					id:"minecraft:arrow",
 					Count:10
 				}
+			},
+			{
+				action:"add", CareerLevel:2, chance:0.66,
+				buy:
+				{
+					id:"modcurrency:banknote",
+					Count:1,
+					Damage:1
+				},
+				sell:
+				{
+					id:"minecraft:spectral_arrow",
+					Count:{min:8, max: 16}
+				}
 			}
-
 		]
 	}
 

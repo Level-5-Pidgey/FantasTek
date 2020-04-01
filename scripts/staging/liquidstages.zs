@@ -209,7 +209,11 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:xu_enchanted_metal> : stages.Locked,
 	<liquid:xu_evil_metal> : stages.Locked,
 	<liquid:yellorium> : stages.Locked,
-	<liquid:zinc> : stages.Locked
+	<liquid:zinc> : stages.Locked,
+	<liquid:if.pink_slime> : stages.Locked,
+	<liquid:if.ore_fluid_raw> : stages.Locked,
+	<liquid:if.ore_fluid_fermented> : stages.Locked,
+	<liquid:if.protein> : stages.Locked
 };
 
 for liquidObject, zenStageObject in liquidStages

@@ -66,7 +66,17 @@ val StageLessItems = [
   <thaumcraft:loot_urn_rare>,
   <thaumcraft:loot_crate_common>,
   <thaumcraft:loot_crate_uncommon>,
-  <thaumcraft:loot_crate_rare>
+  <thaumcraft:loot_crate_rare>,
+	<thaumcraft:crimson_plate_helm>,
+	<thaumcraft:crimson_plate_chest>,
+	<thaumcraft:crimson_plate_legs>,
+	<thaumcraft:crimson_boots>,
+	<thaumcraft:crimson_robe_helm>,
+	<thaumcraft:crimson_robe_chest>,
+	<thaumcraft:crimson_robe_legs>,
+	<thaumcraft:crimson_praetor_helm>,
+	<thaumcraft:crimson_praetor_chest>,
+	<thaumcraft:crimson_praetor_legs>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

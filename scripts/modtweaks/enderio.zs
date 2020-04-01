@@ -45,4 +45,5 @@ mods.tconstruct.Alloy.removeRecipe(<liquid:dark_steel>);
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:6>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:ingotSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
+
 print("### EnderIO Init Complete ###");

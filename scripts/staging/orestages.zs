@@ -570,7 +570,13 @@ var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
   <ore:logWood> : stages.progression1,
   <ore:fuelCoke> : stages.progression1,
   <ore:blockFuelCoke> : stages.progression1,
-  <ore:fruitForestry> : stages.progression1
+  <ore:fruitForestry> : stages.progression1,
+  <ore:dustAsh> : stages.progression1,
+	<ore:beeComb> : stages.progression1,
+	<ore:slabWood> : stages.progression1,
+	<ore:doorWood> : stages.progression1,
+	<ore:fenceWood> : stages.progression1,
+	<ore:fenceGateWood> : stages.progression1
 };
 
 for oreBlockEntry in extraOreDicts

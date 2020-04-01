@@ -6,7 +6,7 @@
 		Recipes:[
 			{action:"clear"},
 			{
-				action:"add", CareerLevel:5,
+				action:"add", CareerLevel:1,
 				buy:
 				{
 					id:"modcurrency:coin",
@@ -16,6 +16,34 @@
 				sell:
 				{
 					id:"minecraft:book",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:4,
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:bookshelf",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:
+				{
+					id:"modcurrency:coin",
+					Count:4,
+					Damage:4
+				},
+				sell:
+				{
+					id:"minecraft:bookshelf",
 					Count:1
 				}
 			},
@@ -80,7 +108,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:5, chance:0.1,
+				action:"add", CareerLevel:4, chance:0.1,
 				buy:
 				{
 					id:"modcurrency:banknote",

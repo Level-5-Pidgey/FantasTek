@@ -6,156 +6,156 @@
 		Recipes:[
 			{action:"clear"},
 			{
-                action:"add", CareerLevel:1,
-                buy:{
-                    id:"modcurrency:coin",
-                    Count:{min:8,max:12},
-                    Damage:2
-                },
-                sell:{
-                    id:"minecraft:leather",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:2,
-                buy:{
-                    id:"modcurrency:coin",
-                    Count:4,
-                    Damage:4
-                },
-                sell:{
-                    id:"minecraft:leather_helmet",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:2,
-                buy:{
-                    id:"modcurrency:coin",
-                    Count:7,
-                    Damage:4
-                },
-				buyB:{
-                    id:"modcurrency:coin",
-                    Count:2,
-                    Damage:2
-                },
-                sell:{
-                    id:"minecraft:leather_chestplate",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:2,
-                buy:{
-                    id:"modcurrency:coin",
-                    Count:6,
-                    Damage:4
-                },
-				buyB:{
-                    id:"modcurrency:coin",
-                    Count:3,
-                    Damage:2
-                },
-                sell:{
-                    id:"minecraft:leather_leggings",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:2,
-                buy:{
-                    id:"modcurrency:coin",
-                    Count:3,
-                    Damage:4
-                },
-				buyB:{
-                    id:"modcurrency:coin",
-                    Count:6,
-                    Damage:2
-                },
-                sell:{
-                    id:"minecraft:leather_boots",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:4, chance:0.25,
-                buy:{
-                    id:"modcurrency:banknote",
-                    Count:3,
-                    Damage:1
-                },
-                sell:{
-                    id:"minecraft:leather_helmet",
-					tag:"{ench:\"random\"}",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:4, chance:0.25,
-                buy:{
-                    id:"modcurrency:banknote",
-                    Count:3,
-                    Damage:1
-                },
-                sell:{
-                    id:"minecraft:leather_chestplate",
-					tag:"{ench:\"random\"}",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:4, chance:0.25,
-                buy:{
-                    id:"modcurrency:banknote",
-                    Count:3,
-                    Damage:1
-                },
-                sell:{
-                    id:"minecraft:leather_leggings",
-					tag:"{ench:\"random\"}",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:4, chance:0.25,
-                buy:{
-                    id:"modcurrency:banknote",
-                    Count:3,
-                    Damage:1
-                },
-                sell:{
-                    id:"minecraft:leather_boots",
-					tag:"{ench:\"random\"}",
-                    Count:1
-                }
-            },
-			{
-                action:"add", CareerLevel:3,
+				action:"add", CareerLevel:1,
 				buy:{
-                    id:"modcurrency:coin",
-                    Count:1,
-                    Damage:4
-                },
-                sell:{
-                    id:"minecraft:flint",
-                    Count:{min:8,max:12}
-                }
-            },
+					id:"modcurrency:coin",
+					Count:{min:8,max:12},
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:leather",
+					Count:1
+				}
+			},
 			{
-                action:"add", CareerLevel:3,
+				action:"add", CareerLevel:2,
 				buy:{
-                    id:"modcurrency:banknote",
-                    Count:1,
-                    Damage:2
-                },
-                sell:{
-                    id:"minecraft:rabbit_hide",
-                    Count:4
-                }
-            }
+					id:"modcurrency:coin",
+					Count:4,
+					Damage:4
+				},
+				sell:{
+					id:"minecraft:leather_helmet",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"modcurrency:coin",
+					Count:7,
+					Damage:4
+				},
+				buyB:{
+					id:"modcurrency:coin",
+					Count:2,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:leather_chestplate",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"modcurrency:coin",
+					Count:6,
+					Damage:4
+				},
+				buyB:{
+					id:"modcurrency:coin",
+					Count:3,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:leather_leggings",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"modcurrency:coin",
+					Count:3,
+					Damage:4
+				},
+				buyB:{
+					id:"modcurrency:coin",
+					Count:6,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:leather_boots",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.25,
+				buy:{
+					id:"modcurrency:banknote",
+					Count:1,
+					Damage:4
+				},
+				sell:{
+					id:"minecraft:leather_helmet",
+					tag:{ench:[{lvl:4,id:0}]},
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.25,
+				buy:{
+					id:"modcurrency:banknote",
+					Count:3,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:leather_chestplate",
+					tag:{ench:[{lvl:4,id:0}]},
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.25,
+				buy:{
+					id:"modcurrency:banknote",
+					Count:3,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:leather_leggings",
+					tag:{ench:[{lvl:4,id:0}]},
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.25,
+				buy:{
+					id:"modcurrency:banknote",
+					Count:3,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:leather_boots",
+					tag:{ench:[{lvl:4,id:0}]},
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:{
+					id:"modcurrency:coin",
+					Count:3,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:flint",
+					Count:{min:8,max:12}
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:{
+					id:"modcurrency:banknote",
+					Count:3,
+					Damage:2
+				},
+				sell:{
+					id:"minecraft:rabbit_hide",
+					Count:4
+				}
+			}
 		]
 	}
 

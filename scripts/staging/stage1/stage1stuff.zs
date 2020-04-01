@@ -195,7 +195,14 @@ val StageLessItems = [
   <forestry:oak_stick>,
   <forestry:frame_impregnated>,
   <forestry:broken_bronze_pickaxe>,
-  <forestry:broken_bronze_shovel>
+  <forestry:broken_bronze_shovel>,
+  <enderio:block_enderman_skull>,
+  <forestry:grafter_proven>,
+  <forestry:ambrosia>,
+  <forestry:beeswax>,
+  <forestry:honey_drop>,
+  <forestry:propolis:*>,
+  <forestry:pollen:*>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

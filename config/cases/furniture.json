@@ -1,0 +1,104 @@
+{
+  "displayName": {
+    "en_us": "Furniture Pack"
+  },
+  "contents": [
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"TV"},"SkullOwner":{"Id":"89b921a7-8bc6-42f7-afd9-d442e92c6d5f","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRlYmMzZjYwMGJiMjg3ODA4M2ZkM2NmYTQzOWI2YjM5Yzc0NWIyZmFmMWVlYTU5NjZlMzFiNDk2OTU5Y2UyOCJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Fancy Orb"},"SkullOwner":{"Id":"0f74395f-3a43-4f80-afbb-4f177532faf9","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IwNmVkMTdhZDMxYWQxMmFmNzJmOTA4YTYwYTg3YTg3ZGVlYzMwODBlMzQyZmU4MGJmOTgxNzE0YWQzZjJlMSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Jar of Eyeballs"},"SkullOwner":{"Id":"9b1f846d-8b29-4e45-8746-1f033f05fa49","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNkZmNjNjhlM2Y1NDgzZjIwZDU5MmM0Nzc5MGRkODQ4ZjczN2FjNjgwZjRkMGViOTYyZGI5M2ZmMmQ5ZWU0YiJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Brain in a Jar"},"SkullOwner":{"Id":"3750458b-f7fa-429c-9290-b4b3151da647","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI3ZjYyMTRhMjc5Mjg3Y2EwZDI0OWY5MjU3NzcyYTJhYzk5ZDIzN2QxMjU4YjkzM2RiMTNjZjM3MTJjYjBmNSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Computer"},"SkullOwner":{"Id":"99daf7ca-df81-437e-8512-a9f3d45632d9","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2QyMjdiMzQxODYyMjViNGIyNzQyYWRjY2MwYzBiODVkMTk0NWYyYWVhZmMwYzFhMTQ3ZDZjNmQyYjUzNzYxNyJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Present"},"SkullOwner":{"Id":"2ee91cca-336f-4caf-942a-e83413923d03","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI1OTU4Y2YxYzgyYzdiODlkNTAxNjlhODJlMjg4NGJkODIwMDdiNzMxNjVkZWUyZTk1ZGIyZTgwNjM5ZWZlMCJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Clock"},"SkullOwner":{"Id":"ed198559-89c3-4882-9600-2a472a9b9875","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWNiZjMwMjlkYWVkNDExYmYyYjAwMzI5MDc4MGVlOGEwYmNmNTllZjZkM2EyZTM4YWMzMjMwNmFhNWI0M2M1YyJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Valentine Candle (purple)"},"SkullOwner":{"Id":"2d6c8481-9436-4a0d-8aaa-49578c52161b","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4ZGEzY2Q0NWZlNzFmNzY5NGQyMzBhZjNmYmI1Yjg0MDY5N2ZiZTRlNjY5MzNmZjMwYzYxNjc2ODc5MzdmMSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Valentine Candle (white)"},"SkullOwner":{"Id":"d812e718-43c5-4763-8791-5563b8049522","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY5OGNjMzg2NDU0NTJlNjE0ODNmNGNmYTk3YzA2YTIyNjhmMGFmNTBlMzFiZTdkMGFjYmE0ZDA0OTU3ODY0NSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Mirror"},"SkullOwner":{"Id":"d6e4a628-76cb-4b5b-8264-7a70e80c5d4c","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWEwNDQxMjhlNjc3YjFkMDQzODMwZDcyYTFjNjVhMjUxZWI4NDA0YmVjYjcyODE0NTcxMzMwMjE4ZWY5Yjg1NiJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Bag"},"SkullOwner":{"Id":"c2df0e95-f5cf-42e7-a635-ce40b72c70aa","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFiOGI1MTIwNGQyNzBkODc2ZjgzMGYzNGNlNTI3ZTQ2NTQ4NTVkYWM4YjJmYzE5Yjk0NzkxNWQ0ZTQwNmU0NyJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Cracked Skull"},"SkullOwner":{"Id":"88864bb4-6e52-434c-8e16-c68c19398069","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTVkMTA4NjQ0YzhkZDdkOTU0NDgwODM2MThhMWEyYTgyNDQ2NzZlMjg4MGY4OTRmMjI2MDhhN2I3NDhiYmFkMiJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Stack of CDs (vertical)"},"SkullOwner":{"Id":"8f914757-214b-4e37-8573-05ca300a6334","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhiODUxODMwY2YwM2ZhMzBkZDNjMmIwYWVjNzg1Y2JmNmUyNzhlMzllYmExZTkyODllNzg4MDlmMzljM2VhIn19fQ=="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Rubik's Cube 2x2"},"SkullOwner":{"Id":"247577a3-f1b4-4481-8905-7c484bacf203","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU0NmE1NjM4NzVjMmJmNjkyNDIwNzBlNzlhYzM4MWQ0MzRhMGMwYmE1OTMyNzg3OWExMDU1MjVjNTU2NWE3OSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Books"},"SkullOwner":{"Id":"1ac211d9-50df-428d-a0cd-8832d243ec0c","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTczMzBjYTVkNmE3MTQ0OGNkYzk1MGJmMGFkYWMyMTcwMjdlODUwNDQ0MTZlMTQzMjk5ZDk5NjQ0YjkxOTZhOSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Bag of Seeds"},"SkullOwner":{"Id":"f3be27ce-58f5-4c1f-804e-1e1ad07d47dd","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI0OWEyY2I5MDczNzk5MzIwMWZlNzJhMWYxYWI3NWM1YzkzYzI4ZjA0N2Y2ODVmZmFkNWFiMjBjN2IwY2FmMCJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Cobalt Ingots"},"SkullOwner":{"Id":"339d835e-5667-4906-a487-53f3752964a6","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQyOTMwYzhiMGU2M2QxY2E2YTBhMDU4YTgzNjdmNGY2MDg4MTlmOTY4YmJhYWI0ZjAzY2YwMTNlNjJmZmMwMSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Baby Yoda Present"},"SkullOwner":{"Id":"4239c4b0-df9c-40aa-a4f1-85289073d6b8","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjg0YTU2M2U5ZjkwYmU0MGNhMWJkYTg1NTdhNjc2ZmVkZTlmYmNkNmE0Y2UwNDk2NjVjMTA4MWVkYzU2NTY4NiJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Snowman"},"SkullOwner":{"Id":"c06a70d8-98b7-49d4-b0db-8eb12217b177","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTIzZjk3ODExNjg4NTMwNWQyZjAwMjg2NjJiMzkzNjJjZmY3ZGYwMGM2MzFiMzM3NzQ2ZmZiZjViZmM3MGJlYyJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Stack of Logs"},"SkullOwner":{"Id":"fe9d938d-db7b-493e-9f47-d434bc8cbfdb","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzFlM2M2Yzg5NjhlOWFhMmRlZDAyMTcyMTZjOGMwZjc3NTQ4N2RkMTVhMzBkZTc1MmIzOTFiODEwNjhhYTg1ZiJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Earth"},"SkullOwner":{"Id":"e3ae97fb-b688-4dfd-8ee6-247790f22ecd","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWQ1YjE3ODYyNmVhMjNkMGIwYzNkMmRmNWMwODVlODM3NTA1NmJmNjg1YjVlZDViYjQ3N2ZlODQ3MmQ5NCJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Pearl"},"SkullOwner":{"Id":"251b2f08-077f-49b1-9aa9-17a0a5684ede","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE0N2MyMGM0ZjM1YmQyN2QzZDQxOTEyNzkyYTc5OGU5ZjRmOWJiZmUwNGYwZDMyNTVkOWJjYWRmOGE0MWFhZSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Newspapers"},"SkullOwner":{"Id":"70d13334-cd01-4cc4-ac47-ccfddb027de3","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNkODc0ZWI4YzRjNjk3YjNmODMyYmQ4NzQ0MjZmZGY2ZDIxYmFlMzM5ZjMxNzExMDgxZmRlNTk4MzgzODZlMSJ9fX0="}]}}},
+      "rarity": 1
+    },
+    {
+      "action": "single", "type" : "minecraft:skull", "meta": 3, "amount": 1, "nbt" : {"display":{"Name":"Ink"},"SkullOwner":{"Id":"5edbc35c-86ac-4c9b-aaed-ad2e89ef037a","Properties":{"textures":[{"Value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTAyOGQ0NzRjNGEzMzJkY2Y4ZTM0Mzk1N2NlMGNhNGVlYmFjZTI1OGMzN2Y2ZDkwNGNmMjI4ZDM0NTY3ZjU1MSJ9fX0="}]}}},
+      "rarity": 1
+    }
+  ],
+  "color": "#00AA00"
+}
