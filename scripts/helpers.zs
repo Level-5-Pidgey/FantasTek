@@ -311,7 +311,7 @@ static T1MagicEarthIngredients as crafttweaker.oredict.IOreDictEntry[] =
 
 function createRecipeName(outputItem as crafttweaker.item.IItemStack) as string
 {
-	return outputItem.definition.owner ~ "-" ~ outputItem.definition.name ~ ":" ~ outputItem.metadata;
+	return outputItem.definition.owner ~ "-" ~ outputItem.definition.name ~ "-" ~ outputItem.metadata;
 }
 
 static AnyPetalOrShroom as crafttweaker.item.IIngredient = <botania:petal:*> | <botania:mushroom:*>;

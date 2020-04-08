@@ -639,6 +639,40 @@ function markwithProcessingTier(craftingMaterial as string, tier as int)
 <ore:oreSilver>.remove(<magneticraft:ores:1>);
 <ore:oreLead>.remove(<magneticraft:ores:1>);
 
+//Add Gem Smelting from Gem Dust -> Gems
+var GemDusts =
+[
+	"Ruby",
+	"Sapphire",
+	"Peridot",
+	"Amber",
+	"Amethyst",
+	"Apatite",
+	"Aquamarine",
+	"CertusQuartz",
+	"ChargedCertusQuartz",
+	"Dilithium",
+	"DimensionalShard",
+	"EnderBiotite",
+	"Lapis",
+	"Malachite",
+	"Tanzanite",
+	"Diamond",
+	"Topaz"
+] as string[];
+
+for ore in GemDusts
+{
+	var oreDust = oreDict.get("dust" ~ ore);
+	var oreGem = oreDict.get("gem" ~ ore);
+
+	for ore in oreDust.items
+	{
+		furnace.addRecipe(oreGem.firstItem, ore, 0.0);
+		mods.minecraftfuture.BlastFurnace.addRecipe(ore, oreGem.firstItem);
+	}
+}
+
 //Embers Melter
 val EmberMelting = [
 	<forestry:resources:2>,

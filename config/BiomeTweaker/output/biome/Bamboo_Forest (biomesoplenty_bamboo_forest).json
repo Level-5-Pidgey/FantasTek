@@ -21,9 +21,9 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "JUNGLE",
-    "FOREST",
+    "DENSE",
     "WET",
-    "DENSE"
+    "FOREST"
   ],
   "BiomeManager Entries": {
     "DESERT Weights": [

@@ -168,3 +168,17 @@ crystal_ember_air.register();
 var crystal_ember_earth = VanillaFactory.createItem("crystal_ember_earth");
 crystal_ember_earth.rarity = "UNCOMMON";
 crystal_ember_earth.register();
+
+//Champion Kill Tokens
+var champion_token_1 = VanillaFactory.createItem("champion_token_1");
+champion_token_1.rarity = "COMMON";
+champion_token_1.register();
+var champion_token_2 = VanillaFactory.createItem("champion_token_2");
+champion_token_2.rarity = "UNCOMMON";
+champion_token_2.register();
+var champion_token_3 = VanillaFactory.createItem("champion_token_3");
+champion_token_3.rarity = "RARE";
+champion_token_3.register();
+var champion_token_4 = VanillaFactory.createItem("champion_token_4");
+champion_token_4.rarity = "EPIC";
+champion_token_4.register();

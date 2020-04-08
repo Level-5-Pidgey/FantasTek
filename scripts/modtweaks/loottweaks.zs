@@ -45,7 +45,8 @@ val fishingTreasure as int[crafttweaker.item.IItemStack] = {
 	<conduit:nautilus_shell> : 10,
 	<minecraft:waterlily> : 25,
 	<minecraft:name_tag> : 20,
-	<minecraft:saddle> : 15
+	<minecraft:saddle> : 15,
+	<contenttweaker:strange_treasure> : 5
 };
 
 for key, value in fishingTreasure {
