@@ -4,6 +4,8 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.Commands;
+import mods.contenttweaker.IItemFoodEaten;
+import mods.contenttweaker.ItemFood;
 
 //Life Ingot
 var lifeingot = VanillaFactory.createItem("lifeingot");
@@ -182,3 +184,47 @@ champion_token_3.register();
 var champion_token_4 = VanillaFactory.createItem("champion_token_4");
 champion_token_4.rarity = "EPIC";
 champion_token_4.register();
+
+//Custom Food Items
+val foodStrings as double[][string] =
+{
+	"vegemite" : [8.0, 0.8],
+	"vegemite_sandwich" : [8.0, 0.8],
+	"sushi" : [8.0, 0.8],
+	"steak_and_chips" : [8.0, 0.8],
+	"pocky" : [8.0, 0.8],
+	"meat_pie" : [8.0, 0.8],
+	"honey_sandwich" : [8.0, 0.8],
+	"fairy_bread" : [8.0, 0.8],
+	"chocolate" : [8.0, 0.8]
+};
+
+for foodName, foodRestorationArray in foodStrings {
+	var foodItem = VanillaFactory.createItemFood(foodName, foodRestorationArray[0]);
+	foodItem.saturation = foodRestorationArray[1];
+
+	//Apply potion effects if some types of food are consumed
+	if(foodName == "chocolate")
+	{
+		foodItem.onItemFoodEaten = function(stack, world, player)
+		{
+			if(!world.isRemote())
+			{
+				player.addPotionEffect(<potion:minecraft:swiftness>.makePotionEffect(45, 1));
+			}
+		};
+	}
+
+	if(foodName == "fairy_bread")
+	{
+		foodItem.onItemFoodEaten = function(stack, world, player)
+		{
+			if(!world.isRemote())
+			{
+				player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(10, 3));
+			}
+		};
+	}
+
+	foodItem.register();
+}

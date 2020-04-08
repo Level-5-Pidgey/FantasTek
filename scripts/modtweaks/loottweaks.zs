@@ -229,4 +229,50 @@ for lootTable, metadataIntegerArray in botaniaCosmetics {
 	}
 }
 
+//Change Champion Mob Pool Drops
+var championPool = LootTables.getTable("champions:champion_loot");
+championPool.getPool("tier#1").removeEntry("minecraft:book");
+championPool.getPool("tier#1").addItemEntryHelper(<contenttweaker:champion_token_1>, 1, 0, [], [Conditions.parse({
+"condition": "minecraft:entity_properties",
+"entity": "this",
+"properties": {
+  "champions:is_champion": {
+	"tier": 1
+  }
+}
+}), Conditions.killedByPlayer()]);
+
+championPool.getPool("tier#2").removeEntry("minecraft:book");
+championPool.getPool("tier#2").addItemEntryHelper(<contenttweaker:champion_token_2>, 1, 0, [], [Conditions.parse({
+"condition": "minecraft:entity_properties",
+"entity": "this",
+"properties": {
+  "champions:is_champion": {
+	"tier": 2
+  }
+}
+}), Conditions.killedByPlayer()]);
+
+championPool.getPool("tier#3").removeEntry("minecraft:book");
+championPool.getPool("tier#3").addItemEntryHelper(<contenttweaker:champion_token_3>, 1, 0, [], [Conditions.parse({
+"condition": "minecraft:entity_properties",
+"entity": "this",
+"properties": {
+  "champions:is_champion": {
+	"tier": 3
+  }
+}
+}), Conditions.killedByPlayer()]);
+
+championPool.getPool("tier#4").removeEntry("minecraft:book");
+championPool.getPool("tier#4").addItemEntryHelper(<contenttweaker:champion_token_4>, 1, 0, [], [Conditions.parse({
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "properties": {
+	"champions:is_champion": {
+	  "tier": 4
+	}
+  }
+}), Conditions.killedByPlayer()]);
+
 print("### Loottweaker Init Complete ###");

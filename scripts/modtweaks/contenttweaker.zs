@@ -155,4 +155,22 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeNam
  null, scripts.helpers.T1MagicEarthIngredients[2], null
 ]); //Earth
 
+//Add Credits to food items
+val foodCredits as string[crafttweaker.item.IItemStack] =
+{
+	<contenttweaker:vegemite> : "Eunora",
+	<contenttweaker:vegemite_sandwich> : "Eunora",
+	<contenttweaker:sushi> : "Sei",
+	<contenttweaker:steak_and_chips> : "Eunora",
+	<contenttweaker:pocky> : "Adora",
+	<contenttweaker:meat_pie> : "Vic",
+	<contenttweaker:honey_sandwich> : "Eunora",
+	<contenttweaker:fairy_bread> : "Eunora",
+	<contenttweaker:chocolate> : "Adora"
+};
+
+for foodItem, author in foodCredits {
+	scripts.helpers.AddTooltip(foodItem, ["Food sprite made by " ~ author ~ "!", "May give buffs upon consumption."]);
+}
+
 print("### ContentTweaker recipes Init Complete ###");
