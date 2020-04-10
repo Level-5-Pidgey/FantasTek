@@ -202,29 +202,5 @@ val foodStrings as double[][string] =
 for foodName, foodRestorationArray in foodStrings {
 	var foodItem = VanillaFactory.createItemFood(foodName, foodRestorationArray[0]);
 	foodItem.saturation = foodRestorationArray[1];
-
-	//Apply potion effects if some types of food are consumed
-	if(foodName == "chocolate")
-	{
-		foodItem.onItemFoodEaten = function(stack, world, player)
-		{
-			if(!world.isRemote())
-			{
-				player.addPotionEffect(<potion:minecraft:swiftness>.makePotionEffect(45, 1));
-			}
-		};
-	}
-
-	if(foodName == "fairy_bread")
-	{
-		foodItem.onItemFoodEaten = function(stack, world, player)
-		{
-			if(!world.isRemote())
-			{
-				player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(10, 3));
-			}
-		};
-	}
-
 	foodItem.register();
 }
