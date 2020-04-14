@@ -159,9 +159,9 @@ for key, value in botaniaFlowers {
 mods.botania.PureDaisy.removeRecipe(<minecraft:packed_ice>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
-mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 60);
-mods.botania.PureDaisy.addRecipe(<ore:plankSealedWood>, <botania:livingwood>, 60);
-scripts.helpers.AddTooltip(<botania:livingrock>, ["Can use any type of oreDicted Marble."]);
+mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 40);
+mods.botania.PureDaisy.addRecipe(<ore:plankSealedWood>, <botania:livingwood>, 40);
+scripts.helpers.AddTooltip(<botania:livingrock>, ["Can be crafted with any type of ore:stoneMarble."]);
 //Add Early-Game alternate livingwood recipe
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:livingwood>), scripts.staging.stages.Botania1.stage, <botania:livingwood> * 8, [[<ore:logWood>, <ore:plateWood>, <ore:logWood>],[<ore:plateWood>, scripts.helpers.AnyPetalOrShroom, <ore:plateWood>], [<ore:logWood>, <ore:plateWood>, <ore:logWood>]]);
 
@@ -185,7 +185,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:spreader>, [
 recipes.remove(<botania:runealtar>);
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:runealtar>), scripts.staging.stages.Botania1.stage, <botania:runealtar>, [
 	[<ore:livingrock>, <ore:petalLightBlue> | <ore:petalBlue>, <ore:livingrock>],
-	[null, <ore:plateSapphire>, null],
+	[null, <ore:plateSapphire> | <ore:plateDiamond>, null],
 	[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
 ]);
 
@@ -211,6 +211,7 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:po
 ]);
 //Full
 mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool>, [
+	[null, null, null],
 	[<ore:livingrock>, null, <ore:livingrock>],
 	[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
 ]);

@@ -27,7 +27,6 @@ for item in Stage1ThaumcraftItems
 //Items that should not have a stage associated with them at all
 val StageLessItems = [
 	<thaumcraft:thaumonomicon>,
-	<thaumcraft:salis_mundus>,
 	<thaumcraft:shimmerleaf>,
 	<thaumcraft:cinderpearl>,
 	<thaumcraft:vishroom>,

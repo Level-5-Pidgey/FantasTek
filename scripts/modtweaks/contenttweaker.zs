@@ -170,7 +170,19 @@ val foodCredits as string[crafttweaker.item.IItemStack] =
 };
 
 for foodItem, author in foodCredits {
-	scripts.helpers.AddTooltip(foodItem, ["Food sprite made by " ~ author ~ "!", "May give buffs upon consumption."]);
+	scripts.helpers.AddTooltip(foodItem, ["Food sprite made by " ~ author ~ "!", "Doesn't stack as much as other food items."]);
 }
+
+//Crafting Food Items
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:vegemite>), <contenttweaker:vegemite>, [<ore:itemSalt>, <ore:itemSalt>, <natura:materials:1>]); //Vegemite
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:vegemite>) ~ "_2", <contenttweaker:vegemite>, [<ore:itemSalt>, <ore:itemSalt>, <ore:itemSalt>, <appliedenergistics2:material:4>]); //Vegemite Alternate
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:vegemite_sandwich>), <contenttweaker:vegemite_sandwich>, [<contenttweaker:vegemite>, <minecraft:bread>]); //Vegemite Sandwich
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:sushi>), <contenttweaker:sushi>, [<ore:fish>, <biomesoplenty:seaweed>, <ore:plantWildrice>]); //Sushi
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:steak_and_chips>), <contenttweaker:steak_and_chips>, [<minecraft:cooked_beef>, <minecraft:baked_potato>, <ore:itemSalt>]); //Steak and Chips
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:meat_pie>), <contenttweaker:meat_pie>, [<ore:listAllmeatcooked>, <ore:listAllmeatcooked>, <ore:foodFlour> | <ore:dustWheat>, <ore:itemSalt>]); //Meat Pie
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:honey_sandwich>), <contenttweaker:honey_sandwich>, [<ore:dropHoney> | <minecraftfuture:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>]); //Honey Sandwich
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:fairy_bread>), <contenttweaker:fairy_bread>, [<ore:dye>, <ore:dye>, <minecraft:sugar>, <minecraft:bread>]); //fairy_bread
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:chocolate>), <contenttweaker:chocolate>, [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")]); //chocolate
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:pocky> * 8), <contenttweaker:pocky>, [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]); //pocky
 
 print("### ContentTweaker recipes Init Complete ###");

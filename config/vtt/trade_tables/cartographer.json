@@ -10,12 +10,15 @@
 				buy:
 				{
 					id:"modcurrency:banknote",
-					Count:3,
+					Count:{min:3,max:5},
 					Damage:2
 				},
 				sell:
 				{
-					id:"antiqueatlas:empty_antique_atlas",
+					id: [
+							"antiqueatlas:empty_antique_atlas",
+							"naturescompass:naturescompass",
+						]
 					Count:1
 				}
 			},

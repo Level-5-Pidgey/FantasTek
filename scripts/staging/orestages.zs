@@ -565,18 +565,22 @@ for materialString in ExtraMaterialsToStage
 //Extra Ore Dict Entries that should be tied to this stage (that aren't materials)
 var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
 {
-  <ore:treeLeaves> : stages.progression1,
-  <ore:plankWood> : stages.progression1,
-  <ore:logWood> : stages.progression1,
-  <ore:fuelCoke> : stages.progression1,
-  <ore:blockFuelCoke> : stages.progression1,
-  <ore:fruitForestry> : stages.progression1,
-  <ore:dustAsh> : stages.progression1,
+	<ore:treeLeaves> : stages.progression1,
+	<ore:plankWood> : stages.progression1,
+	<ore:logWood> : stages.progression1,
+	<ore:fuelCoke> : stages.progression1,
+	<ore:blockFuelCoke> : stages.progression1,
+	<ore:fruitForestry> : stages.progression1,
+	<ore:dustAsh> : stages.progression1,
 	<ore:beeComb> : stages.progression1,
 	<ore:slabWood> : stages.progression1,
 	<ore:doorWood> : stages.progression1,
 	<ore:fenceWood> : stages.progression1,
-	<ore:fenceGateWood> : stages.progression1
+	<ore:fenceGateWood> : stages.progression1,
+	<ore:blockSalt> : stages.progression1,
+	<ore:dustSalt> : stages.progression1,
+	<ore:stoneLimestone> : stages.progression1,
+	<ore:dustWheat> : stages.progression1
 };
 
 for oreBlockEntry in extraOreDicts
@@ -611,4 +615,5 @@ for stone in InfusedStones
 	mods.ItemStages.removeItemStage(stone);
 	mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, stone);
 }
+
 print("### Ore Block/Material Staging Complete ###");

@@ -188,19 +188,32 @@ champion_token_4.register();
 //Custom Food Items
 val foodStrings as double[][string] =
 {
-	"vegemite" : [8.0, 0.8],
-	"vegemite_sandwich" : [8.0, 0.8],
-	"sushi" : [8.0, 0.8],
-	"steak_and_chips" : [8.0, 0.8],
-	"pocky" : [8.0, 0.8],
-	"meat_pie" : [8.0, 0.8],
-	"honey_sandwich" : [8.0, 0.8],
-	"fairy_bread" : [8.0, 0.8],
-	"chocolate" : [8.0, 0.8]
+	"vegemite" : [6.0, 0.1],
+	"vegemite_sandwich" : [12.0, 0.8],
+	"sushi" : [8.0, 0.4],
+	"steak_and_chips" : [13.0, 0.5],
+	"pocky" : [2.0, 0.3],
+	"meat_pie" : [18.0, 0.5],
+	"honey_sandwich" : [6.0, 1.2],
+	"fairy_bread" : [6.0, 0.7],
+	"chocolate" : [4.0, 0.2]
 };
 
 for foodName, foodRestorationArray in foodStrings {
 	var foodItem = VanillaFactory.createItemFood(foodName, foodRestorationArray[0]);
 	foodItem.saturation = foodRestorationArray[1];
+	foodItem.maxStackSize = 4; //Typical Stack Sizes
+
+	//Custom Stack Sizes for foods
+	if (foodName == "meat_pie" || foodName == "steak_and_chips")
+	{
+		foodItem.maxStackSize = 2;
+	}
+
+	if (foodName == "pocky")
+	{
+		foodItem.maxStackSize = 24;
+	}
+
 	foodItem.register();
 }

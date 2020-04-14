@@ -213,4 +213,8 @@ for key, value in componentRecipes {
 //Remove Easy Book Crafting Recipe.
 recipes.removeByRecipeName("tconstruct:tools/book");
 
+//Faster Dry Bricks
+mods.tconstruct.Drying.removeRecipe(<tconstruct:materials:2>);
+mods.tconstruct.Drying.addRecipe(<tconstruct:materials:2>, <minecraft:clay_ball>, 120);
+
 print("### TConstruct Init Complete ###");
