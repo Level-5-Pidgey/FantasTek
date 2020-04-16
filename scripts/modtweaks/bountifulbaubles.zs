@@ -1,7 +1,7 @@
 
 print("~~~ Begin Bountiful Baubles Init ~~~");
 
-val bountifulBaubles = {
+val bountifulbaubles = [
 	<bountifulbaubles:trinketballoon>,
 	<bountifulbaubles:shieldcobalt>,
 	<bountifulbaubles:trinketobsidianskull>,
@@ -22,9 +22,9 @@ val bountifulBaubles = {
 	<bountifulbaubles:disintegrationtablet>,
 	<bountifulbaubles:flaregun>,
 	<bountifulbaubles:reforger>
-} as crafttweaker.item.IItemStack;
+] as crafttweaker.item.IItemStack[];
 
-for bauble in bountifulBaubles {
+for bauble in bountifulbaubles {
 	recipes.remove(bauble);
 }
 
