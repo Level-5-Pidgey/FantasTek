@@ -20,7 +20,7 @@ val Stage1EmbersItems = [
 for item in Stage1EmbersItems
 {
 	mods.ItemStages.removeItemStage(item);
-	mods.ItemStages.addItemStage(stages.Embers1.stage, item);
+	scripts.helpers.setItemAndRecipesStage(item, stages.Embers1.stage);
 }
 
 //Items that should not have a stage associated with them at all

@@ -14,7 +14,7 @@ function SetOreDictStage(oredict_entry as crafttweaker.oredict.IOreDictEntry, or
 		if(scripts.helpers.StageForProcessingTier[oreValue].stage != "stage_i")
 		{
 			mods.ItemStages.removeItemStage(ore);
-			mods.ItemStages.addItemStage(scripts.helpers.StageForProcessingTier[oreValue].stage, ore);
+			scripts.helpers.setItemAndRecipesStage(ore, scripts.helpers.StageForProcessingTier[oreValue].stage);
 		}
 		else
 		{

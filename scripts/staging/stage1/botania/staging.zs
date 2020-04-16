@@ -17,7 +17,7 @@ val Stage1BotaniaItems = [
 for item in Stage1BotaniaItems
 {
   mods.ItemStages.removeItemStage(item);
-  mods.ItemStages.addItemStage(stages.Botania1.stage, item);
+  scripts.helpers.setItemAndRecipesStage(item, stages.Botania1.stage);
 }
 
 //Items that should not have a stage associated with them at all

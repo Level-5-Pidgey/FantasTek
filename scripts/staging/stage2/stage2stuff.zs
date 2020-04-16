@@ -64,11 +64,15 @@ val otherItems = [
 	<forestry:thermionic_tubes:12>,
 	<randomthings:ingredient:10>,
 	<randomthings:lotusseeds>,
-	<randomthings:lotus:*>
+	<randomthings:lotus:*>,
+	<xreliquary:twilight_cloak>,
+	<xreliquary:void_tear>,
+	<xreliquary:rending_gale>,
+	<xreliquary:hero_medallion>
 ] as crafttweaker.item.IItemStack[];
 
 for item in otherItems
 {
-	mods.ItemStages.addItemStage(stages.Locked.stage, item);
+	 scripts.helpers.setItemAndRecipesStage(item, stages.Locked.stage);
 }
 print("### Stage 2 Staging Complete ###");

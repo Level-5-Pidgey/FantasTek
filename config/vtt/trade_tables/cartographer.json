@@ -17,8 +17,8 @@
 				{
 					id: [
 							"antiqueatlas:empty_antique_atlas",
-							"naturescompass:naturescompass",
-						]
+							"naturescompass:naturescompass"
+						],
 					Count:1
 				}
 			},

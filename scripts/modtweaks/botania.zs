@@ -216,4 +216,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool>, [
 	[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
 ]);
 
+//Remove Cosmetics Recipes
+recipes.remove(<botania:cosmetic:*>);
+
 print("### Botania Init Complete ###");

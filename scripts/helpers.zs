@@ -315,3 +315,15 @@ function createRecipeName(outputItem as crafttweaker.item.IItemStack) as string
 }
 
 static AnyPetalOrShroom as crafttweaker.item.IIngredient = <botania:petal:*> | <botania:mushroom:*>;
+
+function setItemAndRecipesStage(itemToStage as crafttweaker.item.IItemStack, stageToSetTo as string)
+{
+	//Add item to stage
+	mods.ItemStages.addItemStage(stageToSetTo, itemToStage);
+
+	//If there are crafting recipes for that item, set it to the stage the item is limited to
+	if (recipes.getRecipesFor(itemToStage).length != 0)
+	{
+		mods.recipestages.Recipes.setRecipeStage(stageToSetTo, itemToStage);
+	}
+}

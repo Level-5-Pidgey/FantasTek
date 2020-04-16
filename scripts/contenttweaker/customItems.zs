@@ -193,7 +193,7 @@ val foodStrings as double[][string] =
 	"sushi" : [8.0, 0.4],
 	"steak_and_chips" : [13.0, 0.5],
 	"pocky" : [2.0, 0.3],
-	"meat_pie" : [18.0, 0.5],
+	"meat_pie" : [14.0, 0.5],
 	"honey_sandwich" : [6.0, 1.2],
 	"fairy_bread" : [6.0, 0.7],
 	"chocolate" : [4.0, 0.2]

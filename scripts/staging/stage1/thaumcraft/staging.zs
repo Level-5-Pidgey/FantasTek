@@ -21,7 +21,7 @@ val Stage1ThaumcraftItems = [
 for item in Stage1ThaumcraftItems
 {
   mods.ItemStages.removeItemStage(item);
-  mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, item);
+  scripts.helpers.setItemAndRecipesStage(item, stages.Thaumcraft1.stage);
 }
 
 //Items that should not have a stage associated with them at all

@@ -227,7 +227,7 @@ for liquidObject, zenStageObject in liquidStages
 		StageFlorb(scripts.helpers.getLiquidStringFromObject(liquidObject), zenStageObject);
 
 		//Stage the buckets holding the fluid
-		mods.ItemStages.addItemStage(zenStageObject.stage, scripts.helpers.formatBucket(scripts.helpers.getLiquidStringFromObject(liquidObject)));
+		scripts.helpers.setItemAndRecipesStage(scripts.helpers.formatBucket(scripts.helpers.getLiquidStringFromObject(liquidObject)), zenStageObject.stage);
 
 		//Stage ME Fluid Patterns
 		StageFluidPattern(scripts.helpers.getLiquidStringFromObject(liquidObject), zenStageObject);
