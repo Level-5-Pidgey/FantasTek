@@ -61,5 +61,19 @@ for metallicGrainsDustCraft in metallicGrainsDusts
 	mods.forestry.Carpenter.removeRecipe(metallicGrainsDustCraft, <liquid:water>);
 }
 
+//ExtendedCrafting recipes for forestry Machines in tier1
+val machineRecipes = {
+		<forestry:engine_clockwork> : [[<ore:plateSealedWood>, <ore:plateSealedWood>, <ore:plateSealedWood>], [null, <ore:blockGlass>, null], [<magneticraft:crafting:2>, <ore:ingotIron>, <minecraft:clock>]],
+		<forestry:carpenter> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <thermalfoundation:material:657>, <ore:ingotIron>]],
+		<forestry:squeezer> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]],
+		<forestry:centrifuge> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:crafting:2>, <ore:ingotIron>]],
+		<forestry:fabricator> : [[<ore:ingotGold>, <ore:blockGlass>, <ore:ingotGold>], [<ore:blockGlass>, <ore:itemSimpleMachineChassi>, <ore:blockGlass>], [<ore:ingotGold>, <ore:chestWood>, <ore:ingotGold>]],
+		<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, <ore:itemSimpleMachineChassi>, <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]]
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in machineRecipes {
+	recipes.remove(key);
+	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
+}
 
 print("### Forestry Init Complete ###");
