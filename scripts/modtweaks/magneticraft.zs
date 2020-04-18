@@ -102,11 +102,13 @@ val motorRecipes = {
 	<magneticraft:crafting:2> : [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotRedstoneAlloy>, <ore:dustRedstone>, <ore:ingotCrudeSteel>], [<ore:ingotIron>, <ore:ingotIron>, null]],
 	<magneticraft:conveyor_belt> * 16 : [[null, null, null], [<ore:ingotIron>, <magneticraft:crafting:2>, <ore:ingotIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
 	<magneticraft:inserter> * 4 : [[<ore:ingotRedstoneAlloy>, <ore:nuggetIron>, null], [<ore:nuggetIron>, <ore:ingotRedstoneAlloy>, <ore:nuggetIron>], [<ore:plateIron>, <magneticraft:crafting:2>, <ore:plateIron>]],
-	<thermalfoundation:material:657> : [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotIron>, <ore:ingotCrudeSteel>, <ore:ingotIron>], [null, <ore:ingotIron>, <ore:ingotIron>]]
+	<thermalfoundation:material:657> : [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotIron>, <ore:ingotCrudeSteel>, <ore:ingotIron>], [null, <ore:ingotIron>, <ore:ingotIron>]],
+	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, <ore:itemSimpleMachineChassi>, <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]],
+	<enderio:item_material> : [[<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>], [<ore:ingotElectrotineAlloy>, <embers:wrapped_sealed_planks>, <ore:ingotElectrotineAlloy>], [<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>]]
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in motorRecipes {
-	recipes.remove(key);
+	recipes.remove(key.withAmount(1));
 	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
 }
 

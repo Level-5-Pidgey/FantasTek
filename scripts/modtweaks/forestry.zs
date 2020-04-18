@@ -67,8 +67,7 @@ val machineRecipes = {
 		<forestry:carpenter> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <thermalfoundation:material:657>, <ore:ingotIron>]],
 		<forestry:squeezer> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]],
 		<forestry:centrifuge> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:crafting:2>, <ore:ingotIron>]],
-		<forestry:fabricator> : [[<ore:ingotGold>, <ore:blockGlass>, <ore:ingotGold>], [<ore:blockGlass>, <ore:itemSimpleMachineChassi>, <ore:blockGlass>], [<ore:ingotGold>, <ore:chestWood>, <ore:ingotGold>]],
-		<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, <ore:itemSimpleMachineChassi>, <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]]
+		<forestry:fabricator> : [[<ore:ingotGold>, <ore:blockGlass>, <ore:ingotGold>], [<ore:blockGlass>, <ore:itemSimpleMachineChassi>, <ore:blockGlass>], [<ore:ingotGold>, <ore:chestWood>, <ore:ingotGold>]]
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in machineRecipes {
