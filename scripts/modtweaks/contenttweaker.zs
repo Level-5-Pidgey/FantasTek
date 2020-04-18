@@ -166,6 +166,7 @@ val foodCredits as string[crafttweaker.item.IItemStack] =
 	<contenttweaker:meat_pie> : "Vic",
 	<contenttweaker:honey_sandwich> : "Eunora",
 	<contenttweaker:fairy_bread> : "Eunora",
+	<contenttweaker:chicken_bucket> : "Eunora",
 	<contenttweaker:chocolate> : "Adora"
 };
 
@@ -183,6 +184,7 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:meat_pie>)
 recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:honey_sandwich>), <contenttweaker:honey_sandwich>, [<ore:dropHoney> | <minecraftfuture:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>]); //Honey Sandwich
 recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:fairy_bread>), <contenttweaker:fairy_bread>, [<ore:dye>, <ore:dye>, <minecraft:sugar>, <minecraft:bread>]); //fairy_bread
 recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:chocolate>), <contenttweaker:chocolate>, [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")]); //chocolate
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:chicken_bucket>), <contenttweaker:chicken_bucket>, [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>]); //chicken_bucket
 recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:pocky> * 8), <contenttweaker:pocky>, [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]); //pocky
 
 print("### ContentTweaker recipes Init Complete ###");

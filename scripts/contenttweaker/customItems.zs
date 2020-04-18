@@ -196,6 +196,7 @@ val foodStrings as double[][string] =
 	"meat_pie" : [14.0, 0.5],
 	"honey_sandwich" : [6.0, 1.2],
 	"fairy_bread" : [6.0, 0.7],
+	"chicken_bucket" : [13.0, 0.4],
 	"chocolate" : [4.0, 0.2]
 };
 
