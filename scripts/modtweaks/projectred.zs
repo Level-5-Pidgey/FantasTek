@@ -21,13 +21,16 @@ for item in loadedMods["projectred-transmission"].items {
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>); //Removing ingotRedAlloy oreDict
 <ore:ingotRedstoneAlloy>.add(<projectred-core:resource_item:103>); //Adding to ingotRedstoneAlloy
 
+var count = 0;
 for item in <ore:ingotRedstoneAlloy>.items
 {
+	count += 1;
+
 	mods.inworldcrafting.FluidToItem.transform(<ore:ingotElectrotineAlloy>.firstItem, <liquid:astralsorcery.liquidstarlight>, item, true);
 	mods.botania.ManaInfusion.addInfusion(<ore:ingotElectrotineAlloy>.firstItem, item, 800);
 	mods.bloodmagic.BloodAltar.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, item, 0, 100, 20, 20);
-	scripts.mmhelper.AddEmberAssemblyRecipe(<ore:ingotElectrotineAlloy>.firstItem, [item], 800);
-	mods.thaumcraft.Crucible.registerRecipe(scripts.helpers.createRecipeName(<ore:ingotElectrotineAlloy>.firstItem), "FIRSTSTEPS", <ore:ingotElectrotineAlloy>.firstItem, item, [<aspect:potentia> * 8]);
+	scripts.mmhelper.AddEmberAssemblyRecipe(scripts.helpers.createRecipeName(<ore:ingotElectrotineAlloy>.firstItem) ~ "_" ~ count, <ore:ingotElectrotineAlloy>.firstItem, [item], 800);
+	mods.thaumcraft.Crucible.registerRecipe(scripts.helpers.createRecipeName(<ore:ingotElectrotineAlloy>.firstItem) ~ "_" ~ count, "FIRSTSTEPS", <ore:ingotElectrotineAlloy>.firstItem, item, [<aspect:potentia> * 8]);
 }
 
 print("### ProjectRed Init Complete ###");

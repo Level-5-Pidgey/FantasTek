@@ -47,19 +47,23 @@ mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, [[<embers:wrapp
 
 //Remove Tier 1 Ores being output from Metallic Grains
 val metallicGrainsDusts = [
-	<thermalfoundation:material:64>,
-	<thermalfoundation:material:65>,
-	<thermalfoundation:material:69>,
-	<mekanism:dust:2>,
-	<thermalfoundation:material:66>,
-	<thermalfoundation:material:67>,
-	<thermalfoundation:material:68>
+	<ore:dustOsmium>.firstItem,
+	<ore:dustCopper>.firstItem,
+	<ore:dustTin>.firstItem,
+	<ore:dustLead>.firstItem,
+	<ore:dustSilver>.firstItem,
+	<ore:dustNickel>.firstItem,
+	<ore:dustAluminum>.firstItem,
+	<ore:gemApatite>.firstItem,
 ] as crafttweaker.item.IItemStack[];
 
 for metallicGrainsDustCraft in metallicGrainsDusts
 {
 	mods.forestry.Carpenter.removeRecipe(metallicGrainsDustCraft, <liquid:water>);
 }
+
+//Add Diamond Fragment Crafting to Carpenter
+mods.forestry.Carpenter.addRecipe(<morebees:diamondfragment>, [[<morebees:graincrystal>, <morebees:graincrystal>, <morebees:graincrystal>],[null, <morebees:graincrystal>, null],[<morebees:graincrystal>, <morebees:graincrystal>, <morebees:graincrystal>]], 80, <liquid:seed.oil> * 250);
 
 //ExtendedCrafting recipes for forestry Machines in tier1
 val machineRecipes = {

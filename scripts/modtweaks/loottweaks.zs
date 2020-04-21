@@ -209,13 +209,12 @@ val botaniaCosmetics as int[][string] = {
 	"minecraft:chests/end_city_treasure" : [2, 14, 26],
 	"minecraft:chests/igloo_chest" : [3, 15, 27],
 	"minecraft:chests/jungle_temple" : [4, 16, 28],
-	"minecraft:chests/jungle_temple_dispenser" : [5, 17, 29],
 	"minecraft:chests/nether_bridge" : [6, 18, 30],
 	"minecraft:chests/simple_dungeon" : [7, 19, 31],
 	"minecraft:chests/village_blacksmith" : [8, 20, 32],
-	"minecraft:chests/woodland_mansion" : [9, 21],
-	"astralsorcery:chest_shrine" : [10, 22],
-	"quark:chests/pirate_chest" : [11, 23]
+	"minecraft:chests/woodland_mansion" : [9, 21, 5],
+	"astralsorcery:chest_shrine" : [10, 22, 17],
+	"quark:chests/pirate_chest" : [11, 23, 29]
 };
 
 for lootTable, metadataIntegerArray in botaniaCosmetics {
@@ -274,5 +273,34 @@ championPool.getPool("tier#4").addItemEntryHelper(<contenttweaker:champion_token
 	}
   }
 }), Conditions.killedByPlayer()]);
+
+//Remove Bountiful Baubles Nether Loot Table
+LootTables.getTable("minecraft:chests/nether_bridge").removePool("bountifulbaubles_nether_bridge");
+
+//Add Reliquary Treasures to Dungeon Loot
+val dungeonBaublesAndTreasures as crafttweaker.item.IItemStack[][string] = {
+	"minecraft:chests/abandoned_mineshaft" : [<xreliquary:lantern_of_paranoia>],
+	"minecraft:chests/desert_pyramid" : [<xreliquary:midas_touchstone>, <bountifulbaubles:trinketmagiclenses>],
+	"minecraft:chests/end_city_treasure" : [<xreliquary:rod_of_lyssa>, <xreliquary:ender_staff>, <xreliquary:destruction_catalyst>, <bountifulbaubles:wormholemirror>],
+	"minecraft:chests/igloo_chest" : [<xreliquary:ice_magus_rod>, <xreliquary:glacial_staff>],
+	"minecraft:chests/jungle_temple" : [<xreliquary:serpent_staff>, <xreliquary:harvest_rod>, <bountifulbaubles:magicmirror>],
+	"minecraft:chests/nether_bridge" : [<xreliquary:salamander_eye>, <xreliquary:pyromancer_staff>, <xreliquary:infernal_tear>, <xreliquary:infernal_claws>, <xreliquary:infernal_chalice>, <bountifulbaubles:trinketobsidianskull>],
+	"minecraft:chests/simple_dungeon" : [<xreliquary:phoenix_down>, <xreliquary:magicbane>, <xreliquary:gun_part>, <xreliquary:gun_part:1>, <xreliquary:gun_part:2>, <bountifulbaubles:shieldcobalt>],
+	"minecraft:chests/village_blacksmith" : [<bountifulbaubles:amuletsinpride>, <bountifulbaubles:amuletsingluttony>],
+	"minecraft:chests/woodland_mansion" : [<xreliquary:sojourner_staff>, <bountifulbaubles:trinketbrokenheart>],
+	"astralsorcery:chest_shrine" : [<xreliquary:mercy_cross>, <xreliquary:kraken_shell>, <xreliquary:angelic_feather>,
+	<bountifulbaubles:amuletcross>],
+	"quark:chests/pirate_chest" : [<xreliquary:fortune_coin>, <xreliquary:emperor_chalice>, <bountifulbaubles:amuletsinempty>, <bountifulbaubles:amuletsinwrath>]
+};
+
+for lootTable, dungeonTreasures in dungeonBaublesAndTreasures {
+	var lootPool = LootTables.getTable(lootTable).addPool("treasure_accessories", 1, 1, 0, 1);
+	lootPool.addEmptyEntry(40, "emptyTreasure");
+
+	for dungeonTreasure in dungeonTreasures
+	{
+		lootPool.addItemEntry(dungeonTreasure, 1, 0, dungeonTreasure.name);
+	}
+}
 
 print("### Loottweaker Init Complete ###");

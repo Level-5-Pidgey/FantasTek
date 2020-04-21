@@ -24,7 +24,10 @@ val lootItems =
 	<xreliquary:emperor_chalice>,
 	<xreliquary:angelic_feather>,
 	<xreliquary:mercy_cross>,
-	<xreliquary:destruction_catalyst>
+	<xreliquary:destruction_catalyst>,
+	<xreliquary:gun_part:1>,
+	<xreliquary:gun_part:2>,
+	<xreliquary:gun_part>
 ] as crafttweaker.item.IItemStack[];
 
 for item in lootItems
@@ -33,4 +36,7 @@ for item in lootItems
 	scripts.helpers.AddTooltip(item, ["This item can be found within dungeon chests!"]);
 }
 
+//Change Handgun Recipe
+recipes.remove(<xreliquary:handgun>);
+recipes.addShaped(scripts.helpers.createRecipeName(<xreliquary:handgun>), <xreliquary:handgun>, [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateSteel>, <xreliquary:gun_part>, <ore:plateSteel>]]);
 print("### xReliquary Init Complete ###");

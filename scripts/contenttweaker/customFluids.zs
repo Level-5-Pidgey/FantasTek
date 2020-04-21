@@ -32,11 +32,4 @@ liquid_molten_modularium.addDataValue("viscosity", "6000");
 liquid_molten_modularium.addDataValue("temperature", "800");
 liquid_molten_modularium.addDataValue("luminosity", "15");
 
-var molten_crude_steel = mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(Color.fromHex("ccccb3")).build();
-var liquid_molten_crude_steel = molten_crude_steel.registerPart("molten").getData();
-liquid_molten_crude_steel.addDataValue("density", "2000");
-liquid_molten_crude_steel.addDataValue("viscosity", "6000");
-liquid_molten_crude_steel.addDataValue("temperature", "800");
-liquid_molten_crude_steel.addDataValue("luminosity", "15");
-
 print("### Custom Fluid Creator Init Complete ###");

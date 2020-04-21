@@ -532,9 +532,9 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
 {
   "CrudeSteel" : stages.progression1,
   "Wood" : stages.progression1,
-  "ElectricalSteel" : stages.progression1,
   "RedstoneAlloy" : stages.progression1,
   "ConductiveIron" : stages.progression1,
+  "PulsatingIron" : stages.progression1,
   "NetherStar" : stages.progression1
 };
 
@@ -580,8 +580,10 @@ var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
 	<ore:blockSalt> : stages.progression1,
 	<ore:dustSalt> : stages.progression1,
 	<ore:stoneLimestone> : stages.progression1,
-	<ore:dustWheat> : stages.progression1,
-	<ore:ingotCrudeSteel> : stages.progression1
+	<ore:gearSteel> : stages.progression1,
+	<ore:plateSteel> : stages.progression1,
+	<ore:densePlatingSteel> : stages.progression1,
+	<ore:dustWheat> : stages.progression1
 };
 
 for oreBlockEntry in extraOreDicts
