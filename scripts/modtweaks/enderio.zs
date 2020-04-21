@@ -46,6 +46,45 @@ mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:6>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:ingotSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
 
+//remove endercore slabs to bricks recipes
+val slabstoblocks =
+[
+"endercore:slabwooddarkoak_to_planks",
+"endercore:slabwoodbirch_to_planks",
+"endercore:slabsandstone_to_sandstone",
+"endercore:slabwoodacacia_to_planks",
+"endercore:slabquartz_to_quartz_block",
+"endercore:slabstonebricks_to_stonebrick",
+"endercore:slabwoodoak_to_planks",
+"endercore:slabwoodjungle_to_planks",
+"endercore:slabstone_to_stone",
+"endercore:slabbricks_to_brick_block",
+"endercore:slabnetherbrick_to_nether_brick",
+"endercore:slabwoodspruce_to_planks",
+"endercore:slabcobblestone_to_cobblestone"
+] as string[];
+
+for recipe in slabstoblocks
+{
+	recipes.removeByRecipeName(recipe);
+}
+
+//remove dyes
+val dyes =
+[
+<enderio:item_material:48>,
+<enderio:item_material:49>,
+<enderio:item_material:50>,
+<enderio:item_material:51>,
+<enderio:item_material:67>,
+<enderio:item_material:52>
+] as crafttweaker.item.IIngredient[];
+
+for dye in dyes
+{
+	mods.jei.JEI.removeAndHide(dye);
+}
+
 //Add Conductive/Redstone Alloy Dust crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustConductiveIron>.firstItem), <ore:dustConductiveIron>.firstItem, [<ore:dustIron>, <ore:dustRedstone>]); //Conductive Iron Dust
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustRedstoneAlloy>.firstItem), <ore:dustRedstoneAlloy>.firstItem, [<ore:dustIron>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]); //Redstone Alloy Dust
