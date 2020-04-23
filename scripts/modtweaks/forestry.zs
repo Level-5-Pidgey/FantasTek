@@ -18,7 +18,7 @@ val depreciatedForestry = [
 
 for depreciated in depreciatedForestry
 {
-	mods.jei.JEI.removeAndHide(depreciated);
+	scripts.helpers.unstageAndHide(depreciated);
 }
 
 //Add more items that produce honey when squeezed
@@ -63,7 +63,7 @@ for metallicGrainsDustCraft in metallicGrainsDusts
 }
 
 //Add Diamond Fragment Crafting to Carpenter
-mods.forestry.Carpenter.addRecipe(<morebees:diamondfragment>, [[<morebees:graincrystal>, <morebees:graincrystal>, <morebees:graincrystal>],[null, <morebees:graincrystal>, null],[<morebees:graincrystal>, <morebees:graincrystal>, <morebees:graincrystal>]], 80, <liquid:seed.oil> * 250);
+mods.forestry.Carpenter.addRecipe(<morebees:diamondfragment>, [[<morebees:graincrystal>, <morebees:graincrystal>, <morebees:graincrystal>],[null, <morebees:graincrystal>, null],[<morebees:graincrystal>, <morebees:graincrystal>, <morebees:graincrystal>]], 80, <liquid:water> * 500);
 
 //ExtendedCrafting recipes for forestry Machines in tier1
 val machineRecipes = {
@@ -78,5 +78,10 @@ for key, value in machineRecipes {
 	recipes.remove(key);
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
+
+//Make Worktable recipe cheaper
+recipes.remove(<forestry:worktable>);
+recipes.addShaped(scripts.helpers.createRecipeName(<forestry:worktable>), <forestry:worktable>, [[<ore:book>], [<ore:craftingTableWood>]]);
+
 
 print("### Forestry Init Complete ###");

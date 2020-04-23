@@ -30,9 +30,4 @@ for obsidianBlock in <ore:obsidian>.items
   mods.appliedenergistics2.Grinder.addRecipe(<ore:dustObsidian>.firstItem, obsidianBlock, 6);
 }
 
-for electrotineIngot in <ore:ingotElectrotineAlloy>.items
-{
-  mods.appliedenergistics2.Grinder.addRecipe(<ore:dustElectrotine>.firstItem, electrotineIngot, 2);
-}
-
 print("### AE2 Init Complete ###");

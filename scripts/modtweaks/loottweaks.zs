@@ -61,6 +61,14 @@ reliquary_flightstaff.removeEntry("xreliquary:rending_gale");
 //Remove Interdiction Torch from reliquary injection
 val nether_bridge_reliquary = LootTables.getTable("xreliquary:inject/chests/nether_bridge").getPool("main");
 nether_bridge_reliquary.removeEntry("xreliquary:interdiction_torch");
+nether_bridge_reliquary.removeEntry("xreliquary:void_tear");
+nether_bridge_reliquary.removeEntry("xreliquary:salamander_eye");
+
+//Remove some Treasures and Potions from the Nether Bridge Loot Table
+LootTables.getTable("minecraft:chests/nether_bridge").removePool("bountifulbaubles_nether_bridge_2");
+
+//Remove Void Tears from the Stronghold Corridor Loot Table
+LootTables.getTable("xreliquary:injectchests/stronghold_crossing").getPool("main").removeEntry("xreliquary:shears_of_winter");
 
 val simple_dungeon = LootTables.getTable("minecraft:chests/simple_dungeon").getPool("pool1");
 
@@ -218,8 +226,8 @@ val botaniaCosmetics as int[][string] = {
 };
 
 for lootTable, metadataIntegerArray in botaniaCosmetics {
-	var lootPool = LootTables.getTable(lootTable).addPool("cosmetics", 1, 3, 0, 1);
-	lootPool.addEmptyEntry(40, "emptyCosmetic");
+	var lootPool = LootTables.getTable(lootTable).addPool("cosmetics", 1, 2, 0, 1);
+	lootPool.addEmptyEntry(60, "emptyCosmetic");
 
 	for metadataInteger in metadataIntegerArray
 	{
@@ -277,15 +285,15 @@ championPool.getPool("tier#4").addItemEntryHelper(<contenttweaker:champion_token
 //Remove Bountiful Baubles Nether Loot Table
 LootTables.getTable("minecraft:chests/nether_bridge").removePool("bountifulbaubles_nether_bridge");
 
-//Add Reliquary Treasures to Dungeon Loot
+//Add Treasures to Dungeon Loot
 val dungeonBaublesAndTreasures as crafttweaker.item.IItemStack[][string] = {
 	"minecraft:chests/abandoned_mineshaft" : [<xreliquary:lantern_of_paranoia>],
-	"minecraft:chests/desert_pyramid" : [<xreliquary:midas_touchstone>, <bountifulbaubles:trinketmagiclenses>],
+	"minecraft:chests/desert_pyramid" : [<xreliquary:midas_touchstone>, <bountifulbaubles:trinketmagiclenses>, <contenttweaker:strange_treasure>],
 	"minecraft:chests/end_city_treasure" : [<xreliquary:rod_of_lyssa>, <xreliquary:ender_staff>, <xreliquary:destruction_catalyst>, <bountifulbaubles:wormholemirror>],
 	"minecraft:chests/igloo_chest" : [<xreliquary:ice_magus_rod>, <xreliquary:glacial_staff>],
-	"minecraft:chests/jungle_temple" : [<xreliquary:serpent_staff>, <xreliquary:harvest_rod>, <bountifulbaubles:magicmirror>],
+	"minecraft:chests/jungle_temple" : [<xreliquary:serpent_staff>, <xreliquary:harvest_rod>, <bountifulbaubles:magicmirror>, <contenttweaker:strange_treasure>],
 	"minecraft:chests/nether_bridge" : [<xreliquary:salamander_eye>, <xreliquary:pyromancer_staff>, <xreliquary:infernal_tear>, <xreliquary:infernal_claws>, <xreliquary:infernal_chalice>, <bountifulbaubles:trinketobsidianskull>],
-	"minecraft:chests/simple_dungeon" : [<xreliquary:phoenix_down>, <xreliquary:magicbane>, <xreliquary:gun_part>, <xreliquary:gun_part:1>, <xreliquary:gun_part:2>, <bountifulbaubles:shieldcobalt>],
+	"minecraft:chests/simple_dungeon" : [<xreliquary:phoenix_down>, <xreliquary:magicbane>, <xreliquary:gun_part>, <xreliquary:gun_part:1>, <xreliquary:gun_part:2>, <bountifulbaubles:shieldcobalt>, <contenttweaker:strange_treasure>],
 	"minecraft:chests/village_blacksmith" : [<bountifulbaubles:amuletsinpride>, <bountifulbaubles:amuletsingluttony>],
 	"minecraft:chests/woodland_mansion" : [<xreliquary:sojourner_staff>, <bountifulbaubles:trinketbrokenheart>],
 	"astralsorcery:chest_shrine" : [<xreliquary:mercy_cross>, <xreliquary:kraken_shell>, <xreliquary:angelic_feather>,
@@ -295,7 +303,7 @@ val dungeonBaublesAndTreasures as crafttweaker.item.IItemStack[][string] = {
 
 for lootTable, dungeonTreasures in dungeonBaublesAndTreasures {
 	var lootPool = LootTables.getTable(lootTable).addPool("treasure_accessories", 1, 1, 0, 1);
-	lootPool.addEmptyEntry(40, "emptyTreasure");
+	lootPool.addEmptyEntry(60, "emptyTreasure");
 
 	for dungeonTreasure in dungeonTreasures
 	{

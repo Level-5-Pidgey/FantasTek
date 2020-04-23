@@ -212,8 +212,14 @@ val StageLessItems = [
 	<contenttweaker:honey_sandwich>,
 	<contenttweaker:fairy_bread>,
 	<contenttweaker:chocolate>,
+	<contenttweaker:chicken_bucket>,
 	<magneticraft:crafting:2>,
-	<thermalfoundation:material:657>
+	<thermalfoundation:material:657>,
+	<forestry:kit_pickaxe>,
+	<forestry:kit_shovel>,
+	<forestry:bronze_pickaxe>,
+	<forestry:bronze_shovel>,
+	<enderio:item_material>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

@@ -72,20 +72,20 @@ for recipe in slabstoblocks
 //remove dyes
 val dyes =
 [
-<enderio:item_material:48>,
-<enderio:item_material:49>,
-<enderio:item_material:50>,
-<enderio:item_material:51>,
-<enderio:item_material:67>,
-<enderio:item_material:52>
-] as crafttweaker.item.IIngredient[];
+	<enderio:item_material:48>,
+	<enderio:item_material:49>,
+	<enderio:item_material:50>,
+	<enderio:item_material:51>,
+	<enderio:item_material:67>,
+	<enderio:item_material:52>
+] as crafttweaker.item.IItemStack[];
 
 for dye in dyes
 {
-	mods.jei.JEI.removeAndHide(dye);
+	scripts.helpers.unstageAndHide(dye);
 }
 
-//Add Conductive/Redstone Alloy Dust crafting
+//Add Alloy Dust crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustConductiveIron>.firstItem), <ore:dustConductiveIron>.firstItem, [<ore:dustIron>, <ore:dustRedstone>]); //Conductive Iron Dust
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustRedstoneAlloy>.firstItem), <ore:dustRedstoneAlloy>.firstItem, [<ore:dustIron>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]); //Redstone Alloy Dust
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustPulsatingIron>.firstItem), <ore:dustPulsatingIron>.firstItem, [<ore:dustIron>, <ore:dustEnder>]); //Pulsating Iron Dust
@@ -100,6 +100,5 @@ mods.enderio.AlloySmelter.addRecipe(<ore:ingotCrudeSteel>.firstItem * 2, [<ore:i
 //Crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:plateSteel>.firstItem), <ore:plateSteel>.firstItem, [<embers:tinker_hammer>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]);
 recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearSteel>.firstItem), <ore:gearSteel>.firstItem, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
-
 
 print("### EnderIO Init Complete ###");

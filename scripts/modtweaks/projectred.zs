@@ -10,7 +10,7 @@ val unusedItems =
 
 for item in unusedItems
 {
-	mods.jei.JEI.removeAndHide(item);
+	scripts.helpers.unstageAndHide(item);
 }
 
 //Replace Non-OreDicted Redstone Alloy Ingots with properly oreDicted ones.
@@ -31,6 +31,16 @@ for item in <ore:ingotRedstoneAlloy>.items
 	mods.bloodmagic.BloodAltar.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, item, 0, 100, 20, 20);
 	scripts.mmhelper.AddEmberAssemblyRecipe(scripts.helpers.createRecipeName(<ore:ingotElectrotineAlloy>.firstItem) ~ "_" ~ count, <ore:ingotElectrotineAlloy>.firstItem, [item], 800);
 	mods.thaumcraft.Crucible.registerRecipe(scripts.helpers.createRecipeName(<ore:ingotElectrotineAlloy>.firstItem) ~ "_" ~ count, "FIRSTSTEPS", <ore:ingotElectrotineAlloy>.firstItem, item, [<aspect:potentia> * 8]);
+}
+
+//Remove Furnace Electrotine Recipe
+furnace.remove(<ore:ingotElectrotineAlloy>.firstItem, <projectred-core:resource_item:252>);
+
+//Grind Electrotine Ingots into Dust
+
+for electrotineIngot in <ore:ingotElectrotineAlloy>.items
+{
+  mods.appliedenergistics2.Grinder.addRecipe(<ore:dustElectrotine>.firstItem * 3, electrotineIngot, 2);
 }
 
 print("### ProjectRed Init Complete ###");

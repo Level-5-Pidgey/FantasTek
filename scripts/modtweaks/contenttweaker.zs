@@ -175,16 +175,22 @@ for foodItem, author in foodCredits {
 }
 
 //Crafting Food Items
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:vegemite>), <contenttweaker:vegemite>, [<ore:itemSalt>, <ore:itemSalt>, <natura:materials:1>]); //Vegemite
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:vegemite>) ~ "_2", <contenttweaker:vegemite>, [<ore:itemSalt>, <ore:itemSalt>, <ore:itemSalt>, <appliedenergistics2:material:4>]); //Vegemite Alternate
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:vegemite_sandwich>), <contenttweaker:vegemite_sandwich>, [<contenttweaker:vegemite>, <minecraft:bread>]); //Vegemite Sandwich
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:sushi>), <contenttweaker:sushi>, [<ore:fish>, <biomesoplenty:seaweed>, <ore:plantWildrice>]); //Sushi
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:steak_and_chips>), <contenttweaker:steak_and_chips>, [<minecraft:cooked_beef>, <minecraft:baked_potato>, <ore:itemSalt>]); //Steak and Chips
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:meat_pie>), <contenttweaker:meat_pie>, [<ore:listAllmeatcooked>, <ore:listAllmeatcooked>, <ore:foodFlour> | <ore:dustWheat>, <ore:itemSalt>]); //Meat Pie
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:honey_sandwich>), <contenttweaker:honey_sandwich>, [<ore:dropHoney> | <minecraftfuture:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>]); //Honey Sandwich
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:fairy_bread>), <contenttweaker:fairy_bread>, [<ore:dye>, <ore:dye>, <minecraft:sugar>, <minecraft:bread>]); //fairy_bread
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:chocolate>), <contenttweaker:chocolate>, [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")]); //chocolate
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:chicken_bucket>), <contenttweaker:chicken_bucket>, [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>]); //chicken_bucket
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:pocky> * 8), <contenttweaker:pocky>, [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]); //pocky
+val foodRecipes = {
+	<contenttweaker:vegemite> : [<ore:itemSalt>, <ore:itemSalt>, <natura:materials:1>],
+	<contenttweaker:vegemite_sandwich> : [<contenttweaker:vegemite>, <minecraft:bread>],
+	<contenttweaker:sushi> : [<ore:fish>, <biomesoplenty:seaweed>, <ore:plantWildrice>],
+	<contenttweaker:steak_and_chips> : [<minecraft:cooked_beef>, <minecraft:baked_potato>, <ore:itemSalt>],
+	<contenttweaker:meat_pie> : [<ore:listAllmeatcooked>, <ore:listAllmeatcooked>, <ore:foodFlour> | <ore:dustWheat>, <ore:itemSalt>],
+	<contenttweaker:honey_sandwich> : [<ore:dropHoney> | <minecraftfuture:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>],
+	<contenttweaker:fairy_bread> : [<ore:dye>, <ore:dye>, <minecraft:sugar>, <minecraft:bread>],
+	<contenttweaker:chocolate> * 2 : [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")],
+	<contenttweaker:chicken_bucket> : [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>],
+	<contenttweaker:pocky> * 8 : [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+
+for key, value in foodRecipes {
+	recipes.remove(key.withAmount(1));
+	recipes.addShapeless(scripts.helpers.createRecipeName(key.withAmount(1)), key, value);
+}
 
 print("### ContentTweaker recipes Init Complete ###");

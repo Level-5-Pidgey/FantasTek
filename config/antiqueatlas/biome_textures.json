@@ -88,6 +88,7 @@
     "biomesoplenty:woodland": "DENSE_FOREST",
     "biomesoplenty:xeric_shrubland": "SAVANNA",
     "iceandfire:glacier": "SNOW",
+    "jeid:error_biome": "PLAINS",
     "minecraft:beaches": "SHORE",
     "minecraft:birch_forest": "BIRCH",
     "minecraft:birch_forest_hills": "BIRCH_HILLS",

@@ -21,7 +21,7 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<ore:ingotBlackIron>.first
 mods.advancedrocketry.PlatePresser.addRecipe(<extendedcrafting:material:2> * 2, <ore:blockBlackIron>.firstItem);
 
 //Hide Tier 1 Component
-mods.jei.JEI.removeAndHide(<extendedcrafting:material:8>);
+scripts.helpers.unstageAndHide(<extendedcrafting:material:8>);
 recipes.remove(<extendedcrafting:material:14>);
 recipes.addShaped("basic_component", <extendedcrafting:material:14>, [[null, <extendedcrafting:material:7>, null],[<ore:gemQuartz>, <extendedcrafting:material:2>, <ore:gemQuartz>], [null, <extendedcrafting:material:7>, null]]);
 

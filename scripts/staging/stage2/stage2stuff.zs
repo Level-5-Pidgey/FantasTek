@@ -73,6 +73,6 @@ val otherItems = [
 
 for item in otherItems
 {
-	 scripts.helpers.setItemAndRecipesStage(item, stages.Locked.stage);
+	scripts.helpers.setItemAndRecipesStage(item, stages.Locked.stage);
 }
 print("### Stage 2 Staging Complete ###");
