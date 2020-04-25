@@ -634,14 +634,14 @@
       "fileDateHash": 609109820,
       "sectionID": 8,
       "individualFingerprints": [
-        1126104228
+        4033633043
       ],
       "status": 1,
       "timestamp": "2020-04-16T04:14:23.2788248Z",
       "lastWriteTimeUtc": "2020-04-16T04:14:21.0832485Z",
       "queryTimestamp": "2020-04-23T09:15:54.2260194Z",
       "fileCount": 1,
-      "fileSize": 457539
+      "fileSize": 498904
     },
     {
       "folderName": "fabric-api-0.4.1+build.245-1.14.jar",
