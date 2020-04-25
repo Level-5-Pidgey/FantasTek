@@ -7,39 +7,21 @@
 			{action:"clear"},
 			{
 				action:"add", CareerLevel:1,
-				buy:
-				{
-					id:"modcurrency:coin",
-					Count:5,
-					Damage:5
+				buy:{
+					id:"contenttweaker:currency_500",
+					Count:{min:4,max:5}
 				},
-				sell:
-				{
+				sell:{
 					id:"minecraft:book",
-					Count:1
+					Count:{min:20,max:30}
 				}
 			},
 			{
 				action:"add", CareerLevel:2,
 				buy:
 				{
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:4
-				},
-				sell:
-				{
-					id:"minecraft:bookshelf",
-					Count:1
-				}
-			},
-			{
-				action:"add", CareerLevel:2,
-				buy:
-				{
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:4
+					id:"contenttweaker:currency_100",
+					Count:4
 				},
 				sell:
 				{
@@ -51,9 +33,8 @@
 				action:"add", CareerLevel:3, chance:0.2,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:6,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:{min:12,max:15}
 				},
 				sell:
 				{
@@ -66,9 +47,8 @@
 				action:"add", CareerLevel:3, chance:0.2,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:5,
-					Damage:5
+					id:"contenttweaker:currency_12500",
+					Count:{min:8,max:10}
 				},
 				sell:
 				{
@@ -81,9 +61,8 @@
 				action:"add", CareerLevel:3, chance:0.2,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:2,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:{min:8,max:12}
 				},
 				sell:
 				{
@@ -96,9 +75,8 @@
 				action:"add", CareerLevel:3, chance:0.2,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:5,
-					Damage:5
+					id:"contenttweaker:currency_12500",
+					Count:{min:4,max:5}
 				},
 				sell:
 				{
@@ -111,9 +89,8 @@
 				action:"add", CareerLevel:4, chance:0.1,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:{min:12,max:15}
 				},
 				sell:
 				{

@@ -159,7 +159,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:plastic> : stages.Locked,
 	<liquid:platinum> : stages.Locked,
 	<liquid:poison> : stages.progression1,
-	<liquid:potato_soup> : stages.Locked,
+	<liquid:potato_soup> : stages.progression1,
 	<liquid:potion> : stages.progression1,
 	<liquid:potion_lingering> : stages.progression1,
 	<liquid:potion_splash> : stages.progression1,
@@ -186,7 +186,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:soularium> : stages.Locked,
 	<liquid:starmetal> : stages.Locked,
 	<liquid:steam> : stages.Locked,
-	<liquid:steel> : stages.progression1,
+	<liquid:steel> : stages.Locked,
 	<liquid:stone> : stages.progression1,
 	<liquid:sulfuricacid> : stages.Locked,
 	<liquid:syrup> : stages.Locked,
@@ -213,6 +213,14 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:if.pink_slime> : stages.Locked,
 	<liquid:if.ore_fluid_raw> : stages.Locked,
 	<liquid:if.ore_fluid_fermented> : stages.Locked,
+	<liquid:vivid_alloy> : stages.Locked,
+	<liquid:energetic_silver> : stages.Locked,
+	<liquid:crystalline_pink_slime> : stages.Locked,
+	<liquid:stellar_alloy> : stages.Locked,
+	<liquid:melodic_alloy> : stages.Locked,
+	<liquid:crystalline_alloy> : stages.Locked,
+	<liquid:crude_steel> : stages.progression1,
+	<liquid:pure_water> : stages.progression1,
 	<liquid:if.protein> : stages.Locked
 };
 

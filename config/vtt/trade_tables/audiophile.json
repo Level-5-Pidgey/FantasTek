@@ -8,8 +8,7 @@
 			{
 				action:"add", CareerLevel:1,
 				buy:{
-					id:"modcurrency:coin",
-					Damage:4,
+					id:"contenttweaker:currency_100",
 					Count:{min:3,max:4}
 				},
 				sell:{
@@ -20,14 +19,8 @@
 			{
 				action:"add", CareerLevel:1,
 				buy:{
-					id:"modcurrency:banknote",
-					Damage:3,
+					id:"contenttweaker:currency_2500",
 					Count:1
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Damage:4,
-					Count:{min:7,max:9}
 				},
 				sell:{
 					id:"minecraft:jukebox",
@@ -37,14 +30,8 @@
 			{
 				action:"add", CareerLevel:2,
 				buy:{
-					id:"modcurrency:coin",
-					Damage:4,
+					id:"contenttweaker:currency_100",
 					Count:{min:2,max:3}
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Damage:2,
-					Count:{min:3,max:5}
 				},
 				sell:{
 					id:"randomthings:soundbox",
@@ -54,14 +41,9 @@
 			{
 				action:"add", CareerLevel:3,
 				buy:{
-					id:"modcurrency:banknote",
+					id:"contenttweaker:currency_500",
 					Damage:3,
 					Count:1
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Damage:4,
-					Count:{min:1,max:3}
 				},
 				sell:{
 					id:"randomthings:portablesounddampener",
@@ -71,14 +53,8 @@
 			{
 				action:"add", CareerLevel:3,
 				buy:{
-					id:"modcurrency:banknote",
-					Damage:2,
-					Count:{min:2,max:3}
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Damage:4,
-					Count:{min:6,max:9}
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:{
 					id:"randomthings:sounddampener",

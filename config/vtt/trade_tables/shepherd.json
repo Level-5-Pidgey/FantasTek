@@ -6,12 +6,11 @@
 		Recipes:[
 			{action:"clear"},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:1,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
+					id:"contenttweaker:currency_100",
+					Count:9
 				},
 				sell:
 				{
@@ -20,12 +19,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
+					id:"contenttweaker:currency_500",
+					Count:4
 				},
 				sell:
 				{
@@ -34,17 +32,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
-				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:1
 				},
 				sell:
 				{
@@ -54,17 +46,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
-				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:1
 				},
 				sell:
 				{
@@ -74,17 +60,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
-				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:1
 				},
 				sell:
 				{
@@ -94,17 +74,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
-				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:5
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -114,17 +88,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:1
 				},
 				sell:
 				{
@@ -134,17 +102,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
-				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:5
+					id:"contenttweaker:currency_2500",
+					Count:1
 				},
 				sell:
 				{
@@ -154,12 +116,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -169,19 +130,12 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:7
 				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:4
-				},
-
 				sell:
 				{
 					id:"minecraft:wool",
@@ -190,12 +144,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -205,12 +158,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -220,12 +172,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -235,12 +186,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -250,17 +200,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
-				},
-				buyB: {
-					id:"modcurrency:coin",
-					Count:2,
-					Damage:4
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -270,18 +214,12 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
-				buyB: {
-				id:"modcurrency:coin",
-				Count:2,
-				Damage:4
-			},
 				sell:
 				{
 					id:"minecraft:wool",
@@ -290,12 +228,11 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:6
 				},
 				sell:
 				{
@@ -306,5 +243,4 @@
 			}
 		]
 	}
-
 }

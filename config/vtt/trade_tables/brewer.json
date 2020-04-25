@@ -8,14 +8,8 @@
             {
                 action:"add", CareerLevel:1,
                 buy:{
-                    id:"modcurrency:coin",
-                    Count:1,
-                    Damage:1
-                },
-                buyB:{
-                    id:"modcurrency:coin",
-                    Count:2,
-                    Damage:1
+                    id:"contenttweaker:currency_4",
+                    Count:{min:3,max:5}
                 },
                 sell:{
                     id:"minecraft:mycelium",
@@ -25,21 +19,19 @@
             {
                 action:"add", CareerLevel:1,
                 buy:{
-                    id:"modcurrency:coin",
-                    Count:3,
-                    Damage:1
+                    id:"contenttweaker:currency_4",
+                    Count:{min:3,max:5}
                 },
                 sell:{
                     id:"minecraft:sugar",
-                    Count:1
+                    Count:{min:5,max:10}
                 }
             },
             {
                 action:"add", CareerLevel:1,
                 buy:{
-                    id:"modcurrency:banknote",
-                    Count:1,
-                    Damage:1
+                    id:"contenttweaker:currency_500",
+                    Count:1
                 },
                 sell:{
                     id:"minecraft:rabbit_foot",
@@ -49,9 +41,8 @@
             {
                 action:"add", CareerLevel:2,
                 buy:{
-                    id:"modcurrency:coin",
-                    Count:3,
-                    Damage:3
+                    id:"contenttweaker:currency_20",
+                    Count:4
                 },
                 sell:{
                     id:"minecraft:spider_eye",
@@ -61,31 +52,19 @@
             {
                 action:"add", CareerLevel:2,
                 buy:{
-                    id:"modcurrency:coin",
-                    Count:3,
-                    Damage:4
-                },
-                buyB:{
-                    id:"modcurrency:coin",
-                    Count:1,
-                    Damage:2
+                    id:"contenttweaker:currency_100",
+                    Count:3
                 },
                 sell:{
                     id:"minecraft:magma_cream",
-                    Count:{min:1,max:2}
+                    Count:1
                 }
             },
             {
                 action:"add", CareerLevel:3,
                 buy:{
-                    id:"modcurrency:banknote",
-                    Count:1,
-                    Damage:1
-                },
-                buyB:{
-                    id:"modcurrency:coin",
-                    Count:3,
-                    Damage:2
+                    id:"contenttweaker:currency_500",
+                    Count:1
                 },
                 sell:{
                     id:"minecraft:speckled_melon",

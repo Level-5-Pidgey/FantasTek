@@ -151,7 +151,7 @@ var ticMatStages as mods.zenstages.Stage[string] =
 	"starmetal" : stages.AstralSorcery1,
 	"livingwood" : stages.Botania1,
 	"livingrock" : stages.Botania1,
-	"manasteel" : stages.Botania2,
+	"manasteel" : stages.Botania1,
 	"elementium" : stages.Botania2,
 	"terrasteel" : stages.Botania2,
 	"manastring" : stages.Botania1,

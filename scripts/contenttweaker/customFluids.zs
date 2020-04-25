@@ -11,6 +11,9 @@ liquidLubricant.register();
 var troll_marrow = VanillaFactory.createFluid("troll_marrow", Color.fromHex("e3dbaa"));
 troll_marrow.register();
 
+var pure_water = VanillaFactory.createFluid("pure_water", Color.fromHex("5dc8d4"));
+pure_water.register();
+
 var moltenAwakenedDraconium = mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Awakened Draconium").setColor(Color.fromHex("ff4917")).build();
 var liquid_molten_AwakenedDraconium = moltenAwakenedDraconium.registerPart("molten").getData();
 liquid_molten_AwakenedDraconium.addDataValue("density", "2000");

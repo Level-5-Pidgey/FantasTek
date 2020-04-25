@@ -1,37 +1,22 @@
 [
   {
-    "content": "modcurrency:coin:3",
-    "unitWorth": 24,
+    "content": "contenttweaker:currency_4",
+    "unitWorth": 4,
     "weight": 100
   },
   {
-    "content": "modcurrency:coin:4",
-    "unitWorth": 99,
+    "content": "contenttweaker:currency_20",
+    "unitWorth": 20,
     "weight": 100
   },
   {
-    "content": "modcurrency:banknote:1",
-    "unitWorth": 499,
+    "content": "contenttweaker:currency_100",
+    "unitWorth": 100,
     "weight": 100
   },
   {
-    "content": "modcurrency:banknote:2",
-    "unitWorth": 999,
-    "weight": 100
-  },
-  {
-    "content": "modcurrency:banknote:3",
-    "unitWorth": 1999,
-    "weight": 100
-  },
-  {
-    "content": "modcurrency:banknote:4",
-    "unitWorth": 4999,
-    "weight": 100
-  },
-  {
-    "content": "modcurrency:banknote:5",
-    "unitWorth": 9999,
+    "content": "contenttweaker:currency_500",
+    "unitWorth": 500,
     "weight": 100
   }
 ]

@@ -9,9 +9,8 @@
 				action:"add", CareerLevel:3,
 				buy:
 				{
-					id:"modcurrency:banknote",
-					Count:{min:3,max:5},
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:{min:6,max:8}
 				},
 				sell:
 				{
@@ -26,33 +25,31 @@
 				action:"add", CareerLevel:1,
 				buy:
 				{
-					id:"modcurrency:coin",
-					Count:3
+					id:"contenttweaker:currency_4",
+					Count:{min:8,max:10}
 				},
 				sell:
 				{
 					id:"minecraft:paper",
-					Count:1
+					Count:16
 				}
 			},
 			{
 				action:"add", CareerLevel:1,
 				buy:{
-					id:"modcurrency:coin",
-					Count:1,
-					Damage:4
+					id:"contenttweaker:currency_100",
+					Count:{min:4,max:5}
 				},
 				sell:{
 					id:"minecraft:book",
-					Count:1
+					Count:{min:4,max:6}
 				}
 			},
 			{
 				action:"add", CareerLevel:2,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:4
 				},
 				sell:{
 					id:"inspirations:north_compass",
@@ -62,9 +59,8 @@
 			{
 				action:"add", CareerLevel:2,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:{min:4,max:5}
 				},
 				sell:{
 					id:"minecraft:compass",

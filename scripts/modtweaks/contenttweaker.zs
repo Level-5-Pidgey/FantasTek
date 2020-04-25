@@ -128,7 +128,6 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecip
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecipeName(<contenttweaker:salis_mundus_air>), "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_air>, [[null, scripts.helpers.T1MagicAirIngredients[0], null],[scripts.helpers.T1MagicAirIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicAirIngredients[2]],[null, scripts.helpers.T1MagicAirIngredients[3], null]]);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecipeName(<contenttweaker:salis_mundus_earth>), "FIRSTSTEPS", 5, [], <contenttweaker:salis_mundus_earth>, [[null, scripts.helpers.T1MagicEarthIngredients[0], null],[scripts.helpers.T1MagicEarthIngredients[1], <thaumcraft:salis_mundus>, scripts.helpers.T1MagicEarthIngredients[2]],[null, scripts.helpers.T1MagicEarthIngredients[3], null]]);
 
-
 //Add elemental crystal crafting
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_air>), <contenttweaker:astral_crystal_air>, 200, 80,
 [
@@ -191,6 +190,29 @@ val foodRecipes = {
 for key, value in foodRecipes {
 	recipes.remove(key.withAmount(1));
 	recipes.addShapeless(scripts.helpers.createRecipeName(key.withAmount(1)), key, value);
+}
+
+//Currency Combination/Splitting Recipes
+val currencyItems =
+[
+	<contenttweaker:currency_4>,
+	<contenttweaker:currency_20>,
+	<contenttweaker:currency_100>,
+	<contenttweaker:currency_500>,
+	<contenttweaker:currency_2500>,
+	<contenttweaker:currency_12500>
+] as crafttweaker.item.IItemStack[];
+
+for i, item in currencyItems {
+	val j as int = i - 1;
+
+	if (j >= 0)
+	{
+		recipes.addShapeless(scripts.helpers.createRecipeName(currencyItems[i]), currencyItems[i], [currencyItems[j], currencyItems[j], currencyItems[j], currencyItems[j], currencyItems[j]]);
+		mods.thermalexpansion.Factorizer.addRecipeBoth(currencyItems[i], currencyItems[j] * 5);
+	}
+
+	scripts.helpers.AddTooltip(item, ["Intergalactic Currency Format. Can be exchanged for goods and services!", "Will always drop on death if in your inventory.", "Despawns 2 minutes after being dropped on death!", "Careful of Outlaws that might want to steal your creds."]);
 }
 
 print("### ContentTweaker recipes Init Complete ###");

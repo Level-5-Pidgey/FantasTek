@@ -219,7 +219,14 @@ val StageLessItems = [
 	<forestry:kit_shovel>,
 	<forestry:bronze_pickaxe>,
 	<forestry:bronze_shovel>,
-	<enderio:item_material>
+	<enderio:item_material>,
+	<forestry:refractory_wax>,
+	<contenttweaker:currency_4>,
+	<contenttweaker:currency_20>,
+	<contenttweaker:currency_100>,
+	<contenttweaker:currency_500>,
+	<contenttweaker:currency_2500>,
+	<contenttweaker:currency_12500>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

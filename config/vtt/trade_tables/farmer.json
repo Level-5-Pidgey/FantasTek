@@ -6,23 +6,21 @@
 		Recipes:[
 			{action:"clear"},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:{
-					id:"modcurrency:coin",
-					Count:3,
-					Damage:4
+					id:"contenttweaker:currency_100",
+					Count:3
 				},
 				sell:{
 					id:"minecraft:wheat",
-					Count:{min:40,max:60}
+					Count:{min:48,max:56}
 				}
 			},
 			{
-				action:"add", CareerLevel:2,
+				action:"add", CareerLevel:2, chance:0.7,
 				buy:{
-					id:"modcurrency:coin",
-					Count:8,
-					Damage:2
+					id:"contenttweaker:currency_20",
+					Count:4
 				},
 				buyB:{
 					id:"minecraft:bucket",
@@ -36,45 +34,34 @@
 			{
 				action:"add", CareerLevel:3,
 				buy:{
-					id:"modcurrency:coin",
-					Count:9,
-					Damage:4
+					id:"contenttweaker:currency_100",
+					Count:{min:9,max:10}
 				},
-				sell:{
-					id:"minecraft:brown_mushroom",
+				sell:
+				{
+					id: [
+							"minecraft:brown_mushroom",
+							"minecraft:red_mushroom",
+						],
 					Count:{min:12,max:20}
 				}
 			},
 			{
-				action:"add", CareerLevel:3,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:{
-					id:"modcurrency:coin",
-					Count:9,
-					Damage:4
-				},
-				sell:{
-					id:"minecraft:red_mushroom",
-					Count:{min:12,max:20}
-				}
-			},
-			{
-				action:"add", CareerLevel:1,
-				buy:{
-					id:"modcurrency:coin",
-					Count:1,
-					Damage:4
+					id:"contenttweaker:currency_20",
+					Count:{min:9,max:11}
 				},
 				sell:{
 					id:"minecraft:carrot",
-					Count:{min:7,max:9}
+					Count:{min:12,max:24}
 				}
 			},
 			{
-				action:"add", CareerLevel:1,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:{
-					id:"modcurrency:coin",
-					Count:1,
-					Damage:4
+					id:"contenttweaker:currency_100",
+					Count:1
 				},
 				sell:{
 					id:"minecraft:potato",
@@ -82,11 +69,10 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:2,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:{
-					id:"modcurrency:coin",
-					Count:2,
-					Damage:2
+					id:"contenttweaker:currency_20",
+					Count:2
 				},
 				sell:{
 					id:"minecraft:melon",
@@ -94,74 +80,54 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:2,
+				action:"add", CareerLevel:2, chance:0.4,
 				buy:{
-					id:"modcurrency:coin",
-					Count:1,
-					Damage:4
+					id:"contenttweaker:currency_100",
+					Count:1
 				},
 				sell:{
 					id:"minecraft:pumpkin",
-					Count:4
+					Count:{min:3,max:5}
 				}
 			},
 			{
 				action:"add", CareerLevel:4,
 				buy:{
-					id:"modcurrency:coin",
-					Count:1,
-					Damage:5
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Count:{min:1,max:3},
-					Damage:2
+					id:"contenttweaker:currency_100",
+					Count:{min:4,max:5}
 				},
 				sell:{
 					id:"minecraft:apple",
-					Count:5
+					Count:{min:9,max:11}
 				}
 			},
 			{
 				action:"add", CareerLevel:4,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:5
+					id:"contenttweaker:currency_500",
+					Count:{min:3,max:5}
 				},
 				sell:{
 					id:"minecraft:golden_carrot",
-					Count:2
+					Count:4
 				}
 			},
 			{
 				action:"add", CareerLevel:5,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:4
-				},
-				buyB:{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:2
+					id:"contenttweaker:currency_500",
+					Count:{min:15,max:20}
 				},
 				sell:{
 					id:"minecraft:golden_apple",
-					Count:2
+					Count:{min:1,max:3}
 				}
 			},
 			{
 				action:"add", CareerLevel:6,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:4,
-					Damage:5
-				},
-				buyB:{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:3
+					id:"contenttweaker:currency_2500",
+					Count:{min:15,max:19}
 				},
 				sell:{
 					id:"minecraft:golden_apple",
@@ -172,9 +138,8 @@
 			{
 				action:"add", CareerLevel:6,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:5,
-					Damage:5
+					id:"contenttweaker:currency_12500",
+					Count:4,
 				},
 				sell:{
 					id:"tconstruct:spaghetti",

@@ -8,9 +8,8 @@
 			{
 				action:"add", CareerLevel:1,
 				buy:{
-					id:"modcurrency:coin",
-					Count:{min:8,max:12},
-					Damage:2
+					id:"contenttweaker:currency_20",
+					Count:{min:4,max:5}
 				},
 				sell:{
 					id:"minecraft:leather",
@@ -20,9 +19,8 @@
 			{
 				action:"add", CareerLevel:2,
 				buy:{
-					id:"modcurrency:coin",
-					Count:4,
-					Damage:4
+					id:"contenttweaker:currency_100",
+					Count:4
 				},
 				sell:{
 					id:"minecraft:leather_helmet",
@@ -32,14 +30,8 @@
 			{
 				action:"add", CareerLevel:2,
 				buy:{
-					id:"modcurrency:coin",
-					Count:7,
-					Damage:4
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Count:2,
-					Damage:2
+					id:"contenttweaker:currency_100",
+					Count:7
 				},
 				sell:{
 					id:"minecraft:leather_chestplate",
@@ -49,14 +41,8 @@
 			{
 				action:"add", CareerLevel:2,
 				buy:{
-					id:"modcurrency:coin",
-					Count:6,
-					Damage:4
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_100",
+					Count:6
 				},
 				sell:{
 					id:"minecraft:leather_leggings",
@@ -66,14 +52,8 @@
 			{
 				action:"add", CareerLevel:2,
 				buy:{
-					id:"modcurrency:coin",
-					Count:3,
-					Damage:4
-				},
-				buyB:{
-					id:"modcurrency:coin",
-					Count:6,
-					Damage:2
+					id:"contenttweaker:currency_100",
+					Count:4
 				},
 				sell:{
 					id:"minecraft:leather_boots",
@@ -83,9 +63,8 @@
 			{
 				action:"add", CareerLevel:4, chance:0.25,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:1,
-					Damage:4
+					id:"contenttweaker:currency_2500",
+					Count:4
 				},
 				sell:{
 					id:"minecraft:leather_helmet",
@@ -96,9 +75,8 @@
 			{
 				action:"add", CareerLevel:4, chance:0.25,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_2500",
+					Count:4
 				},
 				sell:{
 					id:"minecraft:leather_chestplate",
@@ -109,9 +87,8 @@
 			{
 				action:"add", CareerLevel:4, chance:0.25,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_2500",
+					Count:4
 				},
 				sell:{
 					id:"minecraft:leather_leggings",
@@ -122,9 +99,8 @@
 			{
 				action:"add", CareerLevel:4, chance:0.25,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_2500",
+					Count:4
 				},
 				sell:{
 					id:"minecraft:leather_boots",
@@ -135,9 +111,8 @@
 			{
 				action:"add", CareerLevel:3,
 				buy:{
-					id:"modcurrency:coin",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_20",
+					Count:7
 				},
 				sell:{
 					id:"minecraft:flint",
@@ -147,13 +122,12 @@
 			{
 				action:"add", CareerLevel:3,
 				buy:{
-					id:"modcurrency:banknote",
-					Count:3,
-					Damage:2
+					id:"contenttweaker:currency_2500",
+					Count:1
 				},
 				sell:{
 					id:"minecraft:rabbit_hide",
-					Count:4
+					Count:{min:4,max:6}
 				}
 			}
 		]

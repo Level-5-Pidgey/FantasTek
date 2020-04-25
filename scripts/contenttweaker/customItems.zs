@@ -218,3 +218,23 @@ for foodName, foodRestorationArray in foodStrings {
 
 	foodItem.register();
 }
+
+//Currency Items
+var currency_4 = VanillaFactory.createItem("currency_4");
+currency_4.rarity = "UNCOMMON";
+currency_4.register();
+var currency_20 = VanillaFactory.createItem("currency_20");
+currency_20.rarity = "UNCOMMON";
+currency_20.register();
+var currency_100 = VanillaFactory.createItem("currency_100");
+currency_100.rarity = "RARE";
+currency_100.register();
+var currency_500 = VanillaFactory.createItem("currency_500");
+currency_500.rarity = "RARE";
+currency_500.register();
+var currency_2500 = VanillaFactory.createItem("currency_2500");
+currency_2500.rarity = "EPIC";
+currency_2500.register();
+var currency_12500 = VanillaFactory.createItem("currency_12500");
+currency_12500.rarity = "EPIC";
+currency_12500.register();

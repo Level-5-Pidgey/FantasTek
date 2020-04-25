@@ -59,4 +59,3 @@ static progression6 as Stage = ZenStager.initStage("stage_vi");
 static Locked as Stage = ZenStager.initStage("locked");
 
 //Optional Milestone Stages
-static CurrencyWallet as Stage = ZenStager.initStage("wallet_i");
