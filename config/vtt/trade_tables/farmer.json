@@ -41,7 +41,7 @@
 				{
 					id: [
 							"minecraft:brown_mushroom",
-							"minecraft:red_mushroom",
+							"minecraft:red_mushroom"
 						],
 					Count:{min:12,max:20}
 				}

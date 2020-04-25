@@ -42,7 +42,6 @@
 				action:"add", CareerLevel:3,
 				buy:{
 					id:"contenttweaker:currency_500",
-					Damage:3,
 					Count:1
 				},
 				sell:{
