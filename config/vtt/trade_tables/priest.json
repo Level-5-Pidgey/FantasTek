@@ -5,8 +5,157 @@
 	Offers:{
 		Recipes:[
 			{action:"clear"},
-			{action:"add", buy:{id:"minecraft:emerald",Count:{min:6,max:8}},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:1}
-
+			{
+				action:"add", CareerLevel:1,
+				buy:{
+					id:"contenttweaker:currency_100",
+					Count:{min:5,max:8}
+				},
+				sell:{
+					id:"minecraft:rotten_flesh",
+					Count:{min:12,max:20}
+				}
+			},
+			{
+				action:"add", CareerLevel:1, chance: 0.4
+				buy:{
+					id:"contenttweaker:currency_500",
+					Count:{min:3,max:5}
+				},
+				sell:{
+					id:"minecraft:redstone",
+					Count:{min:6,max:11}
+				}
+			},
+			{
+				action:"add", CareerLevel:2
+				buy:{
+					id:"contenttweaker:currency_500",
+					Count:{min:4,max:5}
+				},
+				sell:{
+					id:"minecraft:gold_ingot",
+					Count:{min:3,max:4}
+				}
+			},
+			{
+				action:"add", CareerLevel:2, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_100",
+					Count:{min:6, max:7}
+				},
+				sell:
+				{
+					id:"minecraft:dye",
+					Damage:4,
+					Count:8
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:2, max:4}
+				},
+				sell:
+				{
+					id:"minecraft:glowstone_dust",
+					Count:{min:24, max:40}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.3,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:{min:2, max:3}
+				},
+				sell:
+				{
+					id:"bountifulbaubles:amuletcross",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.7,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:3, max:5}
+				},
+				sell:
+				{
+					id:"xreliquary:mercy_cross",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:4,
+				buy:
+				{
+					id:"contenttweaker:currency_100",
+					Count:{min:6, max:8}
+				},
+				sell:
+				{
+					id:"minecraft:ender_pearl",
+					Count:{min:1, max:2}
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.8,
+				buy:
+				{
+					id:"contenttweaker:currency_20",
+					Count:{min:1, max:2}
+				},
+				sell:
+				{
+					id:"minecraft:glass_bottle",
+					Count:{min:4, max:6}
+				}
+			},
+			{
+				action:"add", CareerLevel:4, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_500",
+					Count:4
+				},
+				sell:
+				{
+					id:"forestry:crated.minecraft.nether_wart.0",
+					Count:{min:4, max:6}
+				}
+			},
+			{
+				action:"add", CareerLevel:5, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:4, max:6}
+				},
+				sell:
+				{
+					id:"minecraft:totem_of_undying",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:5,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:2, max:3}
+				},
+				sell:
+				{
+					id:"minecraft:experience_bottle",
+					Count:3
+				}
+			},
 		]
 	}
 

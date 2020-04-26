@@ -365,7 +365,11 @@ val StageLessItems = [
 	<forestry:crated.natura.edibles.10>,
 	<forestry:crated.natura.saguaro_fruit_item.0>,
 	<forestry:crated.natura.materials.0>,
-	<forestry:crated.natura.materials.3>
+	<forestry:crated.natura.materials.3>,
+	<contenttweaker:champion_token_1>,
+	<contenttweaker:champion_token_2>,
+	<contenttweaker:champion_token_3>,
+	<contenttweaker:champion_token_4>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems
