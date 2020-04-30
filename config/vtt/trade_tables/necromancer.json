@@ -5,9 +5,29 @@
 	Offers:{
 		Recipes:[
 			{action:"clear"},
-			{action:"add", buy:{id:"minecraft:emerald",Count:{min:6,max:8}},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:1}
-
+			{
+				action:"add", CareerLevel:1,
+				buy:{
+					id:"contenttweaker:currency_2500",
+					Count:{min:2,max:4}
+				},
+				sell:{
+					id:"forestry:pollen",
+					Damage:1,
+					Count:{min:4,max:6}
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:{
+					id:"contenttweaker:currency_500",
+					Count:{min:4,max:6}
+				},
+				sell:{
+					id:"minecraftfuture:flowerblack",
+					Count:{min:4,max:8}
+				}
+			}
 		]
 	}
-
 }

@@ -19,7 +19,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.25,
+				action:"add", CareerLevel:1,
 				buy:
 				{
 					id:"contenttweaker:currency_100",
@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance:0.25,
+				action:"add", CareerLevel:1, chance:0.4,
 				buy:
 				{
 					id:"contenttweaker:currency_20",
@@ -42,6 +42,19 @@
 				{
 					id:"minecraft:flint",
 					Count:{min:1, max: 4}
+				}
+			},
+			{
+				action:"add", CareerLevel:1, chance:0.4,
+				buy:
+				{
+					id:"contenttweaker:currency_20",
+					Count:7
+				},
+				sell:
+				{
+					id:"minecraft:feather",
+					Count:{min:3, max: 5}
 				}
 			},
 			{

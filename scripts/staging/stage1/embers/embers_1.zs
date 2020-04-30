@@ -69,7 +69,9 @@ val StageLessItems = [
 	<embers:nugget_silver>,
 	<embers:ingot_aluminum>,
 	<embers:nugget_aluminum>,
-	<embers:ingot_nickel>
+	<embers:ingot_nickel>,
+	<embers:ashen_brick>,
+	<embers:ashen_stone>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

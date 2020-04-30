@@ -19,4 +19,5 @@ for item, textArray in quarkTooltips
 {
 	scripts.helpers.AddTooltip(item, textArray);
 }
+
 print("### Quark Init Complete ###");

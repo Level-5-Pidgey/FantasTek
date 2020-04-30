@@ -212,7 +212,7 @@ for i, item in currencyItems {
 		mods.thermalexpansion.Factorizer.addRecipeBoth(currencyItems[i], currencyItems[j] * 5);
 	}
 
-	scripts.helpers.AddTooltip(item, ["Intergalactic Currency Format. Can be exchanged for goods and services!", "Will always drop on death if in your inventory.", "Despawns 2 minutes after being dropped on death!", "Careful of Outlaws that might want to steal your creds."]);
+	scripts.helpers.AddTooltip(item, ["Intergalactic Currency Format.", "Can be exchanged for goods and services!", "Will always drop on death if in your inventory.", "Despawns 2 minutes after being dropped on death!", "Careful of Outlaws that might want to steal your creds."]);
 }
 
 print("### ContentTweaker recipes Init Complete ###");
