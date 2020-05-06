@@ -124,7 +124,7 @@
 				buy:
 				{
 					id:"contenttweaker:currency_12500",
-					Count:2
+					Count:{min:2,max:4}
 				},
 				sell:{
 					id:"minecraft:diamond_leggings",
@@ -137,7 +137,7 @@
 				buy:
 				{
 					id:"contenttweaker:currency_2500",
-					Count:6
+					Count:{min:6,max:12}
 				},
 				sell:{
 					id:"minecraft:diamond_boots",
@@ -150,7 +150,7 @@
 				buy:
 				{
 					id:"contenttweaker:currency_2500",
-					Count:7
+					Count:{min:7,max:14}
 				},
 				sell:{
 					id:"minecraft:diamond_helmet",
@@ -163,7 +163,7 @@
 				buy:
 				{
 					id:"contenttweaker:currency_2500",
-					Count:12
+					Count:{min:12,max:24}
 				},
 				sell:{
 					id:"minecraft:diamond_chestplate",

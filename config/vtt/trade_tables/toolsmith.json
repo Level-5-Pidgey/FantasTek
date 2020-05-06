@@ -9,10 +9,177 @@
 				action:"add", CareerLevel:1,
 				buy:
 				{
-
+					id:"contenttweaker:currency_20",
+					Count:1
+				},
+				sell:
+				{
+					id:"minecraft:stone_axe",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"contenttweaker:currency_20",
+					Count:1
+				},
+				sell:{
+					id:"minecraft:stone_pickaxe",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"contenttweaker:currency_20",
+					Count:1
+				},
+				sell:{
+					id:"minecraft:stone_shovel",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:
+				{
+					id:"contenttweaker:currency_20",
+					Count:1
+				},
+				sell:{
+					id:"minecraft:stone_hoe",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_100",
+					Count:{min:14, max:28}
+				},
+				sell:{
+					id:"minecraft:iron_axe",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:2, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_100",
+					Count:{min:14, max:28}
+				},
+				sell:{
+					id:"minecraft:iron_pickaxe",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:2, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_100",
+					Count:{min:5, max:10}
+				},
+				sell:{
+					id:"minecraft:iron_shovel",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:2, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_100",
+					Count:{min:9, max:18}
+				},
+				sell:{
+					id:"minecraft:iron_hoe",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_500",
+					Count:{min:5, max:6}
+				},
+				sell:{
+					id:"thermalfoundation:tool.hammer_iron",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.25,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:4,max:8}
+				},
+				sell:{
+					id:"minecraft:diamond_pickaxe",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.25,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:4,max:8}
+				},
+				sell:{
+					id:"minecraft:diamond_axe",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.25,
+				buy:
+				{
+					id:"contenttweaker:currency_500",
+					Count:{min:8,max:16}
+				},
+				sell:{
+					id:"minecraft:diamond_shovel",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.25,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:3,max:6}
+				},
+				sell:{
+					id:"minecraft:diamond_hoe",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.25,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:7,max:8}
+				},
+				sell:{
+					id:"thermalfoundation:tool.hammer_diamond",
+					Count:1
 				}
 			}
 		]
 	}
-
 }
