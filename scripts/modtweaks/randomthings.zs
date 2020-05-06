@@ -25,7 +25,6 @@ val shopItems =
   <randomthings:chunkanalyzer>,
   <randomthings:notificationinterface>,
   <randomthings:enderanchor>,
-  <randomthings:inventorytester>,
   <randomthings:spectrelens>
 ] as crafttweaker.item.IItemStack[];
 

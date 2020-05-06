@@ -196,7 +196,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:tin> : stages.Locked,
 	<liquid:titanium> : stages.Locked,
 	<liquid:tree_oil> : stages.Locked,
-	<liquid:troll_marrow> : stages.Locked,
+	<liquid:bone_marrow> : stages.Locked,
 	<liquid:tungsten> : stages.Locked,
 	<liquid:uranium> : stages.Locked,
 	<liquid:vapor_of_levity> : stages.Locked,

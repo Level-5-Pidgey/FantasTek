@@ -17,7 +17,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1, chance: 0.4
+				action:"add", CareerLevel:1, chance: 0.4,
 				buy:{
 					id:"contenttweaker:currency_500",
 					Count:{min:3,max:5}

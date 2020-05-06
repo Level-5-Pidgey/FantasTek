@@ -242,9 +242,7 @@
 		"emerald": {
 			"distribution": "uniform",
 			"generator": {
-				"block": {
-					"name": "emerald_ore"
-				},
+				"block": "emerald_ore",
 				"material": [
 				  "minecraft:stone",
 				  "minecraft:dirt"
@@ -257,30 +255,13 @@
 				  "minecraft:sandstone",
 				  "minecraft:cobblestone"
 				],
-				"cluster-size": 1
+				"cluster-size": 2
 			},
-			"cluster-count": {
-				"min": 3,
-				"max": 6
-			},
-			"min-height": 4,
-			"max-height": 28,
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 32,
 			"retrogen": false,
-			"biome": {
-				"restriction": "whitelist",
-				"value": [
-					{
-						"type": "id",
-						"entry": [
-							"extreme_hills",
-							"smaller_extreme_hills",
-							"extreme_hills_with_trees",
-							"mutated_extreme_hills",
-							"mutated_extreme_hills_with_trees"
-						]
-					}
-				]
-			},
+			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [

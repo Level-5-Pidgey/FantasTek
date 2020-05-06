@@ -537,6 +537,10 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "PulsatingIron" : stages.progression1,
   "Aquamarine" : stages.AstralSorcery1,
   "AstralStarmetal" : stages.AstralSorcery1,
+  "Alubrass" : stages.progression2,
+  "Manyullyn" : stages.progression2,
+  "Knightslime" : stages.progression2,
+  "PigIron" : stages.progression1,
   "NetherStar" : stages.progression1
 };
 

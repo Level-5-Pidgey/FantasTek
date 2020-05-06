@@ -64,7 +64,7 @@
 				},
 				sell:{
 					id:"minecraft:compass",
-					nbt: "{\"quark:compass_calculated\":1, \"quark:compass_in_nether\":0}",
+					tag: "{\"quark:compass_calculated\":1, \"quark:compass_in_nether\":0}",
 					Count:1
 				}
 			}

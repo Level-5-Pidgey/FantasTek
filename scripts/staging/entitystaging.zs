@@ -25,15 +25,15 @@ function StageSpawnEgg(entityString as string, stageToSetTo as mods.zenstages.St
 
 var entityStages as mods.zenstages.Stage[string] =
 {
-	"advancedrocketry:arabducteditem" : stages.Locked,
+	"advancedrocketry:arabducteditem" : stages.progression1,
 	"advancedrocketry:arhovercraft" : stages.Locked,
-	"advancedrocketry:arplanetuibutton" : stages.Locked,
-	"advancedrocketry:arplanetuiitem" : stages.Locked,
-	"advancedrocketry:arspaceelevatorcapsule" : stages.Locked,
-	"advancedrocketry:arstaruibutton" : stages.Locked,
+	"advancedrocketry:arplanetuibutton" : stages.progression1,
+	"advancedrocketry:arplanetuiitem" : stages.progression1,
+	"advancedrocketry:arspaceelevatorcapsule" : stages.progression1,
+	"advancedrocketry:arstaruibutton" : stages.progression1,
 	"advancedrocketry:deployedrocket" : stages.Locked,
 	"advancedrocketry:lasernode" : stages.Locked,
-	"advancedrocketry:mountdummy" : stages.Locked,
+	"advancedrocketry:mountdummy" : stages.progression1,
 	"advancedrocketry:rocket" : stages.Locked,
 	"appliedenergistics2:appeng" : stages.progression1,
 	"astralsorcery:entitycrystal" : stages.AstralSorcery1,
@@ -52,8 +52,8 @@ var entityStages as mods.zenstages.Stage[string] =
 	"astralsorcery:entitystardust" : stages.AstralSorcery1,
 	"avaritia:endest_pearl" : stages.Locked,
 	"avaritia:gaping_void" : stages.Locked,
-	"avaritia:heaven_arrow" : stages.Locked,
-	"avaritia:heaven_sub_arrow" : stages.Locked,
+	"avaritia:heaven_arrow" : stages.progression1,
+	"avaritia:heaven_sub_arrow" : stages.progression1,
 	"betternether:firefly" : stages.progression1,
 	"biomesoplenty:bop_boat" : stages.progression1,
 	"biomesoplenty:mudball" : stages.progression1,
@@ -450,8 +450,5 @@ for entityName, zenStageObject in entityStages
 		StageSpawnEgg(entityName, zenStageObject);
 	}
 }
-
-//Spawn Ocean Guardian instead of Sirens if the player does not have the right stage.
-mods.MobStages.addReplacement("iceandfire:siren", "minecraft:guardian");
 
 print("### Entity Staging Complete ###");

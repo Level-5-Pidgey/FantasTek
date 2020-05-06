@@ -64,6 +64,17 @@
                 action:"add", CareerLevel:3,
                 buy:{
                     id:"contenttweaker:currency_500",
+                    Count:{min:3,max:4}
+                },
+                sell:{
+                    id:"randomthings:potionvaporizer",
+                    Count:1
+                }
+            },
+            {
+                action:"add", CareerLevel:3,
+                buy:{
+                    id:"contenttweaker:currency_500",
                     Count:1
                 },
                 sell:{

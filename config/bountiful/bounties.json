@@ -671,7 +671,7 @@
 			"min": 1,
 			"max": 1
 		},
-		"unitWorth": 9000,
+		"unitWorth": 6000,
 		"weight": 4
 	},
 	{
@@ -680,8 +680,17 @@
 			"min": 1,
 			"max": 1
 		},
-		"unitWorth": 27000,
+		"unitWorth": 18000,
 		"weight": 2
+	},
+	{
+		"content": "minecraft:totem_of_undying",
+		"amount": {
+			"min": 1,
+			"max": 2
+		},
+		"unitWorth": 7500,
+		"weight": 8
 	},
 	{
 		"content": "astralsorcery:itemcraftingcomponent",
