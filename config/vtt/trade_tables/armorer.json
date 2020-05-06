@@ -20,7 +20,7 @@
 				action:"add", CareerLevel:1,
 				buy:{
 					id:"contenttweaker:currency_500",
-					Count:{min:7,max8}
+					Count:{min:7,max:8}
 				},
 				sell:{
 					id:"minecraft:iron_chestplate",
@@ -47,6 +47,128 @@
 				sell:{
 					id:"minecraft:iron_boots",
 					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"contenttweaker:currency_500",
+					Count:{min:5,max:6}
+				},
+				sell:{
+					id:"minecraft:chainmail_leggings",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"contenttweaker:currency_100",
+					Count:{min:14,max:15}
+				},
+				sell:{
+					id:"minecraft:chainmail_boots",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:
+				{
+					id:"contenttweaker:currency_100",
+					Count:{min:4,max:5}
+				},
+				sell:{
+					id:"quark:chain",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:
+				{
+					id:"contenttweaker:currency_500",
+					Count:{min:6,max:7}
+				},
+				sell:{
+					id:"minecraft:chainmail_chestplate",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:
+				{
+					id:"contenttweaker:currency_500",
+					Count:{min:4,max:5}
+				},
+				sell:{
+					id:"minecraft:chainmail_helmet",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:
+				{
+					id:"contenttweaker:currency_500",
+					Count:1
+				},
+				sell:{
+					id:"minecraft:shield",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:4,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:2
+				},
+				sell:{
+					id:"minecraft:diamond_leggings",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:4,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:6
+				},
+				sell:{
+					id:"minecraft:diamond_boots",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:5,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:7
+				},
+				sell:{
+					id:"minecraft:diamond_helmet",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:5,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:12
+				},
+				sell:{
+					id:"minecraft:diamond_chestplate",
+					Count:1,
+					tag:{ench:"random"}
 				}
 			}
 		]
