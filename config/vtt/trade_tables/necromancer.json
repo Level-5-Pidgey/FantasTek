@@ -47,7 +47,7 @@
 				},
 				sell:{
 					id:"tconstruct:materials",
-					Damage:14,
+					Damage:17,
 					Count:1
 				}
 			},
@@ -177,7 +177,6 @@
 					tag:{EntityTag:{id:"minecraft:wither_skeleton"}}
 				}
 			}
-
 		]
 	}
 }
