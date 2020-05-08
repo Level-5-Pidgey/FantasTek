@@ -5,7 +5,108 @@
 	Offers:{
 		Recipes:[
 			{action:"clear"},
-			{action:"add", buy:{id:"minecraft:emerald",Count:{min:6,max:8}},sell:{id:"minecraft:ghast_tear",Count:1}, CareerLevel:1}
+			{
+				action:"add", CareerLevel:1,
+				buy:{
+					id:"contenttweaker:currency_500",
+					Count:{min:2,max:3}
+				},
+				sell:{
+					id:"minecraft:iron_sword",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1,
+				buy:{
+					id:"contenttweaker:currency_20",
+					Count:{min:4,max:5}
+				},
+				sell:{
+					id:"minecraft:gunpowder",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"contenttweaker:currency_100",
+					Count:{min:1,max:2}
+				},
+				sell:{
+					id:"minecraft:tnt",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:2,
+				buy:{
+					id:"contenttweaker:currency_20",
+					Count:{min:4,max:5}
+				},
+				sell:{
+					id:"minecraft:fire_charge",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3,
+				buy:{
+					id:"contenttweaker:currency_2500",
+					Count:{min:3,max:4}
+				},
+				sell:{
+					id:"minecraft:diamond_sword",
+					Count:1,
+					tag:{ench:"random"}
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.4,
+				buy:{
+					id:"contenttweaker:currency_12500",
+					Count:3
+				},
+				sell:{
+					id:"xreliquary:ice_magus_rod",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.1,
+				buy:{
+					id:"contenttweaker:currency_12500",
+					Count:3
+				},
+				sell:{
+					id:"xreliquary:gun_part",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.1,
+				buy:{
+					id:"contenttweaker:currency_12500",
+					Count:3
+				},
+				sell:{
+					id:"xreliquary:gun_part",
+					Count:1,
+					Damage:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.1,
+				buy:{
+					id:"contenttweaker:currency_12500",
+					Count:3
+				},
+				sell:{
+					id:"xreliquary:gun_part",
+					Count:1,
+					Damage:2
+				}
+			}
 		]
 	}
 }
