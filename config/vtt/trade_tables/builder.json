@@ -1,0 +1,295 @@
+{
+  Profession:"vtt:tinkerer",
+  Career:"builder",
+    Offers:{
+        Recipes:
+		[
+            {
+                action:"add", CareerLevel:1, chance: 0.2,
+                buy:
+					{id:"contenttweaker:currency_4", count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:sand",Count:4}
+            },
+            {
+                action:"add", CareerLevel:1, chance: 0.2,
+                buy:
+					{id:"contenttweaker:currency_4", count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:sand",Damage:1,Count:2}
+            },
+            {
+                action:"add", CareerLevel:1, chance: 0.2,
+                buy:
+					{id:"contenttweaker:currency_4", count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:sandstone",Count:2}
+            },
+            {
+                action:"add", CareerLevel:1, chance: 0.2,
+                buy:
+					{id:"contenttweaker:currency_4", count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:red_sandstone",Count:1}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.5,
+                buy:{
+                    id:"contenttweaker:currency_20",
+                    Count:{min:1,max:3}
+                },
+                sell:
+				{
+					id:"minecraft:glass",
+					count:{min:1,max:4}
+				}
+            },
+			{
+                action:"add", CareerLevel:1,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:stone",count:4}
+            },
+			{
+                action:"add", CareerLevel:1, chance: 0.2,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:stone",damage:1,count:3}
+            },
+			{
+                action:"add", CareerLevel:1, chance: 0.2,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:stone",damage:3,count:3}
+            },
+			{
+                action:"add", CareerLevel:1, chance: 0.2,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:stone",damage:5,count:3}
+            },
+			{
+                action:"add", CareerLevel:1, chance: 0.2,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:1,max:4}},
+                sell:
+					{id:"chisel:basalt2",damage:7,count:{min:1,max:3}}
+            },
+			{
+                action:"add", CareerLevel:1, chance: 0.2,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:1,max:4}},
+                sell:
+					{id:"chisel:basalt2",damage:7,count:{min:1,max:3}}
+            },
+            {
+                action:"add", CareerLevel:1, chance:0.4,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:2,max:4}},
+                sell:
+					{id:"minecraft:gravel",count:4}
+            },
+            {
+                action:"add", CareerLevel:1, chance:0.4,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:2,max:4}},
+                sell:
+					{id:"minecraft:snow",count:4}
+            },
+            {
+                action:"add", CareerLevel:1, chance:0.4,
+				buy:
+					{id:"contenttweaker:currency_4",count:{min:2,max:4}},
+                sell:
+					{id:"minecraft:clay_ball",count:{min:1,max:2}}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_100",count:{min:1,max:2}},
+                sell:
+					{id:"minecraft:log",count:2}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_100",count:{min:1,max:2}},
+                sell:
+					{id:"minecraft:log",damage:1,count:2}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_100",count:{min:1,max:2}},
+                sell:
+					{id:"minecraft:log",damage:2,count:2}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_100",count:{min:1,max:2}},
+                sell:
+					{id:"minecraft:log",damage:3,count:2}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_100",count:{min:1,max:2}},
+                sell:
+					{id:"minecraft:log2",count:2}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_100",count:{min:1,max:2}},
+                sell:
+					{id:"minecraft:log2",damage:1,count:2}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:3,max:5}},
+                sell:
+					{id:"quark:limestone",damage:1,count:4}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:3,max:5}},
+                sell:
+					{id:"quark:jasper",damage:1,count:4}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:3,max:5}},
+                sell:
+					{id:"quark:slate",damage:1,count:4}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:3,max:5}},
+                sell:
+					{id:"quark:polished_netherrack",count:2}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:3,max:5}},
+                sell:
+					{id:"quark:polished_stone",count:4}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:3,max:5}},
+                sell:
+					{id:"quark:soul_sandstone",damage:2,count:3}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:3,max:5}},
+                sell:
+					{id:"quark:snow_bricks",count:4}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.7,
+                buy:{
+                    id:"contenttweaker:currency_20",
+                    Count:{min:2,max:8}
+                },
+                sell:
+				{
+					id:"minecraft:brick_block",
+					count:{min:1,max:4}
+				}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"quark:thatch",count:6}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"quark:charred_nether_bricks",count:4}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"quark:midori_block",count:4}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"quark:magma_bricks",count:2}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"quark:duskbound_block",count:{min:6,max:12}}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"minecraft:purpur_block",count:{min:4,max:8}}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"minecraft:end_bricks",count:{min:6,max:12}}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.2,
+				buy:
+					{id:"contenttweaker:currency_20",count:{min:6,max:12}},
+                sell:
+					{id:"quark:turf",count:8}
+            },
+			{
+                action:"add", CareerLevel:3, chance:0.7,
+                buy:{
+                    id:"contenttweaker:currency_20",
+                    Count:{min:4,max:8}
+                },
+                sell:
+				{
+					id:"quark:hardened_clay_tiles",
+					count:{min:6,max:10}
+				}
+            },
+			{
+                action:"add", CareerLevel:2, chance:0.5,
+                buy:{
+                    id:"contenttweaker:currency_20",
+                    Count:{min:1,max:3}
+                },
+                sell:
+				{
+					id:"minecraft:glass",
+					count:{min:1,max:4}
+				}
+            }
+        ]
+    }
+}

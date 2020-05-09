@@ -67,7 +67,7 @@
 				sell:
 				{
 					id:"minecraft:tipped_arrow",
-					tag: "{Potion: \"cofhcore:wither2\"}",
+					tag: {Potion: "cofhcore:wither2"},
 					Count:{min:8, max: 24}
 				}
 			},
@@ -81,7 +81,7 @@
 				sell:
 				{
 					id:"minecraft:tipped_arrow",
-					tag: "{Potion: \"cofhcore:poison3+\"}",
+					tag: {Potion: "cofhcore:poison3+"},
 					Count:{min:8, max: 24}
 				}
 			},
@@ -95,7 +95,7 @@
 				sell:
 				{
 					id:"minecraft:tipped_arrow",
-					tag: "{Potion: \"minecraft:strong_harming\"}",
+					tag: {Potion: "minecraft:strong_harming"},
 					Count:{min:8, max: 24}
 				}
 			},
@@ -109,7 +109,7 @@
 				sell:
 				{
 					id:"minecraft:tipped_arrow",
-					tag: "{Potion: \"randomthings:strong_collapse\"}",
+					tag: {Potion: "randomthings:strong_collapse"},
 					Count:{min:8, max: 12}
 				}
 			},
@@ -123,7 +123,7 @@
 				sell:
 				{
 					id:"minecraft:tipped_arrow",
-					tag: "{Potion: \"cofhcore:harming3\"}",
+					tag: {Potion: "cofhcore:harming3"},
 					Count:{min:8, max: 24}
 				}
 			},
@@ -137,7 +137,7 @@
 				sell:
 				{
 					id:"minecraft:tipped_arrow",
-					tag: "{Potion: \"cofhcore:harming4\"}",
+					tag: {Potion: "cofhcore:harming4"},
 					Count:{min:8, max: 24}
 				}
 			},

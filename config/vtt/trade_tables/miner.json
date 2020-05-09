@@ -71,6 +71,19 @@
 				}
 			},
 			{
+				action:"add", CareerLevel:4, chance:0.1,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:{min:2, max:3}
+				},
+				sell:
+				{
+					id:"xreliquary:midas_touchstone",
+					Count:1
+				}
+			},
+			{
 				action:"add", CareerLevel:5, chance:0.3,
 				buy:
 				{
