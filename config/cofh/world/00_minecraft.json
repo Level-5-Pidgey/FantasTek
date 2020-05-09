@@ -261,7 +261,15 @@
 			"min-height": 0,
 			"max-height": 32,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "MOUNTAIN"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
