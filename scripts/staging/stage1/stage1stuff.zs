@@ -71,7 +71,6 @@ val StageLessItems = [
 	<contenttweaker:prismarine_nugget>,
 	<contenttweaker:strange_treasure>,
 	<contenttweaker:coke_dust>,
-	<contenttweaker:steel_blend>,
 	<contenttweaker:wood_plate>,
 	<contenttweaker:sealed_wood_plate>,
 	<thermalfoundation:tool.bow_diamond>,

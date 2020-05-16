@@ -5,6 +5,7 @@
 		zombieTexture: "vtt:textures/entity/zombie_villager/zombie_tinkerer.png"
 	},
 	careers: [
-		"tinkerer"
+		"tinkerer",
+		"mail"
 	]
 }
