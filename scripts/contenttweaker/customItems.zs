@@ -16,6 +16,10 @@ lifeingot.register();
 var cokeDust = VanillaFactory.createItem("coke_dust");
 cokeDust.register();
 
+//Steel Blend
+var steelBlend = VanillaFactory.createItem("steel_blend");
+steelBlend.register();
+
 //Wooden Plate
 var woodPlate = VanillaFactory.createItem("wood_plate");
 woodPlate.register();

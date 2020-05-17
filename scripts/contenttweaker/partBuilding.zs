@@ -9,11 +9,11 @@ print("~~~ Begin PartBuilder Init ~~~");
 //Dense plates
 var DensePlating = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_plating").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("densePlating").build();
 
-//Deep ore (new ore variant)
-//Commented out as it might not even be required
-//var deepOre = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("deep_ore").setPartType(mods.contenttweaker.MaterialSystem.getPartType("ore")).setOreDictName("deepOre").build();
-
 var metalPlating = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("sheetmetal_block").setPartType(mods.contenttweaker.MaterialSystem.getPartType("block")).setOreDictName("blockSheetmetal").build();
+
+//Crude Steel Plates and Gears
+crudeSteelMat = mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(mods.contenttweaker.Color.fromHex("aaa4a1")).build()
+crudeSteelMat.registerParts(["gear", "plate"] as string[]);
 
 //Function to easily register new parts and items to ores/materials
 function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre as bool, needsAlternateOres as bool, needsCommonparts as bool, needsSheetsorDensePlating as bool, needsIngot as bool)
@@ -183,7 +183,6 @@ var modded_alloys as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Mate
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Signalum").setColor(mods.contenttweaker.Color.fromHex("c85620")).build() : <ore:ingotSignalum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Invar").setColor(mods.contenttweaker.Color.fromHex("929b97")).build() : <ore:ingotInvar>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Bronze").setColor(mods.contenttweaker.Color.fromHex("cc8c42")).build() : <ore:ingotBronze>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(mods.contenttweaker.Color.fromHex("aaa4a1")).build() : <ore:ingotCrudeSteel>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Manyullyn").setColor(mods.contenttweaker.Color.fromHex("b928de")).build() : <ore:ingotManyullyn>
 	//Material : OreDictEntry
 };

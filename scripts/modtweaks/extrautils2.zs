@@ -16,8 +16,8 @@ for item in shopItems
 //Make Ineffable Glass/Ethereal Glass require unstable ingots
 recipes.remove(<extrautils2:ineffableglass:2>);
 recipes.remove(<extrautils2:ineffableglass>);
-recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:2>), <extrautils2:ineffableglass:2> * 16, [[<ore:blockGlassColourless>, <ore:blockGlassColourless>, <ore:blockGlassColourless>], [<ore:blockGlassColourless>, <ore:ingotUnstable>, <ore:blockGlassColourless>], [<ore:blockGlassColourless>, <ore:blockGlassColourless>, <ore:blockGlassColourless>]]);
-recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass>), <extrautils2:ineffableglass:2> * 16, [[<ore:blockGlassColourless>, <ore:blockGlassColourless>, <ore:blockGlassColourless>], [<ore:blockGlassColourless>, <ore:ingotUnstable>, <ore:blockGlassColourless>], [<ore:blockGlassColourless>, <ore:blockGlassColourless>, <ore:blockGlassColourless>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:2>), <extrautils2:ineffableglass:2> * 8, [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:ingotUnstable>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass>), <extrautils2:ineffableglass:2> * 8, [[<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <ore:ingotUnstable>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>]]);
 
 
 print("### Extrautils2 Init Complete ###");
