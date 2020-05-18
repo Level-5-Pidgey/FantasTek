@@ -83,7 +83,5 @@ for key, value in machineRecipes {
 recipes.remove(<forestry:worktable>);
 recipes.addShaped(scripts.helpers.createRecipeName(<forestry:worktable>), <forestry:worktable>, [[<ore:book>], [<ore:craftingTableWood>]]);
 
-//Remove Stamp Recipes
-recipes.remove(<forestry:stamps:*>);
 
 print("### Forestry Init Complete ###");

@@ -16,6 +16,10 @@ lifeingot.register();
 var cokeDust = VanillaFactory.createItem("coke_dust");
 cokeDust.register();
 
+//Steel Blend
+var steelBlend = VanillaFactory.createItem("steel_blend");
+steelBlend.register();
+
 //Wooden Plate
 var woodPlate = VanillaFactory.createItem("wood_plate");
 woodPlate.register();
@@ -190,8 +194,8 @@ val foodStrings as double[][string] =
 	"steak_and_chips" : [13.0, 0.5],
 	"pocky" : [2.0, 0.3],
 	"meat_pie" : [14.0, 0.5],
-	"honey_sandwich" : [7.0, 1.2],
-	"fairy_bread" : [7.0, 0.7],
+	"honey_sandwich" : [6.0, 1.2],
+	"fairy_bread" : [6.0, 0.7],
 	"chicken_bucket" : [13.0, 0.4],
 	"chocolate" : [4.0, 0.2]
 };

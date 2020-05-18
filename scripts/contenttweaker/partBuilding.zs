@@ -183,7 +183,6 @@ var modded_alloys as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Mate
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Signalum").setColor(mods.contenttweaker.Color.fromHex("c85620")).build() : <ore:ingotSignalum>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Invar").setColor(mods.contenttweaker.Color.fromHex("929b97")).build() : <ore:ingotInvar>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Bronze").setColor(mods.contenttweaker.Color.fromHex("cc8c42")).build() : <ore:ingotBronze>,
-	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(mods.contenttweaker.Color.fromHex("aaa4a1")).build() : <ore:ingotCrudeSteel>,
 	mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Manyullyn").setColor(mods.contenttweaker.Color.fromHex("b928de")).build() : <ore:ingotManyullyn>
 	//Material : OreDictEntry
 };
