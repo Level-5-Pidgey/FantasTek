@@ -8,7 +8,7 @@ recipes.remove(<buildersbag:builders_bag_tier_one>);
 val buildBagRecipes = {
 		<buildersbag:builders_bag_tier_two> : [[<ore:leather>, <ore:plateGold>, <ore:leather>], [<ore:gemDiamond>, <buildersbag:builders_bag_tier_one>, <ore:gemDiamond>], [<ore:leather>, <ore:plateGold>, <ore:leather>]],
 		<buildersbag:builders_bag_tier_three> : [[<ore:leather>, <ore:platePulsatingIron>, <ore:leather>], [<ore:leather>, <buildersbag:builders_bag_tier_two>, <ore:leather>], [<ore:leather>, <ore:densePlatingQuartz>, <ore:leather>]],
-		<buildersbag:builders_bag_tier_four> : [[<ore:crystalsPrismarine>, <ore:blockEmerald>, <ore:crystalsPrismarine>], [<ore:leather>, <buildersbag:builders_bag_tier_three>, <ore:leather>], [<ore:crystalsPrismarine>, <ore:densePlatingRedstone>, <ore:crystalsPrismarine>]],
+		<buildersbag:builders_bag_tier_four> : [[<ore:crystalPrismarine>, <ore:blockEmerald>, <ore:crystalPrismarine>], [<ore:leather>, <buildersbag:builders_bag_tier_three>, <ore:leather>], [<ore:crystalPrismarine>, <ore:densePlatingRedstone>, <ore:crystalPrismarine>]],
 		<buildersbag:builders_bag_tier_five> : [[<ore:leather>, <ore:chestEnder>, <ore:leather>], [<ore:leather>, <buildersbag:builders_bag_tier_four>, <ore:leather>], [<ore:leather>, <ore:densePlatingDiamond>, <ore:leather>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 

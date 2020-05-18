@@ -152,7 +152,6 @@ mods.tconstruct.Casting.addTableRecipe(<ore:gearSteel>.firstItem, <tconstruct:ca
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot>);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotCrudeSteel>.firstItem * 2, [<ore:ingotIron>, <contenttweaker:coke_dust>], 4500);
 //Crafting
-mods.tconstruct.Casting.removeTableRecipe(<ore:plateCrudeSteel>.firstItem);
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:plateCrudeSteel>.firstItem), <ore:plateCrudeSteel>.firstItem, [<embers:tinker_hammer>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]);
 recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearCrudeSteel>.firstItem), <ore:gearCrudeSteel>.firstItem, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
 
