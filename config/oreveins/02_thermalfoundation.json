@@ -162,7 +162,7 @@
     "max_y": 55,
     "density": 180,
     "vertical_size": 11,
-    "horizontal_size": 22,
+    "horizontal_size": 12,
 	"biomes": [
       "savanna"
   	],

@@ -146,8 +146,8 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustPulsatingIron>.fi
 
 //Change Crude Steel Crafting
 //Tinkers Melting
-mods.tconstruct.Casting.addTableRecipe(<ore:plateSteel>.firstItem, <tconstruct:cast_custom:3>, <liquid:crude_steel>, 144 * 4, false);
-mods.tconstruct.Casting.addTableRecipe(<ore:gearSteel>.firstItem, <tconstruct:cast_custom:4>, <liquid:crude_steel>, 144 * 4, false);
+mods.tconstruct.Casting.addTableRecipe(<ore:plateCrudeSteel>.firstItem, <tconstruct:cast_custom:3>, <liquid:crude_steel>, 144 * 4, false);
+mods.tconstruct.Casting.addTableRecipe(<ore:gearCrudeSteel>.firstItem, <tconstruct:cast_custom:4>, <liquid:crude_steel>, 144 * 4, false);
 //Machines
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot>);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotCrudeSteel>.firstItem * 2, [<ore:ingotIron>, <contenttweaker:coke_dust>], 4500);

@@ -1,0 +1,17 @@
+{
+  Profession:"vtt:tinkerer",
+  Career:"mail",
+    Offers:{
+        Recipes:
+		[
+			{action:"clear"},
+            {
+                action:"add", CareerLevel:1,
+                buy:
+					{id:"contenttweaker:currency_4", Count:{min:1,max:4}},
+                sell:
+					{id:"minecraft:diamond",Count:4}
+            }
+        ]
+    }
+}

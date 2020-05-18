@@ -11,6 +11,6 @@ scripts.helpers.AddTooltip(<minecraftfuture:honey_bottle>, ["Obtained by right-c
 
 //Make Bee Hive Recipe Easier
 recipes.remove(<minecraftfuture:bee_hive>);
-recipes.addShaped("bee_hive", <minecraftfuture:bee_hive>, [[<ore:plankWood>, <ore:plateWood>, <ore:plankWood>], [<minecraftfuture:honeycomb>, <ore:string>, <minecraftfuture:honeycomb>], [<ore:plankWood>, <ore:plateWood>, <ore:plankWood>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<minecraftfuture:bee_hive>), <minecraftfuture:bee_hive>, [[<ore:plankWood>, <ore:plateWood>, <ore:plankWood>], [<minecraftfuture:honeycomb>, <ore:string>, <minecraftfuture:honeycomb>], [<ore:plankWood>, <ore:plateWood>, <ore:plankWood>]]);
 
 print("### FutureMC Init Complete ###");
