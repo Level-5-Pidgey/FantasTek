@@ -94,8 +94,7 @@
 						id:"contenttweaker:currency_20",
 						Count:{min:3,max:5}
 					}
-				]
-
+				],
 				sell:
 				[
 					{
@@ -107,7 +106,6 @@
 						Count:{min:1,max:2}
 					}
 				]
-
 			}
 		]
 	}

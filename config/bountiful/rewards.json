@@ -1,27 +1,22 @@
 [
-  {
-    "content": "contenttweaker:currency_4",
-    "unitWorth": 4,
-    "weight": 100
-  },
-  {
-    "content": "contenttweaker:currency_20",
-    "unitWorth": 20,
-    "weight": 100
-  },
-  {
-    "content": "contenttweaker:currency_100",
-    "unitWorth": 100,
-    "weight": 100
-  },
-  {
-    "content": "contenttweaker:currency_500",
-    "unitWorth": 500,
-    "weight": 100
-},
-  {
-    "content": "contenttweaker:currency_2500",
-    "unitWorth": 2500,
-    "weight": 100
-  },
+	{
+		"content": "contenttweaker:currency_4",
+		"unitWorth": 4,
+		"weight": 100
+	},
+	{
+		"content": "contenttweaker:currency_20",
+		"unitWorth": 20,
+		"weight": 100
+	},
+	{
+		"content": "contenttweaker:currency_100",
+		"unitWorth": 100,
+		"weight": 100
+	},
+	{
+		"content": "contenttweaker:currency_500",
+		"unitWorth": 500,
+		"weight": 100
+	}
 ]

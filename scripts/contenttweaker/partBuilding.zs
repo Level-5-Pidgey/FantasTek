@@ -13,7 +13,7 @@ var DensePlating = MaterialSystem.getPartBuilder().setName("dense_plating").setP
 var metalPlating = MaterialSystem.getPartBuilder().setName("sheetmetal_block").setPartType(MaterialSystem.getPartType("block")).setOreDictName("blockSheetmetal").build();
 
 //Create Crude Steel Plates and Gears
-var crudeSteelMat = MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(mods.contenttweaker.Color.fromHex("aaa4a1")).build();
+var crudeSteelMat = MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(mods.contenttweaker.Color.fromHex("c4b79f")).build();
 crudeSteelMat.registerParts(["gear", "plate"] as string[]);
 
 //Function to easily register new parts and items to ores/materials

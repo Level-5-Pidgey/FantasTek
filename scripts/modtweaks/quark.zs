@@ -20,4 +20,8 @@ for item, textArray in quarkTooltips
 	scripts.helpers.AddTooltip(item, textArray);
 }
 
+//Make Permafrost/Brimstone no longer pulverize into gravel + elemental powders.
+mods.thermalexpansion.Pulverizer.removeRecipe(<ore:stonePermafrost>.firstItem);
+mods.thermalexpansion.Pulverizer.removeRecipe(<ore:stoneBrimstone>.firstItem);
+
 print("### Quark Init Complete ###");

@@ -8,9 +8,106 @@
             {
                 action:"add", CareerLevel:1,
                 buy:
-					{id:"contenttweaker:currency_4", Count:{min:1,max:4}},
+					{id:"contenttweaker:currency_4", Count:{min:4,max:8}},
                 sell:
-					{id:"minecraft:diamond",Count:4}
+					{
+						id:"forestry:stamps",
+						Count:1
+					}
+            },
+            {
+                action:"add", CareerLevel:2,
+                buy:
+				[
+					{id:"contenttweaker:currency_20", Count:{min:2,max:4}},
+					{id:"contenttweaker:currency_20", Count:{min:4,max:7}},
+					{id:"contenttweaker:currency_100", Count:{min:2,max:3}}
+				],
+                sell:
+				[
+					{
+						id:"forestry:stamps",
+						Damage: 1,
+						Count:{min:1,max:2}
+					},
+					{
+						id:"forestry:stamps",
+						Damage: 2,
+						Count:{min:1,max:2}
+					},
+					{
+						id:"forestry:stamps",
+						Damage: 3,
+						Count:{min:1,max:2}
+					}
+				]
+            },
+            {
+                action:"add", CareerLevel:3,
+                buy:
+				[
+					{id:"contenttweaker:currency_100", Count:{min:4,max:6}},
+					{id:"contenttweaker:currency_100", Count:{min:11,max:12}},
+					{id:"contenttweaker:currency_100", Count:{min:22,max:25}}
+				],
+                sell:
+				[
+					{
+						id:"forestry:stamps",
+						Damage: 4,
+						Count:1
+					},
+					{
+						id:"forestry:stamps",
+						Damage: 5,
+						Count:1
+					},
+					{
+						id:"forestry:stamps",
+						Damage: 6,
+						Count:1
+					}
+				]
+            },
+			{
+                action:"add", CareerLevel:1,
+                buy:
+					{id:"contenttweaker:currency_100", Count:{min:5,max:10}},
+                sell:
+				{
+					id:"forestry:letters",
+					Count:{min:5,max:10}
+				}
+            },
+			{
+                action:"add", CareerLevel:2,
+                buy:
+					{id:"contenttweaker:currency_100", Count:{min:1,max:2}},
+                sell:
+				{
+					id:"forestry:catalogue",
+					Count:1
+				}
+            },
+			{
+                action:"add", CareerLevel:4,
+                buy:
+					{id:"contenttweaker:currency_2500", Count:{min:4,max:10}},
+                sell:
+				{
+					id:"forestry:trade_station",
+					Count:1
+				}
+            },
+			{
+                action:"add", CareerLevel:1,
+                buy:
+					{id:"contenttweaker:currency_500", Count:{min:5,max:10}},
+                sell:
+				{
+					id:"forestry:mailbox",
+					Count:1
+				}
             }
         ]
     }
