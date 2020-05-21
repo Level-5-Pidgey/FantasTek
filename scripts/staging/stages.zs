@@ -59,3 +59,4 @@ static progression6 as Stage = ZenStager.initStage("stage_vi");
 static Locked as Stage = ZenStager.initStage("locked");
 
 //Optional Milestone Stages
+static Slimesling as Stage = ZenStager.initStage("stage_i_slimesling");
