@@ -590,6 +590,7 @@ var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
 	<ore:dustTinySulfur> : stages.progression1,
 	<ore:dustSmallSulfur> : stages.progression1,
 	<ore:dustSulfur> : stages.progression1,
+	<ore:dustNetherQuartz> : stages.progression1,
 	<ore:blockSulfur> : stages.progression1,
 	<ore:dustWood> : stages.progression1,
 	<ore:pulpWood> : stages.progression1,

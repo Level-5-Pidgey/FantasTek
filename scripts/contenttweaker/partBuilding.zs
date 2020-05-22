@@ -134,7 +134,7 @@ for material, materialIngot in new_oreMaterials {
 //Needs:
 //Poor Ore, Dense Ore, Dense Plating, Sheet Metal
 var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
-	MaterialSystem.getMaterialBuilder().setName("Copper").setColor(mods.contenttweaker.Color.fromHex("b87333")).build() : <ore:ingotCopper>,
+	MaterialSystem.getMaterialBuilder().setName("Copper").setColor(mods.contenttweaker.Color.fromHex("d5750a")).build() : <ore:ingotCopper>,
 	MaterialSystem.getMaterialBuilder().setName("Tin").setColor(mods.contenttweaker.Color.fromHex("dd3d4d5")).build() : <ore:ingotTin>,
 	MaterialSystem.getMaterialBuilder().setName("Silver").setColor(mods.contenttweaker.Color.fromHex("d5d5d7")).build() : <ore:ingotSilver>,
 	MaterialSystem.getMaterialBuilder().setName("Lead").setColor(mods.contenttweaker.Color.fromHex("425055")).build() : <ore:ingotLead>,
