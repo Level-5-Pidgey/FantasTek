@@ -19,5 +19,9 @@ recipes.remove(<extrautils2:ineffableglass>);
 recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:2>), <extrautils2:ineffableglass:2> * 8, [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:ingotUnstable>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
 recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass>), <extrautils2:ineffableglass:2> * 8, [[<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <ore:ingotUnstable>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>]]);
 
+//Remove the Glass Cutter and Ender Shard
+mods.jei.JEI.removeAndHide(<extrautils2:glasscutter>);
+mods.jei.JEI.removeAndHide(<extrautils2:endershard>);
+recipes.remove(<extrautils2:ingredients>);
 
 print("### Extrautils2 Init Complete ###");

@@ -691,7 +691,7 @@ for ore in EmberMelting
 }
 
 //Remove some specific Furnace Recipes that still manage to persist
-furnace.remove(<minecraft:redstone>);
+furnace.remove(<minecraft:redstone>, <minecraft:redstone_ore>);
 furnace.remove(<magneticraft:ingots:3>, <magneticraft:ores:1>);
 furnace.remove(<draconicevolution:draconium_ingot>);
 furnace.remove(<libvulpes:productdust>);

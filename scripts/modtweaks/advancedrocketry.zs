@@ -60,4 +60,8 @@ recipes.addShaped(scripts.helpers.createRecipeName(<advancedrocketry:blastbrick>
 recipes.remove(<advancedrocketry:platepress>);
 recipes.addShaped(scripts.helpers.createRecipeName(<advancedrocketry:platepress>), <advancedrocketry:platepress>, [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]]);
 
+//Remove Microchip Crafting
+mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:ic:2> * 4);
+mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:ic> * 4);
+
 print("### Advanced Rocketry Init Complete ###");

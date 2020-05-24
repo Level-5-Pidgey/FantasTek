@@ -36,6 +36,6 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcr
 
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:table_basic>) ~ "-bloodmagic", scripts.staging.stages.BloodMagic1.stage, <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.GetBloodMagicCraftingMaterials(1), <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Blood Magic Recipe
 
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:table_basic>) ~ "-thaumcraft", scripts.staging.stages.Thaumcraft1.stage, <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.GetBloodMagicCraftingMaterials(1), <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Thaumcraft
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:table_basic>) ~ "-thaumcraft", scripts.staging.stages.Thaumcraft1.stage, <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.GetThaumcraftCraftingMaterials(1), <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Thaumcraft
 
 print("### ExtendedCrafting Init Complete ###");
