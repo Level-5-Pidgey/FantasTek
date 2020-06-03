@@ -68,7 +68,7 @@
                     Count:3
                 },
                 sell:{
-                    id:"minecraftfuture:campfire",
+                    id:"futuremc:campfire",
                     Count:{min:1,max:2}
                 }
             },

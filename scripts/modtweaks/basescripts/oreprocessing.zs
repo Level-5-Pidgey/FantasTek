@@ -103,17 +103,17 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				if(!oreGem.empty)
 				{
 					furnace.addRecipe(oreGem.firstItem *2, ore, 0.7);
-					mods.minecraftfuture.BlastFurnace.addRecipe(ore, oreGem.firstItem * 2);
+					mods.futuremc.BlastFurnace.addRecipe(ore, oreGem.firstItem * 2);
 				}
 				else if (!oreIngot.empty)
 				{
 					furnace.addRecipe(oreIngot.firstItem, ore, 0.7);
-					mods.minecraftfuture.BlastFurnace.addRecipe(ore, oreIngot.firstItem);
+					mods.futuremc.BlastFurnace.addRecipe(ore, oreIngot.firstItem);
 				}
 				else if (!oreDust.empty & oreIngot.empty)
 				{
 					furnace.addRecipe(oreDust.firstItem, ore, 0.7);
-					mods.minecraftfuture.BlastFurnace.addRecipe(ore, oreDust.firstItem);
+					mods.futuremc.BlastFurnace.addRecipe(ore, oreDust.firstItem);
 				}
 				else
 				{
@@ -669,7 +669,7 @@ for ore in GemDusts
 	for ore in oreDust.items
 	{
 		furnace.addRecipe(oreGem.firstItem, ore, 0.0);
-		mods.minecraftfuture.BlastFurnace.addRecipe(ore, oreGem.firstItem);
+		mods.futuremc.BlastFurnace.addRecipe(ore, oreGem.firstItem);
 	}
 }
 

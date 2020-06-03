@@ -120,10 +120,10 @@ mods.botania.RuneAltar.addRecipe(<botania:rune:2> * 2, [<ore:powderMana>, script
 mods.botania.RuneAltar.addRecipe(<botania:rune:3> * 2, [<ore:powderMana>, scripts.helpers.T1MagicAirIngredients[0], scripts.helpers.T1MagicAirIngredients[1], scripts.helpers.T1MagicAirIngredients[2], scripts.helpers.T1MagicAirIngredients[3]], 5000); //Air
 
 //T2 Runes
-mods.botania.RuneAltar.addRecipe(<botania:rune:4>, [<ore:powderMana>, <botania:rune>, <botania:rune:1>, <minecraftfuture:bamboo>, <ore:treeSapling>, <ore:fish>], 8000); //Spring
+mods.botania.RuneAltar.addRecipe(<botania:rune:4>, [<ore:powderMana>, <botania:rune>, <botania:rune:1>, <futuremc:bamboo>, <ore:treeSapling>, <ore:fish>], 8000); //Spring
 mods.botania.RuneAltar.addRecipe(<botania:rune:5>, [<ore:powderMana>, <botania:rune:2>, <botania:rune:3>, <ore:slimeball>, <minecraft:melon>, <ore:gemPrismarine>], 8000); //Summer
 mods.botania.RuneAltar.addRecipe(<botania:rune:6>, [<ore:powderMana>, <botania:rune:1>, <botania:rune:3>, <minecraft:lit_pumpkin>, <ore:treeLeaves>, <minecraft:web>], 8000); //Autumn
-mods.botania.RuneAltar.addRecipe(<botania:rune:7>, [<ore:powderMana>, <botania:rune>, <botania:rune:2>, <minecraftfuture:sweetberry>, <ore:quartzMana>, <minecraft:snow>, <minecraft:snow>, <minecraft:snow>], 8000); //Winter
+mods.botania.RuneAltar.addRecipe(<botania:rune:7>, [<ore:powderMana>, <botania:rune>, <botania:rune:2>, <futuremc:sweet_berries>, <ore:quartzMana>, <minecraft:snow>, <minecraft:snow>, <minecraft:snow>], 8000); //Winter
 mods.botania.RuneAltar.addRecipe(<botania:rune:8>, [<ore:powderMana>, <ore:manaPearl>, <ore:manaDiamond>, <ore:quartzMana>], 8000); //Mana
 
 //Make Manasteel require actual steel
@@ -152,7 +152,7 @@ val botaniaFlowers = {
 
 for key, value in botaniaFlowers {
 	mods.botania.Apothecary.removeRecipe(key);
-  mods.botania.Apothecary.addRecipe(key, value);
+  	mods.botania.Apothecary.addRecipe(key, value);
 }
 
 //Change Pure Daisy Recipes

@@ -49,7 +49,9 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
     oreDict.get("gear" ~ materialString),
     oreDict.get("fan" ~ materialString),
     oreDict.get("coin" ~ materialString),
-    oreDict.get("coil" ~ materialString)
+    oreDict.get("coil" ~ materialString),
+    oreDict.get("sheet" ~ materialString),
+    oreDict.get("coilBlock" ~ materialString)
   ] as IOreDictEntry[];
 
   return oreDicts;
@@ -408,7 +410,7 @@ var OtherStagingReplacements as crafttweaker.item.IItemStack[crafttweaker.item.I
 	<contenttweaker:infused_stone_vitium> : <minecraft:stone>,
 	<contenttweaker:infused_stone_perditio> : <minecraft:stone>,
 	<iceandfire:fire_lily> : <biomesoplenty:flower_1:5>,
-	<iceandfire:frost_lily> : <minecraftfuture:flowerblue>
+	<iceandfire:frost_lily> : <futuremc:cornflower>
 };
 
 var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
@@ -531,6 +533,7 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
 {
   "CrudeSteel" : stages.progression1,
+  "Steel" : stages.progression2,
   "Wood" : stages.progression1,
   "RedstoneAlloy" : stages.progression1,
   "ConductiveIron" : stages.progression1,
@@ -572,6 +575,7 @@ for materialString in ExtraMaterialsToStage
 var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
 {
 	<ore:treeLeaves> : stages.progression1,
+	<ore:treeSapling> : stages.progression1,
 	<ore:plankWood> : stages.progression1,
 	<ore:logWood> : stages.progression1,
 	<ore:fuelCoke> : stages.progression1,
@@ -580,6 +584,8 @@ var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
 	<ore:dustAsh> : stages.progression1,
 	<ore:beeComb> : stages.progression1,
 	<ore:slabWood> : stages.progression1,
+	<ore:stairWood> : stages.progression1,
+	<ore:charredBlock> : stages.progression1,
 	<ore:doorWood> : stages.progression1,
 	<ore:fenceWood> : stages.progression1,
 	<ore:fenceGateWood> : stages.progression1,
@@ -594,6 +600,14 @@ var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
 	<ore:blockSulfur> : stages.progression1,
 	<ore:dustWood> : stages.progression1,
 	<ore:pulpWood> : stages.progression1,
+	<ore:itemSilicon> : stages.progression1,
+	<ore:dustSilicon> : stages.progression1,
+	<ore:nuggetSilicon> : stages.progression1,
+	<ore:blockCharcoal> : stages.progression1,
+	<ore:itemCharcoal> : stages.progression1,
+	<ore:gearStone> : stages.progression1,
+	<ore:coilIron> : stages.progression1,
+	<ore:coilGold> : stages.progression1,
 	<ore:dustWheat> : stages.progression1
 };
 

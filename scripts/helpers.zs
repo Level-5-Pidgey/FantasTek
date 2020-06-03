@@ -311,7 +311,7 @@ static T1MagicEarthIngredients as crafttweaker.oredict.IOreDictEntry[] =
 
 function createRecipeName(outputItem as crafttweaker.item.IItemStack) as string
 {
-	return outputItem.displayName ~ "-" ~ outputItem.displayName ~ "-" ~ outputItem.metadata;
+	return outputItem.displayName ~ "-" ~ outputItem.metadata;
 }
 
 static AnyPetalOrShroom as crafttweaker.item.IIngredient = <botania:petal:*> | <botania:mushroom:*>;
@@ -327,3 +327,8 @@ function setItemAndRecipesStage(itemToStage as crafttweaker.item.IItemStack, sta
 		mods.recipestages.Recipes.setRecipeStage(stageToSetTo, itemToStage);
 	}
 }
+
+static CircuitTiers as crafttweaker.item.IIngredient[int]=
+{
+	1 : <mekanism:controlcircuit>
+};

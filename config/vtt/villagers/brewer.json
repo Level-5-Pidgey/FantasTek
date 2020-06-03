@@ -5,6 +5,7 @@
 		zombieTexture: "vtt:textures/entity/zombie_villager/zombie_brewer.png"
 	},
 	careers: [
-		"brewer"
+		"brewer",
+		"apiarist"
 	]
 }

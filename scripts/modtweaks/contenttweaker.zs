@@ -74,25 +74,25 @@ Dropt.list("thaumcraft_crystal_ores")
 
 //Adding Smelting Recipes
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) * 4, <contenttweaker:infused_stone_aer>, 0.7);
-mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_aer>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) * 4);
+mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_aer>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) * 4);
 
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 4, <contenttweaker:infused_stone_aqua>, 0.7);
-mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_aqua>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 4);
+mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_aqua>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 4);
 
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 4, <contenttweaker:infused_stone_ignis>, 0.7);
-mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_ignis>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 4);
+mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_ignis>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 4);
 
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) * 4, <contenttweaker:infused_stone_ordo>, 0.7);
-mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_ordo>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) * 4);
+mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_ordo>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) * 4);
 
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 4, <contenttweaker:infused_stone_perditio>, 0.7);
-mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_perditio>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 4);
+mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_perditio>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 4);
 
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 4, <contenttweaker:infused_stone_terra>, 0.7);
-mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_terra>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 4);
+mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_terra>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 4);
 
 furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) * 4, <contenttweaker:infused_stone_vitium>, 0.7);
-mods.minecraftfuture.BlastFurnace.addRecipe(<contenttweaker:infused_stone_vitium>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) * 4);
+mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_vitium>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) * 4);
 
 //Add Prismarine Nugget to OreDict
 <ore:nuggetPrismarine>.add(<contenttweaker:prismarine_nugget>);
@@ -182,7 +182,7 @@ val foodRecipes = {
 	<contenttweaker:sushi> : [<ore:fish>, <biomesoplenty:seaweed>, <ore:plantWildrice>],
 	<contenttweaker:steak_and_chips> : [<minecraft:cooked_beef>, <minecraft:baked_potato>, <ore:itemSalt>],
 	<contenttweaker:meat_pie> : [<ore:listAllmeatcooked>, <ore:listAllmeatcooked>, <ore:foodFlour> | <ore:dustWheat>, <ore:itemSalt>],
-	<contenttweaker:honey_sandwich> : [<ore:dropHoney> | <minecraftfuture:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>],
+	<contenttweaker:honey_sandwich> : [<ore:dropHoney> | <futuremc:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>],
 	<contenttweaker:fairy_bread> : [<ore:dye>, <ore:dye>, <minecraft:sugar>, <minecraft:bread>],
 	<contenttweaker:chocolate> * 2 : [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")],
 	<contenttweaker:chicken_bucket> : [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>],

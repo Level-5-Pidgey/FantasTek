@@ -18,7 +18,7 @@
 	  }
     ],
     "indicator": {
-      "blocks": "minecraftfuture:flowerblack",
+      "blocks": "futuremc:flowerblack",
       "rarity": 40
     },
     "stone": [
@@ -61,7 +61,7 @@
 	  }
     ],
     "indicator": {
-      "blocks": "minecraftfuture:flowerwhite",
+      "blocks": "futuremc:flowerwhite",
       "rarity": 40
     },
     "stone": [

@@ -47,4 +47,7 @@ mods.thaumcraft.Crucible.registerRecipe(scripts.helpers.createRecipeName(<mekani
 //Grind Salt blocks into salt items
 mods.appliedenergistics2.Grinder.addRecipe(<mekanism:salt> * 2, <mekanism:saltblock>, 3);
 
+//Remove Mekanism Paper Recipe
+recipes.removeByRecipeName("mekanism:paper");
+
 print("### Mekanism Init Complete ###");

@@ -123,9 +123,9 @@ for item in recipesToRemove
 //Remove Slice 'N Splice recipes
 val snsToRemove=
 [
-<enderio:item_capacitor_totemic>,
-<enderio:block_enderman_skull:2>,
-<enderio:item_material:40>
+	<enderio:item_capacitor_totemic>,
+	<enderio:block_enderman_skull:2>,
+	<enderio:item_material:40>
 ] as crafttweaker.item.IItemStack[];
 
 for sns in snsToRemove
@@ -152,7 +152,17 @@ mods.tconstruct.Casting.addTableRecipe(<ore:gearCrudeSteel>.firstItem, <tconstru
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot>);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotCrudeSteel>.firstItem * 2, [<ore:ingotIron>, <contenttweaker:coke_dust>], 4500);
 //Crafting
-recipes.addShapeless(scripts.helpers.createRecipeName(<ore:plateSteel>.firstItem), <ore:plateSteel>.firstItem, [<embers:tinker_hammer>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]);
-recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearSteel>.firstItem), <ore:gearSteel>.firstItem, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<ore:plateCrudeSteel>.firstItem), <ore:plateCrudeSteel>.firstItem, [<embers:tinker_hammer>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]);
+recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearCrudeSteel>.firstItem), <ore:gearCrudeSteel>.firstItem, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
 
+//Shaped Mod Crafting Recipes
+val enderioRecipes_CRAFTINGTABLE = {
+	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, <ore:itemSimpleMachineChassi>, <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]],
+	<enderio:item_material> : [[<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>], [<ore:ingotElectrotineAlloy>, <embers:wrapped_sealed_planks>, <ore:ingotElectrotineAlloy>], [<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in enderioRecipes_CRAFTINGTABLE {
+	recipes.remove(key.withAmount(1));
+	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+}
 print("### EnderIO Init Complete ###");

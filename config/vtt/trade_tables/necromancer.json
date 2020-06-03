@@ -24,7 +24,7 @@
 					Count:{min:4,max:6}
 				},
 				sell:{
-					id:"minecraftfuture:flowerblack",
+					id:"futuremc:flowerblack",
 					Count:{min:4,max:8}
 				}
 			},

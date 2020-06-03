@@ -52,16 +52,35 @@ for ARPlate in ARPlates
 	scripts.helpers.unstageAndHide(ARPlate);
 }
 
-//Modify Heatproof Brick Recipe
-recipes.remove(<advancedrocketry:blastbrick>);
-recipes.addShaped(scripts.helpers.createRecipeName(<advancedrocketry:blastbrick>), <advancedrocketry:blastbrick> * 2, [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <minecraft:magma_cream>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]]);
-
-//Modify Small Plate Presser Recipe
-recipes.remove(<advancedrocketry:platepress>);
-recipes.addShaped(scripts.helpers.createRecipeName(<advancedrocketry:platepress>), <advancedrocketry:platepress>, [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]]);
-
 //Remove Microchip Crafting
 mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:ic:2> * 4);
 mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:ic> * 4);
 
+//Change Coil Block OreDicts
+val vulpesCoils = {
+	"Copper" : <libvulpes:coil0:4>,
+	"Titanium" : <libvulpes:coil0:7>,
+	"Gold" : <libvulpes:coil0:2>,
+	"Aluminum" : <libvulpes:coil0:9>,
+	"Aluminium" : <libvulpes:coil0:9>,
+	"Iridium" : <libvulpes:coil0:10>
+} as crafttweaker.item.IItemStack[string];
+
+for key, value in vulpesCoils {
+	//Make the oredict "coilBlockGold" instead of "coilGold" for example
+	oreDict.get("coil" ~ key).remove(value);
+	oreDict.get("coilBlock" ~ key).add(value);
+}
+
+//Crafting Recipes
+val advancedRocketryRecipes = {
+		<advancedrocketry:platepress> : [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]],
+		<advancedrocketry:blastbrick> * 2 : [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <minecraft:magma_cream>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]],
+		<advancedrocketry:ic> * 2 : [[null, <ore:nuggetConductiveIron>, null], [null, <projectred-core:resource_item:342>, null], [null, <ore:nuggetConductiveIron>, null]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in advancedRocketryRecipes {
+	recipes.remove(key.withAmount(1));
+	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+}
 print("### Advanced Rocketry Init Complete ###");

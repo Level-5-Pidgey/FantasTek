@@ -42,7 +42,7 @@ function denseOreCrafting(material as string)
 			if(!oreDict.get(regularOre).empty)
 			{
 				furnace.addRecipe(oreDict.get(regularOre).firstItem * 2, ore, 1.5);
-				mods.minecraftfuture.BlastFurnace.addRecipe(ore, oreDict.get(regularOre).firstItem * 2);
+				mods.futuremc.BlastFurnace.addRecipe(ore, oreDict.get(regularOre).firstItem * 2);
 				print("Added furnace recipe for dense " ~ material ~ " ore.");
 			}
 			else

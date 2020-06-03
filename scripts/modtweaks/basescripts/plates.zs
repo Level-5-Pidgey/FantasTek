@@ -136,6 +136,7 @@ val TConplates =
 	<contenttweaker:material_part:955>,
 	<contenttweaker:material_part:945>,
 	<contenttweaker:material_part:940>,
+	<contenttweaker:material_part:1298>,
 	<contenttweaker:material_part:1073>
 ] as crafttweaker.item.IItemStack[];
 
@@ -219,6 +220,7 @@ val CompactorPlates =
 	<enderio:item_alloy_ingot:8>,
 	<enderio:item_alloy_ingot:9>,
 	<avaritia:resource:6>,
+	<enderio:item_alloy_endergy_ingot>,
 	<avaritia:resource:4>
 ] as crafttweaker.item.IItemStack[];
 
@@ -281,6 +283,7 @@ val RocketryPlates =
 	<contenttweaker:material_part:955>,
 	<contenttweaker:material_part:950>,
 	<contenttweaker:material_part:945>,
+	<contenttweaker:material_part:1298>,
 	<contenttweaker:material_part:940>
 ] as crafttweaker.item.IItemStack[];
 

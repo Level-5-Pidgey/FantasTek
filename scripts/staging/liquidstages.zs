@@ -44,6 +44,8 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:ardite> : stages.Locked,
 	<liquid:astral_starmetal> : stages.Locked,
 	<liquid:beetroot_soup> : stages.progression1,
+	<liquid:water> : stages.progression1,
+	<liquid:lava> : stages.progression1,
 	<liquid:biocrude> : stages.Locked,
 	<liquid:biofuel> : stages.Locked,
 	<liquid:biomass> : stages.Locked,
@@ -101,7 +103,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:hot_crude> : stages.Locked,
 	<liquid:hot_spring_water> : stages.progression1,
 	<liquid:hydrogen> : stages.Locked,
-	<liquid:ice> : stages.Locked,
+	<liquid:ice> : stages.progression1,
 	<liquid:invar> : stages.Locked,
 	<liquid:iridium> : stages.Locked,
 	<liquid:iron> : stages.progression1,
@@ -220,7 +222,6 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:melodic_alloy> : stages.Locked,
 	<liquid:crystalline_alloy> : stages.Locked,
 	<liquid:crude_steel> : stages.progression1,
-	<liquid:pure_water> : stages.progression1,
 	<liquid:if.protein> : stages.Locked
 };
 

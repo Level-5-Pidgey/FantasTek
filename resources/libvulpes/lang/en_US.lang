@@ -1,0 +1,5 @@
+tile.coil.silicon.name=Silicon Coil Block
+tile.coil.copper.name=Copper Coil Block
+tile.coil.tin.name=Tin Coil Block
+tile.coil.steel.name=Steel Coil Block
+tile.coil=Coil Block
