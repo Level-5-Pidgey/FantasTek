@@ -166,7 +166,7 @@
 				{id: "forestry:bee_house", Count: 1}
 			},
 			{
-				action:"add", CareerLevel:4, Chance: 0.5
+				action:"add", CareerLevel:4, Chance: 0.5,
 				buy:
 				{
 					id:"contenttweaker:currency_2500",
@@ -176,7 +176,7 @@
 				{id: "forestry:apiarist_helmet", Count: 1}
 			},
 			{
-				action:"add", CareerLevel:4, Chance: 0.5
+				action:"add", CareerLevel:4, Chance: 0.5,
 				buy:
 				{
 					id:"contenttweaker:currency_2500",
@@ -186,7 +186,7 @@
 				{id: "forestry:apiarist_chest", Count: 1}
 			},
 			{
-				action:"add", CareerLevel:4, Chance: 0.5
+				action:"add", CareerLevel:4, Chance: 0.5,
 				buy:
 				{
 					id:"contenttweaker:currency_2500",
@@ -196,7 +196,7 @@
 				{id: "forestry:apiarist_legs", Count: 1}
 			},
 			{
-				action:"add", CareerLevel:4, Chance: 0.5
+				action:"add", CareerLevel:4, Chance: 0.5,
 				buy:
 				{
 					id:"contenttweaker:currency_2500",
