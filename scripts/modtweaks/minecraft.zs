@@ -1,3 +1,6 @@
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+
 print("~~~ Begin Minecraft Init ~~~");
 
 //Buff up Rail Recipe
@@ -18,5 +21,45 @@ furnace.remove(<minecraft:coal:1>);
 furnace.addRecipe(<thermalfoundation:material:801>, <minecraft:coal:1>);
 
 scripts.helpers.AddTooltip(<minecraft:coal:1>, ["Cannot be made in a standard furnace.", "Cover up wood piles with soft blocks and burn them instead!", "See the Foresters Manual for more details. (Or web search!)"]);
+
+for item in game.items
+{
+  val burnableStack = item.makeStack();
+
+  if(furnace.getFuel(burnableStack) > 0)
+  {
+    furnace.setFuel(burnableStack, 0);
+  }
+}
+
+var furnaceFuels as double[IOreDictEntry] =
+{
+	<ore:logWood> : 2.0,
+  <ore:coal> : 4.0,
+  <ore:rodBlaze> : 8.0,
+  <ore:charcoal> : 5.0,
+  <ore:plankWood> : 0.5,
+  <ore:fuelCoke> : 16.0,
+  <ore:blockCoal> : 36.0,
+  <ore:blockCharcoal> : 45.0,
+  <ore:blockFuelCoke> : 144.0,
+  <ore:clathrateOil> : 12.0,
+  <ore:nuggetCoal> : 1.0,
+  <ore:brickPeat> : 14.0,
+  <ore:brickGlowingPeat> : 32.0,
+  <ore:logPile> : 8.5,
+};
+
+for oreEntry in furnaceFuels
+{
+  if (!oreEntry.empty)
+  {
+    for ore in oreEntry.items
+  	{
+      //1 item = 200 ticks
+      furnace.setFuel(ore, furnaceFuels[oreEntry] * 200);
+    }
+  }
+}
 
 print("### Minecraft Init Complete ###");

@@ -2,8 +2,9 @@ import crafttweaker.item.IItemStack;
 
 print("~~~ Begin Forestry Init ~~~");
 
-//Add Log Pile to an OreDict for the Coke Oven
+//Forestry Ore Dict Additions
 <ore:logPile>.add(<forestry:wood_pile>);
+<ore:brickGlowingPeat>.add(<forestry:bituminous_peat>);
 
 scripts.helpers.AddTooltip(<forestry:wood_pile>, ["Usage: Create a rectangular prism (even 1x1x1 works) of Wood Piles.", "Cover the prism on all faces with a compatible block (check JEI for usages).", "Set fire to one wood pile, then fully cover.", "Wait until smoke stops appearing through the blocks."]);
 
