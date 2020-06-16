@@ -13,6 +13,6 @@ recipes.remove(<futuremc:beehive>);
 recipes.addShaped(scripts.helpers.createRecipeName(<futuremc:beehive>), <futuremc:beehive>, [[<ore:plankWood>, <ore:plateWood>, <ore:plankWood>], [<futuremc:honeycomb>, <ore:string>, <futuremc:honeycomb>], [<ore:plankWood>, <ore:plateWood>, <ore:plankWood>]]);
 
 //Create FutureMC bee combs from forestry ones.
-recipes.addShapeless(scripts.helpers.createRecipeName(<futuremc:beehive>) ~ "_futuremc", <futuremc:beehive>, [<ore:beeComb>]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<futuremc:honeycomb>) ~ "_futuremc", <futuremc:honeycomb>, [<ore:beeComb>]);
 
 print("### FutureMC Init Complete ###");

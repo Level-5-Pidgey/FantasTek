@@ -55,12 +55,11 @@ for JAOPCAPlate in JAOPCAPlates
 	scripts.helpers.unstageAndHide(JAOPCAPlate);
 }
 
-//Make Coal Nuggets burn
+//Add Coal Nugget Tooltips
 if(!<ore:nuggetCoal>.empty)
 {
 	for coal in <ore:nuggetCoal>.items
 	{
-		furnace.setFuel(coal, 200);
 		scripts.helpers.AddTooltip(coal, ["Can be used in a furnace to smelt 1 single item!"]);
 	}
 }
