@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-06-09T00:14:45.3821573Z",
+  "lastPlayed": "2020-07-02T00:11:42.7731443Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -7154,7 +7154,7 @@
       "dateInstalled": "2020-04-08T09:01:29.3998508Z",
       "dateUpdated": "2020-04-18T07:57:04.529603Z",
       "dateLastUpdateAttempted": "2020-04-18T07:57:04.529603Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7971,7 +7971,7 @@
       "dateInstalled": "2019-12-13T01:14:26.9267785Z",
       "dateUpdated": "2018-12-13T01:14:26.9267785Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9411,7 +9411,7 @@
       "dateInstalled": "2019-12-13T01:14:26.9237866Z",
       "dateUpdated": "2018-12-13T01:14:26.9237866Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11040,7 +11040,7 @@
       "dateInstalled": "2019-12-13T01:15:04.970064Z",
       "dateUpdated": "2020-05-11T02:16:35.2173533Z",
       "dateLastUpdateAttempted": "2020-05-11T02:16:35.2173533Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12532,7 +12532,7 @@
       "dateInstalled": "2019-10-29T00:49:37.8240198Z",
       "dateUpdated": "2020-04-08T07:49:01.863085Z",
       "dateLastUpdateAttempted": "2020-04-08T07:49:01.863085Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13846,7 +13846,7 @@
       "dateInstalled": "2020-04-18T08:06:18.4436981Z",
       "dateUpdated": "2020-04-18T08:06:18.4457283Z",
       "dateLastUpdateAttempted": "2020-04-18T08:06:18.4457283Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15764,7 +15764,7 @@
       "dateInstalled": "2019-12-13T04:34:53.8181875Z",
       "dateUpdated": "2020-05-26T00:30:18.1712565Z",
       "dateLastUpdateAttempted": "2020-05-26T00:30:18.1712565Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16106,7 +16106,7 @@
       "dateInstalled": "2019-12-13T01:14:26.9207948Z",
       "dateUpdated": "2018-12-13T01:14:26.9207948Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16537,7 +16537,7 @@
       "dateInstalled": "2020-05-30T08:53:45.7802383Z",
       "dateUpdated": "2020-05-30T08:53:45.787679Z",
       "dateLastUpdateAttempted": "2020-05-30T08:53:45.787679Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17945,7 +17945,7 @@
       "dateInstalled": "2020-05-09T14:10:35.9810174Z",
       "dateUpdated": "2020-05-26T00:29:53.3087053Z",
       "dateLastUpdateAttempted": "2020-05-26T00:29:53.3087053Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19713,7 +19713,7 @@
       "dateInstalled": "2019-12-30T07:16:36.3915824Z",
       "dateUpdated": "2020-05-26T00:29:41.6160912Z",
       "dateLastUpdateAttempted": "2020-05-26T00:29:41.6160912Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20997,7 +20997,7 @@
       "dateInstalled": "2019-12-13T01:14:26.8847089Z",
       "dateUpdated": "2020-01-29T05:05:20.5277987Z",
       "dateLastUpdateAttempted": "2020-01-29T05:05:20.5277987Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22512,6 +22512,87 @@
       "installedTargets": null
     },
     {
+      "addonID": 310413,
+      "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
+      "installedFile": {
+        "id": 2682825,
+        "displayName": "MightyEnderChicken-1.12.2-7.3.0.jar",
+        "fileName": "MightyEnderChicken-1.12.2-7.3.0.jar",
+        "fileDate": "2019-03-03T18:33:24.77Z",
+        "fileLength": 8159420,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2682/825/MightyEnderChicken-1.12.2-7.3.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 229060,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1272377688,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1856170443,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 3674821299,
+            "type": 0
+          },
+          {
+            "foldername": "me",
+            "fingerprint": 207215849,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 49047260,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1485454606,
+        "gameVersion": [
+          "1.12",
+          "1.12.1",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "MightyEnderChicken-1.12.2-7.3.0.jar"
+      },
+      "dateInstalled": "2020-06-22T07:10:12.523534Z",
+      "dateUpdated": "2020-06-22T07:10:12.5319668Z",
+      "dateLastUpdateAttempted": "2020-06-22T07:10:12.5319668Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 241160,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
@@ -22993,83 +23074,78 @@
       "installedTargets": null
     },
     {
-      "addonID": 228895,
+      "addonID": 314904,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
-        "id": 2572722,
-        "displayName": "BiomeTweaker-1.12.2 3.2.354",
-        "fileName": "BiomeTweaker-1.12.2-3.2.354.jar",
-        "fileDate": "2018-06-14T21:27:37.02Z",
-        "fileLength": 570149,
+        "id": 2819669,
+        "displayName": "FTBBackups-1.1.0.1.jar",
+        "fileName": "FTBBackups-1.1.0.1.jar",
+        "fileDate": "2019-10-31T20:25:08.137Z",
+        "fileLength": 43764,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2572/722/BiomeTweaker-1.12.2-3.2.354.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2819/669/FTBBackups-1.1.0.1.jar",
         "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 270116,
-            "type": 2,
-            "fileId": 0
-          }
-        ],
+        "alternateFileId": 2819670,
+        "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3959746812,
-            "type": 0
+            "fingerprint": 3896838891,
+            "type": 3
           },
           {
-            "foldername": "me",
-            "fingerprint": 1665710622,
-            "type": 0
+            "foldername": "com",
+            "fingerprint": 409143337,
+            "type": 3
           },
           {
             "foldername": "assets",
-            "fingerprint": 1725062551,
-            "type": 0
+            "fingerprint": 4225148106,
+            "type": 3
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3152582459,
+            "type": 3
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1294925302,
-            "type": 0
-          },
-          {
-            "foldername": "logo.png",
-            "fingerprint": 4047149370,
-            "type": 0
-          },
-          {
-            "foldername": "LICENSE.txt",
-            "fingerprint": 1185419476,
-            "type": 0
-          },
-          {
-            "foldername": "NOTICE.txt",
-            "fingerprint": 3411389661,
-            "type": 0
+            "fingerprint": 812656482,
+            "type": 3
           }
         ],
-        "packageFingerprint": 1463737096,
+        "packageFingerprint": 752442057,
         "gameVersion": [
           "1.12.2"
         ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2"
+          }
+        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 1693418,
+        "projectId": 314904,
+        "packageFingerprintId": 372959736,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
+        "gameVersionMappingId": 1988512,
+        "gameVersionId": 4458,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "BiomeTweaker-1.12.2-3.2.354.jar"
+        "FileNameOnDisk": "FTBBackups-1.1.0.1.jar"
       },
-      "dateInstalled": "2020-01-29T05:03:42.3470731Z",
-      "dateUpdated": "2020-01-29T05:03:42.3560487Z",
-      "dateLastUpdateAttempted": "2020-01-29T05:03:42.3560487Z",
+      "dateInstalled": "2019-12-13T01:14:26.8887275Z",
+      "dateUpdated": "2018-12-13T01:14:26.8887275Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -23176,78 +23252,83 @@
       "installedTargets": null
     },
     {
-      "addonID": 314904,
+      "addonID": 228895,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
-        "id": 2819669,
-        "displayName": "FTBBackups-1.1.0.1.jar",
-        "fileName": "FTBBackups-1.1.0.1.jar",
-        "fileDate": "2019-10-31T20:25:08.137Z",
-        "fileLength": 43764,
+        "id": 2572722,
+        "displayName": "BiomeTweaker-1.12.2 3.2.354",
+        "fileName": "BiomeTweaker-1.12.2-3.2.354.jar",
+        "fileDate": "2018-06-14T21:27:37.02Z",
+        "fileLength": 570149,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2819/669/FTBBackups-1.1.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2572/722/BiomeTweaker-1.12.2-3.2.354.jar",
         "isAlternate": false,
-        "alternateFileId": 2819670,
-        "dependencies": [],
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 270116,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3896838891,
-            "type": 3
+            "fingerprint": 3959746812,
+            "type": 0
           },
           {
-            "foldername": "com",
-            "fingerprint": 409143337,
-            "type": 3
+            "foldername": "me",
+            "fingerprint": 1665710622,
+            "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 4225148106,
-            "type": 3
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3152582459,
-            "type": 3
+            "fingerprint": 1725062551,
+            "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 812656482,
-            "type": 3
+            "fingerprint": 1294925302,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 4047149370,
+            "type": 0
+          },
+          {
+            "foldername": "LICENSE.txt",
+            "fingerprint": 1185419476,
+            "type": 0
+          },
+          {
+            "foldername": "NOTICE.txt",
+            "fingerprint": 3411389661,
+            "type": 0
           }
         ],
-        "packageFingerprint": 752442057,
+        "packageFingerprint": 1463737096,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1693418,
-        "projectId": 314904,
-        "packageFingerprintId": 372959736,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1988512,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "FTBBackups-1.1.0.1.jar"
+        "FileNameOnDisk": "BiomeTweaker-1.12.2-3.2.354.jar"
       },
-      "dateInstalled": "2019-12-13T01:14:26.8887275Z",
-      "dateUpdated": "2018-12-13T01:14:26.8887275Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "dateInstalled": "2020-01-29T05:03:42.3470731Z",
+      "dateUpdated": "2020-01-29T05:03:42.3560487Z",
+      "dateLastUpdateAttempted": "2020-01-29T05:03:42.3560487Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,

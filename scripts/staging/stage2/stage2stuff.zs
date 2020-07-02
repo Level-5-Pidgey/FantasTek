@@ -54,7 +54,6 @@ val otherItems = [
 	<forestry:thermionic_tubes:1>,
 	<forestry:thermionic_tubes:2>,
 	<forestry:thermionic_tubes:10>,
-	<forestry:thermionic_tubes:12>,
 	<randomthings:ingredient:10>,
 	<randomthings:lotusseeds>,
 	<randomthings:lotus:*>,

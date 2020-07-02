@@ -98,18 +98,36 @@ for materialString in oreMaterials
 	removeChunkSmelt(materialString);
 }
 
-val magneticraftRecipes = {
+val magneticraftRecipes_CRAFTINGTABLE = {
 	<magneticraft:crafting:2> * 4 : [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotRedstoneAlloy>, <ore:dustRedstone>, <ore:ingotCrudeSteel>], [<ore:ingotIron>, <ore:ingotIron>, null]],
-	<magneticraft:conveyor_belt> * 16 : [[null, null, null], [<ore:plateIron>, <magneticraft:crafting:2>, <ore:plateIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
+	<magneticraft:conveyor_belt> * 16 : [[null, null, null], [<ore:plateIron>, <magneticraft:crafting:2>, <ore:ingotIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
 	<magneticraft:inserter> * 4 : [[<ore:ingotRedstoneAlloy>, <ore:nuggetIron>, null], [<ore:nuggetIron>, <ore:ingotRedstoneAlloy>, <ore:nuggetIron>], [<ore:plateIron>, <magneticraft:crafting:2>, <ore:plateIron>]],
+	<magneticraft:battery_item_medium> : [[null, <ore:ingotElectrotineAlloy>, null], [<ore:plateConductiveIron>, <magneticraft:battery_item_low>, <ore:plateConductiveIron>], [<ore:plateConductiveIron>, <magneticraft:battery_item_low>, <ore:plateConductiveIron>]],
+	<magneticraft:battery_item_low> * 2 : [[null, <ore:dustElectrotine>, null], [<ore:ingotIron>, <ore:dustSulfur>, <ore:ingotIron>], [<ore:ingotIron>, <ore:dustSulfur>, <ore:ingotIron>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
-for key, value in magneticraftRecipes {
+for key, value in magneticraftRecipes_CRAFTINGTABLE {
 	recipes.remove(key.withAmount(1));
 	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
 }
 
+val magneticraftRecipes_EXTENDEDCRAFTING = {
+
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in magneticraftRecipes_EXTENDEDCRAFTING {
+	recipes.remove(key.withAmount(1));
+	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
+}
+
 //Motor after stage 1
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:crafting:2>) ~ scripts.helpers.stages.progression2.stage, <magneticraft:crafting:2> * 4, [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotRedstoneAlloy>, <ore:dustRedstone>, <ore:ingotCopper>], [<ore:ingotIron>, <ore:ingotIron>, null]]);
+
+//Battery Recipe in ExtendedCrafting
+recipes.remove(<magneticraft:battery>);
+for circuit in scripts.helpers.CircuitTiers[1].items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:battery>, [[null, circuit, null], [<ore:plateIron>, <magneticraft:battery_item_medium>, <ore:plateIron>], [<ore:plateIron>, <magneticraft:battery_item_medium>, <ore:plateIron>]]);
+}
 
 print("### Magneticraft Init Complete ###");

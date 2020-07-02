@@ -59,9 +59,9 @@ val projectRedRecipes = {
 		<ore:coilCopper>.firstItem * 4 : [[<ore:ingotCopper>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotCopper>]],
 		<ore:coilIron>.firstItem * 4 : [[<ore:ingotIron>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotIron>]],
 		<ore:coilGold>.firstItem * 4 : [[<ore:ingotGold>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotGold>]],
-		<projectred-core:resource_item:310> * 2 : [[null, <ore:dustRedstone>, null], [<ore:dustRedstone>, <projectred-core:resource_item:301>, <ore:dustRedstone>], [null, <ore:dustRedstone>, null]],
-		<projectred-core:resource_item:311> * 2 : [[null, <ore:dustGlowstone>, null], [<ore:dustGlowstone>, <projectred-core:resource_item:301>, <ore:dustGlowstone>], [null, <ore:dustGlowstone>, null]],
-		<projectred-core:resource_item:312> * 2 : [[null, <ore:dustElectrotine>, null], [<ore:dustElectrotine>, <projectred-core:resource_item:301>, <ore:dustElectrotine>], [null, <ore:dustElectrotine>, null]],
+		<projectred-core:resource_item:310> : [[null, <ore:dustRedstone>, null], [<ore:dustRedstone>, <projectred-core:resource_item:301>, <ore:dustRedstone>], [null, <ore:dustRedstone>, null]],
+		<projectred-core:resource_item:311> : [[null, <ore:dustGlowstone>, null], [<ore:dustGlowstone>, <projectred-core:resource_item:301>, <ore:dustGlowstone>], [null, <ore:dustGlowstone>, null]],
+		<projectred-core:resource_item:312> : [[null, <ore:dustElectrotine>, null], [<ore:dustElectrotine>, <projectred-core:resource_item:301>, <ore:dustElectrotine>], [null, <ore:dustElectrotine>, null]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in projectRedRecipes {

@@ -12,7 +12,8 @@ var quarkTooltips =
 	<quark:redstone_inductor> : ["A redstone circuit piece where the output is the sum of the 3 other input sides."],
 	<quark:gravisand> : ["Falls only when a redstone signal is given.", "Floats upwards if it cannot fall down.", "Emits a comparator signal of 15 and propagates to adjacent gravisand blocks."],
 	<quark:grate> : ["Players can walk on top of the grate just fine", "but animals will be too scared to walk over it.", "Items will drop straight through it"],
-	<quark:horse_whistle> : ["Teleports your horse to you if you're within a medium-sized radius."]
+	<quark:horse_whistle> : ["Teleports your horse to you if you're within a medium-sized radius."],
+	<quark:slime_bucket> : ["Animates in your inventory/hotbar when you're in a slime chunk."]
 } as string[][crafttweaker.item.IItemStack];
 
 for item, textArray in quarkTooltips

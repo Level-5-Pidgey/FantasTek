@@ -42,6 +42,7 @@ function removeExistingCraftingRecipes(craftingMaterial as string)
 				for gem in oreGem.items
 				{
 					furnace.remove(gem, ore);
+					mods.futuremc.BlastFurnace.removeRecipe(ore);
 				}
 			}
 			else if (!oreIngot.empty)
@@ -49,6 +50,7 @@ function removeExistingCraftingRecipes(craftingMaterial as string)
 				for ingot in oreIngot.items
 				{
 					furnace.remove(ingot, ore);
+					mods.futuremc.BlastFurnace.removeRecipe(ore);
 				}
 			}
 			else if (!oreDust.empty)
@@ -56,6 +58,7 @@ function removeExistingCraftingRecipes(craftingMaterial as string)
 				for dust in oreDust.items
 				{
 					furnace.remove(dust, ore);
+					mods.futuremc.BlastFurnace.removeRecipe(ore);
 				}
 			}
 		}

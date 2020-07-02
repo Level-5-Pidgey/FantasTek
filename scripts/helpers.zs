@@ -328,7 +328,23 @@ function setItemAndRecipesStage(itemToStage as crafttweaker.item.IItemStack, sta
 	}
 }
 
-static CircuitTiers as crafttweaker.item.IIngredient[int]=
+static CircuitTiers as crafttweaker.item.IIngredient[int] =
 {
-	1 : <mekanism:controlcircuit>
+	1 : <forestry:chipsets>.withTag({T: 0 as short}) | <forestry:chipsets:1>.withTag({T: 1 as short}) | <forestry:chipsets:2>.withTag({T: 2 as short}) | <forestry:chipsets:3>.withTag({T: 3 as short})
+};
+
+static FrameTiers as crafttweaker.item.IIngredient[int]=
+{
+	1 : <forestry:sturdy_machine> | <rftools:machine_frame>,
+};
+
+static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =
+{
+	"ore" : <ore:oreRuby>.firstItem | <ore:orePeridot>.firstItem |
+	<ore:oreTopaz>.firstItem | <ore:oreTanzanite>.firstItem |
+	<ore:oreMalachite>.firstItem | <ore:oreSapphire>.firstItem |
+	<ore:oreAmber>.firstItem | <ore:oreEmerald>.firstItem,
+	"gem" : <ore:gemRuby>.firstItem | <ore:gemPeridot>.firstItem |	<ore:gemTopaz>.firstItem | <ore:gemTanzanite>.firstItem |	<ore:gemMalachite>.firstItem | <ore:gemSapphire>.firstItem |	<ore:gemAmber>.firstItem | <ore:gemEmerald>.firstItem,
+	"block" : <ore:blockRuby>.firstItem | <ore:blockPeridot>.firstItem | <ore:blockTopaz>.firstItem | <ore:blockTanzanite>.firstItem | <ore:blockMalachite>.firstItem | <ore:blockSapphire>.firstItem | <ore:blockAmber>.firstItem | <ore:blockEmerald>.firstItem,
+	"plate" : <ore:plateRuby>.firstItem | <ore:platePeridot>.firstItem | <ore:plateTopaz>.firstItem | <ore:plateTanzanite>.firstItem | <ore:plateMalachite>.firstItem | <ore:plateSapphire>.firstItem | <ore:plateAmber>.firstItem | <ore:plateEmerald>.firstItem,
 };

@@ -168,6 +168,21 @@ LootTables.getTable("minecraft:chests/end_city_treasure").getPool("main").addIte
 val witherSkeleton = LootTables.getTable("minecraft:entities/wither_skeleton"); //Wither Skeleton (remove extra bones, remove drops of evil)
 witherSkeleton.removePool("xuLootDropOfEvil");
 
+val witch = LootTables.getTable("minecraft:entities/witch").getPool("main");
+witch.removeEntry("minecraft:glowstone_dust");
+witch.removeEntry("minecraft:redstone");
+witch.removeEntry("minecraft:spider_eye");
+witch.removeEntry("minecraft:gunpowder");
+witch.removeEntry("minecraft:stick");
+witch.addItemEntryHelper(<minecraft:experience_bottle>, 2, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(1, 2)], [Conditions.killedByPlayer()], "minecraft:experience_bottle");
+witch.addItemEntryHelper(<inspirations:materials:2>, 4, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(1, 2)], [Conditions.killedByPlayer()], "inspirations:materials:2");
+witch.addItemEntryHelper(<inspirations:materials:3>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(1, 2)], [Conditions.killedByPlayer()], "inspirations:materials:3");
+witch.addItemEntryHelper(<minecraft:quartz>, 2, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(0, 4)], [Conditions.killedByPlayer()], "minecraft:quartz");
+
+val enderman = LootTables.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
+enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
+enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
+
 //Make Astral Sorcery chests not generate Aquamarine/Constellation Papers
 val shrineChest = LootTables.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine");
 val astralShrineChestPools =
@@ -185,17 +200,6 @@ LootTables.getTable("minecraft:chests/desert_pyramid").getPool("main").removeEnt
 LootTables.getTable("minecraft:chests/igloo_chest").getPool("main").removeEntry("astralsorcery:constellation_paper");
 LootTables.getTable("minecraft:chests/jungle_temple").getPool("main").removeEntry("astralsorcery:constellation_paper");
 LootTables.getTable("minecraft:chests/stronghold_library").getPool("main").removeEntry("astralsorcery:constellation_paper");
-
-//Ender Man Loottable
-val enderman = LootTables.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
-enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
-enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.parse({
-  "count": {
-	"min": 1.0,
-	"max": 2.0
-  },
-  "function": "minecraft:looting_enchant"
-})], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
 
 //Random Things Summoning Pendulum
 LootTables.getTable("minecraft:chests/simple_dungeon").removePool("summoningpendulum");
@@ -310,5 +314,8 @@ for lootTable, dungeonTreasures in dungeonBaublesAndTreasures {
 		lootPool.addItemEntry(dungeonTreasure, 1, 0, dungeonTreasure.name);
 	}
 }
+
+//Nerf Witch Farming
+
 
 print("### Loottweaker Init Complete ###");

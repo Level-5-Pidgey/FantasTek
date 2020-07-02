@@ -157,12 +157,26 @@ recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearCrudeSteel>.firstIte
 
 //Shaped Mod Crafting Recipes
 val enderioRecipes_CRAFTINGTABLE = {
-	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, <ore:itemSimpleMachineChassi>, <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]],
 	<enderio:item_material> : [[<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>], [<ore:ingotElectrotineAlloy>, <embers:wrapped_sealed_planks>, <ore:ingotElectrotineAlloy>], [<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in enderioRecipes_CRAFTINGTABLE {
-	recipes.remove(key.withAmount(1));
+	if (recipes.getRecipesFor(key.withAmount(1)).length == 0) {
+        recipes.remove(key.withAmount(1));
+    }
+
 	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+}
+
+val enderioRecipes_EXTENDEDCRAFTING = {
+	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, scripts.helpers.FrameTiers[1], <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in enderioRecipes_EXTENDEDCRAFTING {
+	if (recipes.getRecipesFor(key.withAmount(1)).length == 0) {
+        recipes.remove(key.withAmount(1));
+    }
+
+	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
 print("### EnderIO Init Complete ###");
