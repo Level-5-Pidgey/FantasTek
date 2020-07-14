@@ -1,0 +1,38 @@
+{
+	title: "Astrally Focused Crafting",
+	x: 0.0d,
+	y: -1.5d,
+	description: "Shiny",
+	text: [
+		"As powerful as our new, high-tech crafting benches are, they are still limited to the items they can manufacture. Machines can alleviate some of these issues, but for some objects of magical nature there is no machine that can match the power of",
+		"a cosmically enhanced marble crafting table. The Luminous Crafting Table is your entry way to Astral Magic -- if you'd like to persue this path it will be your starting point!",
+		"",
+		"To find the starlight required to craft a table, you will need to locate a large Marble Shrine.",
+		"They come in multiple sizes and contain lots of loot -- but only the large shrines contain a resonating crystal that you can use to create your magical construct."
+	],
+	dependencies: [
+		"5deb1a5f"
+	],
+	tasks: [{
+		uid: "87c6942b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:blockaltar"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7e6eb520",
+		type: "item",
+		item: "minecraft:ender_pearl"
+	},
+	{
+		uid: "d2c6a55a",
+		type: "item",
+		item: "astralsorcery:itemcraftingcomponent",
+		count: 3
+	}]
+}

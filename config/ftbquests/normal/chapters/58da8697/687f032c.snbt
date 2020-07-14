@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	dependencies: [
+		"83c18d21",
+		"808b20e8"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "0041e985",
+		type: "item",
+		items: [{
+			item: "forestry:honey_drop"
+		}]
+	}]
+}

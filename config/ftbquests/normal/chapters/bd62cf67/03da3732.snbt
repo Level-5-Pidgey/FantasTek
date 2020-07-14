@@ -1,0 +1,57 @@
+{
+	title: "Mind your own Beeness",
+	icon: "futuremc:beehive",
+	x: 10.5d,
+	y: 10.0d,
+	description: "These puns have gotta sting...",
+	text: [
+		"Beekeeping, although slow to start, is an incredibly rewarding thing to do as an employee. Starting now will pay dividends later! Bees produce honeycomb and honey bottles, which can be used as a food source.",
+		""
+	],
+	dependencies: [
+		"832444e7"
+	],
+	tasks: [{
+		uid: "86c66cf9",
+		type: "item",
+		items: [{
+			item: "futuremc:honeycomb"
+		}],
+		count: 2L
+	},
+	{
+		uid: "6f0d7bb3",
+		type: "item",
+		items: [{
+			item: "futuremc:beehive"
+		}]
+	},
+	{
+		uid: "028395a4",
+		type: "item",
+		items: [{
+			item: "futuremc:honey_bottle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f1fed8b7",
+		type: "item",
+		item: {
+			id: "minecraft:spawn_egg",
+			tag: {
+				EntityTag: {
+					id: "futuremc:bee"
+				}
+			}
+		},
+		count: 4
+	},
+	{
+		uid: "4989ae40",
+		type: "item",
+		item: "futuremc:honeycomb",
+		count: 2
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Handle my wood",
+	icon: "botania:livingwood 1 5",
+	x: 2.0d,
+	y: -3.5d,
+	description: "My mourning wood",
+	text: [
+		"Plain ol' wooden logs aren't magically bound enough to be directly turned into Livingwood -- but with the remnants of dead dinosaurs in creosote oil you definitely could!",
+		"With some logs, wooden boards and petals you can create Livingwood temporarily, before you gain access to Creosote Oil."
+	],
+	dependencies: [
+		"af986ff4"
+	],
+	tasks: [{
+		uid: "28572490",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}],
+		count: 14L
+	}],
+	rewards: [{
+		uid: "dd5e5f72",
+		type: "item",
+		item: "contenttweaker:wood_plate",
+		count: 6
+	}]
+}

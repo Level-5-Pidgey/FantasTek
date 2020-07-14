@@ -1,0 +1,72 @@
+{
+	title: "Tinkerer's Templates",
+	icon: "tconstruct:tooltables 1 3",
+	x: 4.5d,
+	y: 8.0d,
+	description: "Let your imagination run wild!",
+	text: [
+		"Standard tools crafted using our patented crafting station are enchantable and get the job done, but if you want to make some thing more specialised or versatile, you will need to assemble the tool yourself using desired tool parts.",
+		"Using wooden boards and some sticks, crafting patterns can be assembled and used within a Stencil Table to create dedicated patterns for specific tool parts.",
+		"",
+		"You can then use these tool parts to create custom tools for a specific job!"
+	],
+	dependencies: [
+		"cfdc4258"
+	],
+	tasks: [{
+		uid: "592db932",
+		type: "item",
+		items: [{
+			item: "tconstruct:pattern"
+		}],
+		count: 8L
+	},
+	{
+		uid: "ababcbe3",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "forestry:logs.6",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8d8ef71f",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}]
+	},
+	{
+		uid: "281990f5",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "extratrees:planks.0",
+					Count: 1b,
+					Damage: 6s
+				}
+			},
+			Damage: 1s
+		}]
+	}],
+	rewards: [{
+		uid: "740c1f92",
+		type: "item",
+		item: "tconstruct:tooltables 1 4"
+	},
+	{
+		uid: "0ae154da",
+		type: "item",
+		item: "tconstruct:tooltables 1 5"
+	}]
+}

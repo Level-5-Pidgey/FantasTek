@@ -544,7 +544,8 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Manyullyn" : stages.progression2,
   "Knightslime" : stages.progression2,
   "PigIron" : stages.progression1,
-  "NetherStar" : stages.progression1
+  "NetherStar" : stages.progression1,
+  "LapisLazuli" : stages.progression1,
 };
 
 for materialString in ExtraMaterialsToStage

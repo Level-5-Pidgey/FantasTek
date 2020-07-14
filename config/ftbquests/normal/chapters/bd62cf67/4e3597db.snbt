@@ -1,0 +1,42 @@
+{
+	title: "Seal of Approval",
+	x: 6.5d,
+	y: -4.0d,
+	description: "Our lips are sealed",
+	text: [
+		"By crafting creosote and wooden planks together, you can create planks that have been sealed with creosote. These planks form a strong foundation for basic machine. Please stand at least 6 feet away from the",
+		"sealing process, unless you wish to be sealed as well."
+	],
+	dependencies: [
+		"a1c8ffa9"
+	],
+	tasks: [{
+		uid: "ca2e2368",
+		type: "item",
+		items: [{
+			item: "embers:sealed_planks"
+		}],
+		count: 5L
+	},
+	{
+		uid: "d42a1337",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sealed_wood_plate"
+		}]
+	}],
+	rewards: [{
+		uid: "2df7b980",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "creosote",
+				Amount: 1000
+			}
+		}
+	}]
+}

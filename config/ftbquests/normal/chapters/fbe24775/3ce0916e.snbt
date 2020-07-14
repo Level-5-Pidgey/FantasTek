@@ -1,0 +1,79 @@
+{
+	title: "Altar-nate crafting",
+	icon: "botania:runealtar",
+	x: 3.5d,
+	y: -2.0d,
+	description: "Hope I Don't Rune This",
+	text: [
+		"Using a Runic Altar and mixing petals with Livingrock, you can create magically charged runes that can be used to craft even greater flowers, or can also do unique things on their own such as acting as an infinite water source."
+	],
+	dependencies: [
+		"af986ff4"
+	],
+	tasks: [{
+		uid: "764f4005",
+		type: "item",
+		items: [{
+			item: "botania:runealtar"
+		}]
+	},
+	{
+		uid: "4c9529fe",
+		type: "item",
+		title: "Craft any Rune",
+		items: [{
+			item: "botania:rune"
+		},
+		{
+			item: "botania:rune 1 1"
+		},
+		{
+			item: "botania:rune 1 2"
+		},
+		{
+			item: "botania:rune 1 3"
+		},
+		{
+			item: "botania:rune 1 4"
+		},
+		{
+			item: "botania:rune 1 5"
+		},
+		{
+			item: "botania:rune 1 6"
+		},
+		{
+			item: "botania:rune 1 7"
+		},
+		{
+			item: "botania:rune 1 8"
+		},
+		{
+			item: "botania:rune 1 9"
+		},
+		{
+			item: "botania:rune 1 10"
+		},
+		{
+			item: "botania:rune 1 11"
+		},
+		{
+			item: "botania:rune 1 12"
+		},
+		{
+			item: "botania:rune 1 13"
+		},
+		{
+			item: "botania:rune 1 14"
+		},
+		{
+			item: "botania:rune 1 15"
+		}]
+	}],
+	rewards: [{
+		uid: "58956695",
+		type: "item",
+		item: "botania:manaresource 1 23",
+		count: 4
+	}]
+}

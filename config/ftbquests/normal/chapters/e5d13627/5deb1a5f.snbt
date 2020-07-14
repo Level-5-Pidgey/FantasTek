@@ -1,0 +1,30 @@
+{
+	title: "Wands of Wonder",
+	x: -3.5d,
+	y: 0.0d,
+	description: "Doesn't cast spells, sadly.",
+	text: [
+		"If you want to use the power of the cosmos to make your resource harvesting quests trivial, you will first need an item to focus the power of the stars properly.",
+		""
+	],
+	dependencies: [
+		"f58b450b"
+	],
+	hide: true,
+	size: 2.0d,
+	tasks: [{
+		uid: "95b4fb00",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemwand",
+			tag: {
+				astralsorcery: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "Hotel...",
+	x: 10.5d,
+	y: 12.0d,
+	shape: "hexagon",
+	description: "... Trivago!",
+	text: [
+		"Whilst basic bees are cute and fat and give you nice bottled honey, there's better bees available beyond the horizon for you.",
+		"Forestry Bees are much more complex to breed and manage than Vanilla bees, but their rewards are much greater. If you take time, you can even automate stuff like Nether Star generation!",
+		"",
+		"&4Modpack Author note: &eForestry Bee breeding difficulty is set to EASY in this pack, which makes Ignoble Stock never decay and makes breeding much less rage inducing."
+	],
+	dependencies: [
+		"03da3732"
+	],
+	tasks: [{
+		uid: "5c2f7dd3",
+		type: "item",
+		items: [{
+			item: "forestry:bee_house"
+		}]
+	}]
+}

@@ -1,0 +1,44 @@
+{
+	title: "Coke Oven Production",
+	icon: "thermalfoundation:material 1 802",
+	x: 6.5d,
+	y: -2.0d,
+	description: "Efficient Burning",
+	text: [
+		"With the Heatproof Brick and Modular Machinery items, you should be able to assemble a functioning coke oven and start producing coal coke and creosote! These materials can be used later to build some very basic machines."
+	],
+	dependencies: [
+		"fb3984d1",
+		"295276c3"
+	],
+	tasks: [{
+		uid: "26bd01f6",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 802"
+		}],
+		count: 4L
+	},
+	{
+		uid: "e6aead0a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "creosote",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "dc406b85",
+		type: "item",
+		item: "minecraft:coal_block",
+		count: 2
+	}]
+}

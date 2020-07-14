@@ -1,0 +1,10 @@
+{
+	title: "Thaumcraft",
+	icon: "thaumcraft:curio",
+	description: [
+		"Almost Time for a Gravitic Flux"
+	],
+	always_invisible: false,
+	group: 269183387,
+	default_quest_shape: ""
+}

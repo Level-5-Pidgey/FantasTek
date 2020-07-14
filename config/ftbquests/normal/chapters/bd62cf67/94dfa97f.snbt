@@ -1,0 +1,42 @@
+{
+	title: "Satisfactory",
+	icon: "magneticraft:conveyor_belt",
+	x: 10.5d,
+	y: -8.0d,
+	shape: "hexagon",
+	description: "Moving along!",
+	text: [
+		"All factories need a brisk production line, and until you have the technology to pressurize tubing your best bet is to move items with conveyors. These conveyors can support 4 item stacks at once and move items much more quickly than piping!"
+	],
+	dependencies: [
+		"c767d5ec"
+	],
+	tasks: [{
+		uid: "023413db",
+		type: "item",
+		items: [{
+			item: "magneticraft:conveyor_belt"
+		}],
+		count: 32L
+	},
+	{
+		uid: "a6847b53",
+		type: "item",
+		items: [{
+			item: "magneticraft:inserter"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "702f593e",
+		type: "item",
+		item: "magneticraft:conveyor_belt",
+		count: 32
+	},
+	{
+		uid: "7a7c603e",
+		type: "item",
+		item: "magneticraft:inserter",
+		count: 4
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	x: 10.5d,
+	y: -10.0d,
+	shape: "hexagon",
+	dependencies: [
+		"97adb012"
+	],
+	tasks: [{
+		uid: "a5f72458",
+		type: "item",
+		items: [{
+			item: "forestry:farm_crops"
+		},
+		{
+			item: "forestry:farm_mushroom"
+		},
+		{
+			item: "forestry:farm_gourd"
+		},
+		{
+			item: "forestry:farm_nether"
+		},
+		{
+			item: "forestry:farm_ender"
+		}]
+	}]
+}

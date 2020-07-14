@@ -1,0 +1,27 @@
+{
+	title: "Plate Problems",
+	x: 8.5d,
+	y: 10.0d,
+	description: "(and how to alleviate them)",
+	text: [
+		"Up till now, you've had to construct plates by smashing lots of gems or ingots in a crafting table with a Tinkerer's Hammer. This can be costly and is hard to automate -- if you'd like a more automatable and easily interactible solution,",
+		"the Small Plate Presser should do the job. Simply place this above a block of obsidian (leaving a block gap between) and then place the block of wood/ore inbetween, give a redstone pulse and bam! You have easier plate crafting.",
+		"This process is slightly cheaper for most plate crafting jobs, but significantly more cheap for crafting Wooden Boards."
+	],
+	dependencies: [
+		"0326f755"
+	],
+	tasks: [{
+		uid: "d79b1eff",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:platepress"
+		}]
+	}],
+	rewards: [{
+		uid: "6db7caf9",
+		type: "item",
+		item: "minecraft:log",
+		count: 8
+	}]
+}

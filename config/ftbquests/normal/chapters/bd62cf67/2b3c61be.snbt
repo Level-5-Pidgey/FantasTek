@@ -1,0 +1,94 @@
+{
+	title: "Future Blocks",
+	icon: "futuremc:blast_furnace",
+	x: -3.5d,
+	y: 4.0d,
+	shape: "hexagon",
+	description: "Some of your favourites have returned!",
+	text: [
+		"Tasks with these Hexagon icons are optional and you're not required to do them to help us out back at FantasTek, but they'll give you a leg up out in the wild.",
+		"",
+		"Using our experimental time travel technology we've brought some cool stuff from the future that seems like it could be useful to you.",
+		"They might not all be entirely functional, we did try to bring the inventor with them to explain how they work but he didn't make it."
+	],
+	dependencies: [
+		"8edd4b42"
+	],
+	tasks: [{
+		uid: "d3e20f88",
+		type: "item",
+		title: "Craft a backported item",
+		items: [{
+			item: "charm:barrel"
+		},
+		{
+			item: "charm:barrel 1 1"
+		},
+		{
+			item: "charm:barrel 1 2"
+		},
+		{
+			item: "charm:barrel 1 3"
+		},
+		{
+			item: "charm:barrel 1 4"
+		},
+		{
+			item: "charm:barrel 1 5"
+		},
+		{
+			item: "charm:iron_lantern"
+		},
+		{
+			item: "charm:gold_lantern"
+		},
+		{
+			item: "futuremc:composter"
+		},
+		{
+			item: "futuremc:stonecutter"
+		},
+		{
+			item: "futuremc:smoker"
+		},
+		{
+			item: "futuremc:blast_furnace"
+		},
+		{
+			item: "futuremc:loom"
+		},
+		{
+			item: "futuremc:fletching_table"
+		},
+		{
+			item: "futuremc:smithing_table"
+		},
+		{
+			item: "futuremc:cartography_table"
+		},
+		{
+			item: "futuremc:grindstone"
+		},
+		{
+			item: "futuremc:bell"
+		},
+		{
+			item: "futuremc:campfire"
+		},
+		{
+			item: "futuremc:beehive"
+		}]
+	}],
+	rewards: [{
+		uid: "0a25d4a9",
+		type: "item",
+		item: "futuremc:bamboo",
+		count: 5
+	},
+	{
+		uid: "0ff2cfae",
+		type: "item",
+		item: "futuremc:sweet_berries",
+		count: 5
+	}]
+}

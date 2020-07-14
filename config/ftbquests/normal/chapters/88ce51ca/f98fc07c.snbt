@@ -1,0 +1,15 @@
+{
+	title: "Pidgey - add sanguine ingot here",
+	x: 9.0d,
+	y: 0.0d,
+	dependencies: [
+		"d98e0f2e"
+	],
+	tasks: [{
+		uid: "7b3beab5",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	}]
+}

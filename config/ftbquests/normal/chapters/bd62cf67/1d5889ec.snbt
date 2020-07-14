@@ -1,0 +1,14 @@
+{
+	x: 6.5d,
+	y: -12.0d,
+	dependencies: [
+		"0e4f6d19"
+	],
+	tasks: [{
+		uid: "7736c512",
+		type: "item",
+		items: [{
+			item: "magneticraft:battery"
+		}]
+	}]
+}

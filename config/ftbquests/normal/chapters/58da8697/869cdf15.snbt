@@ -1,0 +1,14 @@
+{
+	x: 11.5d,
+	y: 1.0d,
+	dependencies: [
+		"29bb3618"
+	],
+	tasks: [{
+		uid: "b3d1dd15",
+		type: "item",
+		items: [{
+			item: "morebees:emeraldfragment"
+		}]
+	}]
+}

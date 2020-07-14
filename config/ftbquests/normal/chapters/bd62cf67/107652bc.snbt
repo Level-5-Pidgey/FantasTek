@@ -1,0 +1,43 @@
+{
+	title: "Cast and Crew",
+	x: 10.5d,
+	y: -6.0d,
+	description: "You made the cut!",
+	text: [
+		"To be able to make use of the molten metals in your smeltery, you need to cast them into shape.",
+		"There are many different types of cast -- and they are created by melting gold or brass in the smeltery, then pouring the liquid over an item you want to make a cast of onto a casting table.",
+		"e.g. to make an ingot cast, place any sort of ingot onto the casting table, then pour the gold/brass over the top.",
+		"",
+		"This process can make plates slightly more efficiently than the Plate Press -- dropping the ingot requirement down to 4 ingots per plate."
+	],
+	dependencies: [
+		"ad5ff33d"
+	],
+	tasks: [{
+		uid: "781d3aa7",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast_custom"
+		}]
+	},
+	{
+		uid: "e289daf2",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast_custom 1 4"
+		}]
+	},
+	{
+		uid: "4f3aa5d1",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast_custom 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "9a902e47",
+		type: "item",
+		item: "minecraft:gold_block",
+		count: 2
+	}]
+}

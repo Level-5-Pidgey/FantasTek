@@ -1,0 +1,16 @@
+{
+	title: "Blood In The Water",
+	x: 5.0d,
+	y: 0.0d,
+	description: "Bubble bath time",
+	dependencies: [
+		"bdc76640"
+	],
+	tasks: [{
+		uid: "3ed71936",
+		type: "item",
+		items: [{
+			item: "bloodmagic:altar"
+		}]
+	}]
+}

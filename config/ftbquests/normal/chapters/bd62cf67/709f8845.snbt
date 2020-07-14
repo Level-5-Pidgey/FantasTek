@@ -1,0 +1,50 @@
+{
+	title: "Pipe down, would ya!?",
+	icon: "inspirations:pipe",
+	x: 2.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "Early game logistics",
+	text: [
+		"Until you get pressurized tubing or mechanised conveyors, you're gonna have to get used to ol' faithful hoppers and pipes.",
+		"",
+		"Pipes are a cheap alternative to hoppers that carry 1 item stack along it, travelling in a chosen direction towards an inventory. They can be conbined with hoppers for a less laggy, more resource efficient item routing system.",
+		"Chutes are a cheap method to drop items in the world, acting similarly to an open crate from Botania. The chute, unlike a dropper, does not require redstone to activate and will automatically drop anything given to it."
+	],
+	dependencies: [
+		"1dab1267"
+	],
+	tasks: [{
+		uid: "c762fa46",
+		type: "item",
+		items: [{
+			item: "inspirations:pipe"
+		}],
+		count: 16L
+	},
+	{
+		uid: "a4c92043",
+		type: "item",
+		items: [{
+			item: "quark:chute"
+		}]
+	}],
+	rewards: [{
+		uid: "a09cdeec",
+		type: "item",
+		item: "minecraft:hopper",
+		count: 5
+	},
+	{
+		uid: "009d6a1c",
+		type: "item",
+		item: "minecraft:repeater",
+		count: 4
+	},
+	{
+		uid: "42042603",
+		type: "item",
+		item: "minecraft:piston",
+		count: 4
+	}]
+}

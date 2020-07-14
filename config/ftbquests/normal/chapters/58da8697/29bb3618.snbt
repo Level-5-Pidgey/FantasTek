@@ -1,0 +1,14 @@
+{
+	x: 9.5d,
+	y: 0.0d,
+	dependencies: [
+		"d73e948e"
+	],
+	tasks: [{
+		uid: "b088d43f",
+		type: "item",
+		items: [{
+			item: "morebees:graincrystal"
+		}]
+	}]
+}

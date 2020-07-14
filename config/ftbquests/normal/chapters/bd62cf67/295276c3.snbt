@@ -1,0 +1,22 @@
+{
+	title: "Firing up the ovens",
+	x: 4.5d,
+	y: -2.0d,
+	description: "... I am fast as fuck boiiii!!!",
+	text: [
+		"Whilst not yet able to be assembled into a fully functioning oven, you should be able to construct the bricks for the oven ahead of time.",
+		"When you have access to more advanced metals, you should be able to use this to construct an oven to produce creosote."
+	],
+	dependencies: [
+		"8744be30",
+		"43b0078a"
+	],
+	tasks: [{
+		uid: "81da4fcf",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:blastbrick"
+		}],
+		count: 24L
+	}]
+}

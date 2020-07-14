@@ -1,0 +1,32 @@
+{
+	title: "Bloody Hell",
+	x: 1.0d,
+	y: -1.0d,
+	description: "Take care of yourself!",
+	text: [
+		"Even though the whole \"blood sacrifice\" thing fell out of fashion centuries ago with the Aztecs, if you really feel like giving it another go be our guest.",
+		"We do have a rather nice life insurance policy on you so please do stab your heart out!"
+	],
+	dependencies: [
+		"364c90c8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "37a89cda",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "guideapi:bloodmagic-guide"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f6b0f9c8",
+		type: "gamestage",
+		title: "Unlock Stage 1 Blood Magic",
+		stage: "bloodmagic-i"
+	}]
+}

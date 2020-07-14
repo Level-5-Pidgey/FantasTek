@@ -1,0 +1,10 @@
+{
+	title: "Stage 1",
+	icon: "biomesoplenty:sapling_1 1 5",
+	description: [
+		"Welcome to the FantasTek Corporation!"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "rsquare"
+}

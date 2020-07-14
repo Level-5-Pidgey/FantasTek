@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: 1.0d,
+	dependencies: [
+		"83c18d21"
+	],
+	tasks: [{
+		uid: "a2f1d2e1",
+		type: "item",
+		items: [{
+			item: "forestry:pollen"
+		}]
+	}]
+}

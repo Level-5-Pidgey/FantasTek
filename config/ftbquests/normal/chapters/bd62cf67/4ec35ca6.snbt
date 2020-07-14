@@ -1,0 +1,67 @@
+{
+	title: "Crank Dat",
+	icon: "jaopca:item_dustruby",
+	x: 8.5d,
+	y: 6.0d,
+	shape: "hexagon",
+	description: "(Soulja Boy tell 'em)",
+	text: [
+		"Since you've probably got an abundance of spare time on a planet by yourself, you could be spending our valuable company time increasing profits!",
+		"",
+		"The Grindstone is a patented piece of technology that turns your manual labour into increased resource yields! By placing the crank on top of the grindstone, you can turn the crank to grind up ores into dust. The dust can then be smelted to ingots!",
+		"The amount of cranks required by an ore depends on its ore processing tier, as does the yield of dust to each ore."
+	],
+	dependencies: [
+		"cfdc4258"
+	],
+	tasks: [{
+		uid: "4344e385",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:grindstone"
+		}]
+	},
+	{
+		uid: "4f149db0",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:crank"
+		}]
+	},
+	{
+		uid: "b48c5b01",
+		type: "item",
+		title: "Grind Iron into Dust",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustIron",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}],
+		count: 12L
+	},
+	{
+		uid: "35228275",
+		type: "item",
+		title: "Grind Gold into Dust",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustGold",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}],
+		count: 12L
+	}],
+	rewards: [{
+		uid: "6a9aeb8a",
+		type: "item",
+		item: "minecraft:diamond",
+		count: 4
+	}]
+}

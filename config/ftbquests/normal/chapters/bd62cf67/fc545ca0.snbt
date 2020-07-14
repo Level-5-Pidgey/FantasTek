@@ -1,0 +1,63 @@
+{
+	title: "Sheariously?",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thermalfoundation:tool.shears_gold"
+	},
+	x: 0.5d,
+	y: 4.0d,
+	description: "Snip snip!",
+	text: [
+		"Caring for animals has been linked to increasing overall employee satisfaction and happiness ratings by approximately 16%.",
+		"",
+		"As a new employee, it is highly recommended that you care for any animals that you come across and only harvest them for resources when necessary. They have feelings too."
+	],
+	dependencies: [
+		"1dab1267"
+	],
+	tasks: [{
+		uid: "d12945f2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:shears"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "22b50714",
+		type: "item",
+		title: "Any type of Wool",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "blockWool",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "7621ac6c",
+		type: "item",
+		item: "minecraft:leather",
+		count: 4
+	},
+	{
+		uid: "4ce6edaa",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thermalfoundation:tool.shears_diamond"
+		}
+	}]
+}

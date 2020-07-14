@@ -1,0 +1,25 @@
+{
+	title: "Choose a Magic Item",
+	icon: "tconstruct:materials 1 11",
+	loot_size: 1,
+	rewards: [{
+		item: "botania:fertilizer",
+		count: 8
+	},
+	{
+		item: "thaumcraft:salis_mundus",
+		count: 3
+	},
+	{
+		item: "astralsorcery:itemcraftingcomponent",
+		count: 5
+	},
+	{
+		item: "minecraft:stone",
+		count: 16
+	},
+	{
+		item: "embers:brick_caminite",
+		count: 16
+	}]
+}

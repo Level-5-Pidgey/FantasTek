@@ -478,7 +478,8 @@ val StageLessItems = [
 	<forestry:chipsets:2>.withTag({T: 2 as short}),
 	<forestry:chipsets:1>.withTag({T: 1 as short}),
 	<forestry:chipsets>.withTag({T: 0 as short}),
-	<forestry:thermionic_tubes:12>
+	<forestry:thermionic_tubes:12>,
+	<forestry:farm_mushroom>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

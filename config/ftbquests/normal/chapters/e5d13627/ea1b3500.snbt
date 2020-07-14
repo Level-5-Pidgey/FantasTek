@@ -1,0 +1,194 @@
+{
+	title: "e-Dating",
+	x: 0.0d,
+	y: -4.5d,
+	description: "... you're both probably not gonna see each other.",
+	text: [
+		"All those shiny lights out there in space occasionally come together to make beautiful constellations. These can be useful when utilizing star power to craft."
+	],
+	dependencies: [
+		"494f1f00"
+	],
+	tasks: [{
+		uid: "9dee13fe",
+		type: "item",
+		title: "Discover any constellation",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.discidia"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.armara"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.vicio"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.aevitas"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.evorsio"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.lucerna"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.mineralis"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.horologium"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.octans"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.bootes"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.fornax"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.pelotrio"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.gelu"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.ulteria"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.alcara"
+				}
+			}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.vorux"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

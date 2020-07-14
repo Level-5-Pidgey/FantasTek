@@ -1,0 +1,31 @@
+{
+	title: "Mastery of the elements",
+	x: -1.5d,
+	y: 0.0d,
+	description: "It was all peaceful until the fire nation attacked...",
+	text: [
+		"Thaumaturgy channels the many elements on the planet around you to turn one form of matter into another -- provided you have enough skill and aura to do so.",
+		"The effects of doing this sort of stuff wrong though are incredibly dangerous, so be sure to research a lot and read up!"
+	],
+	dependencies: [
+		"364c90c8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "26bb7774",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:thaumonomicon"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "67761fd4",
+		type: "gamestage",
+		title: "Unlock Stage 1 Thaumcraft",
+		stage: "thaumcraft-i"
+	}]
+}

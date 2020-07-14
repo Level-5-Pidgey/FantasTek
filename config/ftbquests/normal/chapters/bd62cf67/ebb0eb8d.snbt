@@ -1,0 +1,40 @@
+{
+	title: "Problem Deflection",
+	icon: {
+		id: "openblocks:trophy",
+		tag: {
+			entity_id: "minecraft:ghast"
+		},
+		Damage: 17s
+	},
+	x: 8.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "Outplayed.",
+	text: [
+		"If your survival skills are up to par, this should be an easy task for you to complete.",
+		"Why are you getting paid for this? Well, the higher ups thought it'd be funny. Don't ask any more questions."
+	],
+	dependencies: [
+		"8cb69197"
+	],
+	tasks: [{
+		uid: "d1322dc1",
+		type: "advancement",
+		icon: "minecraft:fire_charge",
+		advancement: "minecraft:nether/return_to_sender",
+		criterion: ""
+	},
+	{
+		uid: "c1dee3b9",
+		type: "kill",
+		icon: "minecraft:ghast_tear",
+		entity: "minecraft:ghast",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "0db0fd0d",
+		type: "item",
+		item: "contenttweaker:currency_2500"
+	}]
+}

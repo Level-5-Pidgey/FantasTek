@@ -1,0 +1,23 @@
+{
+	icon: "forestry:bee_combs",
+	x: 3.5d,
+	y: 0.0d,
+	dependencies: [
+		"0432e7bb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7628e58a",
+		type: "item",
+		items: [{
+			item: "forestry:bee_combs"
+		}]
+	},
+	{
+		uid: "7e6e111c",
+		type: "item",
+		items: [{
+			item: "morebees:combrock"
+		}]
+	}]
+}

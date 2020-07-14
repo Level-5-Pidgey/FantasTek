@@ -1,0 +1,10 @@
+{
+	title: "Embers",
+	icon: "embers:focal_lens",
+	description: [
+		"How Embarrassing"
+	],
+	always_invisible: false,
+	group: 269183387,
+	default_quest_shape: ""
+}

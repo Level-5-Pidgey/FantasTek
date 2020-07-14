@@ -1,0 +1,95 @@
+{
+	title: "Jerky Jerky",
+	icon: "tconstruct:edible 1 11",
+	x: 0.5d,
+	y: -2.0d,
+	description: "Don't add extra salt",
+	text: [
+		"If you have the patience, using Drying Racks to create extra nutritious food can prove useful as it conserves fuel and gives an early use for Zombie Flesh.",
+		"These drying racks will also be useful for crafting items later, so don't leave us hanging!"
+	],
+	dependencies: [
+		"8edd4b42"
+	],
+	tasks: [{
+		uid: "7a402a45",
+		type: "item",
+		items: [{
+			id: "tconstruct:rack",
+			tag: {
+				textureBlock: {
+					id: "minecraft:wooden_slab",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 1s
+		}]
+	},
+	{
+		uid: "00d806d5",
+		type: "item",
+		title: "Create any type of Jerky with the Drying Rack",
+		items: [{
+			item: "tconstruct:edible 1 10"
+		},
+		{
+			item: "tconstruct:edible 1 11"
+		},
+		{
+			item: "tconstruct:edible 1 12"
+		},
+		{
+			item: "tconstruct:edible 1 13"
+		},
+		{
+			item: "tconstruct:edible 1 14"
+		},
+		{
+			item: "tconstruct:edible 1 15"
+		},
+		{
+			item: "tconstruct:edible 1 20"
+		},
+		{
+			item: "tconstruct:edible 1 21"
+		},
+		{
+			item: "tconstruct:edible 1 22"
+		},
+		{
+			item: "tconstruct:edible 1 23"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "0d523cfb",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:fishing_rod",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 34s
+				},
+				{
+					lvl: 2s,
+					id: 62s
+				},
+				{
+					lvl: 1s,
+					id: 61s
+				}],
+				display: {
+					Lore: [
+						"§6§oProperty of FantasTek industries. Don't resell!!"
+					],
+					Name: "Old Rod"
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "I'm Nether doing that again",
+	icon: "minecraft:nether_star",
+	x: 10.5d,
+	y: 2.0d,
+	shape: "rsquare",
+	text: [
+		"Remember those skulls we had you collect before? You're going to want to use them now. A temp we haven't fired yet just told me that placing some skulls on soul sand will spawn The Wither.",
+		"",
+		"From what I've heard, you don't have anyone back home who will miss you if you fail, but it's probably in your best interests to make sure it dies and not you."
+	],
+	dependencies: [
+		"d55fb2c8"
+	],
+	tasks: [{
+		uid: "b6267a5e",
+		type: "advancement",
+		icon: "minecraft:nether_star",
+		advancement: "minecraft:nether/summon_wither",
+		criterion: ""
+	},
+	{
+		uid: "d05bfe7e",
+		type: "kill",
+		icon: "minecraft:skull 1 1",
+		entity: "minecraft:wither",
+		value: 1L
+	}]
+}

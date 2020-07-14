@@ -1,0 +1,14 @@
+{
+	x: 5.5d,
+	y: -2.0d,
+	dependencies: [
+		"88064e50"
+	],
+	tasks: [{
+		uid: "f4c4be28",
+		type: "item",
+		items: [{
+			item: "forestry:bee_combs 1 2"
+		}]
+	}]
+}

@@ -1,0 +1,10 @@
+{
+	title: "Blood Magic",
+	icon: "bloodmagic:component 1 8",
+	description: [
+		"A Draining Exercise"
+	],
+	always_invisible: false,
+	group: 269183387,
+	default_quest_shape: ""
+}

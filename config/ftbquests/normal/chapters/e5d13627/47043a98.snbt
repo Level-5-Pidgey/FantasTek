@@ -1,0 +1,31 @@
+{
+	title: "Element Imbuing",
+	x: -1.5d,
+	y: 0.0d,
+	description: "Only the Avatar...",
+	text: [
+		"Rock Crystals are incredibly receptive to both astral power and other elements, making it the perfect elemental catalyst.",
+		"These crystals can be imbued with certain aspects to create more powerful artifacts, tools or machines."
+	],
+	dependencies: [
+		"8c34f67c",
+		"e203229a"
+	],
+	tasks: [{
+		uid: "bd065fde",
+		type: "item",
+		title: "Create an Imbued Crystal",
+		items: [{
+			item: "contenttweaker:astral_crystal_earth"
+		},
+		{
+			item: "contenttweaker:astral_crystal_water"
+		},
+		{
+			item: "contenttweaker:astral_crystal_fire"
+		},
+		{
+			item: "contenttweaker:astral_crystal_air"
+		}]
+	}]
+}

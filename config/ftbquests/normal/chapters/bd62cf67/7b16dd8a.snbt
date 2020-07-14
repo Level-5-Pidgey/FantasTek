@@ -1,0 +1,28 @@
+{
+	title: "Trader Joe",
+	x: -1.5d,
+	y: 6.0d,
+	description: "Thank God for capitalism",
+	text: [
+		"Survival is usually better with friends or family. If you come across a village, you should trade with them to make your life easier.",
+		"Luckily for you, the poor souls living on this planet seem to accept the universally accepted cred currency!",
+		"",
+		"There's a ton of natives to find and trade with. They can help you skip crafting recipes you'd require, or sell you rare items that cannot be obtained any other way."
+	],
+	dependencies: [
+		"6c635f89"
+	],
+	tasks: [{
+		uid: "8459b80c",
+		type: "advancement",
+		icon: "minecraft:emerald",
+		advancement: "minecraft:adventure/trade",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "45aeec20",
+		type: "item",
+		item: "minecraft:emerald",
+		count: 3
+	}]
+}

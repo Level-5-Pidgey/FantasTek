@@ -1,0 +1,27 @@
+{
+	title: "Skies of Wonder",
+	x: 0.0d,
+	y: -3.0d,
+	description: "Look up, things are bright!",
+	text: [
+		"The skies hold more mystery than you might expect -- beyond your tiny planet there are many constellations to uncover.",
+		"Some say that these constellations hold powers and can be used to cast spells or create magical objects -- time will tell!",
+		"",
+		"Looking through the Looking Glass at night will provide opportunities to spot constellations. The constellations that are available to be spotted change nightly, and you need to spot them and draw them to uncover their secrets!"
+	],
+	dependencies: [
+		"8c34f67c"
+	],
+	tasks: [{
+		uid: "80e29d79",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemhandtelescope"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

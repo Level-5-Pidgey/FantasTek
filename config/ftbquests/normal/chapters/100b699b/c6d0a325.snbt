@@ -1,0 +1,33 @@
+{
+	title: "Do You RemEMBER Me?",
+	x: -1.0d,
+	y: -1.0d,
+	description: "To go down this path requires a certain level of masochism. ",
+	text: [
+		"Another way of becoming a bit more efficient lies in the hands of the ancient Dwarves that used to roam these lands. ",
+		"",
+		"Go ahead and give their book a peek to find out more information on the journey ahead should you choose to follow in their footsteps. Remember: you do work for us so anything useful you might find we hold the right to claim it as ours. "
+	],
+	dependencies: [
+		"364c90c8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "2a2a8b8e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "embers:codex"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2d9a69ce",
+		type: "gamestage",
+		title: "Unlock Stage 1 Embers",
+		stage: "embers-i"
+	}]
+}

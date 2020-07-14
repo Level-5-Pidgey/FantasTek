@@ -1,0 +1,30 @@
+{
+	title: "Stone Age",
+	icon: "minecraft:crafting_table",
+	x: -3.5d,
+	y: 2.0d,
+	shape: "rsquare",
+	description: "DROP TABLE;",
+	text: [
+		"Now that you've either accidentally correctly clicked the last checkbox or used your supreme wit to pass the last intelligence assessment, we have to get down to basics.",
+		"These two simple utilities will be able to keep you warm and alive for the next few moments. The tool provided to you in your inventory should do you well at the start of your journey."
+	],
+	dependencies: [
+		"71c44dcc"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "1db118d3",
+		type: "item",
+		items: [{
+			item: "minecraft:furnace"
+		}]
+	},
+	{
+		uid: "23364b93",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}]
+	}]
+}

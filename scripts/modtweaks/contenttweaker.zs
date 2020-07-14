@@ -98,14 +98,14 @@ mods.futuremc.BlastFurnace.addRecipe(<contenttweaker:infused_stone_vitium>, <tha
 <ore:nuggetPrismarine>.add(<contenttweaker:prismarine_nugget>);
 
 //Sanguine Gem
-mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_gem>, <liquid:lifeessence>, <ore:gemDiamond>, true);
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_gem>, <liquid:lifeessence>, [<ore:gemDiamond>], true);
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_gem>, <ore:gemDiamond>.firstItem, 0, 1000, 50, 75);
 <ore:gemSanguine>.add(<contenttweaker:sanguine_gem>);
 
 //Sanguine Ingots
-mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot> * 2, <liquid:lifeessence>, <ore:ingotSteel> * 2, true);
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot> * 2, <liquid:lifeessence>, [<ore:ingotSteel> * 2], true);
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_ingot>, <ore:ingotSteel>.firstItem, 0, 500, 25, 35);
-mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot>, <liquid:lifeessence>, <ore:ingotCrudeSteel>, true);
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:sanguine_ingot>, <liquid:lifeessence>, [<ore:ingotCrudeSteel>], true);
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:sanguine_ingot>, <ore:ingotCrudeSteel>.firstItem, 0, 1000, 25, 35);
 <ore:ingotSanguine>.add(<contenttweaker:sanguine_ingot>);
 

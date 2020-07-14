@@ -1,0 +1,68 @@
+{
+	title: "Molten Materials",
+	icon: "tconstruct:smeltery_controller",
+	x: 10.5d,
+	y: -4.0d,
+	description: "Whoever smelt it, dealt it",
+	text: [
+		"Up until now, you've relied on our industry approved furnaces to melt your ores into ingots and make use of them.",
+		"Unless you've been using some magical technologies, you're also stuck with relying on a hand-operated crank and grinder to get better efficiency from each ore piece.",
+		"",
+		"The Tinker's Smeltery allows you to easily melt ores into a molten liquid, doubling tier 0 ores and allowing you to process ores that are more hardy and temperature resistant (that can't be melted in a furnace!)",
+		"Your tinkers smeltery requires seared bricks or blocks and the other items listed in these quest requirements.",
+		"Best of luck pioneer!"
+	],
+	dependencies: [
+		"de85cb97"
+	],
+	tasks: [{
+		uid: "4bf5cf47",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "f90c301d",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}]
+	},
+	{
+		uid: "1afc7d60",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}]
+	},
+	{
+		uid: "bbe6d394",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}]
+	},
+	{
+		uid: "fc17509b",
+		type: "item",
+		title: "Craft a Casting Table or Basin",
+		items: [{
+			item: "tconstruct:casting 1 1"
+		},
+		{
+			item: "tconstruct:casting"
+		}]
+	}],
+	rewards: [{
+		uid: "8ec085ba",
+		type: "item",
+		item: {
+			id: "tconstruct:seared_tank",
+			tag: {
+				FluidName: "lava",
+				Amount: 4000
+			}
+		}
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	title: "I Was Enchanted To Meet You",
+	x: 4.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "Make your bad shit a little less bad",
+	text: [
+		"The tools you've accumulated so far aren't quite the best they could be. To truly maximize your efficiency, you should build an enchantment table to give your tools better qualities so you don't waste so much of our time.",
+		"",
+		"We don't pay you overtime so it's on you to be fast."
+	],
+	dependencies: [
+		"8cb69197",
+		"06fcd20a"
+	],
+	tasks: [{
+		uid: "51beacd2",
+		type: "item",
+		items: [{
+			item: "minecraft:enchanting_table"
+		}]
+	}],
+	rewards: [{
+		uid: "6f8a2ead",
+		type: "item",
+		item: "minecraft:bookshelf",
+		count: 3
+	}]
+}

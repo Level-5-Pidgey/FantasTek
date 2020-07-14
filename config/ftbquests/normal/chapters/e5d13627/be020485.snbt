@@ -1,0 +1,37 @@
+{
+	title: "Adding some light to the scene",
+	icon: "astralsorcery:blockwell",
+	x: 0.0d,
+	y: 0.0d,
+	description: "Liquid Starlight, shines bright...",
+	text: [
+		"With the power of rock crystals you have collected or the lesser strength of Aquamarine, you can melt the contents down within a special crucible to create Liquid Starlight."
+	],
+	dependencies: [
+		"8c34f67c",
+		"e203229a"
+	],
+	tasks: [{
+		uid: "a90550cf",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockwell"
+		}]
+	},
+	{
+		uid: "40e6f4e2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "astralsorcery.liquidstarlight",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

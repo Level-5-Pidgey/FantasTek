@@ -1,0 +1,37 @@
+{
+	title: "Modular Machinery",
+	icon: "modularmachinery:blockcontroller",
+	x: 8.5d,
+	y: -2.0d,
+	description: "Big Bois",
+	text: [
+		"With Modularium now created, you can make your first modular machine!",
+		"The coke oven processes Coal using heat to create Coal Coke and Creosote Oil. Coal Coke burns extremely efficiently, and can be used to create steel in a crude manner.",
+		"Creosote Oil can be used to treat wood, or create many different types of blocks!"
+	],
+	dependencies: [
+		"7c316bf8"
+	],
+	tasks: [{
+		uid: "6071dc1d",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	}],
+	rewards: [{
+		uid: "5419113e",
+		type: "item",
+		item: "modularmachinery:blockfluidoutputhatch"
+	},
+	{
+		uid: "9b4d88b2",
+		type: "item",
+		item: "modularmachinery:blockinputbus"
+	},
+	{
+		uid: "c1bdaedf",
+		type: "item",
+		item: "modularmachinery:blockoutputbus"
+	}]
+}

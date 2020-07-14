@@ -1,0 +1,62 @@
+{
+	title: "The start of something magical",
+	icon: "minecraft:nether_star",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "diamond",
+	description: "Choose your path!",
+	text: [
+		"Using that book you made, you'll be able to infuse it with some magical energy to create a guide for the magic of your choice!"
+	],
+	dependencies: [
+		"1536b717"
+	],
+	hide: true,
+	size: 2.0d,
+	tasks: [{
+		uid: "46733f17",
+		type: "item",
+		title: "Craft any Magic Mod Documentation Item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:lexicon",
+			tag: {}
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "guideapi:bloodmagic-guide"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:thaumonomicon"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemjournal"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -7321793126330253362L,
+					AS_Amulet_HolderMost: -1691932688462756616L
+				}
+			},
+			id: "embers:codex"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ceef1f1c",
+		type: "choice",
+		table: 0
+	}]
+}

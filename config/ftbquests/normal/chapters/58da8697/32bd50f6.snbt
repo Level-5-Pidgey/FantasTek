@@ -1,0 +1,23 @@
+{
+	title: "Upgrading those houses",
+	x: -17.5d,
+	y: 11.5d,
+	description: "Give them the royal treatment!",
+	text: [
+		"Bee houses are a good start to obtain some combs or other basic resources, but to truly make use of apiculture you're gonna want to upgrade to apiaries as soon as possible.",
+		"",
+		"An Apiary most importantly allows bees to mutate and cross breed, which produces new offspring and can allow for faster production using frames.",
+		"Frames should be researched a bit more, they sound rather good!"
+	],
+	dependencies: [
+		"0432e7bb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ee9f5564",
+		type: "item",
+		items: [{
+			item: "forestry:apiary"
+		}]
+	}]
+}

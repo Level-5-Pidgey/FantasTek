@@ -1,0 +1,26 @@
+{
+	title: "It's FantasTek to see you!",
+	icon: "biomesoplenty:earth",
+	x: -7.0d,
+	y: 2.0d,
+	shape: "diamond",
+	description: "Welcome, Pioneer.",
+	text: [
+		"Welcome to FantasTek Pioneer! As the lucky winner of one amongst 2 other applicants, you're the one that gets to be part of our new highly experimental Planetary Resource Harvesting Program!",
+		"Whilst we don't quite have the funds to equip you with any sort of gear to adequately prepare you for the likely harsh and unforgiving environment of wherever you ended up, we did manage to give you this fantastic device and a helpful Pioneer's Axe.",
+		"Constructed and written by our finest unpaid interns, this \"R.E.E.D. I.T. device\" should tell you what to do next to ensure progress in the name of money hungry resource harvesting! ... Or science, I guess.",
+		"",
+		"To prove that you have working hands and an IQ of over 35, please click the checkbox within this window. If you can't meet both of those criteria, may God help you."
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "c62a460e",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "582fa863",
+		type: "item",
+		item: "minecraft:cooked_beef",
+		count: 6
+	}]
+}

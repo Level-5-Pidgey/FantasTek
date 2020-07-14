@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	dependencies: [
+		"83c18d21"
+	],
+	tasks: [{
+		uid: "2e52335d",
+		type: "item",
+		items: [{
+			item: "forestry:propolis"
+		}]
+	}]
+}

@@ -1,0 +1,44 @@
+{
+	title: "Guide to Sticky Situations",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "tconstruct:slimesling"
+	},
+	x: 6.5d,
+	y: 10.0d,
+	shape: "octagon",
+	description: "Slime flies when you're having fun",
+	dependencies: [
+		"0326f755"
+	],
+	tasks: [{
+		uid: "aa2de2ed",
+		type: "item",
+		title: "Submit 500x Slimeball",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "slimeball",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter"
+		}],
+		count: 500L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "1a31ad7a",
+		type: "gamestage",
+		stage: "stage_i_slimesling"
+	},
+	{
+		uid: "2eb8e818",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		command: "/say @p has unlocked the Optional Milestone []!"
+	}]
+}

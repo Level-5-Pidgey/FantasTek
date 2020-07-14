@@ -1,0 +1,21 @@
+{
+	title: "The Unrefinery",
+	x: 8.5d,
+	y: -6.0d,
+	description: "It's a steel!",
+	text: [
+		"By breaking down Coal Coke and mixing it with Iron Dust you can create a blend that can be smelted down into a crude and unrefined form of steel. Using this steel you can make some basic machinery, but it's too much of a",
+		"health risk to make anything large."
+	],
+	dependencies: [
+		"107652bc"
+	],
+	tasks: [{
+		uid: "c0d341c4",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_endergy_ingot"
+		}],
+		count: 10L
+	}]
+}

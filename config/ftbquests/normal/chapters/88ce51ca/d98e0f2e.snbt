@@ -1,0 +1,14 @@
+{
+	title: "Bloodbath",
+	x: 8.0d,
+	y: 0.0d,
+	description: "Not taken from a massacre site",
+	dependencies: [
+		"f3e8f95e"
+	],
+	tasks: [{
+		uid: "9109693d",
+		type: "fluid",
+		fluid: "lifeessence"
+	}]
+}

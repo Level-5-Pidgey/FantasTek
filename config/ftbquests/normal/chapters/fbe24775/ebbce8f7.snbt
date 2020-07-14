@@ -1,0 +1,21 @@
+{
+	title: "Jet Fuel Can't Melt Manasteel Beams",
+	x: 2.0d,
+	y: -6.5d,
+	description: "For this price, it's quite a steel",
+	text: [
+		"By infusing the crude steel that you make with mana, you can produce Manasteel, a key ingredient in more complex recipes in Botania.",
+		"Some uses of manasteel include the ability to make rings that bring mana with you, or strong armor that uses mana to repair itself."
+	],
+	dependencies: [
+		"c16843fc",
+		"51ade5b4"
+	],
+	tasks: [{
+		uid: "6282ffee",
+		type: "item",
+		items: [{
+			item: "botania:manaresource"
+		}]
+	}]
+}

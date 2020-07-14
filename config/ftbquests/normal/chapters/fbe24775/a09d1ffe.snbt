@@ -1,0 +1,90 @@
+{
+	title: "Petal to the Metal",
+	icon: "botania:petal 1 14",
+	x: 2.0d,
+	y: 0.0d,
+	description: "The items we all dye for",
+	text: [
+		"A budding botanist's best friend is the Petal Apothecary -- a simple device that uses mana around you, petals and water to create mystical flowers.",
+		"These flowers can transform items, blocks or entities, or even produce mana for you by consuming certain things.",
+		"The more time you spend mastering botany, the more flowers you can unlock!"
+	],
+	dependencies: [
+		"de029374"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "c0ed423e",
+		type: "item",
+		title: "Obtain any Petal",
+		items: [{
+			item: "botania:petal"
+		},
+		{
+			item: "botania:petal 1 1"
+		},
+		{
+			item: "botania:petal 1 2"
+		},
+		{
+			item: "botania:petal 1 3"
+		},
+		{
+			item: "botania:petal 1 4"
+		},
+		{
+			item: "botania:petal 1 5"
+		},
+		{
+			item: "botania:petal 1 6"
+		},
+		{
+			item: "botania:petal 1 7"
+		},
+		{
+			item: "botania:petal 1 8"
+		},
+		{
+			item: "botania:petal 1 9"
+		},
+		{
+			item: "botania:petal 1 10"
+		},
+		{
+			item: "botania:petal 1 11"
+		},
+		{
+			item: "botania:petal 1 12"
+		},
+		{
+			item: "botania:petal 1 13"
+		},
+		{
+			item: "botania:petal 1 14"
+		},
+		{
+			item: "botania:petal 1 15"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "437fb5ea",
+		type: "item",
+		items: [{
+			item: "botania:altar"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a508bd32",
+		type: "item",
+		item: {
+			id: "minecraft:vine",
+			tag: {
+				display: {
+					Name: "Drop this into your Apothecary!"
+				}
+			}
+		}
+	}]
+}

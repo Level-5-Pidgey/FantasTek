@@ -1,0 +1,64 @@
+{
+	title: "Soil Sampling",
+	icon: "minecraft:sand",
+	x: -1.5d,
+	y: 4.0d,
+	description: "Things are gettin' dirty",
+	text: [
+		"There are some materials necessary for life that you should be able to find on different planets. Since you're reading this, we assume your planet has some of these elements so it would be helpful to us if you could go",
+		"and seek them out, so we can test how they differ from what we've got in the lab. If you aren't reading this you must be dead, so don't worry about doing this for us."
+	],
+	dependencies: [
+		"8edd4b42"
+	],
+	tasks: [{
+		uid: "f56f7a4f",
+		type: "item",
+		items: [{
+			item: "minecraft:sand"
+		},
+		{
+			item: "minecraft:sand 1 1"
+		},
+		{
+			item: "biomesoplenty:dirt 1 1"
+		},
+		{
+			item: "biomesoplenty:dried_sand"
+		}],
+		count: 32L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fc9ba112",
+		type: "item",
+		items: [{
+			item: "minecraft:gravel"
+		},
+		{
+			item: "minecraft:flint"
+		}],
+		count: 32L
+	},
+	{
+		uid: "c391a999",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}],
+		count: 64L
+	},
+	{
+		uid: "8be0c6b0",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "e44144d3",
+		type: "item",
+		item: "contenttweaker:currency_2500"
+	}]
+}

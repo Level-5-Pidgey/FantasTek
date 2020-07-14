@@ -1,0 +1,21 @@
+{
+	title: "A Bloody Mess",
+	x: 7.0d,
+	y: 0.0d,
+	description: "FantasTek is not responsible for any possible death or injury.",
+	dependencies: [
+		"c1ccb8e2"
+	],
+	tasks: [{
+		uid: "ac75197b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:sacrificial_dagger",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}]
+}

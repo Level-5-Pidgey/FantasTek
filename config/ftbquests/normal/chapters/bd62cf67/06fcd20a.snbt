@@ -1,0 +1,26 @@
+{
+	title: "Highly Diamanding",
+	x: 4.5d,
+	y: 2.0d,
+	shape: "rsquare",
+	description: "Bling bling",
+	text: [
+		"Diamonds are still controlled by a competing mega-corporation back on the homeworld, but they haven't expanded out this far yet so they should be easy to attain if you're inclined to do so.",
+		"If you wish, you could grab some to give to family and friends on your return, if you make it that far."
+	],
+	dependencies: [
+		"1dab1267"
+	],
+	tasks: [{
+		uid: "04c8c713",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond"
+		}]
+	}],
+	rewards: [{
+		uid: "949fac5d",
+		type: "xp",
+		xp: 15
+	}]
+}

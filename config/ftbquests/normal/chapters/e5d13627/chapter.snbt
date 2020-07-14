@@ -1,0 +1,10 @@
+{
+	title: "Astral Sorcery",
+	icon: "astralsorcery:itemcraftingcomponent",
+	description: [
+		"Become A Star"
+	],
+	always_invisible: false,
+	group: 269183387,
+	default_quest_shape: ""
+}

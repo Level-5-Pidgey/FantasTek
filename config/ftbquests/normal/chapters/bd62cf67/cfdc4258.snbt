@@ -1,0 +1,32 @@
+{
+	title: "Workshop Wonder",
+	x: 6.5d,
+	y: 6.0d,
+	description: "*tink* *tink* *tink* *clang*",
+	text: [
+		"Ingots and blocks of metal or gems are good and all, but you're going to need to fashion them into plates or gears or rods to make them useful for machinery.",
+		"Whilst highly inefficient, a tinker's hammer allows you to hammer ingots into plates so that you can use them to craft machinery.",
+		"",
+		"Don't fret, you will be able to create much more efficient methods of plate crafting later down the line!"
+	],
+	dependencies: [
+		"8cb69197"
+	],
+	tasks: [{
+		uid: "310d795e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "embers:tinker_hammer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a428531b",
+		type: "item",
+		item: "jaopca:item_plateemerald"
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	title: "This Is The Bondage That We Needed",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "bloodmagic:monster_soul"
+	},
+	x: 3.5d,
+	y: 0.0d,
+	description: "Make sure to get their safe word!",
+	dependencies: [
+		"2488a23e"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "c8a7430e",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_snare"
+		}]
+	},
+	{
+		uid: "20ad990d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:monster_soul"
+		}],
+		ignore_nbt: 1b
+	}]
+}

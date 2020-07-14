@@ -1,0 +1,62 @@
+{
+	title: "Paxel Power",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "mekanismtools:diamondpaxel"
+	},
+	x: 0.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "Less swapping, more digging!",
+	text: [
+		"If you're tired of constantly having to swap tools all the time, Paxels are a great solution and can be used as an axe, pickaxe, or shovel, but are also more vulnerable to damage."
+	],
+	dependencies: [
+		"1dab1267"
+	],
+	tasks: [{
+		uid: "bd77769c",
+		type: "item",
+		title: "Craft a Paxel",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanismtools:ironpaxel"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanismtools:woodpaxel"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanismtools:stonepaxel"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanismtools:diamondpaxel"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanismtools:goldpaxel"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanismtools:lapislazulipaxel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

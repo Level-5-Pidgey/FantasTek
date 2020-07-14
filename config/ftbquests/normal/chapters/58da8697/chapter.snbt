@@ -1,0 +1,10 @@
+{
+	title: "Apicultural",
+	icon: "forestry:bee_combs",
+	description: [
+		"Mastery of the bees!"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "hexagon"
+}

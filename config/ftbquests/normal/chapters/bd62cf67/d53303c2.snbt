@@ -1,0 +1,14 @@
+{
+	x: 6.5d,
+	y: -8.0d,
+	dependencies: [
+		"922a90a9"
+	],
+	tasks: [{
+		uid: "82f2b516",
+		type: "item",
+		items: [{
+			item: "forestry:carpenter"
+		}]
+	}]
+}

@@ -1,0 +1,99 @@
+{
+	title: "How Ironic",
+	icon: "minecraft:iron_ingot",
+	x: 0.5d,
+	y: 2.0d,
+	shape: "rsquare",
+	description: "I have a FEeling you're getting the hang of this",
+	text: [
+		"Whilst iron ran out long ago back on the homeworld, our scans show that it is plentiful on your new planet. Iron is necessary for increasing your chances at survival, so you should probably get some.",
+		"We don't want you ending up like Charles."
+	],
+	dependencies: [
+		"8edd4b42"
+	],
+	tasks: [{
+		uid: "534b7d40",
+		type: "item",
+		title: "Craft any Iron Tool",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_shovel"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_pickaxe"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_axe"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_sword"
+		}],
+		consume_items: false,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "090694db",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8907818b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a9ac1bfa",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ef266379",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "64757cbd",
+		type: "item",
+		item: "minecraft:anvil 1 1"
+	}]
+}

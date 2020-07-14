@@ -1,0 +1,39 @@
+{
+	title: "Advanced Crafting",
+	icon: "extendedcrafting:table_basic",
+	x: 8.5d,
+	y: 8.0d,
+	description: "Time to make something powerful!",
+	text: [
+		"The basic wooden crafting table we recommended you make earlier is appropriate for most crafting tasks, more complex machines require more complex tools such as an Advanced Crafting Table.",
+		"Black Iron is a much more dense version of Iron, using the durable properties (and colour) of Obsidian to toughen itself.",
+		"Items made from this material are much more heat resistant, and should also be able to handle more powerful catalysts."
+	],
+	dependencies: [
+		"cfdc4258"
+	],
+	tasks: [{
+		uid: "33ca1cdb",
+		type: "item",
+		title: "Craft a Black Iron Material",
+		items: [{
+			item: "extendedcrafting:material"
+		},
+		{
+			item: "extendedcrafting:material 1 2"
+		}]
+	},
+	{
+		uid: "958ad59a",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_basic"
+		}]
+	}],
+	rewards: [{
+		uid: "6f2f97e7",
+		type: "item",
+		item: "minecraft:obsidian",
+		count: 8
+	}]
+}

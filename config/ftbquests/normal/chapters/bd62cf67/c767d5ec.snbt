@@ -1,0 +1,33 @@
+{
+	title: "Motorized Madness",
+	x: 8.5d,
+	y: -8.0d,
+	description: "Get those wheels turnin'...",
+	text: [
+		"With the durability of steel and the energetic properties of Redstone Alloy, you can construct motors that can spin quickly if given power.",
+		"These will prove very useful to upgrade logistical systems later down the line!"
+	],
+	dependencies: [
+		"c16843fc"
+	],
+	tasks: [{
+		uid: "897f5820",
+		type: "item",
+		items: [{
+			item: "magneticraft:crafting 1 2"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "fe5b5108",
+		type: "item",
+		item: "enderio:item_alloy_endergy_ingot",
+		count: 4
+	},
+	{
+		uid: "efa7bb2f",
+		type: "item",
+		item: "minecraft:redstone",
+		count: 16
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	title: "Chest Building",
+	x: 4.5d,
+	y: 4.0d,
+	shape: "hexagon",
+	description: "Bigger and Better Chests!",
+	text: [
+		"Whilst a standard vanilla double chest is good and all, sometimes you will need or want better storage space in a compact area.",
+		"The chest builder allows you to create highly customizable chests, where you can set the color and size as you like, and the resource cost will change depending on your specifications!",
+		"The more efficient your plate manufacturing method is, the easier it will be to create chests within the builder!"
+	],
+	dependencies: [
+		"cfdc4258"
+	],
+	tasks: [{
+		uid: "6e511b91",
+		type: "item",
+		items: [{
+			item: "compactstorage:chestbuilder"
+		}]
+	}],
+	rewards: [{
+		uid: "8b4c7334",
+		type: "item",
+		item: "thermalfoundation:material 1 32",
+		count: 4
+	},
+	{
+		uid: "d2946237",
+		type: "item",
+		item: "contenttweaker:wood_plate",
+		count: 4
+	}]
+}

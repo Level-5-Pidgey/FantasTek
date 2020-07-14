@@ -1,0 +1,42 @@
+{
+	title: "Bedrock Bounties",
+	x: 0.0d,
+	y: 1.5d,
+	description: "Shining brighter than your future",
+	text: [
+		"With the Resonating Wand in hand during the night, pillars of light may be seen emanating from the ground. If you dig to bedrock level at this points, you will be able to find a powerful rock crystal ore.",
+		"These ores can be harvested and used to empower your magical arsenal."
+	],
+	dependencies: [
+		"5deb1a5f"
+	],
+	tasks: [{
+		uid: "48e925b2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemrockcrystalsimple",
+			tag: {
+				astralsorcery: {
+					crystalProperties: {
+						collectiveCapability: 100,
+						size: 400,
+						fract: 0,
+						purity: 100,
+						sizeOverride: -1
+					}
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "41d2065f",
+		type: "item",
+		item: "astralsorcery:blockcustomore",
+		count: 3
+	}]
+}

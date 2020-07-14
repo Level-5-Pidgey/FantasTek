@@ -1,0 +1,93 @@
+{
+	title: "Flower Power",
+	x: 3.5d,
+	y: -3.5d,
+	description: "YOU HAVE NO MANA",
+	dependencies: [
+		"3ce0916e"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "57003390",
+		type: "item",
+		title: "Craft any Generating Flower",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "endoflame"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "hydroangeas"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "thermalily"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "arcanerose"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "munchdew"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "entropinnyum"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "kekimurus"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "gourmaryllis"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "narslimmus"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "spectrolus"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "rafflowsia"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "shulk_me_not"
+			}
+		},
+		{
+			id: "botania:specialflower",
+			tag: {
+				type: "dandelifeon"
+			}
+		}]
+	}]
+}

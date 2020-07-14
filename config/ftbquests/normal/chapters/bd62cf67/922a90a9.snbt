@@ -1,0 +1,31 @@
+{
+	title: "Basics of Simple Machines",
+	x: 6.5d,
+	y: -6.0d,
+	text: [
+		"By pouring crude steel onto sealed wood planks, you can create reinforced steel. This, along with the magical material Electrotine and some iron plates can create a simple machine chassis which is the basis of all powered machinery."
+	],
+	dependencies: [
+		"c16843fc",
+		"4e3597db"
+	],
+	tasks: [{
+		uid: "480f4bc1",
+		type: "item",
+		items: [{
+			item: "enderio:item_material"
+		}]
+	}],
+	rewards: [{
+		uid: "eb18623e",
+		type: "item",
+		item: "projectred-core:resource_item 1 104",
+		count: 8
+	},
+	{
+		uid: "c64ce7ed",
+		type: "item",
+		item: "thermalfoundation:material 1 32",
+		count: 4
+	}]
+}

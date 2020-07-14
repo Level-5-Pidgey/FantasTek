@@ -1,0 +1,14 @@
+{
+	x: 11.5d,
+	y: -2.0d,
+	dependencies: [
+		"63a036b8"
+	],
+	tasks: [{
+		uid: "abb7c91a",
+		type: "item",
+		items: [{
+			item: "morebees:nether_starfragment"
+		}]
+	}]
+}

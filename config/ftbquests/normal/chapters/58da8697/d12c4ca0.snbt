@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: 1.0d,
+	dependencies: [
+		"3b6a45a2"
+	],
+	tasks: [{
+		uid: "e57ff30b",
+		type: "item",
+		items: [{
+			item: "morebees:combdirt"
+		}]
+	}]
+}

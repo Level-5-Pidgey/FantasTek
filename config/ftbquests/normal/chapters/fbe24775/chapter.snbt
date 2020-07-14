@@ -1,0 +1,10 @@
+{
+	title: "Botania",
+	icon: "minecraft:double_plant 1 4",
+	description: [
+		"Who's Mana Is This?"
+	],
+	always_invisible: false,
+	group: 269183387,
+	default_quest_shape: ""
+}

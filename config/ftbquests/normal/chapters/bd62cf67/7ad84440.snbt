@@ -1,0 +1,29 @@
+{
+	title: "Efficient Smelting",
+	icon: "futuremc:campfire",
+	x: -3.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "Waste not want not",
+	text: [
+		"If you're trying to conserve resources and smelt items more efficiently, coal nuggets can be crafted from coal and will smelt 1 item within a furnace.",
+		"This will boost fuel usage efficiency by 12.5%!"
+	],
+	dependencies: [
+		"8edd4b42"
+	],
+	tasks: [{
+		uid: "5c82b068",
+		type: "item",
+		items: [{
+			item: "jaopca:item_nuggetcoal"
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "5a9bb1df",
+		type: "item",
+		item: "minecraft:coal",
+		count: 4
+	}]
+}

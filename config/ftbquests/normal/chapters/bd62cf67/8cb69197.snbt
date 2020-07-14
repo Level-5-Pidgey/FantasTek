@@ -1,0 +1,38 @@
+{
+	title: "This is Obsurd",
+	icon: "minecraft:obsidian",
+	x: 6.5d,
+	y: 2.0d,
+	shape: "rsquare",
+	description: "Denser than your cranium",
+	text: [
+		"With Diamonds now obtained, you can use their superior cutting skills to break and collect obsidian.",
+		"Obsidian itself is great as a sturdy material for tools and equipment, but should also be usable as a magical tether for something...",
+		"",
+		"... we weren't able to get a definitive answer during our research simulations."
+	],
+	dependencies: [
+		"1dab1267"
+	],
+	tasks: [{
+		uid: "2160a172",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}],
+		count: 10L,
+		consume_items: false,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4f96e8f2",
+		type: "dimension",
+		dim: -1
+	}],
+	rewards: [{
+		uid: "aafe76ec",
+		type: "item",
+		item: "minecraft:obsidian",
+		count: 8
+	}]
+}

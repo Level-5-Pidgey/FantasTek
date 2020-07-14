@@ -1,0 +1,83 @@
+{
+	title: "Crystal Crackhead",
+	icon: "contenttweaker:infused_stone_vitium",
+	x: 2.0d,
+	y: 0.5d,
+	description: "They're for medicinal purposes, officer!",
+	text: [
+		"Now that you have aligned with the path of the Thaumaturge, you should see plenty of elemental crystals residing within stone underground. These stones appear throughout the world at any height level, and can be broken to collect simple aspects in ",
+		"a convenient crystal form."
+	],
+	dependencies: [
+		"faaf9846"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "93857981",
+		type: "item",
+		title: "Collect an Aspect Crystal",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "terra"
+				}]
+			}
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ignis"
+				}]
+			}
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aqua"
+				}]
+			}
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ordo"
+				}]
+			}
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "perditio"
+				}]
+			}
+		},
+		{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "vitium"
+				}]
+			}
+		}]
+	}]
+}

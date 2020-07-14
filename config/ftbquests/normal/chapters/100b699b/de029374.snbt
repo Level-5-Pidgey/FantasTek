@@ -1,0 +1,35 @@
+{
+	title: "A-Lexa, Play Botania",
+	x: 0.0d,
+	y: -1.5d,
+	description: "Really? You're gonna become a PLANT mage?",
+	text: [
+		"Plants, at this point in Humanity's lifetime, are mere tools to feed and empower us.",
+		"",
+		"The tech guys down at the lab (crazy folks, honestly) have said that with the right type of energy though, they can do even wilder things.",
+		"Lead into gold, that sort of stuff. If it makes us money, I'm sure we can put aside more funds for our research team!"
+	],
+	dependencies: [
+		"364c90c8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "2311a5ea",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:lexicon",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7dca5939",
+		type: "gamestage",
+		title: "Unlock Stage 1 Botania",
+		stage: "botania-i"
+	}]
+}

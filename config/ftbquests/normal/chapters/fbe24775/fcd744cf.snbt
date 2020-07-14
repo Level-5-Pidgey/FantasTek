@@ -1,0 +1,48 @@
+{
+	title: "Slingin' for the stars",
+	x: 0.5d,
+	y: -3.5d,
+	shape: "hexagon",
+	description: "How far can you shoot?",
+	text: [
+		"The Livingwood Slingshot isn't particularly magical, but might be a fun tool to add to your arsenal.",
+		"The slingshot shoots Vine Balls -- projectiles that ignore gravity and fire wherever you're facing points.",
+		"if you shoot the side of a block, vines will extend down towards the ground and can act as a temporary ladder for you to climb up!",
+		"Can also be used to decorate hard to reach places with vines conveniently. Shoot for the moon!"
+	],
+	dependencies: [
+		"2d02c600"
+	],
+	tasks: [{
+		uid: "56aa8bdb",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:slingshot"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4178176b",
+		type: "item",
+		items: [{
+			item: "botania:vineball"
+		}],
+		count: 5L
+	}],
+	rewards: [{
+		uid: "82b5c9e0",
+		type: "item",
+		item: "botania:vineball",
+		count: 20
+	},
+	{
+		uid: "e278086d",
+		type: "item",
+		item: "botania:livingwood",
+		count: 3
+	}]
+}

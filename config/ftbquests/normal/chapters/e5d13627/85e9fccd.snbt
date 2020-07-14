@@ -1,0 +1,22 @@
+{
+	title: "On the Grind",
+	x: -1.5d,
+	y: 1.5d,
+	shape: "rsquare",
+	description: ":pensive: :fist:",
+	text: [
+		"The Grindstone is a useful object for any Astral Sorcerer as it can be used on any tool or weapon, and has extra uses for Astral-related items.",
+		"When used on a normal tool, you can sharpen the edges of the tool to increase damage by 20%, which can give a nice bonus to your weapons to make dealing with mobs less of a hassle.",
+		"Additionally, the grindstone can be used with Rock Crystal to increase it's cutting stat and improve it's performance in tools or rituals later on."
+	],
+	dependencies: [
+		"e203229a"
+	],
+	tasks: [{
+		uid: "2706c50b",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmachine 1 1"
+		}]
+	}]
+}

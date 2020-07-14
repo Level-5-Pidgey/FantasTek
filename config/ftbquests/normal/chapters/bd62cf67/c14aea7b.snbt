@@ -1,0 +1,33 @@
+{
+	title: "Maximizing Oven Efficiency",
+	x: 4.5d,
+	y: -4.0d,
+	shape: "hexagon",
+	description: "More Creosote or Faster Coal Coke Production!",
+	text: [
+		"Although you can now use the Coke Oven to produce creosote, you might want to invest in upgrades for the oven to improve it's performance or output.",
+		"",
+		"A BLAZE MESH will triple the production speed of the machine.",
+		"A block of HEAT GLASS will double the creosote production of the machine."
+	],
+	dependencies: [
+		"a1c8ffa9"
+	],
+	tasks: [{
+		uid: "59f1fd21",
+		type: "item",
+		title: "Craft an item to improve the Coke Oven",
+		items: [{
+			item: "natura:nether_glass 1 1"
+		},
+		{
+			item: "botania:blazeblock"
+		}]
+	}],
+	rewards: [{
+		uid: "704b0603",
+		type: "item",
+		item: "minecraft:coal_block",
+		count: 2
+	}]
+}

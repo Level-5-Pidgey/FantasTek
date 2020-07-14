@@ -162,7 +162,7 @@ recipes.addShaped("pattern", <tconstruct:pattern> * 4, [[<ore:stickWood>, <ore:p
 //Change Grout Crafting
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
-mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 10, <liquid:creosote>, <ore:gravel> * 10, true);
+mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 10, <liquid:creosote>, [<ore:gravel> * 10], true);
 
 //Change TCon Multiblock Component Crafting
 val multiblockComponents =
