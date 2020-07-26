@@ -1,10 +1,10 @@
 {
 	title: "Seal of Approval",
-	x: 6.5d,
+	x: 10.5d,
 	y: -4.0d,
 	description: "Our lips are sealed",
 	text: [
-		"By crafting creosote and wooden planks together, you can create planks that have been sealed with creosote. These planks form a strong foundation for basic machine. Please stand at least 6 feet away from the",
+		"By crafting creosote and wooden planks together, you can create planks that have been sealed with creosote. These planks form a strong foundation for basic machinery. Please stand at least 6 feet away from the",
 		"sealing process, unless you wish to be sealed as well."
 	],
 	dependencies: [

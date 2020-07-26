@@ -62,6 +62,13 @@ infused_stone_aer.setBlockResistance(8.0);
 infused_stone_aer.setToolClass("pickaxe");
 infused_stone_aer.setToolLevel(1);
 infused_stone_aer.setBlockSoundType(<soundtype:stone>);
+infused_stone_aer.setDropHandler(function(drops, world, position, state, fortune) {
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}));
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) % 0.5);
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) % 0.25);
+
+		return;
+	});
 infused_stone_aer.register();
 
 var infused_stone_aqua = VanillaFactory.createBlock("infused_stone_aqua", <blockmaterial:rock>);
@@ -70,6 +77,13 @@ infused_stone_aqua.setBlockResistance(8.0);
 infused_stone_aqua.setToolClass("pickaxe");
 infused_stone_aqua.setToolLevel(1);
 infused_stone_aqua.setBlockSoundType(<soundtype:stone>);
+infused_stone_aqua.setDropHandler(function(drops, world, position, state, fortune) {
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}));
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) % 0.5);
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) % 0.25);
+
+		return;
+	});
 infused_stone_aqua.register();
 
 var infused_stone_ignis = VanillaFactory.createBlock("infused_stone_ignis", <blockmaterial:rock>);
@@ -78,6 +92,13 @@ infused_stone_ignis.setBlockResistance(8.0);
 infused_stone_ignis.setToolClass("pickaxe");
 infused_stone_ignis.setToolLevel(1);
 infused_stone_ignis.setBlockSoundType(<soundtype:stone>);
+infused_stone_ignis.setDropHandler(function(drops, world, position, state, fortune) {
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}));
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) % 0.5);
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) % 0.25);
+
+		return;
+	});
 infused_stone_ignis.register();
 
 var infused_stone_ordo = VanillaFactory.createBlock("infused_stone_ordo", <blockmaterial:rock>);
@@ -86,6 +107,13 @@ infused_stone_ordo.setBlockResistance(8.0);
 infused_stone_ordo.setToolClass("pickaxe");
 infused_stone_ordo.setToolLevel(1);
 infused_stone_ordo.setBlockSoundType(<soundtype:stone>);
+infused_stone_ordo.setDropHandler(function(drops, world, position, state, fortune) {
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}));
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) % 0.5);
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) % 0.25);
+
+		return;
+	});
 infused_stone_ordo.register();
 
 var infused_stone_perditio = VanillaFactory.createBlock("infused_stone_perditio", <blockmaterial:rock>);
@@ -94,6 +122,13 @@ infused_stone_perditio.setBlockResistance(8.0);
 infused_stone_perditio.setToolClass("pickaxe");
 infused_stone_perditio.setToolLevel(1);
 infused_stone_perditio.setBlockSoundType(<soundtype:stone>);
+infused_stone_perditio.setDropHandler(function(drops, world, position, state, fortune) {
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}));
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) % 0.5);
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) % 0.25);
+
+		return;
+	});
 infused_stone_perditio.register();
 
 var infused_stone_terra = VanillaFactory.createBlock("infused_stone_terra", <blockmaterial:rock>);
@@ -102,6 +137,13 @@ infused_stone_terra.setBlockResistance(8.0);
 infused_stone_terra.setToolClass("pickaxe");
 infused_stone_terra.setToolLevel(1);
 infused_stone_terra.setBlockSoundType(<soundtype:stone>);
+infused_stone_terra.setDropHandler(function(drops, world, position, state, fortune) {
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}));
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) % 0.5);
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) % 0.25);
+
+		return;
+	});
 infused_stone_terra.register();
 
 var infused_stone_vitium = VanillaFactory.createBlock("infused_stone_vitium", <blockmaterial:rock>);
@@ -110,6 +152,13 @@ infused_stone_vitium.setBlockResistance(8.0);
 infused_stone_vitium.setToolClass("pickaxe");
 infused_stone_vitium.setToolLevel(1);
 infused_stone_vitium.setBlockSoundType(<soundtype:stone>);
+infused_stone_vitium.setDropHandler(function(drops, world, position, state, fortune) {
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}));
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 0.5);
+		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 0.25);
+
+		return;
+	});
 infused_stone_vitium.register();
 
 //Sanguine Ingot

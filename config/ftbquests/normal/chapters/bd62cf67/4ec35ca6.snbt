@@ -2,7 +2,7 @@
 	title: "Crank Dat",
 	icon: "jaopca:item_dustruby",
 	x: 8.5d,
-	y: 6.0d,
+	y: 8.0d,
 	shape: "hexagon",
 	description: "(Soulja Boy tell 'em)",
 	text: [

@@ -1,0 +1,16 @@
+{
+	icon: "chisel:blockgold 1 1",
+	x: 16.5d,
+	y: -8.0d,
+	shape: "hexagon",
+	dependencies: [
+		"8e2d9757"
+	],
+	tasks: [{
+		uid: "cd779279",
+		type: "item",
+		items: [{
+			item: "magneticraft:container"
+		}]
+	}]
+}

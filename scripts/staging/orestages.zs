@@ -1,4 +1,4 @@
-#priority 50
+#priority -1
 import scripts.staging.stages;
 import mods.zenstages.Stage;
 import crafttweaker.oredict.IOreDict;
@@ -545,6 +545,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Knightslime" : stages.progression2,
   "PigIron" : stages.progression1,
   "NetherStar" : stages.progression1,
+  "AncientDebris" : stages.progression1,
   "LapisLazuli" : stages.progression1,
 };
 
@@ -598,6 +599,7 @@ var extraOreDicts as mods.zenstages.Stage[IOreDictEntry] =
 	<ore:dustSmallSulfur> : stages.progression1,
 	<ore:dustSulfur> : stages.progression1,
 	<ore:dustNetherQuartz> : stages.progression1,
+	<ore:dustObisidian> : stages.progression1,
 	<ore:blockSulfur> : stages.progression1,
 	<ore:dustWood> : stages.progression1,
 	<ore:pulpWood> : stages.progression1,

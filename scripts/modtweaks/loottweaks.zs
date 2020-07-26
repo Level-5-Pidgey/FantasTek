@@ -1,4 +1,4 @@
-import loottweaker.vanilla.loot.LootTables;
+import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import loottweaker.vanilla.loot.Conditions;
@@ -8,7 +8,7 @@ import crafttweaker.item.IItemStack;
 print("~~~ Begin Loottweaker Init ~~~");
 
 //Change up the treasure fishing loot table with gems and money (oooh!)
-val fishing = LootTables.getTable("minecraft:gameplay/fishing/treasure").getPool("main");
+val fishing = LootTweaker.getTable("minecraft:gameplay/fishing/treasure").getPool("main");
 fishing.addItemEntry(<conduit:nautilus_shell>, 1, 1, "nautilusshell");
 fishing.removeEntry("minecraft:bow");
 fishing.removeEntry("minecraft:fishing_rod");
@@ -53,49 +53,48 @@ for key, value in fishingTreasure {
 	fishing.addItemEntry(key, value as int, key.name);
 }
 
-
 //Remove flight staff from reliquary injection
-val reliquary_flightstaff = LootTables.getTable("xreliquary:inject/chests/end_city_treasure").getPool("main");
+val reliquary_flightstaff = LootTweaker.getTable("xreliquary:inject/chests/end_city_treasure").getPool("main");
 reliquary_flightstaff.removeEntry("xreliquary:rending_gale");
 
 //Remove Interdiction Torch from reliquary injection
-val nether_bridge_reliquary = LootTables.getTable("xreliquary:inject/chests/nether_bridge").getPool("main");
+val nether_bridge_reliquary = LootTweaker.getTable("xreliquary:inject/chests/nether_bridge").getPool("main");
 nether_bridge_reliquary.removeEntry("xreliquary:interdiction_torch");
 nether_bridge_reliquary.removeEntry("xreliquary:void_tear");
 nether_bridge_reliquary.removeEntry("xreliquary:salamander_eye");
 
 //Remove some Treasures and Potions from the Nether Bridge Loot Table
-LootTables.getTable("minecraft:chests/nether_bridge").removePool("bountifulbaubles_nether_bridge_2");
+LootTweaker.getTable("minecraft:chests/nether_bridge").removePool("bountifulbaubles_nether_bridge_2");
 
 //Remove Void Tears from the Stronghold Corridor Loot Table
-LootTables.getTable("xreliquary:injectchests/stronghold_crossing").getPool("main").removeEntry("xreliquary:shears_of_winter");
+LootTweaker.getTable("xreliquary:inject/chests/stronghold_corridor").getPool("main").removeEntry("xreliquary:shears_of_winter");
 
-val simple_dungeon = LootTables.getTable("minecraft:chests/simple_dungeon").getPool("pool1");
+val simple_dungeon = LootTweaker.getTable("minecraft:chests/simple_dungeon").getPool("pool1");
 
 //Remove EnderIO pools
 val EnderIOGen =
 	[
-		LootTables.getTable("enderio:chests/abandoned_mineshaft"),
-		LootTables.getTable("enderio:chests/desert_pyramid"),
-		LootTables.getTable("enderio:chests/end_city_treasure"),
-		LootTables.getTable("enderio:chests/igloo_chest"),
-		LootTables.getTable("enderio:chests/jungle_temple"),
-		LootTables.getTable("enderio:chests/jungle_temple_dispenser"),
-		LootTables.getTable("enderio:chests/nether_bridge"),
-		LootTables.getTable("enderio:chests/simple_dungeon"),
-		LootTables.getTable("enderio:chests/village_blacksmith"),
-		LootTables.getTable("enderio:chests/woodland_mansion"),
+		LootTweaker.getTable("enderio:chests/abandoned_mineshaft"),
+		LootTweaker.getTable("enderio:chests/desert_pyramid"),
+		LootTweaker.getTable("enderio:chests/end_city_treasure"),
+		LootTweaker.getTable("enderio:chests/igloo_chest"),
+		LootTweaker.getTable("enderio:chests/jungle_temple"),
+		LootTweaker.getTable("enderio:chests/jungle_temple_dispenser"),
+		LootTweaker.getTable("enderio:chests/nether_bridge"),
+		LootTweaker.getTable("enderio:chests/simple_dungeon"),
+		LootTweaker.getTable("enderio:chests/village_blacksmith"),
+		LootTweaker.getTable("enderio:chests/woodland_mansion"),
 		//Minecraft injected tables
-		LootTables.getTable("minecraft:chests/abandoned_mineshaft"),
-		LootTables.getTable("minecraft:chests/desert_pyramid"),
-		LootTables.getTable("minecraft:chests/end_city_treasure"),
-		LootTables.getTable("minecraft:chests/igloo_chest"),
-		LootTables.getTable("minecraft:chests/jungle_temple"),
-		LootTables.getTable("minecraft:chests/jungle_temple_dispenser"),
-		LootTables.getTable("minecraft:chests/nether_bridge"),
-		LootTables.getTable("minecraft:chests/simple_dungeon"),
-		LootTables.getTable("minecraft:chests/village_blacksmith"),
-		LootTables.getTable("minecraft:chests/woodland_mansion")
+		LootTweaker.getTable("minecraft:chests/abandoned_mineshaft"),
+		LootTweaker.getTable("minecraft:chests/desert_pyramid"),
+		LootTweaker.getTable("minecraft:chests/end_city_treasure"),
+		LootTweaker.getTable("minecraft:chests/igloo_chest"),
+		LootTweaker.getTable("minecraft:chests/jungle_temple"),
+		LootTweaker.getTable("minecraft:chests/jungle_temple_dispenser"),
+		LootTweaker.getTable("minecraft:chests/nether_bridge"),
+		LootTweaker.getTable("minecraft:chests/simple_dungeon"),
+		LootTweaker.getTable("minecraft:chests/village_blacksmith"),
+		LootTweaker.getTable("minecraft:chests/woodland_mansion")
 	] as LootTable[];
 
 for pool in EnderIOGen {
@@ -105,13 +104,13 @@ for pool in EnderIOGen {
 //Stop Dimlet Parcels from generating
 val DimletParcelGen =
 [
-	LootTables.getTable("minecraft:chests/abandoned_mineshaft"),
-	LootTables.getTable("minecraft:chests/desert_pyramid"),
-	LootTables.getTable("minecraft:chests/igloo_chest"),
-	LootTables.getTable("minecraft:chests/jungle_temple"),
-	LootTables.getTable("minecraft:chests/nether_bridge"),
-	LootTables.getTable("minecraft:chests/simple_dungeon"),
-	LootTables.getTable("minecraft:chests/village_blacksmith")
+	LootTweaker.getTable("minecraft:chests/abandoned_mineshaft"),
+	LootTweaker.getTable("minecraft:chests/desert_pyramid"),
+	LootTweaker.getTable("minecraft:chests/igloo_chest"),
+	LootTweaker.getTable("minecraft:chests/jungle_temple"),
+	LootTweaker.getTable("minecraft:chests/nether_bridge"),
+	LootTweaker.getTable("minecraft:chests/simple_dungeon"),
+	LootTweaker.getTable("minecraft:chests/village_blacksmith")
 ] as LootTable[];
 
 for pool in DimletParcelGen {
@@ -121,14 +120,14 @@ for pool in DimletParcelGen {
 //Remove Silver Nuggets/Ingots
 val IceAndFireGen =
 	[
-		LootTables.getTable("minecraft:chests/abandoned_mineshaft"),
-		LootTables.getTable("minecraft:chests/desert_pyramid"),
-		LootTables.getTable("minecraft:chests/igloo_chest"),
-		LootTables.getTable("minecraft:chests/jungle_temple"),
-		LootTables.getTable("minecraft:chests/stronghold_corridor"),
-		LootTables.getTable("minecraft:chests/stronghold_crossing"),
-		LootTables.getTable("minecraft:chests/village_blacksmith"),
-		LootTables.getTable("minecraft:chests/woodland_mansion")
+		LootTweaker.getTable("minecraft:chests/abandoned_mineshaft"),
+		LootTweaker.getTable("minecraft:chests/desert_pyramid"),
+		LootTweaker.getTable("minecraft:chests/igloo_chest"),
+		LootTweaker.getTable("minecraft:chests/jungle_temple"),
+		LootTweaker.getTable("minecraft:chests/stronghold_corridor"),
+		LootTweaker.getTable("minecraft:chests/stronghold_crossing"),
+		LootTweaker.getTable("minecraft:chests/village_blacksmith"),
+		LootTweaker.getTable("minecraft:chests/woodland_mansion")
 	] as LootTable[];
 
 for pool in IceAndFireGen {
@@ -138,8 +137,8 @@ for pool in IceAndFireGen {
 //Remove Botania Loots
 val BotaniaGen =
 	[
-		LootTables.getTable("botania:inject/simple_dungeon"),
-		LootTables.getTable("botania:inject/stronghold_corridor")
+		LootTweaker.getTable("botania:inject/simple_dungeon"),
+		LootTweaker.getTable("botania:inject/stronghold_corridor")
 	] as LootTable[];
 
 for pool in BotaniaGen {
@@ -149,42 +148,44 @@ for pool in BotaniaGen {
 //Remove Mom's Spaghetti
 val TConGen =
 	[
-		LootTables.getTable("minecraft:chests/desert_pyramid"),
-		LootTables.getTable("minecraft:chests/jungle_temple"),
-		LootTables.getTable("minecraft:chests/stronghold_crossing"),
+		LootTweaker.getTable("minecraft:chests/desert_pyramid"),
+		LootTweaker.getTable("minecraft:chests/jungle_temple"),
+		LootTweaker.getTable("minecraft:chests/stronghold_crossing"),
 	] as LootTable[];
 
 for pool in TConGen {
 	pool.removePool("moms_spaghetti");
 }
 
-LootTables.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:lexicon"); //Remove Lexica Botania
-LootTables.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:manaBottle"); //Remove Mana Bottles from appearing too
+LootTweaker.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:lexicon"); //Remove Lexica Botania
+LootTweaker.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:manaBottle"); //Remove Mana Bottles from appearing too
 
 //Add bottled Ender Air to End Loot Tables
-LootTables.getTable("minecraft:chests/end_city_treasure").getPool("main").addItemEntry(<botania:manaresource:15>, 13, 1, "enderair");
+LootTweaker.getTable("minecraft:chests/end_city_treasure").getPool("main").addItemEntry(<botania:manaresource:15>, 13, 1, "enderair");
 
 //Monsters
-val witherSkeleton = LootTables.getTable("minecraft:entities/wither_skeleton"); //Wither Skeleton (remove extra bones, remove drops of evil)
+val witherSkeleton = LootTweaker.getTable("minecraft:entities/wither_skeleton"); //Wither Skeleton (remove extra bones, remove drops of evil)
 witherSkeleton.removePool("xuLootDropOfEvil");
 
-val witch = LootTables.getTable("minecraft:entities/witch").getPool("main");
+val witch = LootTweaker.getTable("minecraft:entities/witch").getPool("main");
 witch.removeEntry("minecraft:glowstone_dust");
 witch.removeEntry("minecraft:redstone");
 witch.removeEntry("minecraft:spider_eye");
 witch.removeEntry("minecraft:gunpowder");
 witch.removeEntry("minecraft:stick");
+witch.removeEntry("minecraft:sugar");
 witch.addItemEntryHelper(<minecraft:experience_bottle>, 2, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(1, 2)], [Conditions.killedByPlayer()], "minecraft:experience_bottle");
 witch.addItemEntryHelper(<inspirations:materials:2>, 4, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(1, 2)], [Conditions.killedByPlayer()], "inspirations:materials:2");
+witch.addItemEntryHelper(<randomthings:glowingmushroom>, 6, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(0, 1)], [Conditions.killedByPlayer()], "randomthings:glowingmushroom");
 witch.addItemEntryHelper(<inspirations:materials:3>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(1, 2)], [Conditions.killedByPlayer()], "inspirations:materials:3");
 witch.addItemEntryHelper(<minecraft:quartz>, 2, 0, [Functions.lootingEnchantBonus(0, 1, 0), Functions.setCount(0, 4)], [Conditions.killedByPlayer()], "minecraft:quartz");
 
-val enderman = LootTables.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
+val enderman = LootTweaker.getTable("minecraft:entities/enderman"); //Enderman (make enderpearls drop 100% of the time)
 enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
 enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
 
 //Make Astral Sorcery chests not generate Aquamarine/Constellation Papers
-val shrineChest = LootTables.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine");
+val shrineChest = LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine");
 val astralShrineChestPools =
 	[
 		"astralsorcery:itemconstellationpaper",
@@ -196,23 +197,23 @@ for pool in astralShrineChestPools
 	shrineChest.removeEntry(pool);
 }
 
-LootTables.getTable("minecraft:chests/desert_pyramid").getPool("main").removeEntry("astralsorcery:constellation_paper");
-LootTables.getTable("minecraft:chests/igloo_chest").getPool("main").removeEntry("astralsorcery:constellation_paper");
-LootTables.getTable("minecraft:chests/jungle_temple").getPool("main").removeEntry("astralsorcery:constellation_paper");
-LootTables.getTable("minecraft:chests/stronghold_library").getPool("main").removeEntry("astralsorcery:constellation_paper");
+LootTweaker.getTable("minecraft:chests/desert_pyramid").getPool("main").removeEntry("astralsorcery:constellation_paper");
+LootTweaker.getTable("minecraft:chests/igloo_chest").getPool("main").removeEntry("astralsorcery:constellation_paper");
+LootTweaker.getTable("minecraft:chests/jungle_temple").getPool("main").removeEntry("astralsorcery:constellation_paper");
+LootTweaker.getTable("minecraft:chests/stronghold_library").getPool("main").removeEntry("astralsorcery:constellation_paper");
 
 //Random Things Summoning Pendulum
-LootTables.getTable("minecraft:chests/simple_dungeon").removePool("summoningpendulum");
-LootTables.getTable("minecraft:chests/stronghold_corridor").removePool("summoningpendulum");
+LootTweaker.getTable("minecraft:chests/simple_dungeon").removePool("summoningpendulum");
+LootTweaker.getTable("minecraft:chests/stronghold_corridor").removePool("summoningpendulum");
 
 //bountifulbaubles loot pools
-LootTables.getTable("minecraft:chests/simple_dungeon").removePool("bountifulbaubles_dungeon");
-LootTables.getTable("minecraft:chests/simple_dungeon").removePool("bountifulbaubles_dungeon_potions");
+LootTweaker.getTable("minecraft:chests/simple_dungeon").removePool("bountifulbaubles_dungeon");
+LootTweaker.getTable("minecraft:chests/simple_dungeon").removePool("bountifulbaubles_dungeon_potions");
 
 //Spectre Coils
-LootTables.getTable("minecraft:chests/simple_dungeon").removePool("spectrecoil_number");
-LootTables.getTable("minecraft:chests/abandoned_mineshaft").removePool("spectrecoil_number");
-LootTables.getTable("minecraft:chests/end_city_treasure").removePool("spectrecoil_number");
+LootTweaker.getTable("minecraft:chests/simple_dungeon").removePool("spectrecoil_number");
+LootTweaker.getTable("minecraft:chests/abandoned_mineshaft").removePool("spectrecoil_number");
+LootTweaker.getTable("minecraft:chests/end_city_treasure").removePool("spectrecoil_number");
 
 //Make Many Dungeon Chests Generate with Botania Cosmetics
 val botaniaCosmetics as int[][string] = {
@@ -230,7 +231,7 @@ val botaniaCosmetics as int[][string] = {
 };
 
 for lootTable, metadataIntegerArray in botaniaCosmetics {
-	var lootPool = LootTables.getTable(lootTable).addPool("cosmetics", 1, 2, 0, 1);
+	var lootPool = LootTweaker.getTable(lootTable).addPool("cosmetics", 1, 2, 0, 1);
 	lootPool.addEmptyEntry(60, "emptyCosmetic");
 
 	for metadataInteger in metadataIntegerArray
@@ -241,7 +242,7 @@ for lootTable, metadataIntegerArray in botaniaCosmetics {
 }
 
 //Change Champion Mob Pool Drops
-var championPool = LootTables.getTable("champions:champion_loot");
+var championPool = LootTweaker.getTable("champions:champion_loot");
 championPool.getPool("tier#1").removeEntry("minecraft:book");
 championPool.getPool("tier#1").addItemEntryHelper(<contenttweaker:champion_token_1>, 1, 0, [], [Conditions.parse({
 "condition": "minecraft:entity_properties",
@@ -287,7 +288,7 @@ championPool.getPool("tier#4").addItemEntryHelper(<contenttweaker:champion_token
 }), Conditions.killedByPlayer()]);
 
 //Remove Bountiful Baubles Nether Loot Table
-LootTables.getTable("minecraft:chests/nether_bridge").removePool("bountifulbaubles_nether_bridge");
+LootTweaker.getTable("minecraft:chests/nether_bridge").removePool("bountifulbaubles_nether_bridge");
 
 //Add Treasures to Dungeon Loot
 val dungeonBaublesAndTreasures as crafttweaker.item.IItemStack[][string] = {
@@ -306,7 +307,7 @@ val dungeonBaublesAndTreasures as crafttweaker.item.IItemStack[][string] = {
 };
 
 for lootTable, dungeonTreasures in dungeonBaublesAndTreasures {
-	var lootPool = LootTables.getTable(lootTable).addPool("treasure_accessories", 1, 1, 0, 1);
+	var lootPool = LootTweaker.getTable(lootTable).addPool("treasure_accessories", 1, 1, 0, 1);
 	lootPool.addEmptyEntry(60, "emptyTreasure");
 
 	for dungeonTreasure in dungeonTreasures
@@ -314,8 +315,5 @@ for lootTable, dungeonTreasures in dungeonBaublesAndTreasures {
 		lootPool.addItemEntry(dungeonTreasure, 1, 0, dungeonTreasure.name);
 	}
 }
-
-//Nerf Witch Farming
-
 
 print("### Loottweaker Init Complete ###");

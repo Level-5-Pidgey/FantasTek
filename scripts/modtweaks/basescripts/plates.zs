@@ -127,6 +127,7 @@ val TConplates =
 	<libvulpes:productplate:7>,
 	<thaumcraft:plate>,
 	<jaopca:item_platetungsten>,
+	<jaopca:item_plateancientdebris>,
 	<contenttweaker:material_part:920>,
 	<contenttweaker:material_part:930>,
 	<contenttweaker:material_part:935>,
@@ -221,7 +222,8 @@ val CompactorPlates =
 	<enderio:item_alloy_ingot:9>,
 	<avaritia:resource:6>,
 	<enderio:item_alloy_endergy_ingot>,
-	<avaritia:resource:4>
+	<avaritia:resource:4>,
+	<futuremc:netherite_scrap>
 ] as crafttweaker.item.IItemStack[];
 
 for CompactorPlate in CompactorPlates
@@ -251,6 +253,7 @@ val RocketryPlates =
 	<contenttweaker:material_part:35>,
 	<jaopca:item_plateastralstarmetal>,
 	<jaopca:item_platecobalt>,
+	<jaopca:item_plateancientdebris>,
 	<advancedrocketry:productplate:1>,
 	<thermalfoundation:material:356>,
 	<contenttweaker:material_part:603>,
@@ -311,7 +314,8 @@ val SimpleRocketryPlates =
 	<jaopca:item_plateastralstarmetal>,
 	<jaopca:item_plateardite>,
 	<jaopca:item_platetungsten>,
-	<contenttweaker:material_part:593>
+	<contenttweaker:material_part:593>,
+	<jaopca:item_plateancientdebris>
 ] as crafttweaker.item.IItemStack[];
 
 for SimpleRocketryPlate in SimpleRocketryPlates
@@ -487,6 +491,7 @@ val PlateMaterials =
 	"Tanzanite" : <liquid:water>,
 	"Topaz" : <liquid:water>,
 	"ElectricalSteel" : <liquid:electrical_steel>,
+	"AncientDebris" : <liquid:ancient_debris>,
 	"EndSteel" : <liquid:end_steel>,
 	"Neutronium" : <liquid:water>,
 	"EnergeticAlloy" : <liquid:energetic_alloy>,

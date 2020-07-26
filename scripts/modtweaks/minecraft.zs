@@ -17,9 +17,16 @@ recipes.addShaped(scripts.helpers.createRecipeName(<minecraft:brick_block>), <mi
 recipes.removeByRecipeName("minecraft:tnt");
 recipes.addShaped(scripts.helpers.createRecipeName(<minecraft:tnt>), <minecraft:tnt> * 4, [[<ore:gunpowder>, <ore:sand>, <ore:gunpowder>], [<ore:sand>, <ore:gunpowder>, <ore:sand>], [<ore:gunpowder>, <ore:sand>, <ore:gunpowder>]]);
 
+//Charcoal Creation Removal
 furnace.remove(<minecraft:coal:1>);
 furnace.addRecipe(<thermalfoundation:material:801>, <minecraft:coal:1>);
 
+//Tooltips
 scripts.helpers.AddTooltip(<minecraft:coal:1>, ["Cannot be made in a standard furnace.", "Cover up wood piles with soft blocks and burn them instead!", "See the Foresters Manual for more details. (Or web search!)"]);
+scripts.helpers.AddTooltip(<minecraft:redstone_ore>, ["Generates 25% more often compared to vanilla ore spawning."]);
+scripts.helpers.AddTooltip(<minecraft:iron_ore>, ["Generates 30% more often compared to vanilla ore spawning."]);
+
+//Painting Acacia Wood
+recipes.addShaped(scripts.helpers.createRecipeName(<mowziesmobs:painted_acacia>), <mowziesmobs:painted_acacia> * 8, [[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>], [<minecraft:planks:4>, <ore:dye>, <minecraft:planks:4>], [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>]]);
 
 print("### Minecraft Init Complete ###");

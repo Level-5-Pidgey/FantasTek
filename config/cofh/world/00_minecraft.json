@@ -48,7 +48,7 @@
 				],
 				"cluster-size": 9
 			},
-			"cluster-count": 20,
+			"cluster-count": 26,
 			"min-height": 0,
 			"max-height": 64,
 			"retrogen": false,
@@ -112,7 +112,7 @@
 				],
 				"cluster-size": 8
 			},
-			"cluster-count": 8,
+			"cluster-count": 10,
 			"min-height": 0,
 			"max-height": 16,
 			"retrogen": false,
@@ -267,63 +267,6 @@
 					{
 						"type": "dictionary",
 						"entry": "MOUNTAIN"
-					}
-				]
-			},
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
-		},
-
-		"redstone_densevein": {
-			"distribution": "uniform",
-			"generator": {
-				"type": "cluster",
-				"block": [
-						{
-							"name": "contenttweaker:sub_block_holder_1",
-							"metadata": 9,
-							"weight": 20
-						},
-						{
-							"name": "thermalfoundation:ore_fluid",
-							"metadata": 2,
-							"weight": 33
-						},
-						{
-							"name": "contenttweaker:sub_block_holder_1",
-							"metadata": 15,
-							"weight": 66
-						}
-				],
-				"material": [
-				  "minecraft:stone",
-				  "quark:elder_prismarine",
-				  "minecraft:packed_ice",
-				  "quark:biome_cobblestone",
-				  "quark:limestone",
-				  "quark:slate",
-				  "quark:jasper",
-				  "minecraft:sandstone",
-				  "minecraft:cobblestone"
-				],
-				"cluster-size": 45,
-			},
-			"cluster-count": 1,
-			"chunk-chance": 6,
-			"min-height": 20,
-			"max-height": 60,
-			"retrogen": "false",
-			"biome": {
-				"restriction": "whitelist",
-				"value": [
-					{
-						"type": "dictionary",
-						"entry": "SWAMP"
 					}
 				]
 			},

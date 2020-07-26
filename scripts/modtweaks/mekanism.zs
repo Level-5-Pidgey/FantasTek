@@ -50,4 +50,21 @@ mods.appliedenergistics2.Grinder.addRecipe(<mekanism:salt> * 2, <mekanism:saltbl
 //Remove Mekanism Paper Recipe
 recipes.removeByRecipeName("mekanism:paper");
 
+//Basic Energy Cube
+recipes.remove(<mekanism:energycube>.withTag({tier: 0}));
+for circuit in scripts.helpers.CircuitTiers[1].items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 0}), [[<ore:plateCrudeSteel>, <magneticraft:battery_item_medium>, <ore:plateCrudeSteel>], [<ore:ingotRedstoneAlloy>, circuit, <ore:ingotRedstoneAlloy>], [<ore:plateCrudeSteel>, <magneticraft:battery_item_medium>, <ore:plateCrudeSteel>]]);
+	mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 0}), [[<ore:plateSteel>, <magneticraft:battery_item_medium>, <ore:plateSteel>], [<ore:ingotRedstoneAlloy>, circuit, <ore:ingotRedstoneAlloy>], [<ore:plateSteel>, <magneticraft:battery_item_medium>, <ore:plateSteel>]]);
+}
+
+//Create Basic Bins
+recipes.remove(<mekanism:basicblock:6>.withTag({tier: 0}));
+scripts.helpers.AddTooltip(<mekanism:basicblock:6>.withTag({tier: 0}), ["Stores 3456 of one item within", "Can hold a double chest's worth of blocks in one space, basically!"]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:6>.withTag({tier: 0}), [[<ore:stone>, <advancedrocketry:ic>, <ore:stone>], [<ore:gearRedstoneAlloy>, <ore:shulkerShell>, <ore:gearRedstoneAlloy>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+
+//Create Basic Fluid Tanks
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.withTag({tier: 0}), [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:plateCrudeSteel>, null, <ore:plateCrudeSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.withTag({tier: 0}), [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:plateSteel>, null, <ore:plateSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]]);
+
 print("### Mekanism Init Complete ###");

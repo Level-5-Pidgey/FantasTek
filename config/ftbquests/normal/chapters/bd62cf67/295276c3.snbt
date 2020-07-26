@@ -5,7 +5,7 @@
 	description: "... I am fast as fuck boiiii!!!",
 	text: [
 		"Whilst not yet able to be assembled into a fully functioning oven, you should be able to construct the bricks for the oven ahead of time.",
-		"When you have access to more advanced metals, you should be able to use this to construct an oven to produce creosote."
+		"When you have access to more advanced metals, you should be able to use this to construct an oven to produce creosote and eventually steel."
 	],
 	dependencies: [
 		"8744be30",

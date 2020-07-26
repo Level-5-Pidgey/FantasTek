@@ -1,7 +1,7 @@
 {
 	title: "I see nothing but skill",
 	icon: "minecraft:ender_eye",
-	x: 13.5d,
+	x: 20.0d,
 	y: 2.0d,
 	shape: "diamond",
 	dependencies: [

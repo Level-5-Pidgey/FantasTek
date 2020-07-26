@@ -47,7 +47,8 @@ val JAOPCAPlates =
 	<jaopca:item_platedensesapphire>,
 	<jaopca:item_platedensetanzanite>,
 	<jaopca:item_platedensetopaz>,
-	<jaopca:item_platedensechromium>
+	<jaopca:item_platedensechromium>,
+	<jaopca:item_platedenseancientdebris>,
 ] as crafttweaker.item.IItemStack[];
 
 for JAOPCAPlate in JAOPCAPlates
@@ -60,7 +61,9 @@ if(!<ore:nuggetCoal>.empty)
 {
 	for coal in <ore:nuggetCoal>.items
 	{
+		furnace.setFuel(coal, 200);
 		scripts.helpers.AddTooltip(coal, ["Can be used in a furnace to smelt 1 single item!"]);
 	}
 }
+
 print("### JAOPCA Init Complete ###");

@@ -2,7 +2,7 @@
 	title: "Molten Materials",
 	icon: "tconstruct:smeltery_controller",
 	x: 10.5d,
-	y: -4.0d,
+	y: 2.0d,
 	description: "Whoever smelt it, dealt it",
 	text: [
 		"Up until now, you've relied on our industry approved furnaces to melt your ores into ingots and make use of them.",
@@ -13,6 +13,7 @@
 		"Best of luck pioneer!"
 	],
 	dependencies: [
+		"ab31349c",
 		"de85cb97"
 	],
 	tasks: [{

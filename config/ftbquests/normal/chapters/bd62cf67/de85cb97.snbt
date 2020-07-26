@@ -1,7 +1,7 @@
 {
 	title: "I am grout!",
 	x: 8.5d,
-	y: -4.0d,
+	y: 0.0d,
 	description: "Guardians of the Smeltery",
 	text: [
 		"Furnaces are okay, but you're going to need better smelting options down the line sometime soon.",

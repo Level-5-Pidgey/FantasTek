@@ -185,7 +185,8 @@ static OresWithProcessingTier as int[string] =
 	"Malachite" : 0,
 	"Quartz" : 0,
 	"Tanzanite" : 0,
-	"Topaz" : 0
+	"Topaz" : 0,
+	"AncientDebris" : 0,
 };
 
 //Ore Types with Liquids Attached
@@ -333,9 +334,10 @@ static CircuitTiers as crafttweaker.item.IIngredient[int] =
 	1 : <forestry:chipsets>.withTag({T: 0 as short}) | <forestry:chipsets:1>.withTag({T: 1 as short}) | <forestry:chipsets:2>.withTag({T: 2 as short}) | <forestry:chipsets:3>.withTag({T: 3 as short})
 };
 
-static FrameTiers as crafttweaker.item.IIngredient[int]=
+static FrameTiers as crafttweaker.item.IItemStack[int]=
 {
-	1 : <forestry:sturdy_machine> | <rftools:machine_frame>,
+	0 : <enderio:item_material>,
+	1 : <forestry:sturdy_machine>,
 };
 
 static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =

@@ -1,14 +1,21 @@
 {
-	x: 6.5d,
-	y: -12.0d,
+	x: 18.5d,
+	y: -2.0d,
 	dependencies: [
-		"0e4f6d19"
+		"97adb012"
 	],
 	tasks: [{
-		uid: "7736c512",
+		uid: "935b3800",
 		type: "item",
 		items: [{
-			item: "magneticraft:battery"
-		}]
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:energycube",
+			tag: {
+				tier: 0
+			}
+		}],
+		ignore_nbt: 1b
 	}]
 }

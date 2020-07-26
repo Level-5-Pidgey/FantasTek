@@ -1,4 +1,4 @@
-#priority 50
+#priority -1
 import scripts.staging.stages;
 import crafttweaker.liquid.ILiquidStack;
 
