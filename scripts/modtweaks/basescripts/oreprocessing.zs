@@ -473,7 +473,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				}
 				else
 				{
-					print("Skipped Mekanism Chemical Injection Chamber outputs for " ~ ore.name ~ " as no possible outputs were found.");
+					print("Skipped Mekanism Chemical Injection Chamber outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
 				}
 			}
 		}
@@ -497,15 +497,18 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 			else
 			{
-				print("Skipped Mekanism Chemical Injection Chamber outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+				print("Skipped Advanced Rocketry Arc Furnace outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
 			}
 		}
 
 		//Mekanism Chemical Dissolution Chamber -- Tier 7 (5x)
 		if(tier <= 7)
 		{
-			//Use method in mmhelper.zs file.
-			scripts.mmhelper.ChemicalOreFactoryRecipe(craftingMaterial, tier);
+			if(!oreCrystal.empty)
+			{
+				//Use method in mmhelper.zs file.
+				scripts.mmhelper.ChemicalOreFactoryRecipe(craftingMaterial, tier);
+			}
 
 			//Add other mekanism oreprocessing for compat
 			if(!oreCrystal.empty & !oreShard.empty)

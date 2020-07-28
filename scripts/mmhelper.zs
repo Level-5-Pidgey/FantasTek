@@ -8,17 +8,17 @@ import crafttweaker.data.IData;
 //Ore Washing Factory
 function AddOreWashingRecipe(ore as string, oreTier as int)
 {
-	var oreString = "ore" ~ ore;
-	var OreBlock = oreDict.get(oreString);
-	if(!OreBlock.empty)
+	var oreBlock = oreDict.get("ore" ~ ore);
+	val oreFluidData = {Ore: "ore" ~ ore} as IData;
+
+	if(!oreBlock.empty)
 	{
 		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore, "ore_washing_factory", 80);
-		RecipeToAdd.addItemInput(OreBlock);
+		RecipeToAdd.addItemInput(oreBlock);
 		RecipeToAdd.addFluidInput(<liquid:meat> * 200);
 		RecipeToAdd.addEnergyPerTickInput(75 * (oreTier + 1));
 
 		//Create IData tag for ore type
-		val oreFluidData = {Ore: oreString} as IData;
 		RecipeToAdd.addFluidOutput(<liquid:if.ore_fluid_raw>.withTag(oreFluidData) * 150);
 		RecipeToAdd.build();
 	}
@@ -32,13 +32,13 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 {
 	var oreString = "ore" ~ ore;
-	var OreBlock = oreDict.get(oreString);
+	var oreBlock = oreDict.get(oreString);
 	var oreCrystal = oreDict.get("crystal" ~ ore);
 
-	if(!OreBlock.empty & !oreCrystal.empty)
+	if(!oreBlock.empty & !oreCrystal.empty)
 	{
 		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore, "chemical_ore_factory", 160);
-		RecipeToAdd.addItemInput(OreBlock);
+		RecipeToAdd.addItemInput(oreBlock);
 		RecipeToAdd.addGasInput("sulfuricacid", 100);
 		RecipeToAdd.addFluidInput(<liquid:water> * 200);
 		RecipeToAdd.addEnergyPerTickInput(120 * (oreTier + 1));

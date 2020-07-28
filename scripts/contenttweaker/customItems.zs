@@ -63,6 +63,10 @@ infused_stone_aer.setToolClass("pickaxe");
 infused_stone_aer.setToolLevel(1);
 infused_stone_aer.setBlockSoundType(<soundtype:stone>);
 infused_stone_aer.setDropHandler(function(drops, world, position, state, fortune) {
+		//Remove existing drop (the block itself) from the dropList
+		drops.clear();
+
+		//Add new crystal essence drops to the block
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}));
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) % 0.5);
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) % 0.25);
@@ -78,6 +82,10 @@ infused_stone_aqua.setToolClass("pickaxe");
 infused_stone_aqua.setToolLevel(1);
 infused_stone_aqua.setBlockSoundType(<soundtype:stone>);
 infused_stone_aqua.setDropHandler(function(drops, world, position, state, fortune) {
+		//Remove existing drop (the block itself) from the dropList
+		drops.clear();
+
+		//Add new crystal essence drops to the block
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}));
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) % 0.5);
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) % 0.25);
@@ -93,6 +101,10 @@ infused_stone_ignis.setToolClass("pickaxe");
 infused_stone_ignis.setToolLevel(1);
 infused_stone_ignis.setBlockSoundType(<soundtype:stone>);
 infused_stone_ignis.setDropHandler(function(drops, world, position, state, fortune) {
+		//Remove existing drop (the block itself) from the dropList
+		drops.clear();
+
+		//Add new crystal essence drops to the block
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}));
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) % 0.5);
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) % 0.25);
@@ -108,6 +120,10 @@ infused_stone_ordo.setToolClass("pickaxe");
 infused_stone_ordo.setToolLevel(1);
 infused_stone_ordo.setBlockSoundType(<soundtype:stone>);
 infused_stone_ordo.setDropHandler(function(drops, world, position, state, fortune) {
+		//Remove existing drop (the block itself) from the dropList
+		drops.clear();
+
+		//Add new crystal essence drops to the block
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}));
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) % 0.5);
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) % 0.25);
@@ -123,6 +139,10 @@ infused_stone_perditio.setToolClass("pickaxe");
 infused_stone_perditio.setToolLevel(1);
 infused_stone_perditio.setBlockSoundType(<soundtype:stone>);
 infused_stone_perditio.setDropHandler(function(drops, world, position, state, fortune) {
+		//Remove existing drop (the block itself) from the dropList
+		drops.clear();
+
+		//Add new crystal essence drops to the block
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}));
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) % 0.5);
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) % 0.25);
@@ -138,6 +158,10 @@ infused_stone_terra.setToolClass("pickaxe");
 infused_stone_terra.setToolLevel(1);
 infused_stone_terra.setBlockSoundType(<soundtype:stone>);
 infused_stone_terra.setDropHandler(function(drops, world, position, state, fortune) {
+		//Remove existing drop (the block itself) from the dropList
+		drops.clear();
+
+		//Add new crystal essence drops to the block
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}));
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) % 0.5);
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) % 0.25);
@@ -153,6 +177,10 @@ infused_stone_vitium.setToolClass("pickaxe");
 infused_stone_vitium.setToolLevel(1);
 infused_stone_vitium.setBlockSoundType(<soundtype:stone>);
 infused_stone_vitium.setDropHandler(function(drops, world, position, state, fortune) {
+		//Remove existing drop (the block itself) from the dropList
+		drops.clear();
+
+		//Add new crystal essence drops to the block
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}));
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 0.5);
 		drops.add(<item:thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 0.25);

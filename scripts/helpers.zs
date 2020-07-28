@@ -238,6 +238,7 @@ static OresWithMolten as ILiquidStack[string]=
 	"Malachite" : <liquid:water>,
 	"Quartz" : <liquid:water>,
 	"Tanzanite" : <liquid:water>,
+	"AncientDebris" : <liquid:ancient_debris>,
 	"Topaz" : <liquid:water>
 };
 

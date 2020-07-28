@@ -9,6 +9,7 @@
 	tasks: [{
 		uid: "9109693d",
 		type: "fluid",
-		fluid: "lifeessence"
+		fluid: "lifeessence",
+		amount: 100000
 	}]
 }
