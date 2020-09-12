@@ -1,0 +1,35 @@
+{
+	x: 7.0d,
+	y: -1.0d,
+	shape: "hexagon",
+	dependencies: [
+		"f3e8f95e"
+	],
+	tasks: [{
+		uid: "4427af25",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -7321793126330253362L,
+					AS_Amulet_HolderMost: -1691932688462756616L
+				}
+			},
+			id: "bloodmagic:pack_sacrifice"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "83ce95fd",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:pack_self_sacrifice"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

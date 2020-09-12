@@ -51,7 +51,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:biomass> : stages.Locked,
 	<liquid:blockfluidantimatter> : stages.Locked,
 	<liquid:blockfluiddirt> : stages.Locked,
-	<liquid:blood> : stages.Locked,
+	<liquid:blood> : stages.progression1,
 	<liquid:blueslime> : stages.Locked,
 	<liquid:brass> : stages.Locked,
 	<liquid:brine> : stages.Locked,

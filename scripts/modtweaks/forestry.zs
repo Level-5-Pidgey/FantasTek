@@ -86,8 +86,8 @@ val machineRecipes_EXTENDEDCRAFTING = {
 		<forestry:alveary.stabiliser> : [[<ore:blockGlassColorless> | <ore:blockGlassWhite>, null, <ore:blockGlassColorless> | <ore:blockGlassWhite>], [<ore:plateQuartz>, <forestry:alveary.plain>, <ore:plateQuartz>], [<ore:blockGlassColorless> | <ore:blockGlassWhite>, null, <ore:blockGlassColorless> | <ore:blockGlassWhite>]],
 		<forestry:alveary.sieve> : [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], [<ore:ingotGold>, <forestry:alveary.plain>, <ore:ingotGold>], [<forestry:crafting_material:3>, <forestry:crafting_material:3>, <forestry:crafting_material:3>]],
 		<forestry:rainmaker> : [[<ore:gearBronze>, <ore:blockGlassColorless>, <ore:gearBronze>], [<ore:gearBronze>, <forestry:hardened_machine>, <ore:gearBronze>], [<ore:gearBronze>, <ore:blockGlassColorless>, <ore:gearBronze>]],
-		<forestry:trade_station> : [[<ore:book>, <ore:book>, <ore:book>], [<ore:book>, <ore:chestWood>, <ore:book>], [<ore:plateLapis>, <ore:plateLapis>, <ore:plateLapis>]],
-		<forestry:mailbox> : [[<ore:paper>, <ore:paper>, <ore:paper>], [null, <ore:chestWood>, null], [<ore:plateLapis>, <ore:plateLapis>, <ore:plateLapis>]],
+		<forestry:trade_station> : [[<ore:book>, <ore:book>, <ore:book>], [<ore:book>, <ore:chestWood>, <ore:book>], [null, <ore:plateLapis>, null]],
+		<forestry:mailbox> : [[<ore:paper>, <ore:paper>, <ore:paper>], [null, <ore:chestWood>, null], [null, <ore:plateLapis>, null]],
 		<forestry:apiary> : [[<ore:plateSealedWood>, <ore:plateSealedWood>, <ore:plateSealedWood>], [<ore:plankWood>, <ore:beeComb> | <futuremc:honeycomb>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 

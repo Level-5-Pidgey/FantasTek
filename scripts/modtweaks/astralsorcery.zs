@@ -3,7 +3,7 @@ print("~~~ Begin Astral Sorcery Init ~~~");
 //Change Recipe for Astral Tome
 recipes.removeByRecipeName("astralsorcery:shaped/journal");
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/journal");
-recipes.addShapeless("astral_journal", <astralsorcery:itemjournal>, [<minecraft:book>,<ore:gemAquamarine>]);
+recipes.addShapeless("astral_journal", <astralsorcery:itemjournal>, [<ore:book>, <ore:blockMarble>, <ore:nuggetPrismarine> | <ore:crystalsPrismarine>]);
 
 //Change Recipe for the Astral Wand
 recipes.removeByRecipeName("astralsorcery:shaped/tool_basicwand");

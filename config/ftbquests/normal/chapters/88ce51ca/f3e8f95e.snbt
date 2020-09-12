@@ -1,10 +1,10 @@
 {
 	title: "A Bloody Mess",
-	x: 7.0d,
+	x: 6.0d,
 	y: 0.0d,
 	description: "FantasTek is not responsible for any possible death or injury.",
 	dependencies: [
-		"c1ccb8e2"
+		"e2cc9c5d"
 	],
 	tasks: [{
 		uid: "ac75197b",

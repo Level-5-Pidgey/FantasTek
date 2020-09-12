@@ -8,7 +8,6 @@
 		"Some uses of manasteel include the ability to make rings that bring mana with you, or strong armor that uses mana to repair itself."
 	],
 	dependencies: [
-		"c16843fc",
 		"51ade5b4"
 	],
 	tasks: [{

@@ -1,6 +1,6 @@
 {
 	title: "Blood Magic",
-	icon: "bloodmagic:component 1 8",
+	icon: "bloodmagic:altar",
 	description: [
 		"A Draining Exercise"
 	],

@@ -1,0 +1,20 @@
+{
+	x: 8.0d,
+	y: 2.0d,
+	shape: "hexagon",
+	dependencies: [
+		"e79cb40b"
+	],
+	tasks: [{
+		uid: "d9a0c4c5",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:sigil_blood_light"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
