@@ -20,6 +20,7 @@ val StageMods = [
   "appliedenergistics2",
   "extracells",
   "avaritia",
+  "ae2stuff",
   "advancedrocketry",
   "libvulpes",
   "redstonearsenal",
