@@ -1,6 +1,10 @@
 {
+	title: "Silicon Valley",
 	x: 16.5d,
 	y: -4.0d,
+	text: [
+		"Not macrochips, not potato chips, but microchips. These will be your gateway to more advanced machinery, like bins and circuits. Be careful not to lose any as each chip is worth more than our entire research department."
+	],
 	dependencies: [
 		"d53303c2"
 	],

@@ -1,7 +1,7 @@
 {
 	title: "Hotel...",
-	x: 10.5d,
-	y: 12.0d,
+	x: 16.5d,
+	y: 4.0d,
 	shape: "hexagon",
 	description: "... Trivago!",
 	text: [

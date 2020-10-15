@@ -1,7 +1,12 @@
 {
+	title: "Two-in-One",
 	x: 16.5d,
 	y: -6.0d,
 	shape: "hexagon",
+	text: [
+		"Using your microchips, you can make a trash can! These bins are kind of an anomaly, as they can store the same amount of items as a double chest, but only consume a single block of space! There is a tradeoff though, as they",
+		"can only contain one type of item. Don't forget to divide your recycling, compost, and normal rubbish."
+	],
 	dependencies: [
 		"0e4f6d19"
 	],
