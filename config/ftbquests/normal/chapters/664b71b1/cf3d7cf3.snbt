@@ -5,7 +5,14 @@
 		"dcb70a7e"
 	],
 	tasks: [{
-		uid: "e50753b1",
+		uid: "a18def7b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}]
+	},
+	{
+		uid: "e680f2ad",
 		type: "item",
 		items: [{
 			item: "thaumcraft:arcane_workbench"
