@@ -1,6 +1,11 @@
 {
+	title: "Pro Circuit",
 	x: 18.5d,
 	y: -4.0d,
+	text: [
+		"Circuits are key to farming and complex machines. At this point in your adventure, the only knowledge you have about this technology applies to farms and basic energy storage.",
+		"Once you've accomplished more for the company and made additional contributions to our galactic expansion we will allow you to use some more complex techniques for better technologies."
+	],
 	dependencies: [
 		"0e4f6d19"
 	],

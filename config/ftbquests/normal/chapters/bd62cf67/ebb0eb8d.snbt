@@ -7,7 +7,7 @@
 		},
 		Damage: 17s
 	},
-	x: 8.5d,
+	x: 6.5d,
 	y: 4.0d,
 	shape: "hexagon",
 	description: "Outplayed.",

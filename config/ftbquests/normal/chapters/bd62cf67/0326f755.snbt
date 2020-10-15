@@ -1,7 +1,7 @@
 {
 	title: "Slimy Solutions",
-	x: 6.5d,
-	y: 8.0d,
+	x: 12.5d,
+	y: 6.0d,
 	description: "Sticky Fingers",
 	text: [
 		"Whilst you don't yet have the technology to make chemical adhesives yet, nothing can go wrong with traditional gelatinous slime balls. They can be added to pistons to push blocks around, or used to craft more advanced plate crafting recipes."

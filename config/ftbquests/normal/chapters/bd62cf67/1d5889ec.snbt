@@ -1,6 +1,11 @@
 {
+	title: "Powers of Three",
 	x: 18.5d,
 	y: -2.0d,
+	text: [
+		"Energy cubes are used to store excess energy. It's a waste of company time and money to let your energy just evaporate, so please make sure that you store it in this box!",
+		"If you start storing energy now you'll be able to use it later on when you need to upgrade your tech!"
+	],
 	dependencies: [
 		"97adb012"
 	],

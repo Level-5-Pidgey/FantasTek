@@ -1,8 +1,14 @@
 {
+	title: "Better Bins",
 	icon: "chisel:blockgold 1 1",
 	x: 16.5d,
 	y: -8.0d,
 	shape: "hexagon",
+	text: [
+		"Shipping containers are just like bins, but better! You can create a multi-block structure that holds a whole 15000 items! As with the bin, all items must",
+		"be identical in order for them to be stored in the shipping container. Got too much cobblestone? Shipping container! Got a massive farm?",
+		"Shipping container! Just make sure that if you're relocating a container that you take out the items first, as if you don't you may not get all of your items back!"
+	],
 	dependencies: [
 		"8e2d9757"
 	],

@@ -1,13 +1,18 @@
 {
+	title: "Compact Farming",
 	x: 20.5d,
 	y: -4.0d,
 	shape: "hexagon",
+	text: [
+		"If you haven't already created your own renewable method of obtaining food, these farms can help you out! They'll also help you get potion ingredients!"
+	],
 	dependencies: [
 		"97adb012"
 	],
 	tasks: [{
 		uid: "a5f72458",
 		type: "item",
+		title: "Craft one managed farm",
 		items: [{
 			item: "forestry:farm_crops"
 		},
