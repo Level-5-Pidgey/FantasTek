@@ -2,7 +2,11 @@
 	title: "Flower Power",
 	x: 3.5d,
 	y: -3.5d,
-	description: "YOU HAVE NO MANA",
+	description: "Who's mana is this?",
+	text: [
+		"Our research department has discovered that all wildlife on this planet has magic flowing through it called mana. By tapping into this energy, you could",
+		"use mana to create never before seen materials that may help you understand more about this world."
+	],
 	dependencies: [
 		"3ce0916e"
 	],

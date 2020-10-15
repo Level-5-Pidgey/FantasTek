@@ -2,7 +2,11 @@
 	title: "Blood In The Water",
 	x: 5.0d,
 	y: 0.0d,
-	description: "Bubble bath time",
+	description: "Jelly Bath",
+	text: [
+		"The Blood Altar is the primary vessel for storing and using blood to infuse items with energy. The Blood Altar is an upgradeable multi-block structure that will contain more blood as you upgrade it.",
+		"As you progress with Blood Magic, you will be able to use the Blood Altar to create interesting new materials that will allow you to create even bigger and better ways of extracting blood from wildlife."
+	],
 	dependencies: [
 		"bdc76640"
 	],

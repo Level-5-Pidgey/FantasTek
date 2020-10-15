@@ -1,6 +1,10 @@
 {
-	x: 7.0d,
+	title: "Forging Wills",
+	x: 8.0d,
 	y: 0.0d,
+	text: [
+		"The Hellfire Forge allows you to fuse items with Demonic Wills, the souls of those that you have killed with the ."
+	],
 	dependencies: [
 		"f3e8f95e"
 	],

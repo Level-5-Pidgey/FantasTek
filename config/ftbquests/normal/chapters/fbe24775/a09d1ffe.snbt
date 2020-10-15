@@ -3,9 +3,9 @@
 	icon: "botania:petal 1 14",
 	x: 2.0d,
 	y: 0.0d,
-	description: "The items we all dye for",
+	description: "To dye for",
 	text: [
-		"A budding botanist's best friend is the Petal Apothecary -- a simple device that uses mana around you, petals and water to create mystical flowers.",
+		"A budding botanist's best friend is the Petal Apothecary - a simple device that uses mana around you, petals and water to create mystical flowers.",
 		"These flowers can transform items, blocks or entities, or even produce mana for you by consuming certain things.",
 		"The more time you spend mastering botany, the more flowers you can unlock!"
 	],
