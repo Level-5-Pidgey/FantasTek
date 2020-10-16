@@ -6,9 +6,13 @@
 		},
 		id: "bloodmagic:monster_soul"
 	},
-	x: 3.5d,
+	x: 3.0d,
 	y: 0.0d,
 	description: "Make sure to get their safe word!",
+	text: [
+		"Blood Magic is a dangerous magic. It involves taking the blood from a living being and extracting its life force to serve your own means.",
+		"At this early point, the only living being to take this energy from will be you. Please don't kill yourself doing this as you are uninsured, but we have no issues with mild to severe injury."
+	],
 	dependencies: [
 		"2488a23e"
 	],

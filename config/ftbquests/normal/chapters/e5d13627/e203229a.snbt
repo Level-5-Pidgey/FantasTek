@@ -4,7 +4,7 @@
 	y: 1.5d,
 	description: "Shining brighter than your future",
 	text: [
-		"With the Resonating Wand in hand during the night, pillars of light may be seen emanating from the ground. If you dig to bedrock level at this points, you will be able to find a powerful rock crystal ore.",
+		"With the Resonating Wand in hand during the night, pillars of light may be seen emanating from the ground. If you dig to bedrock level at these points, you will be able to find powerful Rock Crystal ore.",
 		"These ores can be harvested and used to empower your magical arsenal."
 	],
 	dependencies: [

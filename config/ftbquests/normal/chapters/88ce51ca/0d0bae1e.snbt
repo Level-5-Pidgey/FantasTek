@@ -1,6 +1,11 @@
 {
-	x: 7.0d,
+	title: "Forging Wills",
+	x: 8.0d,
 	y: 0.0d,
+	text: [
+		"The Hellfire Forge allows you to fuse items with Demonic Wills, the souls of those that you have killed whilst snared. Wills have a quality attached to them that determines whether you will be capable of performing item transmutations, so make sure that when crafting you have a Will of the required quality.",
+		"Be careful around these Wills, they are the souls of the damned so excessive exposure or ingestion may lead to premature loss of life."
+	],
 	dependencies: [
 		"f3e8f95e"
 	],

@@ -1,6 +1,11 @@
 {
+	title: "Arcane Anarchy",
 	x: 8.0d,
-	y: 1.0d,
+	y: 1.5d,
+	text: [
+		"Arcane Ashes are the foundation of alchemical processes that can be used to transform reagents into items such as Sigils, weapons, and armor. They can also be used to add enchantments to your existing gear.",
+		"We would advice that you don't breathe in these ashes, as it could form an alchemical circle within your lungs, and transform them into a different organ, stopping your ability to breathe."
+	],
 	dependencies: [
 		"0d0bae1e"
 	],

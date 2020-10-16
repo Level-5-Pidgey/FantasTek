@@ -12,7 +12,8 @@
 	text: [
 		"Our research department, despite their shoestring budget, managed to discover this amazing son of a gun -- the Pure Daisy!",
 		"",
-		"Simply placing it in the world and then surrounding it with certain types of blocks will transform them into a magically charged variant - perfect for use within botany."
+		"Simply placing it in the world and then surrounding it with certain types of blocks will transform them into a magically charged variant - perfect for use within botany.",
+		"Be careful not to stand within the transformation radius, as we are unsure if there are any harmful effects on humans."
 	],
 	dependencies: [
 		"a09d1ffe"
