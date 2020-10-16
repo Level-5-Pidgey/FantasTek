@@ -535,6 +535,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "CrudeSteel" : stages.progression1,
   "Steel" : stages.progression2,
   "Wood" : stages.progression1,
+  "Diamond" : stages.progression1,
   "RedstoneAlloy" : stages.progression1,
   "ConductiveIron" : stages.progression1,
   "PulsatingIron" : stages.progression1,

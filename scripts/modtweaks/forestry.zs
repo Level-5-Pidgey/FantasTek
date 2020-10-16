@@ -51,7 +51,7 @@ mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>.withTag({T: 1 as short})
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:plateCrudeSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateCrudeSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:plateSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:densePlatingGold>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:densePlatingGold>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null] [<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
 
 //Remove Tier 1 Ores being output from Metallic Grains
 val metallicGrainsDusts = [

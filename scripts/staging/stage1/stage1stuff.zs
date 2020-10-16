@@ -518,7 +518,6 @@ val StageLessItems = [
 	<enderio:block_solar_panel>,
 	<enderio:item_material:3>,
 	<enderio:item_material:38>,
-	<mekanism:basicblock:6>.withTag({tier: 0}),
 	<mekanism:machineblock2:11>.withTag({tier: 0}),
 	<thermalexpansion:device>,
 	<iceandfire:chain_link>

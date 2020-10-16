@@ -2,8 +2,10 @@
 	title: "Get Crative",
 	x: 14.5d,
 	y: -4.0d,
+	description: "Green is not a \"crative\" colour",
 	text: [
 		"The carpentry machine is capable of producing crates as well as making further machines. These crates can be sold to the native lifeforms for \"personal\" (corporate) profits.",
+		"",
 		"This machine will be key to expanding your knowledge of machinery, and increase your productivity by a massive 2.4%! Imagine how much you can contribute to us!"
 	],
 	dependencies: [
@@ -15,5 +17,11 @@
 		items: [{
 			item: "forestry:carpenter"
 		}]
+	}],
+	rewards: [{
+		uid: "00b9850e",
+		type: "item",
+		item: "forestry:crate",
+		count: 24
 	}]
 }

@@ -2,6 +2,7 @@
 	title: "Silicon Valley",
 	x: 16.5d,
 	y: -4.0d,
+	description: "Macro Micro Potato Potato",
 	text: [
 		"Not macrochips, not potato chips, but microchips. These will be your gateway to more advanced machinery, like bins and circuits. Be careful not to lose any as each chip is worth more than our entire research department."
 	],
@@ -14,5 +15,17 @@
 		items: [{
 			item: "advancedrocketry:ic"
 		}]
+	}],
+	rewards: [{
+		uid: "7c63a818",
+		type: "item",
+		item: "enderio:item_alloy_ingot 1 4",
+		count: 4
+	},
+	{
+		uid: "13be2dc3",
+		type: "item",
+		item: "projectred-core:resource_item 1 104",
+		count: 4
 	}]
 }

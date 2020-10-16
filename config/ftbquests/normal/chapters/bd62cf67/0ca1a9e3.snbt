@@ -1,10 +1,15 @@
 {
 	title: "Compact Farming",
+	icon: "forestry:farm_crops",
 	x: 20.5d,
 	y: -4.0d,
 	shape: "hexagon",
+	description: "Smol-dew Valley",
 	text: [
-		"If you haven't already created your own renewable method of obtaining food, these farms can help you out! They'll also help you get potion ingredients!"
+		"If you haven't already created your own renewable method of obtaining food, these farms can help you out! ",
+		"",
+		"They require power, fertilizer and a soil for the crop you've made the farm for and will automatically plant and harvest the crop of your choice, meaning",
+		"you'd be able to let it sit an amass resources without lifting a finger!"
 	],
 	dependencies: [
 		"97adb012"
@@ -28,5 +33,25 @@
 		{
 			item: "forestry:farm_ender"
 		}]
+	},
+	{
+		uid: "9ef3bfd9",
+		type: "item",
+		items: [{
+			item: "forestry:fertilizer_compound"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "b7edef54",
+		type: "item",
+		item: "minecraft:diamond",
+		count: 8
+	},
+	{
+		uid: "dd66e236",
+		type: "item",
+		item: "forestry:fertilizer_compound",
+		count: 32
 	}]
 }

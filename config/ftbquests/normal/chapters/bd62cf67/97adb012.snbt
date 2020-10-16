@@ -2,8 +2,11 @@
 	title: "Pro Circuit",
 	x: 18.5d,
 	y: -4.0d,
+	description: "Speed! I am SPEED",
 	text: [
-		"Circuits are key to farming and complex machines. At this point in your adventure, the only knowledge you have about this technology applies to farms and basic energy storage.",
+		"Circuits are key to farming and complex machines. ",
+		"At this point in your adventure, the only knowledge you have about this technology applies to farms and basic energy storage.",
+		"",
 		"Once you've accomplished more for the company and made additional contributions to our galactic expansion we will allow you to use some more complex techniques for better technologies."
 	],
 	dependencies: [
@@ -39,5 +42,11 @@
 			},
 			Damage: 3s
 		}]
+	}],
+	rewards: [{
+		uid: "6f61a7f5",
+		type: "item",
+		item: "jaopca:item_platelapis",
+		count: 4
 	}]
 }
