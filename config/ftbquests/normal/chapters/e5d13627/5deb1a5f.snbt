@@ -4,8 +4,7 @@
 	y: 0.0d,
 	description: "Doesn't cast spells, sadly.",
 	text: [
-		"If you want to use the power of the cosmos to make your resource harvesting quests trivial, you will first need an item to focus the power of the stars properly.",
-		""
+		"Astral Sorcery is a method of magic that harnesses the powers of the heavens. The magic that flows within the stars can be channelled with tall structures made of quartz, but that will come later. To start you must craft a wand that will allow you to reveal Rock Crystal ore, which will provide the basis for a multitude of Astral materials."
 	],
 	dependencies: [
 		"f58b450b"

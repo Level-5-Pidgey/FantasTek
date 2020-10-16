@@ -5,7 +5,7 @@
 	y: 0.0d,
 	description: "Liquid Starlight, shines bright...",
 	text: [
-		"With the power of rock crystals you have collected or the lesser strength of Aquamarine, you can melt the contents down within a special crucible to create Liquid Starlight."
+		"Using a Lightwell, you can use the power of the stars to melt Aquamarines and Rock Crystals to create Liquid Starlight. Liquid Starlight has a variety of uses, such as cleansing you of status effects and creating starlight-infused materials."
 	],
 	dependencies: [
 		"8c34f67c",
