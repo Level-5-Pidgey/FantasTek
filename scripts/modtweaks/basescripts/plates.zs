@@ -332,14 +332,14 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 
 	if(!oreDict.get(craftingPlate).empty)
 	{
-		//5 Cost -- Manual
+		//2.5 Cost -- Manual
 		//Check if an OreDict version exists
 		if (!oreDict.get(craftingMaterial).empty)
 		{
-			recipes.addShapeless("plateCrafting_" ~ materialOreDict, oreDict.get(craftingPlate).firstItem, [<embers:tinker_hammer>, oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial)]);
+			recipes.addShapeless("plateCrafting_" ~ materialOreDict, oreDict.get(craftingPlate).firstItem * 2, [<embers:tinker_hammer>, oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial), oreDict.get(craftingMaterial)]);
 		}
 
-		//4.5 Cost - Plate Presser
+		//2.25 Cost - Plate Presser
 		for plateMaterial in oreDict.get(craftingMaterial).items
 		{
 			val blockMat = "block" ~ materialOreDict;
@@ -347,74 +347,75 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 			{
 				for block in oreDict.get(blockMat).items
 				{
-					mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem * 2, block);
+					mods.advancedrocketry.PlatePresser.addRecipe(oreDict.get(craftingPlate).firstItem * 4, block);
 				}
 			}
 		}
 
-		//4 Cost -- Tinker's Casting
+		//2 Cost -- Tinker's Casting
 		if (molten.name != "water")
 		{
 			if (materialPrefix == "ingot" | materialPrefix == "dust")
 			{
 				if (materialPrefix == "Silicon" | materialPrefix == "Carbon" ) //Silicon and Carbon are made in 1000mb Increments
 				{
-					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 4000, false, 80);
+					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 2000, false, 80);
 				}
 				else if (materialPrefix == "Coal") //1 Coal = 100mb of Liquifacted Coal
 				{
-					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
+					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 200, false, 80);
 				}
 				else
 				{
-					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 576, false, 80);
+					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 288, false, 80);
 				}
 			}
 			else
 			{
-				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 400, false, 80);
+				mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 200, false, 80);
 			}
 		}
 
-		//3 Cost -- Embers Plate Press, Compactor
+		//1.5 Cost -- Embers Plate Press, Compactor
 		if (molten.name != "water")
 		{
 			if (materialPrefix == "ingot" | materialPrefix == "dust")
 			{
 				if (materialPrefix == "Silicon" | materialPrefix == "Carbon" )
 				{
-					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 3000, <embers:stamp_plate>, null);
+					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 1500, <embers:stamp_plate>, null);
 				}
 				else if (materialPrefix == "Coal")
 				{
-					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 300, <embers:stamp_plate>, null);
+					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 150, <embers:stamp_plate>, null);
 				}
 				else
 				{
-					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 432, <embers:stamp_plate>, null);
+					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 216, <embers:stamp_plate>, null);
 				}
 			}
 			else
 			{
-				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 300, <embers:stamp_plate>, null);
+				mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 150, <embers:stamp_plate>, null);
 			}
 		}
 
+
 		if (craftingMaterial != "ingotCoal") //For some reason ingotCoal gets passed into this function even though it doesn't exist
 		{
-			mods.thermalexpansion.Compactor.addStorageRecipe(oreDict.get(craftingPlate).firstItem, oreDict.get(craftingMaterial).firstItem * 3, 10000);
-		}
-
-		//2 Cost
-		for ingot in oreDict.get(craftingMaterial).items
-		{
-	    	//Implement 2-cost smashing
+			mods.thermalexpansion.Compactor.addStorageRecipe(oreDict.get(craftingPlate).firstItem * 2, oreDict.get(craftingMaterial).firstItem * 3, 10000);
 		}
 
 		//1 Cost
+		for ingot in oreDict.get(craftingMaterial).items
+		{
+			mods.advancedrocketry.RollingMachine.addRecipe(oreDict.get(craftingPlate).firstItem, 60, 5000 / 60, 100, [ingot]);
+		}
+
+		//0.5 Cost
 		for ingot1 in oreDict.get(craftingMaterial).items
 		{
-	    	mods.advancedrocketry.RollingMachine.addRecipe(oreDict.get(craftingPlate).firstItem, 60, 5000 / 60, 100, ingot1);
+	    	//Implement 1-cost smashing
 		}
 	}
 	else
