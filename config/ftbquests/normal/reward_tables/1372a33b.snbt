@@ -1,0 +1,29 @@
+{
+	title: "Grab some infused stone!",
+	icon: "contenttweaker:infused_stone_vitium",
+	loot_size: 1,
+	rewards: [{
+		item: "contenttweaker:infused_stone_terra",
+		count: 4
+	},
+	{
+		item: "contenttweaker:infused_stone_aqua",
+		count: 4
+	},
+	{
+		item: "contenttweaker:infused_stone_ordo",
+		count: 4
+	},
+	{
+		item: "contenttweaker:infused_stone_ignis",
+		count: 4
+	},
+	{
+		item: "contenttweaker:infused_stone_aer",
+		count: 4
+	},
+	{
+		item: "contenttweaker:infused_stone_perditio",
+		count: 4
+	}]
+}

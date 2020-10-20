@@ -1,6 +1,7 @@
 {
+	icon: "thaumcraft:arcane_workbench",
 	x: 3.5d,
-	y: 0.5d,
+	y: 1.5d,
 	dependencies: [
 		"dcb70a7e"
 	],

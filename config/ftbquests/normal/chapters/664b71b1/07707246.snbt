@@ -1,0 +1,31 @@
+{
+	x: 4.5d,
+	y: -0.5d,
+	dependencies: [
+		"2c590d51"
+	],
+	tasks: [{
+		uid: "53a0ee5f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:scribing_tools"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "97ab3707",
+		type: "item",
+		item: "minecraft:dye",
+		count: 12
+	},
+	{
+		uid: "0b613224",
+		type: "item",
+		item: "minecraft:paper",
+		count: 32
+	}]
+}
