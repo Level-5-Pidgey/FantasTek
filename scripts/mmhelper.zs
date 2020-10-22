@@ -9,8 +9,10 @@ import crafttweaker.data.IData;
 function AddOreWashingRecipe(ore as string, oreTier as int)
 {
 	var oreBlock = oreDict.get("ore" ~ ore);
+	var oreDouble = oreDict.get("denseOre" ~ ore);
 	val oreFluidData = {Ore: "ore" ~ ore} as IData;
 
+	//Standard Ore
 	if(!oreBlock.empty)
 	{
 		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore, "ore_washing_factory", 80);
@@ -26,15 +28,29 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 	{
 		print("Failed to add Multiblock Ore Washing Factory Recipe for " ~ ore ~ " as no ore block was found.");
 	}
+
+	//Dense Ore
+	if(!oreDouble.empty)
+	{
+		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore ~ "_double", "ore_washing_factory", 160);
+		RecipeToAdd.addItemInput(oreDouble);
+		RecipeToAdd.addFluidInput(<liquid:meat> * 400);
+		RecipeToAdd.addEnergyPerTickInput(150 * (oreTier + 1));
+
+		//Create IData tag for ore type
+		RecipeToAdd.addFluidOutput(<liquid:if.ore_fluid_raw>.withTag(oreFluidData) * 300);
+		RecipeToAdd.build();
+	}
 }
 
 //Chemical Ore Factory
 function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 {
-	var oreString = "ore" ~ ore;
-	var oreBlock = oreDict.get(oreString);
+	var oreBlock = oreDict.get("ore" ~ ore);
+	var oreDouble = oreDict.get("denseOre" ~ ore);
 	var oreCrystal = oreDict.get("crystal" ~ ore);
 
+	//Standard Ore
 	if(!oreBlock.empty & !oreCrystal.empty)
 	{
 		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore, "chemical_ore_factory", 160);
@@ -49,6 +65,19 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 	else
 	{
 		print("Failed to add Chemical Ore Factory Recipe for " ~ ore ~ " as no ore block or Mekanism Crystal was found.");
+	}
+
+	//Dense Ore
+	if(!oreDouble.empty & !oreCrystal.empty)
+	{
+		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore ~ "_double", "chemical_ore_factory", 320);
+		RecipeToAdd.addItemInput(oreDouble);
+		RecipeToAdd.addGasInput("sulfuricacid", 200);
+		RecipeToAdd.addFluidInput(<liquid:water> * 400);
+		RecipeToAdd.addEnergyPerTickInput(240 * (oreTier + 1));
+
+		RecipeToAdd.addItemOutput(oreCrystal.firstItem * 10);
+		RecipeToAdd.build();
 	}
 }
 

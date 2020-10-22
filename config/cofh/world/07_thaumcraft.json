@@ -15,10 +15,10 @@
 					"quark:jasper",
 					"minecraft:sandstone"
 				],
-				"cluster-size": 12
+				"cluster-size": 8
 			},
-			"cluster-count": 2,
-			"min-height": 0,
+			"cluster-count": 1,
+			"min-height": 33,
 			"max-height": 128,
 			"retrogen": false,
 			"biome": "all",
@@ -44,10 +44,10 @@
 					"quark:jasper",
 					"minecraft:sandstone"
 				],
-				"cluster-size": 12
+				"cluster-size": 8
 			},
-			"cluster-count": 2,
-			"min-height": 0,
+			"cluster-count": 1,
+			"min-height": 33,
 			"max-height": 128,
 			"retrogen": false,
 			"biome": "all",
@@ -73,10 +73,10 @@
 					"quark:jasper",
 					"minecraft:sandstone"
 				],
-				"cluster-size": 12
+				"cluster-size": 8
 			},
-			"cluster-count": 2,
-			"min-height": 0,
+			"cluster-count": 1,
+			"min-height": 33,
 			"max-height": 128,
 			"retrogen": false,
 			"biome": "all",
@@ -102,10 +102,10 @@
 					"quark:jasper",
 					"minecraft:sandstone"
 				],
-				"cluster-size": 12
+				"cluster-size": 8
 			},
-			"cluster-count": 2,
-			"min-height": 0,
+			"cluster-count": 1,
+			"min-height": 33,
 			"max-height": 128,
 			"retrogen": false,
 			"biome": "all",
@@ -131,10 +131,10 @@
 					"quark:jasper",
 					"minecraft:sandstone"
 				],
-				"cluster-size": 12
+				"cluster-size": 8
 			},
-			"cluster-count": 2,
-			"min-height": 0,
+			"cluster-count": 1,
+			"min-height": 33,
 			"max-height": 128,
 			"retrogen": false,
 			"biome": "all",
@@ -160,10 +160,10 @@
 					"quark:jasper",
 					"minecraft:sandstone"
 				],
-				"cluster-size": 12
+				"cluster-size": 8
 			},
-			"cluster-count": 2,
-			"min-height": 0,
+			"cluster-count": 1,
+			"min-height": 33,
 			"max-height": 128,
 			"retrogen": false,
 			"biome": "all",
