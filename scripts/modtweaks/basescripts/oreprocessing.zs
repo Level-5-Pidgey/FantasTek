@@ -225,11 +225,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					if(!oreDustSmall.empty)
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (4 * (2 - tier)) * 2, oreDense, (tier + 1) * 5 * 2, oreDustSmall.firstItem * (2 - tier) * 2, 0.5, oreDustSmall.firstItem  * (2 - tier) * 2, 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * ((4 * (2 - tier)) * 2), oreDense, (tier + 1) * (5 * 2), oreDustSmall.firstItem * ((2 - tier) * 2), 0.5, oreDustSmall.firstItem  * ((2 - tier) * 2), 0.5);
 					}
 					else
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * (2 - tier) * 2, oreDense, (tier + 1) * 5 * 2, oreDust.firstItem, 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * ((2 - tier) * 2), oreDense, (tier + 1) * (5 * 2), oreDust.firstItem, 0.5);
 					}
 				}
 			}
@@ -679,7 +679,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * 16, ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * 8, ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
 				}
 			}
 			else
