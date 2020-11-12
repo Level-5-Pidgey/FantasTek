@@ -1,4 +1,4 @@
-#priority 50
+#priority -1
 import scripts.staging.stages;
 import mods.zenstages.Stage;
 import crafttweaker.oredict.IOreDict;
@@ -6,14 +6,12 @@ import crafttweaker.oredict.IOreDictEntry;
 
 print("~~~ Begin Ore Block/Material Staging ~~~");
 
-
 function SetOreDictStage(oredict_entry as crafttweaker.oredict.IOreDictEntry, oreValue as int)
 {
 	for ore in oredict_entry.items
 	{
 		if(scripts.helpers.StageForProcessingTier[oreValue].stage != "stage_i")
 		{
-			mods.ItemStages.removeItemStage(ore);
 			scripts.helpers.setItemAndRecipesStage(ore, scripts.helpers.StageForProcessingTier[oreValue].stage);
 		}
 		else
@@ -561,8 +559,7 @@ for materialString in ExtraMaterialsToStage
 			{
 				for ore in oreEntry.items
 				{
-					mods.ItemStages.removeItemStage(ore);
-					mods.ItemStages.addItemStage(ExtraMaterialsToStage[materialString].stage, ore);
+					scripts.helpers.setItemAndRecipesStage(ore, ExtraMaterialsToStage[materialString].stage);
 				}
 			}
 			else
@@ -623,7 +620,7 @@ for oreBlockEntry in extraOreDicts
 	{
 		if(extraOreDicts[oreBlockEntry].stage != "stage_i")
 		{
-			mods.ItemStages.addItemStage(extraOreDicts[oreBlockEntry].stage, ore);
+			scripts.helpers.setItemAndRecipesStage(ore, extraOreDicts[oreBlockEntry].stage);
 		}
 		else
 		{
@@ -646,8 +643,7 @@ var InfusedStones as crafttweaker.item.IItemStack[] =
 
 for stone in InfusedStones
 {
-	mods.ItemStages.removeItemStage(stone);
-	mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, stone);
+	scripts.helpers.setItemAndRecipesStage(stone, stages.Thaumcraft1.stage);
 }
 
 print("### Ore Block/Material Staging Complete ###");

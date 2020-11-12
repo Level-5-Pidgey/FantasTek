@@ -320,6 +320,9 @@ static AnyPetalOrShroom as crafttweaker.item.IIngredient = <botania:petal:*> | <
 
 function setItemAndRecipesStage(itemToStage as crafttweaker.item.IItemStack, stageToSetTo as string)
 {
+	//Remove any current stages applied to the item
+	mods.ItemStages.removeItemStage(itemToStage);
+
 	//Add item to stage
 	mods.ItemStages.addItemStage(stageToSetTo, itemToStage);
 

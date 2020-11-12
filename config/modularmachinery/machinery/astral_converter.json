@@ -1,6 +1,7 @@
 {
   "registryname": "astral_converter",
   "localizedname": "Starlight Energy Harness",
+  "color" : "fffcf5",
     "parts": [
         {
             "x": -1,
