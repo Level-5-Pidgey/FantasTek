@@ -1,6 +1,7 @@
 {
   "registryname": "bloodmagic_converter",
   "localizedname": "Life Essence Transmutator",
+  "color" : "4d101b",
     "parts": [
         {
             "x": -1,
@@ -14,9 +15,7 @@
             "x": -1,
             "y": 0,
             "z": 1,
-            "elements": [
-                "small_energy_output"
-            ]
+            "elements": "small_energy_output"
         },
         {
             "x": 0,

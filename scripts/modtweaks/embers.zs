@@ -52,7 +52,7 @@ mods.recipestages.Recipes.addShaped("sealed_planks", scripts.helpers.stages.Lock
 mods.recipestages.Recipes.addShaped("reinforced_sealed_planks", scripts.helpers.stages.Locked.stage, <embers:wrapped_sealed_planks> * 4, [[<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>],[<embers:sealed_planks>, null, <embers:sealed_planks>], [<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>]]);
 
 //Change Codex Recipe
-recipes.remove();
+recipes.remove(<embers:codex>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<embers:codex>), <embers:codex>, [<ore:book>, <ore:clay>, <ore:clay>]);
 
 print("### Embers Init Complete ###");
