@@ -18,5 +18,11 @@
 			item: "minecraft:blaze_rod"
 		}],
 		count: 4L
+	}],
+	rewards: [{
+		uid: "3cfc65c0",
+		type: "item",
+		item: "minecraft:netherbrick",
+		count: 16
 	}]
 }

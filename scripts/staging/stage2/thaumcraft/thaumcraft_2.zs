@@ -5,7 +5,6 @@ print("~~~ Begin Stage 2 Thaumcraft Staging ~~~");
 
 var stageString = stages.Thaumcraft2.stage;
 
-
 //Mod Staging
 mods.ItemStages.stageModItems(stageString, "thaumcraft");
 mods.ItemStages.stageModItems(stageString, "thaumicperiphery");

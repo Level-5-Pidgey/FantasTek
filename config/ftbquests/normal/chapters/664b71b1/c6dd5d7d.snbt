@@ -1,0 +1,43 @@
+{
+	x: 6.5d,
+	y: 0.0d,
+	dependencies: [
+		"74a5a682"
+	],
+	tasks: [{
+		uid: "16fa5a95",
+		type: "item",
+		title: "Create your first Nitor!",
+		items: [{
+			item: "thaumcraft:nitor_yellow"
+		}]
+	}],
+	rewards: [{
+		uid: "026b27d5",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ignis"
+				}]
+			}
+		},
+		count: 4
+	},
+	{
+		uid: "89913491",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "bestia"
+				}]
+			}
+		},
+		count: 12
+	}]
+}

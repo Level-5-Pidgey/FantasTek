@@ -51,4 +51,8 @@ mods.tconstruct.Casting.addBasinRecipe(<embers:wrapped_sealed_planks>, <embers:s
 mods.recipestages.Recipes.addShaped("sealed_planks", scripts.helpers.stages.Locked.stage, <embers:sealed_planks> * 8, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],[<ore:plankWood>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 mods.recipestages.Recipes.addShaped("reinforced_sealed_planks", scripts.helpers.stages.Locked.stage, <embers:wrapped_sealed_planks> * 4, [[<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>],[<embers:sealed_planks>, null, <embers:sealed_planks>], [<ore:ingotSteel>, <embers:sealed_planks>, <ore:ingotSteel>]]);
 
+//Change Codex Recipe
+recipes.remove();
+recipes.addShapeless(scripts.helpers.createRecipeName(<embers:codex>), <embers:codex>, [<ore:book>, <ore:clay>, <ore:clay>]);
+
 print("### Embers Init Complete ###");

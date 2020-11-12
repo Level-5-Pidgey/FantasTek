@@ -1,6 +1,6 @@
 {
-	x: 4.5d,
-	y: -0.5d,
+	x: 5.5d,
+	y: 1.0d,
 	dependencies: [
 		"2c590d51"
 	],
@@ -21,11 +21,5 @@
 		type: "item",
 		item: "minecraft:dye",
 		count: 12
-	},
-	{
-		uid: "0b613224",
-		type: "item",
-		item: "minecraft:paper",
-		count: 32
 	}]
 }

@@ -1,0 +1,36 @@
+{
+	title: "Moo-vie magic",
+	x: 7.5d,
+	y: 1.0d,
+	shape: "hexagon",
+	description: "Get rid of that extra flesh!",
+	text: [
+		"Through the powers of the crucible, you should be able to turn near-useless rotten flesh into often sought-after leather, only for the small cost of some",
+		"essentia.",
+		"",
+		"Trade your spare flesh for leather and sell it for some profit!"
+	],
+	dependencies: [
+		"6a21a24b"
+	],
+	tasks: [{
+		uid: "1f4c8929",
+		type: "item",
+		title: "Create Leather from Rotten Flesh using Alchemy",
+		items: [{
+			item: "minecraft:leather"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "c20e38b4",
+		type: "item",
+		item: "thaumcraft:salis_mundus",
+		count: 8
+	},
+	{
+		uid: "d3ed63f1",
+		type: "choice",
+		table: 1
+	}]
+}

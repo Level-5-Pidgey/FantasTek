@@ -519,8 +519,10 @@ val StageLessItems = [
 	<enderio:item_material:3>,
 	<enderio:item_material:38>,
 	<mekanism:machineblock2:11>.withTag({tier: 0}),
-	<thermalexpansion:device>,
-	<iceandfire:chain_link>
+	<thermalexpansion:device:0>,
+	<iceandfire:chain_link>,
+	<forestry:peat>,
+	<forestry:crafting_material:2>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

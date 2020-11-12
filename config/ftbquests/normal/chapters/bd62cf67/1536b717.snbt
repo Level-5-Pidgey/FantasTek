@@ -19,5 +19,11 @@
 		items: [{
 			item: "minecraft:book"
 		}]
+	}],
+	rewards: [{
+		uid: "9075ae92",
+		type: "item",
+		item: "minecraft:reeds",
+		count: 5
 	}]
 }

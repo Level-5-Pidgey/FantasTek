@@ -1,6 +1,6 @@
 {
-	x: 3.5d,
-	y: -0.5d,
+	x: 4.5d,
+	y: 0.0d,
 	dependencies: [
 		"dcb70a7e"
 	],
@@ -14,5 +14,11 @@
 			id: "thaumcraft:thaumonomicon"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3d212f11",
+		type: "item",
+		item: "minecraft:bookshelf",
+		count: 8
 	}]
 }

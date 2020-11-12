@@ -29,6 +29,7 @@
 		uid: "bd67b4d2",
 		type: "gamestage",
 		title: "Unlock Stage 1 Astral Sorcery",
+		auto: "no_toast",
 		stage: "astral-i"
 	}]
 }

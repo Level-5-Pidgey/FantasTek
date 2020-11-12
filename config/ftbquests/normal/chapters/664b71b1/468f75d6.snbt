@@ -1,0 +1,30 @@
+{
+	x: 5.5d,
+	y: -1.0d,
+	dependencies: [
+		"cf3d7cf3"
+	],
+	tasks: [{
+		uid: "16f969a9",
+		type: "item",
+		title: "Create Empowered Salis Mundus",
+		items: [{
+			item: "contenttweaker:salis_mundus_air"
+		},
+		{
+			item: "contenttweaker:salis_mundus_water"
+		},
+		{
+			item: "contenttweaker:salis_mundus_earth"
+		},
+		{
+			item: "contenttweaker:salis_mundus_fire"
+		}]
+	}],
+	rewards: [{
+		uid: "fc16564b",
+		type: "item",
+		item: "thaumcraft:salis_mundus",
+		count: 4
+	}]
+}

@@ -109,6 +109,7 @@ val machineRecipes_CRAFTINGTABLE = {
 		<forestry:digger_bag> : [[<ore:wool>, <ore:dirt>, <ore:wool>], [<ore:cobblestone>, <ore:chestWood>, <ore:cobblestone>], [<ore:wool>, <ore:dirt>, <ore:wool>]],
 		<forestry:forester_bag> : [[<ore:wool>, <ore:treeSapling>, <ore:wool>], [<ore:plateWood>, <ore:chestWood>, <ore:plateWood>], [<ore:wool>, <ore:treeSapling>, <ore:wool>]],
 		<forestry:hunter_bag> : [[<ore:wool>, <ore:foodMeat>, <ore:wool>], [<ore:foodMeat>, <ore:chestWood>, <ore:foodMeat>], [<ore:wool>, <ore:foodMeat>, <ore:wool>]],
+		<forestry:naturalist_helmet> : [[null, <ore:chestWood>, null], [<ore:wool>, <ore:foodMeat>, <ore:wool>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in machineRecipes_CRAFTINGTABLE {
@@ -173,5 +174,9 @@ for circuit in scripts.helpers.CircuitTiers[1].items
 		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_crops>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [plate, circuit, plate]]);
 	}
 }
+
+//Change Clockwork Engine Recipe
+recipes.remove(<forestry:engine_clockwork>);
+mods.forestry.Carpenter.addRecipe(<forestry:engine_clockwork>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [null, <ore:blockGlass>, null], [<ore:gearRedstoneAlloy>, <minecraft:piston>, <minecraft:clock>]], 240, <liquid:water> * 1000);
 
 print("### Forestry Init Complete ###");

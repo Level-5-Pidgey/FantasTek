@@ -15,4 +15,7 @@ recipes.addShaped(scripts.helpers.createRecipeName(<futuremc:beehive>), <futurem
 //Create FutureMC bee combs from forestry ones.
 recipes.addShapeless(scripts.helpers.createRecipeName(<futuremc:honeycomb>) ~ "_futuremc", <futuremc:honeycomb>, [<ore:beeComb>]);
 
+//Notify about the bug with the blast furnace.
+scripts.helpers.AddTooltip(<futuremc:blast_furnace>, ["JEI Entries are bugged, be warned!", "Will only smelt Processing Tier 0 ores,", "and Dense Ore of any tier.", "Putting in higher tiered ore will just delete the ore and give no output!!"]);
+
 print("### FutureMC Init Complete ###");

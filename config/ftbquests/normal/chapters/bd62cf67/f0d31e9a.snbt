@@ -1,0 +1,63 @@
+{
+	title: "&6Meeting your Milestones",
+	icon: "ftbquests:screen",
+	x: 10.5d,
+	y: 6.0d,
+	shape: "gear",
+	description: "How to progress through the pioneer program!",
+	text: [
+		"Due to the secrecy of our trade operations, we cannot let any newbie to learn about our most advanced technologies immediately. Additionally, this",
+		"world presents us with many new resources we have not had access to for hundreds of years, so therefore we have created a &bStaging Program&f.",
+		"",
+		"This program will &nrestrict certain monsters, liquids, dimensions and items to stages&f, and prevent accessing this content until you have that",
+		"appropriate stage. There are two types of staging:",
+		"",
+		"- &4Optional Staging &e : These stages are not required to \"complete\" your pioneering program but will open up more options for you as a player. ",
+		"&eThey are unlocked by completing optional milestone quests, which are submission quests marked with an octagon in the R.E.E.D. I.T. device.&f",
+		"- &4Required Staging &e : These stages are required to progress in the quest tree each stage. &nTo open stage 2, you have to have complete all",
+		"required milestones in stage 1. They can be completed in any order, and are signified in the R.E.E.D. I.T. device by the quests in a gear-shape.",
+		"",
+		"&rTo submit items for these milestone quests, you can use the R.E.E.D. I.T. device, or a task screen. &nThis allows you to pipe in the required items",
+		"or fluids or power into the block after setting the correct quest and the progress will update as the correct items are submitted!"
+	],
+	dependencies: [
+		"4ec35ca6"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "a4a90c61",
+		type: "item",
+		title: "Submit 9x 1*1 task screens",
+		items: [{
+			item: "ftbquests:screen"
+		}],
+		count: 9L,
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ced9f792",
+		type: "item",
+		item: "ftbquests:screen"
+	},
+	{
+		uid: "50a3c1ef",
+		type: "item",
+		item: {
+			id: "ftbquests:progress_screen",
+			tag: {
+				BlockEntityTag: {
+					Height: 4b,
+					id: "ftbquests:progress_screen_core",
+					Width: 2b
+				},
+				display: {
+					Lore: [
+						"(+NBT)"
+					]
+				}
+			}
+		}
+	}]
+}

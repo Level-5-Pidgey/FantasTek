@@ -1,13 +1,14 @@
 {
 	icon: "thaumcraft:arcane_workbench",
-	x: 3.5d,
-	y: 1.5d,
+	x: 4.5d,
+	y: -1.0d,
 	dependencies: [
 		"dcb70a7e"
 	],
 	tasks: [{
 		uid: "a18def7b",
 		type: "item",
+		title: "Create Salis Mundus",
 		items: [{
 			item: "thaumcraft:salis_mundus"
 		}]
@@ -15,8 +16,14 @@
 	{
 		uid: "e680f2ad",
 		type: "item",
+		title: "Create (and pick up) an Arcane Workbench",
 		items: [{
 			item: "thaumcraft:arcane_workbench"
 		}]
+	}],
+	rewards: [{
+		uid: "f76142e9",
+		type: "item",
+		item: "thaumcraft:salis_mundus"
 	}]
 }

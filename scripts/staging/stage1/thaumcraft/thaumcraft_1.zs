@@ -13,6 +13,117 @@ val Stage1ThaumcraftItems = [
 	<thaumcraft:scribing_tools>,
 	<thaumcraft:research_table>,
 	<thaumcraft:phial>,
+	<thaumcraft:thaumometer>,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vacuos"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "metallum"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mortuus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "auram"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alkimia"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "herba"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "instrumentum"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "machina"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vinculum"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aversio"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praemunio"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "desiderium"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "exanimis"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "bestia"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mythus"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "draco"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}),
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aer"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "terra"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "ignis"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aqua"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "ordo"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "perditio"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vacuos"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "lux"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "motus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "gelum"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitreus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "metallum"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "victus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "mortuus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "potentia"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "permutatio"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "praecantatio"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "auram"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alkimia"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "tenebrae"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alienis"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "volatus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "herba"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "instrumentum"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "fabrico"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "machina"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vinculum"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "cognitio"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "sensus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aversio"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "praemunio"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "desiderium"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "exanimis"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "bestia"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "humanus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "mythus"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "draco"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "fabrico"}]}),
+	<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "ignis"}]}),
+	<chisel:arcane_stone:*>,
+	<chisel:arcane_stone1:*>,
+	<thaumcraft:stone_arcane>,
+	<thaumcraft:stone_arcane_brick>,
+	<thaumcraft:stairs_arcane_brick>,
+	<thaumcraft:stairs_arcane>,
+	<thaumcraft:slab_arcane_stone>,
+	<thaumcraft:crucible>,
+	<thaumcraft:nitor_white>,
+	<thaumcraft:nitor_orange>,
+	<thaumcraft:nitor_magenta>,
+	<thaumcraft:nitor_lightblue>,
+	<thaumcraft:nitor_yellow>,
+	<thaumcraft:nitor_lime>,
+	<thaumcraft:nitor_pink>,
+	<thaumcraft:nitor_gray>,
+	<thaumcraft:nitor_silver>,
+	<thaumcraft:nitor_cyan>,
+	<thaumcraft:nitor_purple>,
+	<thaumcraft:nitor_blue>,
+	<thaumcraft:nitor_brown>,
+	<thaumcraft:nitor_green>,
+	<thaumcraft:nitor_red>,
+	<thaumcraft:nitor_black>,
+	<thaumcraft:alumentum>,
+	<thaumcraft:tallow>,
+	<thaumcraft:everfull_urn>,
+	<thaumcraft:activator_rail>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1ThaumcraftItems
@@ -115,91 +226,22 @@ for item in StageLessItems
   mods.ItemStages.removeItemStage(item);
 }
 
-//Stage Aspects to stage 1
-//Crystals
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vacuos"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "metallum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mortuus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "auram"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alkimia"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "herba"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "instrumentum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "machina"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vinculum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aversio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praemunio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "desiderium"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "exanimis"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "bestia"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mythus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "draco"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}));
-
-//Phials
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aer"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "terra"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "ignis"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aqua"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "ordo"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "perditio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vacuos"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "lux"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "motus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "gelum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitreus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "metallum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "victus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "mortuus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "potentia"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "permutatio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "praecantatio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "auram"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alkimia"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "tenebrae"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alienis"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "volatus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "herba"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "instrumentum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "fabrico"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "machina"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vinculum"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "cognitio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "sensus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "aversio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "praemunio"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "desiderium"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "exanimis"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "bestia"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "humanus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "mythus"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "draco"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "fabrico"}]}));
-mods.ItemStages.addItemStage(stages.Thaumcraft1.stage, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "ignis"}]}));
+//Stage the recipes of magic candles
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_white>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_orange>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_magenta>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_lightblue>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_yellow>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_lime>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_pink>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_gray>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_silver>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_cyan>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_purple>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_blue>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_brown>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_green>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_red>);
+mods.recipestages.Recipes.setRecipeStage(stages.Thaumcraft1.stage, <thaumcraft:candle_black>);
 
 print("### Stage 1 Thaumcraft Complete ###");

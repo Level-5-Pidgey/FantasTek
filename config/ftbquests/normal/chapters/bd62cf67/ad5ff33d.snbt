@@ -1,7 +1,7 @@
 {
 	title: "Molten Materials",
 	icon: "tconstruct:smeltery_controller",
-	x: 10.5d,
+	x: 14.5d,
 	y: 2.0d,
 	description: "Whoever smelt it, dealt it",
 	text: [

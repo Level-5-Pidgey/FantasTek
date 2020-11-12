@@ -1,0 +1,37 @@
+{
+	title: "Candlelit Dinner",
+	x: 8.5d,
+	y: 1.0d,
+	shape: "hexagon",
+	description: "Finest wining and dining in town!",
+	text: [
+		"With magic tallow, you should be able to create beautiful scenic candles that can be placed as a light source, or used later down the line to amplify",
+		"the magical power of your thaumaturgy.",
+		"",
+		"These candles can be used by anyone (including those not aligned with Thaumaturgy!) but cannot be crafted by those unfamiliar with Thaumcraft.",
+		"Maybe that could be a potential business deal?"
+	],
+	dependencies: [
+		"6a21a24b"
+	],
+	tasks: [{
+		uid: "f80fa74d",
+		type: "item",
+		title: "Create a bundle of candles to sell or use!",
+		items: [{
+			item: "thaumcraft:candle_white"
+		}],
+		count: 12L
+	}],
+	rewards: [{
+		uid: "d57e94c5",
+		type: "item",
+		item: "thaumcraft:candle_white",
+		count: 20
+	},
+	{
+		uid: "bc0994df",
+		type: "choice",
+		table: 1
+	}]
+}

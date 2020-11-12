@@ -30,6 +30,7 @@
 		uid: "7dca5939",
 		type: "gamestage",
 		title: "Unlock Stage 1 Botania",
+		auto: "no_toast",
 		stage: "botania-i"
 	}]
 }

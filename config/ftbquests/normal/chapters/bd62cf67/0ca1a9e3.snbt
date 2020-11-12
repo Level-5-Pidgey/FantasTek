@@ -1,7 +1,7 @@
 {
 	title: "Compact Farming",
 	icon: "forestry:farm_crops",
-	x: 20.5d,
+	x: 24.5d,
 	y: -4.0d,
 	shape: "hexagon",
 	description: "Smol-dew Valley",

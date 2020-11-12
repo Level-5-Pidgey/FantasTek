@@ -1,8 +1,8 @@
 {
 	title: "Crystal Crackhead",
 	icon: "contenttweaker:infused_stone_vitium",
-	x: 2.0d,
-	y: 0.5d,
+	x: 3.0d,
+	y: 0.0d,
 	description: "They're for medicinal purposes, officer!",
 	text: [
 		"Now that you have aligned with the path of the Thaumaturge, you should see plenty of elemental crystals residing within stone underground. These stones appear throughout the world at any height level, and can be broken to collect simple aspects in ",
@@ -79,5 +79,10 @@
 				}]
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "14a68cd6",
+		type: "choice",
+		table: 1
 	}]
 }

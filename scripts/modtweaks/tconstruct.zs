@@ -30,6 +30,7 @@ function CreateToolForgeAndStage(material as string, stageToSet as string)
 
 //Remove all casting-based sharpening kits
 recipes.removeByRecipeName("tconstruct:repair");
+scripts.helpers.AddTooltip(<tconstruct:sharpening_kit>, ["Cannot be used to repair tools on the fly.", "Still can be used to upgrade the mining level of a tool!"]);
 
 //Remove tool forge crafting recipes
 recipes.remove(<tconstruct:toolforge>);
@@ -88,6 +89,7 @@ val toolForges =
 
 for item in toolForges
 {
+	scripts.helpers.unstageAndHide(item);
 	recipes.remove(item);
 }
 

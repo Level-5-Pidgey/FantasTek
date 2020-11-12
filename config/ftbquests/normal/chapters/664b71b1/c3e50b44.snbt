@@ -1,0 +1,15 @@
+{
+	x: 8.5d,
+	y: -1.0d,
+	dependencies: [
+		"6a21a24b"
+	],
+	tasks: [{
+		uid: "9c9f3dd6",
+		type: "item",
+		title: "Create an Everfull Urn with a Flower Pot",
+		items: [{
+			item: "thaumcraft:everfull_urn"
+		}]
+	}]
+}

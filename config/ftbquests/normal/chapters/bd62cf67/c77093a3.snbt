@@ -58,5 +58,17 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3b21cb45",
+		type: "item",
+		item: "minecraft:log",
+		count: 12
+	},
+	{
+		uid: "20cc9c3e",
+		type: "item",
+		item: "minecraft:stone",
+		count: 32
 	}]
 }

@@ -1,4 +1,4 @@
-#priority -1
+#priority 50
 import scripts.staging.stages;
 import mods.zenstages.Stage;
 import crafttweaker.oredict.IOreDict;
@@ -540,7 +540,8 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "ConductiveIron" : stages.progression1,
   "PulsatingIron" : stages.progression1,
   "Aquamarine" : stages.AstralSorcery1,
-  "AstralStarmetal" : stages.AstralSorcery1,
+  "AstralStarmetal" : stages.AstralSorcery2,
+  "Thaumium" : stages.Thaumcraft1,
   "Alubrass" : stages.progression2,
   "Manyullyn" : stages.progression2,
   "Knightslime" : stages.progression2,
@@ -560,6 +561,7 @@ for materialString in ExtraMaterialsToStage
 			{
 				for ore in oreEntry.items
 				{
+					mods.ItemStages.removeItemStage(ore);
 					mods.ItemStages.addItemStage(ExtraMaterialsToStage[materialString].stage, ore);
 				}
 			}

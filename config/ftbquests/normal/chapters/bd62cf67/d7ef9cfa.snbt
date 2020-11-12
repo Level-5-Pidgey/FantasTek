@@ -17,7 +17,19 @@
 		uid: "60fe99db",
 		type: "stat",
 		title: "Complete a Village bounty",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bountiful:bounty"
+		},
 		stat: "stat.bountiesCompleted",
 		value: 1
+	}],
+	rewards: [{
+		uid: "184f3b87",
+		type: "item",
+		item: "minecraft:iron_ore",
+		count: 8
 	}]
 }

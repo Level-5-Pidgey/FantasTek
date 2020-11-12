@@ -6,6 +6,7 @@
 	description: "Bling bling",
 	text: [
 		"Diamonds are still controlled by a competing mega-corporation back on the homeworld, but they haven't expanded out this far yet so they should be easy to attain if you're inclined to do so.",
+		"",
 		"If you wish, you could grab some to give to family and friends on your return, if you make it that far."
 	],
 	dependencies: [
@@ -19,8 +20,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "949fac5d",
-		type: "xp",
-		xp: 15
+		uid: "e33da486",
+		type: "item",
+		item: "forestry:worktable",
+		count: 2
 	}]
 }

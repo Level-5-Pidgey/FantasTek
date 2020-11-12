@@ -1,0 +1,30 @@
+{
+	title: "Hedge Alchemy",
+	x: 7.5d,
+	y: 0.0d,
+	description: "Buy! Buy! Buy!",
+	text: [
+		"The key characteristic of a thaumaturge is your ability to turn what others percieve to be useless into something very useful.",
+		"",
+		"Alchemy allows you to, with the help of some essentia, turn an object from one form to another. Highly against the laws of physics in most cases,",
+		"but that's a minor detail our top researchers have ignored for decades."
+	],
+	dependencies: [
+		"c6dd5d7d"
+	],
+	tasks: [{
+		uid: "ef1d733c",
+		type: "item",
+		title: "Turn some Rotten Flesh into Magical Tallow",
+		items: [{
+			item: "thaumcraft:tallow"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "5e3b1edc",
+		type: "item",
+		item: "thaumcraft:tallow",
+		count: 2
+	}]
+}

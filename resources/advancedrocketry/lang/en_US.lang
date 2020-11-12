@@ -1,8 +1,8 @@
 item.circuitplate.0.name=Basic Circuit Plate
 item.circuitplate.1.name=Advanced Circuit Plate
-item.circuitIC.0.name=Basic Microchip
-item.circuitIC.1.name=Tracking Microchip
-item.circuitIC.2.name=Advanced Microchip
+item.circuitIC.0.name=Basic Logic Circuit
+item.circuitIC.1.name=Tracking Logic Circuit
+item.circuitIC.2.name=Advanced Logic Circuit
 item.circuitIC.3.name=Control Circuit Board
 item.circuitIC.4.name=Item IO Circuit Board
 item.circuitIC.5.name=Liquid IO Circuit Board

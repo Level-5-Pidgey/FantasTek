@@ -1,6 +1,6 @@
 {
-	x: 4.5d,
-	y: 0.5d,
+	x: 5.5d,
+	y: 0.0d,
 	dependencies: [
 		"2c590d51",
 		"cf3d7cf3"
@@ -8,6 +8,7 @@
 	tasks: [{
 		uid: "4c00caf0",
 		type: "item",
+		title: "Craft a Thaumometer in an Arcane Workbench",
 		items: [{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
@@ -16,5 +17,89 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "db1e8df1",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		},
+		count: 2
+	},
+	{
+		uid: "ee81f237",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "terra"
+				}]
+			}
+		},
+		count: 2
+	},
+	{
+		uid: "763f1600",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ignis"
+				}]
+			}
+		},
+		count: 2
+	},
+	{
+		uid: "1a9c37e9",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aqua"
+				}]
+			}
+		},
+		count: 2
+	},
+	{
+		uid: "58bd4ecf",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ordo"
+				}]
+			}
+		},
+		count: 2
+	},
+	{
+		uid: "36186db5",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "perditio"
+				}]
+			}
+		},
+		count: 2
 	}]
 }

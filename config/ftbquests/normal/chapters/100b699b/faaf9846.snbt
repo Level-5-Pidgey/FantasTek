@@ -14,6 +14,7 @@
 	tasks: [{
 		uid: "26bb7774",
 		type: "item",
+		title: "Create a Thaumonomicon",
 		items: [{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
@@ -26,6 +27,20 @@
 		uid: "67761fd4",
 		type: "gamestage",
 		title: "Unlock Stage 1 Thaumcraft",
+		auto: "no_toast",
 		stage: "thaumcraft-i"
+	},
+	{
+		uid: "49730895",
+		type: "command",
+		title: "Gain the \"First Steps\" research",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:thaumonomicon"
+		},
+		auto: "invisible",
+		command: "/tc research @p FIRSTSTEPS"
 	}]
 }

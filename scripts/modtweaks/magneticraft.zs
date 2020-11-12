@@ -139,8 +139,7 @@ val magneticraftRecipes_EXTENDEDCRAFTING = {
 	<magneticraft:solar_panel> : [[<ore:itemPlatePhotovoltaic>, null, <ore:itemPlatePhotovoltaic>], [<ore:gemQuartz>, <ore:paper>, <ore:gemQuartz>], [<ore:itemPlatePhotovoltaic>, null, <ore:itemPlatePhotovoltaic>]],
 	<magneticraft:shelving_unit> : [[<ore:barsIron>, null, <ore:barsIron>], [null, <ore:paper>, null], [<ore:barsIron>, null, <ore:barsIron>]],
 	<magneticraft:steam_engine> : [[null, <ore:plateConductiveIron>, null], [<ore:plateConductiveIron>, <ore:paper>, <ore:plateConductiveIron>], [null, <ore:plateConductiveIron>, null]],
-	<magneticraft:container> : [[<chisel:blockgold:1>, <chisel:blockgold:1>, <chisel:blockgold:1>], [<minecraft:chest>, <ore:paper>, <minecraft:chest>], [<ore:plateCrudeSteel>, <ore:plateCrudeSteel>, <ore:plateCrudeSteel>]],
-	<magneticraft:container> : [[<chisel:blockgold:1>, <chisel:blockgold:1>, <chisel:blockgold:1>], [<minecraft:chest>, <ore:paper>, <minecraft:chest>], [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]],
+	<magneticraft:container> : [[<chisel:blockgold:1>, null, <chisel:blockgold:1>], [<minecraft:chest>, <ore:paper>, <minecraft:chest>], [<ore:plateCrudeSteel>, null, <ore:plateCrudeSteel>]],
 	<magneticraft:combustion_chamber> : [[<ore:ingotBrick>, <ore:plateIron>, <ore:ingotBrick>], [<ore:ingotBrick>, null, <ore:ingotIron>], [<ore:ingotBrick>, <ore:ingotBrick>, <ore:ingotBrick>]],
 	<magneticraft:steam_boiler> : [[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>], [<ore:ingotIron>, null, <ore:ingotIron>], [<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>]],
 	<magneticraft:electric_drill>.withTag({energy: 0}) : [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:ingotElectrotineAlloy>], [<ore:gemDiamond>, motor, <ore:ingotIron>], [<ore:ingotElectrotineAlloy>, <ore:ingotIron>, batteryLow]],
@@ -160,6 +159,9 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(motor) ~ sc
 
 //Steel Grate Crafting after stage 1
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:multiblock_parts:2>) ~ scripts.helpers.stages.progression2.stage, <magneticraft:multiblock_parts:2> * 4, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, <ore:stone>, <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
+
+//Container crafting after stage 1
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:container>) ~ scripts.helpers.stages.progression2.stage, <magneticraft:container>, [[<chisel:blockgold:1>, null, <chisel:blockgold:1>], [<minecraft:chest>, <ore:paper>, <minecraft:chest>], [<ore:plateSteel>, null, <ore:plateSteel>]]);
 
 //Guide Book Crafting
 recipes.remove(<magneticraft:guide_book>);

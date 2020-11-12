@@ -12,7 +12,7 @@
 		"",
 		"To prove that you have working hands and an IQ of over 35, please click the checkbox within this window. If you can't meet both of those criteria, may God help you."
 	],
-	size: 2.0d,
+	size: 3.0d,
 	tasks: [{
 		uid: "c62a460e",
 		type: "checkmark"

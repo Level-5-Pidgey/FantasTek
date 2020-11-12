@@ -1,0 +1,66 @@
+{
+	title: "Nitrous Lighting",
+	x: 6.5d,
+	y: 1.0d,
+	shape: "hexagon",
+	dependencies: [
+		"c6dd5d7d"
+	],
+	tasks: [{
+		uid: "589f0490",
+		type: "item",
+		title: "Craft a few alternate-coloured Nitor",
+		items: [{
+			item: "thaumcraft:nitor_white"
+		},
+		{
+			item: "thaumcraft:nitor_orange"
+		},
+		{
+			item: "thaumcraft:nitor_magenta"
+		},
+		{
+			item: "thaumcraft:nitor_lightblue"
+		},
+		{
+			item: "thaumcraft:nitor_lime"
+		},
+		{
+			item: "thaumcraft:nitor_pink"
+		},
+		{
+			item: "thaumcraft:nitor_gray"
+		},
+		{
+			item: "thaumcraft:nitor_cyan"
+		},
+		{
+			item: "thaumcraft:nitor_silver"
+		},
+		{
+			item: "thaumcraft:nitor_purple"
+		},
+		{
+			item: "thaumcraft:nitor_blue"
+		},
+		{
+			item: "thaumcraft:nitor_brown"
+		},
+		{
+			item: "thaumcraft:nitor_green"
+		},
+		{
+			item: "thaumcraft:nitor_red"
+		},
+		{
+			item: "thaumcraft:nitor_black"
+		}],
+		count: 5L
+	}],
+	rewards: [{
+		uid: "34bc61c6",
+		type: "item",
+		item: "thaumcraft:alumentum",
+		count: 8
+	}]
+}

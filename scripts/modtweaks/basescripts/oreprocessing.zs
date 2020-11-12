@@ -5,6 +5,10 @@ import crafttweaker.oredict.IOreDict;
 
 print("~~~ Begin Ore Processing Init ~~~");
 
+//Remove the Resonating Redstone Crystal
+<ore:gemRedstone>.remove(<extrautils2:ingredients>);
+<ore:crystalRedstone>.add(<extrautils2:ingredients>);
+
 //Remove existing methods of ore processing
 function removeExistingCraftingRecipes(craftingMaterial as string)
 {
@@ -161,15 +165,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!nativeCluster.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", nativeCluster.firstItem, ore, [<aspect:metallum> * 5, <aspect:ordo> * 5]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", nativeCluster.firstItem, ore, [<aspect:ordo> * 3]);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreDust.firstItem * 2, ore, [<aspect:metallum> * 5, <aspect:ordo> * 5]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreDust.firstItem * 2, ore, [<aspect:ordo> * 3]);
 				}
 				else if (!oreGem.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreGem.firstItem * 2, ore, [<aspect:vitreus> * 5, <aspect:ordo> * 5]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreGem.firstItem * 2, ore, [<aspect:ordo> * 3]);
 				}
 				else
 				{

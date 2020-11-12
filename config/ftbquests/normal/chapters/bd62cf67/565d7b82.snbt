@@ -1,0 +1,21 @@
+{
+	title: "Worktabling",
+	icon: "forestry:worktable",
+	x: 4.5d,
+	y: 4.0d,
+	shape: "hexagon",
+	description: "Saving you the hassle!",
+	text: [
+		"Due to the automative nature of the work here at FantasTek, we highly advise you become acquainted with the Worktable. Craftable for very cheap,",
+		"you can use the worktable to save commonly crafted recipes and create them in-bulk when needed.",
+		"",
+		"Rather than craft just what you need, craft lots of components in bulk as you will undoubtedly use them later!!"
+	],
+	dependencies: [
+		"06fcd20a"
+	],
+	tasks: [{
+		uid: "e9f1c9b5",
+		type: "checkmark"
+	}]
+}

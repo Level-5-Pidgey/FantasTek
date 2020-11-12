@@ -2,7 +2,7 @@
 	title: "Modular Machinery",
 	icon: "modularmachinery:blockcontroller",
 	x: 10.5d,
-	y: -2.0d,
+	y: -4.0d,
 	description: "Big Bois",
 	text: [
 		"With Modularium now created, you can make your first modular machine!",

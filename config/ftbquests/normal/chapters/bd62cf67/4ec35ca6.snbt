@@ -1,9 +1,9 @@
 {
 	title: "Crank Dat",
 	icon: "jaopca:item_dustruby",
-	x: 12.5d,
-	y: 8.0d,
-	shape: "hexagon",
+	x: 10.5d,
+	y: 4.0d,
+	shape: "rsquare",
 	description: "(Soulja Boy tell 'em)",
 	text: [
 		"Since you've probably got an abundance of spare time on a planet by yourself, you could be spending our valuable company time increasing profits!",

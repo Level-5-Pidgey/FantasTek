@@ -1,5 +1,5 @@
 {
-	title: "Guide to Sticky Situations",
+	title: "&eGuide to Sticky Situations",
 	icon: {
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
@@ -7,12 +7,16 @@
 		id: "tconstruct:slimesling"
 	},
 	x: 14.5d,
-	y: 8.0d,
+	y: 4.0d,
 	shape: "octagon",
 	description: "Slime flies when you're having fun",
+	text: [
+		""
+	],
 	dependencies: [
 		"0326f755"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "aa2de2ed",
 		type: "item",

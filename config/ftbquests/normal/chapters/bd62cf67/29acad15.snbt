@@ -1,8 +1,8 @@
 {
 	title: "Tinkerer's Templates",
 	icon: "tconstruct:tooltables 1 3",
-	x: 10.5d,
-	y: 8.0d,
+	x: 8.5d,
+	y: 4.0d,
 	description: "Let your imagination run wild!",
 	text: [
 		"Standard tools crafted using our patented crafting station are enchantable and get the job done, but if you want to make some thing more specialised or versatile, you will need to assemble the tool yourself using desired tool parts.",

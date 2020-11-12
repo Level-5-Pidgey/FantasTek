@@ -1,0 +1,19 @@
+{
+	title: "&6Microchip Madness",
+	x: 20.5d,
+	y: -6.0d,
+	shape: "gear",
+	dependencies: [
+		"0e4f6d19"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "e7d665b1",
+		type: "item",
+		title: "Produce 200 Basic Logic Circuits",
+		items: [{
+			item: "advancedrocketry:ic"
+		}],
+		count: 200L
+	}]
+}

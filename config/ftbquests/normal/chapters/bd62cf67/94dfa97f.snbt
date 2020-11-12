@@ -1,7 +1,7 @@
 {
 	title: "Satisfactory",
 	icon: "magneticraft:conveyor_belt",
-	x: 16.5d,
+	x: 20.5d,
 	y: -2.0d,
 	shape: "hexagon",
 	description: "Moving along!",

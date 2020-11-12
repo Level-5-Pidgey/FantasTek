@@ -19,27 +19,6 @@
 		type: "item",
 		title: "Craft a backported item",
 		items: [{
-			item: "charm:barrel"
-		},
-		{
-			item: "charm:barrel 1 1"
-		},
-		{
-			item: "charm:barrel 1 2"
-		},
-		{
-			item: "charm:barrel 1 3"
-		},
-		{
-			item: "charm:barrel 1 4"
-		},
-		{
-			item: "charm:barrel 1 5"
-		},
-		{
-			item: "charm:iron_lantern"
-		},
-		{
 			item: "charm:gold_lantern"
 		},
 		{
