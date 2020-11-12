@@ -53,5 +53,10 @@
         "modularmachinery:blockenergyoutputhatch@0",
 		"modularmachinery:blockenergyoutputhatch@1",
 		"modularmachinery:blockenergyoutputhatch@2"
-    ]
+  ],
+  "small_ember_input": [
+    "modulardiversity:blockemberinputhatch@0",
+    "modulardiversity:blockemberinputhatch@1",
+    "modulardiversity:blockemberinputhatch@2"
+  ]
 }
