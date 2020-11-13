@@ -38,4 +38,15 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcr
 
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:table_basic>) ~ "-thaumcraft", scripts.staging.stages.Thaumcraft1.stage, <extendedcrafting:table_basic>, [[<ore:ingotBlackIron>, scripts.helpers.GetThaumcraftCraftingMaterials(1), <ore:ingotBlackIron>],[<extendedcrafting:material:14>, <ore:ingotUnstable>, <extendedcrafting:material:14>], [<ore:ingotBlackIron>, <ore:workbench>, <ore:ingotBlackIron>]]); //Thaumcraft
 
+//Automation Interface
+recipes.remove(<extendedcrafting:interface>);
+for item in scripts.helpers.CircuitTiers[0].items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:interface>, [
+		[<ore:ingotBlackIron>, item, <ore:ingotBlackIron>],
+		[<ore:gearDiamond>, <extendedcrafting:frame>, <ore:gearDiamond>],
+		[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]
+	]);
+}
+
 print("### ExtendedCrafting Init Complete ###");

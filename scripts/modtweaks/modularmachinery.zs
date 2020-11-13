@@ -144,12 +144,38 @@ var ItemOutput =
 	7 : <modularmachinery:blockoutputbus:6>
 } as IItemStack[int];
 
+var EmberInput =
+{
+	0 : <embers:plate_caminite>,
+	1 : <modulardiversity:blockemberoutputhatch>,
+	2 : <modulardiversity:blockemberoutputhatch:1>,
+	3 : <modulardiversity:blockemberoutputhatch:2>,
+	4 : <modulardiversity:blockemberoutputhatch:3>,
+	5 : <modulardiversity:blockemberoutputhatch:4>,
+	6 : <modulardiversity:blockemberoutputhatch:5>,
+	7 : <modulardiversity:blockemberoutputhatch:6>,
+	8 : <modulardiversity:blockemberoutputhatch:7>
+} as IItemStack[int];
+
+var EmberOutput =
+{
+	0 : <embers:plate_caminite>,
+	1 : <modulardiversity:blockemberinputhatch>,
+	2 : <modulardiversity:blockemberinputhatch:1>,
+	3 : <modulardiversity:blockemberinputhatch:2>,
+	4 : <modulardiversity:blockemberinputhatch:3>,
+	5 : <modulardiversity:blockemberinputhatch:4>,
+	6 : <modulardiversity:blockemberinputhatch:5>,
+	7 : <modulardiversity:blockemberinputhatch:6>,
+	8 : <modulardiversity:blockemberinputhatch:7>
+} as IItemStack[int];
+
 for i in 1 .. 9
 {
 	var j = i - 1;
 
 	//Energy Input Crafting
-	mods.extendedcrafting.TableCrafting.addShaped(0, EnergyInput[i], [
+	recipes.addShaped(scripts.helpers.createRecipeName(EnergyInput[i]), EnergyInput[i], [
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
 	[MachineParts2[i],
 	EnergyInput[j],
@@ -157,19 +183,19 @@ for i in 1 .. 9
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 
 	//Energy Output Crafting
-	mods.extendedcrafting.TableCrafting.addShaped(0, EnergyOutput[i], [
+	recipes.addShaped(scripts.helpers.createRecipeName(EnergyOutput[i]), EnergyOutput[i], [
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
 	[MachineParts2[i], EnergyOutput[j], MachineParts2[i]],
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 
 	//Fluid Input Crafting
-	mods.extendedcrafting.TableCrafting.addShaped(0, FluidInput[i], [
+	recipes.addShaped(scripts.helpers.createRecipeName(FluidInput[i]), FluidInput[i], [
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
 	[MachineParts2[i], FluidInput[j], MachineParts2[i]],
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 
 	//Fluid Output Crafting
-	mods.extendedcrafting.TableCrafting.addShaped(0, FluidOutput[i], [
+	recipes.addShaped(scripts.helpers.createRecipeName(FluidOutput[i]), FluidOutput[i], [
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
 	[MachineParts2[i], FluidOutput[j], MachineParts2[i]],
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
@@ -179,15 +205,27 @@ for i in 1 .. 8
 {
 	var j = i - 1;
 	//Item Input Crafting
-	mods.extendedcrafting.TableCrafting.addShaped(0, ItemInput[i], [
+	recipes.addShaped(scripts.helpers.createRecipeName(ItemInput[i]), ItemInput[i], [
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
 	[MachineParts2[i], ItemInput[j], MachineParts2[i]],
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 
 	//Item Output Crafting
-	mods.extendedcrafting.TableCrafting.addShaped(0, ItemOutput[i], [
+	recipes.addShaped(scripts.helpers.createRecipeName(ItemOutput[i]), ItemOutput[i], [
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
 	[MachineParts2[i], ItemOutput[j], MachineParts2[i]],
+	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
+
+	//Ember Input Crafting
+	recipes.addShaped(scripts.helpers.createRecipeName(EmberInput[i]), EmberInput[i], [
+	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
+	[MachineParts2[i], EmberInput[j], MachineParts2[i]],
+	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
+
+	//Ember Output Crafting
+	recipes.addShaped(scripts.helpers.createRecipeName(EmberOutput[i]), EmberOutput[i], [
+	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>],
+	[MachineParts2[i], EmberOutput[j], MachineParts2[i]],
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 }
 
@@ -195,7 +233,7 @@ for i in 1 .. 8
 //Machine Controller
 for item in scripts.helpers.AllT1MagicItems
 {
-	mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcontroller>, [
+	recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcontroller>), <modularmachinery:blockcontroller>, [
 		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
 		[<ore:blockGlassColorless>.firstItem, item, <ore:blockGlassColorless>.firstItem],
 		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
@@ -203,27 +241,27 @@ for item in scripts.helpers.AllT1MagicItems
 }
 
 //Machine Casings
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcasing> * 4, [
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing>), <modularmachinery:blockcasing> * 4, [
 	[null, <modularmachinery:itemmodularium>, null],
 	[<modularmachinery:itemmodularium>, <ore:dustRedstone>.firstItem, <modularmachinery:itemmodularium>],
 	[null, <modularmachinery:itemmodularium>, null]
 ]); //Basic
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcasing:1> * 4, [
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:1>), <modularmachinery:blockcasing:1> * 4, [
 	[<modularmachinery:blockcasing>, null, <modularmachinery:blockcasing>],
 	[null, <magneticraft:crafting:6>, null],
 	[<modularmachinery:blockcasing>, null, <modularmachinery:blockcasing>]
 ]); //Machine Vent
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcasing:2> * 4, [
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:2>), <modularmachinery:blockcasing:2> * 4, [
 	[<modularmachinery:blockcasing>, null, <modularmachinery:blockcasing>],
 	[null, <natura:nether_glass:1>, null],
 	[<modularmachinery:blockcasing>, null, <modularmachinery:blockcasing>]
 ]); //Firebox Casing
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcasing:3> * 4, [
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:3>), <modularmachinery:blockcasing:3> * 4, [
 	[<modularmachinery:blockcasing>, <ore:gearIron>.firstItem, <modularmachinery:blockcasing>],
 	[<ore:gearEmerald>.firstItem, null, <ore:gearGold>.firstItem],
 	[<modularmachinery:blockcasing>, <ore:gearDiamond>.firstItem, <modularmachinery:blockcasing>]
 ]); //Gearbox
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockcasing:4> * 4, [
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:4>), <modularmachinery:blockcasing:4> * 4, [
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>],
 	[<extendedcrafting:material:2>, null, <extendedcrafting:material:2>],
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>]

@@ -29,6 +29,12 @@
 	"general_energy_output": [
         "modularmachinery:blockenergyoutputhatch"
     ],
+	"general_ember_input": [
+    	"modulardiversity:blockemberinputhatch"
+  	],
+  	"general_ember_output": [
+    	"modulardiversity:blockemberoutputhatch"
+  	],
 	"small_item_output": [
         "modularmachinery:blockoutputbus@0",
 		"modularmachinery:blockoutputbus@1",
@@ -53,10 +59,15 @@
         "modularmachinery:blockenergyoutputhatch@0",
 		"modularmachinery:blockenergyoutputhatch@1",
 		"modularmachinery:blockenergyoutputhatch@2"
-  ],
-  "small_ember_input": [
-    "modulardiversity:blockemberinputhatch@0",
-    "modulardiversity:blockemberinputhatch@1",
-    "modulardiversity:blockemberinputhatch@2"
-  ]
+  	],
+  	"small_ember_input": [
+    	"modulardiversity:blockemberinputhatch@0",
+    	"modulardiversity:blockemberinputhatch@1",
+    	"modulardiversity:blockemberinputhatch@2"
+  	],
+  	"small_ember_output": [
+    	"modulardiversity:blockemberoutputhatch@0",
+    	"modulardiversity:blockemberoutputhatch@1",
+    	"modulardiversity:blockemberoutputhatch@2"
+  	],
 }

@@ -1,6 +1,7 @@
 {
     "registryname": "chemical_ore_factory",
     "localizedname": "Chemical Ore Plant",
+	"requires-blueprint": true,
     "color": "0d96a8",
     "parts": [
         {

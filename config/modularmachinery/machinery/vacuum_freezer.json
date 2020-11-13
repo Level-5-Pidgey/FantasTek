@@ -1,6 +1,7 @@
 {
-  "registryname": "vacuum_freezer",
+  	"registryname": "vacuum_freezer",
 	"localizedname": "Vacuum Freezer",
+	"requires-blueprint": true,
 	"color": "7f7fff",
     "parts": [
         {

@@ -17,6 +17,12 @@
 		items: [{
 			item: "advancedrocketry:blastbrick"
 		}],
-		count: 24L
+		count: 12L
+	}],
+	rewards: [{
+		uid: "165ebdf3",
+		type: "item",
+		item: "advancedrocketry:blastbrick",
+		count: 11
 	}]
 }

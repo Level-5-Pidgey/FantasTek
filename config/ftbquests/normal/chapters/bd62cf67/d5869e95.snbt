@@ -22,13 +22,7 @@
 		type: "item",
 		title: "Submit 500x Slimeball",
 		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "slimeball",
-					id: "ore"
-				}
-			},
-			id: "itemfilters:filter"
+			item: "minecraft:slime_ball"
 		}],
 		count: 500L,
 		consume_items: true

@@ -1,12 +1,21 @@
 {
+	title: "Call of the forge god",
 	x: 12.5d,
 	y: 0.0d,
+	description: "*Horn noises*",
+	text: [
+		"If you're interested in making more advanced tinker tools, you're going to need better hardware.",
+		"Tools made with a Tool Station are servicable and provide a good starting point, but if you want to truly take advantage of Tinker's Construct properly",
+		"you're going to have to create a Tool Forge. Creating one will be expensive (a forge must be durable to assemble a grand tool!) and require a large",
+		"amount of rare resources, but will carry you through the rest of the game."
+	],
 	dependencies: [
 		"ab31349c"
 	],
 	tasks: [{
 		uid: "2ce006f8",
 		type: "item",
+		title: "Create a Tool Forge",
 		items: [{
 			id: "tconstruct:toolforge",
 			tag: {
@@ -16,7 +25,119 @@
 					Damage: 0s
 				}
 			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 7s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 6s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "jaopca:block_blockancientdebris",
+					Count: 1,
+					Damage: 0s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 4s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "minecraft:diamond_block",
+					Count: 1,
+					Damage: 0s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 1s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 0s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 3s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 2s
+				}
+			}
+		},
+		{
+			id: "tconstruct:toolforge",
+			tag: {
+				textureBlock: {
+					id: "biomesoplenty:gem_block",
+					Count: 1,
+					Damage: 5s
+				}
+			}
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b465cba7",
+		type: "item",
+		item: "minecraft:quartz",
+		count: 32
+	},
+	{
+		uid: "ad6a24c5",
+		type: "item",
+		item: "minecraft:redstone",
+		count: 32
 	}]
 }

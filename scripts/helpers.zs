@@ -333,8 +333,61 @@ function setItemAndRecipesStage(itemToStage as crafttweaker.item.IItemStack, sta
 	}
 }
 
+function createTierTooltip(itemToToolTip as crafttweaker.item.IItemStack, prefixString as string, tier as int, plus1 as bool, suffixString as string)
+{
+	var tierNumberAsColouredText as string = "";
+	var modifiedTier as int = 0;
+
+	//If we want to "plus one" the numerical value, do so here
+	if(plus1)
+	{
+		modifiedTier += 1;
+	}
+
+	if(modifiedTier == 0)
+	{
+		tierNumberAsColouredText = format.bold(format.darkGray("0"));
+	}
+	else if(modifiedTier == 1)
+	{
+		tierNumberAsColouredText = format.bold(format.gray("1"));
+	}
+	else if(modifiedTier == 2)
+	{
+		tierNumberAsColouredText =  format.bold(format.yellow("2"));
+	}
+	else if(modifiedTier == 3)
+	{
+		tierNumberAsColouredText = format.bold(format.gold("3"));
+	}
+	else if(modifiedTier == 4)
+	{
+		tierNumberAsColouredText = format.bold(format.red("4"));
+	}
+	else if(modifiedTier == 5)
+	{
+		tierNumberAsColouredText = format.bold(format.darkRed("5"));
+	}
+	if(modifiedTier == 6)
+	{
+		tierNumberAsColouredText = format.bold(format.aqua("6"));
+	}
+	if(modifiedTier == 7)
+	{
+		tierNumberAsColouredText = format.bold(format.darkGreen("7"));
+	}
+	if(modifiedTier == 8)
+	{
+		tierNumberAsColouredText = format.bold(format.green("8"));
+	}
+
+	//Now we have the tier text, add the tooltip!
+	itemToToolTip.addTooltip(format.italic(format.white(prefixString)) ~ tierNumberAsColouredText ~ format.italic(format.white(suffixString)));
+}
+
 static CircuitTiers as crafttweaker.item.IIngredient[int] =
 {
+	0 : <advancedrocketry:ic>,
 	1 : <forestry:chipsets>.withTag({T: 0 as short}) | <forestry:chipsets:1>.withTag({T: 1 as short}) | <forestry:chipsets:2>.withTag({T: 2 as short}) | <forestry:chipsets:3>.withTag({T: 3 as short})
 };
 

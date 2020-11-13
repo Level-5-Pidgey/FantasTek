@@ -1,9 +1,10 @@
 {
   "registryname": "bloodmagic_converter",
   "localizedname": "Life Essence Transmutator",
-  "color" : "4d101b",
+  "requires-blueprint": true,
+  "color" : "870f35",
     "parts": [
-        {
+		{
             "x": -1,
             "y": 0,
             "z": 0,
@@ -22,7 +23,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "bloodmagic:life_essence@0"
+                "minecraft:obsidian@0"
             ]
         },
         {
@@ -35,22 +36,6 @@
         },
         {
             "x": -1,
-            "y": 0,
-            "z": 2,
-            "elements": [
-                "minecraft:obsidian@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "small_fluid_input"
-            ]
-        },
-        {
-            "x": 0,
             "y": 0,
             "z": 2,
             "elements": [
@@ -58,6 +43,36 @@
             ]
         },
         {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "astralsorcery:blockmarble@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": "general_fluid_input"
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "astralsorcery:blockmarble@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
             "x": 1,
             "y": 0,
             "z": 2,
@@ -66,11 +81,27 @@
             ]
         },
         {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "astralsorcery:blockmarble@2"
+            ]
+        },
+        {
             "x": 1,
             "y": -1,
             "z": 0,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "astralsorcery:blockmarble@2"
             ]
         },
         {
@@ -78,7 +109,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
             ]
         },
         {
@@ -86,7 +117,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
             ]
         },
         {
@@ -94,7 +125,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
             ]
         },
         {
@@ -102,7 +133,15 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "astralsorcery:blockmarble@4"
             ]
         },
         {
@@ -110,7 +149,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
             ]
         },
         {
@@ -118,7 +157,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
             ]
         },
         {
@@ -126,7 +165,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
             ]
         },
         {
@@ -134,7 +173,15 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "astralsorcery:blockmarble@4"
             ]
         },
         {
@@ -142,7 +189,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
             ]
         },
         {
@@ -150,7 +197,15 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "astralsorcery:blockmarble@2"
             ]
         },
         {
@@ -158,7 +213,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
             ]
         },
         {
@@ -166,7 +221,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "minecraft:obsidian@0"
+                "quark:stone_marble_bricks_slab@0"
             ]
         },
         {
@@ -174,7 +229,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
             ]
         },
         {
@@ -182,7 +237,15 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "astralsorcery:blockmarble@2"
             ]
         },
         {
@@ -190,7 +253,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
             ]
         },
         {
@@ -198,7 +261,23 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "astralsorcery:blockmarble@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "astralsorcery:blockmarble@4"
             ]
         },
         {
@@ -206,7 +285,23 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "minecraft:obsidian@0"
+                "astralsorcery:blockmarble@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "astralsorcery:blockmarble@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "astralsorcery:blockmarble@2"
             ]
         }
     ]}

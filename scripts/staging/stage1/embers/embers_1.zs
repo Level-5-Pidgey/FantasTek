@@ -7,7 +7,23 @@ val Stage1EmbersItems = [
 	<contenttweaker:crystal_ember_air>,
 	<contenttweaker:crystal_ember_water>,
 	<contenttweaker:crystal_ember_fire>,
-	<contenttweaker:crystal_ember_earth>
+	<contenttweaker:crystal_ember_earth>,
+	<modulardiversity:blockemberinputhatch>,
+	<modulardiversity:blockemberinputhatch:1>,
+	<modulardiversity:blockemberinputhatch:2>,
+	<modulardiversity:blockemberinputhatch:3>,
+	<modulardiversity:blockemberinputhatch:4>,
+	<modulardiversity:blockemberinputhatch:5>,
+	<modulardiversity:blockemberinputhatch:6>,
+	<modulardiversity:blockemberinputhatch:7>,
+	<modulardiversity:blockemberoutputhatch>,
+	<modulardiversity:blockemberoutputhatch:1>,
+	<modulardiversity:blockemberoutputhatch:2>,
+	<modulardiversity:blockemberoutputhatch:3>,
+	<modulardiversity:blockemberoutputhatch:4>,
+	<modulardiversity:blockemberoutputhatch:5>,
+	<modulardiversity:blockemberoutputhatch:6>,
+	<modulardiversity:blockemberoutputhatch:7>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1EmbersItems
@@ -71,7 +87,14 @@ val StageLessItems = [
 	<embers:nugget_aluminum>,
 	<embers:ingot_nickel>,
 	<embers:ashen_brick>,
-	<embers:ashen_stone>
+	<embers:ashen_stone>,
+	<embers:ashen_tile>,
+	<embers:stairs_ashen_stone>,
+	<embers:stairs_ashen_brick>,
+	<embers:stairs_ashen_tile>,
+	<embers:ashen_tile_slab>,
+	<embers:ashen_brick_slab>,
+	<embers:ashen_stone_slab>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

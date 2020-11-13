@@ -6,8 +6,9 @@
 	shape: "gear",
 	description: "How to progress through the pioneer program!",
 	text: [
-		"Due to the secrecy of our trade operations, we cannot let any newbie to learn about our most advanced technologies immediately. Additionally, this",
-		"world presents us with many new resources we have not had access to for hundreds of years, so therefore we have created a &bStaging Program&f.",
+		"Due to the secrecy of our trade operations, we cannot let any newbie to learn about our most advanced technologies immediately. ",
+		"Additionally, this world presents us with many new resources we have not had access to for hundreds of years, ",
+		"so therefore we have created a &bStaging Program&f.",
 		"",
 		"This program will &nrestrict certain monsters, liquids, dimensions and items to stages&f, and prevent accessing this content until you have that",
 		"appropriate stage. There are two types of staging:",

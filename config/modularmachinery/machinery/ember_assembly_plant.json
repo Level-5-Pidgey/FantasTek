@@ -1,6 +1,7 @@
 {
     "registryname": "ember_assembly_plant",
     "localizedname": "Ember Assembly Plant",
+	"requires-blueprint": true,
     "color": "DD9454",
     "parts": [
         {

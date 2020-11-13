@@ -1,6 +1,7 @@
 {
 	"registryname": "ore_washing_factory",
 	"localizedname": "Ore Washing Factory",
+	"requires-blueprint": true,
 	"color": "484c54",
     "parts": [
         {

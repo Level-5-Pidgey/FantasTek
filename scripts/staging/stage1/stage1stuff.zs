@@ -523,6 +523,7 @@ val StageLessItems = [
 	<iceandfire:chain_link>,
 	<forestry:peat>,
 	<forestry:crafting_material:2>,
+	<extendedcrafting:interface>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

@@ -180,7 +180,7 @@ for key, value in enderioRecipes_EXTENDEDCRAFTING {
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
 
-//Make Photovoltaic Plates easier to assemble
+//Change Photovoltaic Plate Recipe Process
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:3>);
 
 print("### EnderIO Init Complete ###");
