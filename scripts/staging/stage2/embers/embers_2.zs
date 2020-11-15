@@ -13,6 +13,18 @@ mods.ItemStages.stageModItems(stageString, "embers");
 //and move the general mod staging script line to the next stage up
 
 val Stage2EmbersMagicItems = [
+	<modulardiversity:blockemberinputhatch:2>,
+	<modulardiversity:blockemberinputhatch:3>,
+	<modulardiversity:blockemberinputhatch:4>,
+	<modulardiversity:blockemberinputhatch:5>,
+	<modulardiversity:blockemberinputhatch:6>,
+	<modulardiversity:blockemberinputhatch:7>,
+	<modulardiversity:blockemberoutputhatch:2>,
+	<modulardiversity:blockemberoutputhatch:3>,
+	<modulardiversity:blockemberoutputhatch:4>,
+	<modulardiversity:blockemberoutputhatch:5>,
+	<modulardiversity:blockemberoutputhatch:6>,
+	<modulardiversity:blockemberoutputhatch:7>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage2EmbersMagicItems

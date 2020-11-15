@@ -547,6 +547,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "NetherStar" : stages.progression1,
   "AncientDebris" : stages.progression1,
   "LapisLazuli" : stages.progression1,
+  "Manasteel" : stages.Botania1,
 };
 
 for materialString in ExtraMaterialsToStage

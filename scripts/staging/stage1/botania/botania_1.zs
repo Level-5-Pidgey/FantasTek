@@ -17,6 +17,22 @@ val Stage1BotaniaItems = [
 	<botania:grassseeds:*>,
 	<botania:manaresource:3>,
 	<botania:twigwand>,
+	<botania:twigwand>.withTag({color1: 0, color2: 0}),
+	<botania:twigwand>.withTag({color1: 1, color2: 1}),
+	<botania:twigwand>.withTag({color1: 2, color2: 2}),
+	<botania:twigwand>.withTag({color1: 3, color2: 3}),
+	<botania:twigwand>.withTag({color1: 4, color2: 4}),
+	<botania:twigwand>.withTag({color1: 5, color2: 5}),
+	<botania:twigwand>.withTag({color1: 6, color2: 6}),
+	<botania:twigwand>.withTag({color1: 7, color2: 7}),
+	<botania:twigwand>.withTag({color1: 8, color2: 8}),
+	<botania:twigwand>.withTag({color1: 9, color2: 9}),
+	<botania:twigwand>.withTag({color1: 10, color2: 10}),
+	<botania:twigwand>.withTag({color1: 11, color2: 11}),
+	<botania:twigwand>.withTag({color1: 12, color2: 12}),
+	<botania:twigwand>.withTag({color1: 13, color2: 13}),
+	<botania:twigwand>.withTag({color1: 14, color2: 14}),
+	<botania:twigwand>.withTag({color1: 15, color2: 15}),
 	<botania:grasshorn>,
 	<botania:grasshorn:1>,
 	<botania:grasshorn:2>,
@@ -40,6 +56,8 @@ val Stage1BotaniaItems = [
 	<botania:cacophonium>,
 	<botania:waterbowl>,
 	<botania:obediencestick>,
+	<botania:manaresource:23>,
+	<botania:managlass>,
 	<botania:livingrock:*>,
 	<botania:altar:*>,
 	<botania:autocraftinghalo>,
@@ -107,7 +125,9 @@ val Stage1BotaniaItems = [
 	<botania_tweaks:compressed_tiny_potato_6>,
 	<botania_tweaks:compressed_tiny_potato_7>,
 	<botania_tweaks:compressed_tiny_potato_8>,
-	<botania_tweaks:potted_tiny_potato>
+	<botania_tweaks:potted_tiny_potato>,
+	<modulardiversity:blockmanainputhatch>,
+	<modulardiversity:blockmanaoutputhatch>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1BotaniaItems

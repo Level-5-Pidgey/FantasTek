@@ -53,6 +53,22 @@ mods.recipestages.Recipes.addShaped("reinforced_sealed_planks", scripts.helpers.
 
 //Change Codex Recipe
 recipes.remove(<embers:codex>);
-recipes.addShapeless(scripts.helpers.createRecipeName(<embers:codex>), <embers:codex>, [<ore:book>, <ore:clay>, <ore:clay>]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<embers:codex>), <embers:codex>, [<ore:book>, <embers:archaic_brick>]);
+
+//Add Archaic Brick Recipe
+furnace.addRecipe(<embers:archaic_brick>, <minecraft:soul_sand>, 0.1);
+
+//Recipe Changes
+val embers_CRAFTINGTABLE = {
+		<embers:ember_bore> : [[<embers:block_caminite_brick>, <ore:gearDiamond>, <embers:block_caminite_brick>],[<embers:block_caminite_brick>, <embers:mech_core>, <embers:block_caminite_brick>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]],
+		<embers:mech_core> : [[<ore:ingotIron>, <ore:gearConductiveIron>, <ore:ingotIron>],[null, <extendedcrafting:material:2>, null], [<ore:ingotIron>, null, <ore:ingotIron>]],
+		<embers:ember_activator> : [[<ore:ingotConductiveIron>, <ore:ingotConductiveIron>, <ore:ingotConductiveIron>], [<ore:ingotConductiveIron>, <embers:mech_core>, <ore:ingotConductiveIron>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in embers_CRAFTINGTABLE {
+	recipes.remove(key.withAmount(1));
+	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+}
+
 
 print("### Embers Init Complete ###");

@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "f2d7f3fb",
+		type: "item",
+		items: [{
+			item: "embers:ancient_motive_core"
+		}]
+	}],
+	rewards: [{
+		uid: "b071bfc7",
+		type: "item",
+		item: "minecraft:obsidian",
+		count: 4
+	}]
+}

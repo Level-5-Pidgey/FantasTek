@@ -1,0 +1,18 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "0d62a794",
+		type: "item",
+		items: [{
+			item: "embers:shard_ember"
+		}],
+		count: 12L
+	}],
+	rewards: [{
+		uid: "3c6967cd",
+		type: "item",
+		item: "embers:crystal_ember",
+		count: 4
+	}]
+}

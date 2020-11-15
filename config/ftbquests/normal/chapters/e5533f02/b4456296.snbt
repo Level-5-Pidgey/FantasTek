@@ -1,0 +1,25 @@
+{
+	x: 0.0d,
+	y: -1.0d,
+	shape: "hexagon",
+	tasks: [{
+		uid: "90ca3033",
+		type: "item",
+		items: [{
+			item: "embers:archaic_brick"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "8b9b8c72",
+		type: "item",
+		item: {
+			id: "minecraft:spawn_egg",
+			tag: {
+				EntityTag: {
+					id: "embers:ancient_golem"
+				}
+			}
+		}
+	}]
+}

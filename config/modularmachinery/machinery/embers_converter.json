@@ -8,7 +8,10 @@
 		  "x": -1,
 		  "y": 0,
 		  "z": 1,
-		  "elements": "small_energy_output"
+		  "elements": [
+			  "general_energy_output",
+			  "general_ember_input"
+		  	]
 		},
 		{
 		  "x": -1,
@@ -46,7 +49,10 @@
 		  "x": 1,
 		  "y": 0,
 		  "z": 1,
-		  "elements": "general_energy_output"
+		  "elements": [
+			  "general_energy_output",
+			  "general_ember_input"
+		  	]
 		},
 		{
 		  "x": 0,

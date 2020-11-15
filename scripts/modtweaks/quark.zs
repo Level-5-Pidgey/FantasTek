@@ -25,4 +25,12 @@ for item, textArray in quarkTooltips
 mods.thermalexpansion.Pulverizer.removeRecipe(<ore:stonePermafrost>.firstItem);
 mods.thermalexpansion.Pulverizer.removeRecipe(<ore:stoneBrimstone>.firstItem);
 
+//Make Weather Sensor more cheap
+recipes.remove(<quark:rain_detector>);
+recipes.addShaped(scripts.helpers.createRecipeName(<quark:rain_detector>), <quark:rain_detector>, [
+	[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>],
+	[<ore:quartzDark>, <ore:quartzDark>, <ore:quartzDark>],
+	[<minecraft:purpur_slab>, <minecraft:purpur_slab>, <minecraft:purpur_slab>]
+]);
+
 print("### Quark Init Complete ###");

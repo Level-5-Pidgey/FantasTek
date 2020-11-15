@@ -50,7 +50,7 @@ mods.forestry.Carpenter.addRecipe(<forestry:chipsets>.withTag({T: 0 as short}), 
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}), [[<ore:blockGlass>, <ore:plateRedstoneAlloy>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateRedstoneAlloy>, <ore:blockGlass>]], 80, <liquid:water> * 2000);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:plateCrudeSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateCrudeSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:plateSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:densePlatingGold>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:densePlatingGold>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:blockGold>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:blockGold>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
 
 //Remove Tier 1 Ores being output from Metallic Grains
@@ -109,7 +109,7 @@ val machineRecipes_CRAFTINGTABLE = {
 		<forestry:digger_bag> : [[<ore:wool>, <ore:dirt>, <ore:wool>], [<ore:cobblestone>, <ore:chestWood>, <ore:cobblestone>], [<ore:wool>, <ore:dirt>, <ore:wool>]],
 		<forestry:forester_bag> : [[<ore:wool>, <ore:treeSapling>, <ore:wool>], [<ore:plateWood>, <ore:chestWood>, <ore:plateWood>], [<ore:wool>, <ore:treeSapling>, <ore:wool>]],
 		<forestry:hunter_bag> : [[<ore:wool>, <ore:foodMeat>, <ore:wool>], [<ore:foodMeat>, <ore:chestWood>, <ore:foodMeat>], [<ore:wool>, <ore:foodMeat>, <ore:wool>]],
-		<forestry:naturalist_helmet> : [[null, <ore:chestWood>, null], [<ore:wool>, <ore:foodMeat>, <ore:wool>]],
+		<forestry:naturalist_helmet> : [[null, <ore:ingotGold>, null], [<ore:paneGlassColorless>, null, <ore:paneGlassColorless>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in machineRecipes_CRAFTINGTABLE {

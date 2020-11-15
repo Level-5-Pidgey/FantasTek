@@ -159,7 +159,7 @@ var EmberInput =
 
 var EmberOutput =
 {
-	0 : <embers:plate_caminite>,
+	0 : <embers:shard_ember>,
 	1 : <modulardiversity:blockemberinputhatch>,
 	2 : <modulardiversity:blockemberinputhatch:1>,
 	3 : <modulardiversity:blockemberinputhatch:2>,
@@ -229,17 +229,48 @@ for i in 1 .. 8
 	[<modularmachinery:itemmodularium>, MachineParts1[i], <modularmachinery:itemmodularium>]]);
 }
 
+//Mana Input and Output
+recipes.addShaped(scripts.helpers.createRecipeName(<modulardiversity:blockmanainputhatch>), <modulardiversity:blockmanainputhatch>, [
+	[null, <modularmachinery:itemmodularium>, null],
+	[<modularmachinery:itemmodularium>, <ore:livingrock>, <modularmachinery:itemmodularium>],
+	[null, <modularmachinery:itemmodularium>, null]
+]);
+recipes.addShaped(scripts.helpers.createRecipeName(<modulardiversity:blockmanaoutputhatch>), <modulardiversity:blockmanaoutputhatch>, [
+	[null, <modularmachinery:itemmodularium>, null],
+	[<modularmachinery:itemmodularium>, <ore:blockManasteel>, <modularmachinery:itemmodularium>],
+	[null, <modularmachinery:itemmodularium>, null]
+]);
+
+//Environmental Detectors
+recipes.addShaped(scripts.helpers.createRecipeName(<modulardiversity:blockbiomedetector>), <modulardiversity:blockbiomedetector>, [
+	[null, <modularmachinery:itemmodularium>, null],
+	[<modularmachinery:itemmodularium>, scripts.helpers.BiomeGemMaterial["plate"], <modularmachinery:itemmodularium>],
+	[null, <modularmachinery:itemmodularium>, null]
+]);
+recipes.addShaped(scripts.helpers.createRecipeName(<modulardiversity:blockdaylightdetector>), <modulardiversity:blockdaylightdetector>, [
+	[null, <modularmachinery:itemmodularium>, null],
+	[<modularmachinery:itemmodularium>, <minecraft:daylight_detector>, <modularmachinery:itemmodularium>],
+	[null, <modularmachinery:itemmodularium>, null]
+]);
+recipes.addShaped(scripts.helpers.createRecipeName(<modulardiversity:blockweatherdetector>), <modulardiversity:blockweatherdetector>, [
+	[null, <modularmachinery:itemmodularium>, null],
+	[<modularmachinery:itemmodularium>, <quark:rain_detector>, <modularmachinery:itemmodularium>],
+	[null, <modularmachinery:itemmodularium>, null]
+]);
+
+
+
+
 //Add Crafting Recipes for Machine Casings
 //Machine Controller
 for item in scripts.helpers.AllT1MagicItems
 {
-	recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcontroller>), <modularmachinery:blockcontroller>, [
+	recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcontroller>) ~ item.displayName, <modularmachinery:blockcontroller>, [
 		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
 		[<ore:blockGlassColorless>.firstItem, item, <ore:blockGlassColorless>.firstItem],
 		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
 	]);
 }
-
 //Machine Casings
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing>), <modularmachinery:blockcasing> * 4, [
 	[null, <modularmachinery:itemmodularium>, null],

@@ -790,42 +790,7 @@ function markwithProcessingTier(craftingMaterial as string, tier as int)
 			{
 				for ore in oreDict.items
 				{
-					if(tier == 0)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.darkGray("0")));
-					}
-					else if(tier == 1)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.gray("1")));
-					}
-					else if(tier == 2)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.yellow("2")));
-					}
-					else if(tier == 3)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.gold("3")));
-					}
-					else if(tier == 4)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.red("4")));
-					}
-					else if(tier == 5)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.darkRed("5")));
-					}
-					if(tier == 6)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.aqua("6")));
-					}
-					if(tier == 7)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.darkGreen("7")));
-					}
-					if(tier == 8)
-					{
-						ore.addTooltip(format.italic(format.white("Ore Processing Tier: ")) ~ format.bold(format.green("8")));
-					}
+					ore.addTooltip(scripts.helpers.createTierTooltip("Ore Processing Tier: ", tier, false, ""));
 				}
 			}
 		}

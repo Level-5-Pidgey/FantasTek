@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-11-12T08:20:40.9230771Z",
+  "lastPlayed": "2020-11-15T12:35:25.977831Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -329,21 +329,6 @@
       "queryTimestamp": "2020-11-12T02:43:40.9539369Z",
       "fileCount": 1,
       "fileSize": 29043
-    },
-    {
-      "folderName": "roost-1.12.2-2.0.10.jar",
-      "fingerprint": 2638184204,
-      "fileDateHash": 2784836641,
-      "sectionID": 8,
-      "individualFingerprints": [
-        2638184204
-      ],
-      "status": 1,
-      "timestamp": "2020-05-21T07:17:30.8735299Z",
-      "lastWriteTimeUtc": "2020-04-08T07:54:51Z",
-      "queryTimestamp": "2020-11-12T02:43:40.9539369Z",
-      "fileCount": 1,
-      "fileSize": 335854
     },
     {
       "folderName": "inworldcrafting-1.12.2-1.2.0-universal.jar",
@@ -749,21 +734,6 @@
       "queryTimestamp": "2020-11-12T02:43:40.9609368Z",
       "fileCount": 1,
       "fileSize": 359344
-    },
-    {
-      "folderName": "cases-0.4.2.jar",
-      "fingerprint": 1802870163,
-      "fileDateHash": 385721395,
-      "sectionID": 8,
-      "individualFingerprints": [
-        1802870163
-      ],
-      "status": 1,
-      "timestamp": "2020-05-26T02:42:50.042163Z",
-      "lastWriteTimeUtc": "2020-05-26T00:29:55.8121383Z",
-      "queryTimestamp": "2020-11-12T02:43:40.9609368Z",
-      "fileCount": 1,
-      "fileSize": 129332
     },
     {
       "folderName": "torchmaster_1.12.2-1.8.4.84.jar",
@@ -3614,21 +3584,6 @@
       "fileSize": 2895803
     },
     {
-      "folderName": "ThermalCultivation-1.12.2-0.3.6.1-universal.jar",
-      "fingerprint": 737202088,
-      "fileDateHash": 110710796,
-      "sectionID": 8,
-      "individualFingerprints": [
-        737202088
-      ],
-      "status": 1,
-      "timestamp": "2020-05-21T07:17:31.1607715Z",
-      "lastWriteTimeUtc": "2020-04-08T09:46:43.8232231Z",
-      "queryTimestamp": "2020-11-12T02:43:41.006937Z",
-      "fileCount": 1,
-      "fileSize": 98845
-    },
-    {
       "folderName": "Cucumber-1.12.2-1.1.3.jar",
       "fingerprint": 3550059760,
       "fileDateHash": 2784836641,
@@ -3642,6 +3597,21 @@
       "queryTimestamp": "2020-11-12T02:43:41.006937Z",
       "fileCount": 1,
       "fileSize": 126699
+    },
+    {
+      "folderName": "ThermalCultivation-1.12.2-0.3.6.1-universal.jar",
+      "fingerprint": 737202088,
+      "fileDateHash": 110710796,
+      "sectionID": 8,
+      "individualFingerprints": [
+        737202088
+      ],
+      "status": 1,
+      "timestamp": "2020-05-21T07:17:31.1607715Z",
+      "lastWriteTimeUtc": "2020-04-08T09:46:43.8232231Z",
+      "queryTimestamp": "2020-11-12T02:43:41.006937Z",
+      "fileCount": 1,
+      "fileSize": 98845
     },
     {
       "folderName": "AppleSkin-mc1.12-1.0.14.jar",
@@ -3807,26 +3777,26 @@
       "addonID": 360795,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
-        "id": 3068149,
-        "displayName": "roughmobsrevamped-1.12.2-2.3.19.jar",
-        "fileName": "roughmobsrevamped-1.12.2-2.3.19.jar",
-        "fileDate": "2020-09-29T05:45:09.133Z",
-        "fileLength": 385471,
+        "id": 3098180,
+        "displayName": "roughmobsrevamped-1.12.2-2.3.20.jar",
+        "fileName": "roughmobsrevamped-1.12.2-2.3.20.jar",
+        "fileDate": "2020-10-31T17:47:59.963Z",
+        "fileLength": 386657,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3068/149/roughmobsrevamped-1.12.2-2.3.19.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3098/180/roughmobsrevamped-1.12.2-2.3.20.jar",
         "isAlternate": false,
-        "alternateFileId": 3068150,
+        "alternateFileId": 3098181,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 291874,
+            "addonId": 268655,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 268655,
+            "addonId": 291874,
             "type": 2,
             "fileId": 0
           }
@@ -3835,12 +3805,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1202842035,
+            "fingerprint": 61411257,
             "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 2667051094,
+            "fingerprint": 3512966609,
             "type": 0
           },
           {
@@ -3850,7 +3820,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2521333491,
+            "fingerprint": 545469635,
             "type": 0
           },
           {
@@ -3859,7 +3829,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 2414117459,
+        "packageFingerprint": 1566865398,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -3873,12 +3843,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "roughmobsrevamped-1.12.2-2.3.19.jar"
+        "FileNameOnDisk": "roughmobsrevamped-1.12.2-2.3.20.jar"
       },
       "dateInstalled": "2020-04-08T09:01:29.4048359Z",
-      "dateUpdated": "2020-10-26T23:14:34.699822Z",
-      "dateLastUpdateAttempted": "2020-10-26T23:14:34.699822Z",
-      "status": 3,
+      "dateUpdated": "2020-11-15T12:30:58.6192367Z",
+      "dateLastUpdateAttempted": "2020-11-15T12:30:58.6192367Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16734,16 +16704,16 @@
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 25510212,
+            "id": 0,
             "addonId": 251786,
             "type": 2,
-            "fileId": 2702080
+            "fileId": 0
           },
           {
-            "id": 25510211,
+            "id": 0,
             "addonId": 241941,
             "type": 2,
-            "fileId": 2702080
+            "fileId": 0
           }
         ],
         "isAvailable": true,
@@ -16751,60 +16721,48 @@
           {
             "foldername": "META-INF",
             "fingerprint": 1908029514,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "com",
             "fingerprint": 3366370174,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "assets",
             "fingerprint": 1871689399,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "mcmod.info",
             "fingerprint": 1109819926,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3273911401,
-            "type": 3
+            "type": 0
           }
         ],
         "packageFingerprint": 2638184204,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1548990,
-        "projectId": 277711,
-        "packageFingerprintId": 309685659,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameVersionMappingId": 1796659,
-        "gameVersionId": 6756,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
         "FileNameOnDisk": "roost-1.12.2-2.0.10.jar"
       },
-      "dateInstalled": "2019-12-13T01:15:04.9760483Z",
-      "dateUpdated": "2018-12-13T01:15:04.9760483Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateInstalled": "2020-11-15T12:32:18.0277782Z",
+      "dateUpdated": "2020-11-15T12:32:18.0699373Z",
+      "dateLastUpdateAttempted": "2020-11-15T12:32:18.0699373Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16813,7 +16771,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 290001,
@@ -17940,7 +17898,7 @@
       "dateInstalled": "2020-05-09T14:10:35.9810174Z",
       "dateUpdated": "2020-11-12T02:41:48.5008357Z",
       "dateLastUpdateAttempted": "2020-11-12T02:41:48.5008357Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20616,7 +20574,7 @@
       "dateInstalled": "2020-04-08T09:01:29.4038387Z",
       "dateUpdated": "2020-11-12T02:41:53.2498394Z",
       "dateLastUpdateAttempted": "2020-11-12T02:41:53.2498394Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23006,79 +22964,85 @@
       "installedTargets": null
     },
     {
-      "addonID": 314904,
+      "addonID": 228895,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
-        "id": 2819669,
-        "displayName": "FTBBackups-1.1.0.1.jar",
-        "fileName": "FTBBackups-1.1.0.1.jar",
-        "fileDate": "2019-10-31T20:25:08.137Z",
-        "fileLength": 43764,
+        "id": 3029575,
+        "displayName": "BiomeTweaker-1.12.2 3.2.368",
+        "fileName": "BiomeTweaker-1.12.2-3.2.368.jar",
+        "fileDate": "2020-08-11T17:47:37.537Z",
+        "fileLength": 571312,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2819/669/FTBBackups-1.1.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3029/575/BiomeTweaker-1.12.2-3.2.368.jar",
         "isAlternate": false,
-        "alternateFileId": 2819670,
-        "dependencies": [],
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 270116,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3896838891,
-            "type": 3
+            "fingerprint": 4150950553,
+            "type": 0
           },
           {
-            "foldername": "com",
-            "fingerprint": 409143337,
-            "type": 3
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 4225148106,
-            "type": 3
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3152582459,
-            "type": 3
+            "foldername": "me",
+            "fingerprint": 2464809827,
+            "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 812656482,
-            "type": 3
-          }
-        ],
-        "packageFingerprint": 752442057,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "sortableGameVersion": [
+            "fingerprint": 1294925302,
+            "type": 0
+          },
           {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "foldername": "assets",
+            "fingerprint": 1725062551,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 4047149370,
+            "type": 0
+          },
+          {
+            "foldername": "LICENSE.txt",
+            "fingerprint": 1185419476,
+            "type": 0
+          },
+          {
+            "foldername": "NOTICE.txt",
+            "fingerprint": 3411389661,
+            "type": 0
           }
+        ],
+        "packageFingerprint": 1187713259,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1693418,
-        "projectId": 314904,
-        "packageFingerprintId": 372959736,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1988512,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "FTBBackups-1.1.0.1.jar"
+        "FileNameOnDisk": "BiomeTweaker-1.12.2-3.2.368.jar"
       },
-      "dateInstalled": "2019-12-13T01:14:26.8887275Z",
-      "dateUpdated": "2018-12-13T01:14:26.8887275Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateInstalled": "2020-01-29T05:03:42.3470731Z",
+      "dateUpdated": "2020-10-26T23:08:37.2392338Z",
+      "dateLastUpdateAttempted": "2020-10-26T23:08:37.2392338Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23184,84 +23148,78 @@
       "installedTargets": null
     },
     {
-      "addonID": 228895,
+      "addonID": 314904,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
-        "id": 3029575,
-        "displayName": "BiomeTweaker-1.12.2 3.2.368",
-        "fileName": "BiomeTweaker-1.12.2-3.2.368.jar",
-        "fileDate": "2020-08-11T17:47:37.537Z",
-        "fileLength": 571312,
+        "id": 2819669,
+        "displayName": "FTBBackups-1.1.0.1.jar",
+        "fileName": "FTBBackups-1.1.0.1.jar",
+        "fileDate": "2019-10-31T20:25:08.137Z",
+        "fileLength": 43764,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3029/575/BiomeTweaker-1.12.2-3.2.368.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2819/669/FTBBackups-1.1.0.1.jar",
         "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 270116,
-            "type": 2,
-            "fileId": 0
-          }
-        ],
+        "alternateFileId": 2819670,
+        "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4150950553,
-            "type": 0
+            "fingerprint": 3896838891,
+            "type": 3
           },
           {
-            "foldername": "me",
-            "fingerprint": 2464809827,
-            "type": 0
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 1294925302,
-            "type": 0
+            "foldername": "com",
+            "fingerprint": 409143337,
+            "type": 3
           },
           {
             "foldername": "assets",
-            "fingerprint": 1725062551,
-            "type": 0
+            "fingerprint": 4225148106,
+            "type": 3
           },
           {
-            "foldername": "logo.png",
-            "fingerprint": 4047149370,
-            "type": 0
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3152582459,
+            "type": 3
           },
           {
-            "foldername": "LICENSE.txt",
-            "fingerprint": 1185419476,
-            "type": 0
-          },
-          {
-            "foldername": "NOTICE.txt",
-            "fingerprint": 3411389661,
-            "type": 0
+            "foldername": "mcmod.info",
+            "fingerprint": 812656482,
+            "type": 3
           }
         ],
-        "packageFingerprint": 1187713259,
+        "packageFingerprint": 752442057,
         "gameVersion": [
-          "Forge",
           "1.12.2"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2"
+          }
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 1693418,
+        "projectId": 314904,
+        "packageFingerprintId": 372959736,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
+        "gameVersionMappingId": 1988512,
+        "gameVersionId": 4458,
+        "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "BiomeTweaker-1.12.2-3.2.368.jar"
+        "FileNameOnDisk": "FTBBackups-1.1.0.1.jar"
       },
-      "dateInstalled": "2020-01-29T05:03:42.3470731Z",
-      "dateUpdated": "2020-10-26T23:08:37.2392338Z",
-      "dateLastUpdateAttempted": "2020-10-26T23:08:37.2392338Z",
+      "dateInstalled": "2019-12-13T01:14:26.8887275Z",
+      "dateUpdated": "2018-12-13T01:14:26.8887275Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -23274,49 +23232,57 @@
       "installedTargets": null
     },
     {
-      "addonID": 294799,
+      "addonID": 254602,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
-        "id": 2964994,
-        "displayName": "cases-0.4.2.jar",
-        "fileName": "cases-0.4.2.jar",
-        "fileDate": "2020-05-24T21:19:20.283Z",
-        "fileLength": 129332,
+        "id": 2891841,
+        "displayName": "Tesla Core Lib : 1.0.17.25",
+        "fileName": "tesla-core-lib-1.12.2-1.0.17.jar",
+        "fileDate": "2020-02-29T10:45:36.973Z",
+        "fileLength": 1138988,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2964/994/cases-0.4.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2891/841/tesla-core-lib-1.12.2-1.0.17.jar",
         "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
+        "alternateFileId": 2891842,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 264283,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 248453,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4118965901,
-            "type": 0
-          },
-          {
-            "foldername": "ru",
-            "fingerprint": 3929878896,
+            "fingerprint": 932088782,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 337270676,
+            "fingerprint": 3889769499,
             "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2057586034,
+            "fingerprint": 4154542497,
             "type": 0
           },
           {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1629820135,
+            "foldername": "net",
+            "fingerprint": 2106567104,
             "type": 0
           }
         ],
-        "packageFingerprint": 1802870163,
+        "packageFingerprint": 2382821517,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -23330,11 +23296,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "cases-0.4.2.jar"
+        "FileNameOnDisk": "tesla-core-lib-1.12.2-1.0.17.jar"
       },
-      "dateInstalled": "2019-12-13T01:14:26.8817164Z",
-      "dateUpdated": "2020-05-26T00:29:55.8279278Z",
-      "dateLastUpdateAttempted": "2020-05-26T00:29:55.8279278Z",
+      "dateInstalled": "2020-04-08T09:01:29.401845Z",
+      "dateUpdated": "2020-04-08T09:46:36.7386978Z",
+      "dateLastUpdateAttempted": "2020-04-08T09:46:36.7386978Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -23421,57 +23387,64 @@
       "installedTargets": null
     },
     {
-      "addonID": 254602,
+      "addonID": 227795,
       "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
       "installedFile": {
-        "id": 2891841,
-        "displayName": "Tesla Core Lib : 1.0.17.25",
-        "fileName": "tesla-core-lib-1.12.2-1.0.17.jar",
-        "fileDate": "2020-02-29T10:45:36.973Z",
-        "fileLength": 1138988,
+        "id": 2823030,
+        "displayName": "antiqueatlas-1.12.2-4.6.3.jar",
+        "fileName": "antiqueatlas-1.12.2-4.6.3.jar",
+        "fileDate": "2019-11-06T16:46:48.443Z",
+        "fileLength": 1239580,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2891/841/tesla-core-lib-1.12.2-1.0.17.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2823/30/antiqueatlas-1.12.2-4.6.3.jar",
         "isAlternate": false,
-        "alternateFileId": 2891842,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 264283,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 248453,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
+        "alternateFileId": 0,
+        "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 932088782,
+            "fingerprint": 2659719084,
+            "type": 0
+          },
+          {
+            "foldername": "hunternif",
+            "fingerprint": 3480166055,
+            "type": 0
+          },
+          {
+            "foldername": "kenkron",
+            "fingerprint": 3888155155,
+            "type": 0
+          },
+          {
+            "foldername": "antiqueatlas_logo.png",
+            "fingerprint": 3543155372,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 3889769499,
+            "fingerprint": 1141477567,
+            "type": 0
+          },
+          {
+            "foldername": "markerExample.json",
+            "fingerprint": 2222096781,
             "type": 0
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 4154542497,
+            "fingerprint": 764293181,
             "type": 0
           },
           {
-            "foldername": "net",
-            "fingerprint": 2106567104,
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2070548379,
             "type": 0
           }
         ],
-        "packageFingerprint": 2382821517,
+        "packageFingerprint": 3949702391,
         "gameVersion": [
           "Forge",
           "1.12.2"
@@ -23485,11 +23458,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "tesla-core-lib-1.12.2-1.0.17.jar"
+        "FileNameOnDisk": "antiqueatlas-1.12.2-4.6.3.jar"
       },
-      "dateInstalled": "2020-04-08T09:01:29.401845Z",
-      "dateUpdated": "2020-04-08T09:46:36.7386978Z",
-      "dateLastUpdateAttempted": "2020-04-08T09:46:36.7386978Z",
+      "dateInstalled": "2019-11-13T10:00:20.8472505Z",
+      "dateUpdated": "2019-11-13T10:06:04.1694076Z",
+      "dateLastUpdateAttempted": "2019-11-13T10:06:04.1694076Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -23588,94 +23561,6 @@
       "dateInstalled": "2019-12-13T01:14:26.9068542Z",
       "dateUpdated": "2018-12-13T01:14:26.9068542Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 227795,
-      "gameInstanceID": "1d6b3d70-883e-4242-88c6-d89d3da58a03",
-      "installedFile": {
-        "id": 2823030,
-        "displayName": "antiqueatlas-1.12.2-4.6.3.jar",
-        "fileName": "antiqueatlas-1.12.2-4.6.3.jar",
-        "fileDate": "2019-11-06T16:46:48.443Z",
-        "fileLength": 1239580,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2823/30/antiqueatlas-1.12.2-4.6.3.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2659719084,
-            "type": 0
-          },
-          {
-            "foldername": "hunternif",
-            "fingerprint": 3480166055,
-            "type": 0
-          },
-          {
-            "foldername": "kenkron",
-            "fingerprint": 3888155155,
-            "type": 0
-          },
-          {
-            "foldername": "antiqueatlas_logo.png",
-            "fingerprint": 3543155372,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1141477567,
-            "type": 0
-          },
-          {
-            "foldername": "markerExample.json",
-            "fingerprint": 2222096781,
-            "type": 0
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 764293181,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 2070548379,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 3949702391,
-        "gameVersion": [
-          "Forge",
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "antiqueatlas-1.12.2-4.6.3.jar"
-      },
-      "dateInstalled": "2019-11-13T10:00:20.8472505Z",
-      "dateUpdated": "2019-11-13T10:06:04.1694076Z",
-      "dateLastUpdateAttempted": "2019-11-13T10:06:04.1694076Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,

@@ -333,9 +333,9 @@ function setItemAndRecipesStage(itemToStage as crafttweaker.item.IItemStack, sta
 	}
 }
 
-function createTierTooltip(itemToToolTip as crafttweaker.item.IItemStack, prefixString as string, tier as int, plus1 as bool, suffixString as string)
+function createTierTooltip(prefixString as string, tier as int, plus1 as bool, suffixString as string) as crafttweaker.formatting.IFormattedText
 {
-	var tierNumberAsColouredText as string = "";
+	var tierNumberAsColouredText as crafttweaker.formatting.IFormattedText = "";
 	var modifiedTier as int = 0;
 
 	//If we want to "plus one" the numerical value, do so here
@@ -382,7 +382,8 @@ function createTierTooltip(itemToToolTip as crafttweaker.item.IItemStack, prefix
 	}
 
 	//Now we have the tier text, add the tooltip!
-	itemToToolTip.addTooltip(format.italic(format.white(prefixString)) ~ tierNumberAsColouredText ~ format.italic(format.white(suffixString)));
+	var finalText as crafttweaker.formatting.IFormattedText = format.italic(format.white(prefixString)) ~ tierNumberAsColouredText ~ format.italic(format.white(suffixString));
+	return finalText;
 }
 
 static CircuitTiers as crafttweaker.item.IIngredient[int] =

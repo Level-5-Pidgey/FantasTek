@@ -52,22 +52,6 @@
 						],
 					Count:1
 				}
-			},
-			{
-				action:"add", CareerLevel:2,
-				buy:{
-					id:"contenttweaker:currency_20",
-					Count:{min:6,max:9}
-				},
-				sell:{
-					id:"cases:case",
-					tag:
-					[
-						{caseName: "player_heads"},
-						{caseName: "pokemon"}
-					],
-					Count:1
-				}
 			}
 		]
 	}

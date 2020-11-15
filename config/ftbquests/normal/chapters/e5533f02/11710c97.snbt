@@ -1,0 +1,21 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	dependencies: [
+		"e42186b9",
+		"b090a66e"
+	],
+	tasks: [{
+		uid: "4604dda5",
+		type: "item",
+		items: [{
+			item: "embers:ember_bore"
+		}]
+	}],
+	rewards: [{
+		uid: "01799085",
+		type: "item",
+		item: "minecraft:coal_block",
+		count: 2
+	}]
+}
