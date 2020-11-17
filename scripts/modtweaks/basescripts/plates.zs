@@ -361,10 +361,6 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 				{
 					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 2000, false, 80);
 				}
-				else if (materialPrefix == "Coal") //1 Coal = 100mb of Liquifacted Coal
-				{
-					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 200, false, 80);
-				}
 				else
 				{
 					mods.tconstruct.Casting.addTableRecipe(oreDict.get(craftingPlate).firstItem, <tconstruct:cast_custom:3>, molten, 288, false, 80);
@@ -384,10 +380,6 @@ function AddPlateCrafting(materialOreDict as string, materialPrefix as string, m
 				if (materialPrefix == "Silicon" | materialPrefix == "Carbon" )
 				{
 					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 1500, <embers:stamp_plate>, null);
-				}
-				else if (materialPrefix == "Coal")
-				{
-					mods.embers.Stamper.add(oreDict.get(craftingPlate).firstItem, molten * 150, <embers:stamp_plate>, null);
 				}
 				else
 				{

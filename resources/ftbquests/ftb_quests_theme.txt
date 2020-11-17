@@ -1,12 +1,12 @@
 [*]
-background:          ftblib:textures/gui/background_squares.png; color=#a9ceff; tile_size=128
+background:          ftblib:textures/gui/background_squares.png; color=#bababa; tile_size=192
 
 text_color:          #FFFFFF
 hover_text_color:    #FFFFA0
 disabled_text_color: #999999
 
 widget_border:     #1B1D1E
-widget_background: #44000000
+widget_background: #440000
 symbol_in:         #9BC600
 symbol_out:        #408300
 

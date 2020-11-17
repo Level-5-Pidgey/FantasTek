@@ -37,11 +37,10 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 recipes.remove(<embers:tinker_hammer>);
 recipes.addShaped("tinker_hammer", <embers:tinker_hammer>.withTag({}), [[null, <ore:ingotIron>, <ore:obsidian>],[null, <ore:stickWood>, <ore:ingotIron>], [<ore:stickWood>, null, null]]);
 
-//Add Tooltip for Tinker's Hammer.
+//Add Tooltips
 scripts.helpers.AddTooltip(<embers:tinker_hammer>, ["Tinkers Hammers can be used to craft plates using ingots.", "They can also be used to crush most ingots into dusts."]);
-
-//Add Tooltip for Sealed Planks.
 scripts.helpers.AddTooltip(<embers:sealed_planks>, ["Created by soaking wood in creosote oil."]);
+scripts.helpers.AddTooltip(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}), ["Requires both an Ember Input and Energy Output. Can be put on either side."]);
 
 //Change Sealed Planks/Reinforced Sealed Planks Recipes
 recipes.remove(<embers:sealed_planks>);
@@ -60,9 +59,14 @@ furnace.addRecipe(<embers:archaic_brick>, <minecraft:soul_sand>, 0.1);
 
 //Recipe Changes
 val embers_CRAFTINGTABLE = {
-		<embers:ember_bore> : [[<embers:block_caminite_brick>, <ore:gearDiamond>, <embers:block_caminite_brick>],[<embers:block_caminite_brick>, <embers:mech_core>, <embers:block_caminite_brick>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]],
-		<embers:mech_core> : [[<ore:ingotIron>, <ore:gearConductiveIron>, <ore:ingotIron>],[null, <extendedcrafting:material:2>, null], [<ore:ingotIron>, null, <ore:ingotIron>]],
+		<embers:ember_bore> : [[<embers:block_caminite_brick>, <ore:gearDiamond>, <embers:block_caminite_brick>],[<embers:block_caminite_brick>, <embers:mech_core>, <embers:block_caminite_brick>], [<ore:ingotIron>, <embers:ancient_motive_core>, <ore:ingotIron>]],
+		<embers:mech_core> : [[<ore:ingotIron>, null, <ore:ingotIron>],[null, <ore:gearConductiveIron>, null], [<ore:ingotIron>, null, <ore:ingotIron>]],
 		<embers:ember_activator> : [[<ore:ingotConductiveIron>, <ore:ingotConductiveIron>, <ore:ingotConductiveIron>], [<ore:ingotConductiveIron>, <embers:mech_core>, <ore:ingotConductiveIron>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]],
+		<embers:ember_emitter> * 5 : [[null, <ore:ingotIron>, null], [null, <ore:ingotIron>, null], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]],
+		<embers:ember_receiver> * 5 : [[null, null, null], [<ore:ingotIron>, null, <ore:ingotIron>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]],
+		<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}) : [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]],
+		<embers:ember_gauge> : [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateGold>]],
+		<embers:fluid_gauge> : [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateIron>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in embers_CRAFTINGTABLE {
@@ -70,5 +74,26 @@ for key, value in embers_CRAFTINGTABLE {
 	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
 }
 
+//ExtendedCrafting recipes for forestry Machines in tier1
+val embers_EXTENDEDCRAFTING = {
+	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}) : [[null, <enderio:item_material:77>, null], [<enderio:item_material:77>, <embers:ancient_motive_core>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]],
+	<embers:stamper> : [[<embers:brick_caminite>, <ore:plateIron>.firstItem, <embers:brick_caminite>], [<embers:brick_caminite>, <ore:ingotIron>.firstItem, <embers:brick_caminite>], [<embers:brick_caminite>, null, <embers:brick_caminite>]],
+	<embers:stamper_base> : [[<ore:ingotIron>.firstItem, null, <ore:ingotIron>.firstItem], [<embers:brick_caminite>, null, <embers:brick_caminite>], [<embers:brick_caminite>, <minecraft:bucket>, <embers:brick_caminite>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in embers_EXTENDEDCRAFTING {
+	recipes.remove(key.withAmount(1));
+	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
+}
+
+//Melter Recipe
+for item in scripts.helpers.AllFireT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <embers:block_furnace>, [
+		[<embers:brick_caminite>, <embers:plate_caminite>, <embers:brick_caminite>],
+		[<embers:brick_caminite>, item, <embers:brick_caminite>],
+		[<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>]
+	]);
+}
 
 print("### Embers Init Complete ###");

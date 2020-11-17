@@ -1,0 +1,109 @@
+{
+	icon: "embers:archaic_light",
+	x: 4.0d,
+	y: 1.0d,
+	dependencies: [
+		"42935863",
+		"b6f88395"
+	],
+	tasks: [{
+		uid: "3c9f8ff8",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:ember_assembly_plant"
+			}
+		}]
+	},
+	{
+		uid: "cbc02aef",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "811f4b7c",
+		type: "item",
+		items: [{
+			item: "embers:archaic_tile"
+		}],
+		count: 12L
+	},
+	{
+		uid: "89d650cc",
+		type: "item",
+		title: "Craft an Item Output",
+		items: [{
+			item: "modularmachinery:blockoutputbus"
+		},
+		{
+			item: "modularmachinery:blockoutputbus 1 1"
+		},
+		{
+			item: "modularmachinery:blockoutputbus 1 2"
+		}]
+	},
+	{
+		uid: "103df5e9",
+		type: "item",
+		items: [{
+			item: "embers:mech_core"
+		}]
+	},
+	{
+		uid: "143f290b",
+		type: "item",
+		title: "Craft an Item Input",
+		items: [{
+			item: "modularmachinery:blockinputbus"
+		},
+		{
+			item: "modularmachinery:blockinputbus 1 1"
+		},
+		{
+			item: "modularmachinery:blockinputbus 1 2"
+		}]
+	},
+	{
+		uid: "f62354e1",
+		type: "item",
+		title: "Craft an Embers Input",
+		items: [{
+			item: "modulardiversity:blockemberinputhatch"
+		},
+		{
+			item: "modulardiversity:blockemberinputhatch 1 1"
+		}]
+	},
+	{
+		uid: "063bd77a",
+		type: "item",
+		items: [{
+			item: "embers:archaic_edge"
+		}],
+		count: 4L
+	},
+	{
+		uid: "1758b4c8",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing"
+		}],
+		count: 9L
+	},
+	{
+		uid: "39705353",
+		type: "item",
+		items: [{
+			item: "embers:archaic_light"
+		}]
+	}],
+	rewards: [{
+		uid: "b56cc0f2",
+		type: "item",
+		item: "contenttweaker:prismarine_nugget",
+		count: 3
+	}]
+}

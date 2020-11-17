@@ -175,7 +175,7 @@ scripts.helpers.AddTooltip(<botania:specialflower>.withTag({type: "puredaisy"}),
 
 //Basic Mana Spreader
 recipes.remove(<botania:spreader>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <botania:spreader>, [
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:spreader>), scripts.staging.stages.Botania1.stage, <botania:spreader>, [
 	[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>],
 	[<ore:plateGold>, scripts.helpers.AnyPetalOrShroom, null],
 	[<ore:livingwood>, <ore:livingwood>, <ore:livingwood>]

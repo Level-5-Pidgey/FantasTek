@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: 1.0d,
+	dependencies: [
+		"5b60da2e"
+	],
+	tasks: [{
+		uid: "d4d8291f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crystal_ember_fire"
+		}]
+	}]
+}
