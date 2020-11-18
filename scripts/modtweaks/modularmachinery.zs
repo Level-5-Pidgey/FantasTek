@@ -5,7 +5,7 @@ print("~~~ Begin Modular Machinery Init ~~~");
 
 //Change Modularium Recipes
 recipes.removeByRecipeName("modularmachinery:modularium_ingot");
-mods.extendedcrafting.TableCrafting.addShapeless(0, <modularmachinery:itemmodularium> * 4, [<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotGold>, <ore:ingotGold>, <ore:dustRedstone>, <ore:dustGlowstone>]);
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemmodularium>), <modularmachinery:itemmodularium> * 4, [[<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotGold>, <ore:ingotGold>, <ore:dustRedstone>, <ore:dustGlowstone>]]);
 
 //Add Modularium Alloying/Casting
 mods.tconstruct.Alloy.addRecipe(<liquid:modularium> * 288, [<liquid:black_iron> * 288, <liquid:redstone> * 50, <liquid:gold> * 144, <liquid:glowstone> * 125]);
@@ -336,6 +336,77 @@ for burnItem, powerOutput in EmberPlant
 	EmberPowerProduction.addItemInput(burnItem);
 	EmberPowerProduction.addEnergyPerTickOutput(powerOutput / 200);
 	EmberPowerProduction.build();
+}
+
+//Add Thaumcraft Power Production Recipes
+var ThaumcraftCrystalGen as int[IItemStack] =
+{
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) : 500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) : 500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) : 500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) : 500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) : 500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) : 500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mortuus"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "metallum"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vacuos"}]}) : 1200,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "auram"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alkimia"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "herba"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "instrumentum"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vinculum"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]}) : 2000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "machina"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "desiderium"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "exanimis"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "bestia"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mythus"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "draco"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aversio"}]}) : 2800,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praemunio"}]}) : 2800
+};
+
+for burnItem, powerOutput in ThaumcraftCrystalGen
+{
+	var ThaumicPowerProduction = RecipeBuilder.newBuilder("thaumic_energy_" ~ burnItem.displayName, "thaumic_energy_converter", 60);
+	ThaumicPowerProduction.addItemInput(burnItem);
+	ThaumicPowerProduction.addEnergyPerTickOutput(powerOutput / 60);
+
+	//Add some output items for more valuable crystals
+	if(powerOutput >= 1200)
+	{
+		ThaumicPowerProduction.addItemOutput(<thaumcraft:nugget:5>);
+		ThaumicPowerProduction.setChance(0.05);
+	}
+	if(powerOutput >= 2000)
+	{
+
+		ThaumicPowerProduction.addItemOutput(<thermalfoundation:material:16>);
+		ThaumicPowerProduction.setChance(0.02);
+		ThaumicPowerProduction.addItemOutput(<extendedcrafting:material:129>);
+		ThaumicPowerProduction.setChance(0.02);
+	}
+	if(powerOutput >= 2800)
+	{
+		ThaumicPowerProduction.addItemOutput(<thaumcraft:nugget:10>);
+		ThaumicPowerProduction.setChance(0.01);
+	}
+	ThaumicPowerProduction.build();
 }
 
 print("### Modular Machinery Init Complete ###");

@@ -22,9 +22,11 @@
 		count: 4L
 	}],
 	rewards: [{
-		uid: "5e3b1edc",
-		type: "item",
-		item: "thaumcraft:tallow",
-		count: 2
+		uid: "8c4445fa",
+		type: "command",
+		title: "Unlock the ability to grow Vis Crystals",
+		icon: "thaumcraft:crystal_ordo",
+		auto: "enabled",
+		command: "/tc research @p CRYSTALFARMER"
 	}]
 }

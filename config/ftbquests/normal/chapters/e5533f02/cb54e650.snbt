@@ -1,5 +1,6 @@
 {
 	title: "&6Pressured Plates (and other Gizmos)",
+	icon: "futuremc:netherite_scrap",
 	x: 8.0d,
 	y: 2.5d,
 	shape: "gear",
@@ -14,10 +15,44 @@
 	tasks: [{
 		uid: "e7640d26",
 		type: "item",
+		title: "Craft 8 Coal Plates using the Stamper",
 		items: [{
 			item: "jaopca:item_platecoal"
 		}],
 		count: 8L,
 		consume_items: true
+	},
+	{
+		uid: "142a3623",
+		type: "item",
+		title: "Craft 8 Gold Plates using the Stamper",
+		items: [{
+			item: "thermalfoundation:material 1 33"
+		}],
+		count: 8L
+	},
+	{
+		uid: "67fe57e8",
+		type: "item",
+		title: "Craft 16 Iron Plates using the Stamper",
+		items: [{
+			item: "thermalfoundation:material 1 32"
+		}],
+		count: 16L
+	},
+	{
+		uid: "797f5420",
+		type: "item",
+		title: "Craft 4 Emerald Plates using the Stamper",
+		items: [{
+			item: "jaopca:item_plateemerald"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "7b564e0e",
+		type: "item",
+		item: "futuremc:netherite_scrap",
+		count: 3
 	}]
 }

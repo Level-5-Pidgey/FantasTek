@@ -1,0 +1,38 @@
+{
+	title: "&6Gold and Plunder",
+	x: 7.5d,
+	y: -1.5d,
+	shape: "gear",
+	description: "Set the heavens asunder!",
+	text: [
+		"When mining ores such as &eCoal&r, &eRedstone&r or &eDiamonds&r, you may also get some &bRare Earths&r.",
+		"",
+		"These &bRare Earths&r are extremely important later on, and should be saved whenever possible! They seem to be magically reactive, and will surely",
+		"prove useful down the road. If you could send us some for some lab analysis that'd be amazing and we will get back to you with results when possible!"
+	],
+	dependencies: [
+		"6a21a24b"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "972b8218",
+		type: "item",
+		items: [{
+			item: "thaumcraft:nugget 1 10"
+		}],
+		count: 8L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "0f12759d",
+		type: "item",
+		item: "thaumcraft:amber",
+		count: 8
+	},
+	{
+		uid: "edc09ddc",
+		type: "item",
+		item: "thaumcraft:quicksilver",
+		count: 8
+	}]
+}

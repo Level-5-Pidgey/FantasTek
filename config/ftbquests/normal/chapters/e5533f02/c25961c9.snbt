@@ -23,6 +23,7 @@
 	tasks: [{
 		uid: "f2849f14",
 		type: "forge_energy",
+		title: "Submit 50,000 RF",
 		value: 50000L
 	}]
 }

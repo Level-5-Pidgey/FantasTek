@@ -1,4 +1,5 @@
 {
+	title: "Craft an Ember Bore",
 	x: 1.0d,
 	y: 0.0d,
 	dependencies: [

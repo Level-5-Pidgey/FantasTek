@@ -1,0 +1,114 @@
+{
+	x: 9.5d,
+	y: 0.0d,
+	dependencies: [
+		"80f371ea"
+	],
+	tasks: [{
+		uid: "7184a85d",
+		type: "item",
+		title: "Create the blueprint for the Thaumic Crystal Condenser",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:thaumic_energy_converter"
+			}
+		}]
+	},
+	{
+		uid: "e4fcbc81",
+		type: "item",
+		title: "Craft a Machine Controller",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "cd4463fd",
+		type: "item",
+		title: "Craft 8x Oak Bookshelves",
+		items: [{
+			item: "minecraft:bookshelf"
+		}],
+		count: 8L
+	},
+	{
+		uid: "7a574f1b",
+		type: "item",
+		title: "Craft 5x Reinforced Machine Casings",
+		items: [{
+			item: "modularmachinery:blockcasing 1 4"
+		}],
+		count: 5L
+	},
+	{
+		uid: "6305ec6b",
+		type: "item",
+		title: "Craft 5x Greatwood Slabs",
+		items: [{
+			item: "thaumcraft:slab_greatwood"
+		}],
+		count: 5L
+	},
+	{
+		uid: "08fb2dca",
+		type: "item",
+		title: "Obtain 4x Greatwood",
+		items: [{
+			item: "thaumcraft:plank_greatwood"
+		}],
+		count: 4L
+	},
+	{
+		uid: "5c40bb4e",
+		type: "item",
+		title: "Create 2x Blocks of Flesh",
+		items: [{
+			item: "thaumcraft:flesh_block"
+		}],
+		count: 2L
+	},
+	{
+		uid: "c0b5ef5b",
+		type: "item",
+		title: "Craft 9x Stone Bricks",
+		items: [{
+			item: "minecraft:stonebrick"
+		}],
+		count: 9L
+	},
+	{
+		uid: "bceebab9",
+		type: "item",
+		title: "Craft an Item Input",
+		items: [{
+			item: "modularmachinery:blockinputbus"
+		},
+		{
+			item: "modularmachinery:blockinputbus 1 1"
+		},
+		{
+			item: "modularmachinery:blockinputbus 1 2"
+		}]
+	},
+	{
+		uid: "5c660757",
+		type: "item",
+		title: "Craft an Energy Output",
+		items: [{
+			item: "modularmachinery:blockenergyoutputhatch"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 1"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "e43b9ae5",
+		type: "item",
+		item: "thermaldynamics:duct_0",
+		count: 8
+	}]
+}

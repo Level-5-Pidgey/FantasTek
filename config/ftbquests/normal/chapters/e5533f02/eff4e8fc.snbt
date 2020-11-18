@@ -9,6 +9,7 @@
 	tasks: [{
 		uid: "06980ef1",
 		type: "item",
+		title: "Create the blueprint for an Ember Energy Converter",
 		items: [{
 			id: "modularmachinery:itemblueprint",
 			tag: {
@@ -19,6 +20,7 @@
 	{
 		uid: "5723d0a7",
 		type: "item",
+		title: "Craft a Machine Controller",
 		items: [{
 			item: "modularmachinery:blockcontroller"
 		}]
@@ -51,6 +53,7 @@
 	{
 		uid: "f2bbc1b4",
 		type: "item",
+		title: "Craft 5x Archaic Bricks",
 		items: [{
 			item: "embers:block_caminite_brick"
 		}],
@@ -59,6 +62,7 @@
 	{
 		uid: "57e621cf",
 		type: "item",
+		title: "Craft 13x Ashen Stone",
 		items: [{
 			item: "embers:ashen_stone"
 		}],
@@ -67,6 +71,7 @@
 	{
 		uid: "36614d42",
 		type: "item",
+		title: "Craft 4x Ashen Stone Slabs",
 		items: [{
 			item: "embers:ashen_stone_slab"
 		}],
@@ -75,6 +80,7 @@
 	{
 		uid: "566f0f2c",
 		type: "item",
+		title: "Craft 2x Ashen Tiles",
 		items: [{
 			item: "embers:ashen_tile"
 		}],

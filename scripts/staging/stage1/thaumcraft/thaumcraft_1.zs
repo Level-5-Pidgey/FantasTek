@@ -124,6 +124,7 @@ val Stage1ThaumcraftItems = [
 	<thaumcraft:tallow>,
 	<thaumcraft:everfull_urn>,
 	<thaumcraft:activator_rail>,
+	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"}),
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1ThaumcraftItems

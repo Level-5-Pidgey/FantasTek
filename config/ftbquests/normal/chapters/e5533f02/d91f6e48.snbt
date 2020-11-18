@@ -7,6 +7,7 @@
 	tasks: [{
 		uid: "d4d8291f",
 		type: "item",
+		title: "Assemble a fire-empowered ember crystal",
 		items: [{
 			item: "contenttweaker:crystal_ember_fire"
 		}]

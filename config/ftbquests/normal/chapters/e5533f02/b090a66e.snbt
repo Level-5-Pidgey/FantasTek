@@ -7,6 +7,7 @@
 	tasks: [{
 		uid: "f2d7f3fb",
 		type: "item",
+		title: "Obtain an Ancient Motive Core by killing an Ancient Golem",
 		items: [{
 			item: "embers:ancient_motive_core"
 		}]

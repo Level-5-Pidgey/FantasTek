@@ -7,6 +7,7 @@
 	tasks: [{
 		uid: "0d62a794",
 		type: "item",
+		title: "Obtain 12x Ember Shards from your Ember Bore",
 		items: [{
 			item: "embers:shard_ember"
 		}],

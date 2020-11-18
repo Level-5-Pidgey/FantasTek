@@ -1,8 +1,7 @@
 {
 	title: "Candlelit Dinner",
 	x: 8.5d,
-	y: 1.0d,
-	shape: "hexagon",
+	y: 0.0d,
 	description: "Finest wining and dining in town!",
 	text: [
 		"With magic tallow, you should be able to create beautiful scenic candles that can be placed as a light source, or used later down the line to amplify",

@@ -8,6 +8,7 @@
 	tasks: [{
 		uid: "6234f69a",
 		type: "item",
+		title: "Craft a Stamper",
 		items: [{
 			item: "embers:stamper"
 		}]
@@ -15,6 +16,7 @@
 	{
 		uid: "a83b65df",
 		type: "item",
+		title: "Craft a Stamp Base",
 		items: [{
 			item: "embers:stamper_base"
 		}]

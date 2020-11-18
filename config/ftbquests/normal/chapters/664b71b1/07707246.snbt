@@ -7,6 +7,7 @@
 	tasks: [{
 		uid: "53a0ee5f",
 		type: "item",
+		title: "Craft some Scribing Tools",
 		items: [{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}

@@ -8,6 +8,7 @@
 	tasks: [{
 		uid: "aa3e485a",
 		type: "item",
+		title: "Craft an Atmospheric Gauge",
 		items: [{
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
@@ -16,5 +17,17 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "42f348ea",
+		type: "item",
+		item: "embers:shard_ember",
+		count: 12
+	},
+	{
+		uid: "e982580c",
+		type: "item",
+		item: "minecraft:clay",
+		count: 8
 	}]
 }

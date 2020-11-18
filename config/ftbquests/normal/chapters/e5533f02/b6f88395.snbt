@@ -1,4 +1,5 @@
 {
+	title: "Craft an Ember Activator",
 	x: 3.0d,
 	y: 0.0d,
 	dependencies: [
@@ -10,5 +11,11 @@
 		items: [{
 			item: "embers:ember_activator"
 		}]
+	}],
+	rewards: [{
+		uid: "a92a4bf9",
+		type: "item",
+		item: "minecraft:soul_sand",
+		count: 8
 	}]
 }

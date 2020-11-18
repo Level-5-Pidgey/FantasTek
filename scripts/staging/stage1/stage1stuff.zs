@@ -525,6 +525,7 @@ val StageLessItems = [
 	<forestry:crafting_material:2>,
 	<extendedcrafting:interface>,
 	<enderio:item_material:77>,
+	<thaumcraft:nugget:10>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

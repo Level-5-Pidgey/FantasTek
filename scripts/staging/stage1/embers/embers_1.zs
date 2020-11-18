@@ -35,6 +35,7 @@ val Stage1EmbersItems = [
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}),
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}),
 	<embers:archaic_light>,
+	<embers:archaic_edge>,
 	<embers:ember_gauge>,
 	<embers:fluid_gauge>,
 	<embers:ember_detector>,
