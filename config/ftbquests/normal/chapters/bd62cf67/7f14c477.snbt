@@ -6,7 +6,9 @@
 	description: "Bigger and Better Chests!",
 	text: [
 		"Whilst a standard vanilla double chest is good and all, sometimes you will need or want better storage space in a compact area.",
+		"",
 		"The chest builder allows you to create highly customizable chests, where you can set the color and size as you like, and the resource cost will change depending on your specifications!",
+		"",
 		"The more efficient your plate manufacturing method is, the easier it will be to create chests within the builder!"
 	],
 	dependencies: [

@@ -15,7 +15,7 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 	//Standard Ore
 	if(!oreBlock.empty)
 	{
-		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore, "ore_washing_factory", 80);
+		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore, "ore_washing_factory", 60);
 		RecipeToAdd.addItemInput(oreBlock);
 		RecipeToAdd.addFluidInput(<liquid:meat> * 200);
 		RecipeToAdd.addEnergyPerTickInput(75 * (oreTier + 1));
@@ -32,7 +32,7 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 	//Dense Ore
 	if(!oreDouble.empty)
 	{
-		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore ~ "_double", "ore_washing_factory", 160);
+		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore ~ "_double", "ore_washing_factory", 120);
 		RecipeToAdd.addItemInput(oreDouble);
 		RecipeToAdd.addFluidInput(<liquid:meat> * 400);
 		RecipeToAdd.addEnergyPerTickInput(150 * (oreTier + 1));
@@ -53,7 +53,7 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 	//Standard Ore
 	if(!oreBlock.empty & !oreCrystal.empty)
 	{
-		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore, "chemical_ore_factory", 160);
+		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore, "chemical_ore_factory", 40);
 		RecipeToAdd.addItemInput(oreBlock);
 		RecipeToAdd.addGasInput("sulfuricacid", 100);
 		RecipeToAdd.addFluidInput(<liquid:water> * 200);
@@ -70,7 +70,7 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 	//Dense Ore
 	if(!oreDouble.empty & !oreCrystal.empty)
 	{
-		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore ~ "_double", "chemical_ore_factory", 320);
+		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore ~ "_double", "chemical_ore_factory", 80);
 		RecipeToAdd.addItemInput(oreDouble);
 		RecipeToAdd.addGasInput("sulfuricacid", 200);
 		RecipeToAdd.addFluidInput(<liquid:water> * 400);
@@ -84,7 +84,7 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 //Ember Assembly Plant
 function AddEmberAssemblyRecipe(recipeName as string, item as crafttweaker.item.IItemStack, input as crafttweaker.item.IItemStack[], emberCost as double)
 {
-	var RecipeToAdd = RecipeBuilder.newBuilder(recipeName, "ember_assembly_plant", (20 * (emberCost / 10)) as int);
+	var RecipeToAdd = RecipeBuilder.newBuilder(recipeName, "ember_assembly_plant", (10 * (emberCost / 20)) as int);
 	for item in input
 	{
 		RecipeToAdd.addItemInput(item);

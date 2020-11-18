@@ -14,10 +14,13 @@ for item in shopItems
 }
 
 //Make Ineffable Glass/Ethereal Glass require unstable ingots
-recipes.remove(<extrautils2:ineffableglass:2>);
-recipes.remove(<extrautils2:ineffableglass>);
-recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:2>), <extrautils2:ineffableglass:2> * 8, [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:ingotUnstable>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
-recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass>), <extrautils2:ineffableglass:2> * 8, [[<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <ore:ingotUnstable>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>]]);
+recipes.remove(<extrautils2:ineffableglass:*>);
+recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass>), <extrautils2:ineffableglass> * 8, [[<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <ore:ingotUnstable>, <extrautils2:decorativeglass>], [<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>]]); //Base Ineffable Glass
+recipes.addShapeless(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:1>), <extrautils2:ineffableglass:1>, [<extrautils2:ineffableglass>, <minecraft:redstone_torch>]); //Inverted Ineffable Glass
+recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:2>), <extrautils2:ineffableglass:2> * 8, [[<extrautils2:ineffableglass>, <extrautils2:ineffableglass>, <extrautils2:ineffableglass>], [<extrautils2:ineffableglass>, <ore:ingotUnstable>, <extrautils2:ineffableglass>], [<extrautils2:ineffableglass>, <extrautils2:ineffableglass>, <extrautils2:ineffableglass>]]); //Clear Ineffable Glass
+recipes.addShaped(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:3>), <extrautils2:ineffableglass:3> * 8, [[<extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>], [<extrautils2:ineffableglass:2>, <ore:gemMoon>, <extrautils2:ineffableglass:2>], [<extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>]]); //Clear Dark Ineffable Glass
+
+
 
 //Remove the Glass Cutter and Ender Shard
 scripts.helpers.unstageAndHide(<extrautils2:glasscutter>);

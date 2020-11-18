@@ -23,5 +23,11 @@
 		items: [{
 			item: "magneticraft:container"
 		}]
+	}],
+	rewards: [{
+		uid: "49827eeb",
+		type: "item",
+		item: "minecraft:gold_ingot",
+		count: 10
 	}]
 }

@@ -1,0 +1,89 @@
+{
+	title: "Ember RF Generation",
+	icon: "embers:dust_ember",
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"d91f6e48"
+	],
+	tasks: [{
+		uid: "06980ef1",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:embers_converter"
+			}
+		}]
+	},
+	{
+		uid: "5723d0a7",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "15eef997",
+		type: "item",
+		title: "Create an Energy Output",
+		items: [{
+			item: "modularmachinery:blockenergyoutputhatch"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 1"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 2"
+		}]
+	},
+	{
+		uid: "83fd64fe",
+		type: "item",
+		title: "Create an Ember Input",
+		items: [{
+			item: "modulardiversity:blockemberinputhatch"
+		},
+		{
+			item: "modulardiversity:blockemberinputhatch 1 1"
+		}]
+	},
+	{
+		uid: "f2bbc1b4",
+		type: "item",
+		items: [{
+			item: "embers:block_caminite_brick"
+		}],
+		count: 5L
+	},
+	{
+		uid: "57e621cf",
+		type: "item",
+		items: [{
+			item: "embers:ashen_stone"
+		}],
+		count: 13L
+	},
+	{
+		uid: "36614d42",
+		type: "item",
+		items: [{
+			item: "embers:ashen_stone_slab"
+		}],
+		count: 4L
+	},
+	{
+		uid: "566f0f2c",
+		type: "item",
+		items: [{
+			item: "embers:ashen_tile"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "36d41857",
+		type: "item",
+		item: "thermaldynamics:duct_0",
+		count: 8
+	}]
+}

@@ -55,6 +55,7 @@ recipes.remove(<embers:codex>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<embers:codex>), <embers:codex>, [<ore:book>, <embers:archaic_brick>]);
 
 //Add Archaic Brick Recipe
+furnace.remove(<natura:nether_glass>);
 furnace.addRecipe(<embers:archaic_brick>, <minecraft:soul_sand>, 0.1);
 
 //Recipe Changes
@@ -67,6 +68,7 @@ val embers_CRAFTINGTABLE = {
 		<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}) : [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]],
 		<embers:ember_gauge> : [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateGold>]],
 		<embers:fluid_gauge> : [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateIron>]],
+		<embers:ember_detector> : [[null, <embers:archaic_brick>, null], [<embers:archaic_brick>, <minecraft:compass>, <embers:archaic_brick>], [null, <embers:archaic_brick>, null]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in embers_CRAFTINGTABLE {
@@ -79,21 +81,14 @@ val embers_EXTENDEDCRAFTING = {
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}) : [[null, <enderio:item_material:77>, null], [<enderio:item_material:77>, <embers:ancient_motive_core>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]],
 	<embers:stamper> : [[<embers:brick_caminite>, <ore:plateIron>.firstItem, <embers:brick_caminite>], [<embers:brick_caminite>, <ore:ingotIron>.firstItem, <embers:brick_caminite>], [<embers:brick_caminite>, null, <embers:brick_caminite>]],
 	<embers:stamper_base> : [[<ore:ingotIron>.firstItem, null, <ore:ingotIron>.firstItem], [<embers:brick_caminite>, null, <embers:brick_caminite>], [<embers:brick_caminite>, <minecraft:bucket>, <embers:brick_caminite>]],
+	<embers:block_furnace> : [[<embers:brick_caminite>, <embers:plate_caminite>, <embers:brick_caminite>],
+	[<embers:brick_caminite>, <contenttweaker:crystal_ember_fire>, <embers:brick_caminite>],
+	[<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>]]
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in embers_EXTENDEDCRAFTING {
 	recipes.remove(key.withAmount(1));
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
-}
-
-//Melter Recipe
-for item in scripts.helpers.AllFireT1Items
-{
-	mods.extendedcrafting.TableCrafting.addShaped(0, <embers:block_furnace>, [
-		[<embers:brick_caminite>, <embers:plate_caminite>, <embers:brick_caminite>],
-		[<embers:brick_caminite>, item, <embers:brick_caminite>],
-		[<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>]
-	]);
 }
 
 print("### Embers Init Complete ###");

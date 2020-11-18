@@ -36,4 +36,11 @@ for item in shopItems
 	scripts.helpers.AddTooltip(item, ["Cannot be crafted.", "Purchasable from various villagers."]);
 }
 
+//Craft Nature Cores
+for wood in <ore:logWood>.items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:naturecore>, [[wood, <ore:plateEmerald>.firstItem, wood], [<ore:plateEmerald>.firstItem, <botania:overgrowthseed>, <ore:plateEmerald>.firstItem], [wood, <ore:plateEmerald>.firstItem, wood]]);
+}
+
+
 print("### Random Things Init Complete ###");

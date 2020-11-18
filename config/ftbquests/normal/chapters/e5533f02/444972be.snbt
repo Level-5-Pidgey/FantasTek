@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	dependencies: [
+		"d91f6e48"
+	],
+	tasks: [{
+		uid: "e4312176",
+		type: "item",
+		items: [{
+			item: "embers:block_furnace"
+		}]
+	}],
+	rewards: [{
+		uid: "6358f840",
+		type: "item",
+		item: "embers:caminite_lever",
+		count: 4
+	}]
+}

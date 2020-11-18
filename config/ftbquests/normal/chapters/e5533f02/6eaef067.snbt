@@ -1,9 +1,9 @@
 {
 	icon: "embers:stamper",
-	x: 6.0d,
+	x: 8.0d,
 	y: 1.0d,
 	dependencies: [
-		"d91f6e48"
+		"444972be"
 	],
 	tasks: [{
 		uid: "6234f69a",
@@ -18,5 +18,20 @@
 		items: [{
 			item: "embers:stamper_base"
 		}]
+	}],
+	rewards: [{
+		uid: "447cd789",
+		type: "item",
+		item: "embers:stamp_bar_raw"
+	},
+	{
+		uid: "a869e404",
+		type: "item",
+		item: "embers:stamp_plate_raw"
+	},
+	{
+		uid: "8d192696",
+		type: "item",
+		item: "embers:stamp_gear_raw"
 	}]
 }

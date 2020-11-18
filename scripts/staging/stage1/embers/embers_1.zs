@@ -37,6 +37,7 @@ val Stage1EmbersItems = [
 	<embers:archaic_light>,
 	<embers:ember_gauge>,
 	<embers:fluid_gauge>,
+	<embers:ember_detector>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1EmbersItems

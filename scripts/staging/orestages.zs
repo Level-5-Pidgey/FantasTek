@@ -551,6 +551,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Invar" : stages.progression2,
   "Constantan" : stages.progression2,
   "Signalum" : stages.progression2,
+  "Bronze" : stages.progression2,
   "Lumium" : stages.progression2,
   "Manasteel" : stages.Botania1,
 };

@@ -62,7 +62,8 @@ val otherItems = [
 	<xreliquary:void_tear>,
 	<xreliquary:rending_gale>,
 	<xreliquary:hero_medallion>,
-	<xreliquary:witherless_rose>
+	<xreliquary:witherless_rose>,
+	<extrautils2:ineffableglass:*>
 ] as crafttweaker.item.IItemStack[];
 
 for item in otherItems

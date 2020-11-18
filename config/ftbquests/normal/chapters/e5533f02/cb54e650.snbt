@@ -1,0 +1,23 @@
+{
+	title: "&6Pressured Plates (and other Gizmos)",
+	x: 8.0d,
+	y: 2.5d,
+	shape: "gear",
+	description: "Stamp your way to victory!",
+	text: [
+		""
+	],
+	dependencies: [
+		"6eaef067"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "e7640d26",
+		type: "item",
+		items: [{
+			item: "jaopca:item_platecoal"
+		}],
+		count: 8L,
+		consume_items: true
+	}]
+}

@@ -1,6 +1,6 @@
 {
 	title: "A Nerd's Job",
-	x: -5.5d,
+	x: -3.5d,
 	y: 4.0d,
 	description: "Documentation is vital!",
 	text: [

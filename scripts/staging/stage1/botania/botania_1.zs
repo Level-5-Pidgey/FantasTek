@@ -301,7 +301,10 @@ val StageLessItems = [
   <botania:lexicon>,
   <botania:enchantedsoil>,
   <botania:cosmetic:*>,
-  <botania:felpumpkin>
+  <botania:felpumpkin>,
+  <botania:overgrowthseed>,
+  <botania:blacklotus>,
+  <botania:blacklotus:1>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

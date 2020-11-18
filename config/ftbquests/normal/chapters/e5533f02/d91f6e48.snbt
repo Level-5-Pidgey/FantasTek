@@ -10,5 +10,11 @@
 		items: [{
 			item: "contenttweaker:crystal_ember_fire"
 		}]
+	}],
+	rewards: [{
+		uid: "b56e432d",
+		type: "item",
+		item: "embers:archaic_brick",
+		count: 16
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "Future Blocks",
 	icon: "futuremc:blast_furnace",
-	x: -3.5d,
+	x: -5.5d,
 	y: 4.0d,
 	shape: "hexagon",
 	description: "Some of your favourites have returned!",

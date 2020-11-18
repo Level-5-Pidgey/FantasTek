@@ -219,4 +219,8 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool>, [
 //Remove Cosmetics Recipes
 recipes.remove(<botania:cosmetic:*>);
 
+//Blacker Lotus Dye Conversion
+recipes.addShapeless(scripts.helpers.createRecipeName(<botania:blacklotus>), <futuremc:dye:3>, [<botania:blacklotus>]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<botania:blacklotus:1>), <futuremc:dye:3> * 4, [<botania:blacklotus:1>]);
+
 print("### Botania Init Complete ###");

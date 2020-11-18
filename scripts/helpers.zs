@@ -336,7 +336,7 @@ function setItemAndRecipesStage(itemToStage as crafttweaker.item.IItemStack, sta
 function createTierTooltip(prefixString as string, tier as int, plus1 as bool, suffixString as string) as crafttweaker.formatting.IFormattedText
 {
 	var tierNumberAsColouredText as crafttweaker.formatting.IFormattedText = "";
-	var modifiedTier as int = 0;
+	var modifiedTier as int = tier;
 
 	//If we want to "plus one" the numerical value, do so here
 	if(plus1)

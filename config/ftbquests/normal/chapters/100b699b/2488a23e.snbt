@@ -5,6 +5,7 @@
 	description: "Take care of yourself!",
 	text: [
 		"Even though the whole \"blood sacrifice\" thing fell out of fashion centuries ago with the Aztecs, if you really feel like giving it another go be our guest.",
+		"",
 		"We do have a rather nice life insurance policy on you so please do stab your heart out!"
 	],
 	dependencies: [

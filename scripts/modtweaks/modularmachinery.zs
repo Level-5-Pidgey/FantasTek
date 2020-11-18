@@ -323,18 +323,18 @@ var EmberPlant as int[IItemStack] =
 {
 	<embers:crystal_ember> : 3600,
 	<embers:shard_ember> : 600,
-	<embers:ancient_motive_core> : 20000,
-	<contenttweaker:crystal_ember_fire> : 32500,
-	<contenttweaker:crystal_ember_water> : 32500,
-	<contenttweaker:crystal_ember_earth> : 32500,
-	<contenttweaker:crystal_ember_air> : 32500
+	<embers:ancient_motive_core> : 15000,
+	<contenttweaker:crystal_ember_fire> : 25000,
+	<contenttweaker:crystal_ember_water> : 25000,
+	<contenttweaker:crystal_ember_earth> : 25000,
+	<contenttweaker:crystal_ember_air> : 25000
 };
 
 for burnItem, powerOutput in EmberPlant
 {
-	var EmberPowerProduction = RecipeBuilder.newBuilder("embers_converter_" ~ burnItem.displayName, "embers_converter", 20);
+	var EmberPowerProduction = RecipeBuilder.newBuilder("embers_converter_" ~ burnItem.displayName, "embers_converter", 200);
 	EmberPowerProduction.addItemInput(burnItem);
-	EmberPowerProduction.addEnergyPerTickInput(powerOutput / 20);
+	EmberPowerProduction.addEnergyPerTickOutput(powerOutput / 200);
 	EmberPowerProduction.build();
 }
 

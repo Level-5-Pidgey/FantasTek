@@ -1,5 +1,5 @@
 
-print("~~~ Begin  Quark Init ~~~");
+print("~~~ Begin Quark Init ~~~");
 
 //Add Tooltips for various blocks to explain their uses
 var quarkTooltips =

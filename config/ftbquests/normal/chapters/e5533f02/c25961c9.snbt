@@ -1,0 +1,28 @@
+{
+	title: "&6Ember for the future Generations",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "embers:ember_detector"
+	},
+	x: 6.0d,
+	y: -1.5d,
+	shape: "gear",
+	description: "Fire up those Ember Activators!",
+	text: [
+		"Generating power with Ember Energy is extremely simple, due to the makeup of the crystals you've been harvesting up out of the ground.",
+		"",
+		"By pumping crystals (or better yet, elementally improved ones) into an &bEmber Energy Converter&r, you can generate RF that can power standard",
+		"machinery we're used to."
+	],
+	dependencies: [
+		"eff4e8fc"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "f2849f14",
+		type: "forge_energy",
+		value: 50000L
+	}]
+}

@@ -19,5 +19,11 @@
 		items: [{
 			item: "forestry:bee_house"
 		}]
+	}],
+	rewards: [{
+		uid: "a4d4ba17",
+		type: "item",
+		item: "contenttweaker:currency_500",
+		count: 2
 	}]
 }
