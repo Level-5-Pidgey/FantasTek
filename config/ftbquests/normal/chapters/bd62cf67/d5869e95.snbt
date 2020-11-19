@@ -6,7 +6,7 @@
 		},
 		id: "tconstruct:slimesling"
 	},
-	x: 14.5d,
+	x: 12.5d,
 	y: 4.0d,
 	shape: "octagon",
 	description: "Slime flies when you're having fun",

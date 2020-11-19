@@ -84,7 +84,7 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 //Ember Assembly Plant
 function AddEmberAssemblyRecipe(recipeName as string, item as crafttweaker.item.IItemStack, input as crafttweaker.item.IItemStack[], emberCost as double)
 {
-	var RecipeToAdd = RecipeBuilder.newBuilder(recipeName, "ember_assembly_plant", (10 * (emberCost / 20)) as int);
+	var RecipeToAdd = RecipeBuilder.newBuilder(recipeName, "ember_assembly_plant", (5 * (emberCost / 20)) as int);
 	for item in input
 	{
 		RecipeToAdd.addItemInput(item);

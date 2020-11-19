@@ -178,6 +178,6 @@ mods.thaumcraft.Crucible.registerRecipe("thaumiumIngot", "BASEALCHEMY", <thaumcr
 mods.thaumcraft.Crucible.registerRecipe("thaumiumIngotCrude", "BASEALCHEMY", <thaumcraft:ingot>, <ore:ingotCrudeSteel>, [<aspect:terra> * 5, <aspect:praecantatio> * 5]);
 
 //Add Recipe for Thamic Energy Converter Multiblock
-recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"})), <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"}), [[<thaumcraft:candle_white>, <ore:paperBlack>, <thaumcraft:candle_white>], [<ore:paperBlack>, <thaumcraft:alumentum>, <ore:paperBlack>], [<thaumcraft:candle_white>, <ore:paperBlack>, <thaumcraft:candle_white>]]);
-
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"})) ~ "_tec", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"}), [[<thaumcraft:candle_white>, <ore:paperBlack>, <thaumcraft:candle_white>], [<ore:paperBlack>, <thaumcraft:alumentum>, <ore:paperBlack>], [<thaumcraft:candle_white>, <ore:paperBlack>, <thaumcraft:candle_white>]]);
+scripts.helpers.AddTooltip(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"}), ["Requires an Energy Output and both an item Input + Output.", "Can be put on either side."]);
 print("### Thaumcraft Init Complete ###");

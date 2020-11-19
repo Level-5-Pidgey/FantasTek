@@ -1,7 +1,7 @@
 {
 	title: "Spread the Love",
-	x: 8.5d,
-	y: 0.0d,
+	x: -1.5d,
+	y: 8.0d,
 	description: "Only really fun if you're playing on multiplayer...",
 	text: [
 		"If your experience is shared with other Pioneers, then a mail system is the way to go for sharing gifts and sending messages remotely.",
@@ -10,7 +10,7 @@
 		"item stack you attach. You can access your own mailbox inventory by opening any mailbox in a world."
 	],
 	dependencies: [
-		"cfdc4258"
+		"7b16dd8a"
 	],
 	tasks: [{
 		uid: "f7d61dc7",

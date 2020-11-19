@@ -1,7 +1,7 @@
 {
 	title: "Mind your own Beeness",
 	icon: "futuremc:beehive",
-	x: 14.5d,
+	x: 12.5d,
 	y: 6.0d,
 	description: "These puns have gotta sting...",
 	text: [

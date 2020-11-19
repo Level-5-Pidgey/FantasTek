@@ -1,8 +1,8 @@
 {
 	title: "&6Pressured Plates (and other Gizmos)",
 	icon: "futuremc:netherite_scrap",
-	x: 8.0d,
-	y: 2.5d,
+	x: 9.0d,
+	y: 2.0d,
 	shape: "gear",
 	description: "Stamp your way to victory!",
 	text: [

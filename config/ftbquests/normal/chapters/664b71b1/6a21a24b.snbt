@@ -24,9 +24,9 @@
 	rewards: [{
 		uid: "8c4445fa",
 		type: "command",
-		title: "Unlock the ability to grow Vis Crystals",
-		icon: "thaumcraft:crystal_ordo",
+		title: "Unlock research on Thaumic Ores",
+		icon: "thaumcraft:ore_amber",
 		auto: "enabled",
-		command: "/tc research @p CRYSTALFARMER"
+		command: "/tc research @p ORES"
 	}]
 }

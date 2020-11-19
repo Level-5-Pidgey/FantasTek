@@ -1,4 +1,5 @@
 {
+	icon: "minecraft:end_crystal",
 	x: 9.5d,
 	y: 0.0d,
 	dependencies: [

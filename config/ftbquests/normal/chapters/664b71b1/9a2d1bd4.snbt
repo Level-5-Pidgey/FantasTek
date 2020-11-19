@@ -1,0 +1,26 @@
+{
+	title: "&6Creating Current Contrived from Crystals",
+	icon: "thaumcraft:curio",
+	x: 11.0d,
+	y: 0.0d,
+	shape: "gear",
+	description: "Power from aspects!",
+	text: [
+		"Thanks to the research you did breaking down flesh into magic tallow, we think we can provide you with a blueprint for a power source using",
+		"&eThaumcraft Aspects&r in a crystalline form. ",
+		"",
+		"By providing &eVis Crystals&r to the &bThaumic Crystal Condenser&r, you should be able to break down",
+		"these aspects into pure energy. &eYou should be able to gain more power from more complex aspects&r, and &epossibly gain valuable byproducts",
+		"depending on what you break down!&r"
+	],
+	dependencies: [
+		"89c82f72"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "16246357",
+		type: "forge_energy",
+		title: "Submit 50,000 RF",
+		value: 50000L
+	}]
+}

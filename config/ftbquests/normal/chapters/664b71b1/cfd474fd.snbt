@@ -20,7 +20,7 @@
 		items: [{
 			item: "thaumcraft:nugget 1 10"
 		}],
-		count: 8L,
+		count: 10L,
 		consume_items: true
 	}],
 	rewards: [{
