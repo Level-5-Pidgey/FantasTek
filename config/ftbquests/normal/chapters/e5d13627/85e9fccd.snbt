@@ -1,7 +1,7 @@
 {
 	title: "On the Grind",
-	x: -1.5d,
-	y: 1.5d,
+	x: 0.5d,
+	y: -1.5d,
 	shape: "rsquare",
 	description: ":pensive: :fist:",
 	text: [

@@ -6,8 +6,18 @@ print("~~~ Begin Stage 2 Thaumcraft Staging ~~~");
 var stageString = stages.Thaumcraft2.stage;
 
 //Mod Staging
-mods.ItemStages.stageModItems(stageString, "thaumcraft");
-mods.ItemStages.stageModItems(stageString, "thaumicperiphery");
+val ThaumcraftMods = [
+  "thaumicperiphery",
+  "thaumcraft"
+] as string[];
+
+for modTag in ThaumcraftMods
+{
+	for item in loadedMods[modTag].items
+	{
+		scripts.helpers.setItemAndRecipesStage(item, stageString);
+	}
+}
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List

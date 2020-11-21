@@ -247,13 +247,13 @@ static StageForProcessingTier as Stage[int]=
 {
 	0 : stages.progression1,
 	1 : stages.progression1,
-	2 : stages.Locked,
-	3 : stages.Locked,
-	4 : stages.Locked,
-	5 : stages.Locked,
-	6 : stages.Locked,
-	7 : stages.Locked,
-	8 : stages.Locked,
+	2 : stages.progression2,
+	3 : stages.progression2,
+	4 : stages.progression2,
+	5 : stages.progression2,
+	6 : stages.progression2,
+	7 : stages.progression2,
+	8 : stages.progression2,
 };
 
 function getLiquidStringFromObject(liquid as ILiquidStack) as string
@@ -350,35 +350,35 @@ function createTierTooltip(prefixString as string, tier as int, plus1 as bool, s
 	}
 	else if(modifiedTier == 1)
 	{
-		tierNumberAsColouredText = format.bold(format.gray("1"));
+		tierNumberAsColouredText = format.bold(format.gray("I"));
 	}
 	else if(modifiedTier == 2)
 	{
-		tierNumberAsColouredText =  format.bold(format.yellow("2"));
+		tierNumberAsColouredText =  format.bold(format.yellow("II"));
 	}
 	else if(modifiedTier == 3)
 	{
-		tierNumberAsColouredText = format.bold(format.gold("3"));
+		tierNumberAsColouredText = format.bold(format.gold("III"));
 	}
 	else if(modifiedTier == 4)
 	{
-		tierNumberAsColouredText = format.bold(format.red("4"));
+		tierNumberAsColouredText = format.bold(format.red("IV"));
 	}
 	else if(modifiedTier == 5)
 	{
-		tierNumberAsColouredText = format.bold(format.darkRed("5"));
+		tierNumberAsColouredText = format.bold(format.darkRed("V"));
 	}
 	if(modifiedTier == 6)
 	{
-		tierNumberAsColouredText = format.bold(format.aqua("6"));
+		tierNumberAsColouredText = format.bold(format.aqua("VI"));
 	}
 	if(modifiedTier == 7)
 	{
-		tierNumberAsColouredText = format.bold(format.darkGreen("7"));
+		tierNumberAsColouredText = format.bold(format.darkGreen("VII"));
 	}
 	if(modifiedTier == 8)
 	{
-		tierNumberAsColouredText = format.bold(format.green("8"));
+		tierNumberAsColouredText = format.bold(format.green("VIII"));
 	}
 
 	//Now we have the tier text, add the tooltip!

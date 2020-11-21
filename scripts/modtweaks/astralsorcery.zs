@@ -70,13 +70,22 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/lightwell", <as
   <astralsorcery:blockmarble:6>, <ore:plateAquamarine>, <astralsorcery:blockmarble:6>
 ]);
 
+//Change Illumination Powder Recipe
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/illuminationpowder");
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminationpowder", <astralsorcery:itemusabledust> * 16, 200, 40,
+[
+ null, <ore:dustGlowstone>, null,
+ <ore:dustGlowstone>, <ore:dustAquamarine>, <ore:dustGlowstone>,
+ null, <ore:dustGlowstone>, null
+]);
+
 //Change Cave Illuminator Recipe
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/illuminator");
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminator", <astralsorcery:blockworldilluminator>, 200, 80,
 [
- <astralsorcery:itemusabledust>, <ore:blockglowstone>, <astralsorcery:itemusabledust>,
- <ore:blockglowstone>, mods.astralsorcery.Utils.getCrystalORIngredient(false, false), <ore:blockglowstone>,
- <astralsorcery:itemusabledust>, <ore:blockglowstone>, <astralsorcery:itemusabledust>
+ <astralsorcery:itemusabledust>, <ore:blockGlowstone>, <astralsorcery:itemusabledust>,
+ <ore:blockGlowstone>, mods.astralsorcery.Utils.getCrystalORIngredient(false, false), <ore:blockGlowstone>,
+ <astralsorcery:itemusabledust>, <ore:blockGlowstone>, <astralsorcery:itemusabledust>
 ]);
 
 //Astral Sorcery -- Add sooty marble chiselability
@@ -93,7 +102,7 @@ val sootyMarbles =
 ] as crafttweaker.item.IItemStack[];
 
 for item in sootyMarbles {
-	mods.chisel.Carving.addVariation("sootyMarble", item);
+	//mods.chisel.Carving.addVariation("sootyMarble", item);
 }
 
 print("### Astral Sorcery Init Complete ###");

@@ -15,8 +15,8 @@
 			}
 		}
 	},
-	x: 1.5d,
-	y: 1.5d,
+	x: -1.5d,
+	y: -1.5d,
 	shape: "hexagon",
 	description: "Unlimited Durability!",
 	text: [

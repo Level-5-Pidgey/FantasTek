@@ -4,6 +4,8 @@ import scripts.staging.stages;
 
 print("~~~ Begin Stage 2 Staging ~~~");
 
+var stageString = stages.progression2.stage;
+
 //Mods to restrict to this stage
 val StageMods = [
   "mekanism",
@@ -28,7 +30,6 @@ val StageMods = [
   "rftoolsdim",
   "psi",
   "jaopca",
-  "contenttweaker",
   "enderio",
   "environmentaltech",
   "compactmachines3",
@@ -44,11 +45,17 @@ val StageMods = [
 
 for modTag in StageMods
 {
-  mods.ItemStages.stageModItems(stages.Locked.stage, modTag);
+	for item in loadedMods[modTag].items
+	{
+		scripts.helpers.setItemAndRecipesStage(item, stageString);
+	}
 }
 
+//Stage Contenttweaker items separately due to the way init works
+mods.ItemStages.stageModItems(stageString, "contenttweaker");
+
 //Add Cinderpearl to Blaze Powder crafting to stage 2.
-mods.recipestages.Recipes.setRecipeStage(stages.Locked.stage, "thaumcraft:cinderpearltoblazepowder");
+mods.recipestages.Recipes.setRecipeStage(stageString, "thaumcraft:cinderpearltoblazepowder");
 
 //Stage Stubborn Items.
 val otherItems = [
@@ -68,6 +75,6 @@ val otherItems = [
 
 for item in otherItems
 {
-	scripts.helpers.setItemAndRecipesStage(item, stages.Locked.stage);
+	scripts.helpers.setItemAndRecipesStage(item, stageString);
 }
 print("### Stage 2 Staging Complete ###");

@@ -3,8 +3,21 @@
     "type": "cone",
     "ore": "magneticraft:oil_source",
     "indicator": {
-      "blocks": { "block": "biomesoplenty:flower_0", "meta": 2 },
-      "rarity": 50
+      "blocks": { "block": "thermalfoundation:ore_fluid", "meta": 1 },
+	  "blocks_under": [
+	  		{ "block": "minecraft:stone" },
+	  		{ "block": "minecraft:dirt" },
+	  		{ "block": "minecraft:grass" },
+	  		{ "block": "minecraft:gravel" },
+	  		{ "block": "minecraft:sand" },
+	  		{ "block": "minecraft:clay" },
+	  		{ "block": "minecraft:packed_ice" },
+	  		{ "block": "biomesoplenty:grass" },
+	  		{ "block": "biomesoplenty:dirt" },
+	  		{ "block": "minecraft:sandstone" }
+		],
+	  "replace_surface" : true,
+      "rarity": 30
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -21,11 +34,10 @@
     "min_y": 15,
     "max_y": 50,
     "density": 400,
-    "vertical_size": 10,
-    "horizontal_size": 15,
+    "vertical_size": 9,
+    "horizontal_size": 12,
 	"biomes": [
       "hot",
-	  "ocean",
 	  "wet"
   	]
   }

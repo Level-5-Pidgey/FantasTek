@@ -1,10 +1,12 @@
 {
 	title: "Bedrock Bounties",
-	x: 0.0d,
-	y: 1.5d,
+	x: -1.5d,
+	y: 0.5d,
 	description: "Shining brighter than your future",
 	text: [
-		"With the Resonating Wand in hand during the night, pillars of light may be seen emanating from the ground. If you dig to bedrock level at these points, you will be able to find powerful Rock Crystal ore.",
+		"With the &bResonating Wand&r &ein hand during the night&r, pillars of light may be seen emanating from the ground. ",
+		"If you dig to bedrock level at these points, you will be able to find powerful&b Rock Crystal ore&r.",
+		"",
 		"These ores can be harvested and used to empower your magical arsenal."
 	],
 	dependencies: [

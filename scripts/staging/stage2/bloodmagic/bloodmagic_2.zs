@@ -6,8 +6,18 @@ print("~~~ Begin Stage 2 Blood Magic Staging ~~~");
 var stageString = stages.BloodMagic2.stage;
 
 //Mod Staging
-mods.ItemStages.stageModItems(stageString, "bloodmagic");
-mods.ItemStages.stageModItems(stageString, "animus");
+val BloodMagicMods = [
+  "bloodmagic",
+  "animus"
+] as string[];
+
+for modTag in BloodMagicMods
+{
+	for item in loadedMods[modTag].items
+	{
+		scripts.helpers.setItemAndRecipesStage(item, stageString);
+	}
+}
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List

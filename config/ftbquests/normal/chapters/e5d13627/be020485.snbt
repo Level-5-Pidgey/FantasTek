@@ -1,11 +1,13 @@
 {
 	title: "Adding some light to the scene",
 	icon: "astralsorcery:blockwell",
-	x: 0.0d,
-	y: 0.0d,
+	x: 0.5d,
+	y: 0.5d,
 	description: "Liquid Starlight, shines bright...",
 	text: [
-		"Using a Lightwell, you can use the power of the stars to melt Aquamarines and Rock Crystals to create Liquid Starlight. Liquid Starlight has a variety of uses, such as cleansing you of status effects and creating starlight-infused materials."
+		"Using a &bLightwell&r, you can use the power of the stars to &emelt Aquamarines and Rock Crystals to create Liquid Starlight&r. ",
+		"",
+		"Liquid Starlight has a variety of uses, such as &ecleansing you of status effects&r and &ecreating starlight-infused materials&r."
 	],
 	dependencies: [
 		"8c34f67c",

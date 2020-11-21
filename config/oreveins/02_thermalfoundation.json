@@ -3,19 +3,32 @@
     "type": "sphere",
     "ore": [
       {
-		"block": "contenttweaker:sub_block_holder_4",
-  		"meta": 14,
-        "weight": 67
+		"block": "thermalfoundation:ore",
+  		"meta": 0,
+        "weight": 60
       },
       {
         "block": "contenttweaker:sub_block_holder_2",
 		"meta": 11,
-        "weight": 34
+        "weight": 40
 	  }
     ],
     "indicator": {
-      "blocks": { "block": "biomesoplenty:flower_0", "meta": 5 },
-      "rarity": 40
+      "blocks": { "block": "contenttweaker:sub_block_holder_4", "meta": 14 },
+	  "replace_surface" : true,
+	  "blocks_under": [
+	  		{ "block": "minecraft:stone" },
+	  		{ "block": "minecraft:dirt" },
+	  		{ "block": "minecraft:grass" },
+	  		{ "block": "minecraft:gravel" },
+	  		{ "block": "minecraft:sand" },
+	  		{ "block": "minecraft:clay" },
+	  		{ "block": "minecraft:packed_ice" },
+	  		{ "block": "biomesoplenty:grass" },
+	  		{ "block": "biomesoplenty:dirt" },
+	  		{ "block": "minecraft:sandstone" }
+		],
+      "rarity": 30
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -28,12 +41,12 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 60,
+    "rarity": 65,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 14,
-    "horizontal_size": 16,
+    "vertical_size": 11,
+    "horizontal_size": 12,
 	"biomes": [
       "wet"
   	],
@@ -46,19 +59,32 @@
     "type": "sphere",
     "ore": [
       {
-		"block": "contenttweaker:sub_block_holder_1",
-  		"meta": 14,
-        "weight": 67
+	  	"block": "thermalfoundation:ore",
+		"meta": 1,
+        "weight": 60
       },
       {
         "block": "contenttweaker:sub_block_holder_6",
 		"meta": 6,
-        "weight": 34
+        "weight": 40
 	  }
     ],
     "indicator": {
-      "blocks": { "block": "biomesoplenty:flower_0", "meta": 9 },
-      "rarity": 40
+      "blocks": { "block": "contenttweaker:sub_block_holder_1", "meta": 14 },
+	  "replace_surface" : true,
+	  "blocks_under": [
+	  		{ "block": "minecraft:stone" },
+	  		{ "block": "minecraft:dirt" },
+	  		{ "block": "minecraft:grass" },
+	  		{ "block": "minecraft:gravel" },
+	  		{ "block": "minecraft:sand" },
+	  		{ "block": "minecraft:clay" },
+	  		{ "block": "minecraft:packed_ice" },
+	  		{ "block": "biomesoplenty:grass" },
+	  		{ "block": "biomesoplenty:dirt" },
+	  		{ "block": "minecraft:sandstone" }
+		],
+      "rarity": 30
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -89,19 +115,32 @@
     "type": "sphere",
     "ore": [
       {
-		"block": "contenttweaker:sub_block_holder_3",
-  		"meta": 11,
-        "weight": 67
+		"block": "embers:ore_silver",
+  		"meta": 0,
+        "weight": 60
       },
       {
         "block": "contenttweaker:sub_block_holder_10",
 		"meta": 6,
-        "weight": 34
+        "weight": 40
 	  }
     ],
     "indicator": {
-      "blocks": { "block": "biomesoplenty:flower_0", "meta": 3 },
-      "rarity": 40
+      "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 11 },
+	  "replace_surface" : true,
+	  "blocks_under": [
+	  		{ "block": "minecraft:stone" },
+	  		{ "block": "minecraft:dirt" },
+	  		{ "block": "minecraft:grass" },
+	  		{ "block": "minecraft:gravel" },
+	  		{ "block": "minecraft:sand" },
+	  		{ "block": "minecraft:clay" },
+	  		{ "block": "minecraft:packed_ice" },
+	  		{ "block": "biomesoplenty:grass" },
+	  		{ "block": "biomesoplenty:dirt" },
+	  		{ "block": "minecraft:sandstone" }
+		],
+      "rarity": 25
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -118,8 +157,8 @@
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 11,
-    "horizontal_size": 22,
+    "vertical_size": 18,
+    "horizontal_size": 9,
 	"biomes": [
       "snowy"
   	],
@@ -132,19 +171,32 @@
     "type": "sphere",
     "ore": [
       {
-		"block": "contenttweaker:sub_block_holder_3",
-  		"meta": 13,
-        "weight": 67
+		"block": "thermalfoundation:ore",
+  		"meta": 3,
+        "weight": 60
       },
       {
         "block": "contenttweaker:sub_block_holder_0",
 		"meta": 14,
-        "weight": 34
+        "weight": 40
 	  }
     ],
     "indicator": {
-      "blocks": { "block": "biomesoplenty:flower_0", "meta": 1 },
-      "rarity": 40
+      "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 13 },
+	  "replace_surface" : true,
+	  "blocks_under": [
+	  		{ "block": "minecraft:stone" },
+	  		{ "block": "minecraft:dirt" },
+	  		{ "block": "minecraft:grass" },
+	  		{ "block": "minecraft:gravel" },
+	  		{ "block": "minecraft:sand" },
+	  		{ "block": "minecraft:clay" },
+	  		{ "block": "minecraft:packed_ice" },
+	  		{ "block": "biomesoplenty:grass" },
+	  		{ "block": "biomesoplenty:dirt" },
+	  		{ "block": "minecraft:sandstone" }
+		],
+      "rarity": 25
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -175,19 +227,32 @@
     "type": "sphere",
     "ore": [
       {
-		"block": "contenttweaker:sub_block_holder_0",
-  		"meta": 13,
-        "weight": 67
+	  	"block": "thermalfoundation:ore",
+		"meta": 4,
+      	"weight": 60
       },
       {
         "block": "contenttweaker:sub_block_holder_8",
 		"meta": 14,
-        "weight": 34
+        "weight": 40
 	  }
     ],
     "indicator": {
-      "blocks": { "block": "biomesoplenty:flower_0", "meta": 6 },
-      "rarity": 40
+      "blocks": { "block": "contenttweaker:sub_block_holder_0", "meta": 13 },
+	  "replace_surface" : true,
+	  "blocks_under": [
+	  		{ "block": "minecraft:stone" },
+	  		{ "block": "minecraft:dirt" },
+	  		{ "block": "minecraft:grass" },
+	  		{ "block": "minecraft:gravel" },
+	  		{ "block": "minecraft:sand" },
+	  		{ "block": "minecraft:clay" },
+	  		{ "block": "minecraft:packed_ice" },
+	  		{ "block": "biomesoplenty:grass" },
+	  		{ "block": "biomesoplenty:dirt" },
+	  		{ "block": "minecraft:sandstone" }
+		],
+      "rarity": 25
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -204,8 +269,8 @@
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 6,
-    "horizontal_size": 7,
+    "vertical_size": 14,
+    "horizontal_size": 14,
 	"biomes": [
       "forest"
   	],
@@ -217,20 +282,33 @@
   "nickel_dense_vein": {
     "type": "sphere",
     "ore": [
-      {
-		"block": "contenttweaker:sub_block_holder_3",
-  		"meta": 1,
-        "weight": 67
+	  {
+	  	"block": "thermalfoundation:ore",
+		"meta": 5,
+      	"weight": 60
       },
       {
         "block": "contenttweaker:sub_block_holder_6",
 		"meta": 15,
-        "weight": 34
+        "weight": 40
 	  }
     ],
     "indicator": {
-      "blocks": { "block": "biomesoplenty:flower_0", "meta": 6 },
-      "rarity": 40
+      "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 1 },
+	  "replace_surface" : true,
+	  "blocks_under": [
+	  		{ "block": "minecraft:stone" },
+	  		{ "block": "minecraft:dirt" },
+	  		{ "block": "minecraft:grass" },
+	  		{ "block": "minecraft:gravel" },
+	  		{ "block": "minecraft:sand" },
+	  		{ "block": "minecraft:clay" },
+	  		{ "block": "minecraft:packed_ice" },
+	  		{ "block": "biomesoplenty:grass" },
+	  		{ "block": "biomesoplenty:dirt" },
+	  		{ "block": "minecraft:sandstone" }
+		],
+      "rarity": 25
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -243,14 +321,14 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 80,
+    "rarity": 85,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
     "vertical_size": 18,
     "horizontal_size": 7,
 	"biomes": [
-      "coniferous"
+      "cold"
   	],
 	"dimensions": [
 		0,

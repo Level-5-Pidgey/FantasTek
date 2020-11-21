@@ -6,7 +6,11 @@ print("~~~ Begin Stage 2 Embers Staging ~~~");
 var stageString = stages.Embers2.stage;
 
 //Mod Staging
-mods.ItemStages.stageModItems(stageString, "embers");
+for item in loadedMods["embers"].items
+{
+	scripts.helpers.setItemAndRecipesStage(item, stageString);
+}
+
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List

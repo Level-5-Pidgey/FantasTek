@@ -1,13 +1,16 @@
 {
 	title: "Locating concentrated starlight",
-	x: 1.5d,
-	y: 0.0d,
+	x: 2.5d,
+	y: 0.5d,
 	shape: "hexagon",
 	description: "Need more juice in the altar?",
 	text: [
 		"The amount of starlight you can get into your altar is vitally important to craft more advanced recipes as an Astral Sorcerer.",
-		"While placing your altar high up towards the sky limit does increase the amount of starlight it receives, there will be some areas in the world that attract more starlight than others.",
-		"The Fosic Resonator will display to you what areas of the world contain large amounts of starlight, by highlighting the ground area in a blue shimmer. The stronger the shimmer, the more starlight available!"
+		"",
+		"While &eplacing your altar high up towards the sky limit does increase the amount of starlight it receives&r, there will be &esome areas in the world that attract more starlight&r than others.",
+		"",
+		"The &bFosic Resonator&r will &edisplay to you what areas of the world contain large amounts of starlight&r, by &ehighlighting the ground area in a blue shimmer&r. ",
+		"The stronger the shimmer, the more starlight available!"
 	],
 	dependencies: [
 		"be020485"

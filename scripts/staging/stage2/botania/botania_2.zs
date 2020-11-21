@@ -6,8 +6,18 @@ print("~~~ Begin Stage 2 Botania Staging ~~~");
 var stageString = stages.Botania2.stage;
 
 //Mod Staging
-mods.ItemStages.stageModItems(stageString, "botania");
-mods.ItemStages.stageModItems(stageString, "botania_tweaks");
+val BotainaMods = [
+  "botania",
+  "botania_tweaks"
+] as string[];
+
+for modTag in BotainaMods
+{
+	for item in loadedMods[modTag].items
+	{
+		scripts.helpers.setItemAndRecipesStage(item, stageString);
+	}
+}
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List

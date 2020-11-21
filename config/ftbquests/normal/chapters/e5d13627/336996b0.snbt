@@ -1,7 +1,7 @@
 {
 	title: "Adding even more light to the subject",
-	x: 3.0d,
-	y: 0.0d,
+	x: -1.5d,
+	y: 3.5d,
 	description: "Damn now everything is overexposed...",
 	text: [
 		"If the preliminary research on the structure of the planet we placed you on is correct, caves should be much larger and more expansive than normal where you are.",
@@ -11,8 +11,7 @@
 		"This will provide both a better night's sleep, and a more enjoyable mining experience!"
 	],
 	dependencies: [
-		"8c34f67c",
-		"e203229a"
+		"8c34f67c"
 	],
 	tasks: [{
 		uid: "636fc00b",
