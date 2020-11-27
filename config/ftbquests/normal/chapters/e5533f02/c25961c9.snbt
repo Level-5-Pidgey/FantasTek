@@ -6,7 +6,7 @@
 		},
 		id: "embers:ember_detector"
 	},
-	x: 9.0d,
+	x: 12.5d,
 	y: 0.0d,
 	shape: "gear",
 	description: "Fire up those Ember Activators!",

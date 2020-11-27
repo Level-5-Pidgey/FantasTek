@@ -1,7 +1,11 @@
 {
+	title: "Powdered Magic",
 	icon: "thaumcraft:arcane_workbench",
-	x: 4.5d,
-	y: -1.0d,
+	x: 2.5d,
+	y: 1.0d,
+	text: [
+		"Salis Mundus is a magical powder that can be applied to blocks to convert them into Thaumaturge equipment that will be critical in you making progress "
+	],
 	dependencies: [
 		"dcb70a7e"
 	],

@@ -1,7 +1,7 @@
 {
 	title: "Ember Concentration",
-	x: 1.0d,
-	y: -1.0d,
+	x: -2.0d,
+	y: -2.0d,
 	shape: "hexagon",
 	text: [
 		"While searching for where you will put your Ember Bore, the atmospheric gauge will help you determine a location with a high concentration of Ember to give you a more efficient setup."

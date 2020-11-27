@@ -1,7 +1,7 @@
 {
 	title: "Dialing It In",
-	x: 3.0d,
-	y: -1.0d,
+	x: 2.0d,
+	y: -2.0d,
 	shape: "hexagon",
 	text: [
 		"Whilst it is not required for your Embers setup to function, the Ember Dial will help you test your machines to ensure that they are functioning. It will show you how much Ember is being sent into the machine that it is attached to."

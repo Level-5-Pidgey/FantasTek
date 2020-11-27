@@ -1,7 +1,7 @@
 {
 	title: "Molding Metals",
 	icon: "embers:stamper",
-	x: 7.0d,
+	x: 10.0d,
 	y: 2.0d,
 	text: [
 		"Stampers are an interesting piece of technology that will take your molten metals, and make them into fancy shapes such as ingots, plates, and gears. Avoid leaving excess ore in your system, as it may clog up the pipes and stop you from creating any new results."

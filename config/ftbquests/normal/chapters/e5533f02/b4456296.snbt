@@ -1,6 +1,6 @@
 {
 	title: "Ulterior Motive",
-	x: 0.0d,
+	x: -4.0d,
 	y: -1.0d,
 	shape: "hexagon",
 	text: [

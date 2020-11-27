@@ -11,7 +11,7 @@
 	shape: "octagon",
 	description: "Slime flies when you're having fun",
 	text: [
-		""
+		"We here at FantasTek use slime as an adhesive and as a filler for our protein supplements, so we're always in the market for some extra slime. As an incentive to supply us with this slime you'll be granted the knowledge of the experimental Slime Sling technology, allowing you to slingshot yourself across the environment."
 	],
 	dependencies: [
 		"0326f755"

@@ -1,6 +1,6 @@
 {
 	title: "Ember Boring",
-	x: 1.0d,
+	x: -2.0d,
 	y: 0.0d,
 	shape: "rsquare",
 	text: [

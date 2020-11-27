@@ -2,7 +2,7 @@
 	title: "Crystal Crafting",
 	icon: "embers:archaic_light",
 	x: 4.0d,
-	y: 1.0d,
+	y: 2.0d,
 	text: [
 		"Using complex machinery parts, you should be capable of creating a machine that can use your Ember power to craft complex materials such as elementally charged crystals. If you want to conduct some extra tests for us, try putting yourself inside the machine to see if you will become charged with elemental energy."
 	],

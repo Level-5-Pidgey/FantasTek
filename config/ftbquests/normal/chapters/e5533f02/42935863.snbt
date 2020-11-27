@@ -1,7 +1,7 @@
 {
 	title: "Message Received",
-	x: 0.0d,
-	y: 1.0d,
+	x: 2.0d,
+	y: 2.0d,
 	text: [
 		"Ember Receptors and Emitters are very important for operating Embers machinery. By placing an emitter and receptor on two different machines and linking them together with a Tinker's Hammer, you can transfer power from one machine to the other ."
 	],

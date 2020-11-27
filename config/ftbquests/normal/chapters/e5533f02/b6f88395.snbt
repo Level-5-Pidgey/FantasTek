@@ -1,6 +1,6 @@
 {
 	title: "Fire Power",
-	x: 3.0d,
+	x: 2.0d,
 	y: 0.0d,
 	text: [
 		"The Ember Activator is critical for progressing with your Embers setup, as it will convert Ember Shards and Crystals into Ember power, which can be used to power your other Embers machinery. Using the Ember Emitter and Receptors you can transfer power through the air from this machine to others."
