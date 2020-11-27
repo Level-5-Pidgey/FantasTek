@@ -79,6 +79,15 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminationpow
  null, <ore:dustGlowstone>, null
 ]);
 
+//Change Nocturnal Powder Recipe
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/nocturnalpowder");
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/nocturnalpowder", <astralsorcery:itemusabledust:1> * 16, 200, 40,
+[
+ null, <ore:dustAsh>, null,
+ <ore:dustAsh>, <ore:dustAquamarine>, <ore:dustAsh>,
+ null, <ore:dustAsh>, null
+]);
+
 //Change Cave Illuminator Recipe
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/illuminator");
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminator", <astralsorcery:blockworldilluminator>, 200, 80,
@@ -88,21 +97,17 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminator", <
  <astralsorcery:itemusabledust>, <ore:blockGlowstone>, <astralsorcery:itemusabledust>
 ]);
 
-//Astral Sorcery -- Add sooty marble chiselability
-mods.chisel.Carving.addGroup("sootyMarble");
-val sootyMarbles =
-[
-	<astralsorcery:blockblackmarble>,
-	<astralsorcery:blockblackmarble:1>,
-	<astralsorcery:blockblackmarble:2>,
-	<astralsorcery:blockblackmarble:3>,
-	<astralsorcery:blockblackmarble:4>,
-	<astralsorcery:blockblackmarble:5>,
-	<astralsorcery:blockblackmarble:6>
-] as crafttweaker.item.IItemStack[];
+//Starlight Energy Harness Crafting Recipe
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_converter"}), [
+	[null, <enderio:item_material:77>, null],
+	[<enderio:item_material:77>, <ore:blockAquamarine>.firstItem, <enderio:item_material:77>],
+	[null, <enderio:item_material:77>, null]
+]);
 
-for item in sootyMarbles {
-	//mods.chisel.Carving.addVariation("sootyMarble", item);
-}
+//Melting Elemental Crystals into Liquids
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_fire>, <liquid:elemental_water_fire>, 0.8, 0.3, "d44219");
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_water>, <liquid:elemental_water_water>, 0.8, 0.3, "6effd1");
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_air>, <liquid:elemental_water_air>, 0.8, 0.3, "ebe2ca");
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_earth>, <liquid:elemental_water_earth>, 0.8, 0.3, "82e34d");
 
 print("### Astral Sorcery Init Complete ###");

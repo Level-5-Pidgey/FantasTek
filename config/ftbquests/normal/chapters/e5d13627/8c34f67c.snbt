@@ -1,7 +1,7 @@
 {
 	title: "Astrally Focused Crafting",
 	x: -1.5d,
-	y: 1.5d,
+	y: 2.5d,
 	description: "Shiny",
 	text: [
 		"As powerful as our new, high-tech crafting benches are, they are still limited to the items they can manufacture. Machines can alleviate some of these issues, but for some objects of magical nature there is no machine that can match the power of",

@@ -1,7 +1,7 @@
 {
 	title: "Skies of Wonder",
 	x: 0.5d,
-	y: 3.5d,
+	y: 4.5d,
 	description: "Look up, things are bright!",
 	text: [
 		"The skies hold more mystery than you might expect -- beyond your tiny planet there are many constellations to uncover.",

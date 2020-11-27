@@ -29,7 +29,8 @@
 		items: [{
 			item: "thermalfoundation:material 1 33"
 		}],
-		count: 8L
+		count: 8L,
+		consume_items: true
 	},
 	{
 		uid: "67fe57e8",
@@ -38,7 +39,8 @@
 		items: [{
 			item: "thermalfoundation:material 1 32"
 		}],
-		count: 16L
+		count: 16L,
+		consume_items: true
 	},
 	{
 		uid: "797f5420",
@@ -47,7 +49,8 @@
 		items: [{
 			item: "jaopca:item_plateemerald"
 		}],
-		count: 4L
+		count: 4L,
+		consume_items: true
 	}],
 	rewards: [{
 		uid: "7b564e0e",

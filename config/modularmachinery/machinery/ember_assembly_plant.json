@@ -10,7 +10,7 @@
             "z": 0,
             "elements": [
                 "embers:archaic_bricks@0",
-		"embers:archaic_tile@0"
+				"embers:archaic_tile@0"
             ]
         },
         {
@@ -69,7 +69,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "modulardiversity:blockemberinputhatch@0"
+                "general_ember_input"
             ]
         },
         {

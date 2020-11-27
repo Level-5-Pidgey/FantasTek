@@ -160,7 +160,7 @@ mods.botania.PureDaisy.removeRecipe(<minecraft:packed_ice>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
 mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 40);
-mods.botania.PureDaisy.addRecipe(<ore:plankSealedWood>, <botania:livingwood>, 40);
+mods.botania.PureDaisy.addRecipe(<thaumcraft:log_greatwood>, <botania:livingwood>, 40);
 scripts.helpers.AddTooltip(<botania:livingrock>, ["Can be crafted with any type of ore:stoneMarble."]);
 
 //Petal Apothecary

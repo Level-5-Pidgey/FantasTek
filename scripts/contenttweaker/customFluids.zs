@@ -32,4 +32,14 @@ liquid_molten_modularium.addDataValue("viscosity", "6000");
 liquid_molten_modularium.addDataValue("temperature", "800");
 liquid_molten_modularium.addDataValue("luminosity", "15");
 
+//Elemental Liquids
+var elemental_water_fire = VanillaFactory.createFluid("elemental_water_fire", Color.fromHex("d44219"));
+elemental_water_fire.register();
+var elemental_water_water = VanillaFactory.createFluid("elemental_water_water", Color.fromHex("6effd1"));
+elemental_water_water.register();
+var elemental_water_air = VanillaFactory.createFluid("elemental_water_air", Color.fromHex("ebe2ca"));
+elemental_water_air.register();
+var elemental_water_earth = VanillaFactory.createFluid("elemental_water_earth", Color.fromHex("82e34d"));
+elemental_water_earth.register();
+
 print("### Custom Fluid Creator Init Complete ###");

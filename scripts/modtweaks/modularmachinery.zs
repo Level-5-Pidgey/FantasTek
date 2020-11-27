@@ -5,7 +5,7 @@ print("~~~ Begin Modular Machinery Init ~~~");
 
 //Change Modularium Recipes
 recipes.removeByRecipeName("modularmachinery:modularium_ingot");
-recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemmodularium>), <modularmachinery:itemmodularium> * 4, [[<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotGold>, <ore:ingotGold>, <ore:dustRedstone>, <ore:dustGlowstone>]]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<modularmachinery:itemmodularium>), <modularmachinery:itemmodularium> * 4, [<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotGold>, <ore:ingotGold>, <ore:dustRedstone>, <ore:dustGlowstone>]);
 
 //Add Modularium Alloying/Casting
 mods.tconstruct.Alloy.addRecipe(<liquid:modularium> * 288, [<liquid:black_iron> * 288, <liquid:redstone> * 50, <liquid:gold> * 144, <liquid:glowstone> * 125]);
@@ -263,14 +263,11 @@ recipes.addShaped(scripts.helpers.createRecipeName(<modulardiversity:blockweathe
 
 //Add Crafting Recipes for Machine Casings
 //Machine Controller
-for item in scripts.helpers.AllT1MagicItems
-{
-	recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcontroller>) ~ item.displayName, <modularmachinery:blockcontroller>, [
-		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
-		[<ore:blockGlassColorless>.firstItem, item, <ore:blockGlassColorless>.firstItem],
-		[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
-	]);
-}
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcontroller>), <modularmachinery:blockcontroller>, [
+	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>],
+	[<ore:blockGlassColorless>.firstItem, <projectred-core:resource_item:341>, <ore:blockGlassColorless>.firstItem],
+	[<modularmachinery:blockcasing>, <extendedcrafting:material:7>, <modularmachinery:blockcasing>]
+]);
 //Machine Casings
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing>), <modularmachinery:blockcasing> * 4, [
 	[null, <modularmachinery:itemmodularium>, null],
@@ -336,6 +333,38 @@ for burnItem, powerOutput in EmberPlant
 	EmberPowerProduction.addItemInput(burnItem);
 	EmberPowerProduction.addEnergyPerTickOutput(powerOutput / 200);
 	EmberPowerProduction.build();
+}
+
+//Add Astral Power Production Recipes
+var AstralPlant as int[crafttweaker.liquid.ILiquidStack] =
+{
+	<liquid:elemental_water_fire> : 60000,
+	<liquid:elemental_water_water> : 60000,
+	<liquid:elemental_water_air> : 60000,
+	<liquid:elemental_water_earth> : 60000,
+	<liquid:astralsorcery.liquidstarlight> : 12500,
+};
+
+for burnItem, powerOutput in AstralPlant
+{
+	var AstralPowerProduction = RecipeBuilder.newBuilder("astral_converter" ~ burnItem.displayName, "astral_converter", 40);
+	AstralPowerProduction.addFluidInput(burnItem * 50);
+	AstralPowerProduction.addEnergyPerTickOutput(powerOutput / 400);
+	AstralPowerProduction.build();
+}
+
+/Add Blood Magic Power Production Recipes
+var BloodMagicPlant as int[crafttweaker.liquid.ILiquidStack] =
+{
+	<liquid:lifeessence> : 15000,
+};
+
+for burnItem, powerOutput in BloodMagicPlant
+{
+	var BloodMagicPowerProduction = RecipeBuilder.newBuilder("bloodmagic_converter" ~ burnItem.displayName, "bloodmagic_converter", 40);
+	BloodMagicPowerProduction.addFluidInput(burnItem * 50);
+	BloodMagicPowerProduction.addEnergyPerTickOutput(powerOutput / 400);
+	BloodMagicPowerProduction.build();
 }
 
 //Add Thaumcraft Power Production Recipes

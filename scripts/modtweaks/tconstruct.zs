@@ -10,12 +10,11 @@ function CreateToolForgeAndStage(material as string, stageToSet as string)
 
 	if (!oreBlock.empty)
 	{
-		var block as crafttweaker.item.IItemStack = oreBlock.firstItem;
-		var ToolforgeData as crafttweaker.data.IData = {textureBlock: {id: block.definition.id, Count: 1, Damage: block.damage as short}};
+		var ToolforgeData as crafttweaker.data.IData = {textureBlock: {id: oreBlock.firstItem.definition.id, Count: 1, Damage: oreBlock.firstItem.damage as short}};
 		var ToolForgeBlock as crafttweaker.item.IItemStack = <tconstruct:toolforge>.withTag(ToolforgeData);
 
 		//Create Recipe for Tool Forge
-		mods.extendedcrafting.TableCrafting.addShaped(0, ToolForgeBlock, [[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>], [block, <tconstruct:tooltables:3>, block], [block, null, block]]);
+		mods.extendedcrafting.TableCrafting.addShaped(0, ToolForgeBlock, [[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>], [oreBlock, <tconstruct:tooltables:3>, oreBlock], [oreBlock, null, oreBlock]]);
 
 		//Stage Tool Forge
 		if (stageToSet != "stage_i")

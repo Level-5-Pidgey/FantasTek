@@ -37,6 +37,7 @@ val StageMods = [
   "projectred-core",
   "magneticraft",
   "deepmoblearning",
+  "deepmoblearningbm",
   "extendedcrafting",
   "scannable",
   "reccomplex",
