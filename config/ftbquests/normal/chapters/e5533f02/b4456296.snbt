@@ -1,7 +1,11 @@
 {
+	title: "Ulterior Motive",
 	x: 0.0d,
 	y: -1.0d,
 	shape: "hexagon",
+	text: [
+		"In case you are incapable of finding an Ancient Golem to kill for its Ancient Motive Core, you can instead craft 8 Archaic Bricks that we will kindly exchange for an Ancient Golem spawn egg. Think of it kind of like a PokeBall, except the Pokemon will actively try to kill you."
+	],
 	dependencies: [
 		"c6d0a325"
 	],

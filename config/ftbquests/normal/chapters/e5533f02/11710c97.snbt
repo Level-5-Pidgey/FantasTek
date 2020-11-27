@@ -1,7 +1,11 @@
 {
-	title: "Craft an Ember Bore",
+	title: "Ember Boring",
 	x: 1.0d,
 	y: 0.0d,
+	shape: "rsquare",
+	text: [
+		"The Ember Bore is a structure that you must place near Bedrock that will generate Ember Shards when provided with fuel. The Embers Bore will take up a 3x2x3 area once placed, so make sure you make plenty of space before placing it."
+	],
 	dependencies: [
 		"b090a66e"
 	],
