@@ -1,7 +1,7 @@
 {
 	title: "Hedge Alchemy",
-	x: 7.5d,
-	y: 0.0d,
+	x: 10.5d,
+	y: 1.0d,
 	description: "Buy! Buy! Buy!",
 	text: [
 		"The key characteristic of a thaumaturge is your ability to turn what others percieve to be useless into something very useful.",

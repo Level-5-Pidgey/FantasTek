@@ -1,7 +1,7 @@
 {
 	title: "Moo-vie magic",
-	x: 7.5d,
-	y: 1.0d,
+	x: 10.5d,
+	y: 3.0d,
 	shape: "hexagon",
 	description: "Get rid of that extra flesh!",
 	text: [

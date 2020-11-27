@@ -1,6 +1,6 @@
 {
 	title: "&6Gold and Plunder",
-	x: 7.5d,
+	x: 10.5d,
 	y: -1.5d,
 	shape: "gear",
 	description: "Set the heavens asunder!",
