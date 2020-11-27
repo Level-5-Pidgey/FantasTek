@@ -1,6 +1,10 @@
 {
+	title: "Crystallized Fire",
 	x: 5.0d,
 	y: 1.0d,
+	text: [
+		"Using the machine you created in the previous step, you should be able to craft a fire-infused crystal. Imbued with significant elemental powers, this crystal will allow you to create even greater Embers machines as well as the Basic Crafting Table."
+	],
 	dependencies: [
 		"5b60da2e"
 	],
