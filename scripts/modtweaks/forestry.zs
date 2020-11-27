@@ -150,28 +150,31 @@ recipes.remove(<forestry:peat_bog>);
 
 for circuit in scripts.helpers.CircuitTiers[1].items
 {
-	//Ender Farm
-	mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_ender>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:12>, circuit, <forestry:thermionic_tubes:12>]]);
-
-	//Nether Farm
-	mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_nether>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:7>, circuit, <forestry:thermionic_tubes:7>]]);
-
-	//Gourd Farm
-	mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_gourd>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:11>, circuit, <forestry:thermionic_tubes:11>]]);
-
-	//Arboretum
-	mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:arboretum>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:4>, circuit, <forestry:thermionic_tubes:4>]]);
-
-	//Mushroom Farm
-	mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_mushroom>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<ore:densePlatingLapis>, circuit, <ore:densePlatingLapis>]]);
-
-	//Peat Bog
-	mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:peat_bog>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:6>, circuit, <forestry:thermionic_tubes:6>]]);
-
-	//Crop Farm
-	for plate in scripts.helpers.BiomeGemMaterial["plate"].items
+	for earthCraftingItem in scripts.helpers.AllEarthT1Items
 	{
-		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_crops>, [[null, <magneticraft:battery_item_medium>, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [plate, circuit, plate]]);
+		//Ender Farm
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_ender>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:12>, circuit, <forestry:thermionic_tubes:12>]]);
+
+		//Nether Farm
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_nether>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:7>, circuit, <forestry:thermionic_tubes:7>]]);
+
+		//Gourd Farm
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_gourd>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:11>, circuit, <forestry:thermionic_tubes:11>]]);
+
+		//Arboretum
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:arboretum>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:4>, circuit, <forestry:thermionic_tubes:4>]]);
+
+		//Mushroom Farm
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_mushroom>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<ore:plateLapis>, circuit, <ore:plateLapis>]]);
+
+		//Peat Bog
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:peat_bog>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:6>, circuit, <forestry:thermionic_tubes:6>]]);
+
+		//Crop Farm
+		for plate in scripts.helpers.BiomeGemMaterial["plate"].items
+		{
+			mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_crops>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [plate, circuit, plate]]);
+		}
 	}
 }
 

@@ -4,7 +4,10 @@
 	y: 3.5d,
 	description: "... you're both probably not gonna see each other.",
 	text: [
-		"All those shiny lights out there in space occasionally come together to make beautiful constellations. These can be useful when utilizing star power to craft."
+		"All those shiny lights out there in space occasionally come together to make beautiful constellations. These can be useful when utilizing star power to craft.",
+		"",
+		"To find these constellations, use your &bLooking Glass&r at night. &eIf you have found the appropriate &bConstellation Paper&e within a loot chest,",
+		"you can hold SHIFT to lock the view of any peculiar stars in the sky and trace them with the mouse + left click.&r"
 	],
 	dependencies: [
 		"494f1f00"

@@ -19,5 +19,11 @@
 		items: [{
 			item: "astralsorcery:blockworldilluminator"
 		}]
+	}],
+	rewards: [{
+		uid: "5544bf31",
+		type: "item",
+		item: "minecraft:glowstone",
+		count: 8
 	}]
 }

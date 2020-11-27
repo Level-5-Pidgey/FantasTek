@@ -13,10 +13,7 @@ val BotainaMods = [
 
 for modTag in BotainaMods
 {
-	for item in loadedMods[modTag].items
-	{
-		scripts.helpers.setItemAndRecipesStage(item, stageString);
-	}
+	mods.ItemStages.stageModItems(stageString, modTag);
 }
 
 //Items to Remove from Mod Staging

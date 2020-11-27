@@ -7,7 +7,8 @@
 		"The skies hold more mystery than you might expect -- beyond your tiny planet there are many constellations to uncover.",
 		"Some say that these constellations hold powers and can be used to cast spells or create magical objects -- time will tell!",
 		"",
-		"Looking through the Looking Glass at night will provide opportunities to spot constellations. The constellations that are available to be spotted change nightly, and you need to spot them and draw them to uncover their secrets!"
+		"Looking through the &bLooking Glass&r at night will provide opportunities to spot constellations. ",
+		"&eThe constellations that are available to be spotted change nightly, and you need to spot them and draw them to uncover their secrets!&r"
 	],
 	dependencies: [
 		"8c34f67c"
@@ -23,5 +24,11 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "48db2bc4",
+		type: "item",
+		item: "minecraft:reeds",
+		count: 5
 	}]
 }

@@ -24,7 +24,7 @@ for wood in <ore:logWood>.items
 //Add Prismarine Shard Crafting
 for prismarine in <ore:prismarine>.items
 {
-	mods.advancedrocketry.PlatePresser.addRecipe(<contenttweaker:prismarine_nugget> * 16, prismarine);
+	mods.advancedrocketry.PlatePresser.addRecipe(<contenttweaker:prismarine_nugget> * 20, prismarine);
 	scripts.helpers.AddTooltip(prismarine, ["Prismarine can be found in Ocean Monuments,", "or obtained by mining Prismarine Boulders", "found on the seabed."]);
 }
 recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:prismarine_nugget>), <contenttweaker:prismarine_nugget> * 2, [<embers:tinker_hammer>, <ore:shardPrismarine>]);

@@ -6,10 +6,7 @@ print("~~~ Begin Stage 2 Embers Staging ~~~");
 var stageString = stages.Embers2.stage;
 
 //Mod Staging
-for item in loadedMods["embers"].items
-{
-	scripts.helpers.setItemAndRecipesStage(item, stageString);
-}
+mods.ItemStages.stageModItems(stageString, "embers");
 
 
 //Items to Remove from Mod Staging

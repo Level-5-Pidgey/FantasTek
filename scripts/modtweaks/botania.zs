@@ -162,16 +162,14 @@ mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
 mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 40);
 mods.botania.PureDaisy.addRecipe(<ore:plankSealedWood>, <botania:livingwood>, 40);
 scripts.helpers.AddTooltip(<botania:livingrock>, ["Can be crafted with any type of ore:stoneMarble."]);
-//Add Early-Game alternate livingwood recipe
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:livingwood>), scripts.staging.stages.Botania1.stage, <botania:livingwood> * 8, [[<ore:logWood>, <ore:plateWood>, <ore:logWood>],[<ore:plateWood>, scripts.helpers.AnyPetalOrShroom, <ore:plateWood>], [<ore:logWood>, <ore:plateWood>, <ore:logWood>]]);
 
 //Petal Apothecary
 recipes.remove(<botania:altar>);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:altar>), scripts.staging.stages.Botania1.stage, <botania:altar>, [[<ore:slabCobblestone>, scripts.helpers.AnyPetalOrShroom, <ore:slabCobblestone>],[null, <minecraft:cauldron>, null], [<ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>, <ore:compressed1xCobblestone>]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:altar>), scripts.staging.stages.Botania1.stage, <botania:altar>, [[<ore:slabCobblestone>, scripts.helpers.AnyPetalOrShroom, <ore:slabCobblestone>],[null, <minecraft:cauldron>, null], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
 scripts.helpers.AddTooltip(<botania:altar>, ["A Redstone Comparator attached to the apothecary will output signal strength of 15 when the block is full of water.", "Putting Lava instead of water in the apothecary will turn it into an incinerator, burning all items dropped on top of it.", "Throwing Vines into the Petal Apothecary gives it an overgrown appearance."]);
 
 //Pure Daisy Tooltip
-scripts.helpers.AddTooltip(<botania:specialflower>.withTag({type: "puredaisy"}), ["Processes in more than double the speed of most other Modpacks.", "Waiting for the daisy to process stuff is more boring than watching Paint Dry!"]);
+scripts.helpers.AddTooltip(<botania:specialflower>.withTag({type: "puredaisy"}), ["Processes in more than double the speed of most other Modpacks.", "Waiting for the daisy to process stuff is more boring than watching paint dry!"]);
 
 //Basic Mana Spreader
 recipes.remove(<botania:spreader>);

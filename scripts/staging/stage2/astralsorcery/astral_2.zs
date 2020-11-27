@@ -6,10 +6,7 @@ print("~~~ Begin Stage 2 Astral Sorcery Staging ~~~");
 var stageString = stages.AstralSorcery2.stage;
 
 //Mod Staging
-for item in loadedMods["astralsorcery"].items
-{
-	scripts.helpers.setItemAndRecipesStage(item, stageString);
-}
+mods.ItemStages.stageModItems(stageString, "astralsorcery");
 
 //Items to Remove from Mod Staging
 //Each time a new stage is added to the pack, move items you'd like to keep in this stage into this List

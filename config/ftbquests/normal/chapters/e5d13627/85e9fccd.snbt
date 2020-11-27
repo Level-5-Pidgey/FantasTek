@@ -18,5 +18,11 @@
 		items: [{
 			item: "astralsorcery:blockmachine 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "24fc3489",
+		type: "item",
+		item: "minecraft:quartz",
+		count: 16
 	}]
 }

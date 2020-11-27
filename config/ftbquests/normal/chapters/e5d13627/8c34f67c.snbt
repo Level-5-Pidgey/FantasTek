@@ -5,10 +5,10 @@
 	description: "Shiny",
 	text: [
 		"As powerful as our new, high-tech crafting benches are, they are still limited to the items they can manufacture. Machines can alleviate some of these issues, but for some objects of magical nature there is no machine that can match the power of",
-		"a cosmically enhanced marble crafting table. The Luminous Crafting Table is your entry way to Astral Magic -- if you'd like to persue this path it will be your starting point!",
+		"a cosmically enhanced marble crafting table. The &bLuminous Crafting Table&r is &eyour entry way to Astral Magic&r -- if you'd like to persue this path it will be your starting point!",
 		"",
-		"To find the starlight required to craft a table, you will need to locate a large Marble Shrine.",
-		"They come in multiple sizes and contain lots of loot -- but only the large shrines contain a resonating crystal that you can use to create your magical construct."
+		"&eTo find the starlight required to craft a table, you will need to locate a large Marble Shrine. These shrines are most common in snowy or mountainous regions.&r",
+		"They come in multiple sizes and contain lots of loot -- but &eonly the large shrines contain a resonating crystal that you can use to create your magical construct. &r"
 	],
 	dependencies: [
 		"5deb1a5f"

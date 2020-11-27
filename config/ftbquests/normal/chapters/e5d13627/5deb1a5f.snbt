@@ -4,7 +4,9 @@
 	y: 1.0d,
 	description: "Doesn't cast spells, sadly.",
 	text: [
-		"Astral Sorcery is a method of magic that harnesses the powers of the heavens. The magic that flows within the stars can be channelled with tall structures made of marble, but that will come later. To start you must craft a wand that will allow you to reveal Rock Crystal ore, which will provide the basis for a multitude of Astral materials."
+		"&bAstral Sorcery&r is a method of magic that harnesses the powers of the heavens. The magic that flows within the stars can be channelled with tall structures made of marble, but that will come later. ",
+		"",
+		"To start you must &bcraft a wand&r that &ewill allow you to reveal Rock Crystal ore&r, which will provide the basis for a multitude of Astral materials."
 	],
 	dependencies: [
 		"f58b450b"

@@ -40,19 +40,14 @@ val StageMods = [
   "extendedcrafting",
   "scannable",
   "reccomplex",
-  "witherskelefix"
+  "witherskelefix",
+  "contenttweaker"
 ] as string[];
 
 for modTag in StageMods
 {
-	for item in loadedMods[modTag].items
-	{
-		scripts.helpers.setItemAndRecipesStage(item, stageString);
-	}
+	mods.ItemStages.stageModItems(stageString, modTag);
 }
-
-//Stage Contenttweaker items separately due to the way init works
-mods.ItemStages.stageModItems(stageString, "contenttweaker");
 
 //Add Cinderpearl to Blaze Powder crafting to stage 2.
 mods.recipestages.Recipes.setRecipeStage(stageString, "thaumcraft:cinderpearltoblazepowder");

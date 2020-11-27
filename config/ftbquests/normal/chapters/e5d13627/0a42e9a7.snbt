@@ -92,5 +92,11 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bdf87548",
+		type: "item",
+		item: "astralsorcery:blockcustomore",
+		count: 3
 	}]
 }

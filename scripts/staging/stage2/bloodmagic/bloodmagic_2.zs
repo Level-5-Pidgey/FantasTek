@@ -13,10 +13,7 @@ val BloodMagicMods = [
 
 for modTag in BloodMagicMods
 {
-	for item in loadedMods[modTag].items
-	{
-		scripts.helpers.setItemAndRecipesStage(item, stageString);
-	}
+	mods.ItemStages.stageModItems(stageString, modTag);
 }
 
 //Items to Remove from Mod Staging

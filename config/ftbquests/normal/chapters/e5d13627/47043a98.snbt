@@ -4,7 +4,8 @@
 	y: 1.5d,
 	description: "Only the Avatar...",
 	text: [
-		"Rock Crystals are incredibly receptive to both astral power and other elements, making it the perfect elemental catalyst.",
+		"&bRock Crystals&r are &eincredibly receptive to both astral power and other elements&r, making it the perfect elemental catalyst.",
+		"",
 		"These crystals can be imbued with certain aspects to create more powerful artifacts, tools or machines."
 	],
 	dependencies: [

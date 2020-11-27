@@ -184,11 +184,10 @@ val enderman = LootTweaker.getTable("minecraft:entities/enderman"); //Enderman (
 enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
 enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
 
-//Make Astral Sorcery chests not generate Aquamarine/Constellation Papers
+//Make Astral Sorcery chests not generate Aquamarine Papers
 val shrineChest = LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine");
 val astralShrineChestPools =
 	[
-		"astralsorcery:itemconstellationpaper",
 		"astralsorcery:itemcraftingcomponent"
 	] as string[];
 
@@ -196,11 +195,6 @@ for pool in astralShrineChestPools
 {
 	shrineChest.removeEntry(pool);
 }
-
-LootTweaker.getTable("minecraft:chests/desert_pyramid").getPool("main").removeEntry("astralsorcery:constellation_paper");
-LootTweaker.getTable("minecraft:chests/igloo_chest").getPool("main").removeEntry("astralsorcery:constellation_paper");
-LootTweaker.getTable("minecraft:chests/jungle_temple").getPool("main").removeEntry("astralsorcery:constellation_paper");
-LootTweaker.getTable("minecraft:chests/stronghold_library").getPool("main").removeEntry("astralsorcery:constellation_paper");
 
 //Random Things Summoning Pendulum
 LootTweaker.getTable("minecraft:chests/simple_dungeon").removePool("summoningpendulum");

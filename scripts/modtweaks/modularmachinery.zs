@@ -321,13 +321,13 @@ for OreEntry, outputMulti in CokeOven
 //Add Ember Power Production Recipes
 var EmberPlant as int[IItemStack] =
 {
-	<embers:crystal_ember> : 3600,
-	<embers:shard_ember> : 600,
-	<embers:ancient_motive_core> : 15000,
-	<contenttweaker:crystal_ember_fire> : 25000,
-	<contenttweaker:crystal_ember_water> : 25000,
-	<contenttweaker:crystal_ember_earth> : 25000,
-	<contenttweaker:crystal_ember_air> : 25000
+	<embers:crystal_ember> : 10000,
+	<embers:shard_ember> : 1666,
+	<embers:ancient_motive_core> : 45000,
+	<contenttweaker:crystal_ember_fire> : 125000,
+	<contenttweaker:crystal_ember_water> : 125000,
+	<contenttweaker:crystal_ember_earth> : 125000,
+	<contenttweaker:crystal_ember_air> : 125000
 };
 
 for burnItem, powerOutput in EmberPlant
@@ -341,70 +341,70 @@ for burnItem, powerOutput in EmberPlant
 //Add Thaumcraft Power Production Recipes
 var ThaumcraftCrystalGen as int[IItemStack] =
 {
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) : 500,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) : 500,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) : 500,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) : 500,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) : 500,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) : 500,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mortuus"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "metallum"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vacuos"}]}) : 1200,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "auram"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alkimia"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "herba"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "instrumentum"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vinculum"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]}) : 2000,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "machina"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "desiderium"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "exanimis"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "bestia"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mythus"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "draco"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aversio"}]}) : 2800,
-	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praemunio"}]}) : 2800
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) : 7500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) : 7500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) : 7500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) : 7500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) : 7500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) : 7500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mortuus"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "metallum"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vacuos"}]}) : 12500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "auram"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alkimia"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "herba"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "instrumentum"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vinculum"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]}) : 27500,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "machina"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "desiderium"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "exanimis"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "bestia"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "mythus"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "draco"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aversio"}]}) : 50000,
+	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praemunio"}]}) : 50000
 };
 
 for burnItem, powerOutput in ThaumcraftCrystalGen
 {
-	var ThaumicPowerProduction = RecipeBuilder.newBuilder("thaumic_energy_" ~ burnItem.displayName, "thaumic_energy_converter", 60);
+	var ThaumicPowerProduction = RecipeBuilder.newBuilder("thaumic_energy_" ~ burnItem.displayName, "thaumic_energy_converter", 160);
 	ThaumicPowerProduction.addItemInput(burnItem);
-	ThaumicPowerProduction.addEnergyPerTickOutput(powerOutput / 60);
+	ThaumicPowerProduction.addEnergyPerTickOutput(powerOutput / 160);
 
 	//Add some output items for more valuable crystals
-	if(powerOutput >= 1200)
+	if(powerOutput >= 12500)
 	{
 		ThaumicPowerProduction.addItemOutput(<thaumcraft:nugget:5>);
-		ThaumicPowerProduction.setChance(0.05);
+		ThaumicPowerProduction.setChance(0.1);
 	}
-	if(powerOutput >= 2000)
+	if(powerOutput >= 27500)
 	{
 
 		ThaumicPowerProduction.addItemOutput(<thermalfoundation:material:16>);
-		ThaumicPowerProduction.setChance(0.02);
+		ThaumicPowerProduction.setChance(0.04);
 		ThaumicPowerProduction.addItemOutput(<extendedcrafting:material:129>);
-		ThaumicPowerProduction.setChance(0.02);
+		ThaumicPowerProduction.setChance(0.04);
 	}
-	if(powerOutput >= 2800)
+	if(powerOutput >= 50000)
 	{
 		ThaumicPowerProduction.addItemOutput(<thaumcraft:nugget:10>);
-		ThaumicPowerProduction.setChance(0.01);
+		ThaumicPowerProduction.setChance(0.02);
 	}
 	ThaumicPowerProduction.build();
 }

@@ -16,18 +16,6 @@
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_4", "meta": 14 },
 	  "replace_surface" : true,
-	  "blocks_under": [
-	  		{ "block": "minecraft:stone" },
-	  		{ "block": "minecraft:dirt" },
-	  		{ "block": "minecraft:grass" },
-	  		{ "block": "minecraft:gravel" },
-	  		{ "block": "minecraft:sand" },
-	  		{ "block": "minecraft:clay" },
-	  		{ "block": "minecraft:packed_ice" },
-	  		{ "block": "biomesoplenty:grass" },
-	  		{ "block": "biomesoplenty:dirt" },
-	  		{ "block": "minecraft:sandstone" }
-		],
       "rarity": 30
     },
     "stone": [
@@ -41,11 +29,11 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 65,
+    "rarity": 80,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 11,
+    "vertical_size": 8,
     "horizontal_size": 12,
 	"biomes": [
       "wet"
@@ -72,18 +60,6 @@
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_1", "meta": 14 },
 	  "replace_surface" : true,
-	  "blocks_under": [
-	  		{ "block": "minecraft:stone" },
-	  		{ "block": "minecraft:dirt" },
-	  		{ "block": "minecraft:grass" },
-	  		{ "block": "minecraft:gravel" },
-	  		{ "block": "minecraft:sand" },
-	  		{ "block": "minecraft:clay" },
-	  		{ "block": "minecraft:packed_ice" },
-	  		{ "block": "biomesoplenty:grass" },
-	  		{ "block": "biomesoplenty:dirt" },
-	  		{ "block": "minecraft:sandstone" }
-		],
       "rarity": 30
     },
     "stone": [
@@ -97,12 +73,12 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 70,
+    "rarity": 85,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 16,
-    "horizontal_size": 14,
+    "vertical_size": 13,
+    "horizontal_size": 7,
 	"biomes": [
       "plains"
   	],
@@ -128,18 +104,6 @@
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 11 },
 	  "replace_surface" : true,
-	  "blocks_under": [
-	  		{ "block": "minecraft:stone" },
-	  		{ "block": "minecraft:dirt" },
-	  		{ "block": "minecraft:grass" },
-	  		{ "block": "minecraft:gravel" },
-	  		{ "block": "minecraft:sand" },
-	  		{ "block": "minecraft:clay" },
-	  		{ "block": "minecraft:packed_ice" },
-	  		{ "block": "biomesoplenty:grass" },
-	  		{ "block": "biomesoplenty:dirt" },
-	  		{ "block": "minecraft:sandstone" }
-		],
       "rarity": 25
     },
     "stone": [
@@ -153,12 +117,12 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 70,
+    "rarity": 110,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 18,
-    "horizontal_size": 9,
+    "vertical_size": 14,
+    "horizontal_size": 11,
 	"biomes": [
       "snowy"
   	],
@@ -184,18 +148,6 @@
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 13 },
 	  "replace_surface" : true,
-	  "blocks_under": [
-	  		{ "block": "minecraft:stone" },
-	  		{ "block": "minecraft:dirt" },
-	  		{ "block": "minecraft:grass" },
-	  		{ "block": "minecraft:gravel" },
-	  		{ "block": "minecraft:sand" },
-	  		{ "block": "minecraft:clay" },
-	  		{ "block": "minecraft:packed_ice" },
-	  		{ "block": "biomesoplenty:grass" },
-	  		{ "block": "biomesoplenty:dirt" },
-	  		{ "block": "minecraft:sandstone" }
-		],
       "rarity": 25
     },
     "stone": [
@@ -209,7 +161,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 80,
+    "rarity": 95,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
@@ -240,18 +192,6 @@
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_0", "meta": 13 },
 	  "replace_surface" : true,
-	  "blocks_under": [
-	  		{ "block": "minecraft:stone" },
-	  		{ "block": "minecraft:dirt" },
-	  		{ "block": "minecraft:grass" },
-	  		{ "block": "minecraft:gravel" },
-	  		{ "block": "minecraft:sand" },
-	  		{ "block": "minecraft:clay" },
-	  		{ "block": "minecraft:packed_ice" },
-	  		{ "block": "biomesoplenty:grass" },
-	  		{ "block": "biomesoplenty:dirt" },
-	  		{ "block": "minecraft:sandstone" }
-		],
       "rarity": 25
     },
     "stone": [
@@ -265,12 +205,12 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 70,
+    "rarity": 85,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 14,
-    "horizontal_size": 14,
+    "vertical_size": 11,
+    "horizontal_size": 11,
 	"biomes": [
       "forest"
   	],
@@ -296,18 +236,6 @@
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 1 },
 	  "replace_surface" : true,
-	  "blocks_under": [
-	  		{ "block": "minecraft:stone" },
-	  		{ "block": "minecraft:dirt" },
-	  		{ "block": "minecraft:grass" },
-	  		{ "block": "minecraft:gravel" },
-	  		{ "block": "minecraft:sand" },
-	  		{ "block": "minecraft:clay" },
-	  		{ "block": "minecraft:packed_ice" },
-	  		{ "block": "biomesoplenty:grass" },
-	  		{ "block": "biomesoplenty:dirt" },
-	  		{ "block": "minecraft:sandstone" }
-		],
       "rarity": 25
     },
     "stone": [
@@ -321,11 +249,11 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 85,
+    "rarity": 95,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 18,
+    "vertical_size": 14,
     "horizontal_size": 7,
 	"biomes": [
       "cold"

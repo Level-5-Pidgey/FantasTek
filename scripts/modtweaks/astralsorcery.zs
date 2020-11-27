@@ -48,7 +48,7 @@ mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/handtelescope", <astralsorcery:itemhandtelescope>.withTag({astralsorcery: {}}), 200, 40,
 [
  null, <ore:plateWood>, <astralsorcery:itemcraftingcomponent:3>,
- <ore:plateWood>, <ore:plateGold>, <ore:plateWood>,
+ <ore:plateWood>, <ore:ingotGold>, <ore:plateWood>,
  <ore:stickWood>, <ore:plateWood>, null
 ]);
 
