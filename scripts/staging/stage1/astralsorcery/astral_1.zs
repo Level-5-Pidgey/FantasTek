@@ -7,7 +7,25 @@ val Stage1AstralItems = [
 	<contenttweaker:astral_crystal_air>,
 	<contenttweaker:astral_crystal_water>,
 	<contenttweaker:astral_crystal_fire>,
-	<contenttweaker:astral_crystal_earth>
+	<contenttweaker:astral_crystal_earth>,
+	<astralsorcery:itemcraftingcomponent:5>,
+	<astralsorcery:itemfragmentcapsule>,
+	<astralsorcery:itemwand>.withTag({astralsorcery: {}}),
+	<astralsorcery:itemhandtelescope>,
+	<astralsorcery:blockattunementrelay>,
+	<astralsorcery:blockworldilluminator>,
+	<astralsorcery:blockwell>,
+	<astralsorcery:itemcrystalsword>,
+	<astralsorcery:itemcrystalaxe>,
+	<astralsorcery:itemcrystalshovel>,
+	<astralsorcery:itemcrystalpickaxe>,
+	<astralsorcery:blockcollectorcrystal>,
+	<astralsorcery:blockcustomore>,
+	<astralsorcery:itemusabledust>,
+	<astralsorcery:itemusabledust:1>,
+	<astralsorcery:itemconstellationpaper>,
+	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_converter"}),
+	<astralsorcery:itemcraftingcomponent:3>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1AstralItems

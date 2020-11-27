@@ -1,0 +1,29 @@
+{
+	title: "&6Stardom",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "astralsorcery.liquidstarlight",
+			Amount: 1000
+		}
+	},
+	x: 4.5d,
+	y: 0.5d,
+	shape: "gear",
+	text: [
+		""
+	],
+	dependencies: [
+		"be020485"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "1a4f4eca",
+		type: "fluid",
+		fluid: "astralsorcery.liquidstarlight",
+		amount: 100000
+	}]
+}

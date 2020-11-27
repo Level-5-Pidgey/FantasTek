@@ -1,0 +1,108 @@
+{
+	icon: "jaopca:item_plateaquamarine",
+	x: 2.5d,
+	y: 2.5d,
+	dependencies: [
+		"47043a98",
+		"be020485"
+	],
+	tasks: [{
+		uid: "e866b672",
+		type: "item",
+		title: "Craft the blueprint for the Starlight Energy Harness",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:astral_converter"
+			}
+		}]
+	},
+	{
+		uid: "b07692c8",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "0a937145",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}],
+		count: 5L
+	},
+	{
+		uid: "5126eef7",
+		type: "item",
+		title: "Craft an Energy Output hatch",
+		items: [{
+			item: "modularmachinery:blockenergyoutputhatch"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 1"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 2"
+		}]
+	},
+	{
+		uid: "a1757775",
+		type: "item",
+		title: "Craft a Fluid Input Hatch",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch"
+		},
+		{
+			item: "modularmachinery:blockfluidinputhatch 1 1"
+		},
+		{
+			item: "modularmachinery:blockfluidinputhatch 1 2"
+		}]
+	},
+	{
+		uid: "d870b4f6",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing"
+		}]
+	},
+	{
+		uid: "c83452b2",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmarble 1 2"
+		}],
+		count: 8L
+	},
+	{
+		uid: "dcadd226",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmarble"
+		}],
+		count: 9L
+	},
+	{
+		uid: "a058c888",
+		type: "item",
+		items: [{
+			item: "quark:stone_marble_bricks_slab"
+		}],
+		count: 9L
+	},
+	{
+		uid: "c1061c33",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:white_sandstone 1 1"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "cbb14a6c",
+		type: "item",
+		item: "thermaldynamics:duct_0",
+		count: 8
+	}]
+}

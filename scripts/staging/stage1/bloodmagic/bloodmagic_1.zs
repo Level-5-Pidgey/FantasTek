@@ -31,6 +31,8 @@ val Stage1BloodMagicItems = [
 	<bloodmagic:sigil_phantom_bridge>,
 	<bloodmagic:arcane_ashes>,
 	<bloodmagic:component:15>,
+	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:bloodmagic_converter"}),
+	<bloodmagic:slate>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1BloodMagicItems
