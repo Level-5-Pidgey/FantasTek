@@ -105,9 +105,9 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint
 ]);
 
 //Melting Elemental Crystals into Liquids
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_fire>, <liquid:elemental_water_fire>, 0.8, 0.3, "d44219");
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_water>, <liquid:elemental_water_water>, 0.8, 0.3, "6effd1");
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_air>, <liquid:elemental_water_air>, 0.8, 0.3, "ebe2ca");
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_earth>, <liquid:elemental_water_earth>, 0.8, 0.3, "82e34d");
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_fire>, <liquid:elemental_water_fire>, 0.8, 0.3, 13910553);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_water>, <liquid:elemental_water_water>, 0.8, 0.3, 7274449);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_air>, <liquid:elemental_water_air>, 0.8, 0.3, 15459018);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_earth>, <liquid:elemental_water_earth>, 0.8, 0.3, 8577869);
 
 print("### Astral Sorcery Init Complete ###");

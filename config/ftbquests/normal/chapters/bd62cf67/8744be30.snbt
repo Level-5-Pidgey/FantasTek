@@ -5,8 +5,7 @@
 	y: -2.0d,
 	description: "Don't add extra salt",
 	text: [
-		"If you have the patience, using Drying Racks to create extra nutritious food can prove useful as it conserves fuel and gives an early use for Zombie Flesh.",
-		"These drying racks will also be useful for crafting items later, so don't leave us hanging!"
+		"If you have the patience, using Drying Racks to create extra nutritious food can prove useful as it conserves fuel and gives an early use for Zombie Flesh. These drying racks will also be useful for crafting items later, so don't leave us hanging!"
 	],
 	dependencies: [
 		"8edd4b42"

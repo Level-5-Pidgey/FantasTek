@@ -1,6 +1,10 @@
 {
+	title: "Power Up",
 	x: 2.5d,
 	y: -1.0d,
+	text: [
+		"Salis Mundus can be imbued with elemental energy to become even more powerful, and will allow you to craft the Basic Crafting Table. This specialised crafting table will evolve with you as you progress on your journey."
+	],
 	dependencies: [
 		"cf3d7cf3"
 	],

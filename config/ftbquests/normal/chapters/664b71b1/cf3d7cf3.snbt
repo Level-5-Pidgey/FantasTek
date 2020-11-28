@@ -4,7 +4,7 @@
 	x: 2.5d,
 	y: 1.0d,
 	text: [
-		"Salis Mundus is a magical powder that can be applied to blocks to convert them into Thaumaturge equipment that will be critical in you making progress "
+		"Salis Mundus is a magical powder that can be applied to blocks to convert them into Thaumaturge equipment that will be critical in your progression through Thaumcraft. To show your proficiency and dedication to the way of the Thaumaturge, create an Arcane Workbench."
 	],
 	dependencies: [
 		"dcb70a7e"

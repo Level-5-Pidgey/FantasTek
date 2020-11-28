@@ -5,7 +5,7 @@
 	y: 0.0d,
 	description: "Let your imagination run wild!",
 	text: [
-		"Standard tools crafted using our patented crafting station are enchantable and get the job done, but if you want to make some thing more specialised or versatile, you will need to assemble the tool yourself using desired tool parts.",
+		"Standard tools crafted using our patented crafting station are enchantable and get the job done, but if you want to make some thing more specialised or versatile you will need to assemble the tool yourself using desired tool parts.",
 		"Using wooden boards and some sticks, crafting patterns can be assembled and used within a Stencil Table to create dedicated patterns for specific tool parts.",
 		"",
 		"You can then use these tool parts to create custom tools for a specific job!"

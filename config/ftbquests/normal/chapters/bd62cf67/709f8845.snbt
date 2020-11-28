@@ -10,7 +10,7 @@
 		"",
 		"Pipes are a cheap alternative to hoppers that carry 1 item stack along it, travelling in a chosen direction towards an inventory. They can be combined with hoppers for a less laggy, more resource efficient item routing system.",
 		"",
-		"Chutes are a cheap method to drop items in the world, acting similarly to an open crate from Botania. The chute, unlike a dropper, does not require redstone to activate and will automatically drop anything given to it."
+		"Chutes are a cheap method to drop items in the world, acting like a chest with a hole in the bottom of it. Anything that you put inside will immediately fall onto the floor."
 	],
 	dependencies: [
 		"1dab1267"

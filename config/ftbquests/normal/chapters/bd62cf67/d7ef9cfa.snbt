@@ -7,8 +7,7 @@
 	text: [
 		"Look, I'm gonna be honest. Budget cuts have hit really hard this year. We only made $421.5B last quarter and had to lay off a few hundred employees and replace them with AI workers.",
 		"",
-		"Since we've taken a hit to the internship department, it means your wages are on the chopping block.",
-		"If you want to earn a few bucks, completing bounties for the natives and sourcing the items they need would probably be a nice way to earn some cash."
+		"Since we've taken a hit to the internship department, it means your wages are on the chopping block. If you want to earn a few bucks, completing bounties for the natives and sourcing the items they need would probably be a nice way to earn some cash."
 	],
 	dependencies: [
 		"7b16dd8a"

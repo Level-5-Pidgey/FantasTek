@@ -353,7 +353,7 @@ for burnItem, powerOutput in AstralPlant
 	AstralPowerProduction.build();
 }
 
-/Add Blood Magic Power Production Recipes
+//Add Blood Magic Power Production Recipes
 var BloodMagicPlant as int[crafttweaker.liquid.ILiquidStack] =
 {
 	<liquid:lifeessence> : 15000,

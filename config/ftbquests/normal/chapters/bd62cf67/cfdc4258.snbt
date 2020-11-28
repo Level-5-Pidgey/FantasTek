@@ -4,8 +4,7 @@
 	y: 2.0d,
 	description: "*tink* *tink* *tink* *clang*",
 	text: [
-		"Ingots and blocks of metal or gems are good and all, but you're going to need to fashion them into plates or gears or rods to make them useful for machinery.",
-		"Whilst highly inefficient, a tinker's hammer allows you to hammer ingots into plates so that you can use them to craft machinery.",
+		"Ingots and blocks of metal or gems are good and all, but you're going to need to fashion them into plates or gears or rods to make them useful for machinery. Whilst highly inefficient, a tinker's hammer allows you to hammer ingots into plates so that you can use them to craft machinery.",
 		"",
 		"Don't fret, you will be able to create much more efficient methods of plate crafting later down the line!"
 	],

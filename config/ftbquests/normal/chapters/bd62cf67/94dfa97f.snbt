@@ -6,7 +6,7 @@
 	shape: "hexagon",
 	description: "Moving along!",
 	text: [
-		"All factories need a brisk production line, and until you have the technology to pressurize tubing your best bet is to move items with conveyors. These conveyors can support 4 item stacks at once and move items much more quickly than piping!"
+		"All factories need a brisk production line, and until you have the technology to pressurize tubing your best bet is to move items with conveyors. These conveyors can support 4 item stacks at once and move items much faster than piping!"
 	],
 	dependencies: [
 		"c767d5ec"

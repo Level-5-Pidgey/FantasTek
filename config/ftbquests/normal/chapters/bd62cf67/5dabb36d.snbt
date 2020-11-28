@@ -6,8 +6,7 @@
 	text: [
 		"If your experience is shared with other Pioneers, then a mail system is the way to go for sharing gifts and sending messages remotely.",
 		"",
-		"The intergalactic mailbox allows you to send parcels or letters to other players on a multiplayer server (or yourself if you're really *that* lonely) and attach items. There's no travel time, just a small fee of a 1n stamp, plus 1n for each",
-		"item stack you attach. You can access your own mailbox inventory by opening any mailbox in a world."
+		"The intergalactic mailbox allows you to send parcels or letters to other players on a multiplayer server (or yourself if you're really *that* lonely) and attach items. There's no travel time, just a small fee of a 1n stamp, plus 1n for each item stack you attach. You can access your own mailbox inventory by opening any mailbox in a world."
 	],
 	dependencies: [
 		"7b16dd8a"
