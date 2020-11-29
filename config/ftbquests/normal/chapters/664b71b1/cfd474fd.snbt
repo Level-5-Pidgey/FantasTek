@@ -7,8 +7,7 @@
 	text: [
 		"When mining ores such as &eCoal&r, &eRedstone&r or &eDiamonds&r, you may also get some &bRare Earths&r.",
 		"",
-		"These &bRare Earths&r are extremely important later on, and should be saved whenever possible! They seem to be magically reactive, and will surely",
-		"prove useful down the road. If you could send us some for some lab analysis that'd be amazing and we will get back to you with results when possible!"
+		"These &bRare Earths&r are extremely important later on, and should be saved whenever possible! They seem to be magically reactive, and will surely prove useful down the road. If you could send us some for some lab analysis that'd be amazing and we will get back to you with results when possible!"
 	],
 	dependencies: [
 		"6a21a24b"
