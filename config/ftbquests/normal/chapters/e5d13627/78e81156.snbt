@@ -5,7 +5,7 @@
 	y: 2.5d,
 	shape: "gear",
 	text: [
-		""
+		"Generating power with the aforementioned Starlight Energy Harness will be the most advanced technology we trust you with using right now. To show your profiency with the Astral arts you must generate a significant amount of power to kickstart the Orbiting Relay Station, which will allow us to begin sending you more complex instructions to aid you on your journey."
 	],
 	dependencies: [
 		"8215bd41"
