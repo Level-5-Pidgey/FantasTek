@@ -450,6 +450,6 @@ mods.bloodmagic.AlchemyArray.addRecipe(<modularmachinery:itemblueprint>.withTag(
 //Embers Power Generator
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}), [[null, <enderio:item_material:77>, null], [<enderio:item_material:77>, <embers:ancient_motive_core>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 //Embers Mechanical Assembler
-recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}) ~ "_emberAssembly"), <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}), [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"})) ~ "_emberAssembly", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}), [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]]);
 
 print("### Modular Machinery Init Complete ###");
