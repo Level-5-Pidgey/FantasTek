@@ -347,8 +347,8 @@ var AstralPlant as int[crafttweaker.liquid.ILiquidStack] =
 
 for burnItem, powerOutput in AstralPlant
 {
-	var AstralPowerProduction = RecipeBuilder.newBuilder("astral_converter" ~ burnItem.displayName, "astral_converter", 40);
-	AstralPowerProduction.addFluidInput(burnItem * 50);
+	var AstralPowerProduction = RecipeBuilder.newBuilder("astral_converter" ~ burnItem.displayName, "astral_converter", 400);
+	AstralPowerProduction.addFluidInput(burnItem * 1000);
 	AstralPowerProduction.addEnergyPerTickOutput(powerOutput / 400);
 	AstralPowerProduction.build();
 }
@@ -437,5 +437,19 @@ for burnItem, powerOutput in ThaumcraftCrystalGen
 	}
 	ThaumicPowerProduction.build();
 }
+
+//Machine Blueprint Recipes
+//Starlight Energy Harness
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_converter"}), [
+	[null, <enderio:item_material:77>, null],
+	[<enderio:item_material:77>, <ore:blockAquamarine>.firstItem, <enderio:item_material:77>],
+	[null, <enderio:item_material:77>, null]
+]);
+//Life Essence Transmutator
+mods.bloodmagic.AlchemyArray.addRecipe(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:bloodmagic_converter"}), <contenttweaker:sanguine_gem>, <enderio:item_material:77>);
+//Embers Power Generator
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}), [[null, <enderio:item_material:77>, null], [<enderio:item_material:77>, <embers:ancient_motive_core>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
+//Embers Mechanical Assembler
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}) ~ "_emberAssembly"), <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}), [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]]);
 
 print("### Modular Machinery Init Complete ###");

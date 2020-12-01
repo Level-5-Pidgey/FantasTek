@@ -24,7 +24,6 @@ for key, value in bloodMagic_CRAFTINGTABLE {
 
 val bloodMagic_EXTREMECRAFTING = {
 		<bloodmagic:soul_forge> : [[<ore:ingotElectrotineAlloy>, null, <ore:ingotElectrotineAlloy>], [<ore:stoneBasalt>, <ore:plateGold>, <ore:stoneBasalt>], [<ore:stoneBasalt>, <betternether:cincinnasite_forge>, <ore:stoneBasalt>]],
-		<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:bloodmagic_converter"}) : [[null, <enderio:item_material:77>, null], [<enderio:item_material:77>, <contenttweaker:sanguine_gem>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in bloodMagic_EXTREMECRAFTING {
@@ -59,7 +58,7 @@ for items, values in bloodMagicAltarCrafting {
 //T1 Blood Orb Crafting
 for block in scripts.helpers.BiomeGemMaterial["block"].items
 {
-	mods.bloodmagic.BloodAltar.addRecipe(block, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), 0, 1000, 4, 2);
+	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), block, 0, 1000, 4, 2);
 }
 
 //Petty Gem

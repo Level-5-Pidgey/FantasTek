@@ -1,7 +1,7 @@
 {
 	title: "Blood Networking",
-	x: 9.5d,
-	y: 1.5d,
+	x: 5.5d,
+	y: 6.0d,
 	shape: "hexagon",
 	text: [
 		"The Divination Sigil is used to monitor the levels of LP in your Blood Altar and your Blood Network so that you can ensure you have enough LP to perform the rituals and recipes that you need to."

@@ -1,0 +1,108 @@
+{
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "elemental_water_earth",
+			Amount: 1000
+		}
+	},
+	x: 11.5d,
+	y: 4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"e79cb40b"
+	],
+	tasks: [{
+		uid: "8664e159",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:bloodmagic_converter"
+			}
+		}]
+	},
+	{
+		uid: "2c39fb33",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcontroller"
+		}]
+	},
+	{
+		uid: "d03fcc07",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}],
+		count: 5L
+	},
+	{
+		uid: "34d5cb9f",
+		type: "item",
+		title: "Create an Energy Output Hatch",
+		items: [{
+			item: "modularmachinery:blockenergyoutputhatch"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 1"
+		},
+		{
+			item: "modularmachinery:blockenergyoutputhatch 1 2"
+		}]
+	},
+	{
+		uid: "02f88d1a",
+		type: "item",
+		title: "Create a Fluid Input Hatch",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch"
+		},
+		{
+			item: "modularmachinery:blockfluidinputhatch 1 1"
+		},
+		{
+			item: "modularmachinery:blockfluidinputhatch 1 2"
+		}]
+	},
+	{
+		uid: "ba013a21",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing"
+		}]
+	},
+	{
+		uid: "2f757f05",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmarble"
+		}],
+		count: 9L
+	},
+	{
+		uid: "b25198eb",
+		type: "item",
+		items: [{
+			item: "quark:stone_marble_bricks_slab"
+		}],
+		count: 9L
+	},
+	{
+		uid: "96bde153",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmarble 1 4"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "feed843c",
+		type: "item",
+		item: "thermaldynamics:duct_0",
+		count: 8
+	}]
+}

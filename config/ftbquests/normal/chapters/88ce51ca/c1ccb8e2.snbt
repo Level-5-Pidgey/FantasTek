@@ -1,7 +1,7 @@
 {
 	title: "Blood Orbeez",
-	x: 6.5d,
-	y: 1.5d,
+	x: 7.5d,
+	y: 2.0d,
 	text: [
 		"The weak Blood Orb is an important step in your mastery of Blood Magic. Using the Blood Orb you can store blood from your Blood Altar so that you can use it when crafting items or when conducting rituals. The Blood Orb can be upgraded along with your Blood Altar to give you additional capacity for more demanding crafting and rituals."
 	],

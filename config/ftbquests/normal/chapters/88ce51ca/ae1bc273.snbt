@@ -1,7 +1,7 @@
 {
 	title: "Bottomless Bucket",
 	x: 9.5d,
-	y: 3.0d,
+	y: 6.0d,
 	shape: "hexagon",
 	text: [
 		"The Water Sigil acts as a bottomless water bucket, giving you the power to place water sources anywhere that you desire. You must be careful with this ability though as you cannot use the Water Sigil to take back placed water sources, so be sure not to flood your builds accidentally."

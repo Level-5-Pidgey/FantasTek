@@ -65,7 +65,6 @@ val embers_CRAFTINGTABLE = {
 		<embers:ember_activator> : [[<ore:ingotConductiveIron>, <ore:ingotConductiveIron>, <ore:ingotConductiveIron>], [<ore:ingotConductiveIron>, <embers:mech_core>, <ore:ingotConductiveIron>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]],
 		<embers:ember_emitter> * 5 : [[null, <ore:ingotIron>, null], [null, <ore:ingotIron>, null], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]],
 		<embers:ember_receiver> * 5 : [[null, null, null], [<ore:ingotIron>, null, <ore:ingotIron>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]],
-		<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}) : [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]],
 		<embers:ember_gauge> : [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateGold>]],
 		<embers:fluid_gauge> : [[<ore:dustRedstone>], [<ore:paper>], [<ore:plateIron>]],
 		<embers:ember_detector> : [[null, <embers:archaic_brick>, null], [<embers:archaic_brick>, <minecraft:compass>, <embers:archaic_brick>], [null, <embers:archaic_brick>, null]],
@@ -78,7 +77,6 @@ for key, value in embers_CRAFTINGTABLE {
 
 //ExtendedCrafting recipes for forestry Machines in tier1
 val embers_EXTENDEDCRAFTING = {
-	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}) : [[null, <enderio:item_material:77>, null], [<enderio:item_material:77>, <embers:ancient_motive_core>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]],
 	<embers:stamper> : [[<embers:brick_caminite>, <ore:plateIron>.firstItem, <embers:brick_caminite>], [<embers:brick_caminite>, <ore:ingotIron>.firstItem, <embers:brick_caminite>], [<embers:brick_caminite>, null, <embers:brick_caminite>]],
 	<embers:stamper_base> : [[<ore:ingotIron>.firstItem, null, <ore:ingotIron>.firstItem], [<embers:brick_caminite>, null, <embers:brick_caminite>], [<embers:brick_caminite>, <minecraft:bucket>, <embers:brick_caminite>]],
 	<embers:block_furnace> : [[<embers:brick_caminite>, <embers:plate_caminite>, <embers:brick_caminite>],

@@ -1,7 +1,7 @@
 {
 	title: "Sacrificial Sword",
-	x: 6.5d,
-	y: -1.5d,
+	x: 7.5d,
+	y: -2.0d,
 	shape: "hexagon",
 	text: [
 		"The Dagger of Sacrifice is a weapon that allows you to massacre wildlife near the Blood Altar to fuel your magic. This is much more beneficial to the company as there is no risk to your life, only the lives of those around you. The Dagger of Sacrifice is also better for accruing a lot of blood at once as you only have so much inside your body, whereas if you can find a renewable way of farming wildlife, you can get a lot more a lot quicker!"

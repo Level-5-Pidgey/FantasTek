@@ -97,17 +97,10 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminator", <
  <astralsorcery:itemusabledust>, <ore:blockGlowstone>, <astralsorcery:itemusabledust>
 ]);
 
-//Starlight Energy Harness Crafting Recipe
-mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_converter"}), [
-	[null, <enderio:item_material:77>, null],
-	[<enderio:item_material:77>, <ore:blockAquamarine>.firstItem, <enderio:item_material:77>],
-	[null, <enderio:item_material:77>, null]
-]);
-
 //Melting Elemental Crystals into Liquids
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_fire>, <liquid:elemental_water_fire>, 0.8, 0.3, 13910553);
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_water>, <liquid:elemental_water_water>, 0.8, 0.3, 7274449);
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_air>, <liquid:elemental_water_air>, 0.8, 0.3, 15459018);
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_earth>, <liquid:elemental_water_earth>, 0.8, 0.3, 8577869);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_fire>, <liquid:elemental_water_fire>, 0.8, 0.7, 13910553);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_water>, <liquid:elemental_water_water>, 0.8, 0.7, 7274449);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_air>, <liquid:elemental_water_air>, 0.8, 0.7, 15459018);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_earth>, <liquid:elemental_water_earth>, 0.8, 0.7, 8577869);
 
 print("### Astral Sorcery Init Complete ###");

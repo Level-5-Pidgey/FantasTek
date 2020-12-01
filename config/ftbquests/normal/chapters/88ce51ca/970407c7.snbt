@@ -1,7 +1,7 @@
 {
 	title: "Passive Agressive",
-	x: 8.0d,
-	y: -1.5d,
+	x: 9.5d,
+	y: -2.0d,
 	shape: "hexagon",
 	text: [
 		"The Coat of Arms and Bloodletters Pack are two very interesting pieces of armor that will help you generate LP passively whilst going about your daily activities and store it in your Blood Orb. The Coat of Arms will absorb some small amount of blood from opponents that you defeat during combat, whereas the Bloodletters Pack will take some blood out of you until you begin feeling unwell.",

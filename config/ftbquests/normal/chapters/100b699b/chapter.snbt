@@ -1,6 +1,9 @@
 {
 	title: "Magic",
 	icon: "tconstruct:materials 1 9",
+	description: [
+		"Click me!"
+	],
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: ""
