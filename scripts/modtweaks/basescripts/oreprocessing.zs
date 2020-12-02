@@ -465,7 +465,10 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
-					mods.thermalexpansion.Pulverizer.addRecipe(oreDust.firstItem * 6, oreDouble.firstItem, ((tier + 1) * 1500), oreDust.firstItem * 2, 50);
+					for oreDense in oreDouble.items
+					{
+						mods.thermalexpansion.Pulverizer.addRecipe(oreDust.firstItem * 6, oreDense, ((tier + 1) * 1500), oreDust.firstItem * 2, 50);
+					}
 				}
 			}
 			else
@@ -489,11 +492,14 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
-					//Normal Slag
-					mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 12, <thermalfoundation:material:864>, oreDouble.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 2, 33);
+					for oreDense in oreDouble.items
+					{
+						//Normal Slag
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 12, <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * 2, 33);
 
-					//Rich Slag
-					mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 16, <thermalfoundation:material:864>, oreDouble.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 4, 80);
+						//Rich Slag
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 16, <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * 4, 80);
+					}
 				}
 			}
 			else if(!oreIngot.empty)
@@ -509,10 +515,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 					//Dense Ores
 					if(!oreDouble.empty)
 					{
-						//Normal Slag
-						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 6, <thermalfoundation:material:864>, oreDouble.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 33);
-						//Rich Slag
-						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 8, <thermalfoundation:material:865>, oreDouble.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 12, 80);
+						for oreDense in oreDouble.items
+						{
+							//Normal Slag
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 6, <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 33);
+							//Rich Slag
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 8, <thermalfoundation:material:865>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * 12, 80);
+						}
 					}
 				}
 				else
