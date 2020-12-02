@@ -25,5 +25,10 @@
 		type: "fluid",
 		fluid: "astralsorcery.liquidstarlight",
 		amount: 100000
+	}],
+	rewards: [{
+		uid: "5f980062",
+		type: "item",
+		item: "futuremc:netherite_scrap"
 	}]
 }

@@ -1,7 +1,7 @@
 {
 	title: "&6Gold and Plunder",
-	x: 10.5d,
-	y: -1.5d,
+	x: 17.0d,
+	y: -1.0d,
 	shape: "gear",
 	description: "Set the heavens asunder!",
 	text: [
@@ -19,19 +19,13 @@
 		items: [{
 			item: "thaumcraft:nugget 1 10"
 		}],
-		count: 10L,
+		count: 15L,
 		consume_items: true
 	}],
 	rewards: [{
-		uid: "0f12759d",
+		uid: "92721f27",
 		type: "item",
-		item: "thaumcraft:amber",
-		count: 8
-	},
-	{
-		uid: "edc09ddc",
-		type: "item",
-		item: "thaumcraft:quicksilver",
-		count: 8
+		item: "futuremc:netherite_scrap",
+		count: 2
 	}]
 }

@@ -98,9 +98,9 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminator", <
 ]);
 
 //Melting Elemental Crystals into Liquids
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_fire>, <liquid:elemental_water_fire>, 0.8, 0.7, 13910553);
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_water>, <liquid:elemental_water_water>, 0.8, 0.7, 7274449);
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_air>, <liquid:elemental_water_air>, 0.8, 0.7, 15459018);
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_earth>, <liquid:elemental_water_earth>, 0.8, 0.7, 8577869);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_fire>, <liquid:elemental_water_fire>, 0.8, 4, 13910553);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_water>, <liquid:elemental_water_water>, 0.8, 4, 7274449);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_air>, <liquid:elemental_water_air>, 0.8, 4, 15459018);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:astral_crystal_earth>, <liquid:elemental_water_earth>, 0.8, 4, 8577869);
 
 print("### Astral Sorcery Init Complete ###");

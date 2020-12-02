@@ -350,35 +350,35 @@ function createTierTooltip(prefixString as string, tier as int, plus1 as bool, s
 	}
 	else if(modifiedTier == 1)
 	{
-		tierNumberAsColouredText = format.bold(format.gray("I"));
+		tierNumberAsColouredText = format.bold(format.gray("1"));
 	}
 	else if(modifiedTier == 2)
 	{
-		tierNumberAsColouredText =  format.bold(format.yellow("II"));
+		tierNumberAsColouredText =  format.bold(format.yellow("2"));
 	}
 	else if(modifiedTier == 3)
 	{
-		tierNumberAsColouredText = format.bold(format.gold("III"));
+		tierNumberAsColouredText = format.bold(format.gold("3"));
 	}
 	else if(modifiedTier == 4)
 	{
-		tierNumberAsColouredText = format.bold(format.red("IV"));
+		tierNumberAsColouredText = format.bold(format.red("4"));
 	}
 	else if(modifiedTier == 5)
 	{
-		tierNumberAsColouredText = format.bold(format.darkRed("V"));
+		tierNumberAsColouredText = format.bold(format.darkRed("5"));
 	}
 	if(modifiedTier == 6)
 	{
-		tierNumberAsColouredText = format.bold(format.aqua("VI"));
+		tierNumberAsColouredText = format.bold(format.aqua("6"));
 	}
 	if(modifiedTier == 7)
 	{
-		tierNumberAsColouredText = format.bold(format.darkGreen("VII"));
+		tierNumberAsColouredText = format.bold(format.darkGreen("7"));
 	}
 	if(modifiedTier == 8)
 	{
-		tierNumberAsColouredText = format.bold(format.green("VIII"));
+		tierNumberAsColouredText = format.bold(format.green("8"));
 	}
 
 	//Now we have the tier text, add the tooltip!
@@ -408,3 +408,33 @@ static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =
 	"block" : <ore:blockRuby>.firstItem | <ore:blockPeridot>.firstItem | <ore:blockTopaz>.firstItem | <ore:blockTanzanite>.firstItem | <ore:blockMalachite>.firstItem | <ore:blockSapphire>.firstItem | <ore:blockAmber>.firstItem | <ore:blockEmerald>.firstItem,
 	"plate" : <ore:plateRuby>.firstItem | <ore:platePeridot>.firstItem | <ore:plateTopaz>.firstItem | <ore:plateTanzanite>.firstItem | <ore:plateMalachite>.firstItem | <ore:plateSapphire>.firstItem | <ore:plateAmber>.firstItem | <ore:plateEmerald>.firstItem,
 };
+
+function MathMax(n1 as int, n2 as int) as int
+{
+	if(n1 > n2)
+	{
+		return n1;
+	}
+
+	if(n2 > n1)
+	{
+		return n2;
+	}
+
+	return n1;
+}
+
+function MathMin(n1 as int, n2 as int) as int
+{
+	if(n1 < n2)
+	{
+		return n1;
+	}
+
+	if(n2 < n1)
+	{
+		return n2;
+	}
+
+	return n1;
+}

@@ -59,46 +59,46 @@ for oreString in oreChidOres
 
 for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
-  var oreBlock = oreDict.get("ore" ~ materialString);
-  var oreGem = oreDict.get("gem" ~ materialString);
-  var oreIngot = oreDict.get("ingot" ~ materialString);
+	var oreBlock = oreDict.get("ore" ~ materialString);
+	var oreGem = oreDict.get("gem" ~ materialString);
+	var oreIngot = oreDict.get("ingot" ~ materialString);
 
-  if(oreValue <= 1 | materialString == "Mithril")
-  {
-    if(!oreBlock.empty)
-    {
-      if(!oreIngot.empty)
-      {
-		  if(materialString == "Mithril")
-		  {
-        	mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1800);
-		  }
-		  else
-		  {
-		  	mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1500);
-		  }
-      }
-      else if (!oreGem.empty)
-      {
-	  	if(materialString == "Coal")
+	if((oreValue <= 1 || materialString == "Mithril") && materialString != "AncientDebris")
+	{
+		if(!oreBlock.empty)
 		{
-			mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1800);
+			if(!oreIngot.empty)
+			{
+				if(materialString == "Mithril")
+				{
+					mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1800);
+				}
+				else
+				{
+					mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1500);
+				}
+			}
+			else if (!oreGem.empty)
+			{
+				if(materialString == "Coal")
+				{
+					mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 1800);
+				}
+				else
+				{
+					mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 425);
+				}
+			}
+			else
+			{
+				print("Could not add orechid ore for " ~ materialString);
+			}
 		}
 		else
 		{
-			mods.botania.Orechid.addOre(oreBlock, (2 - (oreValue + 1)) * 425);
+			print("Could not find ore block for " ~ materialString);
 		}
-      }
-      else
-      {
-        print("Could not add orechid ore for " ~ materialString);
-      }
-    }
-    else
-    {
-      print("Could not find ore block for " ~ materialString);
-    }
-  }
+	}
 }
 
 //Change Rune Crafting

@@ -409,7 +409,7 @@ var OtherStagingReplacements as crafttweaker.item.IItemStack[crafttweaker.item.I
 	<contenttweaker:infused_stone_perditio> : <minecraft:stone>,
 	<iceandfire:fire_lily> : <biomesoplenty:flower_1:5>,
 	<iceandfire:frost_lily> : <futuremc:cornflower>,
-	<thermalfoundation:ore_fluid:1> : <minecraft:gravel>
+	<thermalfoundation:ore_fluid:1> : <minecraft:gravel>,
 };
 
 var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
@@ -438,7 +438,7 @@ var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
 	<contenttweaker:sub_block_holder_13:13> :stages.progression2,
 	<contenttweaker:sub_block_holder_13:14> : stages.progression2,
 	<contenttweaker:sub_block_holder_3:6> : stages.progression2,
-	<astralsorcery:blockcustomore:1> : stages.AstralSorcery1,
+	<astralsorcery:blockcustomore:1> : stages.AstralSorcery2,
 	<astralsorcery:blockcustomore> : stages.AstralSorcery1,
 	<draconicevolution:draconium_ore:2> : stages.progression2,
 	<contenttweaker:sub_block_holder_14:3> : stages.progression2,
@@ -472,7 +472,7 @@ var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
 	<contenttweaker:infused_stone_perditio> : stages.Thaumcraft1,
 	<iceandfire:fire_lily> : stages.progression2,
 	<iceandfire:frost_lily> : stages.progression2,
-	<thermalfoundation:ore_fluid:1> : stages.progression2
+	<thermalfoundation:ore_fluid:1> : stages.progression2,
 };
 
 for blockToReplace in OtherStagingReplacements

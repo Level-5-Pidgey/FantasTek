@@ -84,6 +84,7 @@ function removeExistingCraftingRecipes(craftingMaterial as string)
 
 function addNewRecipe(craftingMaterial as string, tier as int)
 {
+	//Get all of the oreDicts necessary
 	var nativeCluster = oreDict.get("cluster" ~ craftingMaterial);
 	var oreDust = oreDict.get("dust" ~ craftingMaterial);
 	var oreBlock = oreDict.get("ore" ~ craftingMaterial);
@@ -100,6 +101,29 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 	var processedChunk = oreDict.get("chunk" ~ craftingMaterial);
 	var oreDouble = oreDict.get("denseOre" ~ craftingMaterial);
 
+	//Get the base output
+	var baseMultiplier = 1;
+
+	//Modify Base Output for certain ores
+	if(craftingMaterial == "Apatite")
+	{
+		baseMultiplier = 8;
+	}
+	else if(craftingMaterial == "Redstone")
+	{
+		baseMultiplier = 4;
+	}
+	else if(craftingMaterial == "LapisLazuli")
+	{
+		baseMultiplier = 6;
+	}
+
+	//Double Gem Output vs Ingot
+	if(!oreGem.empty && oreIngot.empty)
+	{
+		baseMultiplier *= 2;
+	}
+
 	if(!oreBlock.empty)
 	{
 		//Furnace -- Tier 0 (1x)
@@ -110,18 +134,18 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!oreGem.empty)
 				{
-					furnace.addRecipe(oreGem.firstItem * 2, ore, 0.7);
-					mods.futuremc.BlastFurnace.addRecipe(ore, oreGem.firstItem * 2);
+					furnace.addRecipe(oreGem.firstItem * (2 * baseMultiplier), ore, 0.7);
+					mods.futuremc.BlastFurnace.addRecipe(ore, oreGem.firstItem * baseMultiplier);
 				}
 				else if (!oreIngot.empty)
 				{
-					furnace.addRecipe(oreIngot.firstItem, ore, 0.7);
-					mods.futuremc.BlastFurnace.addRecipe(ore, oreIngot.firstItem);
+					furnace.addRecipe(oreIngot.firstItem * baseMultiplier, ore, 0.7);
+					mods.futuremc.BlastFurnace.addRecipe(ore, oreIngot.firstItem * baseMultiplier);
 				}
 				else if (!oreDust.empty & oreIngot.empty)
 				{
-					furnace.addRecipe(oreDust.firstItem, ore, 0.7);
-					mods.futuremc.BlastFurnace.addRecipe(ore, oreDust.firstItem);
+					furnace.addRecipe(oreDust.firstItem * baseMultiplier, ore, 0.7);
+					mods.futuremc.BlastFurnace.addRecipe(ore, oreDust.firstItem * baseMultiplier);
 				}
 				else
 				{
@@ -136,13 +160,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					if(!oreDustSmall.empty)
 					{
-						furnace.addRecipe(oreDustSmall.firstItem * 2, poorOre, 0.1);
+						furnace.addRecipe(oreDustSmall.firstItem * (2 * baseMultiplier), poorOre, 0.1);
 					}
 					else
 					{
 						if(!oreNugget.empty)
 						{
-							furnace.addRecipe(oreNugget.firstItem * 2, poorOre, 0.1);
+							furnace.addRecipe(oreNugget.firstItem * (2 * baseMultiplier), poorOre, 0.1);
 						}
 						else
 						{
@@ -165,15 +189,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!nativeCluster.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", nativeCluster.firstItem, ore, [<aspect:ordo> * 3]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", nativeCluster.firstItem * baseMultiplier, ore, [<aspect:ordo> * 3]);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreDust.firstItem * 2, ore, [<aspect:ordo> * 3]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreDust.firstItem * (2 * baseMultiplier), ore, [<aspect:ordo> * 3]);
 				}
 				else if (!oreGem.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreGem.firstItem * 2, ore, [<aspect:ordo> * 3]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreGem.firstItem * baseMultiplier, ore, [<aspect:ordo> * 3]);
 				}
 				else
 				{
@@ -186,15 +210,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!nativeCluster.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", nativeCluster.firstItem * 2, oreDense, [<aspect:metallum> * 5, <aspect:ordo> * 5]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", nativeCluster.firstItem * (2 * baseMultiplier), oreDense, [<aspect:metallum> * 5, <aspect:ordo> * 5]);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreDust.firstItem * 4, oreDense, [<aspect:metallum> * 5, <aspect:ordo> * 5]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreDust.firstItem * (4 * baseMultiplier), oreDense, [<aspect:metallum> * 5, <aspect:ordo> * 5]);
 				}
 				else if (!oreGem.empty)
 				{
-					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreGem.firstItem * 4, oreDense, [<aspect:vitreus> * 5, <aspect:ordo> * 5]);
+					mods.thaumcraft.Crucible.registerRecipe("fantastek:metalpurification/" ~ craftingMaterial, "METALPURIFICATION", oreGem.firstItem * (2 * baseMultiplier), oreDense, [<aspect:vitreus> * 5, <aspect:ordo> * 5]);
 				}
 			}
 		}
@@ -209,11 +233,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					if(!oreDustSmall.empty)
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (4 * (2 - tier)), ore, (tier + 1) * 5, oreDustSmall.firstItem * (2 - tier), 0.5, oreDustSmall.firstItem  * (2 - tier), 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (4 * (2 - tier)), ore, (tier + 1) * 5, oreDustSmall.firstItem * ((2 - tier) * baseMultiplier), 0.5, oreDustSmall.firstItem  * (2 - tier), 0.5);
 					}
 					else
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * (2 - tier), ore, (tier + 1) * 5, oreDust.firstItem, 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * ((2 - tier) * baseMultiplier), ore, (tier + 1) * 5, oreDust.firstItem, 0.5);
 					}
 				}
 				else
@@ -229,12 +253,54 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					if(!oreDustSmall.empty)
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * ((4 * (2 - tier)) * 2), oreDense, (tier + 1) * (5 * 2), oreDustSmall.firstItem * ((2 - tier) * 2), 0.5, oreDustSmall.firstItem  * ((2 - tier) * 2), 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * ((4 * (2 - tier)) * 2), oreDense, (tier + 1) * 10, oreDustSmall.firstItem * ((2 - tier) * (2 * baseMultiplier)), 0.5, oreDustSmall.firstItem  * ((2 - tier) * 2), 0.5);
 					}
 					else
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * ((2 - tier) * 2), oreDense, (tier + 1) * (5 * 2), oreDust.firstItem, 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDust.firstItem * ((2 - tier) * (2 * baseMultiplier)), oreDense, (tier + 1) * 10, oreDust.firstItem * baseMultiplier, 0.5);
 					}
+				}
+			}
+		}
+
+		//TNT Mining -- Tier 2 (2x) (Doesn't multiply dense ores)
+		if(tier <= 2)
+		{
+			//Standard Ores
+			for ore in oreBlock.items
+			{
+				if(!rockyChunk.empty)
+				{
+					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(rockyChunk.firstItem * baseMultiplier, ore, 75);
+				}
+				else if (!nativeCluster.empty)
+				{
+					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(nativeCluster.firstItem * baseMultiplier, ore, 75);
+				}
+				else if (!oreDust.empty)
+				{
+					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(oreDust.firstItem * baseMultiplier, ore, 75);
+				}
+				else
+				{
+					print("Skipped Magneticraft Grinder outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+				}
+			}
+
+			//Dense Ores
+			for oreDense in oreDouble.items
+			{
+				if(!rockyChunk.empty)
+				{
+					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(rockyChunk.firstItem * baseMultiplier, oreDense, 75);
+				}
+				else if (!nativeCluster.empty)
+				{
+					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(nativeCluster.firstItem * baseMultiplier, oreDense, 75);
+				}
+				else if (!oreDust.empty)
+				{
+					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(oreDust.firstItem * baseMultiplier, oreDense, 75);
 				}
 			}
 		}
@@ -247,15 +313,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem, <minecraft:gravel>, 0.33, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem * baseMultiplier, <minecraft:gravel>, 0.33, (tier + 1) * 40, true);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem * baseMultiplier, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * 2, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier), <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
 				}
 				else
 				{
@@ -289,15 +355,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!nativeCluster.empty)
 				{
-					mods.bloodmagic.AlchemyTable.addRecipe(nativeCluster.firstItem, [<bloodmagic:cutting_fluid>, ore], (tier + 1) * 4, (tier + 1) * 60, tier + 1);
+					mods.bloodmagic.AlchemyTable.addRecipe(nativeCluster.firstItem * baseMultiplier, [<bloodmagic:cutting_fluid>, ore], (tier + 1) * 4, (tier + 1) * 60, tier + 1);
 				}
 				else if (!oreGem.empty)
 				{
-					mods.bloodmagic.AlchemyTable.addRecipe(oreGem.firstItem * 2, [<bloodmagic:cutting_fluid>, ore], (tier + 1) * 4, (tier + 1) * 60, tier + 1);
+					mods.bloodmagic.AlchemyTable.addRecipe(oreGem.firstItem * baseMultiplier, [<bloodmagic:cutting_fluid>, ore], (tier + 1) * 4, (tier + 1) * 60, tier + 1);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.bloodmagic.AlchemyTable.addRecipe(oreDust.firstItem * 2, [<bloodmagic:cutting_fluid>, ore], (tier + 1) * 4, (tier + 1) * 60, tier + 1);
+					mods.bloodmagic.AlchemyTable.addRecipe(oreDust.firstItem * (2 * baseMultiplier), [<bloodmagic:cutting_fluid>, ore], (tier + 1) * 4, (tier + 1) * 60, tier + 1);
 				}
 				else
 				{
@@ -310,15 +376,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!nativeCluster.empty)
 				{
-					mods.bloodmagic.AlchemyTable.addRecipe(nativeCluster.firstItem * 2, [<bloodmagic:cutting_fluid>, oreDense], (tier + 1) * 8, (tier + 1) * 120, tier + 1);
+					mods.bloodmagic.AlchemyTable.addRecipe(nativeCluster.firstItem * (2 * baseMultiplier), [<bloodmagic:cutting_fluid>, oreDense], (tier + 1) * 8, (tier + 1) * 120, tier + 1);
 				}
 				else if (!oreGem.empty)
 				{
-					mods.bloodmagic.AlchemyTable.addRecipe(oreGem.firstItem * 4, [<bloodmagic:cutting_fluid>, oreDense], (tier + 1) * 8, (tier + 1) * 120, tier + 1);
+					mods.bloodmagic.AlchemyTable.addRecipe(oreGem.firstItem * (2 * baseMultiplier), [<bloodmagic:cutting_fluid>, oreDense], (tier + 1) * 8, (tier + 1) * 120, tier + 1);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.bloodmagic.AlchemyTable.addRecipe(oreDust.firstItem * 4, [<bloodmagic:cutting_fluid>, oreDense], (tier + 1) * 8, (tier + 1) * 120, tier + 1);
+					mods.bloodmagic.AlchemyTable.addRecipe(oreDust.firstItem * (4 * baseMultiplier), [<bloodmagic:cutting_fluid>, oreDense], (tier + 1) * 8, (tier + 1) * 120, tier + 1);
 				}
 			}
 		}
@@ -334,11 +400,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Native Cluster Based output
 				if (!oreGem.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreGem.firstItem * 2, 0.5, oreGem.firstItem * 3, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreGem.firstItem * (2 * baseMultiplier), 0.5, oreGem.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * 2, 0.5, oreDust.firstItem, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * (2 * baseMultiplier), 0.15, <minecraft:cobblestone>, true);
 				}
 				else
 				{
@@ -351,11 +417,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Rocky Chunk Based Output
 				if (!oreGem.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreGem.firstItem * 2, 0.5, oreGem.firstItem * 3, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreGem.firstItem * baseMultiplier, 0.5, oreGem.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreDust.firstItem * 2, 0.5, oreDust.firstItem, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * (2 * baseMultiplier), 0.15, <minecraft:cobblestone>, true);
 				}
 				else
 				{
@@ -374,11 +440,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if (!oreGem.empty)
 				{
-					mods.magneticraft.Sieve.addRecipe(nativeCluster.firstItem, oreGem.firstItem * 4, 1.0, oreGem.firstItem * 2, 0.5, oreGem.firstItem, 0.25, (tier + 1) * 40, true);
+					mods.magneticraft.Sieve.addRecipe(nativeCluster.firstItem, oreGem.firstItem * (2 * baseMultiplier), 1.0, oreGem.firstItem * baseMultiplier, 0.5, oreGem.firstItem, 0.25, (tier + 1) * 40, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Sieve.addRecipe(nativeCluster.firstItem, oreDust.firstItem * 2, 1.0, oreDust.firstItem, 0.5, oreDust.firstItem, 0.25, (tier + 1) * 40, true);
+					mods.magneticraft.Sieve.addRecipe(nativeCluster.firstItem, oreDust.firstItem * (2 * baseMultiplier), 1.0, oreDust.firstItem * baseMultiplier, 0.5, oreDust.firstItem, 0.25, (tier + 1) * 40, true);
 				}
 				else
 				{
@@ -390,11 +456,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if (!oreGem.empty)
 				{
-					mods.magneticraft.Sieve.addRecipe(rockyChunk.firstItem, oreGem.firstItem * 2, 1.0, oreGem.firstItem, 0.5, oreGem.firstItem, 0.25, (tier + 1) * 40, true);
+					mods.magneticraft.Sieve.addRecipe(rockyChunk.firstItem, oreGem.firstItem * (2 * baseMultiplier), 1.0, oreGem.firstItem * baseMultiplier, 0.5, oreGem.firstItem, 0.25, (tier + 1) * 40, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Sieve.addRecipe(rockyChunk.firstItem, oreDust.firstItem * 2, 1.0, oreDust.firstItem, 0.5, oreDust.firstItem, 0.25, (tier + 1) * 40, true);
+					mods.magneticraft.Sieve.addRecipe(rockyChunk.firstItem, oreDust.firstItem * (2 * baseMultiplier), 1.0, oreDust.firstItem * baseMultiplier, 0.5, oreDust.firstItem, 0.25, (tier + 1) * 40, true);
 				}
 				else
 				{
@@ -418,11 +484,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if (!oreGem.empty)
 				{
-					mods.astralsorcery.StarlightInfusion.addInfusion(ore, oreGem.firstItem * 6, false, 0.5, (tier+1) * 80);
+					mods.astralsorcery.StarlightInfusion.addInfusion(ore, oreGem.firstItem * (3 * baseMultiplier), false, 0.5, (tier+1) * 80);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.astralsorcery.StarlightInfusion.addInfusion(ore, oreDust.firstItem * 3, false, 0.5, (tier+1) * 60);
+					mods.astralsorcery.StarlightInfusion.addInfusion(ore, oreDust.firstItem * (3 * baseMultiplier), false, 0.5, (tier+1) * 60);
 				}
 				else
 				{
@@ -435,11 +501,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if (!oreGem.empty)
 				{
-					mods.astralsorcery.StarlightInfusion.addInfusion(oreDense, oreGem.firstItem * 12, false, 0.7, ((tier+1) * 160));
+					mods.astralsorcery.StarlightInfusion.addInfusion(oreDense, oreGem.firstItem * (6 * baseMultiplier), false, 0.7, ((tier+1) * 160));
 				}
 				else if (!oreDust.empty)
 				{
-					mods.astralsorcery.StarlightInfusion.addInfusion(oreDense, oreDust.firstItem * 6, false, 0.7, ((tier+1) * 120));
+					mods.astralsorcery.StarlightInfusion.addInfusion(oreDense, oreDust.firstItem * (6 * baseMultiplier), false, 0.7, ((tier+1) * 120));
 				}
 			}
 		}
@@ -450,24 +516,24 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			if(!oreGem.empty)
 			{
 				//Standard Ore
-				mods.thermalexpansion.Pulverizer.addRecipe(oreGem.firstItem * 6, oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * 3, 50);
+				mods.thermalexpansion.Pulverizer.addRecipe(oreGem.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * 3, 50);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
-					mods.thermalexpansion.Pulverizer.addRecipe(oreGem.firstItem * 12, oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * 6, 50);
+					mods.thermalexpansion.Pulverizer.addRecipe(oreGem.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * 6, 50);
 				}
 			}
 			else if(!oreDust.empty)
 			{
-				mods.thermalexpansion.Pulverizer.addRecipe(oreDust.firstItem * 3, oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem, 50);
+				mods.thermalexpansion.Pulverizer.addRecipe(oreDust.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem, 50);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
 					for oreDense in oreDouble.items
 					{
-						mods.thermalexpansion.Pulverizer.addRecipe(oreDust.firstItem * 6, oreDense, ((tier + 1) * 1500), oreDust.firstItem * 2, 50);
+						mods.thermalexpansion.Pulverizer.addRecipe(oreDust.firstItem * (6 * baseMultiplier), oreDense, ((tier + 1) * 1500), oreDust.firstItem * 2, 50);
 					}
 				}
 			}
@@ -484,10 +550,10 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				//Standard Ores
 				//Normal Slag
-				mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 6, <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 1, 33);
+				mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 1, 33);
 
 				//Rich Slag
-				mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 8, <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 2, 80);
+				mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (4 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 2, 80);
 
 				//Dense Ore
 				if(!oreDouble.empty)
@@ -495,10 +561,10 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 					for oreDense in oreDouble.items
 					{
 						//Normal Slag
-						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 12, <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * 2, 33);
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * 2, 33);
 
 						//Rich Slag
-						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * 16, <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * 4, 80);
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (8 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * 4, 80);
 					}
 				}
 			}
@@ -508,9 +574,9 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					//Standard Ores
 					//Normal Slag
-					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 3, <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 3, 33);
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 3, 33);
 					//Rich Slag
-					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 4, <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 80);
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 80);
 
 					//Dense Ores
 					if(!oreDouble.empty)
@@ -518,9 +584,9 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 						for oreDense in oreDouble.items
 						{
 							//Normal Slag
-							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 6, <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 33);
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 33);
 							//Rich Slag
-							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 8, <thermalfoundation:material:865>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * 12, 80);
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * 12, 80);
 						}
 					}
 				}
@@ -528,19 +594,19 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					//Standard Ores
 					//Normal Slag
-					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 3, <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem, 33);
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem, 33);
 
 					//Rich Slag
-					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 4, <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 2, 80);
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 2, 80);
 
 					//Dense Ores
 					if(!oreDouble.empty)
 					{
 						//Normal Slag
-						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 6, <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 2, 33);
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 2, 33);
 
 						//Rich Slag
-						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * 8, <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 4, 80);
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 4, 80);
 					}
 				}
 			}
@@ -558,13 +624,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.mekanism.purification.addRecipe(ore, <gas:oxygen> * 200, oreClump.firstItem * 3);
+					mods.mekanism.purification.addRecipe(ore, <gas:oxygen> * 200, oreClump.firstItem * (3 * baseMultiplier));
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.mekanism.purification.addRecipe(oreDense, <gas:oxygen> * 200, oreClump.firstItem * 6);
+					mods.mekanism.purification.addRecipe(oreDense, <gas:oxygen> * 200, oreClump.firstItem * (6 * baseMultiplier));
 				}
 			}
 			else if(!oreGem.empty)
@@ -572,13 +638,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.mekanism.purification.addRecipe(ore, <gas:oxygen> * 200, oreGem.firstItem * 6);
+					mods.mekanism.purification.addRecipe(ore, <gas:oxygen> * 200, oreGem.firstItem * (3 * baseMultiplier));
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.mekanism.purification.addRecipe(oreDense, <gas:oxygen> * 200, oreGem.firstItem * 12);
+					mods.mekanism.purification.addRecipe(oreDense, <gas:oxygen> * 200, oreGem.firstItem * (6 * baseMultiplier));
 				}
 			}
 			else
@@ -595,13 +661,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.mekanism.enrichment.addRecipe(ore, oreGem.firstItem * 4);
+					mods.mekanism.enrichment.addRecipe(ore, oreGem.firstItem * (2 * baseMultiplier));
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.mekanism.enrichment.addRecipe(oreDense, oreGem.firstItem * 8);
+					mods.mekanism.enrichment.addRecipe(oreDense, oreGem.firstItem * (4 * baseMultiplier));
 				}
 			}
 			else if(!oreDust.empty)
@@ -609,13 +675,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.mekanism.enrichment.addRecipe(ore, oreDust.firstItem * 2);
+					mods.mekanism.enrichment.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier));
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.mekanism.enrichment.addRecipe(oreDense, oreDust.firstItem * 4);
+					mods.mekanism.enrichment.addRecipe(oreDense, oreDust.firstItem * (4 * baseMultiplier));
 				}
 			}
 			else
@@ -638,11 +704,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!oreShard.empty)
 				{
-					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreShard.firstItem * 4);
+					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreShard.firstItem * (4 * baseMultiplier));
 				}
 				else if(!oreGem.empty)
 				{
-					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * 8);
+					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * (8 * baseMultiplier));
 				}
 				else
 				{
@@ -655,11 +721,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!oreShard.empty)
 				{
-					mods.mekanism.chemical.injection.addRecipe(oreDense, <gas:hydrogenchloride> * 200, oreShard.firstItem * 8);
+					mods.mekanism.chemical.injection.addRecipe(oreDense, <gas:hydrogenchloride> * 200, oreShard.firstItem * (8 * baseMultiplier));
 				}
 				else if(!oreGem.empty)
 				{
-					mods.mekanism.chemical.injection.addRecipe(oreDense, <gas:hydrogenchloride> * 200, oreGem.firstItem * 16);
+					mods.mekanism.chemical.injection.addRecipe(oreDense, <gas:hydrogenchloride> * 200, oreGem.firstItem * scripts.helpers.MathMin((16 * baseMultiplier), 64));
 				}
 			}
 		}
@@ -672,13 +738,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * 8, ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (4 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * 16, ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (8 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
 				}
 			}
 			else if(!oreIngot.empty)
@@ -686,13 +752,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * 4, ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * 8, ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (8 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
 				}
 			}
 			else

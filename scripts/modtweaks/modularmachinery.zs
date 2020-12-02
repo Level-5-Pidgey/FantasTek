@@ -17,7 +17,7 @@ var MachineParts1 =
 {
 	1 : <contenttweaker:wood_plate>,
 	2 : <extendedcrafting:material>,
-	3 : <contenttweaker:material_part:662>, //Steel Plating
+	3 : <ore:platePulsatingIron>.firstItem,
 	4 : <contenttweaker:material_part:889>,	//Redstone Alloy Plating
 	5 : <enderio:block_reinforced_obsidian>,
 	6 : <ore:plateDiamond>.firstItem, //PLACEHOLDER
