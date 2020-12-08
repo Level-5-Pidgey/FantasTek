@@ -42,6 +42,7 @@ val StageMods = [
   "scannable",
   "reccomplex",
   "witherskelefix",
+  "packagedauto",
   "contenttweaker"
 ] as string[];
 

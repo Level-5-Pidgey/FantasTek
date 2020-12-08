@@ -271,15 +271,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(rockyChunk.firstItem * baseMultiplier, ore, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(rockyChunk.firstItem * baseMultiplier, ore, 75);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(nativeCluster.firstItem * baseMultiplier, ore, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(nativeCluster.firstItem * baseMultiplier, ore, 75);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(oreDust.firstItem * baseMultiplier, ore, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(oreDust.firstItem * baseMultiplier, ore, 75);
 				}
 				else
 				{
@@ -292,15 +292,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(rockyChunk.firstItem * baseMultiplier, oreDense, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(rockyChunk.firstItem * (2 * baseMultiplier), oreDense, 75);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(nativeCluster.firstItem * baseMultiplier, oreDense, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(nativeCluster.firstItem * (2 * baseMultiplier), oreDense, 75);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(oreDust.firstItem * baseMultiplier, oreDense, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(oreDust.firstItem * (2 * baseMultiplier), oreDense, 75);
 				}
 			}
 		}
@@ -708,7 +708,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				}
 				else if(!oreGem.empty)
 				{
-					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * (8 * baseMultiplier));
+					mods.mekanism.chemical.injection.addRecipe(ore, <gas:hydrogenchloride> * 200, oreGem.firstItem * scripts.helpers.MathMin((8 * baseMultiplier), 64));
 				}
 				else
 				{

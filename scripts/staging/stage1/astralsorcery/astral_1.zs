@@ -26,6 +26,7 @@ val Stage1AstralItems = [
 	<astralsorcery:itemconstellationpaper>,
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_converter"}),
 	<astralsorcery:itemcraftingcomponent:3>,
+	<astralsorcery:blockaltar>
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1AstralItems
