@@ -145,7 +145,6 @@ val magneticraftRecipes_EXTENDEDCRAFTING = {
 	<magneticraft:electric_drill>.withTag({energy: 0}) : [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:ingotElectrotineAlloy>], [<ore:gemDiamond>, motor, <ore:ingotIron>], [<ore:ingotElectrotineAlloy>, <ore:ingotIron>, batteryLow]],
 	<magneticraft:electric_chainsaw>.withTag({energy: 0}) : [[<ore:gemDiamond>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotIron>], [null, <ore:ingotIron>, batteryLow]],
 	<magneticraft:electric_piston>.withTag({energy: 0}) : [[<minecraft:piston>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotElectrotineAlloy>], [null, <ore:ingotElectrotineAlloy>, batteryLow]],
-	<magneticraft:thermopile> : [[<ore:ingotGold>, <ore:plateConductiveIron>, <ore:ingotGold>], [<ore:plateConductiveIron>, scripts.helpers.FrameTiers[1], <ore:plateConductiveIron>], [<ore:ingotGold>, <ore:plateConductiveIron>, <ore:ingotGold>]],
 	<magneticraft:small_tank> : [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
@@ -184,5 +183,13 @@ for rune in scripts.helpers.AllWaterT1Items
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:water_generator>, [[<ore:gemDiamond>, rune, <ore:gemDiamond>], [<ore:ingotPulsatingIron>, <thermalexpansion:device>, <ore:ingotPulsatingIron>], [<ore:gemDiamond>, <ore:ingotPulsatingIron>, <ore:gemDiamond>]]);
 }
+
+//Thermopile
+recipes.remove(<magneticraft:thermopile>);
+for circuit in scripts.helpers.CircuitTiers[1].items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:thermopile>, [[<ore:ingotGold>, <ore:plateConductiveIron>, <ore:ingotGold>], [<ore:plateConductiveIron>, scripts.helpers.FrameTiers[0], <ore:plateConductiveIron>], [<ore:ingotGold>, circuit, <ore:ingotGold>]]);
+}
+
 
 print("### Magneticraft Init Complete ###");

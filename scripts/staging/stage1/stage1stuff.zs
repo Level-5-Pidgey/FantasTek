@@ -476,7 +476,6 @@ val StageLessItems = [
 	<forestry:farm_crops:1>,
 	<magneticraft:battery_item_medium>,
 	<magneticraft:battery_item_low>,
-	<forestry:hardened_machine>,
 	<forestry:chipsets:3>.withTag({T: 3 as short}),
 	<forestry:chipsets:2>.withTag({T: 2 as short}),
 	<forestry:chipsets:1>.withTag({T: 1 as short}),
@@ -519,13 +518,15 @@ val StageLessItems = [
 	<enderio:item_material:3>,
 	<enderio:item_material:38>,
 	<mekanism:machineblock2:11>.withTag({tier: 0}),
-	<thermalexpansion:device:0>,
+	<thermalexpansion:device>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]}),
 	<iceandfire:chain_link>,
 	<forestry:peat>,
 	<forestry:crafting_material:2>,
 	<extendedcrafting:interface>,
 	<enderio:item_material:77>,
-	<thaumcraft:nugget:10>
+	<thaumcraft:nugget:10>,
+	<minecraft:mob_spawner>,
+	<thermalfoundation:wrench>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

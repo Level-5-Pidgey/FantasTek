@@ -36,15 +36,5 @@
 				Potion: "minecraft:long_swiftness"
 			}
 		}
-	},
-	{
-		uid: "b87653f7",
-		type: "item",
-		item: {
-			id: "minecraft:potion",
-			tag: {
-				Potion: "minecraft:strong_regeneration"
-			}
-		}
 	}]
 }

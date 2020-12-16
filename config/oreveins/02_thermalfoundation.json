@@ -16,7 +16,7 @@
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_4", "meta": 14 },
 	  "replace_surface" : true,
-      "rarity": 30
+      "rarity": 25
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -29,7 +29,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 80,
+    "rarity": 70,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
@@ -73,7 +73,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 85,
+    "rarity": 80,
     "min_y": 15,
     "max_y": 55,
     "density": 180,

@@ -74,4 +74,9 @@ recipes.remove(<projectred-core:resource_item:301>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:301>), <projectred-core:resource_item:301> * 8, [<embers:tinker_hammer>, <ore:itemSilicon>]);
 mods.thermalexpansion.Compactor.addPressRecipe(<projectred-core:resource_item:301> * 8, <ore:itemSilicon>.firstItem, 350);
 
+//Stage 2 Electrotine Smelting
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore:ingotRedstoneAlloy>, <ore:gemLapis> * 4], 4500);
+mods.enderio.AlloySmelter.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore:ingotIron>, <ore:dustRedstone> * 8, <ore:gemLapis> * 4], 4500);
+
+
 print("### ProjectRed Init Complete ###");

@@ -149,15 +149,19 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustPulsatingIron>.fi
 mods.tconstruct.Casting.addTableRecipe(<ore:plateCrudeSteel>.firstItem, <tconstruct:cast_custom:3>, <liquid:crude_steel>, 144 * 4, false);
 mods.tconstruct.Casting.addTableRecipe(<ore:gearCrudeSteel>.firstItem, <tconstruct:cast_custom:4>, <liquid:crude_steel>, 144 * 4, false);
 //Machines
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot>);
-mods.enderio.AlloySmelter.addRecipe(<ore:ingotCrudeSteel>.firstItem * 2, [<ore:ingotIron>, <contenttweaker:coke_dust>], 4500);
+mods.enderio.AlloySmelter.removeRecipe(<ore:ingotCrudeSteel>.firstItem);
+mods.enderio.AlloySmelter.addRecipe(<ore:ingotCrudeSteel>.firstItem * 2, [<ore:ingotIron>, <contenttweaker:coke_dust>], 3000);
 //Crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:plateCrudeSteel>.firstItem), <ore:plateCrudeSteel>.firstItem, [<embers:tinker_hammer>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]);
 recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearCrudeSteel>.firstItem), <ore:gearCrudeSteel>.firstItem, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
 
+//Change Redstone Alloy (EnderIO Ver) Crafting
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:3>);
+mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<ore:ingotIron>, <ore:dustRedstone> * 8], 1500);
+
 //Shaped Mod Crafting Recipes
 val enderioRecipes_CRAFTINGTABLE = {
-	<enderio:item_material> : [[<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>], [<ore:ingotElectrotineAlloy>, <embers:wrapped_sealed_planks>, <ore:ingotElectrotineAlloy>], [<ore:plateIron>, <ore:ingotElectrotineAlloy>, <ore:plateIron>]],
+	<enderio:item_material> : [[<ore:plateCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:plateCrudeSteel>], [<ore:ingotElectrotineAlloy>, null, <ore:ingotElectrotineAlloy>], [<ore:plateCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:plateCrudeSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in enderioRecipes_CRAFTINGTABLE {
@@ -169,7 +173,7 @@ for key, value in enderioRecipes_CRAFTINGTABLE {
 }
 
 val enderioRecipes_EXTENDEDCRAFTING = {
-	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, scripts.helpers.FrameTiers[1], <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]],
+	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, scripts.helpers.FrameTiers[0], <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in enderioRecipes_EXTENDEDCRAFTING {
@@ -182,5 +186,9 @@ for key, value in enderioRecipes_EXTENDEDCRAFTING {
 
 //Change Photovoltaic Plate Recipe Process
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:3>);
+
+//Carpenter Simple Machine Chassis
+mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>],[<ore:ingotCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotCrudeSteel>],[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]], 60, <liquid:water> * 1000);
+mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[null, <ore:plateSteel>, null],[<ore:plateSteel>, <ore:ingotElectrotineAlloy>, <ore:plateSteel>],[null, <ore:plateSteel>, null]], 30, <liquid:water> * 500);
 
 print("### EnderIO Init Complete ###");

@@ -1,0 +1,39 @@
+{
+	title: "Taking an L",
+	x: -7.0d,
+	y: -2.0d,
+	description: "Not as bad as you're used to!",
+	text: [
+		"Whilst the difficulty of the environment may be much higher than you are used to, thanks to the amazing progress of technology death will be much less",
+		"punishing for you in some aspects and instead have other penalties that you may not be used to. When you die you will:",
+		"",
+		"&dLose all of your XP. &rAll levels stored on your character will be reset.",
+		"&dDrop any currency items not stored in a backpack or portable container. &rIf you have money you wanna keep secure, make sure you put it away safe!",
+		"&dLose 2 max health. &rIf you have over 20 health (10 full hearts) you will lose 2 max health every time you die.",
+		"&dDrain 75% of the charge from all RF-based items in your inventory. &rAny items that rely on RF for durability will lose 75% of their stored charge.",
+		"&dLose 50% durability on all tools and armour. &rAny armour or tools you have will lose 50% of their total durability, lowered by levels of Unbreaking.",
+		"If a tool is under 50% durability, it will be destroyed or broken.",
+		"&dKeep all inventory items. &rAny items that are not currency-related will be kept on your player. You don't have to run back for your items!"
+	],
+	dependencies: [
+		"8963d329"
+	],
+	tasks: [{
+		uid: "3ccdb09d",
+		type: "stat",
+		title: "Take an L",
+		icon: "minecraft:skull",
+		stat: "stat.deaths",
+		value: 1
+	}],
+	rewards: [{
+		uid: "15e9db3e",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "extrautils2:xu2.second.chance"
+			}
+		}
+	}]
+}

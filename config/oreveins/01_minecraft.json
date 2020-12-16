@@ -77,7 +77,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 70,
+    "rarity": 80,
     "min_y": 15,
     "max_y": 55,
     "density": 180,
@@ -258,7 +258,7 @@
     "max_y": 55,
     "density": 180,
     "vertical_size": 5,
-    "horizontal_size": 7,
+    "horizontal_size": 5,
 	"biomes": [
       "mountain"
   	],

@@ -36,8 +36,7 @@ mods.forestry.Carpenter.addRecipe(<forestry:sturdy_machine>, [[<ore:plateSteel>,
 mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
 mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, [[null, <ore:dropRoyalJelly>, null], [<ore:plankSealedWood>, <ore:plankSealedWood>, <ore:plankSealedWood>], [<ore:itemBeeswax>, <ore:itemPollen>, <ore:itemBeeswax>]], 80, <liquid:honey> * 500); //Scented Panelling Recipe Change
 mods.forestry.Carpenter.removeRecipe(<forestry:hardened_machine>);
-mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, [[<embers:wrapped_sealed_planks>, <ore:plateDiamond>, <embers:wrapped_sealed_planks>], [<ore:plateDiamond>, <forestry:impregnated_casing>, <ore:plateDiamond>], [<embers:wrapped_sealed_planks>, <ore:plateDiamond>, <embers:wrapped_sealed_planks>]], 60, <liquid:water> * 5000); //Hardened Machine Casing
-mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, [[null, <ore:plateDiamond>, null], [<ore:plateDiamond>, <forestry:sturdy_machine>, <ore:plateDiamond>], [null, <ore:plateDiamond>, null]], 60, <liquid:water> * 5000);
+mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, [[<ore:ingotBrass>, <ore:ingotBrass>, <ore:ingotBrass>], [<ore:ingotBrass>, <forestry:impregnated_casing>, <ore:ingotBrass>], [<ore:ingotBrass>, <ore:ingotBrass>, <ore:ingotBrass>]], 60, <liquid:water> * 5000); //Hardened Machine Casing
 mods.forestry.Carpenter.removeRecipe(<forestry:soldering_iron>); //Soldering Iron
 mods.forestry.Carpenter.addRecipe(<forestry:soldering_iron>, [[null, <ore:ingotIron>, null],[<ore:ingotIron>, null, <ore:ingotIron>],[null, null, <ore:ingotConductiveIron>]], 40, <liquid:water> * 1000);
 mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>); //Portable Analyzer
@@ -72,9 +71,9 @@ for metallicGrainsDustCraft in metallicGrainsDusts
 
 //ExtendedCrafting recipes for forestry Machines in tier1
 val machineRecipes_EXTENDEDCRAFTING = {
-		<forestry:carpenter> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <thermalfoundation:material:657>, <ore:ingotIron>]],
-		<forestry:squeezer> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]],
-		<forestry:centrifuge> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, <ore:itemSimpleMachineChassi>, <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:crafting:2>, <ore:ingotIron>]],
+		<forestry:carpenter> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <thermalfoundation:material:657>, <ore:ingotIron>]],
+		<forestry:squeezer> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]],
+		<forestry:centrifuge> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:crafting:2>, <ore:ingotIron>]],
 		<forestry:fabricator> : [[<ore:ingotGold>, <ore:blockGlass>, <ore:ingotGold>], [<ore:blockGlass>, scripts.helpers.FrameTiers[1], <ore:blockGlass>], [<ore:ingotGold>, <ore:chestWood>, <ore:ingotGold>]],
 		<forestry:database> : [[<ore:ingotRedstoneAlloy>, <forestry:portable_alyzer>, <ore:ingotRedstoneAlloy>], [<forestry:bee_chest>, <forestry:sturdy_machine>, <forestry:bee_chest>], [<ore:plateWood>, <ore:listAllFruit> | <ore:dropRoyalJelly>, <ore:plateWood>]],
 		<forestry:analyzer> : [[<ore:plateIron>, <forestry:portable_alyzer>, <ore:plateIron>], [null, <forestry:sturdy_machine>, null], [<ore:plateIron>, null, <ore:plateIron>]],
@@ -153,27 +152,27 @@ for circuit in scripts.helpers.CircuitTiers[1].items
 	for earthCraftingItem in scripts.helpers.AllEarthT1Items
 	{
 		//Ender Farm
-		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_ender>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:12>, circuit, <forestry:thermionic_tubes:12>]]);
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_ender>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:impregnated_casing>, <ore:blockGlass>], [<forestry:thermionic_tubes:12>, circuit, <forestry:thermionic_tubes:12>]]);
 
 		//Nether Farm
-		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_nether>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:7>, circuit, <forestry:thermionic_tubes:7>]]);
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_nether>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:impregnated_casing>, <ore:blockGlass>], [<forestry:thermionic_tubes:7>, circuit, <forestry:thermionic_tubes:7>]]);
 
 		//Gourd Farm
-		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_gourd>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:11>, circuit, <forestry:thermionic_tubes:11>]]);
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_gourd>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:impregnated_casing>, <ore:blockGlass>], [<forestry:thermionic_tubes:11>, circuit, <forestry:thermionic_tubes:11>]]);
 
 		//Arboretum
-		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:arboretum>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:4>, circuit, <forestry:thermionic_tubes:4>]]);
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:arboretum>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:impregnated_casing>, <ore:blockGlass>], [<forestry:thermionic_tubes:4>, circuit, <forestry:thermionic_tubes:4>]]);
 
 		//Mushroom Farm
-		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_mushroom>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<ore:plateLapis>, circuit, <ore:plateLapis>]]);
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_mushroom>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:impregnated_casing>, <ore:blockGlass>], [<ore:plateLapis>, circuit, <ore:plateLapis>]]);
 
 		//Peat Bog
-		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:peat_bog>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [<forestry:thermionic_tubes:6>, circuit, <forestry:thermionic_tubes:6>]]);
+		mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:peat_bog>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:impregnated_casing>, <ore:blockGlass>], [<forestry:thermionic_tubes:6>, circuit, <forestry:thermionic_tubes:6>]]);
 
 		//Crop Farm
 		for plate in scripts.helpers.BiomeGemMaterial["plate"].items
 		{
-			mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_crops>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:hardened_machine>, <ore:blockGlass>], [plate, circuit, plate]]);
+			mods.extendedcrafting.TableCrafting.addShaped(0, <forestry:farm_crops>, [[null, earthCraftingItem, null], [<ore:blockGlass>, <forestry:impregnated_casing>, <ore:blockGlass>], [plate, circuit, plate]]);
 		}
 	}
 }

@@ -1,0 +1,43 @@
+{
+	title: "Monster Mash",
+	x: -7.0d,
+	y: 0.0d,
+	description: "It was a graveyard smash!",
+	text: [
+		"Whilst the simulations of this environment you may have encountered were good preparation for the real thing, the world you currently are occupying",
+		"may be more hostile and challenging than you expect. Compared to the normal simulations of this world, certain monsters may act differently:",
+		"",
+		"&dZombie: &rWill apply Hunger on hit and break torches on the ground if possible.",
+		"&dSkeleton: &rUses melee attacks when in range and will shoot from further away.",
+		"&dCreeper: &rMoves faster than usual (+15%) and explodes sooner.",
+		"&dSpider: &rSlows on-hit and will eventually ensnare you with cobwebs if slowed enough.",
+		"",
+		"Good luck out there!"
+	],
+	dependencies: [
+		"71c44dcc"
+	],
+	tasks: [{
+		uid: "9befb257",
+		type: "stat",
+		title: "Kill any mob",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:wooden_sword"
+		},
+		stat: "stat.mobKills",
+		value: 1
+	}],
+	rewards: [{
+		uid: "79735a69",
+		type: "item",
+		item: {
+			id: "minecraft:splash_potion",
+			tag: {
+				Potion: "cofhcore:regeneration2+"
+			}
+		}
+	}]
+}
