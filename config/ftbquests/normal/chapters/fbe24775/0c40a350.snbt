@@ -1,0 +1,42 @@
+{
+	icon: {
+		ForgeCaps: {
+			Parent: [],
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "botania:flowerbag"
+	},
+	x: 2.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	dependencies: [
+		"a09d1ffe"
+	],
+	tasks: [{
+		uid: "157b9e7d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: [],
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:flowerbag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "baf99f46",
+		type: "item",
+		items: [{
+			item: "botania:fertilizer"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "2cd0f41f",
+		type: "item",
+		item: "botania:fertilizer",
+		count: 8
+	}]
+}

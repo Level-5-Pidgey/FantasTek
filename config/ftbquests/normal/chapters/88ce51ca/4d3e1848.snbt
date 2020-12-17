@@ -20,5 +20,11 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5c92b17c",
+		type: "item",
+		item: "projectred-core:resource_item 1 103",
+		count: 4
 	}]
 }

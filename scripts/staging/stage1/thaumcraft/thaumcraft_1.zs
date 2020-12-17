@@ -127,6 +127,7 @@ val Stage1ThaumcraftItems = [
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"}),
 	<thaumcraft:celestial_notes:*>,
 	<thaumcraft:curio:*>,
+	<botania:manasteelhelmreveal>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1ThaumcraftItems

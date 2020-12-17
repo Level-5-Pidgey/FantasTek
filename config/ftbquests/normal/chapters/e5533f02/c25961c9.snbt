@@ -23,7 +23,12 @@
 	tasks: [{
 		uid: "f2849f14",
 		type: "forge_energy",
-		title: "Submit 50,000 RF",
-		value: 50000L
+		title: "Submit 500,000 RF",
+		value: 500000L
+	}],
+	rewards: [{
+		uid: "868cf99b",
+		type: "item",
+		item: "scalinghealth:heartcontainer"
 	}]
 }

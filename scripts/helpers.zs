@@ -439,25 +439,26 @@ function mathMin(n1 as int, n2 as int) as int
     return n1;
 }
 
-function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, inputs as crafttweaker.item.IIngredient[], energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float)
+function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float)
 {
     //Thermal Expansion Induction Smelter
-    if(!chanceOutput.matches(<minecraft:bedrock>))
+    if(chanceOutput.matches(<minecraft:bedrock>))
     {
-        mods.thermalexpansion.InductionSmelter.addRecipe(output, inputs[0].items[0], inputs[1].items[0], energyCost);
+        mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost);
     }
     else
     {
-        mods.thermalexpansion.InductionSmelter.addRecipe(output, inputs[0].items[0], inputs[1].items[0], energyCost, chanceOutput, chanceFloat);
+        mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost, chanceOutput, chanceFloat);
     }
 
     //EnderIO Alloy Smelter
-    mods.enderio.AlloySmelter.addRecipe(output, inputs, energyCost);
+    var inputArray = [input1, input2] as  crafttweaker.item.IItemStack[];
+    mods.enderio.AlloySmelter.addRecipe(output, inputArray, energyCost);
 }
 
-function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, inputs as crafttweaker.item.IIngredient[], energyCost as int)
+function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int)
 {
-    addAlloySmeltingRecipeWithSecondary(output, inputs, energyCost, <minecraft:bedrock>, 0.0f);
+    addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, <minecraft:bedrock>, 0.0f);
 }
 
 function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, extraOutput as crafttweaker.item.IItemStack, extraOutputChance as float)

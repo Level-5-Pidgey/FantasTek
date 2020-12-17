@@ -61,6 +61,10 @@ for block in scripts.helpers.BiomeGemMaterial["block"].items
 	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), block, 0, 1000, 4, 2);
 }
 
+//Sentient Sword
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>, <minecraft:iron_sword>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:sentient_sword>, [<bloodmagic:soul_gem>, <minecraft:diamond_sword>, <contenttweaker:sanguine_ingot>, <contenttweaker:sanguine_ingot>], 0,0);
+
 //Petty Gem
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:redstone>, <minecraft:gold_ingot>, <minecraft:glass>, <minecraft:dye:4>]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem>, [<ore:gemSanguine>, <ore:dustElectrotine>, <ore:dustElectrotine>, <ore:nuggetPrismarine>], 1,1);

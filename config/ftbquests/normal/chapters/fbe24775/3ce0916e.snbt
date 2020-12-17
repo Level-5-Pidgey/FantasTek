@@ -1,14 +1,16 @@
 {
 	title: "Altar-nate crafting",
 	icon: "botania:runealtar",
-	x: 3.5d,
-	y: -2.0d,
+	x: 8.5d,
+	y: 0.0d,
 	description: "Hope I Don't Rune This",
 	text: [
 		"Using a Runic Altar and mixing petals with Livingrock, you can create magically charged runes that can be used to craft even greater flowers, or can also do unique things on their own such as acting as an infinite water source."
 	],
 	dependencies: [
-		"af986ff4"
+		"4844cf21",
+		"2438fdf2",
+		"2d02c600"
 	],
 	tasks: [{
 		uid: "764f4005",

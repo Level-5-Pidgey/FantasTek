@@ -136,6 +136,7 @@ var ticMatStages as mods.zenstages.Stage[string] =
 	"xu_evil_metal" : stages.progression1,
 	"xu_enchanted_metal" : stages.progression1,
 	"xu_demonic_metal" : stages.progression1,
+	"netherite" : stages.progression1,
 	"dragonbone" : stages.progression2,
 	"desert_myrmex" : stages.progression2,
 	"jungle_myrmex" : stages.progression2,

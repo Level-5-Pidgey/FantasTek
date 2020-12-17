@@ -1,0 +1,26 @@
+{
+	x: 13.5d,
+	y: 0.0d,
+	dependencies: [
+		"093b6ba2"
+	],
+	tasks: [{
+		uid: "1db73189",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:sentient_sword",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e4e15eee",
+		type: "item",
+		item: "projectred-core:resource_item 1 105",
+		count: 2
+	}]
+}

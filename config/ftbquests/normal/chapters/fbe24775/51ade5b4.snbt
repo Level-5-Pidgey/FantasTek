@@ -1,15 +1,14 @@
 {
 	title: "Basin Blues",
-	x: 2.0d,
-	y: -5.0d,
+	x: 12.5d,
+	y: 0.0d,
 	description: "Blue mana matters.",
 	text: [
 		"Mana is your main resource when making magical materials with Botania. It can infuse materials with magic and change their properties, allowing you to craft incredible new compounds. As an additional test for us, do you",
 		"think you could stand in some mana for us? We're trying to see if we can create superhumans by pumping them full of mana, and you seems like a low value test subject."
 	],
 	dependencies: [
-		"0abffda2",
-		"2d02c600"
+		"0abffda2"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{
@@ -18,12 +17,11 @@
 		items: [{
 			item: "botania:pool"
 		}]
-	},
-	{
-		uid: "4b7986a6",
+	}],
+	rewards: [{
+		uid: "8b03252e",
 		type: "item",
-		items: [{
-			item: "botania:spreader"
-		}]
+		item: "botania:blacklotus",
+		count: 2
 	}]
 }

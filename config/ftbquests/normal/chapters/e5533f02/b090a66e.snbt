@@ -2,12 +2,14 @@
 	title: "Primary Motive",
 	x: -4.0d,
 	y: 0.0d,
+	shape: "diamond",
 	text: [
 		"In order to begin your journey in Embers, you must take an Ancient Motive Core from an Ancient Golem. This will allow you to craft the centrepiece of the Embers setup: the Ember Bore. Be careful with the Ancient Motive Core once you have obtained it, as it gives off an unknown energy signature that we believe may give you some form of radiation poisoning."
 	],
 	dependencies: [
 		"c6d0a325"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "f2d7f3fb",
 		type: "item",

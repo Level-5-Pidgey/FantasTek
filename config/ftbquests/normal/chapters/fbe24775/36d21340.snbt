@@ -1,0 +1,23 @@
+{
+	title: "&6Doom Bloom",
+	x: 18.5d,
+	y: 0.0d,
+	shape: "gear",
+	text: [
+		""
+	],
+	dependencies: [
+		"432bfc0f"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "01d2b908",
+		type: "forge_energy",
+		value: 500000L
+	}],
+	rewards: [{
+		uid: "7b08dd28",
+		type: "item",
+		item: "scalinghealth:heartcontainer"
+	}]
+}

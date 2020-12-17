@@ -1,0 +1,44 @@
+{
+	title: "&6Tartaric Tyranny",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "bloodmagic:soul_gem",
+		tag: {},
+		Damage: 1s
+	},
+	x: 15.5d,
+	y: 0.0d,
+	shape: "gear",
+	description: "Rip and Tear until it is done!",
+	text: [
+		""
+	],
+	dependencies: [
+		"04859e44"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "30ecd13d",
+		type: "item",
+		title: "Submit a Filled Lesser Tartaric Gem",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:soul_gem",
+			tag: {
+				souls: 256.0d
+			},
+			Damage: 1s
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "eaab49e6",
+		type: "item",
+		item: "futuremc:netherite_scrap",
+		count: 2
+	}]
+}

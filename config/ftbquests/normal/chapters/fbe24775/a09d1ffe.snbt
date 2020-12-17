@@ -2,7 +2,8 @@
 	title: "Petal to the Metal",
 	icon: "botania:petal 1 14",
 	x: 2.0d,
-	y: 0.0d,
+	y: -2.0d,
+	shape: "diamond",
 	description: "To dye for",
 	text: [
 		"A budding botanist's best friend is the Petal Apothecary - a simple device that uses mana around you, petals and water to create mystical flowers.",

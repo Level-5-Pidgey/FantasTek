@@ -32,6 +32,13 @@ liquid_molten_modularium.addDataValue("viscosity", "6000");
 liquid_molten_modularium.addDataValue("temperature", "800");
 liquid_molten_modularium.addDataValue("luminosity", "15");
 
+var molten_netherite = mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Netherite").setColor(Color.fromHex("525150")).build();
+var liquid_molten_netherite = molten_netherite.registerPart("molten").getData();
+liquid_molten_netherite.addDataValue("density", "2000");
+liquid_molten_netherite.addDataValue("viscosity", "6000");
+liquid_molten_netherite.addDataValue("temperature", "800");
+liquid_molten_netherite.addDataValue("luminosity", "15");
+
 //Elemental Liquids
 var elemental_water_fire = VanillaFactory.createFluid("elemental_water_fire", Color.fromHex("d44219"));
 elemental_water_fire.register();

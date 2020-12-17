@@ -10,8 +10,7 @@
 		}
 	},
 	x: 11.5d,
-	y: 4.0d,
-	shape: "hexagon",
+	y: 2.0d,
 	dependencies: [
 		"e79cb40b"
 	],

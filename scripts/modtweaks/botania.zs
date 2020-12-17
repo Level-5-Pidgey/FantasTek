@@ -159,8 +159,8 @@ for key, value in botaniaFlowers {
 mods.botania.PureDaisy.removeRecipe(<minecraft:packed_ice>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
-mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 40);
-mods.botania.PureDaisy.addRecipe(<thaumcraft:log_greatwood>, <botania:livingwood>, 40);
+mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 10);
+mods.botania.PureDaisy.addRecipe(<thaumcraft:log_greatwood:*>, <botania:livingwood>, 10);
 scripts.helpers.AddTooltip(<botania:livingrock>, ["Can be crafted with any type of ore:stoneMarble."]);
 
 //Petal Apothecary
@@ -212,6 +212,14 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool>, [
 	[null, null, null],
 	[<ore:livingrock>, null, <ore:livingrock>],
 	[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
+]);
+
+//Fluxfield
+recipes.remove(<botania:rfgenerator>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <botania:rfgenerator>, [
+	[<ore:livingrock>, <ore:blockRedstone>, <ore:livingrock>],
+	[<ore:blockRedstone>, <botania:storage>, <ore:blockRedstone>],
+	[<ore:livingrock>, <ore:blockRedstone>, <ore:livingrock>]
 ]);
 
 //Remove Cosmetics Recipes

@@ -29,4 +29,10 @@ scripts.helpers.AddTooltip(<minecraft:iron_ore>, ["Generates 30% more often comp
 //Painting Acacia Wood
 recipes.addShaped(scripts.helpers.createRecipeName(<mowziesmobs:painted_acacia>), <mowziesmobs:painted_acacia> * 8, [[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>], [<minecraft:planks:4>, <ore:dye>, <minecraft:planks:4>], [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>]]);
 
+//Create Netherite with Netherite Scrap and Gold Ingots in a Smeltery or in an Induction Furnace
+mods.tconstruct.Alloy.addRecipe(<liquid:netherite> * 1, [<liquid:gold> * 4, <liquid:ancient_debris> * 4]);
+mods.tconstruct.Casting.addTableRecipe(<ore:ingotNetherite>.firstItem, <tconstruct:cast_custom>, <liquid:netherite>, 144, false);
+mods.tconstruct.Casting.addBasinRecipe(<ore:blockNetherite>.firstItem, null, <liquid:netherite>, 1296);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotNetherite>.firstItem * 1, <ore:ingotGold>.firstItem * 4, <ore:ingotAncientDebris>.firstItem * 4, 9000);
+
 print("### Minecraft Init Complete ###");

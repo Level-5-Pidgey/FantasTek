@@ -1,8 +1,8 @@
 {
 	title: "Handle my wood",
 	icon: "botania:livingwood 1 5",
-	x: 2.0d,
-	y: -3.5d,
+	x: 6.5d,
+	y: 2.0d,
 	description: "My mourning wood",
 	text: [
 		"Plain ol' wooden logs aren't magically bound enough to be directly turned into Livingwood -- but with the remnants of dead dinosaurs in creosote oil you definitely could!",
@@ -17,12 +17,31 @@
 		items: [{
 			item: "botania:livingwood"
 		}],
-		count: 14L
+		count: 8L
+	},
+	{
+		uid: "3db21206",
+		type: "item",
+		title: "Craft a Mana Spreader",
+		items: [{
+			item: "botania:spreader"
+		},
+		{
+			item: "botania:spreader 1 1"
+		}]
 	}],
 	rewards: [{
-		uid: "dd5e5f72",
+		uid: "a605ba06",
 		type: "item",
-		item: "contenttweaker:wood_plate",
-		count: 6
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:twigwand",
+			tag: {
+				color1: 7,
+				color2: 7
+			}
+		}
 	}]
 }

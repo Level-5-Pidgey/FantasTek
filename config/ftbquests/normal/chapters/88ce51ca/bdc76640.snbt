@@ -8,6 +8,7 @@
 	},
 	x: 3.0d,
 	y: 0.0d,
+	shape: "diamond",
 	description: "Make sure to get their safe word!",
 	text: [
 		"Blood Magic is a dangerous magic. It involves taking the blood from a living being and extracting its life force to serve your own means.",

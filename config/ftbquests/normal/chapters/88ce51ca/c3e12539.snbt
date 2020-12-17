@@ -1,0 +1,29 @@
+{
+	title: "&6Draining the power banks",
+	icon: "contenttweaker:sanguine_gem",
+	x: 15.5d,
+	y: 2.0d,
+	shape: "gear",
+	description: "Life gives power",
+	text: [
+		"With the &bLife Essence Transmutator&r built, you can turn Life Essence into raw energy used to power machinery.",
+		"",
+		"We've been hit by another blackout recently and was hoping you'd be able to assist powering the Fantastek Corporate power grid for a bit?",
+		"We'll reward you later as per company policy, promise!"
+	],
+	dependencies: [
+		"159fcd34"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "4406dcc5",
+		type: "forge_energy",
+		title: "Submit 500,000 RF",
+		value: 500000L
+	}],
+	rewards: [{
+		uid: "b9aba2cd",
+		type: "item",
+		item: "scalinghealth:heartcontainer"
+	}]
+}

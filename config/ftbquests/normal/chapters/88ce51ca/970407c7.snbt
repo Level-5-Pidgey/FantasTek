@@ -36,5 +36,11 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2a4db213",
+		type: "item",
+		item: "betternether:cincinnasite",
+		count: 16
 	}]
 }

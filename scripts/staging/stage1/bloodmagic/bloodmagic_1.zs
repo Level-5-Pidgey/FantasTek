@@ -33,6 +33,18 @@ val Stage1BloodMagicItems = [
 	<bloodmagic:component:15>,
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:bloodmagic_converter"}),
 	<bloodmagic:slate>,
+	<bloodmagic:sentient_sword>,
+	<bloodmagic:soul_gem>.withTag({souls: 64.0}),
+	<bloodmagic:soul_gem:1>.withTag({souls: 256.0}),
+	<bloodmagic:soul_gem>.withTag({souls: 64.0, demonWillType: "corrosive"}),
+	<bloodmagic:soul_gem:1>.withTag({souls: 256.0, demonWillType: "corrosive"}),
+	<bloodmagic:soul_gem>.withTag({souls: 64.0, demonWillType: "destructive"}),
+	<bloodmagic:soul_gem:1>.withTag({souls: 256.0, demonWillType: "destructive"}),
+	<bloodmagic:soul_gem>.withTag({souls: 64.0, demonWillType: "vengeful"}),
+	<bloodmagic:soul_gem:1>.withTag({souls: 256.0, demonWillType: "vengeful"}),
+	<bloodmagic:soul_gem>.withTag({souls: 64.0, demonWillType: "steadfast"}),
+	<bloodmagic:soul_gem:1>.withTag({souls: 256.0, demonWillType: "steadfast"}),
+
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1BloodMagicItems

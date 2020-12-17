@@ -1,7 +1,7 @@
 {
 	title: "Flower Power",
-	x: 3.5d,
-	y: -3.5d,
+	x: 10.5d,
+	y: 0.0d,
 	description: "Who's mana is this?",
 	text: [
 		"Our research department has discovered that all wildlife on this planet has magic flowing through it called mana. By tapping into this energy, you could",
@@ -93,5 +93,10 @@
 				type: "dandelifeon"
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "ae041d15",
+		type: "item",
+		item: "botania:overgrowthseed"
 	}]
 }

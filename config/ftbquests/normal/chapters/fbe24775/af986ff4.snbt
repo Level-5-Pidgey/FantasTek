@@ -6,8 +6,8 @@
 			type: "puredaisy"
 		}
 	},
-	x: 2.0d,
-	y: -2.0d,
+	x: 4.5d,
+	y: 0.0d,
 	description: "It's living!",
 	text: [
 		"Our research department, despite their shoestring budget, managed to discover this amazing son of a gun -- the Pure Daisy!",

@@ -1,0 +1,20 @@
+{
+	x: 6.5d,
+	y: -2.0d,
+	dependencies: [
+		"a09d1ffe"
+	],
+	tasks: [{
+		uid: "da5cef8d",
+		type: "item",
+		items: [{
+			item: "botania:pool 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "09b2782f",
+		type: "item",
+		item: "minecraft:dye 1 15",
+		count: 12
+	}]
+}

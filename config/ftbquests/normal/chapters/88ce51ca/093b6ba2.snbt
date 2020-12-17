@@ -19,5 +19,10 @@
 			tag: {}
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "af7529d1",
+		type: "item",
+		item: "minecraft:lapis_block"
 	}]
 }

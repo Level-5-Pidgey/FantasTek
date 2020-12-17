@@ -147,6 +147,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:naphtha> : stages.progression2,
 	<liquid:natural_gas> : stages.progression2,
 	<liquid:necrodermis> : stages.progression2,
+	<liquid:netherite> : stages.progression1,
 	<liquid:nickel> : stages.progression2,
 	<liquid:nitrogen> : stages.progression2,
 	<liquid:nutrient_distillation> : stages.progression2,
