@@ -1,0 +1,63 @@
+{
+	x: 12.5d,
+	y: 4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"ebcd3bef"
+	],
+	tasks: [{
+		uid: "f94c1785",
+		type: "item",
+		title: "Craft any aesthetic floating flower",
+		items: [{
+			item: "botania:miniisland"
+		},
+		{
+			item: "botania:miniisland 1 1"
+		},
+		{
+			item: "botania:miniisland 1 2"
+		},
+		{
+			item: "botania:miniisland 1 3"
+		},
+		{
+			item: "botania:miniisland 1 4"
+		},
+		{
+			item: "botania:miniisland 1 5"
+		},
+		{
+			item: "botania:miniisland 1 6"
+		},
+		{
+			item: "botania:miniisland 1 7"
+		},
+		{
+			item: "botania:miniisland 1 8"
+		},
+		{
+			item: "botania:miniisland 1 9"
+		},
+		{
+			item: "botania:miniisland 1 10"
+		},
+		{
+			item: "botania:miniisland 1 11"
+		},
+		{
+			item: "botania:miniisland 1 12"
+		}]
+	}],
+	rewards: [{
+		uid: "88ec4282",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				Parent: [],
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:baublebox"
+		}
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	x: 12.5d,
+	y: 2.0d,
+	shape: "hexagon",
+	dependencies: [
+		"51ade5b4"
+	],
+	tasks: [{
+		uid: "e1d320d4",
+		type: "item",
+		items: [{
+			item: "botania:grassseeds"
+		}],
+		count: 5L
+	}],
+	rewards: [{
+		uid: "176e649b",
+		type: "item",
+		item: "botania:grassseeds 1 3"
+	},
+	{
+		uid: "ffa391e2",
+		type: "item",
+		item: "botania:grassseeds 1 4"
+	},
+	{
+		uid: "f9fc3dfc",
+		type: "item",
+		item: "botania:grassseeds 1 5"
+	}]
+}

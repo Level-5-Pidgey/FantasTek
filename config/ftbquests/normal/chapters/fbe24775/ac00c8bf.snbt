@@ -1,0 +1,20 @@
+{
+	x: 14.5d,
+	y: 2.0d,
+	shape: "hexagon",
+	dependencies: [
+		"ebbce8f7"
+	],
+	tasks: [{
+		uid: "8c853a65",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:monocle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
