@@ -8,7 +8,6 @@ print("~~~ Begin TConstruct Custom Material Creator Init ~~~");
 val nuclearTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("nuclear");
 nuclearTrait.color = 0x42a120;
 nuclearTrait.maxLevel = 4;
-nuclearTrait.countPerLevel = 1;
 nuclearTrait.localizedName = "Nuclear";
 nuclearTrait.localizedDescription = "Living mobs are given a strong wither effect on hit.";
 nuclearTrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
@@ -17,7 +16,7 @@ nuclearTrait.afterHit = function(trait, tool, attacker, target, damageDealt, was
 		if(!target.isUndead)
 		{
 			//If the target is not an undead monster, give it a wither effect.
-			target.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(100, 2));
+			target.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(100, trait.getData(tool).level + 1));
 		}
 	}
 };
@@ -26,13 +25,12 @@ nuclearTrait.register();
 val nanoscarabTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("nanoscarab");
 nanoscarabTrait.color = 0x42a120;
 nanoscarabTrait.maxLevel = 3;
-nanoscarabTrait.countPerLevel = 1;
 nanoscarabTrait.localizedName = "Nanoscarab";
 nanoscarabTrait.localizedDescription = "Heals for damage dealt when a critical strike is made.";
 nanoscarabTrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
 	if(wasHit && wasCritical)
 	{
-		attacker.heal(damageDealt);
+		attacker.heal(damageDealt / (3 - trait.getData(tool).level));
 	}
 };
 nanoscarabTrait.register();
@@ -40,21 +38,22 @@ nanoscarabTrait.register();
 val bloodLettingTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("bloodletting");
 bloodLettingTrait.color = 0xbf081d;
 bloodLettingTrait.maxLevel = 3;
-bloodLettingTrait.countPerLevel = 1;
 bloodLettingTrait.localizedName = "Bloodletting";
 bloodLettingTrait.localizedDescription = "Critical hits heal you instead of dealing extra damage.";
-bloodLettingTrait.addItem(<contenttweaker:sanguine_ingot>, 5, 1);
+bloodLettingTrait.countPerLevel = 5;
+bloodLettingTrait.addItem(<item:contenttweaker:sanguine_ingot>);
 bloodLettingTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
+	var modifiedDmg = newDamage;
 	if(isCritical)
 	{
 		//Heal the target the difference they would take if it was a crit
-		var critlessDamage as int = (originalDamage / 1.5f);
+		modifiedDmg = (originalDamage / 1.5f) as float;
 
 		//Heal the player based on the level of the skill
 		attacker.heal(trait.getData(tool).level * 2);
-
-		return critlessDamage;
 	}
+
+	return modifiedDmg;
 };
 bloodLettingTrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
 	if(wasHit && wasCritical)
@@ -71,19 +70,19 @@ netherwarriorTrait.countPerLevel = 1;
 netherwarriorTrait.localizedName = "Blessing of the Bastion";
 netherwarriorTrait.localizedDescription = "Drastically increases in strength whilst in the nether.";
 netherwarriorTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
+	var modifiedDmg = newDamage;
 	if(target.getDimension() == -1)
 	{
 		//If the target is in the nether, double the damage dealt
-		var buffedDamage as int = (originalDamage * 2);
-
-		return buffedDamage;
+		modifiedDmg = (originalDamage * 2) as float;
 	}
+
+	return modifiedDmg;
 };
 netherwarriorTrait.onPlayerHurt = function(trait, tool, player, attacker, event) {
 	if(player.getDimension() == -1 && event.amount >= 6)
 	{
-		player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(20, 5));
-		player.addPotionEffect(<potion:minecraft:swiftness>.makePotionEffect(20, 2));
+		player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(20, 3));
 	}
 };
 netherwarriorTrait.register();
@@ -92,7 +91,7 @@ netherwarriorTrait.register();
 //Yellorium
 val yelloriumMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("yellorium");
 yelloriumMat.color = 0xcff73e;
-yelloriumMat.craftable = true;
+yelloriumMat.castable = true;
 yelloriumMat.liquid = <liquid:yellorium>;
 yelloriumMat.representativeItem = <item:contenttweaker:material_part:606>;
 yelloriumMat.addHeadMaterialStats(800 /*Durability*/, 5.0f /*MiningSpeed*/, 7.5f /*AttackDamage*/, 4 /*HarvestLevel*/);
@@ -106,7 +105,7 @@ yelloriumMat.register();
 //Necrodermis
 val necrodermisMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("necrodermis");
 necrodermisMat.color = 0x15bf20;
-necrodermisMat.craftable = true;
+necrodermisMat.castable = true;
 necrodermisMat.liquid = <liquid:necrodermis>;
 necrodermisMat.representativeItem = <item:contenttweaker:material_part:616>;
 necrodermisMat.addHeadMaterialStats(900 /*Durability*/, 8.5f /*MiningSpeed*/, 12.0f /*AttackDamage*/, 5 /*HarvestLevel*/);
@@ -122,17 +121,17 @@ necrodermisMat.register();
 //Netherite
 val netheriteMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("netherite");
 netheriteMat.color = 0x423d3a;
-netheriteMat.craftable = true;
+netheriteMat.castable = true;
 netheriteMat.liquid = <liquid:netherite>;
-netheriteMat.representativeItem = <futuremc:netherite_ingot>;
+netheriteMat.representativeItem = <item:futuremc:netherite_ingot>;
 netheriteMat.addHeadMaterialStats(1050 /*Durability*/, 7.5f /*MiningSpeed*/, 9.5f /*AttackDamage*/, 5 /*HarvestLevel*/);
 netheriteMat.addHandleMaterialStats(0.5f /*Modifier*/, 10 /*Durability*/);
 netheriteMat.addExtraMaterialStats(100 /*Durability*/);
 netheriteMat.addBowMaterialStats(1.75f /*DrawSpeed*/, 1.4f /*RangeMult*/, 6.0f /*BnusDmg*/);
 netheriteMat.addMaterialTrait("netherwarrior", "head");
 netheriteMat.addMaterialTrait("simmering", "extra");
-netheriteMat.addMaterialTrait("writable", null);
-netheriteMat.localizedName = "Necrodermis";
+netheriteMat.addMaterialTrait("writable1", null);
+netheriteMat.localizedName = "Netherite";
 netheriteMat.register();
 
 print("### TConstruct Custom Material Creator Init Complete ###");
