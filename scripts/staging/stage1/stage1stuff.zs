@@ -526,7 +526,8 @@ val StageLessItems = [
 	<enderio:item_material:77>,
 	<thaumcraft:nugget:10>,
 	<minecraft:mob_spawner>,
-	<thermalfoundation:wrench>
+	<thermalfoundation:wrench>,
+	<botania:pestleandmortar>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

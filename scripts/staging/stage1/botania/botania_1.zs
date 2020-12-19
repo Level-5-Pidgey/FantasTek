@@ -8,7 +8,6 @@ val Stage1BotaniaItems = [
 	<botania:smeltrod>,
 	<botania:fertilizer>,
 	<botania:manacookie>,
-	<botania:manaresource:15>,
 	<botania:manaresource:16>,
 	<botania:manaresource>,
 	<botania:manaresource:1>,
@@ -42,7 +41,6 @@ val Stage1BotaniaItems = [
 	<botania:vineball>,
 	<botania:tornadorod>,
 	<botania:spellcloth>,
-	<botania:manatablet>,
 	<botania:manatablet>,
 	<botania:smeltrod>,
 	<botania:waterrod>,
@@ -343,6 +341,7 @@ val StageLessItems = [
   <botania:felpumpkin>,
   <botania:overgrowthseed>,
   <botania:blacklotus>,
+  <botania:manaresource:15>,
   <botania:blacklotus:1>
 ] as crafttweaker.item.IItemStack[];
 

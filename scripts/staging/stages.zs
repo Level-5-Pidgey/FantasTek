@@ -60,3 +60,4 @@ static Locked as Stage = ZenStager.initStage("locked");
 
 //Optional Milestone Stages
 static Slimesling as Stage = ZenStager.initStage("stage_i_slimesling");
+static BotaniaLenses as Stage = ZenStager.initStage("botania_ii_lenses");

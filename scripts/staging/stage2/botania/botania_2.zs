@@ -30,4 +30,8 @@ for item in Stage2BotaniaMagicItems
   scripts.helpers.setItemAndRecipesStage(item, stageString);
 }
 
+//Optionally Stage Botania Lenses
+mods.ItemStages.removeItemStage(<botania:lens:*>);
+scripts.helpers.setItemAndRecipesStage(<botania:lens:*>, stages.BotaniaLenses.stage);
+
 print("### Stage 2 Botania Complete ###");

@@ -160,7 +160,9 @@ mods.botania.PureDaisy.removeRecipe(<minecraft:packed_ice>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
 mods.botania.PureDaisy.addRecipe(<ore:stoneMarble>, <botania:livingrock>, 10);
-mods.botania.PureDaisy.addRecipe(<thaumcraft:log_greatwood:*>, <botania:livingwood>, 10);
+mods.botania.PureDaisy.addRecipe(<thaumcraft:log_greatwood>, <botania:livingwood>, 10);
+mods.botania.PureDaisy.addRecipe(<thaumcraft:log_greatwood:1>, <botania:livingwood>, 10);
+mods.botania.PureDaisy.addRecipe(<thaumcraft:log_greatwood:2>, <botania:livingwood>, 10);
 scripts.helpers.AddTooltip(<botania:livingrock>, ["Can be crafted with any type of ore:stoneMarble."]);
 
 //Petal Apothecary
@@ -228,5 +230,11 @@ recipes.remove(<botania:cosmetic:*>);
 //Blacker Lotus Dye Conversion
 recipes.addShapeless(scripts.helpers.createRecipeName(<botania:blacklotus>), <futuremc:dye:3>, [<botania:blacklotus>]);
 recipes.addShapeless(scripts.helpers.createRecipeName(<botania:blacklotus:1>), <futuremc:dye:3> * 4, [<botania:blacklotus:1>]);
+
+//Botania Lenses
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:pool:2>), scripts.staging.stages.Botania1.stage, <botania:pool:2>, [
+	[<ore:slabMarble>, <ore:petalLightBlue> | <ore:petalBlue>, <ore:slabMarble>],
+	[<ore:slabMarble>, <ore:slabMarble>, <ore:slabMarble>]
+]);
 
 print("### Botania Init Complete ###");
