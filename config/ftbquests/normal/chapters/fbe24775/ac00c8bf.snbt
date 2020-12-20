@@ -1,6 +1,6 @@
 {
-	x: 14.5d,
-	y: 2.0d,
+	x: 16.5d,
+	y: -2.0d,
 	shape: "hexagon",
 	dependencies: [
 		"ebbce8f7"
@@ -16,5 +16,15 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "159da41b",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:sextant"
+		}
 	}]
 }

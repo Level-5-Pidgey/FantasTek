@@ -30,5 +30,13 @@
 		uid: "868cf99b",
 		type: "item",
 		item: "scalinghealth:heartcontainer"
+	},
+	{
+		uid: "98cdd9d1",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Ember for the Future Generations]!"
 	}]
 }

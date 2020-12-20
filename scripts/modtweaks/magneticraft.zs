@@ -105,10 +105,6 @@ for materialString in oreMaterials
 	removeChunkSmelt(materialString);
 }
 
-//<magneticraft:electric_cable>
-//<magneticraft:electric_engine>
-//<magneticraft:rf_heater>
-
 val magneticraftRecipes_CRAFTINGTABLE = {
 	motor as crafttweaker.item.IItemStack * 4 : [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotRedstoneAlloy>, <ore:dustRedstone>, <ore:ingotCrudeSteel>], [<ore:ingotIron>, <ore:ingotIron>, null]],
 	<magneticraft:conveyor_belt> * 16 : [[null, null, null], [<ore:ingotIron>, motor, <ore:ingotIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
@@ -146,6 +142,8 @@ val magneticraftRecipes_EXTENDEDCRAFTING = {
 	<magneticraft:electric_chainsaw>.withTag({energy: 0}) : [[<ore:gemDiamond>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotIron>], [null, <ore:ingotIron>, batteryLow]],
 	<magneticraft:electric_piston>.withTag({energy: 0}) : [[<minecraft:piston>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotElectrotineAlloy>], [null, <ore:ingotElectrotineAlloy>, batteryLow]],
 	<magneticraft:small_tank> : [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]],
+	<magneticraft:rf_heater> : [[<ore:ingotIron>, <ore:ingotRedstoneAlloy>, <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:multiblock_parts:2>, <ore:ingotIron>], [<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>]],
+	<magneticraft:electric_engine> : [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [null, <ore:blockGlassColorless>, null], [motor, <minecraft:piston>, motor]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in magneticraftRecipes_EXTENDEDCRAFTING {
@@ -187,6 +185,12 @@ for circuit in scripts.helpers.CircuitTiers[1].items
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:thermopile>, [[<ore:ingotGold>, <ore:plateConductiveIron>, <ore:ingotGold>], [<ore:plateConductiveIron>, scripts.helpers.FrameTiers[0], <ore:plateConductiveIron>], [<ore:ingotGold>, circuit, <ore:ingotGold>]]);
 }
+
+//Electric Cables
+recipes.remove(<magneticraft:electric_cable>);
+recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_1", <magneticraft:electric_cable> * 6, [[null, <ore:blockWool>, null], [<ore:blockWool>, <ore:ingotElectrotineAlloy>, <ore:blockWool>], [null, <ore:blockWool>, null]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_2", <magneticraft:electric_cable> * 10, [[null, <minecraft:leather>, null], [<minecraft:leather>, <ore:ingotElectrotineAlloy>, <minecraft:leather>], [null, <minecraft:leather>, null]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_2", <magneticraft:electric_cable> * 16, [[<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>], [<ore:dustRedstone>, <ore:ingotElectrotineAlloy>, <ore:dustRedstone>], [<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>]]);
 
 
 print("### Magneticraft Init Complete ###");

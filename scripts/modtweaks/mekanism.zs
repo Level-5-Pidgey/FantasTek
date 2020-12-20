@@ -65,7 +65,6 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:6>.withTag
 
 //Create Basic Fluid Tanks
 recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 0}));
-mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.withTag({tier: 0}), [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:plateCrudeSteel>, null, <ore:plateCrudeSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]]);
 mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.withTag({tier: 0}), [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:plateSteel>, null, <ore:plateSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]]);
 
 print("### Mekanism Init Complete ###");

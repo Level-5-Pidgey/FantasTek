@@ -1,7 +1,7 @@
 {
 	title: "Get Crative",
-	x: 18.5d,
-	y: -4.0d,
+	x: 20.5d,
+	y: -2.0d,
 	description: "Green is not a \"crative\" colour",
 	text: [
 		"The carpentry machine is capable of producing crates as well as making further machines. These crates can be sold to the native lifeforms for \"personal\" (corporate) profits.",

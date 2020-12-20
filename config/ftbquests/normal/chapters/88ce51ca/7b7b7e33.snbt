@@ -40,5 +40,13 @@
 		type: "item",
 		item: "futuremc:netherite_scrap",
 		count: 2
+	},
+	{
+		uid: "4e0ee7c1",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Tartaric Tyranny]!"
 	}]
 }

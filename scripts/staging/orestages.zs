@@ -550,6 +550,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "AncientDebris" : stages.progression1,
   "LapisLazuli" : stages.progression1,
   "Electrum" : stages.progression2,
+  "DimensionalShard" : stages.progression2,
   "Invar" : stages.progression2,
   "Constantan" : stages.progression2,
   "Signalum" : stages.progression2,

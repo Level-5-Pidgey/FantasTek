@@ -27,5 +27,13 @@
 		uid: "8237850e",
 		type: "item",
 		item: "scalinghealth:heartcontainer"
+	},
+	{
+		uid: "3c7a8532",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Creating Current Contrived from Crystals]!"
 	}]
 }

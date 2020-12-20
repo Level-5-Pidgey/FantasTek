@@ -30,5 +30,13 @@
 		uid: "5f980062",
 		type: "item",
 		item: "futuremc:netherite_scrap"
+	},
+	{
+		uid: "605c2983",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Stardom]!"
 	}]
 }

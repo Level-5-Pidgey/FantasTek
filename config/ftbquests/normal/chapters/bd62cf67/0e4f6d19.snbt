@@ -1,7 +1,7 @@
 {
 	title: "Silicon Valley",
-	x: 20.5d,
-	y: -4.0d,
+	x: 22.5d,
+	y: -2.0d,
 	description: "Macro Micro Potato Potato",
 	text: [
 		"Not macrochips, not potato chips, but microchips. These will be your gateway to more advanced machinery, like bins and circuits. Be careful not to lose any as each chip is worth more than our entire research department."

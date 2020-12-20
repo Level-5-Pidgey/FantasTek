@@ -19,5 +19,13 @@
 		uid: "7b08dd28",
 		type: "item",
 		item: "scalinghealth:heartcontainer"
+	},
+	{
+		uid: "e79bfcfc",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Doom Bloom]!"
 	}]
 }

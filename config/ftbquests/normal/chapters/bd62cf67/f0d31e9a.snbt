@@ -60,5 +60,32 @@
 				}
 			}
 		}
+	},
+	{
+		uid: "7337a32f",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Meeting your Milestones]!"
+	},
+	{
+		uid: "ba1351fe",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 255,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "contenttweaker:material_part",
+					Count: 1b,
+					Damage: 954s
+				},
+				TrophyColorBlue: 0,
+				TrophyName: "Meeting your Milestones",
+				TrophyColorRed: 191
+			}
+		}
 	}]
 }

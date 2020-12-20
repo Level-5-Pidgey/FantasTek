@@ -25,5 +25,13 @@
 		uid: "b9aba2cd",
 		type: "item",
 		item: "scalinghealth:heartcontainer"
+	},
+	{
+		uid: "f545be07",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Draining the Power Banks]!"
 	}]
 }

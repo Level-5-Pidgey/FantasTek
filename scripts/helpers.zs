@@ -75,66 +75,66 @@ function GetThaumcraftCraftingMaterials(tier as int) as crafttweaker.item.IIngre
 //Variable for all T1 Magic Items (for extended crafting recipes)
 static AllT1MagicItems as crafttweaker.item.IItemStack[] =
 [
-<botania:rune>,
-<botania:rune:1>,
-<botania:rune:2>,
-<botania:rune:3>,
-<contenttweaker:astral_crystal_air>,
-<contenttweaker:astral_crystal_fire>,
-<contenttweaker:astral_crystal_water>,
-<contenttweaker:astral_crystal_earth>,
-<contenttweaker:sanguine_gem_fire>,
-<contenttweaker:sanguine_gem_water>,
-<contenttweaker:sanguine_gem_earth>,
-<contenttweaker:sanguine_gem_air>,
-<contenttweaker:crystal_ember_fire>,
-<contenttweaker:crystal_ember_water>,
-<contenttweaker:crystal_ember_earth>,
-<contenttweaker:crystal_ember_air>,
-<contenttweaker:salis_mundus_fire>,
-<contenttweaker:salis_mundus_water>,
-<contenttweaker:salis_mundus_earth>,
-<contenttweaker:salis_mundus_air>
+    <botania:rune>,
+    <botania:rune:1>,
+    <botania:rune:2>,
+    <botania:rune:3>,
+    <contenttweaker:astral_crystal_air>,
+    <contenttweaker:astral_crystal_fire>,
+    <contenttweaker:astral_crystal_water>,
+    <contenttweaker:astral_crystal_earth>,
+    <contenttweaker:sanguine_gem_fire>,
+    <contenttweaker:sanguine_gem_water>,
+    <contenttweaker:sanguine_gem_earth>,
+    <contenttweaker:sanguine_gem_air>,
+    <contenttweaker:crystal_ember_fire>,
+    <contenttweaker:crystal_ember_water>,
+    <contenttweaker:crystal_ember_earth>,
+    <contenttweaker:crystal_ember_air>,
+    <contenttweaker:salis_mundus_fire>,
+    <contenttweaker:salis_mundus_water>,
+    <contenttweaker:salis_mundus_earth>,
+    <contenttweaker:salis_mundus_air>
 ];
 
 //Variable for all T1 Fire Element Items (for extended crafting recipes)
 static AllFireT1Items as crafttweaker.item.IItemStack[] =
-[
-<contenttweaker:astral_crystal_fire>,
-<ore:runeFireB>.firstItem,
-<contenttweaker:sanguine_gem_fire>,
-<contenttweaker:crystal_ember_fire>,
-<contenttweaker:salis_mundus_fire>
-];
+    [
+        <contenttweaker:astral_crystal_fire>,
+        <ore:runeFireB>.firstItem,
+        <contenttweaker:sanguine_gem_fire>,
+        <contenttweaker:crystal_ember_fire>,
+        <contenttweaker:salis_mundus_fire>
+    ];
 
 //Variable for all T1 Water Element Items (for extended crafting recipes)
 static AllWaterT1Items as crafttweaker.item.IItemStack[] =
 [
-<contenttweaker:astral_crystal_water>,
-<ore:runeWaterB>.firstItem,
-<contenttweaker:sanguine_gem_water>,
-<contenttweaker:crystal_ember_water>,
-<contenttweaker:salis_mundus_water>
+    <contenttweaker:astral_crystal_water>,
+    <ore:runeWaterB>.firstItem,
+    <contenttweaker:sanguine_gem_water>,
+    <contenttweaker:crystal_ember_water>,
+    <contenttweaker:salis_mundus_water>
 ];
 
 //Variable for all T1 Air Element Items (for extended crafting recipes)
 static AllAirT1Items as crafttweaker.item.IItemStack[] =
 [
-<contenttweaker:astral_crystal_air>,
-<ore:runeAirB>.firstItem,
-<contenttweaker:sanguine_gem_air>,
-<contenttweaker:crystal_ember_air>,
-<contenttweaker:salis_mundus_air>
+    <contenttweaker:astral_crystal_air>,
+    <ore:runeAirB>.firstItem,
+    <contenttweaker:sanguine_gem_air>,
+    <contenttweaker:crystal_ember_air>,
+    <contenttweaker:salis_mundus_air>
 ];
 
 //Variable for all T1 Earth Element Items (for extended crafting recipes)
 static AllEarthT1Items as crafttweaker.item.IItemStack[] =
 [
-<contenttweaker:astral_crystal_earth>,
-<ore:runeEarthB>.firstItem,
-<contenttweaker:sanguine_gem_earth>,
-<contenttweaker:crystal_ember_earth>,
-<contenttweaker:salis_mundus_earth>
+    <contenttweaker:astral_crystal_earth>,
+    <ore:runeEarthB>.firstItem,
+    <contenttweaker:sanguine_gem_earth>,
+    <contenttweaker:crystal_ember_earth>,
+    <contenttweaker:salis_mundus_earth>
 ];
 
 static OresWithProcessingTier as int[string] =
@@ -293,22 +293,22 @@ function unstageAndHide(item as crafttweaker.item.IItemStack)
 
 static T1MagicWaterIngredients as crafttweaker.oredict.IOreDictEntry[] =
 [
-<ore:nuggetPrismarine>, <ore:sugarcane>, <ore:gemLapis>, <ore:dyeLightBlue>
+    <ore:nuggetPrismarine>, <ore:sugarcane>, <ore:gemLapis>, <ore:dyeLightBlue>
 ];
 
 static T1MagicFireIngredients as crafttweaker.oredict.IOreDictEntry[] =
 [
-<ore:cropNetherWart>, <ore:ingotBrickNether>, <ore:gunpowder>, <ore:dyeOrange>
+    <ore:cropNetherWart>, <ore:ingotBrickNether>, <ore:gunpowder>, <ore:dyeOrange>
 ];
 
 static T1MagicAirIngredients as crafttweaker.oredict.IOreDictEntry[] =
 [
-<ore:feather>, <ore:string>, <ore:blockGlassColorless>, <ore:dyeGray>
+    <ore:feather>, <ore:string>, <ore:blockGlassColorless>, <ore:dyeGray>
 ];
 
 static T1MagicEarthIngredients as crafttweaker.oredict.IOreDictEntry[] =
 [
-<ore:obsidian>, <ore:cropWheat>, <ore:treeLeaves>, <ore:dyeLime>
+    <ore:obsidian>, <ore:cropWheat>, <ore:treeLeaves>, <ore:dyeLime>
 ];
 
 function createRecipeName(outputItem as crafttweaker.item.IItemStack) as string

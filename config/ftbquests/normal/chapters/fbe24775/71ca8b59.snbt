@@ -1,0 +1,42 @@
+{
+	title: "&6Potato Powered",
+	x: 18.5d,
+	y: 2.0d,
+	shape: "gear",
+	description: "Mana and Carbs -- perfect diet!",
+	text: [
+		""
+	],
+	dependencies: [
+		"51ade5b4"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "2553267e",
+		type: "item",
+		items: [{
+			item: "botania_tweaks:compressed_tiny_potato_2"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "3f91b665",
+		type: "item",
+		item: "botania_tweaks:compressed_tiny_potato_2",
+		count: 3
+	},
+	{
+		uid: "bb100b26",
+		type: "item",
+		item: "futuremc:netherite_scrap",
+		count: 2
+	},
+	{
+		uid: "c3587d28",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Potato Power]!"
+	}]
+}

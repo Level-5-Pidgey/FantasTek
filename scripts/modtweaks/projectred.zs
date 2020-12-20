@@ -27,17 +27,22 @@ for item in loadedMods["projectred-transmission"].items {
 <ore:ingotRedAlloy>.remove(<projectred-core:resource_item:103>); //Removing ingotRedAlloy oreDict
 <ore:ingotRedstoneAlloy>.add(<projectred-core:resource_item:103>); //Adding to ingotRedstoneAlloy
 
+//Electrotine Production
 var count = 0;
-for item in <ore:ingotRedstoneAlloy>.items
+for item in <ore:ingotConductiveIron>.items
 {
 	count += 1;
 
-	mods.inworldcrafting.FluidToItem.transform(<ore:ingotElectrotineAlloy>.firstItem, <liquid:astralsorcery.liquidstarlight>, [item], true);
+	mods.inworldcrafting.FluidToItem.transform(<ore:ingotElectrotineAlloy>.firstItem, <liquid:astralsorcery.liquidstarlight>, [item], false);
 	mods.botania.ManaInfusion.addInfusion(<ore:ingotElectrotineAlloy>.firstItem, item, 800);
 	mods.bloodmagic.BloodAltar.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, item, 0, 100, 20, 20);
 	scripts.mmhelper.AddEmberAssemblyRecipe(scripts.helpers.createRecipeName(<ore:ingotElectrotineAlloy>.firstItem) ~ "_" ~ count, <ore:ingotElectrotineAlloy>.firstItem, [item], 150);
 	mods.thaumcraft.Crucible.registerRecipe(scripts.helpers.createRecipeName(<ore:ingotElectrotineAlloy>.firstItem) ~ "_" ~ count, "FIRSTSTEPS", <ore:ingotElectrotineAlloy>.firstItem, item, [<aspect:potentia> * 3]);
 }
+
+//Stage 2 Electrotine Smelting
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotRedstoneAlloy>.firstItem, <ore:gemLapis>.firstItem * 4, 4500);
+mods.enderio.AlloySmelter.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore:ingotIron>, <ore:dustRedstone> * 1, <ore:gemLapis> * 4], 4500);
 
 //Remove Furnace Electrotine Recipe
 furnace.remove(<ore:ingotElectrotineAlloy>.firstItem, <projectred-core:resource_item:252>);
@@ -73,10 +78,6 @@ for key, value in projectRedRecipes {
 recipes.remove(<projectred-core:resource_item:301>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:301>), <projectred-core:resource_item:301> * 8, [<embers:tinker_hammer>, <ore:itemSilicon>]);
 mods.thermalexpansion.Compactor.addPressRecipe(<projectred-core:resource_item:301> * 8, <ore:itemSilicon>.firstItem, 350);
-
-//Stage 2 Electrotine Smelting
-scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotRedstoneAlloy>.firstItem, <ore:gemLapis>.firstItem * 4, 4500);
-mods.enderio.AlloySmelter.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore:ingotIron>, <ore:dustRedstone> * 8, <ore:gemLapis> * 4], 4500);
 
 
 print("### ProjectRed Init Complete ###");

@@ -1,7 +1,7 @@
 {
 	title: "&6Microchip Madness",
-	x: 20.5d,
-	y: -6.0d,
+	x: 22.5d,
+	y: -4.0d,
 	shape: "gear",
 	text: [
 		"Now that you've explored the technology that you're capable of making, you have to prove your profiency to us by kindly donating 200 microchips. With these chips we're going to continue our research into the Intern Replacement Program, creating AI run robots to do extra-terrestrial exploration once you have *ahem* expired."
@@ -18,5 +18,32 @@
 			item: "advancedrocketry:ic"
 		}],
 		count: 200L
+	}],
+	rewards: [{
+		uid: "c7120a04",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Microchip Madness]!"
+	},
+	{
+		uid: "f46ace63",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 255,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "advancedrocketry:ic",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 0,
+				TrophyName: "Microchip Madness",
+				TrophyColorRed: 191
+			}
+		}
 	}]
 }

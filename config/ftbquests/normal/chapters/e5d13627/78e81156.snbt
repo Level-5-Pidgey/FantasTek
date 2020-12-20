@@ -21,5 +21,13 @@
 		uid: "b3ffab1a",
 		type: "item",
 		item: "scalinghealth:heartcontainer"
+	},
+	{
+		uid: "c245d5c1",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Sourced from the Stars]!"
 	}]
 }

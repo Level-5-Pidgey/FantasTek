@@ -37,6 +37,26 @@
 		type: "command",
 		title: "Milestone Completion Toast!",
 		icon: "minecraft:sign",
-		command: "/say @p has unlocked the Optional Milestone []!"
+		auto: "enabled",
+		command: "/say @p has unlocked the Optional Milestone [Guide to Sticky Situations]!"
+	},
+	{
+		uid: "3f6489c2",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 205,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "minecraft:slime",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 52,
+				TrophyName: "Guide to Sticky Situations",
+				TrophyColorRed: 65
+			}
+		}
 	}]
 }

@@ -15,7 +15,7 @@ for cokeBlock in <ore:blockFuelCoke>.items
   mods.appliedenergistics2.Grinder.addRecipe(<contenttweaker:coke_dust> * 9, cokeBlock, 18);
 }
 
-//Quartz Grinstone Block
+//Quartz Grindstone Block
 recipes.remove(<appliedenergistics2:grindstone>);
 recipes.addShaped(scripts.helpers.createRecipeName(<appliedenergistics2:grindstone>), <appliedenergistics2:grindstone>, [[<ore:cobblestone>, <ore:stickWood>, <ore:cobblestone>], [<ore:cobblestone>, <ore:plateQuartz>, <ore:cobblestone>], [<ore:cobblestone>, <ore:obsidian>, <ore:cobblestone>]]);
 

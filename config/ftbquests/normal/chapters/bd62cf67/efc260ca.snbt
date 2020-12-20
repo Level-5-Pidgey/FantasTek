@@ -1,0 +1,67 @@
+{
+	title: "&eBounty Hunter",
+	x: 2.5d,
+	y: 6.0d,
+	shape: "octagon",
+	description: "Get rich quick in these 40 easy steps!",
+	text: [
+		"Whilst it's not very easy to move a Bounty Board (legitimately), the company execs do have one stored in a warehouse somewhere I am sure we can",
+		"source for you if you're able to show that you'll make good use of it.",
+		"",
+		"If you can get 40 bounties done and dusted, we'll give you a bounty board to place down and complete them from the comforts of your own lawn. ",
+		"We'll even throw in some creds for you too!"
+	],
+	dependencies: [
+		"d7ef9cfa"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "f82e5684",
+		type: "stat",
+		title: "Complete 40 Bounties",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bountiful:bounty"
+		},
+		stat: "stat.bountiesCompleted",
+		value: 40
+	}],
+	rewards: [{
+		uid: "4de770b4",
+		type: "item",
+		item: "bountiful:bountyboarditem"
+	},
+	{
+		uid: "f3773fb8",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		command: "/say @p has unlocked the Optional Milestone [Bounty Hunter]!"
+	},
+	{
+		uid: "c213efc3",
+		type: "item",
+		item: "contenttweaker:currency_12500"
+	},
+	{
+		uid: "60787594",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 224,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "bountiful:bounty",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 122,
+				TrophyName: "Bounty Hunter",
+				TrophyColorRed: 255
+			}
+		}
+	}]
+}
