@@ -26,8 +26,8 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		ore.addDataValue("variants", "minecraft:stone,minecraft:netherrack,minecraft:end_stone");
 		ore.addDataValue("hardness", "3,3,3");
 		ore.addDataValue("resistance", "15,15,15");
-		ore.addDataValue("harvestLevel", "1,1,2");
-		ore.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
+		ore.addDataValue("harvestLevel", "3,3,3");
+		ore.addDataValue("harvestTool", "pickaxe,pickaxe,pickax3e");
 	}
 
 	//Generate common items for materials that need them (eg completely new materials)
@@ -63,7 +63,7 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		poorOre.addDataValue("variants", "minecraft:stone,minecraft:netherrack,minecraft:end_stone");
 		poorOre.addDataValue("hardness", "2,2,2");
 		poorOre.addDataValue("resistance", "12,12,12");
-		poorOre.addDataValue("harvestLevel", "1,1,2");
+		poorOre.addDataValue("harvestLevel", "3,3,3");
 		poorOre.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
 
 		//Register this material to the Dense Ore Type
@@ -71,7 +71,7 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		denseOre.addDataValue("variants", "minecraft:stone,minecraft:netherrack,minecraft:end_stone");
 		denseOre.addDataValue("hardness", "4,4,4");
 		denseOre.addDataValue("resistance", "15,15,15");
-		denseOre.addDataValue("harvestLevel", "1,1,2");
+		denseOre.addDataValue("harvestLevel", "3,3,3");
 		denseOre.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
 	}
 
@@ -81,7 +81,7 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		val sheetmetalBlock = mat.registerPart("sheetmetal_block").getData();
 		sheetmetalBlock.addDataValue("hardness", "5");
 		sheetmetalBlock.addDataValue("resistance", "30");
-		sheetmetalBlock.addDataValue("harvestLevel", "1");
+		sheetmetalBlock.addDataValue("harvestLevel", "2");
 		sheetmetalBlock.addDataValue("harvestTool", "pickaxe");
 
 		mat.registerPart("dense_plating");

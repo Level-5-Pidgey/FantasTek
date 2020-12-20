@@ -9,6 +9,7 @@
 		"This machine will be key to expanding your knowledge of machinery, and increase your productivity by a massive 2.4%! Imagine how much you can contribute to us!"
 	],
 	dependencies: [
+		"4e3597db",
 		"922a90a9"
 	],
 	tasks: [{

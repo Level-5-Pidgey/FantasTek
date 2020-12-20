@@ -1,11 +1,6 @@
 {
 	title: "&eGuide to Sticky Situations",
-	icon: {
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		},
-		id: "tconstruct:slimesling"
-	},
+	icon: "tconstruct:materials 1 9",
 	x: 14.5d,
 	y: 4.0d,
 	shape: "octagon",

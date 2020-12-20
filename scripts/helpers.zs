@@ -99,13 +99,13 @@ static AllT1MagicItems as crafttweaker.item.IItemStack[] =
 
 //Variable for all T1 Fire Element Items (for extended crafting recipes)
 static AllFireT1Items as crafttweaker.item.IItemStack[] =
-    [
-        <contenttweaker:astral_crystal_fire>,
-        <ore:runeFireB>.firstItem,
-        <contenttweaker:sanguine_gem_fire>,
-        <contenttweaker:crystal_ember_fire>,
-        <contenttweaker:salis_mundus_fire>
-    ];
+[
+    <contenttweaker:astral_crystal_fire>,
+    <ore:runeFireB>.firstItem,
+    <contenttweaker:sanguine_gem_fire>,
+    <contenttweaker:crystal_ember_fire>,
+    <contenttweaker:salis_mundus_fire>
+];
 
 //Variable for all T1 Water Element Items (for extended crafting recipes)
 static AllWaterT1Items as crafttweaker.item.IItemStack[] =

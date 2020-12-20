@@ -1,6 +1,6 @@
 {
 	title: "Call of the forge god",
-	x: 12.5d,
+	x: 16.5d,
 	y: 0.0d,
 	description: "*Horn noises*",
 	text: [
@@ -9,7 +9,7 @@
 		"Tools made with a Tool Station are servicable and provide a good starting point, but if you want to truly take advantage of Tinker's Construct properly you're going to have to create a Tool Forge. Creating one will be expensive (a forge must be durable to assemble a grand tool!) and require a large amount of rare resources, but will last you a very long time."
 	],
 	dependencies: [
-		"ab31349c"
+		"ad5ff33d"
 	],
 	tasks: [{
 		uid: "2ce006f8",

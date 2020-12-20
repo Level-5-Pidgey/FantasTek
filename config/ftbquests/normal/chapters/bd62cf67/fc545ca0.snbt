@@ -8,11 +8,12 @@
 	},
 	x: 0.5d,
 	y: 4.0d,
+	shape: "hexagon",
 	description: "Snip snip!",
 	text: [
 		"Caring for animals has been linked to increasing overall employee satisfaction and happiness ratings by approximately 16%.",
 		"",
-		"As a new employee, it is highly recommended that you care for any animals that you come across and only harvest them for resources when necessary. They have feelings too."
+		"As a new employee, &eit is highly recommended that you care for any animals that you come across and only harvest them for resources when necessary.&r They have feelings too."
 	],
 	dependencies: [
 		"1dab1267"

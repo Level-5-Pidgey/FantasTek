@@ -81,8 +81,8 @@
     "min_y": 15,
     "max_y": 55,
     "density": 180,
-    "vertical_size": 20,
-    "horizontal_size": 9,
+    "vertical_size": 15,
+    "horizontal_size": 8,
 	"biomes": [
       "plains"
   	],

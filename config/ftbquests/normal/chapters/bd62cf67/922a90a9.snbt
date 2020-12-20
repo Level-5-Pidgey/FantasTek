@@ -1,14 +1,13 @@
 {
 	title: "Basics of Simple Machines",
-	x: 18.5d,
-	y: -2.0d,
+	x: 20.5d,
+	y: 2.0d,
 	description: "Elementary, dear Watson!",
 	text: [
 		"By pouring crude steel onto sealed wood planks, you can create reinforced steel. This, along with the magical material Electrotine and some iron plates can create a simple machine chassis which is the basis of all powered machinery."
 	],
 	dependencies: [
-		"c16843fc",
-		"4e3597db"
+		"c16843fc"
 	],
 	tasks: [{
 		uid: "480f4bc1",

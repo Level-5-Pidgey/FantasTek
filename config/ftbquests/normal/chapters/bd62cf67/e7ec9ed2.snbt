@@ -1,0 +1,111 @@
+{
+	title: "Steam Age",
+	icon: "magneticraft:combustion_chamber",
+	x: 24.5d,
+	y: 2.0d,
+	shape: "hexagon",
+	description: "Optional, Stronger Power for you!",
+	text: [
+		"Whilst you are able to use the power of magic to generate basic RF at this stage, you can optionally upgrade to Steam Power if you're wanting",
+		"a head-start in power generation for the next stage of the game. Steam Engine power can be scaled up easily "
+	],
+	dependencies: [
+		"5082b007"
+	],
+	tasks: [{
+		uid: "879d6754",
+		type: "item",
+		items: [{
+			item: "magneticraft:steam_boiler"
+		}]
+	},
+	{
+		uid: "7a330326",
+		type: "item",
+		title: "Craft heat pipes",
+		items: [{
+			item: "magneticraft:insulated_heat_pipe"
+		},
+		{
+			item: "magneticraft:heat_pipe"
+		}],
+		count: 5L
+	},
+	{
+		uid: "e465905e",
+		type: "item",
+		items: [{
+			item: "magneticraft:steam_engine"
+		}]
+	},
+	{
+		uid: "1810a494",
+		type: "item",
+		items: [{
+			item: "magneticraft:combustion_chamber"
+		}]
+	},
+	{
+		uid: "3358bdbc",
+		type: "item",
+		items: [{
+			item: "magneticraft:multiblock_parts 1 4"
+		}]
+	},
+	{
+		uid: "533219cd",
+		type: "item",
+		items: [{
+			item: "magneticraft:multiblock_parts 1 2"
+		}],
+		count: 7L
+	},
+	{
+		uid: "b2618131",
+		type: "item",
+		items: [{
+			item: "magneticraft:multiblock_column"
+		}],
+		count: 2L
+	},
+	{
+		uid: "66df51e7",
+		type: "item",
+		items: [{
+			item: "minecraft:brick_block"
+		}],
+		count: 3L
+	},
+	{
+		uid: "0c1328c2",
+		type: "item",
+		items: [{
+			item: "magneticraft:multiblock_parts"
+		}],
+		count: 3L
+	},
+	{
+		uid: "9dc064c8",
+		type: "item",
+		items: [{
+			item: "magneticraft:multiblock_parts 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "13a2a130",
+		type: "item",
+		item: "minecraft:diamond",
+		count: 4
+	},
+	{
+		uid: "2f9ef730",
+		type: "item",
+		item: "enderio:item_alloy_ingot 1 5",
+		count: 4
+	},
+	{
+		uid: "bd682abb",
+		type: "item",
+		item: "magneticraft:electric_engine"
+	}]
+}

@@ -1,16 +1,17 @@
 {
 	title: "Modular Materials",
 	x: 8.5d,
-	y: -4.0d,
+	y: 0.0d,
 	description: "Creating Massive Machinery",
 	text: [
 		"With the power of your new crafting table, Modularium can be constructed.",
+		"",
 		"Modularium is a patented, highly untested alloy that may or may not cause serious damage to the heart, liver, lungs, eyes or brain.",
+		"",
 		"Although it's not FDA approved or commercially ready, since you're using it on a planet that likely has no laws or regulations it should all be fair game. Modularium can be used to assemble large multiblock machinery that will make your life much easier."
 	],
-	hide_dependency_lines: true,
 	dependencies: [
-		"ab31349c"
+		"8cb69197"
 	],
 	tasks: [{
 		uid: "5548d035",

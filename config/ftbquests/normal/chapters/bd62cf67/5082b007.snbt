@@ -1,0 +1,38 @@
+{
+	title: "Aquatic Acquisition",
+	x: 22.5d,
+	y: 2.0d,
+	description: "Well Well Well",
+	text: [
+		"Water isn't just good for human life, it's also necessary for many machines!",
+		"",
+		"&bThe Aqueous Accumulator is a passive water siphon that collects water vapours from the air, and nearby water blocks.&r",
+		"Place one down and surround it with water and it will begin to collect water in it's internal tank. You can then use water pipes to move the water to ",
+		"your machines or store it in tanks.",
+		"",
+		"Lots of machines will need water, so rather than having to manually move liquids around an aqueous accumulator will be your best friend!"
+	],
+	dependencies: [
+		"922a90a9"
+	],
+	tasks: [{
+		uid: "6783ca8b",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:device",
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				SideCache: [B;
+					0b,
+					1b,
+					0b,
+					0b,
+					0b,
+					0b
+				]
+			}
+		}]
+	}]
+}

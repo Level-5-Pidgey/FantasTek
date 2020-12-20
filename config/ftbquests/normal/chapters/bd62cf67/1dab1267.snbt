@@ -6,7 +6,7 @@
 	shape: "rsquare",
 	description: "I have a FEeling you're getting the hang of this",
 	text: [
-		"Whilst iron ran out long ago back on the homeworld, our scans show that it is plentiful on your new planet. Iron is necessary for increasing your chances at survival, so you should probably get some and use it to gear up. We don't want you ending up like Charles... He only made it a week and the funeral bills across galaxies are expensive!"
+		"Whilst &eiron ran out long ago back on the homeworld, our scans show that it is plentiful on your new planet.&r Iron is necessary for increasing your chances at survival, so you should probably get some and use it to gear up. We don't want you ending up like Charles... He only made it a week and the funeral bills across galaxies are expensive!"
 	],
 	dependencies: [
 		"8edd4b42"

@@ -199,7 +199,6 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:tin> : stages.progression2,
 	<liquid:titanium> : stages.progression2,
 	<liquid:tree_oil> : stages.progression2,
-	<liquid:bone_marrow> : stages.progression2,
 	<liquid:tungsten> : stages.progression2,
 	<liquid:uranium> : stages.progression2,
 	<liquid:vapor_of_levity> : stages.progression2,

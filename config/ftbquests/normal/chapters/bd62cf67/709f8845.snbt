@@ -6,7 +6,7 @@
 	shape: "hexagon",
 	description: "Early game logistics",
 	text: [
-		"Until you get pressurized tubing or mechanised conveyors, you're gonna have to get used to ol' faithful hoppers and pipes.",
+		"&eUntil you get pressurized tubing or mechanised conveyors, you're gonna have to get used to ol' faithful hoppers and pipes.&r",
 		"",
 		"Pipes are a cheap alternative to hoppers that carry 1 item stack along it, travelling in a chosen direction towards an inventory. They can be combined with hoppers for a less laggy, more resource efficient item routing system.",
 		"",

@@ -11,7 +11,9 @@
 	shape: "hexagon",
 	description: "Less swapping, more digging!",
 	text: [
-		"If you're tired of constantly having to swap tools all the time, Paxels are a great solution and can be used as an axe, pickaxe, or shovel, but are also more vulnerable to damage. Think of it kind of like a Swiss Army Knife made out of aluminium."
+		"If you're tired of constantly having to swap tools all the time, &ePaxels are a great solution and can be used as an axe, pickaxe, or shovel, but are also less durable. &r",
+		"",
+		"Think of it kind of like a Swiss Army Knife, but made with a handle and lots of diamonds. Bling bling!"
 	],
 	dependencies: [
 		"1dab1267"

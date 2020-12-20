@@ -174,7 +174,7 @@ for key, value in enderioRecipes_CRAFTINGTABLE {
 }
 
 val enderioRecipes_EXTENDEDCRAFTING = {
-	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, scripts.helpers.FrameTiers[0], <ore:bricksStone>], [<magneticraft:crafting:2>, <minecraft:bucket>, <magneticraft:crafting:2>]],
+	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, scripts.helpers.FrameTiers[0], <ore:bricksStone>], [<ore:bricksStone>, <magneticraft:crafting:2>, <ore:bricksStone>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in enderioRecipes_EXTENDEDCRAFTING {

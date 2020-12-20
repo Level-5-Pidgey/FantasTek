@@ -15,5 +15,10 @@
 		items: [{
 			item: "minecraft:slime_ball"
 		}]
+	}],
+	rewards: [{
+		uid: "c9a46ff5",
+		type: "item",
+		item: "jaopca:item_plateemerald"
 	}]
 }

@@ -7,9 +7,9 @@
 	description: "Saving you the hassle!",
 	text: [
 		"Due to the automative nature of the work here at FantasTek, we highly advise you become acquainted with the Worktable. Craftable for very cheap,",
-		"you can use the worktable to save commonly crafted recipes and create them in-bulk when needed.",
+		"&eyou can use the worktable to save commonly crafted recipes and create them in-bulk when needed.&r",
 		"",
-		"Rather than craft just what you need, craft lots of components in bulk as you will undoubtedly use them later!!"
+		"&eRather than craft just what you need, craft lots of components in bulk as you will undoubtedly use them later!!&r"
 	],
 	dependencies: [
 		"06fcd20a"

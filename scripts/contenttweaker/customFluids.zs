@@ -8,9 +8,6 @@ print("~~~ Begin Custom Fluid Creator Init ~~~");
 var liquidLubricant = VanillaFactory.createFluid("lubricant", Color.fromHex("d6b340"));
 liquidLubricant.register();
 
-var bone_marrow = VanillaFactory.createFluid("bone_marrow", Color.fromHex("e3dbaa"));
-bone_marrow.register();
-
 var moltenAwakenedDraconium = mods.contenttweaker.MaterialSystem.getMaterialBuilder().setName("Awakened Draconium").setColor(Color.fromHex("ff4917")).build();
 var liquid_molten_AwakenedDraconium = moltenAwakenedDraconium.registerPart("molten").getData();
 liquid_molten_AwakenedDraconium.addDataValue("density", "2000");

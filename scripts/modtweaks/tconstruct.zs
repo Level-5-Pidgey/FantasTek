@@ -29,7 +29,7 @@ function CreateToolForgeAndStage(material as string, stageToSet as string)
 
 //Remove all casting-based sharpening kits
 recipes.removeByRecipeName("tconstruct:repair");
-scripts.helpers.AddTooltip(<tconstruct:sharpening_kit>, ["Cannot be used to repair tools on the fly.", "Still can be used to upgrade the mining level of a tool!"]);
+scripts.helpers.AddTooltip(<tconstruct:sharpening_kit>, ["Cannot be used to repair tools in a crafting table.", "Still can be used to upgrade the mining level of a tool!"]);
 
 //Remove tool forge crafting recipes
 recipes.remove(<tconstruct:toolforge>);
@@ -139,8 +139,10 @@ recipes.addShaped("pattern", <tconstruct:pattern> * 4, [[<ore:stickWood>, <ore:p
 //Change Grout Crafting
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
-mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 10, <liquid:creosote>, [<ore:gravel> * 10], true);
+recipes.addShaped(scripts.helpers.createRecipeName(<tconstruct:soil>), <tconstruct:soil> * 8, [[<ore:gravel>, <ore:gravel>, <ore:gravel>],[<ore:gravel>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <ore:gravel>], [<ore:gravel>, <ore:gravel>, <ore:gravel>]]);
 
+//Smeltery Controller with Magical Fire Items
+recipes.remove(<tconstruct:smeltery_controller>);
 for item in scripts.helpers.AllFireT1Items
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <tconstruct:smeltery_controller>, [

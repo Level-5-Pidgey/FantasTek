@@ -1,6 +1,6 @@
 {
 	title: "Chest Building",
-	x: 10.5d,
+	x: 12.5d,
 	y: 0.0d,
 	shape: "hexagon",
 	description: "Bigger and Better Chests!",

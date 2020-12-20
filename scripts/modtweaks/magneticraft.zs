@@ -12,6 +12,11 @@ mods.jei.JEI.hideCategory("magneticraft.crushing_table");
 scripts.helpers.unstageAndHide(<magneticraft:hydraulic_press>);
 scripts.helpers.unstageAndHide(<magneticraft:crushing_table>);
 
+//Add Limestone to OreDict
+<ore:stoneLimestone>.add(<magneticraft:limestone>);
+<ore:stoneLimestone>.add(<magneticraft:limestone:1>);
+<ore:stoneLimestone>.add(<magneticraft:limestone:2>);
+
 //Hide Magneticraft Items
 val magneticraftHide =
 [
@@ -28,6 +33,10 @@ val magneticraftHide =
 	<magneticraft:light_plates:6>,
 	<magneticraft:light_plates:5>,
 	<magneticraft:battery>,
+	<magneticraft:iron_gear>,
+	<magneticraft:broken_gear>,
+	<magneticraft:steel_gear>,
+	<magneticraft:tungsten_gear>,
 ] as crafttweaker.item.IItemStack[];
 
 for magneticraftPlate in magneticraftHide
@@ -117,7 +126,7 @@ val magneticraftRecipes_CRAFTINGTABLE = {
 	<magneticraft:multiblock_parts:5> * 8 : [[<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>], [<ore:ingotIron>, null, <ore:ingotIron>], [<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>]],
 	<magneticraft:multiblock_parts:1> * 8 : [[<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>], [<ore:blockQuartz>, <advancedrocketry:ic>, <ore:blockQuartz>], [<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>]],
 	<magneticraft:multiblock_parts> * 4 : [[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>], [<ore:ingotIron>, motor, <ore:ingotIron>], [<ore:ingotConductiveIron>, <ore:plateConductiveIron>, <ore:ingotConductiveIron>]],
-	<magneticraft:iron_pipe> * 16 : [[<ore:ingotIron>, null, <ore:ingotIron>], [<ore:nuggetIron>, null, <ore:nuggetIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
+	<magneticraft:iron_pipe> * 16 : [[<ore:ingotIron>, null, <ore:ingotIron>], [<ore:nuggetIron>, <ore:blockGlassColorless>, <ore:nuggetIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
 	<magneticraft:heat_pipe> * 5 : [[null, <ore:ingotIron>, null], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [null, <ore:ingotIron>, null]],
 	<magneticraft:insulated_heat_pipe> * 5 : [[<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>]],
 	<magneticraft:feeding_trough> : [[<ore:stickWood>, null, <ore:stickWood>], [<ore:plateWood>, null, <ore:plateWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]],
@@ -134,16 +143,16 @@ for key, value in magneticraftRecipes_CRAFTINGTABLE {
 val magneticraftRecipes_EXTENDEDCRAFTING = {
 	<magneticraft:solar_panel> : [[<ore:itemPlatePhotovoltaic>, null, <ore:itemPlatePhotovoltaic>], [<ore:gemQuartz>, <ore:paper>, <ore:gemQuartz>], [<ore:itemPlatePhotovoltaic>, null, <ore:itemPlatePhotovoltaic>]],
 	<magneticraft:shelving_unit> : [[<ore:barsIron>, null, <ore:barsIron>], [null, <ore:paper>, null], [<ore:barsIron>, null, <ore:barsIron>]],
-	<magneticraft:steam_engine> : [[null, <ore:plateConductiveIron>, null], [<ore:plateConductiveIron>, <ore:paper>, <ore:plateConductiveIron>], [null, <ore:plateConductiveIron>, null]],
 	<magneticraft:container> : [[<chisel:blockgold:1>, null, <chisel:blockgold:1>], [<minecraft:chest>, <ore:paper>, <minecraft:chest>], [<ore:plateCrudeSteel>, null, <ore:plateCrudeSteel>]],
 	<magneticraft:combustion_chamber> : [[<ore:ingotBrick>, <ore:plateIron>, <ore:ingotBrick>], [<ore:ingotBrick>, null, <ore:ingotIron>], [<ore:ingotBrick>, <ore:ingotBrick>, <ore:ingotBrick>]],
 	<magneticraft:steam_boiler> : [[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>], [<ore:ingotIron>, null, <ore:ingotIron>], [<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>]],
-	<magneticraft:electric_drill>.withTag({energy: 0}) : [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:ingotElectrotineAlloy>], [<ore:gemDiamond>, motor, <ore:ingotIron>], [<ore:ingotElectrotineAlloy>, <ore:ingotIron>, batteryLow]],
-	<magneticraft:electric_chainsaw>.withTag({energy: 0}) : [[<ore:gemDiamond>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotIron>], [null, <ore:ingotIron>, batteryLow]],
-	<magneticraft:electric_piston>.withTag({energy: 0}) : [[<minecraft:piston>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotElectrotineAlloy>], [null, <ore:ingotElectrotineAlloy>, batteryLow]],
+	<magneticraft:electric_drill> : [[<ore:gemDiamond>, <ore:gemDiamond>, <ore:ingotElectrotineAlloy>], [<ore:gemDiamond>, motor, <ore:ingotIron>], [<ore:ingotElectrotineAlloy>, <ore:ingotIron>, batteryLow]],
+	<magneticraft:electric_chainsaw> : [[<ore:gemDiamond>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotIron>], [null, <ore:ingotIron>, batteryLow]],
+	<magneticraft:electric_piston> : [[<minecraft:piston>, <ore:ingotElectrotineAlloy>, null], [<ore:ingotElectrotineAlloy>, motor, <ore:ingotElectrotineAlloy>], [null, <ore:ingotElectrotineAlloy>, batteryLow]],
 	<magneticraft:small_tank> : [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]],
 	<magneticraft:rf_heater> : [[<ore:ingotIron>, <ore:ingotRedstoneAlloy>, <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:multiblock_parts:2>, <ore:ingotIron>], [<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>]],
 	<magneticraft:electric_engine> : [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [null, <ore:blockGlassColorless>, null], [motor, <minecraft:piston>, motor]],
+	<magneticraft:electric_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:ingotBrick>, scripts.helpers.FrameTiers[0], <ore:ingotBrick>], [<ore:ingotBrick>, <magneticraft:crafting:2>, <ore:ingotBrick>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in magneticraftRecipes_EXTENDEDCRAFTING {
@@ -192,5 +201,12 @@ recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>
 recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_2", <magneticraft:electric_cable> * 10, [[null, <minecraft:leather>, null], [<minecraft:leather>, <ore:ingotElectrotineAlloy>, <minecraft:leather>], [null, <minecraft:leather>, null]]);
 recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_3", <magneticraft:electric_cable> * 16, [[<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>], [<ore:dustRedstone>, <ore:ingotElectrotineAlloy>, <ore:dustRedstone>], [<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>]]);
 
+//Steam Engine Recipe
+recipes.remove(<magneticraft:steam_engine>);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_astral", scripts.staging.stages.AstralSorcery1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:astral_crystal_water>, <ore:paper>, <contenttweaker:astral_crystal_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_botania", scripts.staging.stages.Botania1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<ore:runeWaterB>.firstItem, <ore:paper>, <ore:runeFireB>.firstItem], [null, <ore:plateConductiveIron>, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_bloodmagic", scripts.staging.stages.BloodMagic1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:sanguine_gem_water>, <ore:paper>, <contenttweaker:sanguine_gem_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_embers", scripts.staging.stages.Embers1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:crystal_ember_water>, <ore:paper>, <contenttweaker:crystal_ember_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_thaumcraft", scripts.staging.stages.Thaumcraft1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:salis_mundus_water>, <ore:paper>, <contenttweaker:salis_mundus_fire>], [null, <ore:plateConductiveIron>, null]]);
 
 print("### Magneticraft Init Complete ###");

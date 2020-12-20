@@ -1,5 +1,5 @@
 [*]
-background:          ftblib:textures/gui/background_squares.png; color=#bababa; tile_size=192
+background:          ftblib:textures/gui/background_squares.png; color=#bababa; tile_size=256
 
 text_color:          #FFFFFF
 hover_text_color:    #FFAA00

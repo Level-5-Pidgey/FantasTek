@@ -71,11 +71,11 @@ for metallicGrainsDustCraft in metallicGrainsDusts
 
 //ExtendedCrafting recipes for forestry Machines in tier1
 val machineRecipes_EXTENDEDCRAFTING = {
-		<forestry:carpenter> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <thermalfoundation:material:657>, <ore:ingotIron>]],
+		<forestry:carpenter> : [[<ore:ingotIron>, <contenttweaker:sealed_wood_plate>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <thermalfoundation:material:657>, <ore:ingotIron>]],
 		<forestry:squeezer> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]],
 		<forestry:centrifuge> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:crafting:2>, <ore:ingotIron>]],
 		<forestry:fabricator> : [[<ore:ingotGold>, <ore:blockGlass>, <ore:ingotGold>], [<ore:blockGlass>, scripts.helpers.FrameTiers[1], <ore:blockGlass>], [<ore:ingotGold>, <ore:chestWood>, <ore:ingotGold>]],
-		<forestry:database> : [[<ore:ingotRedstoneAlloy>, <forestry:portable_alyzer>, <ore:ingotRedstoneAlloy>], [<forestry:bee_chest>, <forestry:impregnated_casing>, <forestry:bee_chest>], [<ore:plateWood>, <ore:listAllFruit> | <ore:dropRoyalJelly>, <ore:plateWood>]],
+		<forestry:database> : [[<ore:ingotRedstoneAlloy>, <forestry:portable_alyzer>, <ore:ingotRedstoneAlloy>], [<forestry:bee_chest>, <forestry:impregnated_casing>, <forestry:bee_chest>], [<ore:plateWood>, <ore:dropRoyalJelly>, <ore:plateWood>]],
 		<forestry:analyzer> : [[<ore:plateIron>, <forestry:portable_alyzer>, <ore:plateIron>], [null, <forestry:impregnated_casing>, null], [<ore:plateIron>, null, <ore:plateIron>]],
 		<forestry:alveary.plain> : [[<forestry:crafting_material:6>, <forestry:crafting_material:6>, <forestry:crafting_material:6>], [<forestry:crafting_material:6>, <forestry:impregnated_casing>, <forestry:crafting_material:6>], [<forestry:crafting_material:6>, <forestry:crafting_material:6>, <forestry:crafting_material:6>]],
 		<forestry:alveary.swarmer> : [[<ore:ingotGold>, null, <ore:ingotGold>], [<ore:gemDiamond>, <forestry:alveary.plain>, <ore:gemDiamond>], [<ore:ingotGold>, null, <ore:ingotGold>]],

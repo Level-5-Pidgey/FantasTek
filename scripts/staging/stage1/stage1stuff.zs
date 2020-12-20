@@ -512,7 +512,24 @@ val StageLessItems = [
 	<thaumcraft:nugget:10>,
 	<minecraft:mob_spawner>,
 	<thermalfoundation:wrench>,
-	<botania:pestleandmortar>
+	<botania:pestleandmortar>,
+	<magneticraft:guide_book>,
+	<magneticraft:limestone>,
+	<magneticraft:limestone:1>,
+	<magneticraft:limestone:2>,
+	<magneticraft:burnt_limestone>,
+	<magneticraft:burnt_limestone:1>,
+	<magneticraft:burnt_limestone:2>,
+	<magneticraft:tile_limestone>,
+	<magneticraft:tile_limestone:1>,
+	<magneticraft:tube_light>,
+	<magneticraft:electric_drill>.withTag({energy: 512000}),
+	<magneticraft:electric_chainsaw>.withTag({energy: 512000}),
+	<magneticraft:electric_piston>.withTag({energy: 512000}),
+	<magneticraft:battery_item_medium>.withTag({energy: 250000}),
+	<magneticraft:battery_item_low>.withTag({energy: 100000}),
+	<magneticraft:heat_sink>,
+	<magneticraft:crafting:6>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

@@ -1,0 +1,45 @@
+{
+	title: "Pile-on",
+	icon: "magneticraft:thermopile",
+	x: 26.5d,
+	y: -4.0d,
+	shape: "hexagon",
+	description: "Free Energy!",
+	text: [
+		"If you're looking for a passive way to generate energy, a thermopile is the solution for you. ",
+		"",
+		"&bBy using hot and cold liquids on opposite sides of the thermopile&r, you can generate &eapproximately 20RF/t&r with no effort or resource costs.",
+		"To store this power as RF however you will need to use Electric Cabling and connect it to an Electric Energy, which will turn the Watts into more usable",
+		"RF form."
+	],
+	dependencies: [
+		"97adb012"
+	],
+	tasks: [{
+		uid: "68077861",
+		type: "item",
+		items: [{
+			item: "magneticraft:thermopile"
+		}]
+	},
+	{
+		uid: "5d9336ad",
+		type: "item",
+		items: [{
+			item: "magneticraft:electric_cable"
+		}]
+	},
+	{
+		uid: "86f9e79c",
+		type: "item",
+		items: [{
+			item: "magneticraft:electric_engine"
+		}]
+	}],
+	rewards: [{
+		uid: "93db513e",
+		type: "item",
+		item: "minecraft:gold_ingot",
+		count: 4
+	}]
+}

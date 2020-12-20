@@ -8,7 +8,8 @@
 	text: [
 		"Since you've probably got an abundance of spare time on a planet by yourself, you could be spending our valuable company time increasing profits!",
 		"",
-		"The Grindstone is a patented piece of technology that turns your manual labour into increased resource yields! By placing the crank on top of the grindstone, you can turn the crank to grind up ores into dust. The dust can then be smelted to ingots!",
+		"&bThe Grindstone is a patented piece of technology that turns your manual labour into increased resource yields!&r &eBy placing the crank on top of the grindstone, you can turn the crank to grind up ores into dust.&r ",
+		"The dust can then be smelted to ingots!",
 		"The amount of cranks required by an ore depends on its ore processing tier, as does the yield of dust to each ore."
 	],
 	dependencies: [

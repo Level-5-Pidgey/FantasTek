@@ -84,6 +84,6 @@ for key, value in advancedRocketryRecipes {
 }
 
 //Crafting Microchips
-mods.forestry.Carpenter.addRecipe(<advancedrocketry:ic> * 2, [[null, <ore:nuggetConductiveIron>, null], [null, <projectred-core:resource_item:342>, null], [null, <ore:nuggetConductiveIron>, null]], 160, <liquid:water> * 1000);
+mods.forestry.Carpenter.addRecipe(<advancedrocketry:ic> * 2, [[null, <ore:nuggetConductiveIron>, null], [null, <projectred-core:resource_item:342>, null], [null, <ore:nuggetConductiveIron>, null]], 160, <liquid:water> * 200);
 
 print("### Advanced Rocketry Init Complete ###");

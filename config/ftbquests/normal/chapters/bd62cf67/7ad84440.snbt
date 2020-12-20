@@ -6,7 +6,9 @@
 	shape: "hexagon",
 	description: "Waste not want not",
 	text: [
-		"If you're short on fuel, coal nuggets can be crafted from coal and will smelt 1 item per nugget. This will result in a fuel efficiency increase of 12.5% over using coal only and we need to squeeze every ounce of efficiency out of you to make this program worth our time."
+		"If you're short on fuel, &bcoal nuggets can be crafted from coal and will smelt 1 item per nugget.&r ",
+		"",
+		"This will result in a fuel efficiency increase of 12.5% over using coal only and we need to squeeze every ounce of efficiency out of you to make this program worth our time."
 	],
 	dependencies: [
 		"8edd4b42"

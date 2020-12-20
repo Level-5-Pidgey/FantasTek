@@ -4,11 +4,11 @@
 	y: 4.0d,
 	description: "Documentation is vital!",
 	text: [
-		"Since we can only legally work the interns 60 hour weeks, there's not going to be complete documentation for your own survival available.",
+		"Since we can only legally work the interns 60 hour weeks, &ethere's not going to be complete documentation for your own survival available.&r",
 		"That being said, there is existing documentation out there that will help you understand and explore the whimsical and quirky qualities of this new world.",
 		"",
-		"From what we've seen, it would appear that all magical processes on this world function in parallel without interfering with each other, so you will only be required to study one of these strange energies and report back to us.",
-		"You are welcome to study more if you wish to become a valuable asset for FantasTek."
+		"&bFrom what we've seen, it would appear that all magical processes on this world function in parallel without interfering with each other, so you will only be required to study one of these strange energies and report back to us.",
+		"You are welcome to study more if you wish to become a valuable asset for FantasTek.&r"
 	],
 	dependencies: [
 		"8edd4b42"
