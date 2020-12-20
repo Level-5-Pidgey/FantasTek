@@ -141,26 +141,6 @@ recipes.removeByRecipeName("tconstruct:smeltery/grout");
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
 mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil> * 10, <liquid:creosote>, [<ore:gravel> * 10], true);
 
-//Change TCon Multiblock Component Crafting
-val multiblockComponents =
-[
-	<tconstruct:smeltery_controller>,
-	<tconstruct:tinker_tank_controller>,
-	<tconstruct:channel>,
-	<tconstruct:smeltery_io>,
-	<tconstruct:casting>,
-	<tconstruct:seared_tank:2>,
-	<tconstruct:seared_furnace_controller>,
-	<tconstruct:seared_tank>,
-	<tconstruct:casting:1>,
-	<tconstruct:faucet>
-] as crafttweaker.item.IItemStack[];
-
-for item in multiblockComponents
-{
-	recipes.remove(item);
-}
-
 for item in scripts.helpers.AllFireT1Items
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <tconstruct:smeltery_controller>, [
@@ -184,6 +164,7 @@ val componentRecipes = {
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in componentRecipes {
+	recipes.remove(key);
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
 

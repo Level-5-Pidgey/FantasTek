@@ -19,7 +19,7 @@ recipes.addShaped(scripts.helpers.createRecipeName(<minecraft:tnt>), <minecraft:
 
 //Charcoal Creation Removal
 furnace.remove(<minecraft:coal:1>);
-furnace.addRecipe(<thermalfoundation:material:801>, <minecraft:coal:1>);
+furnace.addRecipe(<minecraft:coal:1>, <thermalfoundation:material:801>);
 
 //Tooltips
 scripts.helpers.AddTooltip(<minecraft:coal:1>, ["Cannot be made in a standard furnace.", "Cover up wood piles with soft blocks and burn them instead!", "See the Foresters Manual for more details. (Or web search!)"]);

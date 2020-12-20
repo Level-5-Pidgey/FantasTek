@@ -232,9 +232,5 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<botania:blacklotus>), <fu
 recipes.addShapeless(scripts.helpers.createRecipeName(<botania:blacklotus:1>), <futuremc:dye:3> * 4, [<botania:blacklotus:1>]);
 
 //Botania Lenses
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<botania:pool:2>), scripts.staging.stages.Botania1.stage, <botania:pool:2>, [
-	[<ore:slabMarble>, <ore:petalLightBlue> | <ore:petalBlue>, <ore:slabMarble>],
-	[<ore:slabMarble>, <ore:slabMarble>, <ore:slabMarble>]
-]);
 
 print("### Botania Init Complete ###");

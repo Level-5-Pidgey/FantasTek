@@ -468,6 +468,7 @@ val StageLessItems = [
 	<forestry:thermionic_tubes:12>,
 	<forestry:farm_mushroom>,
 	<forestry:farm_mushroom:1>,
+	<rftools:item_filter>,
 	<mekanism:energycube>.withTag({tier: 0}),
 	<magneticraft:water_generator>,
 	<magneticraft:feeding_trough>,

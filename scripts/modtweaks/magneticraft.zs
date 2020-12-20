@@ -190,7 +190,7 @@ for circuit in scripts.helpers.CircuitTiers[1].items
 recipes.remove(<magneticraft:electric_cable>);
 recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_1", <magneticraft:electric_cable> * 6, [[null, <ore:blockWool>, null], [<ore:blockWool>, <ore:ingotElectrotineAlloy>, <ore:blockWool>], [null, <ore:blockWool>, null]]);
 recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_2", <magneticraft:electric_cable> * 10, [[null, <minecraft:leather>, null], [<minecraft:leather>, <ore:ingotElectrotineAlloy>, <minecraft:leather>], [null, <minecraft:leather>, null]]);
-recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_2", <magneticraft:electric_cable> * 16, [[<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>], [<ore:dustRedstone>, <ore:ingotElectrotineAlloy>, <ore:dustRedstone>], [<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>) ~ "_3", <magneticraft:electric_cable> * 16, [[<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>], [<ore:dustRedstone>, <ore:ingotElectrotineAlloy>, <ore:dustRedstone>], [<ore:blockGlassColorless>, <ore:dustRedstone>, <ore:blockGlassColorless>]]);
 
 
 print("### Magneticraft Init Complete ###");

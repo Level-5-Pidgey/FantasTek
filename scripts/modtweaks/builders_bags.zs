@@ -20,7 +20,7 @@ for bag, recipe in buildBagRecipes {
 recipes.remove(<buildersbag:builders_bag_tier_four>);
 for block in scripts.helpers.BiomeGemMaterial["block"].items
 {
-	mods.extendedcrafting.TableCrafting.addShaped(0, <buildersbag:builders_bag_tier_four>, [[<ore:crystalsPrismarine>, block, <ore:crystalsPrismarine>], [<ore:leather>, <buildersbag:builders_bag_tier_three>, <ore:leather>], [<ore:crystalsPrismarine>, <ore:densePlatingRedstone>, <ore:crystalsPrismarine>]]);
+	mods.extendedcrafting.TableCrafting.addShaped(0, <buildersbag:builders_bag_tier_four>, [[<ore:crystalsPrismarine>, block, <ore:crystalsPrismarine>], [<ore:leather>, <buildersbag:builders_bag_tier_three>, <ore:leather>], [<ore:crystalsPrismarine>, <extendedcrafting:lamp>, <ore:crystalsPrismarine>]]);
 }
 
 //Add tooltips for builders bags
