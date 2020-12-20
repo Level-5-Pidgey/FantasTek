@@ -41,7 +41,7 @@ for item in <ore:ingotConductiveIron>.items
 }
 
 //Stage 2 Electrotine Smelting
-scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotRedstoneAlloy>.firstItem, <ore:gemLapis>.firstItem * 4, 4500);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotConductiveIron>.firstItem, <ore:gemLapis>.firstItem * 4, 4500);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore:ingotIron>, <ore:dustRedstone> * 1, <ore:gemLapis> * 4], 4500);
 
 //Remove Furnace Electrotine Recipe
