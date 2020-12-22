@@ -1,4 +1,5 @@
 {
+	title: "Bleeding Edge",
 	icon: {
 		ForgeCaps: {
 			"astralsorcery:cap_item_amulet_holder": {}
@@ -11,6 +12,9 @@
 	},
 	x: 11.5d,
 	y: 2.0d,
+	text: [
+		"In order to power your crude machinery we have discovered a method to convert blood into power using the iron ions contained within it. By constructing this machine given the blueprint we have created you can soon have your own power grid online."
+	],
 	dependencies: [
 		"e79cb40b"
 	],

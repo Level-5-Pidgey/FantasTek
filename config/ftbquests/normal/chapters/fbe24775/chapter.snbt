@@ -1,6 +1,11 @@
 {
 	title: "Botania",
-	icon: "minecraft:double_plant 1 4",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "entropinnyum"
+		}
+	},
 	description: [
 		"Who's Mana Is This?"
 	],
