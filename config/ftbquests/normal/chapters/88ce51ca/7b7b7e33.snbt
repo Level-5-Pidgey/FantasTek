@@ -5,7 +5,9 @@
 			"astralsorcery:cap_item_amulet_holder": {}
 		},
 		id: "bloodmagic:soul_gem",
-		tag: {},
+		tag: {
+			souls: 256.0d
+		},
 		Damage: 1s
 	},
 	x: 15.5d,
@@ -13,7 +15,7 @@
 	shape: "gear",
 	description: "Rip and Tear until it is done!",
 	text: [
-		""
+		"By using your Sentient Sword, you should be able to collect enough souls to upgrade your Petty Tartaric Gem into a Lesser Tartaric Gem. To show us your proficiency in slaughtering your enemies and collecting their souls, submit a filled Lesser Tartaric Gem to us for inspection back at the labs."
 	],
 	dependencies: [
 		"04859e44"

@@ -1,6 +1,10 @@
 {
+	title: "Soul Searching",
 	x: 13.5d,
 	y: 0.0d,
+	text: [
+		"The Sentient Sword will make your job of stealing the souls from your foes significantly easier, as you will no longer require a snare. If you have a Tartaric Gem in your pockets, it will automatically be filled with these souls, but if it is full the souls will retain their form for you to pick up."
+	],
 	dependencies: [
 		"093b6ba2"
 	],
