@@ -22,7 +22,8 @@ val SlimeSlingItems = [
 for item in SlimeSlingItems
 {
   mods.ItemStages.removeItemStage(item);
-  scripts.helpers.setItemAndRecipesStage(item, stages.Slimesling.stage);
+  mods.recipestages.Recipes.setRecipeStage(stages.Slimesling.stage, item);
+  scripts.helpers.AddTooltip(item, ["Can only be crafted by those that have completed the \"Guide to Sticky Situations\" optional milestone.", "Makes for an effective method of early game transportation!"]);
 }
 
 print("### Stage 1 Optional Milestone Staging Complete ###");

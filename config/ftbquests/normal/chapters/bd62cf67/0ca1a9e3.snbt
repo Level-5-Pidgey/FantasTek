@@ -3,7 +3,7 @@
 	icon: "forestry:farm_crops",
 	x: 24.5d,
 	y: -2.0d,
-	shape: "hexagon",
+	shape: "rsquare",
 	description: "Smol-dew Valley",
 	text: [
 		"If you haven't already created your own renewable method of obtaining food, these farms can help you out! ",

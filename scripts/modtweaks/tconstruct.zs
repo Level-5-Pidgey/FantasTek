@@ -132,14 +132,9 @@ for materialString, molten in chunkMaterials
 //Nerf Demonic Metal Damage
 <ticmat:xu_demonic_metal>.attackHead = 5.7;
 
-//Change Pattern Recipe
-recipes.remove(<tconstruct:pattern>);
-recipes.addShaped("pattern", <tconstruct:pattern> * 4, [[<ore:stickWood>, <ore:plateWood>], [<ore:plateWood>, <ore:stickWood>]]);
-
-//Change Grout Crafting
+//Remove Default Grout Crafting Recipes
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");
-recipes.addShaped(scripts.helpers.createRecipeName(<tconstruct:soil>), <tconstruct:soil> * 8, [[<ore:gravel>, <ore:gravel>, <ore:gravel>],[<ore:gravel>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <ore:gravel>], [<ore:gravel>, <ore:gravel>, <ore:gravel>]]);
 
 //Smeltery Controller with Magical Fire Items
 recipes.remove(<tconstruct:smeltery_controller>);
@@ -152,7 +147,7 @@ for item in scripts.helpers.AllFireT1Items
 	]);
 }
 
-//Re-adding the rest of the smeltery components
+//Extended Crafting Table Tier 1 Recipes
 val componentRecipes = {
 		<tconstruct:tinker_tank_controller> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <minecraft:bucket>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
 		<tconstruct:channel> : [[null, null, null],[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
@@ -162,12 +157,24 @@ val componentRecipes = {
 		<tconstruct:seared_furnace_controller> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <minecraft:furnace>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
 		<tconstruct:seared_tank> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
 		<tconstruct:casting:1> : [[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
-		<tconstruct:faucet> : [[null, null, null],[<tconstruct:materials>, null, <tconstruct:materials>],[null, <tconstruct:materials>, null]]
+		<tconstruct:faucet> : [[null, null, null],[<tconstruct:materials>, null, <tconstruct:materials>],[null, <tconstruct:materials>, null]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in componentRecipes {
-	recipes.remove(key);
+	recipes.remove(key.withAmount(1));
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
+}
+
+//Crafting Table Recipes
+val tconstructRecipes_CRAFTINGTABLE = {
+	<tconstruct:materials:15> * 4 : [[<minecraft:gold_nugget>, <randomthings:ingredient:12>, <minecraft:gold_nugget>], [<randomthings:ingredient:12>, <minecraft:gold_nugget>, <randomthings:ingredient:12>], [<minecraft:gold_nugget>, <randomthings:ingredient:12>, <minecraft:gold_nugget>]],
+	<tconstruct:soil> * 8 : [[<ore:gravel>, <ore:gravel>, <ore:gravel>],[<ore:gravel>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <ore:gravel>], [<ore:gravel>, <ore:gravel>, <ore:gravel>]],
+	<tconstruct:pattern> * 4 : [[<ore:stickWood>, <ore:plateWood>], [<ore:plateWood>, <ore:stickWood>]]
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in tconstructRecipes_CRAFTINGTABLE {
+	recipes.remove(key.withAmount(1));
+	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
 }
 
 //Remove Easy Book Crafting Recipe.

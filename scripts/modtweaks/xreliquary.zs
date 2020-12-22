@@ -38,7 +38,8 @@ for item in lootItems
 
 //Change Handgun Recipe
 recipes.remove(<xreliquary:handgun>);
-recipes.addShaped(scripts.helpers.createRecipeName(<xreliquary:handgun>), <xreliquary:handgun>, [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateSteel>, <xreliquary:gun_part>, <ore:plateSteel>]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<xreliquary:handgun>), scripts.helpers.stages.progression2.stage, <xreliquary:handgun>, [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateSteel>, <xreliquary:gun_part>, <ore:plateSteel>]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<xreliquary:handgun>), <xreliquary:handgun>, [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateCrudeSteel>, <xreliquary:gun_part>, <ore:plateCrudeSteel>]]);
 print("### xReliquary Init Complete ###");
 
 

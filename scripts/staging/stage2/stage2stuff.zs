@@ -34,6 +34,7 @@ val StageMods = [
   "environmentaltech",
   "compactmachines3",
   "iceandfire",
+  "teslacorelib",
   "projectred-core",
   "magneticraft",
   "deepmoblearning",
@@ -69,7 +70,21 @@ val otherItems = [
 	<xreliquary:witherless_rose>,
 	<extrautils2:ineffableglass:*>,
     <morebees:framemutating>,
-    <morebees:framecooled>
+    <morebees:framecooled>,
+    <natura:overworld_berrybush_raspberry:*>,
+    <natura:overworld_berrybush_blueberry:*>,
+    <natura:overworld_berrybush_blackberry:*>,
+    <natura:overworld_berrybush_maloberry:*>,
+    <natura:soups:9>,
+    <randomthings:spectrecharger:2>,
+    <randomthings:spectrecharger>,
+    <randomthings:spectrecharger:1>,
+    <randomthings:spectrecoil_ender>,
+    <randomthings:spectrecoil_normal>,
+    <randomthings:spectrecoil_redstone>,
+    <randomthings:spectreenergyinjector>,
+    <randomthings:spectreilluminator>,
+    <randomthings:spectreanchor>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in otherItems

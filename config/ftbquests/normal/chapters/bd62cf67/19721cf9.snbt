@@ -1,0 +1,24 @@
+{
+	title: "The End.",
+	icon: "minecraft:dragon_egg",
+	x: 29.0d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"22ba3f92"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "2cd3222f",
+		type: "advancement",
+		title: "Defeat the Ender Dragon",
+		icon: "minecraft:skull 1 5",
+		advancement: "minecraft:end/kill_dragon",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "e87ffd1f",
+		type: "item",
+		item: "minecraft:dragon_egg"
+	}]
+}

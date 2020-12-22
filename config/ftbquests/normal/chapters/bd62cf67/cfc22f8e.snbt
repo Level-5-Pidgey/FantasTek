@@ -2,7 +2,7 @@
 	title: "Pile-on",
 	icon: "magneticraft:thermopile",
 	x: 24.5d,
-	y: -4.0d,
+	y: 0.0d,
 	shape: "hexagon",
 	description: "Free Energy!",
 	text: [

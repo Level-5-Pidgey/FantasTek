@@ -145,6 +145,19 @@
 					id:"tconstruct:spaghetti",
 					Count:1
 				}
+			},
+			{
+				action:"add", CareerLevel:6, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:{min:2, max:3}
+				},
+				sell:
+				{
+					id:"xreliquary:harvest_rod",
+					Count:1
+				}
 			}
 		]
 	}

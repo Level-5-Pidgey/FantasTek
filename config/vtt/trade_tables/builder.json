@@ -30,6 +30,18 @@
 				}
             },
 			{
+                action:"add", CareerLevel:2, Chance:0.4,
+                buy:{
+                    id:"contenttweaker:currency_2500",
+                    Count:1
+                },
+                sell:
+				{
+					id:"randomthings:blockdestabilizer",
+					Count:1
+				}
+            },
+			{
                 action:"add", CareerLevel:1,
 				buy:
 					{id:"contenttweaker:currency_4",Count:{min:1,max:4}},

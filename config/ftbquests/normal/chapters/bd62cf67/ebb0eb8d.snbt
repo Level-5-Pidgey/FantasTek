@@ -21,6 +21,7 @@
 	tasks: [{
 		uid: "d1322dc1",
 		type: "advancement",
+		title: "Kill a Ghast with its own Fireball",
 		icon: "minecraft:fire_charge",
 		advancement: "minecraft:nether/return_to_sender",
 		criterion: ""

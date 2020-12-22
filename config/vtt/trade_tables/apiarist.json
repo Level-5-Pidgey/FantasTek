@@ -204,6 +204,16 @@
 				},
 				sell:
 				{id: "forestry:apiarist_boots", Count: 1}
+			},
+			{
+				action:"add", CareerLevel:3, Chance: 0.8,
+				buy:
+				{
+					id:"contenttweaker:currency_500",
+					Count:{min:7, max:9}
+				},
+				sell:
+				{id: "randomthings:rainshield", Count: 1}
 			}
 		]
 	}

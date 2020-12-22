@@ -1,0 +1,21 @@
+{
+	title: "The End?",
+	icon: "minecraft:end_stone",
+	x: 26.5d,
+	y: 2.0d,
+	description: "A grand finale for the first chapter!",
+	text: [
+		"With the Wither defeated, it seems suitable that you knock out the other source of negative energies in your nearby Dimensions -- the Ender Dragon.",
+		"",
+		"If you're able to locate the portal residing in one of the ancient strongholds you should be able to access the last dimension of your strange planet.",
+		"Godspeed, pioneer!"
+	],
+	dependencies: [
+		"fd2fca60"
+	],
+	tasks: [{
+		uid: "9bccf020",
+		type: "dimension",
+		dim: 1
+	}]
+}

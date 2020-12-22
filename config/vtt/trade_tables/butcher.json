@@ -114,7 +114,33 @@
                     id:"minecraft:rotten_flesh",
                     Count:{min:8,max:12}
                 }
-            }
+            },
+			{
+				action:"add", CareerLevel:5, chance:0.4,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:4, max:6}
+				},
+				sell:
+				{
+					id:"bountifulbaubles:amuletsingluttony",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:5, chance:0.4,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:4, max:6}
+				},
+				sell:
+				{
+					id:"darkutils:charm_gluttony",
+					Count:1
+				}
+			}
 		]
 	}
 }

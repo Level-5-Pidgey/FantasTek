@@ -179,6 +179,19 @@
 					id:"thermalfoundation:tool.hammer_diamond",
 					Count:1
 				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.2,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:{min:2, max:3}
+				},
+				sell:
+				{
+					id:"xreliquary:infernal_tear",
+					Count:1
+				}
 			}
 		]
 	}

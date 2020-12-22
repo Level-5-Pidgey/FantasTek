@@ -17,6 +17,32 @@
 				}
 			},
 			{
+				action:"add", CareerLevel:3, chance:0.3,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:{min:3, max:4}
+				},
+				sell:
+				{
+					id:"xreliquary:destruction_catalyst",
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:3, chance:0.5,
+				buy:
+				{
+					id:"contenttweaker:currency_2500",
+					Count:{min:3, max:57}
+				},
+				sell:
+				{
+					id:"xreliquary:glacial_staff",
+					Count:1
+				}
+			},
+			{
 				action:"add", CareerLevel:1,
 				buy:{
 					id:"contenttweaker:currency_20",
@@ -62,10 +88,10 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:3, chance:0.4,
+				action:"add", CareerLevel:2, chance:0.6,
 				buy:{
-					id:"contenttweaker:currency_12500",
-					Count:3
+					id:"contenttweaker:currency_2500",
+					Count:{min:2,max:5}
 				},
 				sell:{
 					id:"xreliquary:ice_magus_rod",
@@ -73,7 +99,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:3, chance:0.1,
+				action:"add", CareerLevel:3, chance:0.2,
 				buy:{
 					id:"contenttweaker:currency_12500",
 					Count:3
@@ -84,7 +110,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:3, chance:0.1,
+				action:"add", CareerLevel:3, chance:0.2,
 				buy:{
 					id:"contenttweaker:currency_12500",
 					Count:3
@@ -96,7 +122,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:3, chance:0.1,
+				action:"add", CareerLevel:3, chance:0.2,
 				buy:{
 					id:"contenttweaker:currency_12500",
 					Count:3

@@ -22,7 +22,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,  chance:0.3,
+				action:"add", CareerLevel:1,  chance:0.6,
 				buy:
 				{
 					id:"contenttweaker:currency_100",
@@ -38,7 +38,7 @@
 				}
 			},
 			{
-				action:"add", CareerLevel:1,  chance:0.1,
+				action:"add", CareerLevel:1,  chance:0.3,
 				buy:
 				{
 					id:"contenttweaker:currency_500",
@@ -50,6 +50,19 @@
 							"thaumcraft:loot_crate_rare",
 							"thaumcraft:loot_urn_rare"
 						],
+					Count:1
+				}
+			},
+			{
+				action:"add", CareerLevel:1, chance:0.1,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:{min:2, max:3}
+				},
+				sell:
+				{
+					id:"xreliquary:rod_of_lyssa",
 					Count:1
 				}
 			}

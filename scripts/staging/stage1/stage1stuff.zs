@@ -420,9 +420,7 @@ val StageLessItems = [
 	<forestry:frame_proven>,
 	<forestry:honeydew>,
 	<forestry:royal_jelly>,
-	<forestry:sturdy_machine>,
 	<forestry:wax_cast>,
-	<morebees:framemutating>,
 	<forestry:beehives>,
 	<forestry:beehives:1>,
 	<forestry:beehives:2>,
@@ -441,8 +439,6 @@ val StageLessItems = [
 	<forestry:database>,
 	<forestry:engine_peat>,
 	<forestry:engine_biogas>,
-	<morebees:framemutating>,
-	<morebees:framecooled>,
 	<thermalfoundation:material:801>,
 	<iceandfire:ash>,
 	<thermalfoundation:material:656>,
@@ -529,7 +525,12 @@ val StageLessItems = [
 	<magneticraft:battery_item_medium>.withTag({energy: 250000}),
 	<magneticraft:battery_item_low>.withTag({energy: 100000}),
 	<magneticraft:heat_sink>,
-	<magneticraft:crafting:6>
+	<magneticraft:crafting:6>,
+	<enderio:item_material:20>,
+	<enderio:block_infinity:2>,
+	<enderio:block_infinity>,
+	<enderio:block_infinity:1>,
+	<magneticraft:battery>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

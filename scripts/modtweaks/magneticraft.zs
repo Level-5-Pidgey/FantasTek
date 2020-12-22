@@ -12,10 +12,13 @@ mods.jei.JEI.hideCategory("magneticraft.crushing_table");
 scripts.helpers.unstageAndHide(<magneticraft:hydraulic_press>);
 scripts.helpers.unstageAndHide(<magneticraft:crushing_table>);
 
-//Add Limestone to OreDict
+//Add Limestone to OreDict and Chisel Groups
 <ore:stoneLimestone>.add(<magneticraft:limestone>);
 <ore:stoneLimestone>.add(<magneticraft:limestone:1>);
 <ore:stoneLimestone>.add(<magneticraft:limestone:2>);
+mods.chisel.Carving.addVariation("limestone", <magneticraft:limestone:2>);
+mods.chisel.Carving.addVariation("limestone", <magneticraft:limestone>);
+
 
 //Hide Magneticraft Items
 val magneticraftHide =
@@ -32,7 +35,6 @@ val magneticraftHide =
 	<magneticraft:light_plates:1>,
 	<magneticraft:light_plates:6>,
 	<magneticraft:light_plates:5>,
-	<magneticraft:battery>,
 	<magneticraft:iron_gear>,
 	<magneticraft:broken_gear>,
 	<magneticraft:steel_gear>,
@@ -208,5 +210,13 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticra
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_bloodmagic", scripts.staging.stages.BloodMagic1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:sanguine_gem_water>, <ore:paper>, <contenttweaker:sanguine_gem_fire>], [null, <ore:plateConductiveIron>, null]]);
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_embers", scripts.staging.stages.Embers1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:crystal_ember_water>, <ore:paper>, <contenttweaker:crystal_ember_fire>], [null, <ore:plateConductiveIron>, null]]);
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_thaumcraft", scripts.staging.stages.Thaumcraft1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:salis_mundus_water>, <ore:paper>, <contenttweaker:salis_mundus_fire>], [null, <ore:plateConductiveIron>, null]]);
+
+//Battey Box
+recipes.remove(<mekanism:energycube>.withTag({tier: 0}));
+for circuit in scripts.helpers.CircuitTiers[1].items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 0}), [[<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>]]);
+	mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 0}), [[<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>]]);
+}
 
 print("### Magneticraft Init Complete ###");

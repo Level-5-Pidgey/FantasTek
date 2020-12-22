@@ -4,11 +4,12 @@
 	y: 0.0d,
 	description: "Creating Massive Machinery",
 	text: [
-		"With the power of your new crafting table, Modularium can be constructed.",
+		"Obsidian, as durable as it is, can be further upgraded into Modularium with a bit of Gold and extra dusts.",
 		"",
 		"Modularium is a patented, highly untested alloy that may or may not cause serious damage to the heart, liver, lungs, eyes or brain.",
 		"",
-		"Although it's not FDA approved or commercially ready, since you're using it on a planet that likely has no laws or regulations it should all be fair game. Modularium can be used to assemble large multiblock machinery that will make your life much easier."
+		"Although it's not FDA approved or commercially ready, since you're using it on a planet that likely has no laws or regulations it should all be fair game. ",
+		"Modularium can be used to assemble large multiblock machinery that will make your life much easier."
 	],
 	dependencies: [
 		"8cb69197"

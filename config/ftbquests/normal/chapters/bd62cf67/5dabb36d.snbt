@@ -1,7 +1,7 @@
 {
 	title: "Spread the Love",
 	x: -1.5d,
-	y: 8.0d,
+	y: 10.0d,
 	description: "Only really fun if you're playing on multiplayer...",
 	text: [
 		"&bIf your experience is shared with other Pioneers, then a mail system is the way to go for sharing gifts and sending messages remotely.&r",

@@ -33,7 +33,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 60,
+    "rarity": 70,
     "min_y": 15,
     "max_y": 55,
     "density": 180,

@@ -22,6 +22,19 @@
 				}
 			},
 			{
+				action:"add", CareerLevel:3, chance:0.4,
+				buy:
+				{
+					id:"contenttweaker:currency_12500",
+					Count:{min:3, max:5}
+				},
+				sell:
+				{
+					id:"xreliquary:ender_staff",
+					Count:1
+				}
+			},
+			{
 				action:"add", CareerLevel:1,
 				buy:
 				{

@@ -1,12 +1,22 @@
 {
 	title: "&eGuide to Sticky Situations",
-	icon: "tconstruct:materials 1 9",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {
+				AS_Amulet_HolderLeast: -7321793126330253362L,
+				AS_Amulet_HolderMost: -1691932688462756616L
+			}
+		},
+		id: "tconstruct:slimesling"
+	},
 	x: 12.5d,
 	y: 6.0d,
 	shape: "octagon",
 	description: "Slime flies when you're having fun",
 	text: [
-		"We here at FantasTek use slime as an adhesive and as a filler for our protein supplements, so we're always in the market for some extra slime. As an incentive to supply us with this slime you'll be granted the knowledge of the experimental Slime Sling technology, allowing you to slingshot yourself across the environment."
+		"We here at FantasTek use slime as an adhesive and as a filler for our protein supplements, so we're always in the market for some extra slime. ",
+		"",
+		"As an incentive to supply us with this slime you'll be granted the knowledge of how to craft our experimental Slime Slings, allowing you to slingshot yourself across the environment. Be sure to equip yourselves with the matching boots to complete the look (and stay safe)!"
 	],
 	dependencies: [
 		"0326f755"
@@ -44,7 +54,7 @@
 				TrophyColorGreen: 205,
 				TrophyVariant: "classic",
 				TrophyItem: {
-					id: "minecraft:slime",
+					id: "tconstruct:slimesling",
 					Count: 1b,
 					Damage: 0s
 				},

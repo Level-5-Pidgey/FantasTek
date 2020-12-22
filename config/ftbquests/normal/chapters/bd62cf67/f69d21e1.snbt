@@ -1,0 +1,45 @@
+{
+	title: "Boss Monsters",
+	x: -5.0d,
+	y: -2.0d,
+	shape: "hexagon",
+	description: "*chuckles* You're in danger",
+	text: [
+		"To add a bit of \"spice\" to your experience, there will be various randomly generated boss monsters that spawn within the world.",
+		"",
+		"These boss monsters will have additional health and damage, alongside perks that give them bonus abilities.",
+		"",
+		"Should you defeat these monsters, they will drop tokens, depending on the difficulty of the boss monster. Villagers will regularly put up bounties for",
+		"defeating these monsters, and they can be traded in for a nice stack of cash."
+	],
+	dependencies: [
+		"8963d329"
+	],
+	tasks: [{
+		uid: "5b3c8e8c",
+		type: "item",
+		title: "Obtain a Champion Token",
+		items: [{
+			item: "contenttweaker:champion_token_1"
+		},
+		{
+			item: "contenttweaker:champion_token_2"
+		},
+		{
+			item: "contenttweaker:champion_token_3"
+		},
+		{
+			item: "contenttweaker:champion_token_4"
+		}]
+	}],
+	rewards: [{
+		uid: "9d064b4f",
+		type: "item",
+		item: {
+			id: "minecraft:splash_potion",
+			tag: {
+				Potion: "minecraft:strong_healing"
+			}
+		}
+	}]
+}

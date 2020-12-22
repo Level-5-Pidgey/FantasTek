@@ -38,5 +38,31 @@
 				Potion: "minecraft:long_swiftness"
 			}
 		}
+	},
+	{
+		uid: "514d3f1c",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:chainmail_chestplate",
+			tag: {
+				ench: [{
+					lvl: 3s,
+					id: 4
+				},
+				{
+					lvl: 1s,
+					id: 34
+				}],
+				display: {
+					Lore: [
+						"§5§oProperty of FantasTek industries. Do not resell!"
+					],
+					Name: "Employee Body Armour"
+				}
+			}
+		}
 	}]
 }
