@@ -1,0 +1,45 @@
+{
+	title: "Wither Woes",
+	icon: "minecraft:skull 1 1",
+	x: 14.5d,
+	y: 2.0d,
+	description: "Battle it out in the Nether!",
+	text: [
+		"It seems that the hellish dimension you have recently discovered has been created by the disastrous necrotic magic in those Dark Brick fortresses.",
+		"",
+		"With the right combination of Soul Sand and the skulls of those skeletons that occupy the fortresses you may be able to create one of those old beings",
+		"that used to reside in the hellish landscape...",
+		"",
+		"&4Modpack Author note: &eThe Wither Boss can only be spawned within the nether in this modpack. Please be sure you construct the wither within",
+		"the nether or you may lose your Soul Sand and skulls!"
+	],
+	dependencies: [
+		"8cb69197"
+	],
+	tasks: [{
+		uid: "b2905e87",
+		type: "item",
+		items: [{
+			item: "minecraft:skull 1 1"
+		}],
+		count: 3L
+	},
+	{
+		uid: "32cebcad",
+		type: "item",
+		items: [{
+			item: "minecraft:soul_sand"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "814869aa",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "minecraft:strength"
+			}
+		}
+	}]
+}

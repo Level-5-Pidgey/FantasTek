@@ -1,12 +1,13 @@
 {
 	title: "Get Crative",
-	x: 20.5d,
+	x: 18.5d,
 	y: -2.0d,
 	description: "Green is not a \"crative\" colour",
 	text: [
-		"The carpentry machine is capable of producing crates as well as making further machines. These crates can be sold to the native lifeforms for \"personal\" (corporate) profits.",
+		"The carpentry machine is capable of producing crates as well as making further machines. It'll be an imperative part of your progress into the next stages of the game as",
+		"it offers cheaper alternate recipes for certain crafting recipes.",
 		"",
-		"This machine will be key to expanding your knowledge of machinery, and increase your productivity by a massive 2.4%! Imagine how much you can contribute to us!"
+		"Additionally, the Carpenter is able to package and un-package certain items into crates. You should be able to sell some of these to the local village-folk for money!"
 	],
 	dependencies: [
 		"4e3597db",

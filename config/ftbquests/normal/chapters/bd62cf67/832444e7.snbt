@@ -1,7 +1,7 @@
 {
 	title: "Plate Problems",
-	x: 14.5d,
-	y: 6.0d,
+	x: 12.5d,
+	y: 8.0d,
 	description: "(and how to alleviate them)",
 	text: [
 		"Up till now, you've had to construct plates by smashing lots of gems or ingots in a crafting table with a Tinkerer's Hammer. This can be costly and is hard to automate -- if you'd like a more automatable and easily interactible solution the Small Plate Presser should do the job. Simply place this above a block of obsidian (leaving a block gap between) and then place the block of wood/ore inbetween, give a redstone pulse and bam! You have easier plate crafting.",

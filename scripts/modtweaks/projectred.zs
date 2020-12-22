@@ -47,10 +47,12 @@ mods.enderio.AlloySmelter.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore
 //Remove Furnace Electrotine Recipe
 furnace.remove(<ore:ingotElectrotineAlloy>.firstItem, <projectred-core:resource_item:252>);
 
-//Grind Electrotine Ingots into Dust
+//Grind Electrotine Ingots into Dust (and add tooltips!)
 for electrotineIngot in <ore:ingotElectrotineAlloy>.items
 {
-  mods.appliedenergistics2.Grinder.addRecipe(<ore:dustElectrotine>.firstItem * 4, electrotineIngot, 2);
+  mods.appliedenergistics2.Grinder.addRecipe(<ore:dustElectrotine>.firstItem * 3, electrotineIngot, 2);
+  scripts.helpers.addCrushingRecipe(<ore:dustElectrotine>.firstItem * 6, electrotineIngot, 500);
+  scripts.helpers.AddTooltip(electrotineIngot, ["A proprietary, electrically conductive magically manufactured alloy.", "Don't give the recipe up to the competition, they're still figuring out how it works!", "Used as an early substitute for the likes of Copper."]);
 }
 
 //Add items to OreDicts
@@ -71,6 +73,9 @@ for key, value in projectRedRecipes {
 	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
 }
 
+recipes.remove(<projectred-core:resource_item:310>);
+recipes.remove(<projectred-core:resource_item:311>);
+recipes.remove(<projectred-core:resource_item:312>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:310>), <projectred-core:resource_item:310>, [<projectred-core:resource_item:301>, <ore:dustRedstone>]);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:311>), <projectred-core:resource_item:311>, [<projectred-core:resource_item:301>, <ore:dustGlowstone>]);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:312>), <projectred-core:resource_item:312>, [<projectred-core:resource_item:301>, <ore:dustElectrotine>]);

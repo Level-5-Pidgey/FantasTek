@@ -1,7 +1,7 @@
 {
 	title: "Cast and Crew",
-	x: 16.5d,
-	y: 2.0d,
+	x: 14.5d,
+	y: 4.0d,
 	description: "You made the cut!",
 	text: [
 		"To be able to make use of the molten metals in your smeltery, you need to cast them into shape.",

@@ -1,8 +1,8 @@
 {
 	title: "&eGuide to Sticky Situations",
 	icon: "tconstruct:materials 1 9",
-	x: 14.5d,
-	y: 4.0d,
+	x: 12.5d,
+	y: 6.0d,
 	shape: "octagon",
 	description: "Slime flies when you're having fun",
 	text: [

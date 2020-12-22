@@ -1,8 +1,8 @@
 {
 	title: "Advanced Crafting",
 	icon: "extendedcrafting:table_basic",
-	x: 12.5d,
-	y: 2.0d,
+	x: 10.5d,
+	y: 4.0d,
 	description: "Time to make something powerful!",
 	text: [
 		"The basic wooden crafting table we recommended you make earlier is appropriate for most crafting tasks, more complex machines require more complex tools such as an Advanced Crafting Table.",

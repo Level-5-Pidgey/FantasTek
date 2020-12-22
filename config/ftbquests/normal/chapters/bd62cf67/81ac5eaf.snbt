@@ -1,10 +1,12 @@
 {
 	title: "&6Microchip Madness",
-	x: 22.5d,
+	x: 20.5d,
 	y: -4.0d,
 	shape: "gear",
 	text: [
-		"Now that you've explored the technology that you're capable of making, you have to prove your profiency to us by kindly donating 200 microchips. With these chips we're going to continue our research into the Intern Replacement Program, creating AI run robots to do extra-terrestrial exploration once you have *ahem* expired."
+		"Now that you've explored the technology that you're capable of making, you have to prove your profiency to us by kindly donating 200 microchips. ",
+		"",
+		"With these chips we're going to continue our research into the Intern Replacement Program, creating AI run robots to do extra-terrestrial exploration once you have *ahem* expired."
 	],
 	dependencies: [
 		"0e4f6d19"
@@ -13,7 +15,7 @@
 	tasks: [{
 		uid: "e7d665b1",
 		type: "item",
-		title: "Produce 200 Basic Logic Circuits",
+		title: "Produce 200 Rudimentary Logic Circuits",
 		items: [{
 			item: "advancedrocketry:ic"
 		}],

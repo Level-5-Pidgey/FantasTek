@@ -1,8 +1,8 @@
 {
 	title: "Steam Age",
 	icon: "magneticraft:combustion_chamber",
-	x: 24.5d,
-	y: 2.0d,
+	x: 22.5d,
+	y: 4.0d,
 	shape: "hexagon",
 	description: "Optional, Stronger Power for you!",
 	text: [

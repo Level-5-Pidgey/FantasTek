@@ -1,8 +1,8 @@
 {
 	title: "&6Meeting your Milestones",
 	icon: "ftbquests:screen",
-	x: 10.5d,
-	y: 6.0d,
+	x: 8.5d,
+	y: 8.0d,
 	shape: "gear",
 	description: "How to progress through the pioneer program!",
 	text: [
@@ -13,10 +13,10 @@
 		"This program will &nrestrict certain monsters, liquids, dimensions and items to stages&f, and prevent accessing this content until you have that",
 		"appropriate stage. There are two types of staging:",
 		"",
-		"- &4Optional Staging&e : These stages are not required to \"complete\" your pioneering program but will open up more options for you as a player. ",
-		"&eThey are unlocked by completing optional milestone quests, which are submission quests marked with an octagon in the R.E.E.D. I.T. device.&f",
 		"- &4Required Staging&e : These stages are required to progress in the quest tree each stage. &nTo open stage 2, you have to have complete all",
 		"required milestones in stage 1. They can be completed in any order, and are signified in the R.E.E.D. I.T. device by the quests in a gear-shape.",
+		"- &4Optional Staging&e : These stages are not required to \"complete\" your pioneering program but will open up more options for you as a player. ",
+		"&eThey are unlocked by completing optional milestone quests, which are submission quests marked with an octagon in the R.E.E.D. I.T. device.&f",
 		"",
 		"&rTo submit items for these milestone quests, you can use the R.E.E.D. I.T. device, or a task screen. &nThis allows you to pipe in the required items",
 		"or fluids or power into the block after setting the correct quest and the progress will update as the correct items are submitted!"

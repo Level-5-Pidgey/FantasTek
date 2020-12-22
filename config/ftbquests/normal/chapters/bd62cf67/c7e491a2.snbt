@@ -1,8 +1,8 @@
 {
 	title: "Ship it!",
 	icon: "chisel:blockgold 1 1",
-	x: 18.5d,
-	y: 0.0d,
+	x: 16.5d,
+	y: 6.0d,
 	shape: "hexagon",
 	description: "Defects? Who cares about those!",
 	text: [

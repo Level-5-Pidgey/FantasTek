@@ -38,3 +38,13 @@ config/jei/worldSettings.cfg
 config/splash.properties
 config/InvTweaks.cfg
 seen_buildersbag_addons.txt
+
+config/defaultoptions/optionsof.txt
+
+mods/OptiFine_1.12.2_HD_U_F5.jar
+
+optionsof.txt
+
+optionsshaders.txt
+
+shaderpacks/

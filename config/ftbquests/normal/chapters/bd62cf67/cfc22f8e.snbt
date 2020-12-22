@@ -1,7 +1,7 @@
 {
 	title: "Pile-on",
 	icon: "magneticraft:thermopile",
-	x: 26.5d,
+	x: 24.5d,
 	y: -4.0d,
 	shape: "hexagon",
 	description: "Free Energy!",
@@ -13,7 +13,7 @@
 		"RF form."
 	],
 	dependencies: [
-		"97adb012"
+		"1d5889ec"
 	],
 	tasks: [{
 		uid: "68077861",

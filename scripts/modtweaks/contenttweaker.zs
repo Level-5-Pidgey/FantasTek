@@ -140,7 +140,7 @@ val foodRecipes = {
 	<contenttweaker:steak_and_chips> : [<minecraft:cooked_beef>, <minecraft:baked_potato>, <ore:itemSalt>],
 	<contenttweaker:meat_pie> : [<ore:listAllmeatcooked>, <ore:listAllmeatcooked>, <ore:foodFlour> | <ore:dustWheat>, <ore:itemSalt>],
 	<contenttweaker:honey_sandwich> : [<ore:dropHoney> | <futuremc:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>],
-	<contenttweaker:fairy_bread> : [<ore:dye>, <ore:dye>, <minecraft:sugar>, <minecraft:bread>],
+	<contenttweaker:fairy_bread> : [<ore:dyeCyan> | <ore:dyeGray> | <ore:dyeLightGray> | <ore:dyeOrange> | <ore:dyePink> |  <ore:dyeMagenta> | <ore:dyeLime> |  <ore:dyePurple>, <ore:dyeCyan> | <ore:dyeGray> | <ore:dyeLightGray> | <ore:dyeOrange> | <ore:dyePink> |  <ore:dyeMagenta> | <ore:dyeLime> |  <ore:dyePurple>, <minecraft:sugar>, <minecraft:bread>],
 	<contenttweaker:chocolate> * 2 : [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")],
 	<contenttweaker:chicken_bucket> : [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>],
 	<contenttweaker:pocky> * 8 : [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]

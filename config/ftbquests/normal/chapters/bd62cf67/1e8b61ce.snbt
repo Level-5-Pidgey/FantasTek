@@ -1,0 +1,51 @@
+{
+	title: "&6Wish upon a Star",
+	x: 14.5d,
+	y: 0.0d,
+	shape: "gear",
+	description: "Why do I hear boss music?",
+	text: [
+		"As expected from our research, it seems like the Wither's strength comes from the gem-like star stored within.",
+		"",
+		"We were hoping to perform analytics on one (and then sell it later at a charity auction), would you be able to spare one for us? Promise we will return",
+		"it later."
+	],
+	dependencies: [
+		"fd2fca60"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "00e3a2c6",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_star"
+		}]
+	}],
+	rewards: [{
+		uid: "a9d37ac9",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "enabled",
+		command: "/say @p has completed the Milestone [Wish Upon a Star]!"
+	},
+	{
+		uid: "e067a1f9",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 255,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "minecraft:nether_star",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 0,
+				TrophyName: "Wish Upon a Star",
+				TrophyColorRed: 191
+			}
+		}
+	}]
+}
