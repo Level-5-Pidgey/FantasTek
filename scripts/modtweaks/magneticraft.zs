@@ -19,6 +19,8 @@ scripts.helpers.unstageAndHide(<magneticraft:crushing_table>);
 mods.chisel.Carving.addVariation("limestone", <magneticraft:limestone:2>);
 mods.chisel.Carving.addVariation("limestone", <magneticraft:limestone>);
 
+//Add the oil stone to an OreDict for the scanner
+<ore:oreOil>.add(<magneticraft:oil_source:*>);
 
 //Hide Magneticraft Items
 val magneticraftHide =
@@ -212,11 +214,11 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticra
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_thaumcraft", scripts.staging.stages.Thaumcraft1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:salis_mundus_water>, <ore:paper>, <contenttweaker:salis_mundus_fire>], [null, <ore:plateConductiveIron>, null]]);
 
 //Battey Box
-recipes.remove(<mekanism:energycube>.withTag({tier: 0}));
+recipes.remove(<magneticraft:battery>);
 for circuit in scripts.helpers.CircuitTiers[1].items
 {
-	mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 0}), [[<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>]]);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 0}), [[<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>]]);
+	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:battery>, [[<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>]]);
+	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:battery>, [[<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>]]);
 }
 
 print("### Magneticraft Init Complete ###");
