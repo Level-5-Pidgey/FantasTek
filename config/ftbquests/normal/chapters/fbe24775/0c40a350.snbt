@@ -1,4 +1,5 @@
 {
+	title: "Botanical Bag",
 	icon: {
 		ForgeCaps: {
 			Parent: [],
@@ -9,6 +10,9 @@
 	x: 2.0d,
 	y: 0.0d,
 	shape: "hexagon",
+	text: [
+		"The Flower Pouch has the interesting magical property of storing a plentiful supply of Mystical Flowers. When you're out exploring, you may come across some flowers that you do not want taking up so much space, so this bag will solve your problems!"
+	],
 	dependencies: [
 		"a09d1ffe"
 	],

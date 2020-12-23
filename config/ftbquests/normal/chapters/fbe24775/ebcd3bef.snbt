@@ -1,7 +1,11 @@
 {
+	title: "Sewing Seeds",
 	x: 14.5d,
 	y: 4.0d,
 	shape: "hexagon",
+	text: [
+		"Pasture Seeds allow you to create Grass Blocks of their corresponding types in any area and can also be used to create floating flowers. Whilst this is all strictly aesthetic, it means that you can customise your base exactly the way that you want to!"
+	],
 	dependencies: [
 		"51ade5b4"
 	],
