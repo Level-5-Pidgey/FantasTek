@@ -4,7 +4,7 @@
 	y: 1.0d,
 	description: "Finest wining and dining in town!",
 	text: [
-		"With magic tallow, you should be able to create beautiful scenic candles that can be placed as a light source, or used later down the line to amplify the magical power of your thaumaturgy.",
+		"&bWith magic tallow, you should be able to create beautiful scenic candles&r that can be placed as a light source, or used later down the line to &eamplify the magical power of your thaumaturgy.&r",
 		"",
 		"These candles can be used by anyone (including those not aligned with Thaumaturgy!) but cannot be crafted by those unfamiliar with Thaumcraft. Maybe that could be a potential business deal?"
 	],

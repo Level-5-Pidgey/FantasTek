@@ -4,8 +4,7 @@
 	y: 2.0d,
 	description: "Ya like jazz?",
 	text: [
-		"Mana is your main resource when making magical materials with Botania. It can infuse materials with magic and change their properties, allowing you to craft incredible new compounds. As an additional test for us, do you",
-		"think you could stand in some mana for us? We're trying to see if we can create superhumans by pumping them full of mana, and you seems like a low value test subject."
+		"&eMana is your main resource when making magical materials with Botania&r. It can infuse materials with magic and change their properties, allowing you to craft incredible new compounds. As an additional test for us, do you think you could stand in some mana for us? We're trying to see if we can create superhumans by pumping them full of mana, and you seems like a low value test subject."
 	],
 	dependencies: [
 		"0abffda2"

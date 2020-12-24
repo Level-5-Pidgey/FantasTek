@@ -5,7 +5,7 @@
 	y: 0.0d,
 	description: "Hope I Don't Rune This",
 	text: [
-		"Using a Runic Altar and mixing petals with Livingrock, you can create magically charged runes that can be used to craft even greater flowers, or can also do unique things on their own such as acting as an infinite water source."
+		"&bUsing a Runic Altar and mixing petals with Livingrock&e, you can create magically charged runes that can be used to craft even greater flowers&r, or can also do unique things on their own such as acting as an infinite water source."
 	],
 	dependencies: [
 		"4844cf21",

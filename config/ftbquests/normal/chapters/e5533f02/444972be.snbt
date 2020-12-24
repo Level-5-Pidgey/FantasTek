@@ -3,7 +3,7 @@
 	x: 8.0d,
 	y: 2.0d,
 	text: [
-		"Using a melter, you can melt down ores to double your ingot output. You need to provide it with energy in order for it to operate and you must pipe the Melter into a Stamper in order to craft the ores. Hopefully this easy ore doubling method will give you an advantage over your colleagues."
+		"&eUsing a melter, you can melt down ores to double your ingot output.&r You need to provide it with energy in order for it to operate and you must &bpipe the Melter into a Stamper in order to craft the ores.&r Hopefully this easy ore doubling method will give you an advantage over your colleagues."
 	],
 	dependencies: [
 		"d91f6e48"

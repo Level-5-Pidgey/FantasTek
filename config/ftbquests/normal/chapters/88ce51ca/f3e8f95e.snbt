@@ -4,7 +4,7 @@
 	y: 0.0d,
 	description: "FantasTek is not responsible for any possible death or injury.",
 	text: [
-		"The Sacrificial Dagger is the method by which you will be extracting blood from yourself for use in the Blood Altar. Using this dagger you can only extract blood from yourself, although there are other methods to extract blood from other lifeforms. You must use this dagger close to the altar or you'll be wasting valuable company resources (your blood)."
+		"&bThe Sacrificial Dagger is the method by which you will be extracting blood from yourself for use in the Blood Altar.&r Using this dagger you can only extract blood from yourself, although there are other methods to extract blood from other lifeforms. &eYou must use this dagger close to the altar or you'll be wasting valuable company resources&r (your blood)."
 	],
 	dependencies: [
 		"e2cc9c5d"

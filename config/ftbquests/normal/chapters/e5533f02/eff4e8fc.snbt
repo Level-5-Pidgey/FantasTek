@@ -4,7 +4,7 @@
 	x: 8.0d,
 	y: 0.0d,
 	text: [
-		"By crafting the Ember Energy Converter you can convert your Ember power into RF, the universal power standard. This power can then be used to power generic machinery that doesn't deal with Ember power."
+		"By crafting the &bEmber Energy Converter you can &econvert your Ember power into RF, the universal power standard.&r This power can then be used to power generic machinery that doesn't deal with Ember power."
 	],
 	dependencies: [
 		"d91f6e48"

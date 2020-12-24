@@ -20,7 +20,7 @@
 	shape: "hexagon",
 	description: "Unlimited Durability!",
 	text: [
-		"Although Rock Crystals may look brittle, they can be used as tools if crafted with care.",
+		"&eAlthough Rock Crystals may look brittle, they can be used as tools if crafted with care.&r",
 		"These tools do not consume durability as per normal when mining blocks -- they instead lose quality over time and must be repaired on a grindstone to make them sharp and mine at their proper speed again."
 	],
 	dependencies: [

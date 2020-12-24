@@ -6,8 +6,8 @@
 	shape: "diamond",
 	description: "To dye for",
 	text: [
-		"A budding botanist's best friend is the Petal Apothecary - a simple device that uses mana around you, petals and water to create mystical flowers.",
-		"These flowers can transform items, blocks or entities, or even produce mana for you by consuming certain things.",
+		"A budding botanist's best friend is the &bPetal Apothecary - a simple device that uses mana around you, petals and water to create mystical flowers.&r",
+		"&eThese flowers can transform items, blocks or entities, or even produce mana for you by consuming certain things.&r",
 		"The more time you spend mastering botany, the more flowers you can unlock!"
 	],
 	dependencies: [

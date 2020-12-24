@@ -4,7 +4,7 @@
 	x: 10.0d,
 	y: 2.0d,
 	text: [
-		"Stampers are an interesting piece of technology that will take your molten metals, and make them into fancy shapes such as ingots, plates, and gears. Avoid leaving excess ore in your system, as it may clog up the pipes and stop you from creating any new results."
+		"&bStampers are an interesting piece of technology&r that will take your molten metals, and &emake them into fancy shapes such as ingots, plates, and gears.&r Avoid leaving excess ore in your system, as it may clog up the pipes and stop you from creating any new results."
 	],
 	dependencies: [
 		"444972be"

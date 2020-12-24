@@ -10,9 +10,9 @@
 	y: 0.0d,
 	description: "It's living!",
 	text: [
-		"Our research department, despite their shoestring budget, managed to discover this amazing son of a gun -- the Pure Daisy!",
+		"Our research department, despite their shoestring budget, managed to discover this amazing son of a gun -- &bthe Pure Daisy!&r",
 		"",
-		"Simply placing it in the world and then surrounding it with certain types of blocks will transform them into a magically charged variant - perfect for use within botany.",
+		"&eSimply placing it in the world and then surrounding it with certain types of blocks will transform them into a magically charged variant&r - perfect for use within botany.",
 		"Be careful not to stand within the transformation radius, as we are unsure if there are any harmful effects on humans."
 	],
 	dependencies: [

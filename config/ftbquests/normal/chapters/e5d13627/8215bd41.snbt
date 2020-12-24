@@ -4,7 +4,7 @@
 	x: 2.5d,
 	y: 2.5d,
 	text: [
-		"The Starlight Energy Harness will allow you to utilise the energy flowing through Liquid Starlight and convert it into power for your mechanical contraptions. All you need to do is pipe in some Liquid Starlight from a Lightwell and you'll start pumping out RF, the intergalactic standard unit of power."
+		"&bThe Starlight Energy Harness will allow you to utilise the energy flowing through Liquid Starlight&r and convert it into power for your mechanical contraptions. All you need to do is &epipe in some Liquid Starlight from a Lightwell and you'll start pumping out RF&r, the intergalactic standard unit of power."
 	],
 	dependencies: [
 		"47043a98",

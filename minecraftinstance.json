@@ -29,7 +29,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-12-23T04:24:36.874379Z",
+  "lastPlayed": "2020-12-24T06:09:16.5824142Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -11160,7 +11160,7 @@
       "dateInstalled": "2020-11-28T00:00:32.6126536Z",
       "dateUpdated": "2019-11-28T00:00:32.6126536Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18377,89 +18377,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 257814,
-      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
-      "installedFile": {
-        "id": 3097498,
-        "displayName": "CreativeCore_v1.10.34_mc1.12.2.jar",
-        "fileName": "CreativeCore_v1.10.34_mc1.12.2.jar",
-        "fileDate": "2020-10-30T22:16:14.143Z",
-        "fileLength": 1179376,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3097/498/CreativeCore_v1.10.34_mc1.12.2.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 706250759,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2615324892,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 3371109724,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2386279131,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 3367826540,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2036681,
-        "projectId": 257814,
-        "packageFingerprintId": 545020263,
-        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameVersionMappingId": 2503972,
-        "gameVersionId": 6756,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "CreativeCore_v1.10.34_mc1.12.2.jar"
-      },
-      "dateInstalled": "2020-11-20T22:40:22.9394196Z",
-      "dateUpdated": "2019-11-20T22:40:22.9394196Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 272335,
       "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
       "installedFile": {
@@ -18536,6 +18453,89 @@
       },
       "dateInstalled": "2019-12-13T01:14:26.9088501Z",
       "dateUpdated": "2018-12-13T01:14:26.9088501Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": true,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 257814,
+      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
+      "installedFile": {
+        "id": 3097498,
+        "displayName": "CreativeCore_v1.10.34_mc1.12.2.jar",
+        "fileName": "CreativeCore_v1.10.34_mc1.12.2.jar",
+        "fileDate": "2020-10-30T22:16:14.143Z",
+        "fileLength": 1179376,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3097/498/CreativeCore_v1.10.34_mc1.12.2.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 706250759,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2615324892,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3371109724,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2386279131,
+            "type": 3,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3367826540,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2"
+          }
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2036681,
+        "projectId": 257814,
+        "packageFingerprintId": 545020263,
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
+        "gameVersionMappingId": 2503972,
+        "gameVersionId": 6756,
+        "gameId": 432,
+        "isServerPack": false,
+        "FileNameOnDisk": "CreativeCore_v1.10.34_mc1.12.2.jar"
+      },
+      "dateInstalled": "2020-11-20T22:40:22.9394196Z",
+      "dateUpdated": "2019-11-20T22:40:22.9394196Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
@@ -20868,6 +20868,196 @@
       "installedTargets": null
     },
     {
+      "addonID": 314904,
+      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
+      "installedFile": {
+        "id": 2819669,
+        "displayName": "FTBBackups-1.1.0.1.jar",
+        "fileName": "FTBBackups-1.1.0.1.jar",
+        "fileDate": "2019-10-31T20:25:08.137Z",
+        "fileLength": 43764,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2819/669/FTBBackups-1.1.0.1.jar",
+        "isAlternate": false,
+        "alternateFileId": 2819670,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3896838891,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 409143337,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4225148106,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3152582459,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 812656482,
+            "type": 3,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 752442057,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2"
+          }
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 1693418,
+        "projectId": 314904,
+        "packageFingerprintId": 372959736,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameVersionMappingId": 1988512,
+        "gameVersionId": 4458,
+        "gameId": 432,
+        "isServerPack": false,
+        "FileNameOnDisk": "FTBBackups-1.1.0.1.jar"
+      },
+      "dateInstalled": "2019-12-13T01:14:26.8887275Z",
+      "dateUpdated": "2018-12-13T01:14:26.8887275Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": true,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 318255,
+      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
+      "installedFile": {
+        "id": 2747710,
+        "displayName": "Phosphor mc1.12.2-0.2.6",
+        "fileName": "phosphor-1.12.2-0.2.6+build50-universal.jar",
+        "fileDate": "2019-07-24T18:34:13.063Z",
+        "fileLength": 1082311,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2747/710/phosphor-1.12.2-0.2.6+build50-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3932390318,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2125068313,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 789403603,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "me",
+            "fingerprint": 4283331785,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.phosphor.json",
+            "fingerprint": 2781907940,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mixins.phosphor.refmap.json",
+            "fingerprint": 4261906373,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "org",
+            "fingerprint": 1950284326,
+            "type": 3,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 229203232,
+        "gameVersion": [
+          "1.12.2"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000012.0000000002",
+            "gameVersion": "1.12.2",
+            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
+            "gameVersionName": "1.12.2"
+          }
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 1606605,
+        "projectId": 318255,
+        "packageFingerprintId": 336461110,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameVersionMappingId": 1871416,
+        "gameVersionId": 4458,
+        "gameId": 432,
+        "isServerPack": false,
+        "FileNameOnDisk": "phosphor-1.12.2-0.2.6+build50-universal.jar"
+      },
+      "dateInstalled": "2020-04-08T09:01:29.4048359Z",
+      "dateUpdated": "2019-04-08T09:01:29.4048359Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": true,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 228895,
       "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
       "installedFile": {
@@ -20983,17 +21173,17 @@
       "installedTargets": null
     },
     {
-      "addonID": 318255,
+      "addonID": 283644,
       "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
       "installedFile": {
-        "id": 2747710,
-        "displayName": "Phosphor mc1.12.2-0.2.6",
-        "fileName": "phosphor-1.12.2-0.2.6+build50-universal.jar",
-        "fileDate": "2019-07-24T18:34:13.063Z",
-        "fileLength": 1082311,
+        "id": 2694382,
+        "displayName": "Placebo-1.12.2-1.6.0.jar",
+        "fileName": "Placebo-1.12.2-1.6.0.jar",
+        "fileDate": "2019-04-01T17:45:01.17Z",
+        "fileLength": 76902,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2747/710/phosphor-1.12.2-0.2.6+build50-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/2694/382/Placebo-1.12.2-1.6.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -21001,48 +21191,24 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3932390318,
+            "fingerprint": 3586471488,
             "type": 3,
             "invalidFingerprint": false
           },
           {
-            "foldername": "assets",
-            "fingerprint": 2125068313,
+            "foldername": "shadows",
+            "fingerprint": 2826136401,
             "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 789403603,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "me",
-            "fingerprint": 4283331785,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.phosphor.json",
-            "fingerprint": 2781907940,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mixins.phosphor.refmap.json",
-            "fingerprint": 4261906373,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "org",
-            "fingerprint": 1950284326,
+            "fingerprint": 2199692995,
             "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 229203232,
+        "packageFingerprint": 2862833350,
         "gameVersion": [
           "1.12.2"
         ],
@@ -21059,107 +21225,18 @@
         "categorySectionPackageType": 6,
         "restrictProjectFileAccess": 1,
         "projectStatus": 4,
-        "renderCacheId": 1606605,
-        "projectId": 318255,
-        "packageFingerprintId": 336461110,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1871416,
-        "gameVersionId": 4458,
+        "renderCacheId": 1539909,
+        "projectId": 283644,
+        "packageFingerprintId": 304809249,
+        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
+        "gameVersionMappingId": 1783933,
+        "gameVersionId": 6756,
         "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "phosphor-1.12.2-0.2.6+build50-universal.jar"
+        "FileNameOnDisk": "Placebo-1.12.2-1.6.0.jar"
       },
-      "dateInstalled": "2020-04-08T09:01:29.4048359Z",
-      "dateUpdated": "2019-04-08T09:01:29.4048359Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 314904,
-      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
-      "installedFile": {
-        "id": 2819669,
-        "displayName": "FTBBackups-1.1.0.1.jar",
-        "fileName": "FTBBackups-1.1.0.1.jar",
-        "fileDate": "2019-10-31T20:25:08.137Z",
-        "fileLength": 43764,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2819/669/FTBBackups-1.1.0.1.jar",
-        "isAlternate": false,
-        "alternateFileId": 2819670,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3896838891,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 409143337,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 4225148106,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3152582459,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 812656482,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 752442057,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1693418,
-        "projectId": 314904,
-        "packageFingerprintId": 372959736,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1988512,
-        "gameVersionId": 4458,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "FTBBackups-1.1.0.1.jar"
-      },
-      "dateInstalled": "2019-12-13T01:14:26.8887275Z",
-      "dateUpdated": "2018-12-13T01:14:26.8887275Z",
+      "dateInstalled": "2020-04-25T06:36:28.7756231Z",
+      "dateUpdated": "2019-04-25T06:36:28.7756231Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
@@ -21246,179 +21323,6 @@
       "dateInstalled": "2020-04-08T09:01:29.401845Z",
       "dateUpdated": "2020-04-08T09:46:36.7386978Z",
       "dateLastUpdateAttempted": "2020-04-08T09:46:36.7386978Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 283644,
-      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
-      "installedFile": {
-        "id": 2694382,
-        "displayName": "Placebo-1.12.2-1.6.0.jar",
-        "fileName": "Placebo-1.12.2-1.6.0.jar",
-        "fileDate": "2019-04-01T17:45:01.17Z",
-        "fileLength": 76902,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2694/382/Placebo-1.12.2-1.6.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3586471488,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "shadows",
-            "fingerprint": 2826136401,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 2199692995,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 2862833350,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1539909,
-        "projectId": 283644,
-        "packageFingerprintId": 304809249,
-        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameVersionMappingId": 1783933,
-        "gameVersionId": 6756,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "Placebo-1.12.2-1.6.0.jar"
-      },
-      "dateInstalled": "2020-04-25T06:36:28.7756231Z",
-      "dateUpdated": "2019-04-25T06:36:28.7756231Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 227795,
-      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
-      "installedFile": {
-        "id": 2823030,
-        "displayName": "antiqueatlas-1.12.2-4.6.3.jar",
-        "fileName": "antiqueatlas-1.12.2-4.6.3.jar",
-        "fileDate": "2019-11-06T16:46:48.443Z",
-        "fileLength": 1239580,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2823/30/antiqueatlas-1.12.2-4.6.3.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2659719084,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "hunternif",
-            "fingerprint": 3480166055,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "kenkron",
-            "fingerprint": 3888155155,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "antiqueatlas_logo.png",
-            "fingerprint": 3543155372,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1141477567,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "markerExample.json",
-            "fingerprint": 2222096781,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 764293181,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 2070548379,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 3949702391,
-        "gameVersion": [
-          "Forge",
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "antiqueatlas-1.12.2-4.6.3.jar"
-      },
-      "dateInstalled": "2019-11-13T10:00:20.8472505Z",
-      "dateUpdated": "2019-11-13T10:06:04.1694076Z",
-      "dateLastUpdateAttempted": "2019-11-13T10:06:04.1694076Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -21522,6 +21426,102 @@
       "dateInstalled": "2019-12-13T01:14:26.9068542Z",
       "dateUpdated": "2018-12-13T01:14:26.9068542Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": true,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 227795,
+      "gameInstanceID": "94a6afc5-bd1f-4489-b980-1e4e3a2e242e",
+      "installedFile": {
+        "id": 2823030,
+        "displayName": "antiqueatlas-1.12.2-4.6.3.jar",
+        "fileName": "antiqueatlas-1.12.2-4.6.3.jar",
+        "fileDate": "2019-11-06T16:46:48.443Z",
+        "fileLength": 1239580,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2823/30/antiqueatlas-1.12.2-4.6.3.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2659719084,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "hunternif",
+            "fingerprint": 3480166055,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "kenkron",
+            "fingerprint": 3888155155,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "antiqueatlas_logo.png",
+            "fingerprint": 3543155372,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1141477567,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "markerExample.json",
+            "fingerprint": 2222096781,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 764293181,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2070548379,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3949702391,
+        "gameVersion": [
+          "Forge",
+          "1.12.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "antiqueatlas-1.12.2-4.6.3.jar"
+      },
+      "dateInstalled": "2019-11-13T10:00:20.8472505Z",
+      "dateUpdated": "2019-11-13T10:06:04.1694076Z",
+      "dateLastUpdateAttempted": "2019-11-13T10:06:04.1694076Z",
       "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,

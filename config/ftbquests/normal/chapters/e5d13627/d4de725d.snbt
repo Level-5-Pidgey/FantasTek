@@ -14,7 +14,7 @@
 	y: 0.5d,
 	shape: "gear",
 	text: [
-		"Liquid Starlight is an incredibly useful resource back on your home planet that is used to power the Artificial Sky Dome that surrounds it. We've almost siphoned all the starlight from all stars within 100 lightyears, so your contribution of Liquid Starlight will help give the kids something to look up to at night."
+		"&bLiquid Starlight is an incredibly useful resource&r back on your home planet that is used to power the Artificial Sky Dome that surrounds it. We've almost siphoned all the starlight from all stars within 100 lightyears, so your contribution of Liquid Starlight will help give the kids something to look up to at night."
 	],
 	dependencies: [
 		"be020485"

@@ -4,7 +4,7 @@
 	y: 0.0d,
 	shape: "gear",
 	text: [
-		"To prove to us your proficiency in using the native flora to your advantage, you must wirelessly send us some electricity that will allow us to strengthen our connection to you that will allow us to send some additional details for the remainder of your journey. Without making this step in your journey, you'll be stuck where you are now without any instructions for how to conduct further research."
+		"To prove to us your proficiency in using the native flora to your advantage, you must &esend us some electricity that will allow us to strengthen our connection to you&r, enabling us to send some additional details for the remainder of your journey. Without making this step in your journey, you'll be stuck where you are now without any instructions for how to conduct further research."
 	],
 	dependencies: [
 		"432bfc0f"
