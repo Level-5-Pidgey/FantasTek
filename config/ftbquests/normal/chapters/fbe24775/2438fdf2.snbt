@@ -1,6 +1,10 @@
 {
+	title: "Kiddie Pool",
 	x: 6.5d,
 	y: -2.0d,
+	text: [
+		"The Diluted Mana Pool can only store a small amount of mana and will be replaced by a normal Mana Pool as you become a stronger Botanist. For now, you must use a shallow pool to infuse some simple materials to work your way up to greater things."
+	],
 	dependencies: [
 		"a09d1ffe"
 	],

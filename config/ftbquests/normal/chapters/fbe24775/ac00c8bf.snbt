@@ -1,7 +1,11 @@
 {
+	title: "Seeing Mana",
 	x: 16.5d,
 	y: -2.0d,
 	shape: "hexagon",
+	text: [
+		"Rather than using the Wand of the Forest to visualise your Mana flow, you can equip the Manaseers Monocle and see mana bursts. You will still be required to use your Wand to configure your Mana, but will now be able to visualise it when using any other tools."
+	],
 	dependencies: [
 		"ebbce8f7"
 	],

@@ -5,7 +5,7 @@
 	shape: "gear",
 	description: "Mana and Carbs -- perfect diet!",
 	text: [
-		""
+		"To demonstrate the strength of your mana configuration, we request that you infuse your mana with potatoes, creating a magical living being. These potatoes can be combined into even larger potatoes, all the way up to a Galactic Potato. Although we won't ask you to go that far, we just ask that you give us a couple of small potatoes so that we can study the life force that you have created."
 	],
 	dependencies: [
 		"51ade5b4"

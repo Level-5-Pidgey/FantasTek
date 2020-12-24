@@ -1,7 +1,11 @@
 {
+	title: "Mana Mining",
 	x: 14.5d,
 	y: -2.0d,
 	shape: "hexagon",
+	text: [
+		"Manasteel can be used to make tools that are as strong as diamond, but only a little more durable than iron. This low durability is offset by the ability of this pickaxe to repair itself using the mana stored within a Mana Tablet or any other item that can store and provide Mana."
+	],
 	dependencies: [
 		"ebbce8f7"
 	],

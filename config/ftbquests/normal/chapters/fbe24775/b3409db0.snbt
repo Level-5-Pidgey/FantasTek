@@ -1,7 +1,11 @@
 {
+	title: "Buoyant Blooms",
 	x: 16.5d,
 	y: 4.0d,
 	shape: "hexagon",
+	text: [
+		"Floating Flowers are both a functional and aesthetic way to use Botania flowers. You are able to place them anywhere in the world, including in mid-air! They will maintain their functionality in this state allowing you to make much more efficient mana farms."
+	],
 	dependencies: [
 		"ebcd3bef"
 	],

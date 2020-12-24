@@ -35,6 +35,7 @@
 	rewards: [{
 		uid: "1a31ad7a",
 		type: "gamestage",
+		title: "Unlock Slimesling Crafting",
 		stage: "stage_i_slimesling"
 	},
 	{
