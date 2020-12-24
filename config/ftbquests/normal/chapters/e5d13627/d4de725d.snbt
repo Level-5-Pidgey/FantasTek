@@ -1,15 +1,6 @@
 {
 	title: "&6Stardom",
-	icon: {
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		},
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "astralsorcery.liquidstarlight",
-			Amount: 1000
-		}
-	},
+	icon: "astralsorcery:itemcraftingcomponent",
 	x: 4.5d,
 	y: 0.5d,
 	shape: "gear",
@@ -39,5 +30,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Stardom]!"
+	},
+	{
+		uid: "f66bf613",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 255,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "astralsorcery:itemcraftingcomponent",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 244,
+				TrophyName: "Stardom",
+				TrophyColorRed: 89
+			}
+		}
 	}]
 }

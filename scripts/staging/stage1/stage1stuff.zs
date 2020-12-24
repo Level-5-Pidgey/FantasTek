@@ -500,6 +500,7 @@ val StageLessItems = [
 	<enderio:item_material:3>,
 	<enderio:item_material:38>,
 	<thermalexpansion:device>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]}),
+	<thermalexpansion:device:10>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[]}),
 	<iceandfire:chain_link>,
 	<forestry:peat>,
 	<forestry:crafting_material:2>,
@@ -530,7 +531,8 @@ val StageLessItems = [
 	<enderio:block_infinity:2>,
 	<enderio:block_infinity>,
 	<enderio:block_infinity:1>,
-	<magneticraft:battery>
+	<magneticraft:battery>,
+	<magneticraft:electric_furnace>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

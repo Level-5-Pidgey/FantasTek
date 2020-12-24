@@ -1,7 +1,7 @@
 {
 	title: "Open Source",
 	x: 12.5d,
-	y: -3.0d,
+	y: -1.0d,
 	text: [
 		"&bAn Everfull Urn will serve as an incredibly useful tool&r for the budding Thaumaturge (and even Botanists too) as &eit will automatically fill up a nearby Crucible.&r The Urn is effectively a bottomless bucket of water, so you will be able to pipe water out of it and and use it to automatically refill your equipment for faster researching."
 	],

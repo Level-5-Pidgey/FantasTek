@@ -1,7 +1,7 @@
 {
 	title: "&6Gold and Plunder",
 	x: 17.0d,
-	y: -1.0d,
+	y: 1.0d,
 	shape: "gear",
 	description: "Set the heavens asunder!",
 	text: [
@@ -35,5 +35,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Gold and Plunder]!"
+	},
+	{
+		uid: "8281cde0",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 44,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "thaumcraft:nugget",
+					Count: 1b,
+					Damage: 10s
+				},
+				TrophyColorBlue: 219,
+				TrophyName: "Gold and Plunder",
+				TrophyColorRed: 178
+			}
+		}
 	}]
 }

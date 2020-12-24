@@ -1,5 +1,6 @@
 {
 	title: "&6Doom Bloom",
+	icon: "botania:blacklotus 1 1",
 	x: 18.5d,
 	y: 0.0d,
 	shape: "gear",
@@ -27,5 +28,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Doom Bloom]!"
+	},
+	{
+		uid: "184de6a6",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 174,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "botania:blacklotus",
+					Count: 1b,
+					Damage: 1s
+				},
+				TrophyColorBlue: 58,
+				TrophyName: "Doom Bloom",
+				TrophyColorRed: 85
+			}
+		}
 	}]
 }

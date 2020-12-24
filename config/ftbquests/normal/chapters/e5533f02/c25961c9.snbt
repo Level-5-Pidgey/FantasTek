@@ -38,5 +38,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Ember for the Future Generations]!"
+	},
+	{
+		uid: "96bcef01",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 249,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "embers:ember_detector",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 61,
+				TrophyName: "Ember for Future Generations",
+				TrophyColorRed: 255
+			}
+		}
 	}]
 }

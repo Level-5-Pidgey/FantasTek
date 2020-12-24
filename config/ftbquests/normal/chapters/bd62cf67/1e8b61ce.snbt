@@ -36,16 +36,16 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
-				TrophyColorGreen: 255,
+				TrophyColorGreen: 209,
 				TrophyVariant: "classic",
 				TrophyItem: {
 					id: "minecraft:nether_star",
 					Count: 1b,
 					Damage: 0s
 				},
-				TrophyColorBlue: 0,
+				TrophyColorBlue: 209,
 				TrophyName: "Wish Upon a Star",
-				TrophyColorRed: 191
+				TrophyColorRed: 209
 			}
 		}
 	}]

@@ -52,16 +52,16 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
-				TrophyColorGreen: 205,
+				TrophyColorGreen: 33,
 				TrophyVariant: "classic",
 				TrophyItem: {
 					id: "tconstruct:slimesling",
 					Count: 1b,
 					Damage: 0s
 				},
-				TrophyColorBlue: 52,
+				TrophyColorBlue: 33,
 				TrophyName: "Guide to Sticky Situations",
-				TrophyColorRed: 65
+				TrophyColorRed: 33
 			}
 		}
 	}]

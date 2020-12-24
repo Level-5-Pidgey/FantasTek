@@ -167,7 +167,6 @@ for i, item in currencyItems {
 
 	if (j >= 0)
 	{
-		recipes.addShapeless(scripts.helpers.createRecipeName(currencyItems[i]), currencyItems[i], [currencyItems[j], currencyItems[j], currencyItems[j], currencyItems[j], currencyItems[j]]);
 		mods.thermalexpansion.Factorizer.addRecipeBoth(currencyItems[i], currencyItems[j] * 5);
 	}
 

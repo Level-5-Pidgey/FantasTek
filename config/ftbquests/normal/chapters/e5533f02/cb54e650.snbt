@@ -65,5 +65,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Pressured Plates (and other gizmos)]!"
+	},
+	{
+		uid: "25775a31",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 249,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "futuremc:netherite_scrap",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 61,
+				TrophyName: "Pressured Plates (and other Gizmos)",
+				TrophyColorRed: 255
+			}
+		}
 	}]
 }

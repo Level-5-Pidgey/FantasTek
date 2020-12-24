@@ -2,7 +2,7 @@
 	title: "Thaumic Power",
 	icon: "minecraft:end_crystal",
 	x: 14.5d,
-	y: 1.0d,
+	y: 3.0d,
 	text: [
 		"&bThe Thaumic Crystal Condenser&r is an experimental machine that we have created based on the research you have conducted so far that &ewill produce some energy from Vis Crystals.&r This should help you create technology that will aid your progress alongside your Thaumaturge training."
 	],

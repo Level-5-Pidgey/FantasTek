@@ -4,7 +4,19 @@
     "ore": "magneticraft:oil_source",
     "indicator": {
       "blocks": { "block": "thermalfoundation:ore_fluid", "meta": 1 },
-	  "replace_surface" : true,
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+        ],
       "rarity": 30
     },
     "stone": [

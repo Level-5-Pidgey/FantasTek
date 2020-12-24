@@ -51,16 +51,16 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
-				TrophyColorGreen: 224,
+				TrophyColorGreen: 209,
 				TrophyVariant: "classic",
 				TrophyItem: {
 					id: "bountiful:bounty",
 					Count: 1b,
 					Damage: 0s
 				},
-				TrophyColorBlue: 122,
+				TrophyColorBlue: 209,
 				TrophyName: "Bounty Hunter",
-				TrophyColorRed: 255
+				TrophyColorRed: 209
 			}
 		}
 	}]

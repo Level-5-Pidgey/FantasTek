@@ -38,5 +38,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Potato Power]!"
+	},
+	{
+		uid: "cf1e9b72",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 174,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "botania_tweaks:compressed_tiny_potato_4",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 58,
+				TrophyName: "Potato Powered",
+				TrophyColorRed: 85
+			}
+		}
 	}]
 }

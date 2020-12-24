@@ -15,7 +15,19 @@
     ],
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_4", "meta": 14 },
-	  "replace_surface" : true,
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+        ],
       "rarity": 25
     },
     "stone": [
@@ -59,7 +71,19 @@
     ],
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_1", "meta": 14 },
-	  "replace_surface" : true,
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+        ],
       "rarity": 30
     },
     "stone": [
@@ -103,7 +127,19 @@
     ],
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 11 },
-	  "replace_surface" : true,
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+        ],
       "rarity": 25
     },
     "stone": [
@@ -147,7 +183,19 @@
     ],
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 13 },
-	  "replace_surface" : true,
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+        ],
       "rarity": 25
     },
     "stone": [
@@ -191,7 +239,19 @@
     ],
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_0", "meta": 13 },
-	  "replace_surface" : true,
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+        ],
       "rarity": 25
     },
     "stone": [
@@ -235,7 +295,19 @@
     ],
     "indicator": {
       "blocks": { "block": "contenttweaker:sub_block_holder_3", "meta": 1 },
-	  "replace_surface" : true,
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+        ],
       "rarity": 25
     },
     "stone": [

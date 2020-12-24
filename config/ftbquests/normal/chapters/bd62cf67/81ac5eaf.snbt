@@ -35,16 +35,16 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
-				TrophyColorGreen: 255,
+				TrophyColorGreen: 209,
 				TrophyVariant: "classic",
 				TrophyItem: {
 					id: "advancedrocketry:ic",
 					Count: 1b,
 					Damage: 0s
 				},
-				TrophyColorBlue: 0,
+				TrophyColorBlue: 209,
 				TrophyName: "Microchip Madness",
-				TrophyColorRed: 191
+				TrophyColorRed: 209
 			}
 		}
 	}]
