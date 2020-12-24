@@ -7,7 +7,7 @@ print("~~~ Begin Stage 2 Staging ~~~");
 var stageString = stages.progression2.stage;
 
 //Mods to restrict to this stage
-val StageMods = [
+val stage2_stageMods = [
   "mekanism",
   "mekanismtools",
   "mekanismgenerators",
@@ -47,7 +47,7 @@ val StageMods = [
   "contenttweaker"
 ] as string[];
 
-for modTag in StageMods
+for modTag in stage2_stageMods
 {
 	mods.ItemStages.stageModItems(stageString, modTag);
 }
@@ -56,7 +56,7 @@ for modTag in StageMods
 mods.recipestages.Recipes.setRecipeStage(stageString, "thaumcraft:cinderpearltoblazepowder");
 
 //Stage Stubborn Items.
-val otherItems = [
+val stage2_stageItems = [
 	<forestry:thermionic_tubes:1>,
 	<forestry:thermionic_tubes:2>,
 	<forestry:thermionic_tubes:10>,
@@ -85,10 +85,106 @@ val otherItems = [
     <randomthings:spectreenergyinjector>,
     <randomthings:spectreilluminator>,
     <randomthings:spectreanchor>,
+    <openblocks:hang_glider>,
+    <openblocks:generic>,
+    <randomthings:spectrecharger:3>,
+    <randomthings:spectrecoil_number>,
+    <randomthings:spectrecoil_genesis>,
+    <openblocks:luggage>,
+    <randomthings:floosign>,
+    <randomthings:floobrick>,
+    <randomthings:ingredient:7>,
+    <randomthings:timeinabottle>,
+    <randomthings:eclipsedclock>,
+    <randomthings:flootoken>,
+    <randomthings:diviningrod>,
+    <randomthings:diviningrod:1>,
+    <randomthings:diviningrod:2>,
+    <randomthings:diviningrod:3>,
+    <randomthings:diviningrod:4>,
+    <randomthings:diviningrod:5>,
+    <randomthings:diviningrod:6>,
+    <randomthings:diviningrod:7>,
+    <randomthings:diviningrod:8>,
+    <randomthings:diviningrod:9>,
+    <randomthings:diviningrod:10>,
+    <randomthings:diviningrod:11>,
+    <randomthings:diviningrod:12>,
+    <randomthings:diviningrod:13>,
+    <randomthings:diviningrod:14>,
+    <randomthings:diviningrod:15>,
+    <randomthings:diviningrod:16>,
+    <randomthings:diviningrod:17>,
+    <randomthings:diviningrod:18>,
+    <randomthings:diviningrod:19>,
+    <randomthings:diviningrod:21>,
+    <randomthings:floopouch>,
+    <randomthings:weatheregg:1>,
+    <randomthings:weatheregg:2>,
+    <randomthings:weatheregg>,
+    <xreliquary:alkahestry_tome>,
+    <modularmachinery:blockoutputbus:6>,
+    <modularmachinery:blockoutputbus:5>,
+    <modularmachinery:blockoutputbus:4>,
+    <modularmachinery:blockinputbus:6>,
+    <modularmachinery:blockinputbus:5>,
+    <modularmachinery:blockinputbus:4>,
+    <modularmachinery:blockenergyoutputhatch:7>,
+    <modularmachinery:blockenergyoutputhatch:6>,
+    <modularmachinery:blockenergyoutputhatch:5>,
+    <modularmachinery:blockenergyoutputhatch:4>,
+    <modularmachinery:blockenergyinputhatch:7>,
+    <modularmachinery:blockenergyinputhatch:6>,
+    <modularmachinery:blockenergyinputhatch:5>,
+    <modularmachinery:blockenergyinputhatch:4>,
+    <modularmachinery:blockfluidoutputhatch:7>,
+    <modularmachinery:blockfluidoutputhatch:6>,
+    <modularmachinery:blockfluidoutputhatch:5>,
+    <modularmachinery:blockfluidoutputhatch:4>,
+    <modularmachinery:blockfluidinputhatch:7>,
+    <modularmachinery:blockfluidinputhatch:6>,
+    <modularmachinery:blockfluidinputhatch:5>,
+    <modularmachinery:blockfluidinputhatch:4>,
+    <extrautils2:opinium:*>,
+    <extrautils2:lawsword>,
+    <extrautils2:compoundbow>,
+    <extrautils2:fireaxe>,
+    <extrautils2:luxsaber:*>,
+    <extrautils2:drum:*>,
+    <extrautils2:teleporter:*>,
+    <extrautils2:terraformer:*>,
+    <extrautils2:ingredients:15>,
+    <extrautils2:ingredients:16>,
+    <extrautils2:ingredients:6>,
+    <extrautils2:ingredients:7>,
+    <extrautils2:ingredients:8>,
+    <extrautils2:ingredients:9>,
+    <extrautils2:grocket:*>,
+    <extrautils2:pipe>,
+    <extrautils2:indexerremote>,
+    <extrautils2:indexer>
 ] as crafttweaker.item.IItemStack[];
 
-for item in otherItems
+for item in stage2_stageItems
 {
 	scripts.helpers.setItemAndRecipesStage(item, stageString);
 }
+
+//Stage the Unstable Enchantment
+mods.ItemStages.stageEnchant(stageString, <enchantment:openblocks:explosive>);
+
+//Stage Modular Machinery
+val stage2_modularMachinery = [
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:vacuum_freezer"}),
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ore_washing_factory"}),
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:chemical_ore_factory"})
+] as crafttweaker.item.IItemStack[];
+
+for item in stage2_modularMachinery
+{
+	scripts.helpers.setItemAndRecipesStage(item, stageString);
+}
+
+
+
 print("### Stage 2 Staging Complete ###");

@@ -33,5 +33,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Draining the Power Banks]!"
+	},
+	{
+		uid: "2d4feacf",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 57,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "contenttweaker:sanguine_gem",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 36,
+				TrophyName: "Draining the Power Banks",
+				TrophyColorRed: 191
+			}
+		}
 	}]
 }

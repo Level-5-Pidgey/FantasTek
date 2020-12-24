@@ -75,16 +75,16 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
-				TrophyColorGreen: 255,
+				TrophyColorGreen: 209,
 				TrophyVariant: "classic",
 				TrophyItem: {
 					id: "contenttweaker:material_part",
 					Count: 1b,
 					Damage: 954s
 				},
-				TrophyColorBlue: 0,
+				TrophyColorBlue: 209,
 				TrophyName: "Meeting your Milestones",
-				TrophyColorRed: 191
+				TrophyColorRed: 209
 			}
 		}
 	}]

@@ -2,6 +2,7 @@
 	title: "T-Fuel",
 	x: 8.5d,
 	y: 1.0d,
+	description: "The \"T\" stands for \"Thaumcraft\", of course.",
 	text: [
 		"To boil your crucible you will need a fuel source; although lava can perform this function you will be at risk of burning your settlement, which would reflect poorly on the company's survival rate. Instead we recommend the use of Nitor, a magical substance that emits light and heat. Placing this beneath your crucible will mean that you never have to worry about boiling water again."
 	],

@@ -19,7 +19,6 @@ val lootItems =
 	<xreliquary:ice_magus_rod>,
 	<xreliquary:harvest_rod>,
 	<xreliquary:glacial_staff>,
-	<xreliquary:fortune_coin>,
 	<xreliquary:ender_staff>,
 	<xreliquary:emperor_chalice>,
 	<xreliquary:angelic_feather>,
@@ -39,10 +38,6 @@ for item in lootItems
 //Change Handgun Recipe
 recipes.remove(<xreliquary:handgun>);
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<xreliquary:handgun>), scripts.helpers.stages.progression2.stage, <xreliquary:handgun>, [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateSteel>, <xreliquary:gun_part>, <ore:plateSteel>]]);
-recipes.addShaped(scripts.helpers.createRecipeName(<xreliquary:handgun>), <xreliquary:handgun>, [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateCrudeSteel>, <xreliquary:gun_part>, <ore:plateCrudeSteel>]]);
-print("### xReliquary Init Complete ###");
-
-
 
 val reliquaryUncrafting =
 [
@@ -107,3 +102,17 @@ val reliquaryRecrafting = {
 for key, value in reliquaryRecrafting {
 	mods.bloodmagic.AlchemyTable.addRecipe(key, value, 128, 40, 0);
 }
+
+
+//Basic Crafting Table Items
+val xreliquaryRecipes_EXTENDEDCRAFTING = {
+	<xreliquary:fortune_coin> : [[null, <ore:plateGold>, null], [<ore:plateGold>, <darkutils:shulker_pearl>, <ore:plateGold>], [null, <ore:plateGold>, null]],
+	<xreliquary:handgun> : [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateCrudeSteel>, <xreliquary:gun_part>, <ore:plateCrudeSteel>]]
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in xreliquaryRecipes_EXTENDEDCRAFTING {
+	recipes.remove(key.withAmount(1));
+	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
+}
+
+print("### xReliquary Init Complete ###");

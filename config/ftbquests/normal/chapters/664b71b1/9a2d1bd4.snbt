@@ -2,7 +2,7 @@
 	title: "&6Creating Current Contrived from Crystals",
 	icon: "thaumcraft:curio",
 	x: 17.0d,
-	y: 1.0d,
+	y: 3.0d,
 	shape: "gear",
 	description: "Power from aspects!",
 	text: [
@@ -35,5 +35,24 @@
 		icon: "minecraft:sign",
 		auto: "enabled",
 		command: "/say @p has completed the Milestone [Creating Current Contrived from Crystals]!"
+	},
+	{
+		uid: "cd05c171",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 44,
+				TrophyVariant: "classic",
+				TrophyItem: {
+					id: "thaumcraft:curio",
+					Count: 1b,
+					Damage: 0s
+				},
+				TrophyColorBlue: 219,
+				TrophyName: "Creating Current Contrived From Crystals",
+				TrophyColorRed: 178
+			}
+		}
 	}]
 }
