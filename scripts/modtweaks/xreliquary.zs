@@ -106,7 +106,7 @@ for key, value in reliquaryRecrafting {
 
 //Basic Crafting Table Items
 val xreliquaryRecipes_EXTENDEDCRAFTING = {
-	<xreliquary:fortune_coin> : [[null, <ore:plateGold>, null], [<ore:plateGold>, <darkutils:shulker_pearl>, <ore:plateGold>], [null, <ore:plateGold>, null]],
+	<xreliquary:fortune_coin> : [[<ore:ingotNetherite>, <ore:plateGold>, <ore:ingotNetherite>], [<ore:plateGold>, <minecraft:shulker_shell>, <ore:plateGold>], [<ore:ingotNetherite>, <ore:plateGold>, <ore:ingotNetherite>]],
 	<xreliquary:handgun> : [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateCrudeSteel>, <xreliquary:gun_part>, <ore:plateCrudeSteel>]]
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 

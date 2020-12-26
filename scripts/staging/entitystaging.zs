@@ -99,7 +99,6 @@ var entityStages as mods.zenstages.Stage[string] =
 	"charm:endermite_powder" : stages.progression1,
 	"charm:spectre" : stages.progression1,
 	"comforts:_entity_rest" : stages.progression1,
-	"darkutils:fake_tnt" : stages.progression1,
 	"deepmoblearning:glitch" : stages.progression2,
 	"deepmoblearning:glitch_orb" : stages.progression2,
 	"deepmoblearning:item_glitch_fragment" : stages.progression2,

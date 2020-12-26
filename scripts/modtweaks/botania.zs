@@ -146,7 +146,7 @@ val botaniaFlowers = {
   <botania:specialflower>.withTag({type: "narslimmus"}) : [<ore:petalLime>, <ore:petalLime>, <ore:petalGreen>, <ore:petalGreen>, <ore:petalBlack>, <ore:runeEarthB>],
   <botania:specialflower>.withTag({type: "spectrolus"}) : [<ore:petalRed>, <ore:petalRed>, <ore:petalBlue>, <ore:petalBlue>, <ore:petalGreen>, <ore:petalGreen>, <ore:petalWhite>, <ore:petalWhite>, <ore:runeWinterB>],
   <botania:specialflower>.withTag({type: "rafflowsia"}) : [<ore:petalGreen>, <ore:petalGreen>, <ore:petalPurple>, <ore:petalPurple>, <ore:runeEarthB>],
-  <botania:specialflower>.withTag({type: "shulk_me_not"}) : [<ore:petalPurple>, <ore:petalPurple>, <ore:petalMagenta>, <ore:petalMagenta>, <ore:petalLightGray>, <ore:runeWrathB>, <darkutils:shulker_pearl>],
+  <botania:specialflower>.withTag({type: "shulk_me_not"}) : [<ore:petalPurple>, <ore:petalPurple>, <ore:petalMagenta>, <ore:petalMagenta>, <ore:petalLightGray>, <ore:runeWrathB>, <minecraft:shulker_shell>],
   <botania:specialflower>.withTag({type: "dandelifeon"}) : [<ore:petalLime>, <ore:petalPink>, <ore:petalGreen>, <ore:petalPurple>, <ore:netherStar>, <ore:runeWaterB>, <ore:runeFireB>, <ore:runeEarthB>, <ore:runeAirB>]
 } as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
