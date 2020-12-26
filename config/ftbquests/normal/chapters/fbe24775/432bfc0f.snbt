@@ -3,7 +3,7 @@
 	x: 16.5d,
 	y: 0.0d,
 	text: [
-		"The Mana Fluxfield can be connected to your Mana configuration, and will convert this mana into RF - the galactic standard for electricity. Using this technique you will be able to power simple machinery, as this method is quite inefficient and therefore has quite a low output."
+		"&bThe Mana Fluxfield can be connected to your Mana configuration, and will convert this mana into RF&r - the galactic standard for electricity. Using this technique you will be able to &epower simple machinery, as this method is quite inefficient and therefore has quite a low output.&r"
 	],
 	dependencies: [
 		"ebbce8f7"

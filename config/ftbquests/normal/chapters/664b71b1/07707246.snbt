@@ -3,7 +3,7 @@
 	x: 4.5d,
 	y: 1.0d,
 	text: [
-		"The Scribing Tools will allow you to conduct research and write notes on your findings. By placing your Scribing Tools on a table it will become a Research Table, allowing you to create theories and progress your research of the Thaumaturge's magic."
+		"&bThe Scribing Tools will allow you to conduct research and write notes on your findings.&e By placing your Scribing Tools on a table it will become a Research Table&r, allowing you to create theories and progress your research of the Thaumaturge's magic."
 	],
 	dependencies: [
 		"cf3d7cf3"

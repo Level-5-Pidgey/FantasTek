@@ -6,7 +6,7 @@
 	text: [
 		"The key characteristic of a thaumaturge is your ability to turn what others percieve to be useless into something very useful.",
 		"",
-		"Alchemy allows you to, with the help of some essentia, turn an object from one form to another. Highly against the laws of physics in most cases, but that's a minor detail our top researchers have ignored for decades."
+		"&bAlchemy allows you to, with the help of some essentia, turn an object from one form to another.&r Highly against the laws of physics in most cases, but that's a minor detail our top researchers have ignored for decades."
 	],
 	dependencies: [
 		"c6dd5d7d"

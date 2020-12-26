@@ -4,7 +4,7 @@
 	y: 3.0d,
 	shape: "hexagon",
 	text: [
-		"Different coloured Nitor's emit different coloured light so they are a fantastic use for some interesting decorations."
+		"&eDifferent coloured Nitor's emit different coloured light&r so they are a fantastic use for some interesting decorations."
 	],
 	dependencies: [
 		"c6dd5d7d"

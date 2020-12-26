@@ -7,7 +7,7 @@
 		"If the preliminary research on the structure of the planet we placed you on is correct, caves should be much larger and more expansive than normal where you are.",
 		"The ghoulish beings love the darkness that the cave provides, and oftentimes your sleep may be disturbed by the constant rattling of the undead underground.",
 		"",
-		"Using the power of starlight, you can focus the energy through a Cave Illuminator to do exactly that -- light up the chunk below you.",
+		"&eUsing the power of starlight, you can focus the energy through a &bCave Illuminator to do exactly that&e -- light up the chunk below you.&r",
 		"This will provide both a better night's sleep, and a more enjoyable mining experience!"
 	],
 	dependencies: [

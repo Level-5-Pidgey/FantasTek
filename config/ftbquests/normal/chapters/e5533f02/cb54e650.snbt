@@ -6,7 +6,7 @@
 	shape: "gear",
 	description: "Stamp your way to victory!",
 	text: [
-		"To prove your mastery of the first stage of Embers, supply us with some plates that we can use to reinforce the item relay between you and our resource center in orbit. Once you've completed this, we'll begin transmission of the second stage of Embers to allow you to progress even further in your journeys."
+		"To prove your mastery of the first stage of Embers, &esupply us with some plates that we can use to reinforce the item relay between you and our resource center&r in orbit. Once you've completed this, we'll begin transmission of the second stage of Embers to allow you to progress even further in your journeys."
 	],
 	dependencies: [
 		"6eaef067"

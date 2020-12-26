@@ -5,7 +5,7 @@
 	shape: "hexagon",
 	description: "Get rid of that extra flesh!",
 	text: [
-		"Through the powers of the crucible, you should be able to turn near-useless rotten flesh into often sought-after leather, only for the small cost of some essentia.",
+		"Through the powers of the crucible, &eyou should be able to turn near-useless rotten flesh into often sought-after leather&r, only for the small cost of some essentia.",
 		"",
 		"Trade your spare flesh for leather and sell it for some profit!"
 	],

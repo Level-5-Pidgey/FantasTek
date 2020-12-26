@@ -3,7 +3,7 @@
 	x: 0.0d,
 	y: 0.0d,
 	text: [
-		"By pumping some fuel into the top of your Ember Bore you can get it moving to output Ember Shards. These can be used to create Embers energy, and are also useful for creating Aspects that are used for crafting interesting new tech further down the line."
+		"By &epumping some fuel into the top of your Ember Bore you can get it moving to output &bEmber Shards.&r These can be used to create Embers energy, and are also useful for creating Aspects that are used for crafting interesting new tech further down the line."
 	],
 	dependencies: [
 		"11710c97"

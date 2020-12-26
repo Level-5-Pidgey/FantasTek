@@ -6,7 +6,7 @@
 	description: "My mourning wood",
 	text: [
 		"Plain ol' wooden logs aren't magically bound enough to be directly turned into Livingwood -- but with the remnants of dead dinosaurs in creosote oil you definitely could!",
-		"With some logs, wooden boards and petals you can create Livingwood temporarily, before you gain access to Creosote Oil."
+		"&eWith some logs, wooden boards and petals you can &bcreate Livingwood temporarily&r, before you gain access to Creosote Oil."
 	],
 	dependencies: [
 		"af986ff4"

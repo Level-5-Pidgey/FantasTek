@@ -3,7 +3,7 @@
 	x: 6.5d,
 	y: 0.0d,
 	text: [
-		"Living Rock forms the basis for runes and further botanical structures. By placing marble close to a Pure Daisy the rock will be infused with magical energy, allowing it to be imbued with elemental powers."
+		"&bLiving Rock forms the basis for runes and further botanical structures. &eBy placing marble close to a Pure Daisy the rock will be infused with magical energy&r, allowing it to be imbued with elemental powers."
 	],
 	dependencies: [
 		"af986ff4"

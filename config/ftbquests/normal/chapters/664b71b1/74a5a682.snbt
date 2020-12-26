@@ -3,7 +3,7 @@
 	x: 6.5d,
 	y: 1.0d,
 	text: [
-		"The Thaumometer is a special filter through which you can see the amount of Vis (good) and Flux (bad) contained in a certain area, as some recipes may require a certain amount of Vis to craft. The Thaumometer can also be used to scan objects to unlock new research topics."
+		"&bThe Thaumometer is a special filter&r through which you can &esee the amount of Vis (good) and Flux (bad) contained in a certain area&r, as some recipes may require a certain amount of Vis to craft. The Thaumometer can also be used to scan objects to unlock new research topics."
 	],
 	dependencies: [
 		"07707246"

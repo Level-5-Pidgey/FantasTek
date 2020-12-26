@@ -3,7 +3,7 @@
 	x: 11.5d,
 	y: 0.0d,
 	text: [
-		"The Tartaric Gem is an important item for the up and coming Blood Mage, it serves as a way to store Wills, and will add their qualities together to allow you to craft items that require more will quality than there usually is within one Demonic Will. As you progress, the Gem will be upgradeable to contain even higher concentrations of Will."
+		"&bThe Tartaric Gem&r is an important item for the up and coming Blood Mage, &eit serves as a way to store Wills, and will add their qualities together to allow you to craft items that require more will quality&r than there usually is within one Demonic Will. As you progress, the Gem will be upgradeable to contain even higher concentrations of Will."
 	],
 	dependencies: [
 		"0d0bae1e"

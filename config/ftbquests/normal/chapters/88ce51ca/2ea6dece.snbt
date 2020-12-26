@@ -4,7 +4,7 @@
 	y: 4.0d,
 	shape: "hexagon",
 	text: [
-		"The Void Sigil is a very useful sigil that can turn the source of any liquid into air. This is extremely useful for clearing out large areas of ocean or lava pits when mining. It's basically an endless bucket as you don't need to empty it once the liquid has been cleaned up."
+		"&bThe Void Sigil is a very useful sigil that can turn the source of any liquid into air.&r This is extremely useful for clearing out large areas of ocean or lava pits when mining. It's basically an endless bucket as you don't need to empty it once the liquid has been cleaned up."
 	],
 	dependencies: [
 		"e79cb40b"

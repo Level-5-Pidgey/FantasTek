@@ -4,8 +4,8 @@
 	y: 0.0d,
 	description: "Who's mana is this?",
 	text: [
-		"Our research department has discovered that all wildlife on this planet has magic flowing through it called mana. By tapping into this energy, you could",
-		"use mana to create never before seen materials that may help you understand more about this world."
+		"Our research department has discovered that all wildlife on this planet has magic flowing through it called mana. &eBy tapping into this energy, you could",
+		"use mana to create never before seen materials that may help you understand more about this world.&r"
 	],
 	dependencies: [
 		"3ce0916e"

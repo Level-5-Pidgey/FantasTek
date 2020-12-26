@@ -4,7 +4,7 @@
 	y: -2.0d,
 	shape: "hexagon",
 	text: [
-		"While searching for where you will put your Ember Bore, the atmospheric gauge will help you determine a location with a high concentration of Ember to give you a more efficient setup."
+		"While searching for where you will put your Ember Bore, &ethe atmospheric gauge will help you determine a location with a high concentration of Ember&r to give you a more efficient setup."
 	],
 	dependencies: [
 		"11710c97"
