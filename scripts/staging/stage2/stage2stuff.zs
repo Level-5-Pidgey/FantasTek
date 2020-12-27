@@ -31,7 +31,6 @@ val stage2_stageMods = [
   "psi",
   "jaopca",
   "enderio",
-  "environmentaltech",
   "compactmachines3",
   "iceandfire",
   "teslacorelib",
@@ -44,7 +43,8 @@ val stage2_stageMods = [
   "reccomplex",
   "witherskelefix",
   "packagedauto",
-  "contenttweaker"
+  "contenttweaker",
+  "enderstorage"
 ] as string[];
 
 for modTag in stage2_stageMods
