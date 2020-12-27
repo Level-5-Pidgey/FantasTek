@@ -114,7 +114,7 @@ val DimletParcelGen =
 ] as LootTable[];
 
 for pool in DimletParcelGen {
-	pool.getPool("main").removeEntry("rftoolsdim:parcel");
+	//pool.getPool("main").removeEntry("rftoolsdim:parcel");
 }
 
 //Remove Silver Nuggets/Ingots

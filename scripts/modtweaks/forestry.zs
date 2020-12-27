@@ -45,12 +45,12 @@ mods.forestry.Carpenter.removeRecipe(<forestry:chipsets>.withTag({T: 0 as short}
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}));
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}));
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}));
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets>.withTag({T: 0 as short}), [[<ore:blockGlass>, <ore:plateLapis>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateLapis>, <ore:blockGlass>]], 40, <liquid:water> * 1000);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}), [[<ore:blockGlass>, <ore:plateRedstoneAlloy>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateRedstoneAlloy>, <ore:blockGlass>]], 80, <liquid:water> * 2000);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:plateCrudeSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateCrudeSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:plateSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:blockGold>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:blockGold>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateElectrum>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets>.withTag({T: 0 as short}), [[<ore:blockGlass>, <ore:ingotLapis>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:ingotLapis>, <ore:blockGlass>]], 40, <liquid:water> * 1000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}), [[<ore:blockGlass>, <ore:ingotRedstoneAlloy>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:ingotRedstoneAlloy>, <ore:blockGlass>]], 80, <liquid:water> * 2000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:ingotCrudeSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:ingotCrudeSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), [[<ore:blockGlass>, <ore:ingotSteel>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:ingotSteel>, <ore:blockGlass>]], 120, <liquid:water> * 3000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:plateGold>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:plateGold>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
+mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), [[<ore:blockGlass>, <ore:ingotElectrum>, <ore:blockGlass>], [null, <advancedrocketry:ic>, null], [<ore:blockGlass>, <ore:ingotElectrum>, <ore:blockGlass>]], 160, <liquid:water> * 4000);
 
 //Remove Tier 1 Ores being output from Metallic Grains
 val metallicGrainsDusts = [
@@ -147,7 +147,8 @@ recipes.remove(<forestry:arboretum>);
 recipes.remove(<forestry:farm_mushroom>);
 recipes.remove(<forestry:peat_bog>);
 
-for circuit in scripts.helpers.CircuitTiers[1].items
+var forestryCircuits = <forestry:chipsets>.withTag({T: 0 as short}) | <forestry:chipsets:1>.withTag({T: 1 as short}) | <forestry:chipsets:2>.withTag({T: 2 as short}) | <forestry:chipsets:3>.withTag({T: 3 as short});
+for circuit in forestryCircuits.items
 {
 	for earthCraftingItem in scripts.helpers.AllEarthT1Items
 	{

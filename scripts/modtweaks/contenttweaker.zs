@@ -1,4 +1,3 @@
-import mods.dropt.Dropt;
 
 print("~~~ Begin ContentTweaker recipes Init ~~~");
 

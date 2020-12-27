@@ -194,7 +194,7 @@ for rune in scripts.helpers.AllWaterT1Items
 
 //Thermopile
 recipes.remove(<magneticraft:thermopile>);
-for circuit in scripts.helpers.CircuitTiers[1].items
+for circuit in scripts.helpers.CircuitTiers[0].items
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:thermopile>, [[<ore:ingotGold>, <ore:plateConductiveIron>, <ore:ingotGold>], [<ore:plateConductiveIron>, scripts.helpers.FrameTiers[0], <ore:plateConductiveIron>], [<ore:ingotGold>, circuit, <ore:ingotGold>]]);
 }
@@ -215,7 +215,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[
 
 //Battey Box
 recipes.remove(<magneticraft:battery>);
-for circuit in scripts.helpers.CircuitTiers[1].items
+for circuit in scripts.helpers.CircuitTiers[0].items
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:battery>, [[<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>]]);
 	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:battery>, [[<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>]]);

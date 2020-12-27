@@ -11,7 +11,7 @@ for key, value in buildingGadgetsRecipes_CRAFTINGTABLE {
 }
 
 val buildingGadgetsRecipes_CARPENTER = {
-	<buildinggadgets:buildingtool> : [[<ore:ironIngot>, <ore:dustElectrotine>, <ore:ironIngot>], [<ore:gearDiamond>, <ore:dustElectrotine>, <ore:gearDiamond>], [<ore:ironIngot>, <ore:plateLapis>, <ore:ironIngot>]],
+	<buildinggadgets:buildingtool> : [[<ore:ingotIron>, <ore:dustElectrotine>, <ore:ingotIron>], [<ore:gearDiamond>, <ore:dustElectrotine>, <ore:gearDiamond>], [<ore:ingotIron>, <ore:plateLapis>, <ore:ingotIron>]],
 	<buildinggadgets:exchangertool> : [[<ore:ironIngot>, <ore:dustElectrotine>, <ore:ironIngot>], [<ore:dustElectrotine>, <ore:gearLapis>, <ore:dustElectrotine>], [<ore:ironIngot>, <ore:gearLapis>, <ore:ironIngot>]],
 	<buildinggadgets:copypastetool> : [[<ore:ingotIron>, <ore:dustElectrotine>, <ore:ingotIron>], [<ore:gearEmerald>, <ore:dustElectrotine>, <ore:gearEmerald>], [<ore:ingotIron>, <ore:plateLapis>, <ore:ingotIron>]],
 	<buildinggadgets:templatemanager> : [[<ore:ingotIron>, <ore:gearGold>, <ore:ingotIron>], [<ore:gemEmerald>, <ore:gemEmerald>, <ore:gemEmerald>], [<ore:ingotIron>, <ore:gearGold>, <ore:ingotIron>]],
@@ -20,7 +20,6 @@ val buildingGadgetsRecipes_CARPENTER = {
 
 for key, value in buildingGadgetsRecipes_CARPENTER {
 	recipes.remove(key.withAmount(1));
-	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 	mods.forestry.Carpenter.addRecipe(key, value, 200, <liquid:water> * 1000);
 }
 

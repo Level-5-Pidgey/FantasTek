@@ -389,7 +389,6 @@ function createTierTooltip(prefixString as string, tier as int, plus1 as bool, s
 static CircuitTiers as crafttweaker.item.IIngredient[int] =
 {
     0 : <advancedrocketry:ic>,
-    1 : <forestry:chipsets>.withTag({T: 0 as short}) | <forestry:chipsets:1>.withTag({T: 1 as short}) | <forestry:chipsets:2>.withTag({T: 2 as short}) | <forestry:chipsets:3>.withTag({T: 3 as short})
 };
 
 static FrameTiers as crafttweaker.item.IItemStack[int]=

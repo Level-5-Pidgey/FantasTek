@@ -27,7 +27,6 @@ val stage2_stageMods = [
   "libvulpes",
   "redstonearsenal",
   "rftools",
-  "rftoolsdim",
   "psi",
   "jaopca",
   "enderio",
