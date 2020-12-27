@@ -153,6 +153,8 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:nutrient_distillation> : stages.progression2,
 	<liquid:obsidian> : stages.progression1,
 	<liquid:oil> : stages.progression2,
+	<liquid:oil_dwarf> : stages.Embers2,
+	<liquid:oil_soul> : stages.Embers2,
 	<liquid:oil_residue> : stages.progression2,
 	<liquid:osmium> : stages.progression2,
 	<liquid:oxygen> : stages.progression2,

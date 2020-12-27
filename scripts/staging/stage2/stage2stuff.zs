@@ -185,6 +185,8 @@ for item in stage2_modularMachinery
 	scripts.helpers.setItemAndRecipesStage(item, stageString);
 }
 
-
+//Crafting Forestry Bronze Pickaxes
+mods.recipestages.Recipes.setRecipeStage(stageString, <forestry:bronze_shovel>);
+mods.recipestages.Recipes.setRecipeStage(stageString, <forestry:bronze_pickaxe>);
 
 print("### Stage 2 Staging Complete ###");

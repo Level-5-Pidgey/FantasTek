@@ -69,7 +69,7 @@ for recipe in slabstoblocks
 	recipes.removeByRecipeName(recipe);
 }
 
-//remove dyes
+//Remove Dyes
 val dyes =
 [
 	<enderio:item_material:48>,
@@ -175,6 +175,7 @@ for key, value in enderioRecipes_CRAFTINGTABLE {
 
 val enderioRecipes_EXTENDEDCRAFTING = {
 	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, scripts.helpers.FrameTiers[0], <ore:bricksStone>], [<ore:bricksStone>, <magneticraft:crafting:2>, <ore:bricksStone>]],
+	<enderio:block_solar_panel> * 3 : [[<enderio:item_material:3>, <enderio:item_material:3>, <enderio:item_material:3>], [<ore:gemQuartz>, <ore:gemQuartz>, <ore:gemQuartz>], [null, null, null]],
 	<enderio:item_material> : [[<ore:plateCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:plateCrudeSteel>], [<ore:ingotElectrotineAlloy>, null, <ore:ingotElectrotineAlloy>], [<ore:plateCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:plateCrudeSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
@@ -188,6 +189,7 @@ for key, value in enderioRecipes_EXTENDEDCRAFTING {
 
 //Change Photovoltaic Plate Recipe Process
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:3>);
+furnace.addRecipe(<enderio:item_material:3>, <enderio:item_material:38>);
 
 //Carpenter Simple Machine Chassis
 mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>],[<ore:ingotCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotCrudeSteel>],[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]], 60, <liquid:water> * 1000);

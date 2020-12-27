@@ -486,7 +486,6 @@ val StageLessItems = [
 	<magneticraft:multiblock_parts:5>,
 	<magneticraft:multiblock_parts>,
 	<magneticraft:multiblock_parts:1>,
-	<magneticraft:iron_pipe>,
 	<magneticraft:wrench>,
 	<magneticraft:heat_pipe>,
 	<magneticraft:insulated_heat_pipe>,

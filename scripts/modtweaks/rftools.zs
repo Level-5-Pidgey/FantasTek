@@ -1,7 +1,5 @@
 
-print("~~~ Begin Magneticraft Init ~~~");
-
-
+print("~~~ Begin RFTools Init ~~~");
 
 val rftoolsRecipes_CRAFTINGTABLE = {
 	//motor as crafttweaker.item.IItemStack * 4 : [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotRedstoneAlloy>, <ore:dustRedstone>, <ore:ingotCrudeSteel>], [<ore:ingotIron>, <ore:ingotIron>, null]],
@@ -24,5 +22,4 @@ for key, value in rftoolsRecipes_EXTENDEDCRAFTING {
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
 
-
-print("### Magneticraft Init Complete ###");
+print("### RFTools Init Complete ###");

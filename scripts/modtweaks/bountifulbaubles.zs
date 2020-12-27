@@ -28,8 +28,8 @@ for bauble in bountifulbaubles {
 
 //Bountiful Bauble Recipes
 val randomthingsRecipes_CRAFTINGTABLE = {
-	<bountifulbaubles:disintegrationtablet> : [[null, null, null], [null, null, null], [null, null, null]],
-	<bountifulbaubles:flaregun> : [[null, null, null], [null, null, null], [null, null, null]],
+	<bountifulbaubles:disintegrationtablet> : [[<ore:dustGlowstone>, <ore:dustRedstone>, <ore:dustGlowstone>], [<ore:dustRedstone>, <ore:platePulsatingIron>, <ore:dustRedstone>], [<ore:dustGlowstone>, <ore:dustRedstone>, <ore:dustGlowstone>]],
+	<bountifulbaubles:flaregun> : [[<ore:gearStone>, <ore:ingotIron>, <ore:ingotIron>], [null, <ore:dustGlowstone>, <ore:dustGlowstone>], [<ore:ingotIron>, null, null]],
 	<bountifulbaubles:reforger> : [[null, null, null], [null, null, <ore:chestWood>], [<ore:workbench>, <minecraft:anvil>, <ore:blockDiamond>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 

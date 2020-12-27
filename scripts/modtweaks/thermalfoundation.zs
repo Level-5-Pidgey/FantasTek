@@ -30,6 +30,7 @@ for rune in scripts.helpers.AllWaterT1Items
 }
 
 //Factorizer
+recipes.remove(<thermalexpansion:device:10>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:device:10>, [[null, <ore:workbench>, null], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]]);
 
 print("### Thermal Foundation Init Complete ###");

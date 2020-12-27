@@ -130,7 +130,7 @@ val magneticraftRecipes_CRAFTINGTABLE = {
 	<magneticraft:multiblock_parts:5> * 8 : [[<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>], [<ore:ingotIron>, null, <ore:ingotIron>], [<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>]],
 	<magneticraft:multiblock_parts:1> * 8 : [[<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>], [<ore:blockQuartz>, <advancedrocketry:ic>, <ore:blockQuartz>], [<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>]],
 	<magneticraft:multiblock_parts> * 4 : [[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>], [<ore:ingotIron>, motor, <ore:ingotIron>], [<ore:ingotConductiveIron>, <ore:plateConductiveIron>, <ore:ingotConductiveIron>]],
-	<magneticraft:iron_pipe> * 16 : [[<ore:ingotIron>, null, <ore:ingotIron>], [<ore:nuggetIron>, <ore:blockGlassColorless>, <ore:nuggetIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
+	//<magneticraft:iron_pipe> * 16 : [[<ore:ingotIron>, null, <ore:ingotIron>], [<ore:nuggetIron>, <ore:blockGlassColorless>, <ore:nuggetIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
 	<magneticraft:heat_pipe> * 5 : [[null, <ore:ingotIron>, null], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [null, <ore:ingotIron>, null]],
 	<magneticraft:insulated_heat_pipe> * 5 : [[<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>]],
 	<magneticraft:feeding_trough> : [[<ore:stickWood>, null, <ore:stickWood>], [<ore:plateWood>, null, <ore:plateWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]],
@@ -207,11 +207,11 @@ recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:electric_cable>
 
 //Steam Engine Recipe
 recipes.remove(<magneticraft:steam_engine>);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_astral", scripts.staging.stages.AstralSorcery1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:astral_crystal_water>, <ore:paper>, <contenttweaker:astral_crystal_fire>], [null, <ore:plateConductiveIron>, null]]);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_botania", scripts.staging.stages.Botania1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<ore:runeWaterB>.firstItem, <ore:paper>, <ore:runeFireB>.firstItem], [null, <ore:plateConductiveIron>, null]]);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_bloodmagic", scripts.staging.stages.BloodMagic1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:sanguine_gem_water>, <ore:paper>, <contenttweaker:sanguine_gem_fire>], [null, <ore:plateConductiveIron>, null]]);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_embers", scripts.staging.stages.Embers1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:crystal_ember_water>, <ore:paper>, <contenttweaker:crystal_ember_fire>], [null, <ore:plateConductiveIron>, null]]);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:steam_engine>) ~ "_thaumcraft", scripts.staging.stages.Thaumcraft1.stage , <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:salis_mundus_water>, <ore:paper>, <contenttweaker:salis_mundus_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:astral_crystal_water>, <ore:paper>, <contenttweaker:astral_crystal_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<ore:runeWaterB>.firstItem, <ore:paper>, <ore:runeFireB>.firstItem], [null, <ore:plateConductiveIron>, null]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:sanguine_gem_water>, <ore:paper>, <contenttweaker:sanguine_gem_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:crystal_ember_water>, <ore:paper>, <contenttweaker:crystal_ember_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:salis_mundus_water>, <ore:paper>, <contenttweaker:salis_mundus_fire>], [null, <ore:plateConductiveIron>, null]]);
 
 //Battey Box
 recipes.remove(<magneticraft:battery>);
