@@ -1,0 +1,40 @@
+{
+	title: "Wings of a free bird",
+	x: 29.0d,
+	y: 0.0d,
+	description: "Fly, my pretty! Fly!",
+	text: [
+		"Whilst we haven't quite got you the tech for Gliders or Jetpacks (yet), the frayed wings of a Phantom will have to do for your late Stage 1 transportation",
+		"method of choice.",
+		"",
+		"Be sure to use Fireworks with it for extra fast movement in the air!"
+	],
+	dependencies: [
+		"19721cf9"
+	],
+	tasks: [{
+		uid: "6ad55732",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:elytra"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8a34659c",
+		type: "item",
+		item: {
+			id: "minecraft:fireworks",
+			tag: {
+				display: {
+					Name: "FantasTek brand Fireworks"
+				}
+			}
+		},
+		count: 32
+	}]
+}

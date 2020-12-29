@@ -17,5 +17,15 @@
 		uid: "9bccf020",
 		type: "dimension",
 		dim: 1
+	}],
+	rewards: [{
+		uid: "6b55b1b2",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "extrautils2:xu2.second.chance"
+			}
+		}
 	}]
 }

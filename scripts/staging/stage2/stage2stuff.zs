@@ -149,7 +149,6 @@ val stage2_stageItems = [
     <extrautils2:compoundbow>,
     <extrautils2:fireaxe>,
     <extrautils2:luxsaber:*>,
-    <extrautils2:drum:*>,
     <extrautils2:teleporter:*>,
     <extrautils2:terraformer:*>,
     <extrautils2:ingredients:15>,
@@ -161,7 +160,12 @@ val stage2_stageItems = [
     <extrautils2:grocket:*>,
     <extrautils2:pipe>,
     <extrautils2:indexerremote>,
-    <extrautils2:indexer>
+    <extrautils2:indexer>,
+    <tconstruct:fancy_frame:1>,
+    <tconstruct:fancy_frame:2>,
+    <tconstruct:fancy_frame:3>,
+    <tconstruct:fancy_frame:4>,
+    <tconstruct:throwball:1>
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems
@@ -187,5 +191,11 @@ for item in stage2_modularMachinery
 //Crafting Forestry Bronze Pickaxes
 mods.recipestages.Recipes.setRecipeStage(stageString, <forestry:bronze_shovel>);
 mods.recipestages.Recipes.setRecipeStage(stageString, <forestry:bronze_pickaxe>);
+
+//Stage Journeymap
+mods.jmapstages.JMapStages.setWaypointStage(stageString);
+mods.jmapstages.JMapStages.setFullscreenStage(stageString);
+mods.jmapstages.JMapStages.setDeathpointStage(stageString);
+mods.jmapstages.JMapStages.setMinimapStage(stageString);
 
 print("### Stage 2 Staging Complete ###");

@@ -30,6 +30,6 @@
 		type: "gamestage",
 		title: "Unlock Stage 1 Astral Sorcery",
 		auto: "no_toast",
-		stage: "astral-i"
+		stage: "astral_i"
 	}]
 }

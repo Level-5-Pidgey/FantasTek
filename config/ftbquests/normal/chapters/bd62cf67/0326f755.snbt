@@ -4,7 +4,9 @@
 	y: 6.0d,
 	description: "Sticky Fingers",
 	text: [
-		"Whilst you don't yet have the technology to make chemical adhesives yet, nothing can go wrong with traditional gelatinous slime balls. They can be added to pistons to push blocks around, or used to craft more advanced plate crafting recipes."
+		"&eWhilst you don't yet have the technology to make chemical adhesives yet&r, nothing can go wrong with traditional gelatinous slime balls. ",
+		"",
+		"They can be added to pistons to push blocks around, or used to craft more advanced plate crafting recipes."
 	],
 	dependencies: [
 		"cfdc4258"

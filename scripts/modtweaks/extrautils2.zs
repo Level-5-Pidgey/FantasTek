@@ -13,9 +13,6 @@ for item in shopItems
 	scripts.helpers.AddTooltip(item, ["Cannot be crafted.", "Purchasable from various villagers."]);
 }
 
-//Disable JEI Resonator Window
-mods.jei.JEI.hideCategory("extrautils2.resonator");
-
 //Ineffable Glass/Ethereal Glass Recipe Changes
 recipes.remove(<extrautils2:ineffableglass:*>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<extrautils2:ineffableglass:1>), <extrautils2:ineffableglass:1>, [<extrautils2:ineffableglass>, <minecraft:redstone_torch>]); //Inverted Ineffable Glass
@@ -30,7 +27,7 @@ val extrautilsItem =
 [
 	<extrautils2:book>,
     <extrautils2:ingredients:1>,
-    <extrautils2:resonator>,
+    <extrautils2:passivegenerator:7>
 ] as crafttweaker.item.IItemStack[];
 
 for extrautilsitemsToHide in extrautilsItem
@@ -53,8 +50,11 @@ for key, value in extrautilsRecipes_CRAFTINGTABLE {
 //Extended Crafting Recipes
 val extrautilsRecipes_EXTENDEDCRAFTING = {
     <extrautils2:screen> : [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:nuggetIron>, <ore:gearPulsatingIron>, <ore:nuggetIron>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]],
-    <extrautils2:resonator> : [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:nuggetIron>, <ore:gearPulsatingIron>, <ore:nuggetIron>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]],
-    <extrautils2:user> : [[null, <ore:obsidian>, null], [<ore:obsidian>, <minecraft:dispenser>, <ore:obsidian>], [null, <ore:obsidian>, null]],
+    <extrautils2:resonator> : [[<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>], [<ore:ingotRedstoneAlloy>, <ore:dustGlowstone>, <ore:ingotRedstoneAlloy>], [<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>]],
+    <extrautils2:passivegenerator> * 3: [[null, null, null], [<ore:itemPlatePhotovoltaic>, <ore:itemPlatePhotovoltaic>, <ore:itemPlatePhotovoltaic>], [<ore:stone>, <ore:gearRedstoneAlloy>, <ore:stone>]],
+    <extrautils2:passivegenerator:1> * 3 : [[null, null, null], [<ore:dustLunar>, <ore:dustLunar>, <ore:dustLunar>], [<extrautils2:passivegenerator>, <extrautils2:passivegenerator>, <extrautils2:passivegenerator>]],
+    <extrautils2:passivegenerator:8> : [[<ore:stone>, <ore:enderpearl>, <ore:stone>], [<ore:netherStar>, <ore:gearRedstoneAlloy>, <ore:netherStar>], [<ore:stone>, <ore:enderpearl>, <ore:stone>]],
+    <extrautils2:user> : [[<ore:nuggetIron>, <ore:stone>, <ore:nuggetIron>], [<ore:stone>, <minecraft:dispenser>, <ore:stone>], [<ore:nuggetIron>, <ore:stone>, <ore:nuggetIron>]],
     //<openblocks:projector> : [[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [<ore:dustGlowstone>, scripts.helpers.CircuitTiers[0], <ore:gemLapis>], [<ore:slabStone>, <ore:slabStone>, <ore:slabStone>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
@@ -63,13 +63,30 @@ for key, value in extrautilsRecipes_EXTENDEDCRAFTING {
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
 
-//Resonator Recipes TODO
-//<extrautils2:decorativeglass:5>
-//<extrautils2:ingredients:13>.withTag({Freq: 579632228})
-//<extrautils2:ingredients:9>
-//<extrautils2:ingredients:4>
-//<extrautils2:ingredients:3>
-//<extrautils2:decorativesolid:8>
-//<extrautils2:decorativesolid:7>
-//<extrautils2:decorativesolid:3>
+//Elemental Generators
+//Lava Generator (Earth)
+recipes.remove(<extrautils2:passivegenerator:2>);
+for rune in scripts.helpers.AllEarthT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:passivegenerator:2> * 2, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:ingotConductiveIron>, <minecraft:magma>, <ore:ingotConductiveIron>], [<ore:stone>, rune, <ore:stone>]]);
+}
+//Water Generator (Water)
+recipes.remove(<extrautils2:passivegenerator:3>);
+for rune in scripts.helpers.AllWaterT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:passivegenerator:3> * 2, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:ingotGold>, <ore:gemLapis>, <ore:ingotGold>], [<ore:stone>, rune, <ore:stone>]]);
+}
+//Air Generator (Air)
+recipes.remove(<extrautils2:passivegenerator:4>);
+for rune in scripts.helpers.AllAirT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:passivegenerator:4> * 3, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:barsIron>, <ore:barsIron>, <ore:barsIron>], [<ore:stone>, rune, <ore:stone>]]);
+}
+//Fire Generator (Fire)
+recipes.remove(<extrautils2:passivegenerator:5>);
+for rune in scripts.helpers.AllFireT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:passivegenerator:5> * 3, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:ingotBrickNether>, <ore:ingotBrickNether>, <ore:ingotBrickNether>], [<ore:stone>, rune, <ore:stone>]]);
+}
+
 print("### Extrautils2 Init Complete ###");

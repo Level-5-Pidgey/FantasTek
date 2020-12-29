@@ -31,6 +31,6 @@
 		type: "gamestage",
 		title: "Unlock Stage 1 Botania",
 		auto: "no_toast",
-		stage: "botania-i"
+		stage: "botania_i"
 	}]
 }

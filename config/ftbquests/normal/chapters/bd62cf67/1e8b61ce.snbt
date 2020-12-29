@@ -7,7 +7,7 @@
 	text: [
 		"As expected from our research, it seems like the Wither's strength comes from the gem-like star stored within.",
 		"",
-		"We were hoping to perform analytics on one (and then sell it later at a charity auction), would you be able to spare one for us? ",
+		"&eWe were hoping to perform analytics on one (and then sell it later at a charity auction), would you be able to spare one for us? ",
 		"Promise we will return it later."
 	],
 	dependencies: [

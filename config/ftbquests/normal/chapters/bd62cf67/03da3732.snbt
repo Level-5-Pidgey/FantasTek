@@ -5,8 +5,9 @@
 	y: 10.0d,
 	description: "These puns have gotta sting...",
 	text: [
-		"Beekeeping, although slow to start, is an incredibly rewarding thing to do as an employee. Starting now will pay dividends later! Bees produce honeycomb and honey bottles, which can be used as a food source.",
-		""
+		"Beekeeping, although slow to start, is an incredibly rewarding thing to do as an employee. &bStarting now will pay dividends later!&r ",
+		"",
+		"Bees produce honeycomb and honey bottles, which can be used as a food source."
 	],
 	dependencies: [
 		"832444e7"

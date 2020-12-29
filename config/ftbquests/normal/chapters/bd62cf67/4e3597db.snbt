@@ -4,7 +4,8 @@
 	y: -2.0d,
 	description: "Our lips are sealed",
 	text: [
-		"By crafting creosote and wooden planks together, you can create planks that have been sealed with creosote. These planks form a strong foundation for basic machinery. Please stand at least 6 feet away from the sealing process, unless you wish to be sealed as well."
+		"&eBy crafting creosote and wooden planks together&r, you can create &bplanks that have been sealed with creosote&r. ",
+		"These planks form a strong foundation for basic machinery, and can be used as a decorative block if you so wish."
 	],
 	dependencies: [
 		"a1c8ffa9"

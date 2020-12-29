@@ -41,54 +41,6 @@
 		}],
 		consume_items: false,
 		ignore_nbt: 1b
-	},
-	{
-		uid: "090694db",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "minecraft:iron_helmet"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
-		uid: "8907818b",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "minecraft:iron_chestplate"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
-		uid: "a9ac1bfa",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "minecraft:iron_leggings"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
-		uid: "ef266379",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "minecraft:iron_boots"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "64757cbd",

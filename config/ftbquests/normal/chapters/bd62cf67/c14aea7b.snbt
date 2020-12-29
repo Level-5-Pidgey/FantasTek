@@ -7,8 +7,8 @@
 	text: [
 		"Although you can now use the Coke Oven to produce creosote, you might want to invest in upgrades for the oven to improve it's performance or output.",
 		"",
-		"A BLAZE MESH will triple the production speed of the machine.",
-		"A block of HEAT GLASS will double the creosote production of the machine."
+		"A &bBLAZE MESH&r will &etriple the production speed&r of the machine.",
+		"A block of &bHEAT GLASS&r will &edouble the creosote production&r of the machine."
 	],
 	dependencies: [
 		"a1c8ffa9"

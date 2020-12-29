@@ -93,7 +93,7 @@ for key, value in randomthingsRecipes_EXTENDEDCRAFTING {
 recipes.remove(<randomthings:fertilizeddirt>);
 for rune in scripts.helpers.AllEarthT1Items
 {
-	mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:fertilizeddirt> * 4, [[null, <ore:barsIron>, null], [null, rune, null], [<ore:slabStone>, rune, <ore:slabStone>]]);
+	mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:fertilizeddirt> * 4, [[null, <ore:barsIron>, null], [null, <ore:barsIron>, null], [<ore:slabStone>, rune, <ore:slabStone>]]);
 }
 
 print("### Random Things Init Complete ###");

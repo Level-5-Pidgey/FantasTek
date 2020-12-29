@@ -5,7 +5,9 @@
 	y: 4.0d,
 	description: "Time to make something powerful!",
 	text: [
-		"The basic wooden crafting table we recommended you make earlier is appropriate for most crafting tasks, more complex machines require more complex tools such as an Advanced Crafting Table.",
+		"The wooden crafting table we recommended you make earlier is appropriate for most crafting tasks, more complex machines require more complex interfaces such as an &bBasic Crafting Table.&r",
+		"Whilst it may look the same, this crafting table is upgradable and sturdy enough to support crafting machinery and more complex items.",
+		"",
 		"Black Iron is a much more dense version of Iron, using the durable properties (and colour) of Obsidian to toughen itself.",
 		"Items made from this material are much more heat resistant, and should also be able to handle more powerful catalysts."
 	],

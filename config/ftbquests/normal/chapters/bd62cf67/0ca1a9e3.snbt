@@ -8,7 +8,7 @@
 	text: [
 		"If you haven't already created your own renewable method of obtaining food, these farms can help you out! ",
 		"",
-		"They require power, fertilizer and a soil for the crop you've made the farm for and will automatically plant and harvest the crop of your choice, meaning you'd be able to let it sit an amass resources without lifting a finger!"
+		"&eThey require power, fertilizer and a soil for the crop you've made the farm for&r and will automatically plant and harvest the crop of your choice, meaning you'd be able to let it sit an amass resources without lifting a finger!"
 	],
 	dependencies: [
 		"97adb012"

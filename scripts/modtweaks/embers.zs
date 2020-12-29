@@ -25,11 +25,19 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
 	var blockOre = oreDict.get("ore" ~ materialString);
 	var oreIngot = oreDict.get("ingot" ~ materialString);
+	var oreGem = oreDict.get("gem" ~ materialString);
 	var oreDust = oreDict.get("dust" ~ materialString);
 
-	if(!oreDust.empty & !oreIngot.empty)
+	if(!oreDust.empty)
 	{
-		recipes.addShapeless("ingotgrinding_" ~ materialString, oreDust.firstItem, [<embers:tinker_hammer>, oreIngot]);
+		if(!oreIngot.empty)
+		{
+			recipes.addShapeless("ingotgrinding_" ~ materialString, oreDust.firstItem, [<embers:tinker_hammer>, oreIngot]);
+		}
+		else if (!oreGem.empty)
+		{
+			recipes.addShapeless("gemgrinding_" ~ materialString, oreDust.firstItem, [<embers:tinker_hammer>, oreGem]);
+		}
 	}
 }
 

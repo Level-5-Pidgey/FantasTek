@@ -4,6 +4,17 @@
 	x: 29.0d,
 	y: 2.0d,
 	shape: "diamond",
+	description: "Congratulations, you've completed Vanilla+!",
+	text: [
+		"Congratulations on reaching the end of stage 1, pioneer! The last people we sent down to your strange little planet didn't last nearly as long as you did!",
+		"With the Ender Dragon defeated, you should be able to explore the End Cities. It is recommended you venture out there for &eShulker Shells&r and",
+		"maybe even an &eElytra&r as they will assist your logistics and transportation problems.",
+		"",
+		"",
+		"&4Modpack Author note: &eTo progress to Stage 2, as outlined in a previous quest, you need to have completed all of the required milestones",
+		"in this current stage. These milestones are outlined in the large, cog-shaped quests in the tree. Once you have completed both the final",
+		"diamond-shaped quest in a stage tree alongside all of the required milestones in the stage, you can progress to the next one."
+	],
 	dependencies: [
 		"22ba3f92"
 	],

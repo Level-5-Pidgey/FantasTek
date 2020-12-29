@@ -8,8 +8,8 @@
 		"Up until now, you've relied on our industry approved furnaces to melt your ores into ingots and make use of them.",
 		"Unless you've been using some magical technologies, you're also stuck with relying on a hand-operated crank and grinder to get better efficiency from each ore piece.",
 		"",
-		"The Tinker's Smeltery allows you to easily melt ores into a molten liquid, doubling tier 0 ores and allowing you to process ores that are more hardy and temperature resistant (that can't be melted in a furnace!)",
-		"Your tinkers smeltery requires seared bricks or blocks and the other items listed in these job requirements.",
+		"The &bTinker's Smeltery&r allows you to easily melt ores into a molten liquid, &edoubling tier 0 ores and allowing you to process ores that are more hardy and temperature resistant (that can't be melted in a furnace!)&r",
+		"Your tinkers smeltery requires seared bricks or blocks and the other items listed in these quest requirements.",
 		"Best of luck pioneer!"
 	],
 	dependencies: [

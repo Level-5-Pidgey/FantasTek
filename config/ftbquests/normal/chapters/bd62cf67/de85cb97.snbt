@@ -5,8 +5,9 @@
 	description: "Guardians of the Smeltery",
 	text: [
 		"Furnaces are okay, but you're going to need better smelting options down the line sometime soon.",
-		"A smeltery uses the heat of lava to melt items or ores into a molten liquid, which can then be cast into a specific shape using metal casts.",
-		"A smeltery requires a specific multiblock structure - if you've never set one up before, it's highly suggested you Kroogle it."
+		"",
+		"&eA smeltery uses the heat of lava to melt items or ores into a molten liquid, which can then be cast into a specific shape using metal casts.&r",
+		"This will require a specific multiblock structure - if you've never set one up before, it's highly suggested you Google it for a reference image."
 	],
 	dependencies: [
 		"a1c8ffa9"

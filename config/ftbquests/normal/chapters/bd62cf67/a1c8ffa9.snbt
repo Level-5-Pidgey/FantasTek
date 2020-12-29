@@ -5,7 +5,9 @@
 	y: -2.0d,
 	description: "Efficient Burning",
 	text: [
-		"With the Heatproof Brick and Modular Machinery items, you should be able to assemble a functioning coke oven and start producing coal coke and creosote! These materials can be used later to build some very basic machines."
+		"With the &eHeatproof Brick&r and &eModular Machinery&r items, you should be able to &bassemble a functioning coke oven and start producing coal coke and creosote!&r ",
+		"",
+		"These materials can be used later to build some very basic machines."
 	],
 	dependencies: [
 		"fb3984d1",

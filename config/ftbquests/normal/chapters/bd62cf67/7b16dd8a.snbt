@@ -1,7 +1,7 @@
 {
 	title: "Trader Joe",
 	x: -1.5d,
-	y: 8.0d,
+	y: 6.0d,
 	description: "Thank God for capitalism",
 	text: [
 		"&eSurvival is usually better with friends or family. If you come across a village, you should trade with them to make your life easier.&r ",

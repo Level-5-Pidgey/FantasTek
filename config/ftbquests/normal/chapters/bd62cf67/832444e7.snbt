@@ -2,10 +2,12 @@
 	title: "Plate Problems",
 	x: 12.5d,
 	y: 8.0d,
-	description: "(and how to alleviate them)",
+	description: "(Note, you're not being asked to make a piston here!!)",
 	text: [
-		"Up till now, you've had to construct plates by smashing lots of gems or ingots in a crafting table with a Tinkerer's Hammer. This can be costly and is hard to automate -- if you'd like a more automatable and easily interactible solution the Small Plate Presser should do the job. Simply place this above a block of obsidian (leaving a block gap between) and then place the block of wood/ore inbetween, give a redstone pulse and bam! You have easier plate crafting.",
-		"This process is slightly cheaper for most plate crafting jobs but significantly more cheap for crafting Wooden Boards."
+		"&eUp till now, you've had to construct plates by smashing lots of gems or ingots in a crafting table with a Tinkerer's Hammer. This can be costly and is hard to automate&r -- if you'd like a more automatable and easily interactible solution the &bSmall Plate Presser&r should do the job. ",
+		"",
+		"Simply place this above a block of obsidian (leaving a block gap between) and then place the block of wood/ore inbetween, give a redstone pulse and bam! You have easier plate crafting.",
+		"&bThis process is slightly cheaper for most plate crafting jobs but significantly more cheap for crafting Wooden Boards.&r"
 	],
 	dependencies: [
 		"0326f755"

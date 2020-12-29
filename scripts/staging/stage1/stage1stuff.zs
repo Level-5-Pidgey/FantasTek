@@ -531,7 +531,22 @@ val StageLessItems = [
 	<enderio:block_infinity>,
 	<enderio:block_infinity:1>,
 	<magneticraft:battery>,
-	<magneticraft:electric_furnace>
+	<magneticraft:electric_furnace>,
+	<enderio:block_painted_pressure_plate:7>,
+	<enderio:block_painted_pressure_plate:5>,
+	<enderio:block_painted_pressure_plate:3>,
+	<enderio:block_painted_pressure_plate:1>,
+	<enderio:block_self_resetting_lever300i>,
+	<enderio:block_self_resetting_lever60i>,
+	<enderio:block_self_resetting_lever30i>,
+	<enderio:block_self_resetting_lever10i>,
+	<enderio:block_self_resetting_lever5i>,
+	<enderio:block_self_resetting_lever300>,
+	<enderio:block_self_resetting_lever60>,
+	<enderio:block_self_resetting_lever30>,
+	<enderio:block_self_resetting_lever10>,
+	<enderio:block_self_resetting_lever5>,
+	<enderio:block_simple_wired_charger>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

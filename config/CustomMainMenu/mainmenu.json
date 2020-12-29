@@ -188,7 +188,7 @@
             "image" : "",
             "slideshow":
             {
-                "images" : ["mainmenu:textures/background/title.png","mainmenu:textures/background/title1.png","mainmenu:textures/background/title2.png","mainmenu:textures/background/title3.png","mainmenu:textures/background/title4.png","mainmenu:textures/background/title5.png"],
+                "images" : ["mainmenu:textures/background/title.png","mainmenu:textures/background/title1.png","mainmenu:textures/background/title2.png","mainmenu:textures/background/title3.png","mainmenu:textures/background/title4.png"],
                 "displayDuration" : 200,
                 "fadeDuration" : 40
             }

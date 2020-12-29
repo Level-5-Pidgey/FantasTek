@@ -2,7 +2,7 @@
 	title: "Earning your way",
 	icon: "bountiful:bountyboarditem",
 	x: 0.5d,
-	y: 8.0d,
+	y: 6.0d,
 	description: "... because we're not gonna pay you a living wage!!",
 	text: [
 		"Look, I'm gonna be honest. Budget cuts have hit really hard this year. We only made $421.5B last quarter and had to lay off a few hundred employees and replace them with AI workers.",

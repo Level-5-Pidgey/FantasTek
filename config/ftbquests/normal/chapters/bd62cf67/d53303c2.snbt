@@ -4,7 +4,7 @@
 	y: -2.0d,
 	description: "Green is not a \"crative\" colour",
 	text: [
-		"The carpentry machine is capable of producing crates as well as making further machines. It'll be an imperative part of your progress into the next stages of the game as",
+		"The &bcarpentry machine&r is &ecapable of producing crates as well as making further machines.&r It'll be an imperative part of your progress into the next stages of the game as",
 		"it offers cheaper alternate recipes for certain crafting recipes.",
 		"",
 		"Additionally, the Carpenter is able to package and un-package certain items into crates. You should be able to sell some of these to the local village-folk for money!"

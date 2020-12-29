@@ -4,10 +4,11 @@
 	y: 4.0d,
 	description: "You made the cut!",
 	text: [
-		"To be able to make use of the molten metals in your smeltery, you need to cast them into shape.",
-		"There are many different types of cast -- and they are created by melting gold or brass in the smeltery, then pouring the liquid over an item you want to make a cast of onto a casting table. e.g. to make an ingot cast, place any sort of ingot onto the casting table, then pour the gold/brass over the top.",
+		"To be able to make use of the molten metals in your smeltery, &eyou need to cast them into shape&r.",
+		"There are many different types of cast -- and they &bare created by melting gold or brass in the smeltery, then pouring the liquid over an item you want to make a cast of onto a casting table.&r",
+		"e.g. to make an ingot cast, place any sort of ingot onto the casting table, then pour the gold/brass over the top.",
 		"",
-		"This process can make plates slightly more efficiently than the Plate Press -- dropping the ingot requirement down to 4 ingots per plate."
+		"&eThis process can make plates slightly more efficiently than the Plate Press -- dropping the ingot requirement down to 4 ingots per plate.&r"
 	],
 	dependencies: [
 		"ad5ff33d"

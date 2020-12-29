@@ -4,7 +4,7 @@
 	y: 4.0d,
 	description: "Elementary, dear Watson!",
 	text: [
-		"With the magical and conductive properties of Electrotine, you can now create a basic machine frame with which more advanced assemblers and processors can be built from. ",
+		"With the magical and conductive properties of Electrotine, you can now create a &bbasic machine frame&r with which more advanced assemblers and processors can be built from. ",
 		"",
 		"Go on! The factory must grow!"
 	],

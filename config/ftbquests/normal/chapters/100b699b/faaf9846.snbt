@@ -29,7 +29,7 @@
 		type: "gamestage",
 		title: "Unlock Stage 1 Thaumcraft",
 		auto: "no_toast",
-		stage: "thaumcraft-i"
+		stage: "thaumcraft_i"
 	},
 	{
 		uid: "49730895",

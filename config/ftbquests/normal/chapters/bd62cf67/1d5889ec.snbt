@@ -16,7 +16,7 @@
 		"Power Transportation methods."
 	],
 	dependencies: [
-		"97adb012"
+		"0e4f6d19"
 	],
 	tasks: [{
 		uid: "935b3800",

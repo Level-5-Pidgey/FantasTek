@@ -156,6 +156,7 @@ val componentRecipes = {
 		<tconstruct:seared_tank:2> : [[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>]],
 		<tconstruct:seared_furnace_controller> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <minecraft:furnace>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
 		<tconstruct:seared_tank> : [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
+		<tconstruct:seared_tank:1> : [[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>],[<ore:blockGlassBlack>, <ore:blockGlassBlack>, <ore:blockGlassBlack>],[<tconstruct:materials>, <ore:blockGlassBlack>, <tconstruct:materials>]],
 		<tconstruct:casting:1> : [[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>],[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]],
 		<tconstruct:faucet> : [[null, null, null],[<tconstruct:materials>, null, <tconstruct:materials>],[null, <tconstruct:materials>, null]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
@@ -204,5 +205,9 @@ for materialString, stageToSet in tconForges
 {
 	CreateToolForgeAndStage(materialString, stageToSet.stage);
 }
+
+//Hide Excavate Modifier
+recipes.remove(<oeintegration:excavatemodifier>);
+scripts.helpers.AddTooltip(<oeintegration:excavatemodifier>, ["Uncraftable.", "Excavation is exclusive to Vanilla Tools!"]);
 
 print("### TConstruct Init Complete ###");

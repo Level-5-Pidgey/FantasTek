@@ -29,6 +29,6 @@
 		type: "gamestage",
 		title: "Unlock Stage 1 Embers",
 		auto: "no_toast",
-		stage: "embers-i"
+		stage: "embers_i"
 	}]
 }

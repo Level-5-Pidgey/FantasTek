@@ -7,7 +7,7 @@ recipes.addShapeless("astral_journal", <astralsorcery:itemjournal>, [<ore:book>,
 
 //Change Recipe for the Astral Wand
 recipes.removeByRecipeName("astralsorcery:shaped/tool_basicwand");
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<astralsorcery:itemwand>.withTag({astralsorcery: {}})), scripts.staging.stages.AstralSorcery1.stage, <astralsorcery:itemwand>.withTag({astralsorcery: {}}), [[null, <ore:enderpearl>, <ore:plateAquamarine>], [null, <ore:stoneMarble>, <ore:enderpearl>], [<ore:stickWood>, null, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<astralsorcery:itemwand>.withTag({astralsorcery: {}})), scripts.staging.stages.AstralSorcery1.stage, <astralsorcery:itemwand>.withTag({astralsorcery: {}}), [[null, <ore:enderpearl>, <ore:gearAquamarine>], [null, <ore:stoneMarble>, null], [<ore:stickWood>, null, null]]);
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_basicwand");
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/tool_basicwand", <astralsorcery:itemwand>.withTag({astralsorcery: {}}), 200, 60,
 [

@@ -6,7 +6,8 @@
 	text: [
 		"If you're interested in making more advanced tinker tools, you're going to need better hardware.",
 		"",
-		"Tools made with a Tool Station are servicable and provide a good starting point, but if you want to truly take advantage of Tinker's Construct properly you're going to have to create a Tool Forge. Creating one will be expensive (a forge must be durable to assemble a grand tool!) and require a large amount of rare resources, but will last you a very long time."
+		"Tools made with a &eTool Station&r are servicable and provide a good starting point, but if you want to truly take advantage of Tinker's Construct properly you're going to have to create a &bTool Forge&r. ",
+		"Creating one will be expensive (a forge must be durable to assemble a grand tool!) and require a large amount of rare resources, but will last you a very long time."
 	],
 	dependencies: [
 		"ad5ff33d"

@@ -6,7 +6,9 @@
 	shape: "rsquare",
 	description: "Do you have any idea how fast I am?",
 	text: [
-		"Blaze Rods are a useful material from the Nether Dimension that can help you set up a workspace for potion making. Potions can help you gain strange powers for a short period of time, like night vision or super speed."
+		"Blaze Rods are a useful material from the Nether Dimension that can help you set up a workspace for potion making.  ",
+		"",
+		"Potions can help you gain strange powers for a short period of time, like night vision or super speed. "
 	],
 	dependencies: [
 		"8cb69197"

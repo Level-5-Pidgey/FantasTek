@@ -4,7 +4,7 @@
 	y: -4.0d,
 	shape: "gear",
 	text: [
-		"Now that you've explored the technology that you're capable of making, you have to prove your profiency to us by kindly donating 200 microchips. ",
+		"Now that you've explored the technology that you're capable of making, you have to prove your profiency to us by &bkindly donating 200 microchips. &r",
 		"",
 		"With these chips we're going to continue our research into the Intern Replacement Program, creating AI run robots to do extra-terrestrial exploration once you have *ahem* expired."
 	],

@@ -6,11 +6,11 @@
 	shape: "hexagon",
 	description: "Defects? Who cares about those!",
 	text: [
-		"If you're in need of some massive item storage, Shipping Bins are your best bet at this stage!",
-		"You can create a multi-block structure that holds a whole 15000 items! All items must be identical in order for them to be stored in the shipping container, and only 8192 wil drop items if you destroy the container with items inside of it.",
+		"If you're in need of some massive item storage, &bShipping Bins&r are your best bet at this stage!",
+		"You can create a multi-block structure that &eholds a whole 15000 items!&r ",
+		"All items must be identical in order for them to be stored in the shipping container, and only 8192 items will drop if you destroy the container with items inside of it.",
 		"",
 		"Got too much cobblestone? Shipping container! Got a massive farm? Shipping container! ",
-		"",
 		"Just make sure that if you're relocating a container that you take out the items first, as if you don't you may not get all of your items back!"
 	],
 	dependencies: [

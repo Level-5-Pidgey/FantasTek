@@ -7,7 +7,8 @@
 	description: "Optional, Stronger Power for you!",
 	text: [
 		"Whilst you are able to use the power of magic to generate basic RF at this stage, you can optionally upgrade to Steam Power if you're wanting",
-		"a head-start in power generation for the next stage of the game. Steam Engine power can be scaled up easily "
+		"a head-start in power generation for the next stage of the game. &bSteam Engine&r power can be scaled up easily and can produce up to &e400RF/t&r if",
+		"provided enough steam each tick."
 	],
 	dependencies: [
 		"5082b007"

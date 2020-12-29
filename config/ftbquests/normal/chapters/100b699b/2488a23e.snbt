@@ -29,6 +29,6 @@
 		type: "gamestage",
 		title: "Unlock Stage 1 Blood Magic",
 		auto: "no_toast",
-		stage: "bloodmagic-i"
+		stage: "bloodmagic_i"
 	}]
 }
