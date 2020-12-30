@@ -546,7 +546,15 @@ val StageLessItems = [
 	<enderio:block_self_resetting_lever30>,
 	<enderio:block_self_resetting_lever10>,
 	<enderio:block_self_resetting_lever5>,
-	<enderio:block_simple_wired_charger>
+	<enderio:block_simple_wired_charger>,
+	<rftools:modular_storage>,
+	<rftools:storage_module>,
+	<rftools:storage_module:1>,
+	<rftools:storage_module:2>,
+	<rftools:storage_control_module>,
+	<rftools:dump_module>,
+	<rftools:storage_scanner>,
+	<rftools:storage_terminal>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

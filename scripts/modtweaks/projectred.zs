@@ -8,7 +8,33 @@ val unusedItems =
 	<projectred-core:resource_item:252>,
 	<projectred-core:resource_item:300>,
 	<projectred-core:resource_item:250>,
-	<projectred-core:drawplate>
+	<projectred-core:drawplate>,
+	<projectred-core:resource_item:500>,
+	<projectred-core:resource_item:501>,
+	<projectred-core:resource_item:502>,
+	<projectred-core:resource_item:503>,
+	<projectred-core:resource_item:504>,
+	<projectred-core:resource_item:505>,
+	<projectred-core:resource_item:506>,
+	<projectred-core:resource_item:507>,
+	<projectred-core:resource_item:508>,
+	<projectred-core:resource_item>,
+	<projectred-core:resource_item:1>,
+	<projectred-core:resource_item:2>,
+	<projectred-core:resource_item:3>,
+	<projectred-core:resource_item:4>,
+	<projectred-core:resource_item:10>,
+	<projectred-core:resource_item:11>,
+	<projectred-core:resource_item:12>,
+	<projectred-core:resource_item:20>,
+	<projectred-core:resource_item:21>,
+	<projectred-core:resource_item:509>,
+	<projectred-core:resource_item:510>,
+	<projectred-core:resource_item:511>,
+	<projectred-core:resource_item:512>,
+	<projectred-core:resource_item:513>,
+	<projectred-core:resource_item:514>,
+	<projectred-core:resource_item:515>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in unusedItems
@@ -85,5 +111,54 @@ recipes.remove(<projectred-core:resource_item:301>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:301>), <projectred-core:resource_item:301> * 4, [<embers:tinker_hammer>, <ore:itemSilicon>]);
 mods.thermalexpansion.Compactor.addPressRecipe(<projectred-core:resource_item:301> * 8, <ore:itemSilicon>.firstItem, 350);
 
+//Use Chisel to get logic Gates
+mods.chisel.Carving.addGroup("logic-gates");
+mods.chisel.Carving.addVariation("logic-gates", <minecraft:comparator>);
+val logicGates =
+[
+	<projectred-integration:gate:1>,
+	<projectred-integration:gate:2>,
+	<projectred-integration:gate:3>,
+	<projectred-integration:gate:4>,
+	<projectred-integration:gate:5>,
+	<projectred-integration:gate:6>,
+	<projectred-integration:gate:7>,
+	<projectred-integration:gate:8>,
+	<projectred-integration:gate:9>,
+	<projectred-integration:gate:10>,
+	<projectred-integration:gate:11>,
+	<projectred-integration:gate:12>,
+	<projectred-integration:gate:13>,
+	<projectred-integration:gate:14>,
+	<projectred-integration:gate:15>,
+	<projectred-integration:gate:16>,
+	<projectred-integration:gate:17>,
+	<projectred-integration:gate:18>,
+	<projectred-integration:gate:19>,
+	<projectred-integration:gate:20>,
+	<projectred-integration:gate:21>,
+	<projectred-integration:gate:22>,
+	<projectred-integration:gate:23>,
+	<projectred-integration:gate:24>,
+	<projectred-integration:gate:25>,
+	<projectred-integration:gate:26>,
+	<projectred-integration:gate:27>,
+	<projectred-integration:gate:28>,
+	<projectred-integration:gate:29>,
+	<projectred-integration:gate:30>,
+	<projectred-integration:gate:31>,
+	<projectred-integration:gate:32>,
+	<projectred-integration:gate:33>,
+	<projectred-integration:gate>
+] as crafttweaker.item.IItemStack[];
+
+for item in logicGates
+{
+	recipes.remove(item);
+	mods.chisel.Carving.addVariation("logic-gates", item);
+	scripts.helpers.AddTooltip(item, ["Crafted using a chisel on a Redstone Comparator."]);
+}
+
+//TODO Disable components used to originally craft these logic gates.
 
 print("### ProjectRed Init Complete ###");

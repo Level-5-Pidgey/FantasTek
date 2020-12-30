@@ -1,0 +1,25 @@
+{
+	title: "EZ-Store",
+	icon: "magneticraft:multiblock_parts 1 2",
+	x: 12.5d,
+	y: 6.0d,
+	shape: "hexagon",
+	description: "Chests? Pffttt...",
+	text: [
+		"Whilst chests and maybe even &eCompact Storage&r are great early on, you're eventually gonna need greater storage options to not get lost in a mess",
+		"of items and tools.",
+		"",
+		"Whilst it will cost a lot of steel to create, a &bShelving Unit&r will allow you to store many chests in one accessible interface. You can use many to create",
+		"a warehouse of items, especially if used alongside a &eshipping container&r!"
+	],
+	dependencies: [
+		"ab31349c"
+	],
+	tasks: [{
+		uid: "c700e9b5",
+		type: "item",
+		items: [{
+			item: "magneticraft:shelving_unit"
+		}]
+	}]
+}
