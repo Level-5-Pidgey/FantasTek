@@ -1,0 +1,33 @@
+{
+	x: -7.0d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"f0d31e9a",
+		"19721cf9",
+		"81ac5eaf",
+		"1e8b61ce"
+	],
+	hide: true,
+	size: 3.0d,
+	tasks: [{
+		uid: "2859412b",
+		type: "checkmark",
+		title: "Welcome to Stage 2!"
+	}],
+	rewards: [{
+		uid: "f7afb0aa",
+		type: "gamestage",
+		title: "Gain Access to Stage 2!",
+		auto: "no_toast",
+		stage: "stage_ii"
+	},
+	{
+		uid: "698f25b4",
+		type: "command",
+		title: "Milestone Completion Toast!",
+		icon: "minecraft:sign",
+		auto: "no_toast",
+		command: "/say @p has unlocked access to [Stage 2]!"
+	}]
+}

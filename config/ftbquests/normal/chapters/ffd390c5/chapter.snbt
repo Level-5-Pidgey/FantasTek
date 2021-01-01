@@ -1,0 +1,10 @@
+{
+	title: "Stage 2",
+	icon: "thermalfoundation:material 1 355",
+	description: [
+		"Dig like your heart depends on it!"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "rsquare"
+}

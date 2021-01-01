@@ -268,7 +268,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		}
 
 		//TNT Mining -- Tier 2 (2x) (Doesn't multiply dense ores)
-		if(tier <= 2)
+		if(tier <= 1)
 		{
 			//Standard Ores
 			for ore in oreBlock.items
@@ -296,15 +296,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(rockyChunk.firstItem * (2 * baseMultiplier), oreDense, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(rockyChunk.firstItem * baseMultiplier, oreDense, 75);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(nativeCluster.firstItem * (2 * baseMultiplier), oreDense, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(nativeCluster.firstItem * baseMultiplier, oreDense, 75);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(oreDust.firstItem * (2 * baseMultiplier), oreDense, 75);
+					mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(oreDust.firstItem * baseMultiplier, oreDense, 75);
 				}
 			}
 		}
@@ -408,7 +408,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * (2 * baseMultiplier), 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
 				}
 				else
 				{
