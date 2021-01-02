@@ -1,0 +1,34 @@
+{
+	x: -4.0d,
+	y: 4.0d,
+	dependencies: [
+		"1cf9da14"
+	],
+	tasks: [{
+		uid: "0e6aa96c",
+		type: "item",
+		items: [{
+			item: "magneticraft:sluice_box"
+		}]
+	}],
+	rewards: [{
+		uid: "05f14d3a",
+		type: "item",
+		item: {
+			id: "thermalexpansion:device",
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				SideCache: [B;
+					0b,
+					1b,
+					0b,
+					0b,
+					0b,
+					0b
+				]
+			}
+		}
+	}]
+}

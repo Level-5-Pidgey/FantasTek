@@ -130,7 +130,7 @@ val magneticraftRecipes_CRAFTINGTABLE = {
 	<magneticraft:multiblock_parts:5> * 8 : [[<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>], [<ore:ingotIron>, null, <ore:ingotIron>], [<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>]],
 	<magneticraft:multiblock_parts:1> * 8 : [[<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>], [<ore:blockQuartz>, <advancedrocketry:ic>, <ore:blockQuartz>], [<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>]],
 	<magneticraft:multiblock_parts> * 4 : [[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>], [<ore:ingotIron>, motor, <ore:ingotIron>], [<ore:ingotConductiveIron>, <ore:plateConductiveIron>, <ore:ingotConductiveIron>]],
-	//<magneticraft:iron_pipe> * 16 : [[<ore:ingotIron>, null, <ore:ingotIron>], [<ore:nuggetIron>, <ore:blockGlassColorless>, <ore:nuggetIron>], [<ore:ingotIron>, null, <ore:ingotIron>]],
+	<magneticraft:iron_pipe> * 16 : [[<ore:ingotBronze>, null, <ore:ingotBronze>], [<ore:nuggetBronze>, <ore:blockGlassColorless>, <ore:nuggetBronze>], [<ore:ingotBronze>, null, <ore:ingotBronze>]],
 	<magneticraft:heat_pipe> * 5 : [[null, <ore:ingotIron>, null], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [null, <ore:ingotIron>, null]],
 	<magneticraft:insulated_heat_pipe> * 5 : [[<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>]],
 	<magneticraft:feeding_trough> : [[<ore:stickWood>, null, <ore:stickWood>], [<ore:plateWood>, null, <ore:plateWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]],
@@ -157,6 +157,7 @@ val magneticraftRecipes_EXTENDEDCRAFTING = {
 	<magneticraft:rf_heater> : [[<ore:ingotIron>, <ore:ingotRedstoneAlloy>, <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:multiblock_parts:2>, <ore:ingotIron>], [<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>]],
 	<magneticraft:electric_engine> : [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [null, <ore:blockGlassColorless>, null], [motor, <minecraft:piston>, motor]],
 	<magneticraft:electric_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:ingotBrick>, scripts.helpers.FrameTiers[0], <ore:ingotBrick>], [<ore:ingotBrick>, <magneticraft:crafting:2>, <ore:ingotBrick>]],
+	<magneticraft:sluice_box> : [[<ore:plateSealedWood>, <ore:stickWood>, null], [<magneticraft:crafting:5>, <ore:plateSealedWood>, <ore:stickWood>], [<ore:slabStone>, <ore:slabStone>, <ore:slabStone>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in magneticraftRecipes_EXTENDEDCRAFTING {

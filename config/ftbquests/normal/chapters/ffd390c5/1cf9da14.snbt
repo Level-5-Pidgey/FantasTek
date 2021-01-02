@@ -30,5 +30,15 @@
 		{
 			item: "magneticraft:rocky_chunks 1 14"
 		}]
+	}],
+	rewards: [{
+		uid: "d3830bf6",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "quark:long_haste"
+			}
+		}
 	}]
 }

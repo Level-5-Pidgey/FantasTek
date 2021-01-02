@@ -309,48 +309,6 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 		}
 
-		//Magneticraft Grinder -- Tier 2 (2x)
-		if(tier <= 2)
-		{
-			//Standard Ores
-			for ore in oreBlock.items
-			{
-				if(!rockyChunk.empty)
-				{
-					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem * baseMultiplier, <minecraft:gravel>, 0.33, (tier + 1) * 40, true);
-				}
-				else if (!nativeCluster.empty)
-				{
-					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem * baseMultiplier, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
-				}
-				else if (!oreDust.empty)
-				{
-					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier), <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
-				}
-				else
-				{
-					print("Skipped Magneticraft Grinder outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
-				}
-			}
-
-			//Dense Ores
-			for oreDense in oreDouble.items
-			{
-				if(!rockyChunk.empty)
-				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, rockyChunk.firstItem * 2, <minecraft:gravel>, 0.33, (tier + 1) * 80, true);
-				}
-				else if (!nativeCluster.empty)
-				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, nativeCluster.firstItem * 2, <minecraft:gravel>, 0.5, (tier + 1) * 80, true);
-				}
-				else if (!oreDust.empty)
-				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, oreDust.firstItem * 4, <minecraft:gravel>, 0.5, (tier + 1) * 80, true);
-				}
-			}
-		}
-
 		//Blood Magic Alchemy Table -- Tier 2 (2x)
 		if(tier <= 2)
 		{
@@ -480,6 +438,85 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			scripts.mmhelper.AddOreWashingRecipe(craftingMaterial, tier);
 		}
 
+		//Advanced Rocketry Arc Furnace -- Tier 2 (2x)
+		if(tier <= 3)
+		{
+			if(!oreGem.empty)
+			{
+				//Standard Ores
+				for ore in oreBlock.items
+				{
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (2 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 120, ore, <minecraft:sand>);
+				}
+
+				//Dense Ores
+				for oreDense in oreDouble.items
+				{
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (4 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 240, oreDense, <minecraft:sand>);
+				}
+			}
+			else if(!oreIngot.empty)
+			{
+				//Standard Ores
+				for ore in oreBlock.items
+				{
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (2 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 120, ore, <minecraft:sand>);
+				}
+
+				//Dense Ores
+				for oreDense in oreDouble.items
+				{
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 240, oreDense, <minecraft:sand>);
+				}
+			}
+			else
+			{
+				print("Skipped Advanced Rocketry Arc Furnace outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+			}
+		}
+
+		//Magneticraft Grinder -- Tier 3 (2x)
+		if(tier <= 3)
+		{
+			//Standard Ores
+			for ore in oreBlock.items
+			{
+				if(!rockyChunk.empty)
+				{
+					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem * baseMultiplier, <minecraft:gravel>, 0.33, (tier + 1) * 40, true);
+				}
+				else if (!nativeCluster.empty)
+				{
+					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem * baseMultiplier, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+				}
+				else if (!oreDust.empty)
+				{
+					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier), <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+				}
+				else
+				{
+					print("Skipped Magneticraft Grinder outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
+				}
+			}
+
+			//Dense Ores
+			for oreDense in oreDouble.items
+			{
+				if(!rockyChunk.empty)
+				{
+					mods.magneticraft.Grinder.addRecipe(oreDense, rockyChunk.firstItem * 2, <minecraft:gravel>, 0.33, (tier + 1) * 80, true);
+				}
+				else if (!nativeCluster.empty)
+				{
+					mods.magneticraft.Grinder.addRecipe(oreDense, nativeCluster.firstItem * 2, <minecraft:gravel>, 0.5, (tier + 1) * 80, true);
+				}
+				else if (!oreDust.empty)
+				{
+					mods.magneticraft.Grinder.addRecipe(oreDense, oreDust.firstItem * 4, <minecraft:gravel>, 0.5, (tier + 1) * 80, true);
+				}
+			}
+		}
+
 		//Astral Sorcery Starlight Infusion -- Tier 3 (3x)
 		if(tier <= 3)
 		{
@@ -548,15 +585,21 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		}
 
 		//Induction Furnace (Basic Catalysts) -- Tier 4 (3x)
-		if(tier <= 4)
+		//TODO Re-Enable this.
+		if(tier > 99)
 		{
 			if(!oreGem.empty)
 			{
-				//Standard Ores
-				//Normal Slag
-				scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 1, 33);
-				//Rich Slag
-				scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 2, 80);
+				for ore in oreBlock.items
+				{
+					//Standard Ores
+					//Normal Slag
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, ore, ((tier + 1) * 3000), oreGem.firstItem * baseMultiplier, 33);
+					mods.enderio.AlloySmelter.addRecipe(oreGem.firstItem * (3 * baseMultiplier), [<thermalfoundation:material:864>, ore], ((tier + 1) * 3000));
+					//Rich Slag
+					mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, ore, ((tier + 1) * 3000), oreGem.firstItem * baseMultiplier, 33);
+					mods.enderio.AlloySmelter.addRecipe(oreGem.firstItem * (4 * baseMultiplier), [<thermalfoundation:material:865>, ore], ((tier + 1) * 3000));
+				}
 
 				//Dense Ore
 				if(!oreDouble.empty)
@@ -564,9 +607,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 					for oreDense in oreDouble.items
 					{
 						//Normal Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 2, 33);
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * (2 * baseMultiplier), 33);
+						mods.enderio.AlloySmelter.addRecipe(oreGem.firstItem * (6 * baseMultiplier), [<thermalfoundation:material:864>, oreDense], ((tier + 1) * 3000));
 						//Rich Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreGem.firstItem * 4, 80);
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreGem.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 3000), oreGem.firstItem * (2 * baseMultiplier), 33);
+						mods.enderio.AlloySmelter.addRecipe(oreGem.firstItem * (8 * baseMultiplier), [<thermalfoundation:material:865>, oreDense], ((tier + 1) * 3000));
 					}
 				}
 			}
@@ -574,11 +619,16 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!oreDustSmall.empty)
 				{
-					//Standard Ores
-					//Normal Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 3, 33);
-					//Rich Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 80);
+					for ore in oreBlock.items
+					{
+						//Standard Ores
+						//Normal Slag
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, ore, ((tier + 1) * 3000), oreDustSmall.firstItem * baseMultiplier, 33);
+						mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), [<thermalfoundation:material:864>, ore], ((tier + 1) * 3000));
+						//Rich Slag
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, ore, ((tier + 1) * 3000), oreDustSmall.firstItem * baseMultiplier, 33);
+						mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), [<thermalfoundation:material:865>, ore], ((tier + 1) * 3000));
+					}
 
 					//Dense Ores
 					if(!oreDouble.empty)
@@ -586,27 +636,39 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 						for oreDense in oreDouble.items
 						{
 							//Normal Slag
-							scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 6, 33);
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * (2 * baseMultiplier), 33);
+							mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), [<thermalfoundation:material:864>, oreDense], ((tier + 1) * 3000));
 							//Rich Slag
-							scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreDustSmall.firstItem * 12, 80);
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 3000), oreDustSmall.firstItem * (2 * baseMultiplier), 33);
+							mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), [<thermalfoundation:material:865>, oreDense], ((tier + 1) * 3000));
 						}
 					}
 				}
 				else
 				{
-					//Standard Ores
-					//Normal Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem, 33);
-					//Rich Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 2, 80);
+					for ore in oreBlock.items
+					{
+						//Standard Ores
+						//Normal Slag
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, ore, ((tier + 1) * 3000), oreIngot.firstItem * baseMultiplier, 33);
+						mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), [<thermalfoundation:material:864>, ore], ((tier + 1) * 3000));
+						//Rich Slag
+						mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, ore, ((tier + 1) * 3000), oreIngot.firstItem * baseMultiplier, 33);
+						mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), [<thermalfoundation:material:865>, ore], ((tier + 1) * 3000));
+					}
 
 					//Dense Ores
 					if(!oreDouble.empty)
 					{
-						//Normal Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (6 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 2, 80);
-						//Rich Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreBlock.firstItem, ((tier + 1) * 3000), oreIngot.firstItem * 4, 80);
+						for oreDense in oreDouble.items
+						{
+							//Normal Slag
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 3000), oreIngot.firstItem * (2 * baseMultiplier), 33);
+							mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (3 * baseMultiplier), [<thermalfoundation:material:864>, oreDense], ((tier + 1) * 3000));
+							//Rich Slag
+							mods.thermalexpansion.InductionSmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 3000), oreIngot.firstItem * (2 * baseMultiplier), 33);
+							mods.enderio.AlloySmelter.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), [<thermalfoundation:material:865>, oreDense], ((tier + 1) * 3000));
+						}
 					}
 				}
 			}
@@ -690,12 +752,6 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 		}
 
-		//Induction Furnace (Advanced Catalysts) -- Tier 5 (4x)
-		if(tier <= 5)
-		{
-			//TODO
-		}
-
 		//Mekanism Chemical Injection Chamber -- Tier 6 (4x)
 		if(tier <= 6)
 		{
@@ -727,43 +783,6 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					mods.mekanism.chemical.injection.addRecipe(oreDense, <gas:hydrogenchloride> * 200, oreGem.firstItem * scripts.helpers.mathMin((16 * baseMultiplier), 64));
 				}
-			}
-		}
-
-		//Advanced Rocketry Arc Furnace -- Tier 6 (4x)
-		if(tier <= 6)
-		{
-			if(!oreGem.empty)
-			{
-				//Standard Ores
-				for ore in oreBlock.items
-				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (4 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
-				}
-
-				//Dense Ores
-				for oreDense in oreDouble.items
-				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (8 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
-				}
-			}
-			else if(!oreIngot.empty)
-			{
-				//Standard Ores
-				for ore in oreBlock.items
-				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, ore, <minecraft:sand>);
-				}
-
-				//Dense Ores
-				for oreDense in oreDouble.items
-				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (8 * baseMultiplier), ((tier + 1) * 120) / 3, (tier + 1) * 75, oreDense, <minecraft:sand>);
-				}
-			}
-			else
-			{
-				print("Skipped Advanced Rocketry Arc Furnace outputs for " ~ craftingMaterial ~ " as no possible outputs were found.");
 			}
 		}
 

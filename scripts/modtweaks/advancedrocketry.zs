@@ -75,7 +75,7 @@ for key, value in vulpesCoils {
 //Crafting Recipes
 val advancedRocketryRecipes = {
 		<advancedrocketry:platepress> : [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]],
-		<advancedrocketry:blastbrick> * 2 : [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <minecraft:magma_cream>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]],
+		<advancedrocketry:blastbrick> * 2 : [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <ore:ingotBrickNether>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in advancedRocketryRecipes {
@@ -83,7 +83,7 @@ for key, value in advancedRocketryRecipes {
 	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
 }
 
-//Crafting Microchips
+//Crafting Rudimentary Logic Circuit
 mods.forestry.Carpenter.addRecipe(<advancedrocketry:ic> * 2, [[null, <ore:nuggetConductiveIron>, null], [null, <projectred-core:resource_item:342>, null], [null, <ore:nuggetConductiveIron>, null]], 160, <liquid:water> * 200);
 
 print("### Advanced Rocketry Init Complete ###");

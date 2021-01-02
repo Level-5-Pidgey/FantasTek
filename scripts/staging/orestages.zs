@@ -240,7 +240,6 @@ var DenseAndPoorOres as crafttweaker.item.IItemStack[crafttweaker.item.IItemStac
 };
 
 //Staging Dense/Poor Ore Blocks
-//TODO Remake this. This solution is really inefficient.
 for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
 	for oreBlock, replaceWith in DenseAndPoorOres

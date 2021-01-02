@@ -7,8 +7,6 @@ var stageString = stages.Botania2.stage;
 
 //Mod Staging
 val BotainaMods = [
-  "botania",
-  "botania_tweaks"
 ] as string[];
 
 for modTag in BotainaMods

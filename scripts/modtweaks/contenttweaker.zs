@@ -89,27 +89,27 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(scripts.helpers.createRecip
 //Add elemental crystal crafting
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_air>), <contenttweaker:astral_crystal_air>, 200, 80,
 [
- null, scripts.helpers.T1MagicAirIngredients[0], null,
- scripts.helpers.T1MagicAirIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicAirIngredients[1],
- null, scripts.helpers.T1MagicAirIngredients[2], null
+	null, scripts.helpers.T1MagicAirIngredients[0], null,
+	scripts.helpers.T1MagicAirIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicAirIngredients[1],
+	null, scripts.helpers.T1MagicAirIngredients[2], null
 ]); //Air
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_fire>), <contenttweaker:astral_crystal_fire>, 200, 80,
 [
- null, scripts.helpers.T1MagicFireIngredients[0], null,
- scripts.helpers.T1MagicFireIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicFireIngredients[1],
- null, scripts.helpers.T1MagicFireIngredients[2], null
+	null, scripts.helpers.T1MagicFireIngredients[0], null,
+	scripts.helpers.T1MagicFireIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicFireIngredients[1],
+	null, scripts.helpers.T1MagicFireIngredients[2], null
 ]); //Fire
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_water>), <contenttweaker:astral_crystal_water>, 200, 80,
 [
- null, scripts.helpers.T1MagicWaterIngredients[0], null,
- scripts.helpers.T1MagicWaterIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicWaterIngredients[1],
- null, scripts.helpers.T1MagicWaterIngredients[2], null
+	null, scripts.helpers.T1MagicWaterIngredients[0], null,
+	scripts.helpers.T1MagicWaterIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicWaterIngredients[1],
+	null, scripts.helpers.T1MagicWaterIngredients[2], null
 ]); //Water
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe(scripts.helpers.createRecipeName(<contenttweaker:astral_crystal_earth>), <contenttweaker:astral_crystal_earth>, 200, 80,
 [
- null, scripts.helpers.T1MagicEarthIngredients[0], null,
- scripts.helpers.T1MagicEarthIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicEarthIngredients[1],
- null, scripts.helpers.T1MagicEarthIngredients[2], null
+	null, scripts.helpers.T1MagicEarthIngredients[0], null,
+	scripts.helpers.T1MagicEarthIngredients[3], mods.astralsorcery.Utils.getCrystalORIngredient(false, false), scripts.helpers.T1MagicEarthIngredients[1],
+	null, scripts.helpers.T1MagicEarthIngredients[2], null
 ]); //Earth
 
 //Add Credits to food items
@@ -143,33 +143,33 @@ val foodRecipes = {
 	<contenttweaker:chocolate> * 2 : [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")],
 	<contenttweaker:chicken_bucket> : [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>],
 	<contenttweaker:pocky> * 8 : [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]
-} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+	} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
-for key, value in foodRecipes {
-	recipes.remove(key.withAmount(1));
-	recipes.addShapeless(scripts.helpers.createRecipeName(key.withAmount(1)), key, value);
-}
+	for key, value in foodRecipes {
+		recipes.remove(key.withAmount(1));
+		recipes.addShapeless(scripts.helpers.createRecipeName(key.withAmount(1)), key, value);
+	}
 
-//Currency Combination/Splitting Recipes
-val currencyItems =
-[
+	//Currency Combination/Splitting Recipes
+	val currencyItems =
+	[
 	<contenttweaker:currency_4>,
 	<contenttweaker:currency_20>,
 	<contenttweaker:currency_100>,
 	<contenttweaker:currency_500>,
 	<contenttweaker:currency_2500>,
 	<contenttweaker:currency_12500>
-] as crafttweaker.item.IItemStack[];
+	] as crafttweaker.item.IItemStack[];
 
-for i, item in currencyItems {
-	val j as int = i - 1;
+	for i, item in currencyItems {
+		val j as int = i - 1;
 
-	if (j >= 0)
-	{
-		mods.thermalexpansion.Factorizer.addRecipeBoth(currencyItems[i], currencyItems[j] * 5);
+		if (j >= 0)
+		{
+			mods.thermalexpansion.Factorizer.addRecipeBoth(currencyItems[i], currencyItems[j] * 5);
+		}
+
+		scripts.helpers.AddTooltip(item, ["Intergalactic Currency Format.", "Can be exchanged for goods and services!", "Will always drop on death if in your inventory.", "Despawns 2 minutes after being dropped on death!", "Careful of Outlaws that might want to steal your creds."]);
 	}
 
-	scripts.helpers.AddTooltip(item, ["Intergalactic Currency Format.", "Can be exchanged for goods and services!", "Will always drop on death if in your inventory.", "Despawns 2 minutes after being dropped on death!", "Careful of Outlaws that might want to steal your creds."]);
-}
-
-print("### ContentTweaker recipes Init Complete ###");
+	print("### ContentTweaker recipes Init Complete ###");

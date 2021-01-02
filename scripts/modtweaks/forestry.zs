@@ -131,9 +131,9 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:s
 recipes.remove(<forestry:fertilizer_compound>);
 recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression1.stage ~ "_1", <forestry:fertilizer_compound> * 4, [[null, <ore:dustAsh>, null], [<ore:dustAsh>, <minecraft:dye:15>, <ore:dustAsh>], [null, <ore:dustAsh>, null]]);
 recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression1.stage ~ "_2", <forestry:fertilizer_compound> * 2, [[null, <minecraft:wheat>, null], [<minecraft:wheat>, <minecraft:dye:15>, <minecraft:wheat>], [null, <minecraft:wheat>, null]]);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression2.stage ~ "_1", <forestry:fertilizer_compound> * 4, [[null, <ore:sand>, null], [<ore:sand>, <ore:dustApatite>, <ore:sand>], [null, <ore:sand>, null]]);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression2.stage ~ "_2", <forestry:fertilizer_compound> * 8, [[null, <ore:dustAsh>, null], [<ore:dustAsh>, <ore:dustApatite>, <ore:dustAsh>], [null, <ore:dustAsh>, null]]);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression2.stage ~ "_3", <forestry:fertilizer_compound> * 24, [[<ore:dustWood>, <ore:dustSaltpeter>, <ore:dustWood>], [<ore:dustSaltpeter>, <ore:dustApatite>, <ore:dustSaltpeter>], [<ore:dustWood>, <ore:dustSaltpeter>, <ore:dustWood>]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression2.stage ~ "_1", scripts.helpers.stages.progression2.stage, <forestry:fertilizer_compound> * 4, [[null, <ore:sand>, null], [<ore:sand>, <ore:dustApatite>, <ore:sand>], [null, <ore:sand>, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression2.stage ~ "_2", scripts.helpers.stages.progression2.stage, <forestry:fertilizer_compound> * 8, [[null, <ore:dustAsh>, null], [<ore:dustAsh>, <ore:dustApatite>, <ore:dustAsh>], [null, <ore:dustAsh>, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ scripts.helpers.stages.progression2.stage ~ "_3", scripts.helpers.stages.progression2.stage, <forestry:fertilizer_compound> * 24, [[<ore:dustWood>, <ore:dustSaltpeter>, <ore:dustWood>], [<ore:dustSaltpeter>, <ore:dustApatite>, <ore:dustSaltpeter>], [<ore:dustWood>, <ore:dustSaltpeter>, <ore:dustWood>]]);
 
 //Broken Pickaxes Remove Salvage Recipe
 mods.forestry.Carpenter.removeRecipe(<forestry:broken_bronze_shovel>);
@@ -182,5 +182,8 @@ recipes.remove(<forestry:engine_peat>);
 mods.forestry.Carpenter.addRecipe(<forestry:engine_peat> * 2, [[<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>], [null, <ore:blockGlass>, null], [<magneticraft:crafting:2>, <minecraft:piston>, <ore:gearGold>]], 240, <liquid:water> * 1000); //Peat-Fired Engine
 recipes.remove(<forestry:engine_biogas>);
 mods.forestry.Carpenter.addRecipe(<forestry:engine_biogas> * 2, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], [null, <ore:blockGlass>, null], [<ore:gearConductiveIron>, <minecraft:piston>, <magneticraft:crafting:2>]], 240, <liquid:water> * 1000); //Peat-Fired Engine
+
+//Remove Bronze Ingot Creation
+recipes.removeByRecipeName("forestry:bronze_ingot");
 
 print("### Forestry Init Complete ###");

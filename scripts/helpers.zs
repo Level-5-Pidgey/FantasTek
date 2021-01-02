@@ -248,12 +248,12 @@ static StageForProcessingTier as Stage[int]=
     0 : stages.progression1,
     1 : stages.progression1,
     2 : stages.progression2,
-    3 : stages.progression2,
-    4 : stages.progression2,
-    5 : stages.progression2,
-    6 : stages.progression2,
-    7 : stages.progression2,
-    8 : stages.progression2,
+    3 : stages.progression3,
+    4 : stages.progression3,
+    5 : stages.progression3,
+    6 : stages.progression3,
+    7 : stages.progression3,
+    8 : stages.progression3,
 };
 
 function getLiquidStringFromObject(liquid as ILiquidStack) as string
@@ -451,8 +451,11 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
     }
 
     //EnderIO Alloy Smelter
-    var inputArray = [input1, input2] as  crafttweaker.item.IItemStack[];
+    var inputArray = [input1, input2] as crafttweaker.item.IItemStack[];
     mods.enderio.AlloySmelter.addRecipe(output, inputArray, energyCost);
+
+    //Advanced Rocketry Arc Furnace
+    mods.advancedrocketry.ArcFurnace.addRecipe(output, energyCost / 120, 120, input1, input2, <minecraft:sand>);
 }
 
 function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int)
@@ -493,3 +496,37 @@ function addCrushingRecipe(output as crafttweaker.item.IItemStack, input as craf
 {
     addCrushingRecipeWithSecondary(output, input, energyCost, <minecraft:bedrock>, 0.0f);
 }
+
+function createAdvancedCraftingRecipe(
+    output as crafttweaker.item.IItemStack,
+    mainItems as crafttweaker.item.IIngredient[][],
+    extraItemCommon as crafttweaker.item.IIngredient,
+    extraItemUncommon as crafttweaker.item.IIngredient,
+    extraItemRare as crafttweaker.item.IIngredient,
+    recipeStringExtras as string,
+    allowAlternateCrafting as bool
+    )
+    {
+        //Main ExtendedCrafting Recipe
+        mods.extendedcrafting.TableCrafting.addShaped(0, output, [
+        	[extraItemRare, extraItemCommon, extraItemUncommon, extraItemCommon, extraItemRare],
+        	[extraItemCommon, mainItems[0][0], mainItems[0][1], mainItems[0][2], extraItemCommon],
+        	[extraItemUncommon, mainItems[1][0], mainItems[1][1], mainItems[1][2], extraItemUncommon],
+        	[extraItemCommon, mainItems[2][0], mainItems[2][1], mainItems[2][2], extraItemCommon],
+        	[extraItemRare, extraItemCommon, extraItemUncommon, extraItemCommon, extraItemRare]
+        ]);
+
+        //If Alternate Recipes are allowed, create them as well
+        if(allowAlternateCrafting)
+        {
+            //Next Stage Crafting Recipe
+            mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ recipeStringExtras, scripts.helpers.stages.progression3.stage, output, [[mainItems[0][0], mainItems[0][1], mainItems[0][2]], [mainItems[1][0], mainItems[1][1], mainItems[1][2]], [mainItems[2][0], mainItems[2][1], mainItems[2][2]]]);
+
+            //Astral Sorcery Cheaper Crafting
+            mods.astralsorcery.Altar.addAttunementAltarRecipe("fantastek:shaped/internal/altar/" ~ scripts.helpers.createRecipeName(output) ~ recipeStringExtras, output, 500, 160, [
+			mainItems[0][0], mainItems[0][1], mainItems[0][2],
+			mainItems[1][0], mainItems[1][1], mainItems[1][2],
+			mainItems[2][0], mainItems[2][1], mainItems[2][2],
+			extraItemRare, extraItemRare, extraItemRare, extraItemRare]);
+        }
+    }

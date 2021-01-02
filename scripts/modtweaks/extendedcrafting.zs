@@ -13,8 +13,7 @@ mods.tconstruct.Casting.addTableRecipe(<ore:nuggetBlackIron>.firstItem, <tconstr
 mods.tconstruct.Casting.addTableRecipe(<extendedcrafting:material:2>, <tconstruct:cast_custom:3>, <liquid:black_iron>, 360, false);
 mods.tconstruct.Casting.addBasinRecipe(<ore:blockBlackIron>.firstItem, null, <liquid:black_iron>, 1296);
 //Machines
-mods.thermalexpansion.InductionSmelter.addRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <ore:obsidian>.firstItem, 3000);
-mods.enderio.AlloySmelter.addRecipe(<ore:ingotBlackIron>.firstItem * 2, [<ore:ingotIron>, <ore:obsidian>], 3000);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <ore:obsidian>.firstItem, 3000);
 //Crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<extendedcrafting:material:2>), <extendedcrafting:material:2> * 2, [<embers:tinker_hammer>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>]);
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:ingotBlackIron>.firstItem), <ore:ingotBlackIron>.firstItem, [<embers:tinker_hammer>, <ore:ingotIron>, <ore:obsidian>]);
@@ -48,5 +47,20 @@ for item in scripts.helpers.CircuitTiers[0].items
 		[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]
 	]);
 }
+
+//Advanced (T2) Crafting Table + Components
+recipes.remove(<extendedcrafting:material:15>);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:material:15>), scripts.staging.stages.progression2.stage, <extendedcrafting:material:15>, [[<extendedcrafting:material:2>, <extendedcrafting:material:7>], [<ore:ingotBronze>, <ore:ingotBronze>]]);
+recipes.remove(<extendedcrafting:table_advanced>);
+
+for i, unused in scripts.helpers.AllFireT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_advanced>, [
+		[<ore:ingotBlackIron>, scripts.helpers.AllAirT1Items[i], <ore:ingotBlackIron>],
+		[scripts.helpers.AllEarthT1Items[i], <extendedcrafting:material:9>, scripts.helpers.AllWaterT1Items[i]],
+		[<ore:ingotBlackIron>, scripts.helpers.AllFireT1Items[i], <ore:ingotBlackIron>]
+	]);
+}
+
 
 print("### ExtendedCrafting Init Complete ###");

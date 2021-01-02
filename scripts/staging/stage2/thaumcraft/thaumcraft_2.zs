@@ -7,8 +7,6 @@ var stageString = stages.Thaumcraft2.stage;
 
 //Mod Staging
 val ThaumcraftMods = [
-  "thaumicperiphery",
-  "thaumcraft"
 ] as string[];
 
 for modTag in ThaumcraftMods

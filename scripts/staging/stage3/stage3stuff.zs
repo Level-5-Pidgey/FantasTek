@@ -28,7 +28,6 @@ val stage3_stageMods = [
   "reccomplex",
   "witherskelefix",
   "packagedauto",
-  "contenttweaker",
   "enderstorage"
 ] as string[];
 

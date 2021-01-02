@@ -7,8 +7,6 @@ var stageString = stages.BloodMagic2.stage;
 
 //Mod Staging
 val BloodMagicMods = [
-  "bloodmagic",
-  "animus"
 ] as string[];
 
 for modTag in BloodMagicMods
