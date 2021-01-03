@@ -58,13 +58,35 @@ for circuit in scripts.helpers.CircuitTiers[0].items
 	mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:energycube>.withTag({tier: 0}), [[<ore:plateSteel>, <magneticraft:battery_item_medium>, <ore:plateSteel>], [<ore:ingotRedstoneAlloy>, circuit, <ore:ingotRedstoneAlloy>], [<ore:plateSteel>, <magneticraft:battery_item_medium>, <ore:plateSteel>]]);
 }
 
-//Create Basic Bins
-recipes.remove(<mekanism:basicblock:6>.withTag({tier: 0}));
-scripts.helpers.AddTooltip(<mekanism:basicblock:6>.withTag({tier: 0}), ["Stores 3456 of one item within", "Can hold a double chest's worth of blocks in one space, basically!"]);
-mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:6>.withTag({tier: 0}), [[<ore:stone>, <advancedrocketry:ic>, <ore:stone>], [<ore:gearRedstoneAlloy>, <ore:shulkerShell>, <ore:gearRedstoneAlloy>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+//Remove Crafting Recipes from Mekanism Storage Blocks
+val MekanismUtilityBlocks = [
+	<mekanism:machineblock2:11>.withTag({tier: 0}),
+	<mekanism:machineblock2:11>.withTag({tier: 1}),
+	<mekanism:machineblock2:11>.withTag({tier: 2}),
+	<mekanism:machineblock2:11>.withTag({tier: 3}),
+	<mekanism:machineblock2:11>.withTag({tier: 4}),
+	<mekanism:energycube>.withTag({tier: 1}),
+	<mekanism:energycube>.withTag({tier: 2}),
+	<mekanism:energycube>.withTag({tier: 3}),
+	<mekanism:energycube>.withTag({tier: 4}),
+	<mekanism:basicblock:6>.withTag({tier: 0}),
+	<mekanism:basicblock:6>.withTag({tier: 1}),
+	<mekanism:basicblock:6>.withTag({tier: 2}),
+	<mekanism:basicblock:6>.withTag({tier: 3}),
+	<mekanism:basicblock:6>.withTag({tier: 4})
+] as crafttweaker.item.IItemStack[];
 
-//Create Basic Fluid Tanks
-recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 0}));
-mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.withTag({tier: 0}), [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:plateSteel>, null, <ore:plateSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]]);
+for block in MekanismUtilityBlocks
+{
+	recipes.remove(block);
+	scripts.helpers.AddTooltip(<oeintegration:excavatemodifier>, ["Uncraftable.", "Try using alternatives in other mods!"]);
+}
+
+//Tier 1 Circuit Crafting
+mods.mekanism.infuser.removeRecipe(scripts.helpers.CircuitTiers[1]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1], 250000, 12500, <projectred-core:resource_item:301>, [<ore:ingotElectrum>, <ore:dustRedstone>, <ore:ingotElectrum>, <ore:dustRedstone>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1], 100000, 12500, <ore:ingotElectrum>.firstItem, [<advancedrocketry:ic>, <advancedrocketry:ic>]);
+
+//Metal Casing Crafting
 
 print("### Mekanism Init Complete ###");

@@ -556,6 +556,7 @@ val StageLessItems = [
 	<rftools:storage_scanner>,
 	<rftools:storage_terminal>,
 	<extendedcrafting:trimmed:*>,
+	<mekanism:cardboardbox>
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

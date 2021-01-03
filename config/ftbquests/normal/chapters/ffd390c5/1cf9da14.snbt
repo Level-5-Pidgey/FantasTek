@@ -40,5 +40,11 @@
 				Potion: "quark:long_haste"
 			}
 		}
+	},
+	{
+		uid: "5d939caa",
+		type: "item",
+		item: "minecraft:tnt",
+		count: 16
 	}]
 }

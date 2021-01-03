@@ -146,15 +146,15 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustPulsatingIron>.fi
 
 //Change Crude Steel Crafting
 //Tinkers Melting
-mods.tconstruct.Casting.addTableRecipe(<ore:plateCrudeSteel>.firstItem, <tconstruct:cast_custom:3>, <liquid:crude_steel>, 144 * 4, false);
+mods.tconstruct.Casting.addTableRecipe(<ore:plateCrudeSteel>.firstItem, <tconstruct:cast_custom:3>, <liquid:crude_steel>, 144 * 2, false);
 mods.tconstruct.Casting.addTableRecipe(<ore:gearCrudeSteel>.firstItem, <tconstruct:cast_custom:4>, <liquid:crude_steel>, 144 * 4, false);
 //Machines
 mods.enderio.AlloySmelter.removeRecipe(<ore:ingotCrudeSteel>.firstItem);
 scripts.helpers.addAlloySmeltingRecipe(<ore:ingotCrudeSteel>.firstItem * 2, <ore:ingotIron>.firstItem, <contenttweaker:coke_dust>, 3000);
 
 //Crafting
-recipes.addShapeless(scripts.helpers.createRecipeName(<ore:plateCrudeSteel>.firstItem), <ore:plateCrudeSteel>.firstItem, [<embers:tinker_hammer>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]);
-recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearCrudeSteel>.firstItem), <ore:gearCrudeSteel>.firstItem, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<ore:plateCrudeSteel>.firstItem), <ore:plateCrudeSteel>.firstItem * 2, [<embers:tinker_hammer>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]);
+recipes.addShaped(scripts.helpers.createRecipeName(<ore:gearCrudeSteel>.firstItem), <ore:gearCrudeSteel>.firstItem, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, <ore:ingotIron>, <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
 
 //Change Redstone Alloy (EnderIO Ver) Crafting
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:3>);
@@ -193,7 +193,6 @@ mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:3>);
 furnace.addRecipe(<enderio:item_material:3>, <enderio:item_material:38>);
 
 //Carpenter Simple Machine Chassis
-mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>],[<ore:ingotCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotCrudeSteel>],[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>]], 60, <liquid:water> * 1000);
-mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[null, <ore:plateSteel>, null],[<ore:plateSteel>, <ore:ingotElectrotineAlloy>, <ore:plateSteel>],[null, <ore:plateSteel>, null]], 30, <liquid:water> * 500);
+mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[<ore:ingotCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotCrudeSteel>],[<ore:ingotElectrotineAlloy>, null, <ore:ingotElectrotineAlloy>],[<ore:ingotCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotCrudeSteel>]], 1200, <liquid:water> * 1000);
 
 print("### EnderIO Init Complete ###");

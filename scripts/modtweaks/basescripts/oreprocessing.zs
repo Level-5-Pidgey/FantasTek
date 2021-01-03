@@ -438,21 +438,21 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			scripts.mmhelper.AddOreWashingRecipe(craftingMaterial, tier);
 		}
 
-		//Advanced Rocketry Arc Furnace -- Tier 2 (2x)
-		if(tier <= 3)
+		//Advanced Rocketry Arc Furnace -- Tier 1 (2x)
+		if(tier <= 1)
 		{
 			if(!oreGem.empty)
 			{
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (2 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 120, ore, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (2 * baseMultiplier), (tier + 1) * 120, (tier + 1) * 30, ore, <minecraft:sand>);
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (4 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 240, oreDense, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreGem.firstItem * (4 * baseMultiplier), (tier + 1) * 240, (tier + 1) * 30, oreDense, <minecraft:sand>);
 				}
 			}
 			else if(!oreIngot.empty)
@@ -460,13 +460,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Standard Ores
 				for ore in oreBlock.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (2 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 120, ore, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (2 * baseMultiplier), (tier + 1) * 120, (tier + 1) * 30, ore, <minecraft:sand>);
 				}
 
 				//Dense Ores
 				for oreDense in oreDouble.items
 				{
-					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), (tier + 1) * 25, (tier + 1) * 240, oreDense, <minecraft:sand>);
+					mods.advancedrocketry.ArcFurnace.addRecipe(oreIngot.firstItem * (4 * baseMultiplier), (tier + 1) * 240, (tier + 1) * 30, oreDense, <minecraft:sand>);
 				}
 			}
 			else
@@ -475,23 +475,23 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 		}
 
-		//Magneticraft Grinder -- Tier 3 (2x)
-		if(tier <= 3)
+		//Magneticraft Grinder -- Tier 2 (2x)
+		if(tier <= 2)
 		{
 			//Standard Ores
 			for ore in oreBlock.items
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem * baseMultiplier, <minecraft:gravel>, 0.33, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem * baseMultiplier, <minecraft:gravel>, 0.33, (tier + 2) * 20, true);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem * baseMultiplier, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem * baseMultiplier, <minecraft:gravel>, 0.5, (tier + 2) * 20, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier), <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier), <minecraft:gravel>, 0.5, (tier + 2) * 20, true);
 				}
 				else
 				{
@@ -504,21 +504,21 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, rockyChunk.firstItem * 2, <minecraft:gravel>, 0.33, (tier + 1) * 80, true);
+					mods.magneticraft.Grinder.addRecipe(oreDense, rockyChunk.firstItem * 2, <minecraft:gravel>, 0.33, (tier + 1) * 40, true);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, nativeCluster.firstItem * 2, <minecraft:gravel>, 0.5, (tier + 1) * 80, true);
+					mods.magneticraft.Grinder.addRecipe(oreDense, nativeCluster.firstItem * 2, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, oreDust.firstItem * 4, <minecraft:gravel>, 0.5, (tier + 1) * 80, true);
+					mods.magneticraft.Grinder.addRecipe(oreDense, oreDust.firstItem * 4, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
 				}
 			}
 		}
 
-		//Astral Sorcery Starlight Infusion -- Tier 3 (3x)
-		if(tier <= 3)
+		//Astral Sorcery Starlight Infusion -- Tier 2 (3x)
+		if(tier <= 2)
 		{
 			//Standard Ore
 			for ore in oreBlock.items
@@ -551,8 +551,8 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 		}
 
-		//Thermal Expansion Pulverizer -- Tier 4 (3x)
-		if(tier <= 4)
+		//Thermal Expansion Pulverizer -- Tier 3 (3x)
+		if(tier <= 3)
 		{
 			if(!oreGem.empty)
 			{

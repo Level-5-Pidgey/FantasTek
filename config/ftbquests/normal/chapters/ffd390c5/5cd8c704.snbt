@@ -1,0 +1,26 @@
+{
+	icon: "advancedrocketry:arcfurnace",
+	x: 0.0d,
+	y: 2.0d,
+	dependencies: [
+		"fe6e8e40"
+	],
+	tasks: [{
+		uid: "bdd364ce",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:arcfurnace"
+		}]
+	}],
+	rewards: [{
+		uid: "8a92f6ea",
+		type: "item",
+		item: "libvulpes:holoprojector"
+	},
+	{
+		uid: "3678d8aa",
+		type: "item",
+		item: "advancedrocketry:blastbrick",
+		count: 15
+	}]
+}

@@ -48,11 +48,30 @@ for item in scripts.helpers.CircuitTiers[0].items
 	]);
 }
 
+//Change Ender Iron Recipes (Now Known as Pulsating Steel)
+recipes.removeByRecipeName("extendedcrafting:ender_ingot");
+mods.enderio.AlloySmelter.addRecipe(<extendedcrafting:material:36> * 2, [<ore:ingotIron>, <ore:enderpearl>, <ore:ingotSteel>], 7000);
+mods.enderio.AlloySmelter.addRecipe(<extendedcrafting:material:36> * 2, [<ore:dustIron>, <ore:dustEnderPearl>, <ore:dustSteel>], 6500);
+mods.enderio.AlloySmelter.addRecipe(<extendedcrafting:material:36> * 2, [<ore:ingotIron> * 2, <ore:enderpearl>, <ore:fuelCoke>], 7000);
+mods.enderio.AlloySmelter.addRecipe(<extendedcrafting:material:36> * 2, [<ore:dustIron> * 2, <ore:dustEnderPearl>, <ore:dustCoal> * 4], 6500);
+for steelIngot in <ore:ingotSteel>.items
+{
+	scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:36> * 2, <ore:ingotPulsatingIron>.firstItem, steelIngot, 7000);
+}
+for steelDust in <ore:dustSteel>.items
+{
+	scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:36> * 2, <ore:dustPulsatingIron>.firstItem, steelDust, 6500);
+}
+//Refined Ender Iron (Refined Pulsating Steel)
+mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:40>);
+mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:48>);
+scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:40>, <minecraft:ender_eye> * 4, <ore:netherStar>.firstItem, 33000);
+scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:48> * 4, <extendedcrafting:material:36> * 4, <extendedcrafting:material:40>, 10000);
+
 //Advanced (T2) Crafting Table + Components
 recipes.remove(<extendedcrafting:material:15>);
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:material:15>), scripts.staging.stages.progression2.stage, <extendedcrafting:material:15>, [[<extendedcrafting:material:2>, <extendedcrafting:material:7>], [<ore:ingotBronze>, <ore:ingotBronze>]]);
 recipes.remove(<extendedcrafting:table_advanced>);
-
 for i, unused in scripts.helpers.AllFireT1Items
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_advanced>, [
@@ -62,5 +81,29 @@ for i, unused in scripts.helpers.AllFireT1Items
 	]);
 }
 
+//Frame Alternator Crafting
+recipes.remove(<extendedcrafting:ender_alternator>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:ender_alternator>, [
+	[null, <minecraft:ender_eye>, null],
+	[null, <extendedcrafting:material:48>, null],
+	[<extendedcrafting:material:36>, <extendedcrafting:material:48>, <extendedcrafting:material:36>]
+]);
+
+//T2 Table Recipes
+val extendedCrafting_EXTENDEDCRAFTING_T2 = {
+ 	<extendedcrafting:crafting_core>		:	[[<ore:plateSteel>, scripts.helpers.CircuitTiers[0], <ore:plateSteel>],
+										 	[scripts.helpers.CircuitTiers[0], <extendedcrafting:frame>, scripts.helpers.CircuitTiers[0]],
+										 	[<ore:plateSteel>, scripts.helpers.CircuitTiers[0], <ore:plateSteel>],
+											[<ore:nuggetBronze>, <ore:ingotBlackIron>, <extendedcrafting:material:15>]],
+	<extendedcrafting:ender_crafter>	:	[[<minecraft:ender_eye>, <minecraft:ender_eye>, <minecraft:ender_eye>],
+										 	[<extendedcrafting:material:36>, scripts.helpers.FrameTiers[0], <extendedcrafting:material:36>],
+										 	[<extendedcrafting:material:36>, scripts.helpers.CircuitTiers[0], <extendedcrafting:material:36>],
+											[<ore:ingotPulsatingIron>.firstItem, <ore:workbench>, <ore:ingotPulsatingIron>.firstItem]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in extendedCrafting_EXTENDEDCRAFTING_T2 {
+	recipes.remove(key.withAmount(1));
+	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
+}
 
 print("### ExtendedCrafting Init Complete ###");

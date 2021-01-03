@@ -1,0 +1,21 @@
+
+tile.ec.crafting_core.name=Circuitry Assemblicator
+tile.ec.ender_alternator.name=Frame Alternator
+tile.ec.ender_crafter.name=Machine Frame Fabricator
+container.ec.crafting_core=Circuitry Assemblicator
+container.ec.ender_crafter=Machine Frame Fabricator
+jei.ec.combination_crafting=Circuitry Assemblicator
+jei.ec.ender_crafting=Machine Frame Fabricator
+
+item.ec.material_ender_ingot.name=Pulsating Steel Ingot
+item.ec.material_ender_nugget.name=Pulsating Steel Nugget
+
+item.ec.material_ender_star.name=Ender Star
+item.ec.material_ender_star_nugget.name=Ender Star Nugget
+
+item.ec.material_enhanced_ender_ingot.name=Enhanced Pulsating Steel Ingot
+item.ec.material_enhanced_ender_nugget.name=Enhanced Pulsating Steel Nugget
+
+guide.entry.combination_crafting=Circuitry Assembly
+guide.entry.combination_crafting.page.1=<b>Circuitry Assembly<r> is an in-world multi-block crafting setup where items are combined together to make something else. <n><n>This setup consists of a <red>Circuitry Assemblicator<r> in the center and <red>Pedestals<r> placed around it. <red>Pedestals<r> can be placed anywhere around the crafting core in a <red>3 block radius<r>, and must be on the same Y level. <red>Power<r> must be given to the <red>Circuitry Assemblicator<r> for this structure to function. <n><n>Recipes have a center item which goes on the <red>Circuitry Assemblicator<r>, and pedestal items which go on <red>Pedestals<r> around it.
+guide.entry.combination_crafting.page.2=Right clicking on the side of the <red>Crafting Core<r> will show you information about the current recipe, such as the progress or <red>power<r> cost, as well as how much <red>power<r> is stored in it.

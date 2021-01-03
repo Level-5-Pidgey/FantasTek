@@ -386,9 +386,10 @@ function createTierTooltip(prefixString as string, tier as int, plus1 as bool, s
     return finalText;
 }
 
-static CircuitTiers as crafttweaker.item.IIngredient[int] =
+static CircuitTiers as crafttweaker.item.IItemStack[int] =
 {
     0 : <advancedrocketry:ic>,
+    1 : <mekanism:controlcircuit>,
 };
 
 static FrameTiers as crafttweaker.item.IItemStack[int]=
@@ -455,7 +456,7 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
     mods.enderio.AlloySmelter.addRecipe(output, inputArray, energyCost);
 
     //Advanced Rocketry Arc Furnace
-    mods.advancedrocketry.ArcFurnace.addRecipe(output, energyCost / 120, 120, input1, input2, <minecraft:sand>);
+    mods.advancedrocketry.ArcFurnace.addRecipe(output, 1200, energyCost / 1200, input1, input2, <minecraft:sand>);
 }
 
 function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int)
@@ -476,6 +477,9 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
 
         //Thermal Expansion Pulverizer
         mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost, extraOutput, extraOutputChance);
+
+        //Magneticraft Grinder
+        mods.magneticraft.Grinder.addRecipe(input.items[0], output, extraOutput, chanceArray[1], energyCost / 45, true);
     }
     else
     {
@@ -486,6 +490,9 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
 
         //Thermal Expansion Pulverizer
         mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost);
+
+        //Magneticraft Grinder
+        mods.magneticraft.Grinder.addRecipe(input.items[0], output, <minecraft:gravel>, 0.0, energyCost / 45, true);
     }
 
     //Mekanism Crusher
@@ -520,7 +527,7 @@ function createAdvancedCraftingRecipe(
         if(allowAlternateCrafting)
         {
             //Next Stage Crafting Recipe
-            mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:fertilizer_compound>) ~ recipeStringExtras, scripts.helpers.stages.progression3.stage, output, [[mainItems[0][0], mainItems[0][1], mainItems[0][2]], [mainItems[1][0], mainItems[1][1], mainItems[1][2]], [mainItems[2][0], mainItems[2][1], mainItems[2][2]]]);
+            mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(output) ~ recipeStringExtras, scripts.helpers.stages.progression3.stage, output, [[mainItems[0][0], mainItems[0][1], mainItems[0][2]], [mainItems[1][0], mainItems[1][1], mainItems[1][2]], [mainItems[2][0], mainItems[2][1], mainItems[2][2]]]);
 
             //Astral Sorcery Cheaper Crafting
             mods.astralsorcery.Altar.addAttunementAltarRecipe("fantastek:shaped/internal/altar/" ~ scripts.helpers.createRecipeName(output) ~ recipeStringExtras, output, 500, 160, [

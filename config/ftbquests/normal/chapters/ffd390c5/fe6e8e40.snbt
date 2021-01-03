@@ -10,5 +10,11 @@
 		items: [{
 			item: "extendedcrafting:table_advanced"
 		}]
+	}],
+	rewards: [{
+		uid: "98aa34c1",
+		type: "item",
+		item: "minecraft:obsidian",
+		count: 16
 	}]
 }

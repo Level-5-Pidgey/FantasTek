@@ -1,6 +1,22 @@
 
 print("~~~ Begin Thermal Foundation Init ~~~");
 
+//Remove Manual Crafting of Blends
+val alloyBlends = [
+	<thermalfoundation:material:97>,
+	<thermalfoundation:material:98>,
+	<thermalfoundation:material:99>,
+	<thermalfoundation:material:100>,
+	<thermalfoundation:material:101>,
+	<thermalfoundation:material:102>,
+	<thermalfoundation:material:103>,
+] as crafttweaker.item.IItemStack[];
+
+for blend in alloyBlends
+{
+	recipes.remove(blend);
+}
+
 //Simple Recipe Changes for crafting bench
 val thermalRecipes_CRAFTINGTABLE = {
 	<thermalfoundation:material:657> : [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotIron>, <ore:gearCrudeSteel>, <ore:ingotIron>], [null, <ore:ingotIron>, <ore:ingotIron>]],
@@ -32,5 +48,8 @@ for rune in scripts.helpers.AllWaterT1Items
 //Factorizer
 recipes.remove(<thermalexpansion:device:10>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:device:10>, [[null, <ore:workbench>, null], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]]);
+
+//Grind up Coal Coke into Dust
+scripts.helpers.addCrushingRecipe(<contenttweaker:coke_dust>, <ore:fuelCoke>, 5000);
 
 print("### Thermal Foundation Init Complete ###");

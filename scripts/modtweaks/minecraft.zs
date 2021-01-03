@@ -35,4 +35,7 @@ mods.tconstruct.Casting.addTableRecipe(<ore:ingotNetherite>.firstItem, <tconstru
 mods.tconstruct.Casting.addBasinRecipe(<ore:blockNetherite>.firstItem, null, <liquid:netherite>, 1296);
 scripts.helpers.addAlloySmeltingRecipe(<ore:ingotNetherite>.firstItem * 1, <ore:ingotGold>.firstItem * 4, <ore:ingotAncientDebris>.firstItem * 4, 9000);
 
+//Add Furnace Ore Processing Tooltip
+<minecraft:furnace>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 0, false, " Ores, with a 1.0x output rate."));
+
 print("### Minecraft Init Complete ###");

@@ -1,0 +1,27 @@
+{
+	icon: "extendedcrafting:ender_crafter",
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"87be898f"
+	],
+	tasks: [{
+		uid: "0b30a3df",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 36"
+		}]
+	},
+	{
+		uid: "5a25d616",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:ender_crafter"
+		}]
+	}],
+	rewards: [{
+		uid: "1c3a5de4",
+		type: "item",
+		item: "extendedcrafting:ender_alternator"
+	}]
+}

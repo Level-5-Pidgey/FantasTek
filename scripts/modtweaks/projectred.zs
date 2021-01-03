@@ -109,7 +109,10 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_
 //Craft Silicon Plates with a Hammer/Compactor
 recipes.remove(<projectred-core:resource_item:301>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:301>), <projectred-core:resource_item:301> * 4, [<embers:tinker_hammer>, <ore:itemSilicon>]);
-mods.thermalexpansion.Compactor.addPressRecipe(<projectred-core:resource_item:301> * 8, <ore:itemSilicon>.firstItem, 350);
+for silicon in <ore:itemSilicon>.items
+{
+	mods.thermalexpansion.Compactor.addPressRecipe(<projectred-core:resource_item:301> * 8, silicon, 1250);
+}
 
 //Use Chisel to get logic Gates
 mods.chisel.Carving.addGroup("logic-gates");
