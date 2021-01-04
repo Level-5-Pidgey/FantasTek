@@ -96,13 +96,13 @@
 		uid: "13a2a130",
 		type: "item",
 		item: "minecraft:diamond",
-		count: 4
+		count: 8
 	},
 	{
 		uid: "2f9ef730",
 		type: "item",
 		item: "enderio:item_alloy_ingot 1 5",
-		count: 4
+		count: 16
 	},
 	{
 		uid: "bd682abb",

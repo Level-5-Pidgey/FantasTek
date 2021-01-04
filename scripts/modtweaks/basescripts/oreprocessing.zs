@@ -237,7 +237,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					if(!oreDustSmall.empty)
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (4 * (2 - tier)), ore, (tier + 1) * 5, oreDustSmall.firstItem * ((2 - tier) * baseMultiplier), 0.5, oreDustSmall.firstItem  * (2 - tier), 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * (4 * (2 - tier)) * baseMultiplier, ore, (tier + 1) * 5, oreDustSmall.firstItem * ((2 - tier) * baseMultiplier), 0.5, oreDustSmall.firstItem  * (2 - tier), 0.5);
 					}
 					else
 					{
@@ -257,7 +257,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					if(!oreDustSmall.empty)
 					{
-						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * ((4 * (2 - tier)) * 2), oreDense, (tier + 1) * 10, oreDustSmall.firstItem * ((2 - tier) * (2 * baseMultiplier)), 0.5, oreDustSmall.firstItem  * ((2 - tier) * 2), 0.5);
+						mods.appliedenergistics2.Grinder.addRecipe(oreDustSmall.firstItem * ((4 * (2 - tier)) * 2) * baseMultiplier, oreDense, (tier + 1) * 10, oreDustSmall.firstItem * ((2 - tier) * (2 * baseMultiplier)), 0.5, oreDustSmall.firstItem  * ((2 - tier) * 2), 0.5);
 					}
 					else
 					{
