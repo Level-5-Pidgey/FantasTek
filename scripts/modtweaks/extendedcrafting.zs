@@ -98,7 +98,7 @@ val extendedCrafting_EXTENDEDCRAFTING_T2 = {
 	<extendedcrafting:ender_crafter>	:	[[<minecraft:ender_eye>, <minecraft:ender_eye>, <minecraft:ender_eye>],
 										 	[<extendedcrafting:material:36>, scripts.helpers.FrameTiers[0], <extendedcrafting:material:36>],
 										 	[<extendedcrafting:material:36>, scripts.helpers.CircuitTiers[0], <extendedcrafting:material:36>],
-											[<ore:ingotPulsatingIron>.firstItem, <ore:workbench>, <ore:ingotPulsatingIron>.firstItem]],
+											[<ore:workbench>, null, <ore:platePulsatingIron>.firstItem]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in extendedCrafting_EXTENDEDCRAFTING_T2 {
