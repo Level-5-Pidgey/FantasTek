@@ -34,5 +34,11 @@
 				]
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "79137a99",
+		type: "item",
+		item: "enderio:item_alloy_ingot 1 5",
+		count: 16
 	}]
 }
