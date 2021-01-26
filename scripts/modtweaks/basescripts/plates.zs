@@ -52,7 +52,12 @@ val emberPlates =
 	<thermalfoundation:material:328>,
 	<jaopca:item_plateosmium>,
 	<libvulpes:productplate:7>,
-	<thermalfoundation:material:326>
+	<thermalfoundation:material:326>,
+	<jaopca:item_platelithium>,
+	<jaopca:item_plateboron>,
+	<jaopca:item_plateuranium>,
+	<jaopca:item_platethorium>,
+	<jaopca:item_platemagnesium>,
 ] as crafttweaker.item.IItemStack[];
 
 for emberPlate in emberPlates
@@ -138,12 +143,104 @@ val TConplates =
 	<contenttweaker:material_part:945>,
 	<contenttweaker:material_part:940>,
 	<contenttweaker:material_part:1298>,
-	<contenttweaker:material_part:1073>
+	<contenttweaker:material_part:1073>,
+	<jaopca:item_platelithium>,
+	<jaopca:item_plateboron>,
+	<jaopca:item_plateuranium>,
+	<jaopca:item_platethorium>,
+	<jaopca:item_platemagnesium>,
 ] as crafttweaker.item.IItemStack[];
 
 for TConplate in TConplates
 {
 	mods.tconstruct.Casting.removeTableRecipe(TConplate);
+}
+
+//Nuclearcraft Pressurizer Plates
+val ncPlates =
+[
+	<jaopca:item_platetopaz>,
+	<jaopca:item_platetanzanite>,
+	<jaopca:item_platesapphire>,
+	<jaopca:item_plateruby>,
+	<jaopca:item_platequartz>,
+	<jaopca:item_plateperidot>,
+	<jaopca:item_platemalachite>,
+	<jaopca:item_platelapis>,
+	<jaopca:item_plateenderbiotite>,
+	<jaopca:item_plateemerald>,
+	<jaopca:item_platedimensionalshard>,
+	<jaopca:item_platedilithium>,
+	<jaopca:item_platediamond>,
+	<jaopca:item_platecoal>,
+	<jaopca:item_platechargedcertusquartz>,
+	<jaopca:item_platecertusquartz>,
+	<jaopca:item_plateaquamarine>,
+	<jaopca:item_plateapatite>,
+	<jaopca:item_plateamethyst>,
+	<jaopca:item_plateamber>,
+	<jaopca:item_plateuranium>,
+	<jaopca:item_platetungsten>,
+	<jaopca:item_platethorium>,
+	<jaopca:item_plateosmium>,
+	<jaopca:item_platemagnesium>,
+	<jaopca:item_platelithium>,
+	<jaopca:item_platedraconium>,
+	<jaopca:item_platecobalt>,
+	<jaopca:item_plateboron>,
+	<jaopca:item_plateastralstarmetal>,
+	<jaopca:item_plateardite>,
+	<jaopca:item_plateancientdebris>,
+	<embers:plate_dawnstone>,
+	<contenttweaker:material_part:920>,
+	<contenttweaker:material_part:915>,
+	<contenttweaker:material_part:935>,
+	<contenttweaker:material_part:945>,
+	<contenttweaker:material_part:1298>,
+	<contenttweaker:material_part:930>,
+	<contenttweaker:material_part:955>,
+	<contenttweaker:material_part:940>,
+	<contenttweaker:material_part:965>,
+	<contenttweaker:material_part:970>,
+	<thaumcraft:plate:3>,
+	<thaumcraft:plate:2>,
+	<thaumcraft:plate>,
+	<advancedrocketry:productplate:1>,
+	<advancedrocketry:productplate>,
+	<libvulpes:productplate:7>,
+	<libvulpes:productplate:3>,
+	<redstonearsenal:material:128>,
+	<contenttweaker:material_part:950>,
+	<contenttweaker:material_part:1073>,
+	<contenttweaker:material_part:960>,
+	<contenttweaker:material_part:845>,
+	<contenttweaker:material_part:593>,
+	<contenttweaker:material_part:613>,
+	<contenttweaker:material_part:835>,
+	<thermalfoundation:material:359>,
+	<thermalfoundation:material:358>,
+	<thermalfoundation:material:357>,
+	<thermalfoundation:material:356>,
+	<thermalfoundation:material:355>,
+	<thermalfoundation:material:354>,
+	<thermalfoundation:material:353>,
+	<thermalfoundation:material:352>,
+	<thermalfoundation:material:328>,
+	<thermalfoundation:material:327>,
+	<thermalfoundation:material:326>,
+	<thermalfoundation:material:325>,
+	<thermalfoundation:material:324>,
+	<thermalfoundation:material:323>,
+	<thermalfoundation:material:322>,
+	<thermalfoundation:material:321>,
+	<thermalfoundation:material:320>,
+	<thermalfoundation:material:33>,
+	<thermalfoundation:material:32>,
+] as crafttweaker.item.IItemStack[];
+
+for ncPlate in ncPlates
+{
+	mods.nuclearcraft.pressurizer.removeRecipeWithOutput(ncPlate);
 }
 
 //TE Compactor
@@ -165,7 +262,6 @@ val CompactorPlates =
 	<thermalfoundation:material:167>,
 	<libvulpes:productingot:5>,
 	<biomesoplenty:gem:4>,
-	<contenttweaker:material_part:577>,
 	<thermalfoundation:material:164>,
 	<biomesoplenty:gem:5>,
 	<thermalfoundation:material:165>,
@@ -194,13 +290,11 @@ val CompactorPlates =
 	<thaumcraft:ingot>,
 	<tconstruct:ingots:1>,
 	<forestry:ingot_copper>,
-	<contenttweaker:material_part:858>,
 	<embers:ingot_nickel>,
 	<thermalfoundation:material:134>,
 	<contenttweaker:material_part:616>,
 	<redstonearsenal:material:32>,
 	<advancedrocketry:productingot>,
-	<contenttweaker:material_part:606>,
 	<minecraft:gold_ingot>,
 	<contenttweaker:material_part:838>,
 	<thaumcraft:ingot:2>,
@@ -223,7 +317,12 @@ val CompactorPlates =
 	<avaritia:resource:6>,
 	<enderio:item_alloy_endergy_ingot>,
 	<avaritia:resource:4>,
-	<futuremc:netherite_scrap>
+	<futuremc:netherite_scrap>,
+	<nuclearcraft:ingot:7>,
+	<nuclearcraft:ingot:3>,
+	<nuclearcraft:ingot:4>,
+	<nuclearcraft:ingot:5>,
+	<nuclearcraft:ingot:6>,
 ] as crafttweaker.item.IItemStack[];
 
 for CompactorPlate in CompactorPlates
@@ -273,7 +372,6 @@ val RocketryPlates =
 	<thermalfoundation:material:352>,
 	<thermalfoundation:material:323>,
 	<contenttweaker:material_part:855>,
-	<contenttweaker:material_part:858>,
 	<thermalfoundation:material:327>,
 	<thermalfoundation:material:324>,
 	<contenttweaker:material_part:920>,
@@ -287,7 +385,12 @@ val RocketryPlates =
 	<contenttweaker:material_part:950>,
 	<contenttweaker:material_part:945>,
 	<contenttweaker:material_part:1298>,
-	<contenttweaker:material_part:940>
+	<contenttweaker:material_part:940>,
+	<jaopca:item_platelithium>,
+	<jaopca:item_plateboron>,
+	<jaopca:item_plateuranium>,
+	<jaopca:item_platethorium>,
+	<jaopca:item_platemagnesium>,
 ] as crafttweaker.item.IItemStack[];
 
 for RocketryPlate in RocketryPlates
@@ -315,7 +418,12 @@ val SimpleRocketryPlates =
 	<jaopca:item_plateardite>,
 	<jaopca:item_platetungsten>,
 	<contenttweaker:material_part:593>,
-	<jaopca:item_plateancientdebris>
+	<jaopca:item_plateancientdebris>,
+	<jaopca:item_platelithium>,
+	<jaopca:item_plateboron>,
+	<jaopca:item_plateuranium>,
+	<jaopca:item_platethorium>,
+	<jaopca:item_platemagnesium>,
 ] as crafttweaker.item.IItemStack[];
 
 for SimpleRocketryPlate in SimpleRocketryPlates
@@ -456,7 +564,6 @@ val PlateMaterials =
 	"ElectrumFlux" : <liquid:water>,
 	"Thaumium" : <liquid:thaumium>,
 	"Void" : <liquid:voidmetal>,
-	"Yellorium" : <liquid:yellorium>,
 	"Vibranium" : <liquid:vibranium>,
 	"Necrodermis" : <liquid:necrodermis>,
 	"Thorium" : <liquid:thorium>,
@@ -498,6 +605,11 @@ val PlateMaterials =
 	"ConductiveIron" : <liquid:conductive_iron>,
 	"Neutronium" : <liquid:water>,
 	"DraconiumAwakened" : <liquid:awakened_draconium>,
+	"Thorium" : <liquid:thorium>,
+	"Uranium" : <liquid:uranium>,
+	"Boron" : <liquid:boron>,
+	"Lithium" : <liquid:lithium>,
+	"Magnesium" : <liquid:magnesium>,
 	"SealedWood" : <liquid:water>
 } as ILiquidStack[string];
 

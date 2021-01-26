@@ -89,17 +89,17 @@ netherwarriorTrait.register();
 
 //New Materials
 //Yellorium
-val yelloriumMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("yellorium");
-yelloriumMat.color = 0xcff73e;
+val yelloriumMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("uranium");
+yelloriumMat.color = 0xa5a500;
 yelloriumMat.castable = true;
-yelloriumMat.liquid = <liquid:yellorium>;
-yelloriumMat.representativeItem = <item:contenttweaker:material_part:606>;
+yelloriumMat.liquid = <liquid:uranium>;
+yelloriumMat.representativeItem = <item:nuclearcraft:ingot:4>;
 yelloriumMat.addHeadMaterialStats(800 /*Durability*/, 5.0f /*MiningSpeed*/, 7.5f /*AttackDamage*/, 4 /*HarvestLevel*/);
 yelloriumMat.addHandleMaterialStats(1.4f /*Modifier*/, -200 /*Durability*/);
 yelloriumMat.addExtraMaterialStats(-200 /*Durability*/);
 yelloriumMat.addBowMaterialStats(1.08f /*DrawSpeed*/, 0.88f /*RangeMult*/, 8.0f /*BnusDmg*/);
 yelloriumMat.addMaterialTrait("nuclear", null);
-yelloriumMat.localizedName = "Yellorium";
+yelloriumMat.localizedName = "Uranium";
 yelloriumMat.register();
 
 //Necrodermis

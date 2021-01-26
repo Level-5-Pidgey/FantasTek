@@ -161,16 +161,18 @@ static OresWithProcessingTier as int[string] =
     "Tungsten" : 5,
     "Zinc" : 1,
     "Mithril" : 3,
-    "Yellorium" : 4,
+    "Thorium" : 4,
+    "Uranium": 4,
+    "Boron" : 2,
+    "Magnesium" : 3,
+    "Lithium" : 2,
     "Vibranium" : 8,
     "Necrodermis" : 8,
-    "Thorium" : 5,
     "Chromium" : 5,
     "Ardite" : 2,
     "AstralStarmetal" : 0,
     "Cobalt" : 2,
     "Draconium" : 7,
-    "Uranium" : 4,
     "Osmium" : 4,
     "Amber" : 0,
     "Amethyst" : 0,
@@ -195,7 +197,7 @@ static OresWithMolten as ILiquidStack[string]=
     "Iron" : <liquid:iron>,
     "Gold" : <liquid:gold>,
     "Redstone" : <liquid:redstone>,
-    "Diamond" : <liquid:water>,
+    "Diamond" : <liquid:diamond>,
     "Emerald" : <liquid:emerald>,
     "Coal" : <liquid:coal>,
     "Chrome" :<liquid:chromium>,
@@ -214,16 +216,13 @@ static OresWithMolten as ILiquidStack[string]=
     "Tungsten" : <liquid:tungsten>,
     "Zinc" : <liquid:zinc>,
     "Mithril" : <liquid:mithril>,
-    "Yellorium" : <liquid:yellorium>,
     "Vibranium" : <liquid:vibranium>,
     "Necrodermis" : <liquid:necrodermis>,
-    "Thorium" : <liquid:thorium>,
     "Chromium" : <liquid:chromium>,
     "Ardite" : <liquid:ardite>,
     "AstralStarmetal" : <liquid:astral_starmetal>,
     "Cobalt" : <liquid:cobalt>,
     "Draconium" : <liquid:draconium>,
-    "Uranium" : <liquid:uranium>,
     "Osmium" : <liquid:osmium>,
     "Amber" : <liquid:water>,
     "Amethyst" : <liquid:water>,
@@ -234,12 +233,17 @@ static OresWithMolten as ILiquidStack[string]=
     "Dilithium" : <liquid:water>,
     "DimensionalShard" : <liquid:water>,
     "EnderBiotite" : <liquid:water>,
-    "Lapis" : <liquid:water>,
+    "Lapis" : <liquid:lapis>,
     "Malachite" : <liquid:water>,
-    "Quartz" : <liquid:water>,
+    "Quartz" : <liquid:quartz>,
     "Tanzanite" : <liquid:water>,
     "AncientDebris" : <liquid:ancient_debris>,
-    "Topaz" : <liquid:water>
+    "Topaz" : <liquid:water>,
+    "Thorium" : <liquid:thorium>,
+    "Uranium": <liquid:uranium>,
+    "Boron" : <liquid:boron>,
+    "Magnesium" : <liquid:magnesium>,
+    "Lithium" : <liquid:lithium>,
 };
 
 //Gamestages for each Ore Processing Tier
@@ -395,6 +399,12 @@ static CircuitTiers as crafttweaker.item.IItemStack[int] =
 static FrameTiers as crafttweaker.item.IItemStack[int]=
 {
     0 : <enderio:item_material>,
+    1 : <mekanism:basicblock:8>,
+};
+
+static ElectronicTierss as crafttweaker.item.IIngredient[int]=
+{
+    0 : <enderio:item_basic_capacitor>,
     1 : <minecraft:bedrock>,
 };
 
@@ -464,7 +474,7 @@ function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 a
     addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, <minecraft:bedrock>, 0.0f);
 }
 
-function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, extraOutput as crafttweaker.item.IItemStack, extraOutputChance as float)
+function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, extraOutput as crafttweaker.item.IItemStack, extraOutputChance as float, allowBasicGrinder as bool)
 {
     if(!extraOutput.matches(<minecraft:bedrock>))
     {
@@ -478,8 +488,13 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
         //Thermal Expansion Pulverizer
         mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost, extraOutput, extraOutputChance);
 
-        //Magneticraft Grinder
-        mods.magneticraft.Grinder.addRecipe(input.items[0], output, extraOutput, chanceArray[1], energyCost / 45, true);
+        if(allowBasicGrinder)
+        {
+            //Magneticraft Grinder
+            mods.magneticraft.Grinder.addRecipe(input.items[0], output, extraOutput, chanceArray[1], energyCost / 45, true);
+
+            mods.appliedenergistics2.Grinder.addRecipe(output, input.items[0], 5, extraOutput, extraOutputChance);
+        }
     }
     else
     {
@@ -491,17 +506,34 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
         //Thermal Expansion Pulverizer
         mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost);
 
-        //Magneticraft Grinder
-        mods.magneticraft.Grinder.addRecipe(input.items[0], output, <minecraft:gravel>, 0.0, energyCost / 45, true);
+        if(allowBasicGrinder)
+        {
+            //Magneticraft Grinder
+            mods.magneticraft.Grinder.addRecipe(input.items[0], output, <minecraft:gravel>, 0.0, energyCost / 45, true);
+
+            mods.appliedenergistics2.Grinder.addRecipe(output, input.items[0], 5, extraOutput, extraOutputChance);
+        }
     }
 
     //Mekanism Crusher
     mods.mekanism.crusher.addRecipe(input, output);
 }
 
-function addCrushingRecipe(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int)
+function addCrushingRecipe(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, allowBasicGrinder as bool)
 {
-    addCrushingRecipeWithSecondary(output, input, energyCost, <minecraft:bedrock>, 0.0f);
+    addCrushingRecipeWithSecondary(output, input, energyCost, <minecraft:bedrock>, 0.0f, allowBasicGrinder);
+}
+
+function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIngredient, energyCost as int, allowBasicMelter as bool)
+{
+    //Nuclearcraft Melter
+    mods.nuclearcraft.melter.addRecipe(input, output);
+
+    //Tcon Smeltery
+    mods.tconstruct.Melting.addRecipe(output, input, 200);
+
+    //Magma Crucible
+    mods.thermalexpansion.Crucible.addRecipe(output, input.items[0], energyCost);
 }
 
 function createAdvancedCraftingRecipe(
@@ -516,11 +548,11 @@ function createAdvancedCraftingRecipe(
     {
         //Main ExtendedCrafting Recipe
         mods.extendedcrafting.TableCrafting.addShaped(0, output, [
-        	[extraItemRare, extraItemCommon, extraItemUncommon, extraItemCommon, extraItemRare],
+        	[extraItemRare, extraItemUncommon, extraItemCommon, extraItemUncommon, extraItemRare],
         	[extraItemCommon, mainItems[0][0], mainItems[0][1], mainItems[0][2], extraItemCommon],
         	[extraItemUncommon, mainItems[1][0], mainItems[1][1], mainItems[1][2], extraItemUncommon],
         	[extraItemCommon, mainItems[2][0], mainItems[2][1], mainItems[2][2], extraItemCommon],
-        	[extraItemRare, extraItemCommon, extraItemUncommon, extraItemCommon, extraItemRare]
+        	[extraItemRare, extraItemUncommon, extraItemCommon, extraItemUncommon, extraItemRare]
         ]);
 
         //If Alternate Recipes are allowed, create them as well

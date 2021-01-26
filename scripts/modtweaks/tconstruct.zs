@@ -97,9 +97,7 @@ val chunkMaterials =
 {
 	"Lead" : <liquid:lead>,
 	"Aluminum" : <liquid:aluminum>,
-	"Yellorium" : <liquid:yellorium>,
 	"Vibranium" : <liquid:vibranium>,
-	"Uranium" : <liquid:uranium>,
 	"Titanium" : <liquid:titanium>,
 	"Thorium" : <liquid:thorium>,
 	"Platinum" : <liquid:platinum>,

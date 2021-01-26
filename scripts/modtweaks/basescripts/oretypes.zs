@@ -110,6 +110,11 @@ val denseAndPoorOresList =
 	"Quartz",
 	"Titanium",
 	"Dilithium",
+	"Thorium",
+	"Uranium",
+	"Boron",
+	"Lithium",
+	"Magnesium",
 	"Draconium"
 ] as string[];
 

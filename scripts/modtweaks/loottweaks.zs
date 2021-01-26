@@ -9,7 +9,6 @@ print("~~~ Begin Loottweaker Init ~~~");
 
 //Change up the treasure fishing loot table with gems and money (oooh!)
 val fishing = LootTweaker.getTable("minecraft:gameplay/fishing/treasure").getPool("main");
-fishing.addItemEntry(<conduit:nautilus_shell>, 1, 1, "nautilusshell");
 fishing.removeEntry("minecraft:bow");
 fishing.removeEntry("minecraft:fishing_rod");
 fishing.removeEntry("minecraft:book");
@@ -99,22 +98,6 @@ val EnderIOGen =
 
 for pool in EnderIOGen {
 	pool.removePool("Ender IO");
-}
-
-//Stop Dimlet Parcels from generating
-val DimletParcelGen =
-[
-	LootTweaker.getTable("minecraft:chests/abandoned_mineshaft"),
-	LootTweaker.getTable("minecraft:chests/desert_pyramid"),
-	LootTweaker.getTable("minecraft:chests/igloo_chest"),
-	LootTweaker.getTable("minecraft:chests/jungle_temple"),
-	LootTweaker.getTable("minecraft:chests/nether_bridge"),
-	LootTweaker.getTable("minecraft:chests/simple_dungeon"),
-	LootTweaker.getTable("minecraft:chests/village_blacksmith")
-] as LootTable[];
-
-for pool in DimletParcelGen {
-	//pool.getPool("main").removeEntry("rftoolsdim:parcel");
 }
 
 //Remove Silver Nuggets/Ingots
@@ -308,6 +291,81 @@ for lootTable, dungeonTreasures in dungeonBaublesAndTreasures {
 	{
 		lootPool.addItemEntry(dungeonTreasure, 1, 0, dungeonTreasure.name);
 	}
+}
+
+//Add machinery/logistics parts to Loot Chests
+val mechanicalLootPools as int[LootTable] = {
+	LootTweaker.getTable("minecraft:chests/abandoned_mineshaft") : 20,
+	LootTweaker.getTable("minecraft:chests/desert_pyramid") : 20,
+	LootTweaker.getTable("minecraft:chests/igloo_chest") : 20,
+	LootTweaker.getTable("minecraft:chests/jungle_temple") : 20,
+	LootTweaker.getTable("minecraft:chests/nether_bridge") : 10,
+	LootTweaker.getTable("minecraft:chests/simple_dungeon") : 20,
+	LootTweaker.getTable("minecraft:chests/spawn_bonus_chest") : 1,
+	LootTweaker.getTable("minecraft:chests/village_blacksmith") : 20,
+	LootTweaker.getTable("minecraft:chests/stronghold_corridor") : 6,
+	LootTweaker.getTable("minecraft:chests/end_city_treasure") : 1,
+	LootTweaker.getTable("minecraft:chests/woodland_mansion") : 1,
+	LootTweaker.getTable("astralsorcery:chest_shrine") : 10,
+	LootTweaker.getTable("quark:chests/pirate_chest") : 6,
+};
+
+val mechanicalLoot as int[crafttweaker.item.IItemStack] = {
+	<enderio:item_material> : 5,
+	<projectred-core:resource_item:104> : 10,
+	<projectred-core:resource_item:105> : 15,
+	<contenttweaker:material_part:934> : 28,
+	<contenttweaker:material_part:1297> : 5,
+	<thermalfoundation:material:22> : 40,
+	<thermalfoundation:material:23> : 40,
+	<thermalfoundation:material:24> : 35,
+	<thermalfoundation:material:25> : 30,
+	<thermalfoundation:material:26> : 25,
+	<thermalfoundation:material:27> : 25,
+	<contenttweaker:material_part:939> : 35,
+	<magneticraft:crafting:2> : 15,
+	<magneticraft:inserter> : 13,
+	<magneticraft:conveyor_belt> * 4 : 13,
+	<embers:pipe> : 40,
+	<inspirations:pipe> : 50,
+	<minecraft:hopper> : 30,
+	<contenttweaker:material_part:1298> : 4,
+	<contenttweaker:wood_plate> : 27,
+	<thermalfoundation:material:32> : 40,
+	<thermalfoundation:material:33> : 37,
+	<contenttweaker:material_part:935> : 18,
+	<contenttweaker:material_part:940> : 24,
+	<minecraft:tnt> : 24,
+	<contenttweaker:material_part:955> : 10,
+	<enderio:item_alloy_ingot:4> : 40,
+	<enderio:item_alloy_ingot:3> : 35,
+	<enderio:item_alloy_ingot:5> : 30,
+	<minecraft:iron_ingot> : 35,
+	<minecraft:gold_ingot> : 30,
+};
+
+for lootTable, lootRate in mechanicalLootPools {
+	var lootPool = lootTable.addPool("tech", 1, 1, 0, 1);
+	for key, value in mechanicalLoot {
+		if(lootRate <= value)
+		{
+			if(value > 36)
+			{
+				lootPool.addItemEntryHelper(key, value as int, 0, [Functions.setCount(2, 8)], [], key.name ~ "_" ~ key.metadata);
+			}
+			else if (value > 10)
+			{
+				lootPool.addItemEntryHelper(key, value as int, 0, [Functions.setCount(1, 4)], [], key.name ~ "_" ~ key.metadata);
+			}
+			else
+			{
+				lootPool.addItemEntryHelper(key, value as int, 0, [], [], key.name ~ "_" ~ key.metadata);
+			}
+		}
+	}
+
+	//Adds an empty entry to the loot pool as well
+	lootPool.addEmptyEntry(10, "empty_tech");
 }
 
 print("### Loottweaker Init Complete ###");

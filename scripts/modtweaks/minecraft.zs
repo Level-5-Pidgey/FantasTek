@@ -37,5 +37,6 @@ scripts.helpers.addAlloySmeltingRecipe(<ore:ingotNetherite>.firstItem * 1, <ore:
 
 //Add Furnace Ore Processing Tooltip
 <minecraft:furnace>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 0, false, " Ores, with a 1.0x output rate."));
+<minecraft:tnt>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 1, false, " Ores, with a 2.0x output rate."));
 
 print("### Minecraft Init Complete ###");

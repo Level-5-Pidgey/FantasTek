@@ -1,4 +1,4 @@
-#priority 110
+//#priority 110
 
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDict;
@@ -115,11 +115,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 	}
 	else if(craftingMaterial == "Coal")
 	{
-		baseMultiplier = 2;
+		baseMultiplier = 1;
 	}
-	else if(craftingMaterial == "LapisLazuli")
+	else if(craftingMaterial == "Lapis")
 	{
-		baseMultiplier = 6;
+		baseMultiplier = 2;
 	}
 
 	//Double Gem Output vs Ingot
@@ -351,8 +351,8 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			}
 		}
 
-		//Magneticraft Sluice Box -- Tier 2  (2.5x)
-		if(tier <= 2)
+		//Magneticraft Sluice Box -- Tier 1  (2.5x)
+		if(tier <= 1)
 		{
 			//Always output 2x, 50% of the time output an additional 1x
 			//Average to 2.5x output
@@ -383,7 +383,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * (2 * baseMultiplier), 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
 				}
 				else
 				{
@@ -557,24 +557,24 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			if(!oreGem.empty)
 			{
 				//Standard Ore
-				scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * 3, 50);
+				scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * baseMultiplier, 50, false);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
-					scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * 6, 50);
+					scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * (2 * baseMultiplier), 50, false);
 				}
 			}
 			else if(!oreDust.empty)
 			{
-				scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem * 3, 50);
+				scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem * baseMultiplier, 50, false);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
 					for oreDense in oreDouble.items
 					{
-						scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem * 6, 50);
+						scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem * (2 * baseMultiplier), 50, false);
 					}
 				}
 			}
@@ -813,13 +813,13 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 							mods.mekanism.enrichment.addRecipe(oreDirtyDust.firstItem, oreDust.firstItem);
 						}
 					}
-					else if (!oreDict.get("dustDirty" ~ craftingMaterial).empty)
+					else if (!oreDirtyDust.empty)
 					{
-						mods.mekanism.crusher.addRecipe(oreClump.firstItem, oreDict.get("dustDirty" ~ craftingMaterial).firstItem);
+						mods.mekanism.crusher.addRecipe(oreClump.firstItem, oreDirtyDust.firstItem);
 
 						if(!oreDust.empty)
 						{
-							mods.mekanism.enrichment.addRecipe(oreDict.get("dustDirty" ~ craftingMaterial).firstItem, oreDust.firstItem);
+							mods.mekanism.enrichment.addRecipe(oreDirtyDust.firstItem, oreDust.firstItem);
 						}
 					}
 				}
@@ -866,6 +866,9 @@ function markwithProcessingTier(craftingMaterial as string, tier as int)
 			oreDict.get("dust" ~ craftingMaterial),
 			oreDict.get("ingot" ~ craftingMaterial),
 			oreDict.get("gem" ~ craftingMaterial),
+			oreDict.get("plate" ~ craftingMaterial),
+			oreDict.get("plateDense" ~ craftingMaterial),
+			oreDict.get("rod" ~ craftingMaterial),
 			oreDict.get("clump" ~ craftingMaterial),
 			oreDict.get("shard" ~ craftingMaterial),
 			oreDict.get("dirtyDust" ~ craftingMaterial),
@@ -1069,9 +1072,6 @@ val EnrichmentChamber = [
 	<mekanism:oreblock:1>,
 	<mekanism:oreblock:2>,
 	<minecraft:quartz_ore>,
-	<contenttweaker:sub_block_holder_10:14>,
-	<contenttweaker:sub_block_holder_11:2>,
-	<contenttweaker:sub_block_holder_11:4>,
 	<minecraft:emerald_ore>,
 	<embers:ore_quartz>,
 	<embers:ore_tin>,
@@ -1121,7 +1121,13 @@ val GrinderOres = [
 	<minecraft:diamond_ore>,
 	<minecraft:coal_ore>,
 	<minecraft:gold_ore>,
-	<minecraft:iron_ore>
+	<minecraft:iron_ore>,
+	<minecraft:coal_block>,
+	//<nuclearcraft:ore:7>,
+	//<nuclearcraft:ore:6>,
+	//<nuclearcraft:ore:5>,
+	//<nuclearcraft:ore:4>,
+	//<nuclearcraft:ore:3>,
 ] as crafttweaker.item.IItemStack[];
 
 for oreBlock in GrinderOres
@@ -1135,7 +1141,7 @@ val MeltingMaterials =
 	"Iron" : <liquid:iron>,
 	"Gold" : <liquid:gold>,
 	"Redstone" : <liquid:redstone>,
-	"Diamond" : <liquid:water>,
+	"Diamond" : <liquid:diamond>,
 	"Emerald" : <liquid:emerald>,
 	"Chrome" : <liquid:chromium>,
 	"Aluminum" : <liquid:aluminum>,
@@ -1150,25 +1156,32 @@ val MeltingMaterials =
 	"Tungsten" : <liquid:tungsten>,
 	"Zinc" : <liquid:zinc>,
 	"Mithril" : <liquid:mithril>,
-	"Yellorium" : <liquid:yellorium>,
 	"Vibranium" : <liquid:vibranium>,
 	"Necrodermis" : <liquid:necrodermis>,
-	"Thorium" : <liquid:thorium>,
 	"Chromium" : <liquid:chromium>,
 	"Ardite" : <liquid:ardite>,
 	"AstralStarmetal" : <liquid:astral_starmetal>,
 	"Cobalt" : <liquid:cobalt>,
 	"Draconium" : <liquid:draconium>,
+	"Thorium" : <liquid:thorium>,
 	"Uranium" : <liquid:uranium>,
+	"Boron" : <liquid:boron>,
+	"Lithium" : <liquid:lithium>,
+	"Magnesium" : <liquid:magnesium>,
 	"Osmium" : <liquid:osmium>,
 	"Galena" : <liquid:lead>
 } as ILiquidStack[string];
 
 for oreString, molten in MeltingMaterials
 {
-	for ore in oreDict.get("ore" ~ oreString).items
+	var oreBlock = oreDict.get("ore" ~ oreString);
+
+	if(!oreBlock.empty)
 	{
-		mods.tconstruct.Melting.removeRecipe(molten, ore);
+		for ore in oreDict.get("ore" ~ oreString).items
+		{
+			mods.tconstruct.Melting.removeRecipe(molten, ore);
+		}
 	}
 }
 
@@ -1179,7 +1192,6 @@ val SagMillOres =
 	<thaumcraft:ore_quartz>,
 	<libvulpes:ore0>,
 	<astralsorcery:blockcustomore:1>,
-	<contenttweaker:sub_block_holder_0:5>,
 	<libvulpes:ore0:10>,
 	<quark:biotite_ore>,
 	<draconicevolution:draconium_ore:2>,
@@ -1187,7 +1199,11 @@ val SagMillOres =
 	<draconicevolution:draconium_ore>,
 	<magneticraft:ores:3>,
 	<libvulpes:ore0:8>,
-	<contenttweaker:sub_block_holder_10:14>,
+	<nuclearcraft:ore:5>,
+	<nuclearcraft:ore:6>,
+	<nuclearcraft:ore:7>,
+	<nuclearcraft:ore:4>,
+	<nuclearcraft:ore:3>,
 	<tconstruct:ore>,
 	<tconstruct:ore:1>,
 	<mekanism:oreblock>,
@@ -1218,9 +1234,6 @@ val SagMillOres =
 	<magneticraft:ores>,
 	<minecraft:gold_ore>,
 	<minecraft:iron_ore>,
-	<contenttweaker:sub_block_holder_1:12>,
-	<contenttweaker:sub_block_holder_12:15>,
-	<contenttweaker:sub_block_holder_1:13>,
 	<rftools:dimensional_shard_ore>
 ] as crafttweaker.item.IItemStack[];
 
@@ -1263,9 +1276,12 @@ val InductionSmelterOres =
 	"Osmium",
 	"Cobalt",
 	"Iron",
-	"Yellorium",
 	"Tin",
 	"Ardite",
+	"Thorium",
+	"Boron",
+	"Lithium" ,
+	"Magnesium",
 	"Titanium"
 ] as string[];
 
@@ -1296,7 +1312,6 @@ val MagmaCrucible =
 	<tconstruct:ore:1>,
 	<thermalfoundation:ore:7>,
 	<minecraft:iron_ore>,
-	<contenttweaker:sub_block_holder_10:14>,
 	<libvulpes:ore0:8>,
 	<embers:ore_lead>,
 	<contenttweaker:sub_block_holder_12:14>,
@@ -1304,11 +1319,14 @@ val MagmaCrucible =
 	<thermalfoundation:ore>,
 	<mekanism:oreblock:2>,
 	<thermalfoundation:ore:6>,
-	<contenttweaker:sub_block_holder_0>,
 	<minecraft:gold_ore>,
 	<libvulpes:ore0:9>,
-	<contenttweaker:sub_block_holder_9:4>,
-	<contenttweaker:sub_block_holder_4:1>
+	<contenttweaker:sub_block_holder_4:1>,
+	<nuclearcraft:ore:7>,
+	<nuclearcraft:ore:6>,
+	<nuclearcraft:ore:5>,
+	<nuclearcraft:ore:4>,
+	<nuclearcraft:ore:3>,
 ] as crafttweaker.item.IItemStack[];
 
 for ore in MagmaCrucible
@@ -1385,8 +1403,50 @@ for ore in grindstoneOres
 	mods.appliedenergistics2.Grinder.removeRecipe(ore);
 }
 
+//Remove Nuclearcraft Melter Recipes
+val ncMelterOres =
+[
+	<contenttweaker:sub_block_holder_1:12>,
+	<magneticraft:ores:3>,
+	<libvulpes:ore0:8>,
+	<contenttweaker:sub_block_holder_4:7>,
+	<thermalfoundation:ore:8>,
+	<draconicevolution:draconium_ore:1>,
+	<contenttweaker:sub_block_holder_12:14>,
+	<mekanism:oreblock>,
+	<nuclearcraft:ore:7>,
+	<minecraft:emerald_ore>,
+	<minecraft:diamond_ore>,
+	<minecraft:lapis_ore>,
+	<minecraft:quartz_ore>,
+	<nuclearcraft:ore:3>,
+	<nuclearcraft:ore:4>,
+	<nuclearcraft:ore:6>,
+	<nuclearcraft:ore:5>,
+	<libvulpes:ore0:10>,
+	<embers:ore_aluminum>,
+	<thermalfoundation:ore:6>,
+	<thermalfoundation:ore:2>,
+	<thermalfoundation:ore:5>,
+	<embers:ore_lead>,
+	<contenttweaker:sub_block_holder_12:6>,
+	<nuclearcraft:ore:1>,
+	<embers:ore_copper>,
+	<tconstruct:ore:1>,
+	<magneticraft:ores:2>,
+	<minecraft:gold_ore>,
+	<minecraft:iron_ore>,
+] as crafttweaker.item.IItemStack[];
+
+for ore in ncMelterOres
+{
+	mods.nuclearcraft.melter.removeRecipeWithInput(ore);
+}
+
 for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
+	print("Now processing : " ~ materialString);
+
 	//Remove the existing ore processing methods available
 	removeExistingCraftingRecipes(materialString);
 

@@ -1,6 +1,6 @@
 print("~~~ Begin JAOPCA Init ~~~");
 
-//Hide Dense Plates
+//Remove Dense Plate Recipes
 val JAOPCAPlates =
 [
 	<jaopca:item_platedensealuminium>,
@@ -23,9 +23,7 @@ val JAOPCAPlates =
 	<jaopca:item_platedensetin>,
 	<jaopca:item_platedensetitanium>,
 	<jaopca:item_platedensetungsten>,
-	<jaopca:item_platedenseuranium>,
 	<jaopca:item_platedensevibranium>,
-	<jaopca:item_platedenseyellorium>,
 	<jaopca:item_platedensezinc>,
 	<jaopca:item_platedenseamber>,
 	<jaopca:item_platedenseamethyst>,
@@ -53,7 +51,7 @@ val JAOPCAPlates =
 
 for JAOPCAPlate in JAOPCAPlates
 {
-	scripts.helpers.unstageAndHide(JAOPCAPlate);
+	//scripts.helpers.unstageAndHide(JAOPCAPlate);
 }
 
 //Add Coal Nugget Tooltips

@@ -6,18 +6,12 @@ import crafttweaker.oredict.IOreDict;
 
 print("~~~ Begin PartBuilder Init ~~~");
 
-//Create new parts for the PartBuilder
-//Dense plates
-var DensePlating = MaterialSystem.getPartBuilder().setName("dense_plating").setPartType(MaterialSystem.getPartType("item")).setOreDictName("densePlating").build();
-
-var metalPlating = MaterialSystem.getPartBuilder().setName("sheetmetal_block").setPartType(MaterialSystem.getPartType("block")).setOreDictName("blockSheetmetal").build();
-
 //Create Crude Steel Plates and Gears
 var crudeSteelMat = MaterialSystem.getMaterialBuilder().setName("Crude Steel").setColor(mods.contenttweaker.Color.fromHex("c4b79f")).build();
 crudeSteelMat.registerParts(["gear", "plate"] as string[]);
 
 //Function to easily register new parts and items to ores/materials
-function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre as bool, needsAlternateOres as bool, needsCommonparts as bool, needsSheetsorDensePlating as bool, needsIngot as bool)
+function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre as bool, needsAlternateOres as bool, needsCommonparts as bool, needsIngot as bool)
 {
 	//Set Mining Level Strings for Ores
 	var oreMiningLevel = "4,4,4"; //Base Mining Level is 4 (copper)
@@ -29,11 +23,11 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 	{
 		oreMiningLevel = "6,6,6";
 	}
-	else if(mat.getName() == "Uranium" || mat.getName() == "Yellorium")
+	else if(mat.getName() == "Uranium")
 	{
 		oreMiningLevel = "7,7,7";
 	}
-	else if(mat.getName() == "Iridium" || mat.getName() == "Titanium" || mat.getName() == "Thorium")
+	else if(mat.getName() == "Iridium" || mat.getName() == "Titanium")
 	{
 		oreMiningLevel = "8,8,8";
 	}
@@ -102,31 +96,16 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 		denseOre.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
 	}
 
-	//Generate sheetmetal block if needed
-	if(needsSheetsorDensePlating)
+	if(needsRegularOre || needsAlternateOres)
 	{
-		val sheetmetalBlock = mat.registerPart("sheetmetal_block").getData();
-		sheetmetalBlock.addDataValue("hardness", "5");
-		sheetmetalBlock.addDataValue("resistance", "30");
-		sheetmetalBlock.addDataValue("harvestLevel", "2");
-		sheetmetalBlock.addDataValue("harvestTool", "pickaxe");
-
-		mat.registerPart("dense_plating");
-	}
-
-	if(needsRegularOre | needsAlternateOres)
-	{
-		if((!oreDict.get("ingot" ~ mat.getName()).empty) | needsIngot)
+		if(oreDict.get("crystal" ~ mat.getName()).empty)
 		{
-			if(oreDict.get("crystal" ~ mat.getName()).empty)
-			{
-				//Get Mekanism Ore Processing Parts
-				mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
-			}
-			else
-			{
-				print("Mekanism Ore Processing already exists for " ~ mat.getName());
-			}
+			//Get Mekanism Ore Processing Parts
+			mat.registerParts(["clump", "crystal", "dirty_dust", "shard"] as string[]);
+		}
+		else
+		{
+			print("Mekanism Ore Processing already exists for " ~ mat.getName());
 		}
 	}
 }
@@ -136,12 +115,9 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 //Deep Ore, Ore, Plate, Gear, Ingot, Dust, Poor Ore, Dense Plating, Nugget, Sheet Metal
 var new_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
 	MaterialSystem.getMaterialBuilder().setName("Vibranium").setColor(mods.contenttweaker.Color.fromHex("4f2de3")).build() : <ore:ingotVibranium>,
-	MaterialSystem.getMaterialBuilder().setName("Yellorium").setColor(mods.contenttweaker.Color.fromHex("cff73e")).build() : <ore:ingotYellorium>,
-	MaterialSystem.getMaterialBuilder().setName("Thorium").setColor(mods.contenttweaker.Color.fromHex("70270c")).build() : <ore:ingotThorium>,
 	MaterialSystem.getMaterialBuilder().setName("Necrodermis").setColor(mods.contenttweaker.Color.fromHex("15bf20")).build() : <ore:ingotNecrodermis>,
 	MaterialSystem.getMaterialBuilder().setName("Chrome").setColor(mods.contenttweaker.Color.fromHex("e2e1db")).build() : <ore:ingotChrome>,
-	MaterialSystem.getMaterialBuilder().setName("Zinc").setColor(mods.contenttweaker.Color.fromHex("bac4c8")).build() : <ore:ingotZinc>,
-	MaterialSystem.getMaterialBuilder().setName("Uranium").setColor(mods.contenttweaker.Color.fromHex("a5a500")).build() : <ore:ingotUranium>
+	MaterialSystem.getMaterialBuilder().setName("Zinc").setColor(mods.contenttweaker.Color.fromHex("bac4c8")).build() : <ore:ingotZinc>
 	//Material : OreDictEntry
 };
 
@@ -151,10 +127,9 @@ for material, materialIngot in new_oreMaterials {
 	// needsRegularOre
 	// needsAlternateOres
 	// needsCommonparts
-	// needsSheetsorDensePlating
 	// needsIngot
 
-	RegisterMaterials(material, true, true, true, true, true);
+	RegisterMaterials(material, true, true, true, true);
 }
 
 //Modded ores that already exist
@@ -172,7 +147,12 @@ var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweake
 	MaterialSystem.getMaterialBuilder().setName("Aluminum").setColor(mods.contenttweaker.Color.fromHex("cacbcc")).build() : <ore:ingotAluminum>,
 	MaterialSystem.getMaterialBuilder().setName("Draconium").setColor(mods.contenttweaker.Color.fromHex("8c1fbf")).build() : <ore:ingotDraconium>,
 	MaterialSystem.getMaterialBuilder().setName("Titanium").setColor(mods.contenttweaker.Color.fromHex("b2669e")).build() : <ore:ingotTitanium>,
-	MaterialSystem.getMaterialBuilder().setName("Dilithium").setColor(mods.contenttweaker.Color.fromHex("ddcecb")).build() : <ore:gemDilithium>
+	MaterialSystem.getMaterialBuilder().setName("Thorium").setColor(mods.contenttweaker.Color.fromHex("685f5f")).build() : <ore:ingotThorium>,
+	MaterialSystem.getMaterialBuilder().setName("Uranium").setColor(mods.contenttweaker.Color.fromHex("a5a500")).build() : <ore:ingotTitanium>,
+	MaterialSystem.getMaterialBuilder().setName("Boron").setColor(mods.contenttweaker.Color.fromHex("797979")).build() : <ore:ingotTitanium>,
+	MaterialSystem.getMaterialBuilder().setName("Lithium").setColor(mods.contenttweaker.Color.fromHex("f5edda")).build() : <ore:ingotTitanium>,
+	MaterialSystem.getMaterialBuilder().setName("Magnesium").setColor(mods.contenttweaker.Color.fromHex("f5dada")).build() : <ore:ingotTitanium>,
+	MaterialSystem.getMaterialBuilder().setName("Dilithium").setColor(mods.contenttweaker.Color.fromHex("ddcecb")).build() : <ore:gemDilithium>,
 	//Material : OreDictEntry
 };
 
@@ -182,10 +162,9 @@ for material, materialIngot in modded_oreMaterials {
 	// needsRegularOre
 	// needsAlternateOres
 	// needsCommonparts
-	// needsSheetsorDensePlating
 	// needsIngot
 
-	RegisterMaterials(material, false, true, false, true, false);
+	RegisterMaterials(material, false, true, false, false);
 }
 
 //Modded alloys that already exist
@@ -221,31 +200,9 @@ for material, materialIngot in modded_alloys {
 	// needsRegularOre
 	// needsAlternateOres
 	// needsCommonparts
-	// needsSheetsorDensePlating
 	// needsIngot
 
-	RegisterMaterials(material, false, false, true, true, false);
-}
-
-//Modded materials that already exist
-//Needs:
-//Dense Plating, Sheet Metal
-var modded_Materials as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
-	MaterialSystem.getMaterialBuilder().setName("Steel").setColor(mods.contenttweaker.Color.fromHex("757575")).build() : <ore:ingotSteel>,
-	MaterialSystem.getMaterialBuilder().setName("Awakened Draconium").setColor(mods.contenttweaker.Color.fromHex("ff4917")).build() : <ore:ingotDraconiumAwakened>
-	//Material : OreDictEntry
-};
-
-for material, materialIngot in modded_Materials {
-	//Remember arguments:
-	// material (Material Variable)
-	// needsRegularOre
-	// needsAlternateOres
-	// needsCommonparts
-	// needsSheetsorDensePlating
-	// needsIngot
-
-	RegisterMaterials(material, false, false, false, true, false);
+	RegisterMaterials(material, false, false, true, false);
 }
 
 //Vanilla Ores that already exist
@@ -271,10 +228,9 @@ for material, materialIngot in vanilla_oreMaterials {
 	// needsRegularOre
 	// needsAlternateOres
 	// needsCommonparts
-	// needsSheetsorDensePlating
 	// needsIngot
 
-	RegisterMaterials(material, false, true, false, true, false);
+	RegisterMaterials(material, false, true, false, false);
 }
 
 print("### PartBuilder Init Complete ###");

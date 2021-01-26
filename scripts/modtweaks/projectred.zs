@@ -77,7 +77,7 @@ furnace.remove(<ore:ingotElectrotineAlloy>.firstItem, <projectred-core:resource_
 for electrotineIngot in <ore:ingotElectrotineAlloy>.items
 {
   mods.appliedenergistics2.Grinder.addRecipe(<ore:dustElectrotine>.firstItem * 3, electrotineIngot, 2);
-  scripts.helpers.addCrushingRecipe(<ore:dustElectrotine>.firstItem * 6, electrotineIngot, 500);
+  scripts.helpers.addCrushingRecipe(<ore:dustElectrotine>.firstItem * 6, electrotineIngot, 500, true);
   scripts.helpers.AddTooltip(electrotineIngot, ["A proprietary, electrically conductive magically manufactured alloy.", "Don't give the recipe up to the competition, they're still figuring out how it works!", "Used as an early substitute for the likes of Copper."]);
 }
 
@@ -89,9 +89,7 @@ for electrotineIngot in <ore:ingotElectrotineAlloy>.items
 
 //Various Crafting Recipes
 val projectRedRecipes = {
-		<ore:coilCopper>.firstItem * 4 : [[<ore:ingotCopper>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotCopper>]],
-		<ore:coilIron>.firstItem * 4 : [[<ore:ingotIron>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotIron>]],
-		<ore:coilGold>.firstItem * 4 : [[<ore:ingotGold>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotGold>]],
+	//Add Here
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in projectRedRecipes {
@@ -111,7 +109,8 @@ recipes.remove(<projectred-core:resource_item:301>);
 recipes.addShapeless(scripts.helpers.createRecipeName(<projectred-core:resource_item:301>), <projectred-core:resource_item:301> * 4, [<embers:tinker_hammer>, <ore:itemSilicon>]);
 for silicon in <ore:itemSilicon>.items
 {
-	mods.thermalexpansion.Compactor.addPressRecipe(<projectred-core:resource_item:301> * 8, silicon, 1250);
+	mods.thermalexpansion.Sawmill.addRecipe(<projectred-core:resource_item:301> * 8, silicon, 7500);
+	mods.mekanism.sawmill.addRecipe(silicon, <projectred-core:resource_item:301> * 8);
 }
 
 //Use Chisel to get logic Gates
@@ -162,6 +161,11 @@ for item in logicGates
 	scripts.helpers.AddTooltip(item, ["Crafted using a chisel on a Redstone Comparator."]);
 }
 
-//TODO Disable components used to originally craft these logic gates.
+recipes.remove(<ore:coilCopper>.firstItem);
+recipes.remove(<ore:coilIron>.firstItem);
+recipes.remove(<ore:coilGold>.firstItem);
+mods.forestry.Carpenter.addRecipe(<ore:coilCopper>.firstItem * 4, [[<ore:ingotCopper>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotCopper>]], 20, <liquid:water> * 100);
+mods.forestry.Carpenter.addRecipe(<ore:coilIron>.firstItem * 4, [[<ore:ingotIron>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotIron>]], 20, <liquid:water> * 100);
+mods.forestry.Carpenter.addRecipe(<ore:coilGold>.firstItem * 4, [[<ore:ingotGold>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotGold>]], 20, <liquid:water> * 100);
 
 print("### ProjectRed Init Complete ###");

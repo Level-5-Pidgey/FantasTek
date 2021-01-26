@@ -566,6 +566,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Bronze" : stages.progression2,
   "Lumium" : stages.progression2,
   "Manasteel" : stages.Botania1,
+  "Brass" : stages.progression2,
 };
 
 for materialString in ExtraMaterialsToStage

@@ -73,20 +73,24 @@ val MekanismUtilityBlocks = [
 	<mekanism:basicblock:6>.withTag({tier: 1}),
 	<mekanism:basicblock:6>.withTag({tier: 2}),
 	<mekanism:basicblock:6>.withTag({tier: 3}),
-	<mekanism:basicblock:6>.withTag({tier: 4})
+	<mekanism:basicblock:6>.withTag({tier: 4}),
+	<mekanism:machineblock:13>,
 ] as crafttweaker.item.IItemStack[];
 
 for block in MekanismUtilityBlocks
 {
 	recipes.remove(block);
-	scripts.helpers.AddTooltip(<oeintegration:excavatemodifier>, ["Uncraftable.", "Try using alternatives in other mods!"]);
+	scripts.helpers.AddTooltip(block, ["Uncraftable.", "Try using alternatives in other mods!"]);
 }
 
 //Tier 1 Circuit Crafting
 mods.mekanism.infuser.removeRecipe(scripts.helpers.CircuitTiers[1]);
 mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1], 250000, 12500, <projectred-core:resource_item:301>, [<ore:ingotElectrum>, <ore:dustRedstone>, <ore:ingotElectrum>, <ore:dustRedstone>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1] * 9, 250000, 8000, <libvulpes:productboule:3>, [<ore:blockElectrum>, <ore:blockRedstone>, <ore:blockElectrum>, <ore:blockRedstone>]);
 mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1], 100000, 12500, <ore:ingotElectrum>.firstItem, [<advancedrocketry:ic>, <advancedrocketry:ic>]);
 
 //Metal Casing Crafting
+recipes.remove(<mekanism:basicblock:8>);
+//mods.extendedcrafting.EnderCrafting.addShaped(<output>, [[<>, <>, <>], [<>, <>, <>], [<>, <>, <>]], seconds);
 
 print("### Mekanism Init Complete ###");

@@ -17,18 +17,10 @@ val stage3_stageMods = [
   "advancedrocketry",
   "libvulpes",
   "redstonearsenal",
-  "rftools",
   "compactmachines3",
   "iceandfire",
-  "teslacorelib",
-  "deepmoblearning",
-  "deepmoblearningbm",
-  "extendedcrafting",
-  "scannable",
   "reccomplex",
-  "witherskelefix",
-  "packagedauto",
-  "enderstorage"
+  "nuclearcraft"
 ] as string[];
 
 for modTag in stage3_stageMods
@@ -38,7 +30,9 @@ for modTag in stage3_stageMods
 
 //Stage Stubborn Items.
 val stage3_stageItems = [
-
+    <magneticraft:pumpjack>,
+    <magneticraft:oil_heater>,
+    <magneticraft:refinery>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage3_stageItems

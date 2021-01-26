@@ -1,0 +1,64 @@
+{
+	title: "Storage Solutions",
+	icon: "rftools:modular_storage",
+	x: 20.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "Shelving? Are you serious?",
+	text: [
+		"If you're looking for a &emore simple, power-based storage solution that can be upgraded later&rr, look no further than the &bModular Storage&r system",
+		"offered by RFTools. These nifty blocks can store massive amounts of items and can be upgraded as needed to suit your needs.",
+		"",
+		"Simply place down a series of &bModular Storage&r blocks, add a &bStorage Module&r to each and then place your items in them in the same manner",
+		"you would a chest. Additionally, you can use a &bStorage Scanner&r to pull and push items from/to multiple &bModular Storage&r blocks in one place!"
+	],
+	dependencies: [
+		"0e4f6d19"
+	],
+	tasks: [{
+		uid: "a945e306",
+		type: "item",
+		items: [{
+			item: "rftools:modular_storage"
+		}]
+	},
+	{
+		uid: "ef50194b",
+		type: "item",
+		title: "Craft a storage Module",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftools:storage_module"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftools:storage_module",
+			Damage: 1s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftools:storage_module",
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5e66abc4",
+		type: "item",
+		items: [{
+			item: "rftools:storage_scanner"
+		}]
+	}],
+	rewards: [{
+		uid: "c4eb7ba9",
+		type: "item",
+		item: "thermaldynamics:duct_0",
+		count: 12
+	}]
+}

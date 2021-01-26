@@ -124,7 +124,6 @@ val foodCredits as string[crafttweaker.item.IItemStack] =
 	<contenttweaker:honey_sandwich> : "Eunora",
 	<contenttweaker:fairy_bread> : "Eunora",
 	<contenttweaker:chicken_bucket> : "Eunora",
-	<contenttweaker:chocolate> : "Adora"
 };
 
 for foodItem, author in foodCredits {
@@ -140,7 +139,6 @@ val foodRecipes = {
 	<contenttweaker:meat_pie> : [<ore:listAllmeatcooked>, <ore:listAllmeatcooked>, <ore:foodFlour> | <ore:dustWheat>, <ore:itemSalt>],
 	<contenttweaker:honey_sandwich> : [<ore:dropHoney> | <futuremc:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>],
 	<contenttweaker:fairy_bread> : [<ore:dyeCyan> | <ore:dyeGray> | <ore:dyeLightGray> | <ore:dyeOrange> | <ore:dyePink> |  <ore:dyeMagenta> | <ore:dyeLime> |  <ore:dyePurple>, <ore:dyeCyan> | <ore:dyeGray> | <ore:dyeLightGray> | <ore:dyeOrange> | <ore:dyePink> |  <ore:dyeMagenta> | <ore:dyeLime> |  <ore:dyePurple>, <minecraft:sugar>, <minecraft:bread>],
-	<contenttweaker:chocolate> * 2 : [<minecraft:dye:3>, <minecraft:sugar>, scripts.helpers.formatBucket("milk")],
 	<contenttweaker:chicken_bucket> : [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>],
 	<contenttweaker:pocky> * 8 : [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]
 	} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];

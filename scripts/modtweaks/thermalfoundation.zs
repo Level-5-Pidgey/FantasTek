@@ -50,6 +50,24 @@ recipes.remove(<thermalexpansion:device:10>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:device:10>, [[null, <ore:workbench>, null], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]]);
 
 //Grind up Coal Coke into Dust
-scripts.helpers.addCrushingRecipe(<contenttweaker:coke_dust>, <ore:fuelCoke>, 5000);
+scripts.helpers.addCrushingRecipe(<contenttweaker:coke_dust>, <ore:fuelCoke>, 5000, true);
+
+//Alloy Smelting Lumium
+for tinIngot in <ore:ingotTin>.items
+{
+	for silverIngot in <ore:ingotSilver>.items
+	{
+		mods.advancedrocketry.ArcFurnace.addRecipe(<ore:ingotLumium>.firstItem * 4, 600, 2, tinIngot * 3, silverIngot, <ore:dustGlowstone>.firstItem * 4, <ore:sand>.firstItem);
+	}
+}
+
+//Alloy Smelting Signalum
+for copperIngot in <ore:ingotCopper>.items
+{
+	for silverIngot in <ore:ingotSilver>.items
+	{
+		mods.advancedrocketry.ArcFurnace.addRecipe(<ore:ingotSignalum>.firstItem * 4, 600, 2, copperIngot * 3, silverIngot, <ore:dustRedstone>.firstItem * 10, <ore:sand>.firstItem);
+	}
+}
 
 print("### Thermal Foundation Init Complete ###");

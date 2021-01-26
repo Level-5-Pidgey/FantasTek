@@ -151,6 +151,7 @@
     "minecraft:taiga_cold_hills": "SNOW_PINES_HILLS",
     "minecraft:taiga_hills": "PINES_HILLS",
     "minecraft:void": "END_VOID",
+    "nuclearcraft:nuclear_wasteland": "DESERT",
     "randomthings:spectral": "PLAINS",
     "thaumcraft:eerie": "PLAINS",
     "thaumcraft:eldritch": "PLAINS",

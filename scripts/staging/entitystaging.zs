@@ -53,6 +53,7 @@ var entityStages as mods.zenstages.Stage[string] =
 	"avaritia:endest_pearl" : stages.progression2,
 	"avaritia:gaping_void" : stages.progression2,
 	"avaritia:heaven_arrow" : stages.progression1,
+	//"nuclearcraft:feral_ghoul" : stages.progression3,
 	"avaritia:heaven_sub_arrow" : stages.progression1,
 	"betternether:firefly" : stages.progression1,
 	"biomesoplenty:bop_boat" : stages.progression1,

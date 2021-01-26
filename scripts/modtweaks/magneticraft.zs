@@ -41,6 +41,14 @@ val magneticraftHide =
 	<magneticraft:broken_gear>,
 	<magneticraft:steel_gear>,
 	<magneticraft:tungsten_gear>,
+	<magneticraft:pneumatic_tube>,
+	<magneticraft:pneumatic_restriction_tube>,
+	<magneticraft:relay>,
+	<magneticraft:filter>,
+	<magneticraft:transposer>,
+	<magneticraft:stone_hammer>,
+	<magneticraft:iron_hammer>,
+	<magneticraft:steel_hammer>,
 ] as crafttweaker.item.IItemStack[];
 
 for magneticraftPlate in magneticraftHide
@@ -95,9 +103,7 @@ val oreMaterials =
 	"Platinum",
 	"Thorium",
 	"Titanium",
-	"Uranium",
 	"Vibranium",
-	"Yellorium",
 	"Iron",
 	"Gold",
 	"Copper",
@@ -165,6 +171,47 @@ for key, value in magneticraftRecipes_EXTENDEDCRAFTING {
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
 
+//Extended Crafting Recipes (T2 Table)
+val magneticraft_EXTENDEDCRAFTING_T2 = {
+	 <magneticraft:grinder>	:		[[null, <ore:itemFlint>, null],
+									[motor, scripts.helpers.FrameTiers[1], motor],
+									[null, <thermalfoundation:material:656>, null],
+									[<ore:paper>, <ore:ingotSteel>, <ore:gearDiamond>]],
+	 <magneticraft:sieve>	:		[[null, <ore:itemFlint>, null],
+									[<ore:ingotSteel>, scripts.helpers.FrameTiers[1], <ore:ingotSteel>],
+									[null, <ore:gearSteel>, null],
+									[<ore:paper>, <magneticraft:crafting:5>, <ore:gearDiamond>]],
+<magneticraft:big_electric_furnace>:[[<advancedrocketry:blastbrick>, <ore:gearCopper>, <advancedrocketry:blastbrick>],
+									[<advancedrocketry:blastbrick>, scripts.helpers.FrameTiers[1], <advancedrocketry:blastbrick>],
+									[<advancedrocketry:blastbrick>, <ore:coilGold>, <advancedrocketry:blastbrick>],
+									[<ore:paper>, <advancedrocketry:blastbrick>, <ore:plateElectrum>]],
+<magneticraft:big_steam_boiler>	:	[[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>],
+									[<ore:ingotIron>, scripts.helpers.FrameTiers[1], <ore:ingotIron>],
+									[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>],
+									[<ore:paper>, <ore:ingotSteel>, <ore:gearRedstoneAlloy>]],
+<magneticraft:steam_turbine>	:	[[<ore:ingotSteel>, <ore:plateBrass>, <ore:ingotSteel>],
+									[null, scripts.helpers.FrameTiers[1], null],
+									[<ore:ingotSteel>, <ore:plateBrass>, <ore:ingotSteel>],
+									[<ore:paper>, <ore:ingotSteel>, <ore:plateBrass>]],
+	 <magneticraft:solar_tower>	:	[[<enderio:item_material:3>, <enderio:item_material:3>, <enderio:item_material:3>],
+									[<ore:ingotSteel>, scripts.helpers.FrameTiers[1], <ore:ingotSteel>],
+									[<ore:ingotSteel>, <magneticraft:insulated_heat_pipe>, <ore:ingotSteel>],
+									[<ore:paper>, <ore:coilCopper>, <ore:plateLumium>]],
+ <magneticraft:solar_mirror>	:	[[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>],
+									[<ore:ingotSteel>, scripts.helpers.FrameTiers[1], <ore:ingotSteel>],
+									[<ore:ingotSteel>, <ore:coilGold>, <ore:ingotSteel>],
+									[<ore:paper>, null, <ore:plateLumium>]],
+<magneticraft:big_combustion_chamber>	:	[[<advancedrocketry:blastbrick>, <advancedrocketry:blastbrick>, <advancedrocketry:blastbrick>],
+									[<advancedrocketry:blastbrick>, scripts.helpers.FrameTiers[1], <advancedrocketry:blastbrick>],
+									[<advancedrocketry:blastbrick>, <advancedrocketry:blastbrick>, <advancedrocketry:blastbrick>],
+									[<ore:paper>, <ore:coilCopper>, <ore:ingotBronze>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in magneticraft_EXTENDEDCRAFTING_T2 {
+	recipes.remove(key.withAmount(1));
+	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
+}
+
 //Post Stage 1 Recipes
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(motor) ~ scripts.helpers.stages.progression3.stage, scripts.helpers.stages.progression3.stage, motor * 4, [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotRedstoneAlloy>, <ore:dustRedstone>, <ore:ingotCopper>], [<ore:ingotIron>, <ore:ingotIron>, null]]); //Motor
 mods.forestry.Carpenter.addRecipe(motor * 4, [[<ore:ingotIron>, <ore:ingotIron>, null], [<ore:ingotRedstoneAlloy>, <ore:dustRedstone>, <ore:ingotCopper>], [<ore:ingotIron>, <ore:ingotIron>, null]], 40, <liquid:water> * 1000); //Motor
@@ -221,5 +268,10 @@ for circuit in scripts.helpers.CircuitTiers[0].items
 	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:battery>, [[<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateCrudeSteel>, <ore:ingotRedstoneAlloy>, <ore:plateCrudeSteel>]]);
 	mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:battery>, [[<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>], [<magneticraft:battery_item_medium>, circuit, <magneticraft:battery_item_medium>], [<ore:plateSteel>, <ore:ingotRedstoneAlloy>, <ore:plateSteel>]]);
 }
+
+//Ore Processing Tier Tooltips
+<magneticraft:sluice_box>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 1, false, " Ores, with a 2.5x output rate."));
+<magneticraft:sieve>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 2.75x output rate."));
+<magneticraft:grinder>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 2.0x output rate."));
 
 print("### Magneticraft Init Complete ###");

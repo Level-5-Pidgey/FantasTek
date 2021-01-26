@@ -1,6 +1,9 @@
 print("~~~ Begin Advanced Rocketry Init ~~~");
 
-//Remove tool forge crafting recipes
+//Remove Silicon Ingot from itemSilicon
+<ore:itemSilicon>.remove(<libvulpes:productingot:3>);
+
+//Remove plate press recipes
 val platePress =
 [
 	<libvulpes:productdust:10>,
@@ -27,7 +30,12 @@ val platePress =
 	<contenttweaker:material_part:576>,
 	<magneticraft:dusts:5>,
 	<astralsorcery:itemcraftingcomponent:2>,
-	<jaopca:item_dustardite>
+	<jaopca:item_dustardite>,
+	<nuclearcraft:dust:3>,
+	<nuclearcraft:dust:4>,
+	<nuclearcraft:dust:7>,
+	<mekanism:otherdust:4>,
+	<nuclearcraft:dust:5>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in platePress
@@ -76,6 +84,11 @@ for key, value in vulpesCoils {
 val advancedRocketryRecipes = {
 		<advancedrocketry:platepress> : [[null, <minecraft:piston>, null],[<ore:plateDiamond>, <ore:ingotIron>, <ore:plateEmerald>], [null, <ore:slimeball>, null]],
 		<advancedrocketry:blastbrick> * 2 : [[<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>],[<ore:ingotBrickNether>, <ore:ingotBrickNether>, <ore:ingotBrickNether>], [<tconstruct:materials:2>, <ore:powderBlaze>, <tconstruct:materials:2>]],
+		<libvulpes:coil0:2> : [[<ore:coilGold>, <ore:coilGold>, <ore:coilGold>],[<ore:coilGold>, null, <ore:coilGold>], [<ore:coilGold>, <ore:coilGold>, <ore:coilGold>]],
+		<libvulpes:coil0:4> : [[<ore:coilCopper>, <ore:coilCopper>, <ore:coilCopper>],[<ore:coilCopper>, null, <ore:coilCopper>], [<ore:coilCopper>, <ore:coilCopper>, <ore:coilCopper>]],
+		<libvulpes:coil0:9> * 2 : [[<ore:ingotAluminum>, <ore:ingotAluminum>, <ore:ingotAluminum>],[<ore:ingotAluminum>, <ore:plateSealedWood>, <ore:ingotAluminum>], [<ore:ingotAluminum>, <ore:ingotAluminum>, <ore:ingotAluminum>]],
+		<libvulpes:coil0:7> * 2 : [[<ore:ingotTitanium>, <ore:ingotTitanium>, <ore:ingotTitanium>],[<ore:ingotTitanium>, <ore:plateSealedWood>, <ore:ingotTitanium>], [<ore:ingotTitanium>, <ore:ingotTitanium>, <ore:ingotTitanium>]],
+		<libvulpes:coil0:10> * 2 : [[<ore:ingotIridium>, <ore:ingotIridium>, <ore:ingotIridium>],[<ore:ingotIridium>, <ore:plateSealedWood>, <ore:ingotIridium>], [<ore:ingotIridium>, <ore:ingotIridium>, <ore:ingotIridium>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in advancedRocketryRecipes {
@@ -85,7 +98,7 @@ for key, value in advancedRocketryRecipes {
 
 //Crafting Rudimentary Logic Circuit
 mods.forestry.Carpenter.addRecipe(<advancedrocketry:ic> * 2, [[null, <ore:nuggetConductiveIron>, null], [null, <projectred-core:resource_item:342>, null], [null, <ore:nuggetConductiveIron>, null]], 160, <liquid:water> * 200);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<advancedrocketry:ic> * 2, 100000, 750, <projectred-core:resource_item:342>, [<ore:nuggetConductiveIron>, <ore:nuggetConductiveIron>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<advancedrocketry:ic> * 3, 100000, 750, <projectred-core:resource_item:342>, [<ore:nuggetConductiveIron>, <ore:nuggetConductiveIron>]);
 
 //Extended Crafting Recipes (T1 Table)
 val advancedRocketry_EXTENDEDCRAFTING = {
@@ -104,10 +117,10 @@ for key, value in advancedRocketry_EXTENDEDCRAFTING {
 
 //Extended Crafting Recipes (T2 Table)
 val advancedRocketry_EXTENDEDCRAFTING_T2 = {
-	 <advancedrocketry:arcfurnace>	:	[[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>],
-	 									[<tconstruct:materials:2>, scripts.helpers.CircuitTiers[0], <tconstruct:materials:2>],
-										[<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>],
-										[null, <tconstruct:materials:2>, <ore:ingotBrickNether>]],
+	 //<advancedrocketry:arcfurnace>	:	[[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>],
+	 //									[<tconstruct:materials:2>, scripts.helpers.CircuitTiers[0], <tconstruct:materials:2>],
+	 //									[<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>],
+	 //									[null, <tconstruct:materials:2>, <ore:ingotBrickNether>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in advancedRocketry_EXTENDEDCRAFTING_T2 {
@@ -115,12 +128,21 @@ for key, value in advancedRocketry_EXTENDEDCRAFTING_T2 {
 	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
 }
 
+//Arc Furnace Recipes
+recipes.remove(<advancedrocketry:arcfurnace>);
+scripts.helpers.createAdvancedCraftingRecipe(<advancedrocketry:arcfurnace>, [[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>], [<contenttweaker:astral_crystal_earth>, scripts.helpers.CircuitTiers[0], <contenttweaker:astral_crystal_fire>], [<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>]], null, <tconstruct:materials:2>, <ore:ingotBrickNether>, "_astral", true);
+scripts.helpers.createAdvancedCraftingRecipe(<advancedrocketry:arcfurnace>, [[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>], [<ore:runeEarthB>.firstItem, scripts.helpers.CircuitTiers[0], <ore:runeFireB>.firstItem], [<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>]], null, <tconstruct:materials:2>, <ore:ingotBrickNether>, "_botania", true);
+scripts.helpers.createAdvancedCraftingRecipe(<advancedrocketry:arcfurnace>, [[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>], [<contenttweaker:sanguine_gem_earth>, scripts.helpers.CircuitTiers[0], <contenttweaker:sanguine_gem_fire>], [<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>]], null, <tconstruct:materials:2>, <ore:ingotBrickNether>, "_bloodmagic", true);
+scripts.helpers.createAdvancedCraftingRecipe(<advancedrocketry:arcfurnace>, [[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>], [<contenttweaker:crystal_ember_earth>, scripts.helpers.CircuitTiers[0], <contenttweaker:crystal_ember_fire>], [<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>]], null, <tconstruct:materials:2>, <ore:ingotBrickNether>, "_embers", true);
+scripts.helpers.createAdvancedCraftingRecipe(<advancedrocketry:arcfurnace>, [[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>], [<contenttweaker:salis_mundus_earth>, scripts.helpers.CircuitTiers[0], <contenttweaker:salis_mundus_fire>], [<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>]], null, <tconstruct:materials:2>, <ore:ingotBrickNether>, "_thaumcraft", true);
+
 //Arc Furnace Ore Processing Tooltip
 <advancedrocketry:arcfurnace>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 1, false, " Ores, with a 2.0x output rate."));
 
 //Arc Furnace Alloy Creation
 val advancedRocketry = {
 	 "Bronze" : ["Copper", "Tin"],
+	 "Brass" : ["Copper", "Zinc"],
 	 "Electrum" : ["Gold", "Silver"],
 	 "Constantan" : ["Copper", "Nickel"],
 	 "Invar" : ["Iron", "Nickel"],
@@ -135,7 +157,7 @@ for output, inputs in advancedRocketry {
 	var inputIngot2 = oreDict.get("ingot" ~ inputs[1]);
 	var outputIngot = oreDict.get("ingot" ~ output);
 
-	if(inputs[0] == "Copper" && inputs[1] == "Tin")
+	if(inputs[0] == "Copper" && (inputs[1] == "Tin" || inputs[1] == "Zinc"))
 	{
 		inputCount = 3;
 	}
@@ -144,7 +166,7 @@ for output, inputs in advancedRocketry {
 		inputCount = 3;
 	}
 
-	if(output == "Bronze")
+	if(output == "Bronze" || output == "Brass")
 	{
 		outputCount = 4;
 	}
@@ -160,7 +182,7 @@ for output, inputs in advancedRocketry {
 		{
 			for item2 in inputIngot2.items
 			{
-				mods.advancedrocketry.ArcFurnace.addRecipe(outputIngot.firstItem * outputCount, 600, 2, item1 * inputCount, item2);
+				mods.advancedrocketry.ArcFurnace.addRecipe(outputIngot.firstItem * outputCount, 600, 2, item1 * inputCount, item2, <ore:sand>.firstItem);
 			}
 		}
 
@@ -168,7 +190,7 @@ for output, inputs in advancedRocketry {
 		{
 			for dust2 in inputDust2.items
 			{
-				mods.advancedrocketry.ArcFurnace.addRecipe(outputIngot.firstItem * outputCount, 500, 2, dust1 * inputCount, dust2);
+				mods.advancedrocketry.ArcFurnace.addRecipe(outputIngot.firstItem * outputCount, 500, 2, dust1 * inputCount, dust2, <ore:sand>.firstItem);
 			}
 		}
 	}
@@ -187,5 +209,11 @@ for dust in <ore:dustCoal>.items //Coal Dust Based Processing
 	}
 }
 mods.advancedrocketry.ArcFurnace.addRecipe(<ore:ingotSteel>.firstItem, 1200, 4, <ore:ingotIron>.firstItem, <ore:fuelCoke>.firstItem); //Coal Coke based Processing
+
+//Create Silicon Boules in an Arc Furnace
+for dust in <ore:dustNetherQuartz>.items
+{
+	mods.advancedrocketry.ArcFurnace.addRecipe(<ore:bouleSilicon>.firstItem, 1200, 4, dust * 9);
+}
 
 print("### Advanced Rocketry Init Complete ###");

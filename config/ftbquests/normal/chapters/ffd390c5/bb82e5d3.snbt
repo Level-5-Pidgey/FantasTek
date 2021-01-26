@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"aa7c48d8"
+	],
+	tasks: [{
+		uid: "4aa5526a",
+		type: "item",
+		items: [{
+			item: "magneticraft:grinder"
+		}]
+	}],
+	rewards: [{
+		uid: "fa8ca452",
+		type: "item",
+		item: "magneticraft:multiblock_parts 1 2",
+		count: 12
+	}]
+}

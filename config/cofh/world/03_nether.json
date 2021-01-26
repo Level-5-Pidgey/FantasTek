@@ -353,13 +353,13 @@
 				"value": [-1]
 			}
 		},
-		"nether_uranium": {
+		"nether_thorium": {
 			"distribution": "uniform",
 			"generator": {
 				"type": "cluster",
 				"block": {
-					"name": "contenttweaker:sub_block_holder_11",
-					"metadata": 4
+					"name": "contenttweaker:sub_block_holder_6",
+					"metadata": 2
 				},
 				"material": "minecraft:netherrack",
 				"cluster-size": 7,
