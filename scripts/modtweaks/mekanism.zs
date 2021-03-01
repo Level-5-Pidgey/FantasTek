@@ -91,6 +91,6 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers
 
 //Metal Casing Crafting
 recipes.remove(<mekanism:basicblock:8>);
-//mods.extendedcrafting.EnderCrafting.addShaped(<output>, [[<>, <>, <>], [<>, <>, <>], [<>, <>, <>]], seconds);
+mods.extendedcrafting.EnderCrafting.addShaped(<mekanism:basicblock:8>, [[<ore:plateSteel>, <ore:ingotBrass>, <ore:plateSteel>], [<ore:ingotBrass>, null, <ore:ingotBrass>], [<ore:plateSteel>, <ore:ingotBrass>, <ore:plateSteel>]], 60);
 
 print("### Mekanism Init Complete ###");

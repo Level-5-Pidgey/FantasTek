@@ -64,4 +64,10 @@ if(!<ore:nuggetCoal>.empty)
 	}
 }
 
+//Sulfur Compiling
+recipes.remove(<bloodmagic:component:23>);
+recipes.addShapeless(scripts.helpers.createRecipeName(<thermalfoundation:material:771>) ~ "_small", <thermalfoundation:material:771>, [<ore:dustSmallSulfur>, <ore:dustSmallSulfur>, <ore:dustSmallSulfur>, <ore:dustSmallSulfur>]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<thermalfoundation:material:771>) ~ "_tiny", <thermalfoundation:material:771>, [<ore:dustTinySulfur>, <ore:dustTinySulfur>, <ore:dustTinySulfur>, <ore:dustTinySulfur>, <ore:dustTinySulfur>, <ore:dustTinySulfur>, <ore:dustTinySulfur>, <ore:dustTinySulfur>, <ore:dustTinySulfur>]);
+
+
 print("### JAOPCA Init Complete ###");

@@ -14,21 +14,6 @@
 	rewards: [{
 		uid: "05f14d3a",
 		type: "item",
-		item: {
-			id: "thermalexpansion:device",
-			tag: {
-				RSControl: 0b,
-				Facing: 3b,
-				Energy: 0,
-				SideCache: [B;
-					0b,
-					1b,
-					0b,
-					0b,
-					0b,
-					0b
-				]
-			}
-		}
+		item: "magneticraft:water_generator"
 	}]
 }

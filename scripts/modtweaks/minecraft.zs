@@ -33,7 +33,7 @@ recipes.addShaped(scripts.helpers.createRecipeName(<mowziesmobs:painted_acacia>)
 mods.tconstruct.Alloy.addRecipe(<liquid:netherite> * 1, [<liquid:gold> * 4, <liquid:ancient_debris> * 4]);
 mods.tconstruct.Casting.addTableRecipe(<ore:ingotNetherite>.firstItem, <tconstruct:cast_custom>, <liquid:netherite>, 144, false);
 mods.tconstruct.Casting.addBasinRecipe(<ore:blockNetherite>.firstItem, null, <liquid:netherite>, 1296);
-scripts.helpers.addAlloySmeltingRecipe(<ore:ingotNetherite>.firstItem * 1, <ore:ingotGold>.firstItem * 4, <ore:ingotAncientDebris>.firstItem * 4, 9000);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotNetherite>.firstItem * 1, <ore:ingotGold>.firstItem * 4, <ore:ingotAncientDebris>.firstItem * 4, 9000, true);
 
 //Add Furnace Ore Processing Tooltip
 <minecraft:furnace>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 0, false, " Ores, with a 1.0x output rate."));

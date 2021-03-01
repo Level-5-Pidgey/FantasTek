@@ -1,0 +1,45 @@
+{
+	x: -3.0d,
+	y: 0.0d,
+	dependencies: [
+		"51c2e82a"
+	],
+	tasks: [{
+		uid: "3b9acc06",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "denseOreSilver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any denseOreSilver"
+				}
+			}
+		}],
+		count: 16L
+	},
+	{
+		uid: "f986f954",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreSilver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreSilver"
+				}
+			}
+		}],
+		count: 32L
+	}]
+}

@@ -1,0 +1,48 @@
+{
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "mowziesmobs:wrought_axe"
+	},
+	x: 2.0d,
+	y: 4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"87be898f"
+	],
+	tasks: [{
+		uid: "f47181c1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mowziesmobs:wrought_axe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "288cf61d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mowziesmobs:wrought_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3ac0eba9",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:diamond_sword"
+		}
+	}]
+}

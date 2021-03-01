@@ -67,7 +67,7 @@ for item in <ore:ingotConductiveIron>.items
 }
 
 //Stage 2 Electrotine Smelting
-scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotConductiveIron>.firstItem, <ore:gemLapis>.firstItem * 4, 4500);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotConductiveIron>.firstItem, <ore:gemLapis>.firstItem * 4, 4500, true);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore:ingotIron>, <ore:dustRedstone> * 1, <ore:gemLapis> * 4], 4500);
 
 //Remove Furnace Electrotine Recipe
@@ -165,7 +165,10 @@ recipes.remove(<ore:coilCopper>.firstItem);
 recipes.remove(<ore:coilIron>.firstItem);
 recipes.remove(<ore:coilGold>.firstItem);
 mods.forestry.Carpenter.addRecipe(<ore:coilCopper>.firstItem * 4, [[<ore:ingotCopper>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotCopper>]], 20, <liquid:water> * 100);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<ore:coilCopper>.firstItem), scripts.helpers.stages.progression2.stage, <ore:coilCopper>.firstItem * 2, [[<ore:ingotCopper>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotCopper>]]);
 mods.forestry.Carpenter.addRecipe(<ore:coilIron>.firstItem * 4, [[<ore:ingotIron>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotIron>]], 20, <liquid:water> * 100);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<ore:coilIron>.firstItem), scripts.helpers.stages.progression2.stage, <ore:coilIron>.firstItem * 2, [[<ore:ingotIron>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotIron>]]);
 mods.forestry.Carpenter.addRecipe(<ore:coilGold>.firstItem * 4, [[<ore:ingotGold>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotGold>]], 20, <liquid:water> * 100);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<ore:coilGold>.firstItem), scripts.helpers.stages.progression2.stage, <ore:coilGold>.firstItem * 2, [[<ore:ingotGold>, null, null], [null, <ore:plankSealedWood>, null], [null, null, <ore:ingotGold>]]);
 
 print("### ProjectRed Init Complete ###");

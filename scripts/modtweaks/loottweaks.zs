@@ -323,7 +323,7 @@ val mechanicalLoot as int[crafttweaker.item.IItemStack] = {
 	<thermalfoundation:material:26> : 25,
 	<thermalfoundation:material:27> : 25,
 	<contenttweaker:material_part:939> : 35,
-	<magneticraft:crafting:2> : 15,
+	scripts.helpers.MotorTiers[0] : 15,
 	<magneticraft:inserter> : 13,
 	<magneticraft:conveyor_belt> * 4 : 13,
 	<embers:pipe> : 40,

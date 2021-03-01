@@ -208,4 +208,7 @@ for materialString, stageToSet in tconForges
 recipes.remove(<oeintegration:excavatemodifier>);
 scripts.helpers.AddTooltip(<oeintegration:excavatemodifier>, ["Uncraftable.", "Excavation is exclusive to Vanilla Tools!"]);
 
+//Make Manyullyn alloyable only in machinery
+mods.tconstruct.Alloy.removeRecipe(<liquid:manyullyn>);
+
 print("### TConstruct Init Complete ###");

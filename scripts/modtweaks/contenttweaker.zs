@@ -140,34 +140,56 @@ val foodRecipes = {
 	<contenttweaker:honey_sandwich> : [<ore:dropHoney> | <futuremc:honey_bottle> | <ore:dropHoneydew>, <minecraft:bread>],
 	<contenttweaker:fairy_bread> : [<ore:dyeCyan> | <ore:dyeGray> | <ore:dyeLightGray> | <ore:dyeOrange> | <ore:dyePink> |  <ore:dyeMagenta> | <ore:dyeLime> |  <ore:dyePurple>, <ore:dyeCyan> | <ore:dyeGray> | <ore:dyeLightGray> | <ore:dyeOrange> | <ore:dyePink> |  <ore:dyeMagenta> | <ore:dyeLime> |  <ore:dyePurple>, <minecraft:sugar>, <minecraft:bread>],
 	<contenttweaker:chicken_bucket> : [<ore:itemSalt>, <minecraft:cooked_chicken>,  <minecraft:cooked_chicken>, <minecraft:cooked_chicken>, <ore:foodFlour> | <ore:dustWheat>],
-	<contenttweaker:pocky> * 8 : [<contenttweaker:chocolate>, <minecraft:bread>, <ore:stickWood>]
-	} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+	<contenttweaker:pocky> * 16 : [<nuclearcraft:milk_chocolate>, <minecraft:bread>, <ore:stickWood>]
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
-	for key, value in foodRecipes {
-		recipes.remove(key.withAmount(1));
-		recipes.addShapeless(scripts.helpers.createRecipeName(key.withAmount(1)), key, value);
+for key, value in foodRecipes {
+	recipes.remove(key.withAmount(1));
+	recipes.addShapeless(scripts.helpers.createRecipeName(key.withAmount(1)), key, value);
+}
+
+//Currency Combination/Splitting Recipes
+val currencyItems =
+[
+<contenttweaker:currency_4>,
+<contenttweaker:currency_20>,
+<contenttweaker:currency_100>,
+<contenttweaker:currency_500>,
+<contenttweaker:currency_2500>,
+<contenttweaker:currency_12500>
+] as crafttweaker.item.IItemStack[];
+
+for i, item in currencyItems {
+	val j as int = i - 1;
+
+	if (j >= 0)
+	{
+		mods.thermalexpansion.Factorizer.addRecipeBoth(currencyItems[i], currencyItems[j] * 5);
 	}
 
-	//Currency Combination/Splitting Recipes
-	val currencyItems =
-	[
-	<contenttweaker:currency_4>,
-	<contenttweaker:currency_20>,
-	<contenttweaker:currency_100>,
-	<contenttweaker:currency_500>,
-	<contenttweaker:currency_2500>,
-	<contenttweaker:currency_12500>
-	] as crafttweaker.item.IItemStack[];
+	scripts.helpers.AddTooltip(item, ["Intergalactic Currency Format.", "Can be exchanged for goods and services!", "Will always drop on death if in your inventory.", "Despawns 2 minutes after being dropped on death!", "Careful of Outlaws that might want to steal your creds."]);
+}
 
-	for i, item in currencyItems {
-		val j as int = i - 1;
+//Melt Stuff to make Lubricant
+var lubricantOutput =
+{
+	<minecraft:fish> : 7,
+	<minecraft:fish:1> : 7,
+	<minecraft:fish:2> : 7,
+	<minecraft:fish:3> : 15,
+	<libvulpes:productdust:3> : 25,
+	<thermalfoundation:material:832> : 20,
+	<forestry:propolis> : 30,
+	<forestry:propolis:1> : 30,
+	<forestry:propolis:2> : 30,
+	<morebees:propolismetallic> : 50,
+	<morebees:propoliscrystal> : 50,
+} as int[crafttweaker.item.IItemStack];
 
-		if (j >= 0)
-		{
-			mods.thermalexpansion.Factorizer.addRecipeBoth(currencyItems[i], currencyItems[j] * 5);
-		}
+for item, fluidAmount in lubricantOutput
+{
+	mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:lubricant> * fluidAmount * 1.2f, item, 5000);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:lubricant> * fluidAmount, item, 3000);
+}
 
-		scripts.helpers.AddTooltip(item, ["Intergalactic Currency Format.", "Can be exchanged for goods and services!", "Will always drop on death if in your inventory.", "Despawns 2 minutes after being dropped on death!", "Careful of Outlaws that might want to steal your creds."]);
-	}
-
-	print("### ContentTweaker recipes Init Complete ###");
+print("### ContentTweaker recipes Init Complete ###");

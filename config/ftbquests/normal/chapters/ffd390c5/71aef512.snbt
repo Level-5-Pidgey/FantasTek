@@ -1,0 +1,17 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	dependencies: [
+		"bb82e5d3"
+	],
+	tasks: [{
+		uid: "6828c82f",
+		type: "item",
+		items: [{
+			item: "magneticraft:rocky_chunks 1 4"
+		},
+		{
+			item: "jaopca:item_clusterardite"
+		}]
+	}]
+}

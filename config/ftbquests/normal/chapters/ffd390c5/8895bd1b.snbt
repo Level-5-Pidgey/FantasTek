@@ -1,0 +1,45 @@
+{
+	x: -2.0d,
+	y: -3.0d,
+	dependencies: [
+		"51c2e82a"
+	],
+	tasks: [{
+		uid: "c4a7efc2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "denseOreTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any denseOreTin"
+				}
+			}
+		}],
+		count: 16L
+	},
+	{
+		uid: "106c5f07",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreTin"
+				}
+			}
+		}],
+		count: 32L
+	}]
+}

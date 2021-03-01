@@ -274,7 +274,6 @@ val foodStrings as double[][string] =
 	"honey_sandwich" : [7.0, 1.2],
 	"fairy_bread" : [7.0, 0.7],
 	"chicken_bucket" : [13.0, 0.4],
-	"chocolate" : [4.0, 0.2]
 };
 
 for foodName, foodRestorationArray in foodStrings {
@@ -315,3 +314,17 @@ currency_2500.register();
 var currency_12500 = VanillaFactory.createItem("currency_12500");
 currency_12500.rarity = "EPIC";
 currency_12500.register();
+
+//Mod-unspecific Elemental Items
+var elemental_mote_fire = VanillaFactory.createItem("elemental_mote_fire");
+elemental_mote_fire.rarity = "UNCOMMON";
+elemental_mote_fire.register();
+var elemental_mote_water = VanillaFactory.createItem("elemental_mote_water");
+elemental_mote_water.rarity = "UNCOMMON";
+elemental_mote_water.register();
+var elemental_mote_air = VanillaFactory.createItem("elemental_mote_air");
+elemental_mote_air.rarity = "UNCOMMON";
+elemental_mote_air.register();
+var elemental_mote_earth = VanillaFactory.createItem("elemental_mote_earth");
+elemental_mote_earth.rarity = "UNCOMMON";
+elemental_mote_earth.register();

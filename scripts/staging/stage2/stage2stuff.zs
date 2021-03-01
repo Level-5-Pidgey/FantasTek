@@ -203,7 +203,10 @@ val stage2_stageItems = [
     <rftools:remote_storage>,
     <rftools:storage_module:6>,
     <rftools:storage_terminal>,
-    <mekanism:basicblock:8>
+    <mekanism:basicblock:8>,
+    <nuclearcraft:alloy_furnace_active>,
+    <nuclearcraft:alloy_furnace_idle>,
+    <nuclearcraft:part:8>
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems
@@ -220,7 +223,8 @@ mods.recipestages.Recipes.setRecipeStage(stageString, <forestry:bronze_pickaxe>)
 
 //Stage Modular Machinery
 val stage2_modularMachinery = [
-    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ore_washing_factory"})
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ore_washing_factory"}),
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"})
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_modularMachinery

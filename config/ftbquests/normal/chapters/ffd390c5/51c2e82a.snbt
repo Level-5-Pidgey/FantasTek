@@ -1,0 +1,12 @@
+{
+	x: -4.0d,
+	y: -2.0d,
+	dependencies: [
+		"1cf9da14"
+	],
+	tasks: [{
+		uid: "da4776e5",
+		type: "checkmark",
+		title: "Stage 2 Ores"
+	}]
+}

@@ -10,5 +10,17 @@
 		items: [{
 			item: "mekanism:controlcircuit"
 		}]
+	}],
+	rewards: [{
+		uid: "4a966e54",
+		type: "item",
+		item: "thermalfoundation:ore 1 2",
+		count: 8
+	},
+	{
+		uid: "0f7a82d7",
+		type: "item",
+		item: "minecraft:gold_ore",
+		count: 8
 	}]
 }

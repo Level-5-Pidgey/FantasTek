@@ -49,8 +49,18 @@ for rune in scripts.helpers.AllWaterT1Items
 recipes.remove(<thermalexpansion:device:10>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:device:10>, [[null, <ore:workbench>, null], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]]);
 
+//Aquatic Entangler
+recipes.remove(<thermalexpansion:device:4>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:device:4>, [[null, <minecraft:fishing_rod>, null], [<ore:barsIron>, scripts.helpers.FrameTiers[0], <ore:barsIron>], [<ore:gearIron>, <ore:dustRedstone>, <ore:gearIron>]]);
 //Grind up Coal Coke into Dust
 scripts.helpers.addCrushingRecipe(<contenttweaker:coke_dust>, <ore:fuelCoke>, 5000, true);
+
+//Aqua Chow Recipes
+recipes.remove(<thermalfoundation:bait>);
+recipes.remove(<thermalfoundation:bait:1>);
+recipes.addShapeless(scripts.helpers.createRecipeName(<thermalfoundation:bait>), <thermalfoundation:bait> * 10, [<ore:dustWood>, <ore:slimeball>, <ore:cropNetherWart>, <minecraft:bread>]);
+mods.inworldcrafting.FluidToItem.transform(<thermalfoundation:bait:1> * 10, <liquid:redstone>, [<thermalfoundation:bait> * 10], true);
+mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:bait:1>, <thermalfoundation:bait>, <liquid:redstone> * 100, 2000);
 
 //Alloy Smelting Lumium
 for tinIngot in <ore:ingotTin>.items
@@ -68,6 +78,55 @@ for copperIngot in <ore:ingotCopper>.items
 	{
 		mods.advancedrocketry.ArcFurnace.addRecipe(<ore:ingotSignalum>.firstItem * 4, 600, 2, copperIngot * 3, silverIngot, <ore:dustRedstone>.firstItem * 10, <ore:sand>.firstItem);
 	}
+}
+
+//Extended Crafting Recipes (T2 Table)
+val thermalfoundation_EXTENDEDCRAFTING_T2 = {
+	 //null
+ 	 //								:	[[null, null, null],
+	 //									[null, null, null],
+	 //  									[null, null, null],
+	 //									[null, null, null]],
+	 <thermalexpansion:machine:10>
+ 	 								:	[[<ore:gearTin>, scripts.helpers.MotorTiers[0], <ore:gearAluminum>],
+	 									[null, scripts.helpers.FrameTiers[1], null],
+	  									[<ore:gearAluminum>, scripts.helpers.CircuitTiers[0], <ore:gearTin>],
+	 									[null, <ore:ingotSteel>, <ore:ingotConstantan>]],
+	 <thermalexpansion:machine:6>
+ 									:	[[<ore:ingotBrickNether>, null, <ore:ingotBrickNether>],
+	 									[null, scripts.helpers.FrameTiers[0], null],
+	   									[<ore:gearBronze>, scripts.helpers.CircuitTiers[1], <ore:gearBronze>],
+	 									[<ore:ingotLead>, <ore:ingotNickel>, <ore:ingotBrickNether>]],
+	 <thermalexpansion:machine:2>
+	 								:	[[null, <thermalfoundation:material:657>, null],
+	 									[<ore:gearSteel>, scripts.helpers.FrameTiers[1], <ore:gearSteel>],
+	   									[null, scripts.helpers.CircuitTiers[0], null],
+	 									[<ore:plankWood>, <ore:plateSealedWood>, <ore:plateWood>]],
+	 <thermalexpansion:machine>
+	 								:	[[<ore:stone>, scripts.helpers.CircuitTiers[0], <ore:stone>],
+	 									[<ore:stone>, scripts.helpers.FrameTiers[1], <ore:stone>],
+	   									[<ore:gearCopper>, <ore:coilGold>, <ore:gearCopper>],
+	 									[null, <ore:ingotNickel>, <ore:plateNickel>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in thermalfoundation_EXTENDEDCRAFTING_T2 {
+	recipes.remove(key.withAmount(1));
+	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
+}
+
+//Make the Elemental Powders Craft out of the Magic Elemental Liquids
+val elementalInputs = [
+	<minecraft:snowball> * 2,
+	<thermalfoundation:material:772>,
+	<thermalfoundation:material:771>,
+	<thermalfoundation:material:770>,
+] as crafttweaker.item.IItemStack[];
+
+for input in elementalInputs
+{
+	mods.thermalexpansion.Transposer.removeFillRecipe(input, <liquid:essence>);
+	mods.thermalexpansion.Transposer.removeFillRecipe(input, <liquid:xpjuice>);
+	mods.thermalexpansion.Transposer.removeFillRecipe(input, <liquid:experience>);
 }
 
 print("### Thermal Foundation Init Complete ###");

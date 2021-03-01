@@ -23,7 +23,7 @@
             "y": -2,
             "z": -1,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -39,7 +39,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -71,7 +71,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -181,7 +181,7 @@
             "y": -2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -213,7 +213,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -245,7 +245,7 @@
             "y": -1,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -341,7 +341,7 @@
             "y": 1,
             "z": 4,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -419,7 +419,7 @@
             "y": -1,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -443,7 +443,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -595,7 +595,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -611,7 +611,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -627,7 +627,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -667,7 +667,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -723,7 +723,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -731,7 +731,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -739,7 +739,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -747,7 +747,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -755,7 +755,7 @@
             "y": -2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -763,7 +763,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -771,7 +771,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -795,7 +795,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -819,7 +819,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -843,7 +843,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -851,7 +851,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -883,7 +883,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -907,7 +907,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -915,7 +915,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -931,7 +931,7 @@
             "y": -2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -939,7 +939,7 @@
             "y": -2,
             "z": 5,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -947,7 +947,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -955,7 +955,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -971,7 +971,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -987,7 +987,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1003,7 +1003,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1019,7 +1019,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1027,7 +1027,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1051,7 +1051,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1059,7 +1059,7 @@
             "y": 1,
             "z": -1,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1075,7 +1075,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1083,7 +1083,7 @@
             "y": -1,
             "z": 5,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1091,7 +1091,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1163,7 +1163,7 @@
             "y": 0,
             "z": -1,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1179,7 +1179,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1195,7 +1195,7 @@
             "y": 0,
             "z": 5,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1235,7 +1235,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1267,7 +1267,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1305,7 +1305,7 @@
             "y": -1,
             "z": -1,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1329,7 +1329,7 @@
             "y": 1,
             "z": 5,
             "elements": [
-                "contenttweaker:sub_block_holder_13@3"
+                "libvulpes:metal0@7"
             ]
         },
         {
@@ -1337,7 +1337,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1375,7 +1375,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1383,7 +1383,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1391,7 +1391,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1399,7 +1399,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1407,7 +1407,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1415,7 +1415,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1423,7 +1423,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {
@@ -1431,7 +1431,7 @@
             "y": -2,
             "z": 3,
             "elements": [
-                "contenttweaker:sub_block_holder_11@3"
+                "thermalfoundation:storage@7"
             ]
         },
         {

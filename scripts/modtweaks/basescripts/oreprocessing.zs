@@ -1123,11 +1123,6 @@ val GrinderOres = [
 	<minecraft:gold_ore>,
 	<minecraft:iron_ore>,
 	<minecraft:coal_block>,
-	//<nuclearcraft:ore:7>,
-	//<nuclearcraft:ore:6>,
-	//<nuclearcraft:ore:5>,
-	//<nuclearcraft:ore:4>,
-	//<nuclearcraft:ore:3>,
 ] as crafttweaker.item.IItemStack[];
 
 for oreBlock in GrinderOres

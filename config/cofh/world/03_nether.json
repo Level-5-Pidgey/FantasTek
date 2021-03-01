@@ -45,6 +45,28 @@
 				"value": [-1]
 			}
 		},
+		"nether_zinc": {
+			"distribution": "uniform",
+			"generator": {
+				"type": "cluster",
+				"block": {
+					"name": "contenttweaker:sub_block_holder_12",
+					"metadata": 6
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 6,
+			},
+			"cluster-count": 12,
+			"chunk-chance": 4,
+			"min-height": 75,
+			"max-height": 200,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [-1]
+			}
+		},
 		"nether_coal": {
 			"distribution": "uniform",
 			"generator": {

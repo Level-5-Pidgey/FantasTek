@@ -159,7 +159,7 @@ static OresWithProcessingTier as int[string] =
     "Tin" : 1,
     "Titanium" : 6,
     "Tungsten" : 5,
-    "Zinc" : 1,
+    "Zinc" : 3,
     "Mithril" : 3,
     "Thorium" : 4,
     "Uranium": 4,
@@ -402,10 +402,16 @@ static FrameTiers as crafttweaker.item.IItemStack[int]=
     1 : <mekanism:basicblock:8>,
 };
 
-static ElectronicTierss as crafttweaker.item.IIngredient[int]=
+static ElectronicTiers as crafttweaker.item.IIngredient[int]=
 {
     0 : <enderio:item_basic_capacitor>,
     1 : <minecraft:bedrock>,
+};
+
+static MotorTiers as crafttweaker.item.IItemStack[int]=
+{
+    0 : <magneticraft:crafting:2>,
+    1 : <nuclearcraft:part:8>,
 };
 
 static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =
@@ -449,7 +455,7 @@ function mathMin(n1 as int, n2 as int) as int
     return n1;
 }
 
-function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float)
+function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float, allowBasicAlloy as bool)
 {
     //Thermal Expansion Induction Smelter
     if(chanceOutput.matches(<minecraft:bedrock>))
@@ -466,12 +472,15 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
     mods.enderio.AlloySmelter.addRecipe(output, inputArray, energyCost);
 
     //Advanced Rocketry Arc Furnace
-    mods.advancedrocketry.ArcFurnace.addRecipe(output, 1200, energyCost / 1200, input1, input2, <minecraft:sand>);
+    if(allowBasicAlloy)
+    {
+        mods.advancedrocketry.ArcFurnace.addRecipe(output, 1200, energyCost / 1200, input1, input2, <minecraft:sand>);
+    }
 }
 
-function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int)
+function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, allowBasicAlloy as bool)
 {
-    addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, <minecraft:bedrock>, 0.0f);
+    addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, <minecraft:bedrock>, 0.0f, allowBasicAlloy);
 }
 
 function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, extraOutput as crafttweaker.item.IItemStack, extraOutputChance as float, allowBasicGrinder as bool)
@@ -530,7 +539,7 @@ function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIn
     mods.nuclearcraft.melter.addRecipe(input, output);
 
     //Tcon Smeltery
-    mods.tconstruct.Melting.addRecipe(output, input, 200);
+    mods.tconstruct.Melting.addRecipe(output, input);
 
     //Magma Crucible
     mods.thermalexpansion.Crucible.addRecipe(output, input.items[0], energyCost);

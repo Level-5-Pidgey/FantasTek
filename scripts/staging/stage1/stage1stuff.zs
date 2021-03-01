@@ -198,9 +198,8 @@ val StageLessItems = [
 	<contenttweaker:meat_pie>,
 	<contenttweaker:honey_sandwich>,
 	<contenttweaker:fairy_bread>,
-	<contenttweaker:chocolate>,
 	<contenttweaker:chicken_bucket>,
-	<magneticraft:crafting:2>,
+	scripts.helpers.MotorTiers[0],
 	<thermalfoundation:material:657>,
 	<forestry:kit_pickaxe>,
 	<forestry:kit_shovel>,
@@ -574,6 +573,12 @@ val StageLessItems = [
 	<nuclearcraft:roasted_cocoa_beans>,
 	<nuclearcraft:cocoa_butter>,
 	<nuclearcraft:geiger_counter>,
+	<nuclearcraft:compound:2>,
+	<iceandfire:frozen_stone>,
+	<thermalexpansion:device:4>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[]}),
+	<thermalexpansion:device:4>,
+	<thermalfoundation:bait:1>,
+	<thermalfoundation:bait>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

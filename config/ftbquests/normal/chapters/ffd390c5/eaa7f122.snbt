@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	dependencies: [
+		"4a2ae821"
+	],
+	optional: true,
+	tasks: [{
+		uid: "38a0edc6",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "02a4f03c",
+		type: "item",
+		item: "extendedcrafting:material 1 40"
+	}]
+}

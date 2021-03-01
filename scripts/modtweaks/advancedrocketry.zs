@@ -142,7 +142,6 @@ scripts.helpers.createAdvancedCraftingRecipe(<advancedrocketry:arcfurnace>, [[<o
 //Arc Furnace Alloy Creation
 val advancedRocketry = {
 	 "Bronze" : ["Copper", "Tin"],
-	 "Brass" : ["Copper", "Zinc"],
 	 "Electrum" : ["Gold", "Silver"],
 	 "Constantan" : ["Copper", "Nickel"],
 	 "Invar" : ["Iron", "Nickel"],

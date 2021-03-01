@@ -16,6 +16,8 @@ for openblocksToHide in openblocksItem
 val openblocksRecipes_CRAFTINGTABLE = {
 	<openblocks:vacuum_hopper> : [[null, <ore:ingotPulsatingIron>, null], [<ore:ingotPulsatingIron>, <minecraft:hopper>, <ore:ingotPulsatingIron>], [null, <ore:ingotPulsatingIron>, null]],
 	<openblocks:block_placer> : [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:stone>, <minecraft:piston>, <ore:stone>], [<ore:stone>, <minecraft:piston>, <ore:stone>]],
+	<openblocks:hang_glider> : [[<ore:nuggetSteel>, <ore:ingotSteel>, <ore:nuggetSteel>], [<openblocks:generic>, <ore:nuggetSteel>, <openblocks:generic>], [<ore:nuggetSteel>, <ore:ingotSteel>, <ore:nuggetSteel>]],
+	<openblocks:generic> : [[<ore:itemLeather>, <ore:nuggetSteel>, null], [<ore:itemLeather>, <ore:itemLeather>, <ore:nuggetSteel>], [<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in openblocksRecipes_CRAFTINGTABLE {

@@ -73,7 +73,7 @@ for metallicGrainsDustCraft in metallicGrainsDusts
 val machineRecipes_EXTENDEDCRAFTING = {
 		<forestry:carpenter> : [[<ore:ingotIron>, <contenttweaker:sealed_wood_plate>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <thermalfoundation:material:657>, <ore:ingotIron>]],
 		<forestry:squeezer> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]],
-		<forestry:centrifuge> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:crafting:2>, <ore:ingotIron>]],
+		<forestry:centrifuge> : [[<ore:ingotIron>, <ore:blockGlass>, <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:ingotIron>, scripts.helpers.MotorTiers[0], <ore:ingotIron>]],
 		<forestry:fabricator> : [[<ore:ingotGold>, <ore:blockGlass>, <ore:ingotGold>], [<ore:blockGlass>, scripts.helpers.FrameTiers[0], <ore:blockGlass>], [<ore:ingotGold>, <ore:chestWood>, <ore:ingotGold>]],
 		<forestry:database> : [[<ore:ingotRedstoneAlloy>, <forestry:portable_alyzer>, <ore:ingotRedstoneAlloy>], [<forestry:bee_chest>, <forestry:impregnated_casing>, <forestry:bee_chest>], [<ore:plateWood>, <ore:dropRoyalJelly>, <ore:plateWood>]],
 		<forestry:analyzer> : [[<ore:plateIron>, <forestry:portable_alyzer>, <ore:plateIron>], [null, <forestry:impregnated_casing>, null], [<ore:plateIron>, null, <ore:plateIron>]],
@@ -179,11 +179,16 @@ for earthCraftingItem in scripts.helpers.AllEarthT1Items
 recipes.remove(<forestry:engine_clockwork>);
 mods.forestry.Carpenter.addRecipe(<forestry:engine_clockwork> * 2, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [null, <ore:blockGlass>, null], [<ore:gearRedstoneAlloy>, <minecraft:piston>, <minecraft:clock>]], 240, <liquid:water> * 1000); //Clockwork Engine
 recipes.remove(<forestry:engine_peat>);
-mods.forestry.Carpenter.addRecipe(<forestry:engine_peat> * 2, [[<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>], [null, <ore:blockGlass>, null], [<magneticraft:crafting:2>, <minecraft:piston>, <ore:gearGold>]], 240, <liquid:water> * 1000); //Peat-Fired Engine
+mods.forestry.Carpenter.addRecipe(<forestry:engine_peat> * 2, [[<ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>], [null, <ore:blockGlass>, null], [scripts.helpers.MotorTiers[0], <minecraft:piston>, <ore:gearGold>]], 240, <liquid:water> * 1000); //Peat-Fired Engine
 recipes.remove(<forestry:engine_biogas>);
-mods.forestry.Carpenter.addRecipe(<forestry:engine_biogas> * 2, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], [null, <ore:blockGlass>, null], [<ore:gearConductiveIron>, <minecraft:piston>, <magneticraft:crafting:2>]], 240, <liquid:water> * 1000); //Peat-Fired Engine
+mods.forestry.Carpenter.addRecipe(<forestry:engine_biogas> * 2, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], [null, <ore:blockGlass>, null], [<ore:gearConductiveIron>, <minecraft:piston>, scripts.helpers.MotorTiers[0]]], 240, <liquid:water> * 1000); //Peat-Fired Engine
 
 //Remove Bronze Ingot Creation
 recipes.removeByRecipeName("forestry:bronze_ingot");
+
+//Increase Slimeball output from Propolis
+recipes.removeByRecipeName("forestry:propolis_to_slime");
+var propolisIngredient = <forestry:propolis:*> | <morebees:propolismetallic> | <morebees:propoliscrystal>;
+recipes.addShaped("propolis_to_slime", <minecraft:slime_ball> * 6, [[propolisIngredient, <forestry:pollen>, propolisIngredient], [propolisIngredient, <forestry:pollen>, propolisIngredient], [propolisIngredient, <forestry:pollen>, propolisIngredient]]);
 
 print("### Forestry Init Complete ###");

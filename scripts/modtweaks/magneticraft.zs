@@ -2,7 +2,7 @@
 print("~~~ Begin Magneticraft Init ~~~");
 
 //Item Variables
-var motor as crafttweaker.item.IItemStack = <magneticraft:crafting:2>;
+var motor as crafttweaker.item.IItemStack = scripts.helpers.MotorTiers[0];
 var batteryLow as crafttweaker.item.IItemStack = <magneticraft:battery_item_low>;
 var batteryMed as crafttweaker.item.IItemStack = <magneticraft:battery_item_medium>;
 
@@ -116,7 +116,10 @@ val oreMaterials =
 	"Osmium",
 	"Silver",
 	"Tin",
-	"Zinc"
+	"Zinc",
+	"Magnesium",
+	"Boron",
+	"Lithium"
 ] as string[];
 
 for materialString in oreMaterials
@@ -162,7 +165,7 @@ val magneticraftRecipes_EXTENDEDCRAFTING = {
 	<magneticraft:small_tank> : [[<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>], [<ore:ingotCrudeSteel>, null, <ore:ingotCrudeSteel>], [<ore:blockGlassColorless>, <ore:ingotGold>, <ore:blockGlassColorless>]],
 	<magneticraft:rf_heater> : [[<ore:ingotIron>, <ore:ingotRedstoneAlloy>, <ore:ingotIron>], [<ore:ingotIron>, <magneticraft:multiblock_parts:2>, <ore:ingotIron>], [<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>]],
 	<magneticraft:electric_engine> : [[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], [null, <ore:blockGlassColorless>, null], [motor, <minecraft:piston>, motor]],
-	<magneticraft:electric_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:ingotBrick>, scripts.helpers.FrameTiers[0], <ore:ingotBrick>], [<ore:ingotBrick>, <magneticraft:crafting:2>, <ore:ingotBrick>]],
+	<magneticraft:electric_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:ingotBrick>, scripts.helpers.FrameTiers[0], <ore:ingotBrick>], [<ore:ingotBrick>, scripts.helpers.MotorTiers[0], <ore:ingotBrick>]],
 	<magneticraft:sluice_box> : [[<ore:plateSealedWood>, <ore:stickWood>, null], [<magneticraft:crafting:5>, <ore:plateSealedWood>, <ore:stickWood>], [<ore:slabStone>, <ore:slabStone>, <ore:slabStone>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
@@ -189,10 +192,10 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 									[<ore:ingotIron>, scripts.helpers.FrameTiers[1], <ore:ingotIron>],
 									[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>],
 									[<ore:paper>, <ore:ingotSteel>, <ore:gearRedstoneAlloy>]],
-<magneticraft:steam_turbine>	:	[[<ore:ingotSteel>, <ore:plateBrass>, <ore:ingotSteel>],
+<magneticraft:steam_turbine>	:	[[<ore:ingotSteel>, <ore:plateBronze>, <ore:ingotSteel>],
 									[null, scripts.helpers.FrameTiers[1], null],
-									[<ore:ingotSteel>, <ore:plateBrass>, <ore:ingotSteel>],
-									[<ore:paper>, <ore:ingotSteel>, <ore:plateBrass>]],
+									[<ore:ingotSteel>, <ore:plateBronze>, <ore:ingotSteel>],
+									[<ore:paper>, <ore:ingotSteel>, <ore:plateBronze>]],
 	 <magneticraft:solar_tower>	:	[[<enderio:item_material:3>, <enderio:item_material:3>, <enderio:item_material:3>],
 									[<ore:ingotSteel>, scripts.helpers.FrameTiers[1], <ore:ingotSteel>],
 									[<ore:ingotSteel>, <magneticraft:insulated_heat_pipe>, <ore:ingotSteel>],

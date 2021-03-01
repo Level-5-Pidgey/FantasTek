@@ -45,5 +45,9 @@ var elemental_water_air = VanillaFactory.createFluid("elemental_water_air", Colo
 elemental_water_air.register();
 var elemental_water_earth = VanillaFactory.createFluid("elemental_water_earth", Color.fromHex("82e34d"));
 elemental_water_earth.register();
+var elemental_mix = VanillaFactory.createFluid("elemental_mix", Color.fromHex("e0e0e0"));
+elemental_mix.stillLocation = "contenttweaker:fluids/elemental_mix_still";
+elemental_mix.flowingLocation = "contenttweaker:fluids/elemental_mix";
+elemental_mix.register();
 
 print("### Custom Fluid Creator Init Complete ###");

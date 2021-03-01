@@ -294,6 +294,11 @@ recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing
 	[<extendedcrafting:material:2>, null, <extendedcrafting:material:2>],
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>]
 ]); //Reinforced
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:5>), <modularmachinery:blockcasing:5> * 4, [
+	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>],
+	[<extendedcrafting:material:2>, null, <extendedcrafting:material:2>],
+	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>]
+]); //Circuitry
 
 //Add Coke Oven Recipes
 var CokeOven as int[crafttweaker.oredict.IOreDictEntry] =
@@ -451,5 +456,8 @@ mods.bloodmagic.AlchemyArray.addRecipe(<modularmachinery:itemblueprint>.withTag(
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:embers_converter"}), [[null, <enderio:item_material:77>, null], [<enderio:item_material:77>, <embers:ancient_motive_core>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 //Embers Mechanical Assembler
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"})) ~ "_emberAssembly", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}), [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]]);
+//Industrial Mixer
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"})) ~ "_industrialMixer", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}), [[scripts.helpers.MotorTiers[0], <enderio:item_material:77>, scripts.helpers.MotorTiers[0]], [<enderio:item_material:77>, scripts.helpers.CircuitTiers[1], <enderio:item_material:77>], [scripts.helpers.MotorTiers[0], <enderio:item_material:77>, scripts.helpers.MotorTiers[0]]]);
+
 
 print("### Modular Machinery Init Complete ###");
