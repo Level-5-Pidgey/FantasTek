@@ -44,5 +44,11 @@
 			},
 			id: "minecraft:diamond_sword"
 		}
+	},
+	{
+		uid: "2576ff04",
+		type: "item",
+		item: "thaumcraft:loot_bag 1 2",
+		count: 3
 	}]
 }

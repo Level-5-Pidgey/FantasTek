@@ -789,14 +789,14 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 		//Mekanism Chemical Dissolution Chamber -- Tier 7 (5x)
 		if(tier <= 7)
 		{
-			if(!oreCrystal.empty)
+			if(!oreCrystal.empty && craftingMaterial != "CertusQuartz")
 			{
 				//Use method in mmhelper.zs file.
 				scripts.mmhelper.ChemicalOreFactoryRecipe(craftingMaterial, tier);
 			}
 
 			//Add other mekanism oreprocessing for compat
-			if(!oreCrystal.empty & !oreShard.empty)
+			if(!oreCrystal.empty && !oreShard.empty && craftingMaterial != "CertusQuartz")
 			{
 				mods.mekanism.chemical.injection.addRecipe(oreCrystal.firstItem, <gas:hydrogenchloride> * 200, oreShard.firstItem);
 
@@ -1277,6 +1277,8 @@ val InductionSmelterOres =
 	"Boron",
 	"Lithium" ,
 	"Magnesium",
+	"AncientDebris",
+	"AstralStarmetal",
 	"Titanium"
 ] as string[];
 

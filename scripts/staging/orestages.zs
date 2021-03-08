@@ -409,10 +409,6 @@ var OtherStagingReplacements as crafttweaker.item.IItemStack[crafttweaker.item.I
 	<iceandfire:fire_lily> : <biomesoplenty:flower_1:5>,
 	<iceandfire:frost_lily> : <futuremc:cornflower>,
 	<thermalfoundation:ore_fluid:1> : <minecraft:gravel>,
-	<natura:overworld_berrybush_raspberry:*> : <minecraft:cobblestone>,
-    <natura:overworld_berrybush_blueberry:*> : <minecraft:cobblestone>,
-    <natura:overworld_berrybush_blackberry:*> : <minecraft:cobblestone>,
-    <natura:overworld_berrybush_maloberry:*> : <minecraft:cobblestone>,
 	<appliedenergistics2:sky_stone_block> : <chisel:basalt2:7>,
 };
 
@@ -477,10 +473,6 @@ var StageForReplacement as mods.zenstages.Stage[crafttweaker.item.IItemStack] =
 	<iceandfire:fire_lily> : stages.progression2,
 	<iceandfire:frost_lily> : stages.progression2,
 	<thermalfoundation:ore_fluid:1> : stages.progression2,
-	<natura:overworld_berrybush_raspberry:*> : stages.progression2,
-    <natura:overworld_berrybush_blueberry:*> : stages.progression2,
-    <natura:overworld_berrybush_blackberry:*> : stages.progression2,
-    <natura:overworld_berrybush_maloberry:*> : stages.progression2,
     <appliedenergistics2:sky_stone_block> : stages.progression2,
 };
 

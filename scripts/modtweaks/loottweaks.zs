@@ -171,7 +171,8 @@ enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Func
 val shrineChest = LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine");
 val astralShrineChestPools =
 	[
-		"astralsorcery:itemcraftingcomponent"
+		"astralsorcery:itemcraftingcomponent",
+		"astralsorcery:itemconstellationpaper"
 	] as string[];
 
 for pool in astralShrineChestPools
@@ -295,71 +296,43 @@ for lootTable, dungeonTreasures in dungeonBaublesAndTreasures {
 
 //Add machinery/logistics parts to Loot Chests
 val mechanicalLootPools as int[LootTable] = {
-	LootTweaker.getTable("minecraft:chests/abandoned_mineshaft") : 20,
-	LootTweaker.getTable("minecraft:chests/desert_pyramid") : 20,
-	LootTweaker.getTable("minecraft:chests/igloo_chest") : 20,
-	LootTweaker.getTable("minecraft:chests/jungle_temple") : 20,
-	LootTweaker.getTable("minecraft:chests/nether_bridge") : 10,
-	LootTweaker.getTable("minecraft:chests/simple_dungeon") : 20,
-	LootTweaker.getTable("minecraft:chests/spawn_bonus_chest") : 1,
-	LootTweaker.getTable("minecraft:chests/village_blacksmith") : 20,
-	LootTweaker.getTable("minecraft:chests/stronghold_corridor") : 6,
-	LootTweaker.getTable("minecraft:chests/end_city_treasure") : 1,
-	LootTweaker.getTable("minecraft:chests/woodland_mansion") : 1,
-	LootTweaker.getTable("astralsorcery:chest_shrine") : 10,
-	LootTweaker.getTable("quark:chests/pirate_chest") : 6,
+	LootTweaker.getTable("minecraft:chests/abandoned_mineshaft") : 10,
+	LootTweaker.getTable("minecraft:chests/desert_pyramid") : 10,
+	LootTweaker.getTable("minecraft:chests/igloo_chest") : 10,
+	LootTweaker.getTable("minecraft:chests/jungle_temple") : 10,
+	LootTweaker.getTable("minecraft:chests/nether_bridge") : 20,
+	LootTweaker.getTable("minecraft:chests/simple_dungeon") : 10,
+	LootTweaker.getTable("minecraft:chests/spawn_bonus_chest") : 30,
+	LootTweaker.getTable("minecraft:chests/village_blacksmith") : 10,
+	LootTweaker.getTable("minecraft:chests/stronghold_corridor") : 20,
+	LootTweaker.getTable("minecraft:chests/end_city_treasure") : 30,
+	LootTweaker.getTable("minecraft:chests/woodland_mansion") : 30,
+	LootTweaker.getTable("astralsorcery:chest_shrine") : 30,
+	LootTweaker.getTable("quark:chests/pirate_chest") : 20,
 };
 
-val mechanicalLoot as int[crafttweaker.item.IItemStack] = {
-	<enderio:item_material> : 5,
-	<projectred-core:resource_item:104> : 10,
-	<projectred-core:resource_item:105> : 15,
-	<contenttweaker:material_part:934> : 28,
-	<contenttweaker:material_part:1297> : 5,
-	<thermalfoundation:material:22> : 40,
-	<thermalfoundation:material:23> : 40,
-	<thermalfoundation:material:24> : 35,
-	<thermalfoundation:material:25> : 30,
-	<thermalfoundation:material:26> : 25,
-	<thermalfoundation:material:27> : 25,
-	<contenttweaker:material_part:939> : 35,
-	scripts.helpers.MotorTiers[0] : 15,
-	<magneticraft:inserter> : 13,
-	<magneticraft:conveyor_belt> * 4 : 13,
-	<embers:pipe> : 40,
-	<inspirations:pipe> : 50,
-	<minecraft:hopper> : 30,
-	<contenttweaker:material_part:1298> : 4,
-	<contenttweaker:wood_plate> : 27,
-	<thermalfoundation:material:32> : 40,
-	<thermalfoundation:material:33> : 37,
-	<contenttweaker:material_part:935> : 18,
-	<contenttweaker:material_part:940> : 24,
-	<minecraft:tnt> : 24,
-	<contenttweaker:material_part:955> : 10,
-	<enderio:item_alloy_ingot:4> : 40,
-	<enderio:item_alloy_ingot:3> : 35,
-	<enderio:item_alloy_ingot:5> : 30,
-	<minecraft:iron_ingot> : 35,
-	<minecraft:gold_ingot> : 30,
+val lootBags as int[crafttweaker.item.IItemStack] = {
+	<thaumcraft:loot_bag> : 10,
+	<thaumcraft:loot_bag:1> : 20,
+	<thaumcraft:loot_bag:2> : 30,
 };
 
 for lootTable, lootRate in mechanicalLootPools {
-	var lootPool = lootTable.addPool("tech", 1, 1, 0, 1);
-	for key, value in mechanicalLoot {
-		if(lootRate <= value)
+	var lootPool = lootTable.addPool("loot_bags", 1, 1, 0, 1);
+	for bag, bagValue in lootBags {
+		if(lootRate >= bagValue)
 		{
-			if(value > 36)
+			if(bagValue == 10)
 			{
-				lootPool.addItemEntryHelper(key, value as int, 0, [Functions.setCount(2, 8)], [], key.name ~ "_" ~ key.metadata);
+				lootPool.addItemEntryHelper(bag, bagValue as int, 0, [Functions.setCount(2, 4)], [], bag.name ~ "_" ~ bag.metadata);
 			}
-			else if (value > 10)
+			else if (bagValue == 20)
 			{
-				lootPool.addItemEntryHelper(key, value as int, 0, [Functions.setCount(1, 4)], [], key.name ~ "_" ~ key.metadata);
+				lootPool.addItemEntryHelper(bag, bagValue as int, 0, [Functions.setCount(1, 3)], [], bag.name ~ "_" ~ bag.metadata);
 			}
 			else
 			{
-				lootPool.addItemEntryHelper(key, value as int, 0, [], [], key.name ~ "_" ~ key.metadata);
+				lootPool.addItemEntryHelper(bag, bagValue as int, 0, [], [], bag.name ~ "_" ~ bag.metadata);
 			}
 		}
 	}

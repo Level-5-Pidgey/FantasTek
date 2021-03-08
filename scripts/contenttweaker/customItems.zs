@@ -328,3 +328,13 @@ elemental_mote_air.register();
 var elemental_mote_earth = VanillaFactory.createItem("elemental_mote_earth");
 elemental_mote_earth.rarity = "UNCOMMON";
 elemental_mote_earth.register();
+
+//Magma Powder
+var magma_powder = VanillaFactory.createItem("magma_powder");
+magma_powder.rarity = "COMMON";
+magma_powder.register();
+
+//Energy Crystal
+var energy_crystal = VanillaFactory.createItem("energy_crystal");
+energy_crystal.rarity = "RARE";
+energy_crystal.register();

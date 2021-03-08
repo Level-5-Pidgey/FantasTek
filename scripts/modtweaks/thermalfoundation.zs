@@ -1,4 +1,3 @@
-
 print("~~~ Begin Thermal Foundation Init ~~~");
 
 //Remove Manual Crafting of Blends
@@ -114,6 +113,7 @@ for key, value in thermalfoundation_EXTENDEDCRAFTING_T2 {
 	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
 }
 
+//Elemental Powders Rework
 //Make the Elemental Powders Craft out of the Magic Elemental Liquids
 val elementalInputs = [
 	<minecraft:snowball> * 2,
@@ -127,6 +127,41 @@ for input in elementalInputs
 	mods.thermalexpansion.Transposer.removeFillRecipe(input, <liquid:essence>);
 	mods.thermalexpansion.Transposer.removeFillRecipe(input, <liquid:xpjuice>);
 	mods.thermalexpansion.Transposer.removeFillRecipe(input, <liquid:experience>);
+}
+
+//Create the dusts themselves (that get turned into the useful liquids)
+val thermal_elementalDusts = {
+	<ore:dustPyrotheum>.firstItem : [<contenttweaker:magma_powder>, <contenttweaker:magma_powder>, <ore:dustSulfur>.firstItem, <ore:dustRedstone>.firstItem],
+	<ore:dustCryotheum>.firstItem : [<ore:dustBlizz>.firstItem, <ore:dustBlizz>.firstItem, <ore:dustSaltpeter>.firstItem, <ore:dustRedstone>.firstItem],
+	<ore:dustPetrotheum>.firstItem : [<ore:dustBasalz>.firstItem, <ore:dustBasalz>.firstItem, <ore:dustSulfur>.firstItem, <ore:dustRedstone>.firstItem],
+	<ore:dustAerotheum>.firstItem : [<ore:dustBlitz>.firstItem, <ore:dustBlitz>.firstItem, <ore:dustSaltpeter>.firstItem, <ore:dustRedstone>.firstItem],
+} as crafttweaker.item.IItemStack[][crafttweaker.item.IItemStack];
+
+for elementalPowder, ingredients in thermal_elementalDusts {
+	var weightedArray as crafttweaker.item.WeightedItemStack[] = [ingredients[0] % 100, ingredients[1] % 100, ingredients[2] % 100, ingredients[3] % 100];
+
+	//Centrifuge
+	mods.thermalexpansion.Centrifuge.removeRecipe(elementalPowder);
+	mods.thermalexpansion.Centrifuge.addRecipe(weightedArray, elementalPowder * 2, null, 1500);
+
+	//Crafting
+	recipes.remove(elementalPowder);
+	mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(elementalPowder), scripts.helpers.stages.progression2.stage, elementalPowder * 2, ingredients);
+}
+
+//Add Recipes using Ash + an elemental Liquid to make the respective powder
+val thermal_elementalPowders = {
+	<liquid:elemental_water_fire> : <contenttweaker:magma_powder>,
+	<liquid:elemental_water_water> : <ore:dustBlizz>.firstItem,
+	<liquid:elemental_water_earth> : <ore:dustBasalz>.firstItem,
+	<liquid:elemental_water_air> : <ore:dustBlitz>.firstItem,
+} as crafttweaker.item.IItemStack[crafttweaker.liquid.ILiquidStack];
+
+for elementalLiquid, elementalPowder in thermal_elementalPowders {
+	for ash in <ore:dustAsh>.items
+	{
+		mods.thermalexpansion.Transposer.addFillRecipe(elementalPowder, ash, elementalLiquid * 250, 2500);
+	}
 }
 
 print("### Thermal Foundation Init Complete ###");

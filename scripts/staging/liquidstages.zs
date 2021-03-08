@@ -229,6 +229,7 @@ var liquidStages as mods.zenstages.Stage[crafttweaker.liquid.ILiquidStack] =
 	<liquid:elemental_water_earth> : stages.progression1,
 	<liquid:elemental_water_fire> : stages.progression1,
 	<liquid:elemental_water_water> : stages.progression1,
+	<liquid:elemental_mix> : stages.progression2,
 	<liquid:elementium> : stages.Botania3,
 	<liquid:emerald> : stages.progression1,
 	<liquid:emerald_nak> : stages.progression3,

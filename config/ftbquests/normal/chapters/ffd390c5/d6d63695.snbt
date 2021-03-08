@@ -1,4 +1,5 @@
 {
+	icon: "tconstruct:ingots 1 2",
 	x: 12.0d,
 	y: 2.0d,
 	dependencies: [
@@ -6,10 +7,39 @@
 		"2fb5c9f4"
 	],
 	tasks: [{
-		uid: "da29a3d7",
+		uid: "f5640048",
 		type: "item",
 		items: [{
-			item: "tconstruct:ingots 1 2"
+			item: "tconstruct:metal 1 2"
+		}],
+		count: 3L
+	},
+	{
+		uid: "efd6daee",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:mechanical_imbuer"
+			}
 		}]
+	}],
+	rewards: [{
+		uid: "49ac0193",
+		type: "item",
+		item: "tconstruct:metal 1 2",
+		count: 7
+	},
+	{
+		uid: "9961f6a5",
+		type: "item",
+		item: "modularmachinery:itemmodularium",
+		count: 32
+	},
+	{
+		uid: "e5d5ddfd",
+		type: "item",
+		item: "modularmachinery:blockcasing 1 4",
+		count: 33
 	}]
 }

@@ -94,7 +94,11 @@ static AllT1MagicItems as crafttweaker.item.IItemStack[] =
     <contenttweaker:salis_mundus_fire>,
     <contenttweaker:salis_mundus_water>,
     <contenttweaker:salis_mundus_earth>,
-    <contenttweaker:salis_mundus_air>
+    <contenttweaker:salis_mundus_air>,
+    <contenttweaker:elemental_mote_fire>,
+    <contenttweaker:elemental_mote_water>,
+    <contenttweaker:elemental_mote_air>,
+    <contenttweaker:elemental_mote_earth>
 ];
 
 //Variable for all T1 Fire Element Items (for extended crafting recipes)
@@ -104,7 +108,8 @@ static AllFireT1Items as crafttweaker.item.IItemStack[] =
     <ore:runeFireB>.firstItem,
     <contenttweaker:sanguine_gem_fire>,
     <contenttweaker:crystal_ember_fire>,
-    <contenttweaker:salis_mundus_fire>
+    <contenttweaker:salis_mundus_fire>,
+    <contenttweaker:elemental_mote_fire>
 ];
 
 //Variable for all T1 Water Element Items (for extended crafting recipes)
@@ -114,7 +119,8 @@ static AllWaterT1Items as crafttweaker.item.IItemStack[] =
     <ore:runeWaterB>.firstItem,
     <contenttweaker:sanguine_gem_water>,
     <contenttweaker:crystal_ember_water>,
-    <contenttweaker:salis_mundus_water>
+    <contenttweaker:salis_mundus_water>,
+    <contenttweaker:elemental_mote_water>
 ];
 
 //Variable for all T1 Air Element Items (for extended crafting recipes)
@@ -124,7 +130,8 @@ static AllAirT1Items as crafttweaker.item.IItemStack[] =
     <ore:runeAirB>.firstItem,
     <contenttweaker:sanguine_gem_air>,
     <contenttweaker:crystal_ember_air>,
-    <contenttweaker:salis_mundus_air>
+    <contenttweaker:salis_mundus_air>,
+    <contenttweaker:elemental_mote_air>
 ];
 
 //Variable for all T1 Earth Element Items (for extended crafting recipes)
@@ -134,7 +141,8 @@ static AllEarthT1Items as crafttweaker.item.IItemStack[] =
     <ore:runeEarthB>.firstItem,
     <contenttweaker:sanguine_gem_earth>,
     <contenttweaker:crystal_ember_earth>,
-    <contenttweaker:salis_mundus_earth>
+    <contenttweaker:salis_mundus_earth>,
+    <contenttweaker:elemental_mote_earth>
 ];
 
 static OresWithProcessingTier as int[string] =
@@ -394,12 +402,14 @@ static CircuitTiers as crafttweaker.item.IItemStack[int] =
 {
     0 : <advancedrocketry:ic>,
     1 : <mekanism:controlcircuit>,
+    2 : <mekanism:controlcircuit>.withTag({ench: [{lvl: 1 as short, id: 72}]}),
 };
 
 static FrameTiers as crafttweaker.item.IItemStack[int]=
 {
     0 : <enderio:item_material>,
     1 : <mekanism:basicblock:8>,
+    2 : <mekanism:basicblock:8>.withTag({ench: [{lvl: 1 as short, id: 72}]}),
 };
 
 static ElectronicTiers as crafttweaker.item.IIngredient[int]=
@@ -414,6 +424,14 @@ static MotorTiers as crafttweaker.item.IItemStack[int]=
     1 : <nuclearcraft:part:8>,
 };
 
+static BatteryTiers as crafttweaker.item.IItemStack[int]=
+{
+    0 : <magneticraft:battery_item_low>,
+    1 : <magneticraft:battery_item_medium>,
+    2 : <nuclearcraft:lithium_ion_cell>,
+    3 : <contenttweaker:energy_crystal>
+};
+
 static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =
 {
     "ore" : <ore:oreRuby>.firstItem | <ore:orePeridot>.firstItem |
@@ -423,6 +441,7 @@ static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =
     "gem" : <ore:gemRuby>.firstItem | <ore:gemPeridot>.firstItem |	<ore:gemTopaz>.firstItem | <ore:gemTanzanite>.firstItem |	<ore:gemMalachite>.firstItem | <ore:gemSapphire>.firstItem |	<ore:gemAmber>.firstItem | <ore:gemEmerald>.firstItem,
     "block" : <ore:blockRuby>.firstItem | <ore:blockPeridot>.firstItem | <ore:blockTopaz>.firstItem | <ore:blockTanzanite>.firstItem | <ore:blockMalachite>.firstItem | <ore:blockSapphire>.firstItem | <ore:blockAmber>.firstItem | <ore:blockEmerald>.firstItem,
     "plate" : <ore:plateRuby>.firstItem | <ore:platePeridot>.firstItem | <ore:plateTopaz>.firstItem | <ore:plateTanzanite>.firstItem | <ore:plateMalachite>.firstItem | <ore:plateSapphire>.firstItem | <ore:plateAmber>.firstItem | <ore:plateEmerald>.firstItem,
+    "gear" : <ore:gearRuby>.firstItem | <ore:gearPeridot>.firstItem | <ore:gearTopaz>.firstItem | <ore:gearTanzanite>.firstItem | <ore:gearMalachite>.firstItem | <ore:gearSapphire>.firstItem | <ore:gearAmber>.firstItem | <ore:gearEmerald>.firstItem,
 };
 
 function mathMax(n1 as int, n2 as int) as int
@@ -535,14 +554,21 @@ function addCrushingRecipe(output as crafttweaker.item.IItemStack, input as craf
 
 function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIngredient, energyCost as int, allowBasicMelter as bool)
 {
+    var inputAsStack as crafttweaker.item.IItemStack = input.items[0];
     //Nuclearcraft Melter
     mods.nuclearcraft.melter.addRecipe(input, output);
 
     //Tcon Smeltery
-    mods.tconstruct.Melting.addRecipe(output, input);
+    if (allowBasicMelter)
+    {
+        mods.tconstruct.Melting.addRecipe(output, input);
+    }
+
+    //Industrial Mixer (basic melting)
+    scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(inputAsStack), energyCost, energyCost / 200, output, null, null, null, null, null, inputAsStack, null, null);
 
     //Magma Crucible
-    mods.thermalexpansion.Crucible.addRecipe(output, input.items[0], energyCost);
+    mods.thermalexpansion.Crucible.addRecipe(output, inputAsStack, energyCost);
 }
 
 function createAdvancedCraftingRecipe(
@@ -554,27 +580,78 @@ function createAdvancedCraftingRecipe(
     recipeStringExtras as string,
     allowAlternateCrafting as bool
     )
+{
+    //Main ExtendedCrafting Recipe
+    mods.extendedcrafting.TableCrafting.addShaped(0, output, [
+    	[extraItemRare, extraItemUncommon, extraItemCommon, extraItemUncommon, extraItemRare],
+    	[extraItemCommon, mainItems[0][0], mainItems[0][1], mainItems[0][2], extraItemCommon],
+    	[extraItemUncommon, mainItems[1][0], mainItems[1][1], mainItems[1][2], extraItemUncommon],
+    	[extraItemCommon, mainItems[2][0], mainItems[2][1], mainItems[2][2], extraItemCommon],
+    	[extraItemRare, extraItemUncommon, extraItemCommon, extraItemUncommon, extraItemRare]
+    ]);
+
+    //If Alternate Recipes are allowed, create them as well
+    if(allowAlternateCrafting)
     {
-        //Main ExtendedCrafting Recipe
-        mods.extendedcrafting.TableCrafting.addShaped(0, output, [
-        	[extraItemRare, extraItemUncommon, extraItemCommon, extraItemUncommon, extraItemRare],
-        	[extraItemCommon, mainItems[0][0], mainItems[0][1], mainItems[0][2], extraItemCommon],
-        	[extraItemUncommon, mainItems[1][0], mainItems[1][1], mainItems[1][2], extraItemUncommon],
-        	[extraItemCommon, mainItems[2][0], mainItems[2][1], mainItems[2][2], extraItemCommon],
-        	[extraItemRare, extraItemUncommon, extraItemCommon, extraItemUncommon, extraItemRare]
-        ]);
+        //Next Stage Crafting Recipe
+        mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(output) ~ recipeStringExtras, scripts.helpers.stages.progression3.stage, output, [[mainItems[0][0], mainItems[0][1], mainItems[0][2]], [mainItems[1][0], mainItems[1][1], mainItems[1][2]], [mainItems[2][0], mainItems[2][1], mainItems[2][2]]]);
 
-        //If Alternate Recipes are allowed, create them as well
-        if(allowAlternateCrafting)
-        {
-            //Next Stage Crafting Recipe
-            mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(output) ~ recipeStringExtras, scripts.helpers.stages.progression3.stage, output, [[mainItems[0][0], mainItems[0][1], mainItems[0][2]], [mainItems[1][0], mainItems[1][1], mainItems[1][2]], [mainItems[2][0], mainItems[2][1], mainItems[2][2]]]);
-
-            //Astral Sorcery Cheaper Crafting
-            mods.astralsorcery.Altar.addAttunementAltarRecipe("fantastek:shaped/internal/altar/" ~ scripts.helpers.createRecipeName(output) ~ recipeStringExtras, output, 500, 160, [
-			mainItems[0][0], mainItems[0][1], mainItems[0][2],
-			mainItems[1][0], mainItems[1][1], mainItems[1][2],
-			mainItems[2][0], mainItems[2][1], mainItems[2][2],
-			extraItemRare, extraItemRare, extraItemRare, extraItemRare]);
-        }
+        //Astral Sorcery Cheaper Crafting
+        mods.astralsorcery.Altar.addAttunementAltarRecipe("fantastek:shaped/internal/altar/" ~ scripts.helpers.createRecipeName(output) ~ recipeStringExtras, output, 500, 160, [
+		mainItems[0][0], mainItems[0][1], mainItems[0][2],
+		mainItems[1][0], mainItems[1][1], mainItems[1][2],
+		mainItems[2][0], mainItems[2][1], mainItems[2][2],
+		extraItemRare, extraItemRare, extraItemRare, extraItemRare]);
     }
+}
+
+function CreateAssemblyRecipe(
+    output as crafttweaker.item.IItemStack,
+    inputItems as crafttweaker.item.IIngredient[],
+    craftingTime as int,
+    energyCost as int
+)
+{
+    var nullLessIngredients = [] as crafttweaker.item.IIngredient[];
+    for inputItem in inputItems
+    {
+        if(!isNull(inputItem)) { nullLessIngredients += inputItem; }
+    }
+
+    //Forestry Carpenter
+    if(inputItems.length == 9)
+    {
+        mods.forestry.Carpenter.addRecipe(output, [[inputItems[0], inputItems[1], inputItems[2]], [inputItems[3], inputItems[4], inputItems[5]], [inputItems[6], inputItems[7], inputItems[8]]], craftingTime * 1.5f, <liquid:lubricant> * 200);
+    }
+
+    //Modular Machinery Assembly Line
+    scripts.mmhelper.AssemblyLineRecipe(createRecipeName(output), energyCost, craftingTime, output, nullLessIngredients);
+
+    //Advanced Rocketry Assembly Machine
+    if(nullLessIngredients.length == 2)
+    {
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1]);
+    } else if (nullLessIngredients.length == 3)
+    {
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2]);
+    } else if (nullLessIngredients.length == 4)
+    {
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3]);
+    } else if (nullLessIngredients.length == 5)
+    {
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4]);
+    } else if (nullLessIngredients.length == 6)
+    {
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5]);
+    } else if (nullLessIngredients.length == 7)
+    {
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5], inputItems[6]);
+    } else if (nullLessIngredients.length == 8)
+    {
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5], inputItems[6], inputItems[7]);
+    }
+    else if (nullLessIngredients.length == 9)
+    {
+      mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5], inputItems[6], inputItems[7], inputItems[8]);
+    }
+}

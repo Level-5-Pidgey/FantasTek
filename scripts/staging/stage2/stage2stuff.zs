@@ -54,10 +54,6 @@ val stage2_stageItems = [
     <extrautils2:ineffableglass:*>,
     <morebees:framemutating>,
     <morebees:framecooled>,
-    <natura:overworld_berrybush_raspberry:*>,
-    <natura:overworld_berrybush_blueberry:*>,
-    <natura:overworld_berrybush_blackberry:*>,
-    <natura:overworld_berrybush_maloberry:*>,
     <natura:soups:9>,
     <randomthings:spectrecharger:2>,
     <randomthings:spectrecharger>,
@@ -170,10 +166,6 @@ val stage2_stageItems = [
     <mekanismtools:steelchestplate>,
     <mekanismtools:steelleggings>,
     <mekanismtools:steelboots>,
-    <natura:edibles:2>,
-    <natura:edibles:3>,
-    <natura:edibles:4>,
-    <natura:edibles:5>,
     <advancedrocketry:arcfurnace>,
     <libvulpes:holoprojector>,
     <libvulpes:forgepowerinput>,
@@ -206,7 +198,13 @@ val stage2_stageItems = [
     <mekanism:basicblock:8>,
     <nuclearcraft:alloy_furnace_active>,
     <nuclearcraft:alloy_furnace_idle>,
-    <nuclearcraft:part:8>
+    <nuclearcraft:part:8>,
+    <mekanism:basicblock2:1>,
+    <mekanism:basicblock2:2>,
+    <mekanism:basicblock2:3>.withTag({tier: 0}),
+    <mekanism:basicblock2:3>.withTag({tier: 1}),
+    <mekanism:basicblock2:4>.withTag({tier: 0}),
+    <mekanism:basicblock2:4>.withTag({tier: 1}),
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems
@@ -224,6 +222,7 @@ mods.recipestages.Recipes.setRecipeStage(stageString, <forestry:bronze_pickaxe>)
 //Stage Modular Machinery
 val stage2_modularMachinery = [
     <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ore_washing_factory"}),
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mechanical_imbuer"}),
     <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"})
 ] as crafttweaker.item.IItemStack[];
 

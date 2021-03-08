@@ -93,4 +93,30 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers
 recipes.remove(<mekanism:basicblock:8>);
 mods.extendedcrafting.EnderCrafting.addShaped(<mekanism:basicblock:8>, [[<ore:plateSteel>, <ore:ingotBrass>, <ore:plateSteel>], [<ore:ingotBrass>, null, <ore:ingotBrass>], [<ore:plateSteel>, <ore:ingotBrass>, <ore:plateSteel>]], 60);
 
+//Mechanical Imbuement
+val mekanism_MechanicalImbuement = {
+	scripts.helpers.FrameTiers[1] : 25000,
+	scripts.helpers.CircuitTiers[1] : 25000,
+} as int[crafttweaker.item.IItemStack];
+
+for item, energyCost in mekanism_MechanicalImbuement {
+	scripts.mmhelper.AddMechanicalImbuerRecipe(scripts.helpers.createRecipeName(item), item, energyCost);
+}
+
+//Crafting Table Recipes
+val mekanismRecipes_CRAFTINGTABLE = {
+	//null : [[null, null, null], [null, null, null], [null, null, null]],
+	<mekanism:basicblock2:1> * 6 : [[<ore:dustSmallLithium>, <ore:ingotSteel>, <ore:dustSmallLithium>], [<ore:ingotSteel>, <ore:plateQuartz>, <ore:ingotSteel>], [<ore:dustSmallLithium>, <ore:ingotSteel>, <ore:dustSmallLithium>]],
+	<mekanism:basicblock2:2> * 4 : [[null, <mekanism:basicblock2:2>, null], [<mekanism:basicblock2:2>, scripts.helpers.CircuitTiers[0], <mekanism:basicblock2:2>], [null, <mekanism:basicblock2:2>, null]],
+	<mekanism:basicblock2:3>.withTag({tier: 0}) : [[<ore:dustSmallCobalt>, scripts.helpers.BatteryTiers[1], <ore:dustSmallCobalt>], [scripts.helpers.BatteryTiers[1], scripts.helpers.FrameTiers[1], scripts.helpers.BatteryTiers[1]], [<ore:dustSmallCobalt>, scripts.helpers.BatteryTiers[1], <ore:dustSmallCobalt>]],
+	<mekanism:basicblock2:4>.withTag({tier: 0}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], scripts.helpers.FrameTiers[1], scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in mekanismRecipes_CRAFTINGTABLE {
+	recipes.remove(key.withAmount(1));
+	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+}
+
+
+
 print("### Mekanism Init Complete ###");

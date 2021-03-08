@@ -49,12 +49,13 @@ mods.recipestages.Recipes.setRecipeStage(stageString, <astralsorcery:itemcraftin
 //Change tooltip for Astral Sorcery crystals
 mods.ItemStages.setUnfamiliarName("Mysterious Crystal", <astralsorcery:blockcollectorcrystal>);
 
-//Stage Imbued Crystals
+//Extra staging
 val Stage1AstralItems = [
     <contenttweaker:astral_crystal_air>,
     <contenttweaker:astral_crystal_water>,
     <contenttweaker:astral_crystal_fire>,
-    <contenttweaker:astral_crystal_earth>
+    <contenttweaker:astral_crystal_earth>,
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_converter"})
 ] as crafttweaker.item.IItemStack[];
 
 for item in Stage1AstralItems

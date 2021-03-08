@@ -21,5 +21,17 @@
 				}
 			}
 		}]
+	}],
+	rewards: [{
+		uid: "1d7127f2",
+		type: "item",
+		item: "thermalfoundation:material 1 768",
+		count: 16
+	},
+	{
+		uid: "5662a7eb",
+		type: "item",
+		item: "minecraft:iron_ingot",
+		count: 16
 	}]
 }

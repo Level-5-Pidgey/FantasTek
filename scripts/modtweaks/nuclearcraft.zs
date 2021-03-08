@@ -9,6 +9,7 @@ mods.tconstruct.Melting.addRecipe(<liquid:gelatin> * 36, <minecraft:dye:15>, 90)
 
 //Early game cocoa butter production
 mods.inworldcrafting.FluidToFluid.transform(<liquid:cocoa_butter>, <liquid:water>, [<nuclearcraft:ground_cocoa_nibs> * 10]);
+mods.appliedenergistics2.Grinder.addRecipe(<nuclearcraft:ground_cocoa_nibs>, <nuclearcraft:roasted_cocoa_beans>, 3);
 
 //Geiger Counter Recipe
 recipes.remove(<nuclearcraft:geiger_counter>);
@@ -16,7 +17,12 @@ mods.forestry.Carpenter.addRecipe(<nuclearcraft:geiger_counter>, [[<ore:ingotEle
 
 //Advanced Motor Recipe
 recipes.remove(<nuclearcraft:part:8>);
-mods.forestry.Carpenter.addRecipe(<nuclearcraft:part:8> * 2, [[<ore:ingotSteel>, <ore:ingotSteel>, null],[<ore:ingotAluminium>, <ore:ingotAluminium>, <ore:coilCopper>],[<ore:ingotSteel>, <ore:ingotSteel>, null]], 40, <liquid:lubricant> * 200);
+scripts.helpers.CreateAssemblyRecipe(
+    <nuclearcraft:part:8> * 2,
+    [<ore:ingotSteel>, <ore:ingotSteel>, null, <ore:plateAluminium>, <ore:plateAluminium>, <ore:coilCopper>, <ore:ingotSteel>, <ore:ingotSteel>, null],
+    40,
+    5000
+);
 
 //Alloy Smelter Recipes
 var ncAlloySmelter =
@@ -46,6 +52,17 @@ mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneDiorite>, /*O
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneBrimstone>, /*Output 1*/ <ore:dustBlaze>.firstItem, 33, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustSulfur>.firstItem, 15]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stonePermafrost>, /*Output 1*/ <forestry:crafting_material:5>, 50, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustNiter>.firstItem, 15]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneMarble>, /*Output 1*/ <ore:clay>.firstItem * 2, /*Output 2*/ <biomesoplenty:white_sand>, 50, /*Output 3*/ <ore:dustSmallIron>.firstItem, 30]);
+
+//Crafting Table Recipe Changes
+val nuclearcraftRecipes_CRAFTINGTABLE = {
+	//null : [[null, null, null], [null, null, null], [null, null, null]],
+	scripts.helpers.BatteryTiers[2] : [[null, <ore:dustCobalt>, null], [<ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>], [<ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in nuclearcraftRecipes_CRAFTINGTABLE {
+	recipes.remove(key.withAmount(1));
+	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+}
 
 //Extended Crafting Recipes (T2 Table)
 val magneticraft_EXTENDEDCRAFTING_T2 = {

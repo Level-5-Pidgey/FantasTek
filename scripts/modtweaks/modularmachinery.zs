@@ -18,25 +18,25 @@ var MachineParts1 =
 	1 : <contenttweaker:wood_plate>,
 	2 : <extendedcrafting:material>,
 	3 : <ore:platePulsatingIron>.firstItem,
-	4 : <contenttweaker:material_part:889>,	//Redstone Alloy Plating
-	5 : <enderio:block_reinforced_obsidian>,
-	6 : <ore:plateDiamond>.firstItem, //PLACEHOLDER
-	7 : <ore:plateEmerald>.firstItem, //PLACEHOLDER
-	8 : <ore:plateElectrum>.firstItem, //PLACEHOLDER
-	9 : <ore:plateElectrumFlux>.firstItem //PLACEHOLDER
+	4 : <ore:plateRedstoneAlloy>.firstItem,
+	5 : <ore:plateSteel>.firstItem,
+	6 : <ore:plateBronze>.firstItem,
+	7 : <ore:gearCobalt>.firstItem,
+	8 : <ore:plateLithium>.firstItem,
+	9 : <ore:plateElectrumFlux>.firstItem
 } as IItemStack[int];
 
 var MachineParts2 =
 {
-	1 : <thermalfoundation:material:32>, //Iron Plate
-	2 : <thermalfoundation:material:33>, //Gold Plate
-	3 : <thermalfoundation:material:26>, //Diamond Gear
-	4 : <minecraft:redstone_block>,
-	5 : <contenttweaker:material_part:945>, //Dark Steel Plate
-	6 : <ore:plateDiamond>.firstItem, //PLACEHOLDER
-	7 : <ore:plateEmerald>.firstItem, //PLACEHOLDER
-	8 : <ore:plateElectrum>.firstItem, //PLACEHOLDER
-	9 : <ore:plateElectrumFlux>.firstItem //PLACEHOLDER
+	1 : <ore:plateIron>.firstItem,
+	2 : <ore:plateGold>.firstItem,
+	3 : <ore:ingotElectrotineAlloy>.firstItem,
+	4 : <ore:gearDiamond>.firstItem,
+	5 : <ore:ingotBrass>.firstItem,
+	6 : <ore:plateLumium>.firstItem,
+	7 : <ore:gearCobalt>.firstItem,
+	8 : <ore:plateManyullyn>.firstItem,
+	9 : <ore:gearEndSteel>.firstItem
 } as IItemStack[int];
 
 //Hatch Crafting Changes
@@ -286,7 +286,7 @@ recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing
 ]); //Firebox Casing
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:3>), <modularmachinery:blockcasing:3> * 4, [
 	[<modularmachinery:blockcasing>, <ore:gearIron>.firstItem, <modularmachinery:blockcasing>],
-	[<ore:gearEmerald>.firstItem, null, <ore:gearGold>.firstItem],
+	[scripts.helpers.BiomeGemMaterial["gear"], null, <ore:gearGold>.firstItem],
 	[<modularmachinery:blockcasing>, <ore:gearDiamond>.firstItem, <modularmachinery:blockcasing>]
 ]); //Gearbox
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:4>), <modularmachinery:blockcasing:4> * 4, [
@@ -295,9 +295,9 @@ recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing
 	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>]
 ]); //Reinforced
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:blockcasing:5>), <modularmachinery:blockcasing:5> * 4, [
-	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>],
-	[<extendedcrafting:material:2>, null, <extendedcrafting:material:2>],
-	[<modularmachinery:blockcasing>, <extendedcrafting:material:2>, <modularmachinery:blockcasing>]
+	[<modularmachinery:blockcasing>, scripts.helpers.CircuitTiers[0], <modularmachinery:blockcasing>],
+	[scripts.helpers.CircuitTiers[0], null, scripts.helpers.CircuitTiers[0]],
+	[<modularmachinery:blockcasing>, scripts.helpers.CircuitTiers[0], <modularmachinery:blockcasing>]
 ]); //Circuitry
 
 //Add Coke Oven Recipes
@@ -347,14 +347,15 @@ var AstralPlant as int[crafttweaker.liquid.ILiquidStack] =
 	<liquid:elemental_water_water> : 60000,
 	<liquid:elemental_water_air> : 60000,
 	<liquid:elemental_water_earth> : 60000,
-	<liquid:astralsorcery.liquidstarlight> : 12500,
+	<liquid:astralsorcery.liquidstarlight> : 15000,
 };
 
 for burnItem, powerOutput in AstralPlant
 {
-	var AstralPowerProduction = RecipeBuilder.newBuilder("astral_converter" ~ burnItem.displayName, "astral_converter", 400);
+	var burnTime = 250;
+	var AstralPowerProduction = RecipeBuilder.newBuilder("astral_converter" ~ burnItem.displayName, "astral_converter", burnTime);
 	AstralPowerProduction.addFluidInput(burnItem * 1000);
-	AstralPowerProduction.addEnergyPerTickOutput(powerOutput / 400);
+	AstralPowerProduction.addEnergyPerTickOutput(powerOutput / burnTime);
 	AstralPowerProduction.build();
 }
 
@@ -457,7 +458,9 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint
 //Embers Mechanical Assembler
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"})) ~ "_emberAssembly", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ember_assembly_plant"}), [[<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>], [<enderio:item_material:77>, <ore:craftingTableWood>, <enderio:item_material:77>], [<embers:shard_ember>, <enderio:item_material:77>, <embers:shard_ember>]]);
 //Industrial Mixer
-recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"})) ~ "_industrialMixer", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}), [[scripts.helpers.MotorTiers[0], <enderio:item_material:77>, scripts.helpers.MotorTiers[0]], [<enderio:item_material:77>, scripts.helpers.CircuitTiers[1], <enderio:item_material:77>], [scripts.helpers.MotorTiers[0], <enderio:item_material:77>, scripts.helpers.MotorTiers[0]]]);
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"})) ~ "_industrialMixer", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}), [[scripts.helpers.MotorTiers[1], <enderio:item_material:77>, scripts.helpers.MotorTiers[1]], [<enderio:item_material:77>, scripts.helpers.FrameTiers[1], <enderio:item_material:77>], [scripts.helpers.MotorTiers[1], <enderio:item_material:77>, scripts.helpers.MotorTiers[1]]]);
+//Mechanical Imbuer
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mechanical_imbuer"})) ~ "_mechanicalimbuer", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mechanical_imbuer"}), [[<ore:dustBlizz>, <enderio:item_material:77>, <ore:dustBlitz>], [<enderio:item_material:77>, scripts.helpers.CircuitTiers[1], <enderio:item_material:77>], [<ore:dustBasalz>, <enderio:item_material:77>, <contenttweaker:magma_powder>]]);
 
 
 print("### Modular Machinery Init Complete ###");

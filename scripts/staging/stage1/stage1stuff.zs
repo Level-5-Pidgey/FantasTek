@@ -579,6 +579,17 @@ val StageLessItems = [
 	<thermalexpansion:device:4>,
 	<thermalfoundation:bait:1>,
 	<thermalfoundation:bait>,
+	<thaumcraft:baubles:4>,
+	<thaumcraft:baubles:5>,
+	<thaumcraft:baubles:6>,
+	<thaumcraft:baubles>,
+	<thaumcraft:baubles:1>,
+	<thaumcraft:baubles:2>,
+	<thaumcraft:baubles:3>,
+	<contenttweaker:elemental_mote_water>,
+	<contenttweaker:elemental_mote_fire>,
+	<contenttweaker:elemental_mote_earth>,
+	<contenttweaker:elemental_mote_air>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

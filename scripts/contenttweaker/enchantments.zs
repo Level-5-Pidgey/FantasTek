@@ -9,6 +9,6 @@ mechanical_imbuement.allowedOnBooks = false;
 mechanical_imbuement.setDomain("contenttweaker");
 mechanical_imbuement.setRarityVeryRare();
 mechanical_imbuement.minLevel = 1;
-mechanical_imbuement.maxLevel = 2;
+mechanical_imbuement.maxLevel = 1;
 mechanical_imbuement.setTreasure(false);
 mechanical_imbuement.register();

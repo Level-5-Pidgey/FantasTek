@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-03-01T08:55:34.6141141Z",
+  "lastPlayed": "2021-03-07T03:00:17.2141626Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -46,7 +46,7 @@
   "name": "FantasTek",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-02-28T06:51:08.2753772Z",
+  "lastPreviousMatchUpdate": "2021-03-06T01:55:48.7676818Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -1300,7 +1300,7 @@
       "dateInstalled": "2020-12-24T05:42:00.0122335Z",
       "dateUpdated": "2020-12-24T05:42:00.0122335Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5383,102 +5383,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 237065,
-      "gameInstanceID": "766cdeca-0c3d-46d4-841e-2e837d116cfc",
-      "installedFile": {
-        "id": 2652853,
-        "displayName": "ContentTweaker-1.12.2-4.9.1.jar",
-        "fileName": "ContentTweaker-1.12.2-4.9.1.jar",
-        "fileDate": "2018-12-27T02:46:34.317Z",
-        "fileLength": 274895,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2652/853/ContentTweaker-1.12.2-4.9.1.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 22151655,
-            "addonId": 246996,
-            "type": 3,
-            "fileId": 2652853
-          },
-          {
-            "id": 22151656,
-            "addonId": 239197,
-            "type": 3,
-            "fileId": 2652853
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3127095813,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 2369474583,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2284558611,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 3309217721,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 4180990591,
-        "gameVersion": [
-          "1.12.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1489696,
-        "projectId": 237065,
-        "packageFingerprintId": 282823600,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1721549,
-        "gameVersionId": 4458,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "ContentTweaker-1.12.2-4.9.1.jar"
-      },
-      "dateInstalled": "2020-12-24T05:41:56.7329158Z",
-      "dateUpdated": "2020-12-24T05:41:56.7329158Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 309674,
       "gameInstanceID": "766cdeca-0c3d-46d4-841e-2e837d116cfc",
       "installedFile": {
@@ -6914,7 +6818,7 @@
       "dateInstalled": "2020-12-29T09:44:43.209957Z",
       "dateUpdated": "2021-01-18T23:34:49.4628762Z",
       "dateLastUpdateAttempted": "2021-01-18T23:34:49.4628762Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10981,7 +10885,7 @@
       "dateInstalled": "2020-12-24T05:42:00.0187378Z",
       "dateUpdated": "2021-02-28T06:47:34.4623135Z",
       "dateLastUpdateAttempted": "2021-02-28T06:47:34.4623135Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15102,7 +15006,7 @@
       "dateInstalled": "2020-12-29T09:45:47.6888235Z",
       "dateUpdated": "2020-12-29T09:45:47.716848Z",
       "dateLastUpdateAttempted": "2020-12-29T09:45:47.716848Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18512,7 +18416,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7364189Z",
       "dateUpdated": "2021-02-28T06:47:19.8108178Z",
       "dateLastUpdateAttempted": "2021-02-28T06:47:19.8108178Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18680,7 +18584,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7479289Z",
       "dateUpdated": "2021-02-28T06:47:41.1659652Z",
       "dateLastUpdateAttempted": "2021-02-28T06:47:41.1659652Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

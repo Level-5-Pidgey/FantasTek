@@ -9,7 +9,7 @@
             "x": 0,
             "y": 0,
             "z": 2,
-            "description": "Gives a 10% processing speed bonus.",
+            "description": "Replace the Machine Circuitry for a 10% processing speed bonus.",
             "modifier": {
                 "io": "output",
                 "target": "duration",
@@ -22,7 +22,7 @@
             "x": 0,
             "y": 0,
             "z": 2,
-            "description": "Gives a 33% processing speed bonus.",
+            "description": "Replace the Machine Circuitry for a 33% processing speed bonus.",
             "modifier": {
                 "io": "output",
                 "target": "duration",
@@ -35,7 +35,7 @@
             "x": 0,
             "y": 0,
             "z": 2,
-            "description": "Gives a 25% processing speed bonus.",
+            "description": "Replace the Machine Circuitry for a 25% processing speed bonus.",
             "modifier": {
                 "io": "output",
                 "target": "duration",
@@ -48,7 +48,7 @@
             "x": 0,
             "y": 0,
             "z": 2,
-            "description": "Gives a 50% processing speed bonus.",
+            "description": "Replace the Machine Circuitry for a 50% processing speed bonus.",
             "modifier": {
                 "io": "output",
                 "target": "duration",
@@ -61,7 +61,7 @@
             "x": 0,
             "y": 0,
             "z": 2,
-            "description": "Gives a 75% processing speed bonus.",
+            "description": "Replace the Machine Circuitry for a 75% processing speed bonus.",
             "modifier": {
                 "io": "output",
                 "target": "duration",

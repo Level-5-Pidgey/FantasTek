@@ -181,4 +181,71 @@ mods.thaumcraft.Crucible.registerRecipe("thaumiumIngotCrude", "BASEALCHEMY", <th
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"})) ~ "_tec", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"}), [[<thaumcraft:candle_white>, <ore:paperBlack>, <thaumcraft:candle_white>], [<ore:paperBlack>, <thaumcraft:alumentum>, <ore:paperBlack>], [<thaumcraft:candle_white>, <ore:paperBlack>, <thaumcraft:candle_white>]]);
 scripts.helpers.AddTooltip(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaumic_energy_converter"}), ["Requires an Energy Output and both an item Input + Output.", "Can be put on either side."]);
 
+//Remove Thaumcraft-Specific items from loot chests
+val thaumcraftLoot_Remove as int[][crafttweaker.item.IItemStack] = {
+	<thaumcraft:primordial_pearl:*> : [0,1,2],
+	<minecraft:potion> : [0,1,2],
+	<minecraft:splash_potion> : [0,1,2],
+	<minecraft:lingering_potion> : [0,1,2],
+	<thaumcraft:salis_mundus> : [0,1,2],
+	<thaumcraft:amulet_vis> : [0,1,2],
+	<minecraft:gold_nugget> : [0,1,2],
+};
+
+for item, bagTiers in thaumcraftLoot_Remove {
+    mods.thaumcraft.LootBag.removeLoot(item, bagTiers);
+}
+
+//Add technological loot to the loot bags instead
+val thaumcraftLoot_Add as int[][crafttweaker.item.WeightedItemStack] = {
+    <ore:gemRuby>.firstItem % 33 : [0,1],
+	<ore:gemPeridot>.firstItem % 33 : [0,1],
+	<ore:gemTopaz>.firstItem % 33 : [0,1],
+	<ore:gemTanzanite>.firstItem % 33 : [0,1],
+	<ore:gemMalachite>.firstItem % 33 : [0,1],
+	<ore:gemSapphire>.firstItem % 33 : [0,1],
+	<ore:gemAmber>.firstItem % 33 : [0,1],
+	<ore:blockRuby>.firstItem % 20 : [1,2],
+	<ore:blockPeridot>.firstItem % 20 : [1,2],
+	<ore:blockTopaz>.firstItem % 20 : [1,2],
+	<ore:blockTanzanite>.firstItem % 20 : [1,2],
+	<ore:blockMalachite>.firstItem % 20 : [1,2],
+	<ore:blockSapphire>.firstItem % 20 : [1,2],
+	<ore:blockAmber>.firstItem % 20 : [1,2],
+	<ore:gearWood>.firstItem % 33 : [0,1],
+	<ore:gearStone>.firstItem % 33 : [0,1],
+	<ore:gearIron>.firstItem % 25 : [0,1,2],
+	<ore:gearGold>.firstItem % 25 : [0,1,2],
+	<ore:gearDiamond>.firstItem % 20 : [0,1,2],
+	<ore:gearEmerald>.firstItem % 20 : [0,1,2],
+    <contenttweaker:elemental_mote_water> % 15 : [1, 2],
+	<contenttweaker:elemental_mote_fire> % 15 : [1, 2],
+	<contenttweaker:elemental_mote_earth> % 15 : [1, 2],
+	<contenttweaker:elemental_mote_air> % 15 : [1, 2],
+    <ore:ingotBlackIron>.firstItem % 25 : [0, 1, 2],
+    <ore:blockBlackIron>.firstItem % 20 : [1, 2],
+    <ore:ingotPulsatingIron>.firstItem * 4 % 30 : [0, 1, 2],
+    <ore:blockPulsatingIron>.firstItem * 2 % 25 : [1, 2],
+    <ore:platePulsatingIron>.firstItem * 2 % 25 : [1, 2],
+    <ore:gearPulsatingIron>.firstItem % 25 : [1, 2],
+    <ore:ingotConductiveIron>.firstItem * 4 % 30 : [0, 1, 2],
+    <ore:blockConductiveIron>.firstItem * 2 % 25 : [1, 2],
+    <ore:plateConductiveIron>.firstItem * 2 % 25 : [1, 2],
+    <ore:gearConductiveIron>.firstItem % 25 : [1, 2],
+    <ore:ingotRedstoneAlloy>.firstItem * 4 % 30 : [0, 1, 2],
+    <ore:blockRedstoneAlloy>.firstItem * 2 % 25 : [1, 2],
+    <ore:plateRedstoneAlloy>.firstItem * 2 % 25 : [1, 2],
+    <ore:gearRedstoneAlloy>.firstItem % 25 : [1, 2],
+    <ore:ingotCrudeSteel>.firstItem * 4 % 20 : [0, 1, 2],
+    <ore:blockCrudeSteel>.firstItem * 2 % 15 : [1, 2],
+    <ore:plateCrudeSteel>.firstItem * 2 % 15 : [1, 2],
+    <ore:gearCrudeSteel>.firstItem % 15 : [1, 2],
+    <modularmachinery:itemmodularium> % 20 : [0, 1, 2],
+    <modularmachinery:itemmodularium> * 9 % 15 : [1, 2],
+    scripts.helpers.MotorTiers[0] * 4 % 15 : [1, 2],
+};
+
+for item, bagTiers in thaumcraftLoot_Add {
+    mods.thaumcraft.LootBag.addLoot(item, bagTiers);
+}
 print("### Thaumcraft Init Complete ###");

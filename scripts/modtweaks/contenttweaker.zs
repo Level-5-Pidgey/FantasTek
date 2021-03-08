@@ -151,12 +151,12 @@ for key, value in foodRecipes {
 //Currency Combination/Splitting Recipes
 val currencyItems =
 [
-<contenttweaker:currency_4>,
-<contenttweaker:currency_20>,
-<contenttweaker:currency_100>,
-<contenttweaker:currency_500>,
-<contenttweaker:currency_2500>,
-<contenttweaker:currency_12500>
+	<contenttweaker:currency_4>,
+	<contenttweaker:currency_20>,
+	<contenttweaker:currency_100>,
+	<contenttweaker:currency_500>,
+	<contenttweaker:currency_2500>,
+	<contenttweaker:currency_12500>
 ] as crafttweaker.item.IItemStack[];
 
 for i, item in currencyItems {
@@ -177,7 +177,6 @@ var lubricantOutput =
 	<minecraft:fish:1> : 7,
 	<minecraft:fish:2> : 7,
 	<minecraft:fish:3> : 15,
-	<libvulpes:productdust:3> : 25,
 	<thermalfoundation:material:832> : 20,
 	<forestry:propolis> : 30,
 	<forestry:propolis:1> : 30,
@@ -188,8 +187,23 @@ var lubricantOutput =
 
 for item, fluidAmount in lubricantOutput
 {
-	mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:lubricant> * fluidAmount * 1.2f, item, 5000);
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:lubricant> * fluidAmount, item, 3000);
+	mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:lubricant> * (fluidAmount * 1.2f), item, 2500);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:lubricant> * fluidAmount, item, 1500);
 }
+
+//Create Elemental Motes (or turn them into liquids)
+val contenttweaker_ElementalMotes = {
+	<liquid:elemental_water_fire> : <contenttweaker:elemental_mote_fire>,
+	<liquid:elemental_water_water> : <contenttweaker:elemental_mote_water>,
+	<liquid:elemental_water_earth> : <contenttweaker:elemental_mote_earth>,
+	<liquid:elemental_water_air> : <contenttweaker:elemental_mote_air>,
+} as crafttweaker.item.IItemStack[crafttweaker.liquid.ILiquidStack];
+
+for elementalLiquid, elementalMote in contenttweaker_ElementalMotes {
+	scripts.helpers.addMeltingRecipe(elementalLiquid * 1000, elementalMote, 2500, false);
+}
+
+//Create elemental mix
+scripts.mmhelper.IndustrialMixerFactoryRecipe("elemental_mix", 10000, 100, <liquid:elemental_mix> * 1000, null, <liquid:elemental_water_fire> * 1000, <liquid:elemental_water_water> * 1000, <liquid:elemental_water_earth> * 1000, <liquid:elemental_water_air> * 1000, null, null, null);
 
 print("### ContentTweaker recipes Init Complete ###");
