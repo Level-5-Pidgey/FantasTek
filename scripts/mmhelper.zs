@@ -135,7 +135,7 @@ function AddMechanicalImbuerRecipe(recipeName as string, item as crafttweaker.it
 }
 
 //Item simplification for the assembly line
-function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttweaker.item.IIngredient
+function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweaker.item.IIngredient
 {
     var materialsList as string[] = [
         "Vibranium",
@@ -151,7 +151,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
         "Iridium",
         "Mithril",
         "Aluminium",
-				"Aluminum",
+		"Aluminum",
         "Draconium",
         "Titanium",
         "Thorium",
@@ -189,7 +189,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
         "Quartz",
         "Ardite",
         "Cobalt",
-				"Steel",
+		"Steel",
     ];
 
     var partsList as int[string] = {
@@ -209,7 +209,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
     if(inputItem.items[0].ores.length > 0)
     {
         var itemOreDict = inputItem.items[0].ores[0].name;
-				print("OreDict name is " ~ itemOreDict ~ " and count is " ~ inputCount);
+		print("OreDict name is " ~ itemOreDict ~ " and count is " ~ inputCount);
         var itemMaterial = "";
         var itemPart = "";
 
@@ -219,7 +219,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
             if(itemOreDict.contains(material))
             {
                 itemMaterial = material;
-								print("Material is " ~ itemMaterial);
+				print("Material is " ~ itemMaterial);
             }
         }
 
@@ -230,36 +230,35 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
             {
                 itemPart = part;
                 resultCount = partCount as int;
-								print("itemPart is " ~ itemPart ~ " count is " ~ resultCount);
+				print("itemPart is " ~ itemPart ~ " count is " ~ resultCount);
             }
         }
 
         if (itemPart != "" && itemMaterial != "")
         {
-					if(!oreDict.get("ingot" ~ itemMaterial).empty)
-					{
-							result = "ingot" ~ itemMaterial;
-					}
-					else if(!oreDict.get("gem" ~ itemMaterial).empty)
-					{
-							result = "gem" ~ itemMaterial;
-					}
+			if(!oreDict.get("ingot" ~ itemMaterial).empty)
+			{
+				result = "ingot" ~ itemMaterial;
+			}
+			else if(!oreDict.get("gem" ~ itemMaterial).empty)
+			{
+				result = "gem" ~ itemMaterial;
+			}
         }
     }
-
-	print("SIMPLIFY : \"" ~ result ~ "\"");
 
     if (result != "")
     {
         var resultDict = oreDict.get(result);
         if (resultDict.items.length > 0)
         {
-            var resultIngredient = resultDict * (inputCount * resultCount);
-						print("Generated ingredient " ~ result ~ " with count of " ~ (inputCount * resultCount));
+            var resultIngredient as crafttweaker.item.IIngredient = resultDict.firstItem.withAmount(inputCount * resultCount);
+			print("Generated ingredient " ~ result ~ " with count of " ~ (inputCount * resultCount));
+			return resultIngredient;
         }
         else
         {
-						print("returned null");
+			print("returned null");
             return null;
         }
     }
@@ -278,94 +277,37 @@ function AssemblyLineRecipe(recipeName as string, energyCost as int, craftingTim
 	var lubricantCount as int = 10;
 
 	//Iterate through the recipe items and simplify them.
+	//Additionally, for every item in the input array, add 10mb of Lubricant to the required amount
 	for item in inputItems
 	{
-		//For every item in the input array, add 10mb of Lubricant to the required amount
-		lubricantCount += 10;
-
 		var simplifiedItem = simplifyItem(item);
 		if(!isNull(simplifiedItem))
 		{
 			simplifiedItems += simplifiedItem;
+			lubricantCount += (10 * simplifiedItem.amount);
 		}
 		else
 		{
 			simplifiedItems += item;
-		}
-		print("Updated simple items list and added " ~ item.commandString ~ ", count is " ~ simplifiedItems.length);
-	}
-
-	print("Finished looping through items");
-
-	var finalItems as crafttweaker.item.IIngredient[] = [];
-
-	if(simplifiedItems.length > 0)
-	{
-		finalItems += simplifiedItems[0];
-	}
-	else
-	{
-		print("SimpleItems has no contents");
-	}
-
-	//Now that all possible items have been simplified, get their count and add them as ingredients
-	for simpleItem in simplifiedItems
-	{
-		//Update mode : 0  = no change, 1 = new item, 2 = update item
-		var updateFinal as int = 0;
-		var changeItem as crafttweaker.item.IIngredient = null;
-		var changeIndex as int = 0;
-
-		for i, finalItem in finalItems
-		{
-			if(!isNull(simpleItem.items) && simpleItem.items.length > 0)
-			{
-				if(finalItem.matches(simpleItem.items[0]))
-				{
-					//The item is already in the array of recipe requirements
-					//Increase the amount necessary instead
-					var finalAmount = finalItem.amount;
-					var simpleAmount = simpleItem.amount;
-					changeItem = finalItem * (finalAmount + simpleAmount);
-					changeIndex = i;
-					updateFinal = 2;
-				}
-				else
-				{
-					changeItem = simpleItem;
-					updateFinal = 1;
-				}
-			}
-			else
-			{
-				print("simpleItem.items is null or empty");
-			}
-		}
-
-		if(updateFinal == 2)
-		{
-			finalItems[changeIndex] = changeItem;
-		}
-		else if (updateFinal == 1)
-		{
-			finalItems += changeItem;
+			lubricantCount += (10 * item.amount);
 		}
 	}
+
 
 	//After creating a final array of items, now add them to the recipe.
-	for finalItem in finalItems
+	for i, finalItem in simplifiedItems
 	{
-		var firstInput = finalItem.items[0];
-		if (firstInput.ores.length > 0)
+		if(finalItem.items[0].ores.length > 0)
 		{
-			RecipeToAdd.addItemInput(firstInput.ores[0], firstInput.amount);
+			RecipeToAdd.addItemInput(finalItem.items[0].ores[0], finalItem.amount);
 		}
 		else
 		{
-			RecipeToAdd.addItemInput(firstInput);
+			RecipeToAdd.addItemInput(finalItem.items[0].withAmount(finalItem.amount));
 		}
 	}
 
+	RecipeToAdd.addEnergyPerTickInput(energyCost / craftingTime);
 	RecipeToAdd.addFluidInput(<liquid:lubricant> * lubricantCount);
 	RecipeToAdd.addItemOutput(itemOutput);
 	RecipeToAdd.build();

@@ -605,6 +605,68 @@ function createAdvancedCraftingRecipe(
     }
 }
 
+function combineRecipeItems(inputItems as crafttweaker.item.IIngredient[]) as crafttweaker.item.IIngredient[]
+{
+    var returnItems as crafttweaker.item.IIngredient[] = [];
+	if(inputItems.length > 0)
+	{
+		returnItems += inputItems[0].items[0].withAmount(1);
+	}
+
+	//Now that all possible items have been simplified, get their count and add them as ingredients
+	for inputItem in inputItems
+	{
+        if(!isNull(inputItem))
+        {
+    		//Update mode : 0  = no change, 1 = new item, 2 = update item
+    		var updateFinal as int = 0;
+    		var changeItem as crafttweaker.item.IIngredient = null;
+    		var changeIndex as int = 0;
+
+    		for i, finalItem in returnItems
+    		{
+    			if(!isNull(inputItem.items) && inputItem.items.length > 0)
+    			{
+    				var singleFinalItem = finalItem.items[0].withAmount(1);
+    				var singleinputItem = inputItem.items[0].withAmount(1);
+
+    				if(singleFinalItem.matches(singleinputItem))
+    				{
+    					//The item is already in the array of recipe requirements
+    					//Increase the amount necessary instead
+    					changeItem = finalItem.amount(finalItem.amount + inputItem.items[0].amount);
+    					changeIndex = i;
+    					updateFinal = 2;
+
+    					break;
+    				}
+    				else
+    				{
+    					changeItem = inputItem;
+    					updateFinal = 1;
+    				}
+    			}
+    		}
+
+    		if(updateFinal == 2)
+    		{
+    			returnItems[changeIndex] = changeItem;
+    		}
+    		else if (updateFinal == 1)
+    		{
+    			returnItems += changeItem;
+    		}
+        }
+	}
+
+    if (returnItems.length > 0)
+    {
+        returnItems[0] = returnItems[0].amount(returnItems[0].items[0].amount - 1);
+    }
+
+    return returnItems;
+}
+
 function CreateAssemblyRecipe(
     output as crafttweaker.item.IItemStack,
     inputItems as crafttweaker.item.IIngredient[],
@@ -612,50 +674,43 @@ function CreateAssemblyRecipe(
     energyCost as int
 )
 {
-    var nullLessIngredients = [] as crafttweaker.item.IIngredient[];
-    for inputItem in inputItems
-    {
-        if(!isNull(inputItem)) {
-            print("CreateAssemblyRecipe added to not null list: " ~ inputItem.commandString);
-            nullLessIngredients += inputItem;
-
-        }
-    }
-
     //Forestry Carpenter
     if(inputItems.length == 9)
     {
         mods.forestry.Carpenter.addRecipe(output, [[inputItems[0], inputItems[1], inputItems[2]], [inputItems[3], inputItems[4], inputItems[5]], [inputItems[6], inputItems[7], inputItems[8]]], craftingTime * 1.5f, <liquid:lubricant> * 200);
     }
 
+    //Combine the recipe slots for the next 2 processing methods
+    var combinedItems = combineRecipeItems(inputItems);
+
     //Modular Machinery Assembly Line
-    scripts.mmhelper.AssemblyLineRecipe(createRecipeName(output), energyCost, craftingTime, output, nullLessIngredients);
+    scripts.mmhelper.AssemblyLineRecipe(createRecipeName(output), energyCost, craftingTime, output, combinedItems);
 
     //Advanced Rocketry Assembly Machine
-    if(nullLessIngredients.length == 2)
+    if(combinedItems.length == 2)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1]);
-    } else if (nullLessIngredients.length == 3)
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0]);
+    } else if (combinedItems.length == 3)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2]);
-    } else if (nullLessIngredients.length == 4)
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0]);
+    } else if (combinedItems.length == 4)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3]);
-    } else if (nullLessIngredients.length == 5)
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0]);
+    } else if (combinedItems.length == 5)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4]);
-    } else if (nullLessIngredients.length == 6)
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0]);
+    } else if (combinedItems.length == 6)
     {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5]);
-    } else if (nullLessIngredients.length == 7)
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0]);
+    } else if (combinedItems.length == 7)
     {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5], nullLessIngredients[6]);
-    } else if (nullLessIngredients.length == 8)
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0], combinedItems[6].items[0]);
+    } else if (combinedItems.length == 8)
     {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5], nullLessIngredients[6], nullLessIngredients[7]);
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0], combinedItems[6].items[0], combinedItems[7].items[0]);
     }
-    else if (nullLessIngredients.length == 9)
+    else if (combinedItems.length == 9)
     {
-      mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5], nullLessIngredients[6], nullLessIngredients[7], nullLessIngredients[8]);
+      mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0], combinedItems[6].items[0], combinedItems[7].items[0], combinedItems[8].items[0]);
     }
 }

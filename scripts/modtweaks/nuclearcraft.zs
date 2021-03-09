@@ -19,7 +19,7 @@ mods.forestry.Carpenter.addRecipe(<nuclearcraft:geiger_counter>, [[<ore:ingotEle
 recipes.remove(<nuclearcraft:part:8>);
 scripts.helpers.CreateAssemblyRecipe(
     <nuclearcraft:part:8> * 2,
-    [<ore:ingotSteel>, <ore:ingotSteel>, null, <ore:plateAluminium>, <ore:plateAluminium>, <ore:coilCopper>, <ore:ingotSteel>, <ore:ingotSteel>, null],
+    [<ore:ingotSteel>, <ore:ingotSteel>, null, <ore:plateAluminium>, <ore:plateAluminium>, <projectred-core:resource_item:400>, <ore:ingotSteel>, <ore:ingotSteel>, null],
     40,
     5000
 );
