@@ -115,7 +115,7 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 	}
 	else if(craftingMaterial == "Coal")
 	{
-		baseMultiplier = 1;
+		baseMultiplier = 2;
 	}
 	else if(craftingMaterial == "Lapis")
 	{

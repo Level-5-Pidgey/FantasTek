@@ -135,7 +135,7 @@ function AddMechanicalImbuerRecipe(recipeName as string, item as crafttweaker.it
 }
 
 //Item simplification for the assembly line
-function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweaker.item.IIngredient
+function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttweaker.item.IIngredient
 {
     var materialsList as string[] = [
         "Vibranium",
@@ -202,7 +202,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
 
     var result = "";
     var resultCount = 1;
-    var inputCount as int = inputItem.amount;
+    var inputCount = inputItem.amount;
 
     if(inputItem.items[0].ores.length > 0)
     {
@@ -238,6 +238,8 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
         }
     }
 
+	print("SIMPLIFY : \"" ~ result ~ "\"");
+
     if (result != "")
     {
         var resultDict = oreDict.get(result);
@@ -264,7 +266,6 @@ function AssemblyLineRecipe(recipeName as string, energyCost as int, craftingTim
 {
 	var RecipeToAdd = RecipeBuilder.newBuilder(recipeName, "assembly_line", craftingTime);
 	var simplifiedItems = [] as crafttweaker.item.IIngredient[];
-	var finalItems = [] as crafttweaker.item.IIngredient[];
 	var lubricantCount as int = 10;
 
 	//Iterate through the recipe items and simplify them.
@@ -273,7 +274,7 @@ function AssemblyLineRecipe(recipeName as string, energyCost as int, craftingTim
 		//For every item in the input array, add 10mb of Lubricant to the required amount
 		lubricantCount += 10;
 
-		var simplifiedItem = item;
+		var simplifiedItem = simplifyItem(item);
 		if(!isNull(simplifiedItem))
 		{
 			simplifiedItems += simplifiedItem;
@@ -282,6 +283,20 @@ function AssemblyLineRecipe(recipeName as string, energyCost as int, craftingTim
 		{
 			simplifiedItems += item;
 		}
+		print("Updated simple items list and added " ~ item.commandString ~ ", count is " ~ simplifiedItems.length);
+	}
+
+	print("Finished looping through items");
+
+	var finalItems as crafttweaker.item.IIngredient[] = [];
+
+	if(simplifiedItems.length > 0)
+	{
+		finalItems += simplifiedItems[0];
+	}
+	else
+	{
+		print("SimpleItems has no contents");
 	}
 
 	//Now that all possible items have been simplified, get their count and add them as ingredients
@@ -294,20 +309,27 @@ function AssemblyLineRecipe(recipeName as string, energyCost as int, craftingTim
 
 		for i, finalItem in finalItems
 		{
-			if(finalItem.matches(simpleItem.items[0]))
+			if(!isNull(simpleItem.items) && simpleItem.items.length > 0)
 			{
-				//The item is already in the array of recipe requirements
-				//Increase the amount necessary instead
-				var finalAmount = finalItem.amount;
-				var simpleAmount = simpleItem.amount;
-				changeItem = finalItem * (finalAmount + simpleAmount);
-				changeIndex = i;
-				updateFinal = 2;
+				if(finalItem.matches(simpleItem.items[0]))
+				{
+					//The item is already in the array of recipe requirements
+					//Increase the amount necessary instead
+					var finalAmount = finalItem.amount;
+					var simpleAmount = simpleItem.amount;
+					changeItem = finalItem * (finalAmount + simpleAmount);
+					changeIndex = i;
+					updateFinal = 2;
+				}
+				else
+				{
+					changeItem = simpleItem;
+					updateFinal = 1;
+				}
 			}
 			else
 			{
-				changeItem = simpleItem;
-				updateFinal = 1;
+				print("simpleItem.items is null or empty");
 			}
 		}
 
@@ -331,7 +353,7 @@ function AssemblyLineRecipe(recipeName as string, energyCost as int, craftingTim
 		}
 		else
 		{
-			RecipeToAdd.addItemInput(finalItem.items[0]);
+			RecipeToAdd.addItemInput(firstInput);
 		}
 	}
 
