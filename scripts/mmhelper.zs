@@ -150,7 +150,8 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
         "Platinum",
         "Iridium",
         "Mithril",
-        "Aluminum",
+        "Aluminium",
+				"Aluminum",
         "Draconium",
         "Titanium",
         "Thorium",
@@ -188,6 +189,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
         "Quartz",
         "Ardite",
         "Cobalt",
+				"Steel",
     ];
 
     var partsList as int[string] = {
@@ -201,40 +203,47 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
     };
 
     var result = "";
-    var resultCount = 1;
+    var resultCount = inputItem.amount;
     var inputCount = inputItem.amount;
 
     if(inputItem.items[0].ores.length > 0)
     {
         var itemOreDict = inputItem.items[0].ores[0].name;
-		print("OreDict name is " ~ itemOreDict ~ " and count is " ~ inputCount);
+				print("OreDict name is " ~ itemOreDict ~ " and count is " ~ inputCount);
         var itemMaterial = "";
         var itemPart = "";
 
-        //Obtain the Material
+				//Obtain the Material
         for material in materialsList
         {
-            if(material in itemOreDict)
+            if(itemOreDict.contains(material))
             {
                 itemMaterial = material;
-				print("Material is " ~ itemMaterial);
+								print("Material is " ~ itemMaterial);
             }
         }
 
         //Now obtain the part
         for part, partCount in partsList
         {
-            if(part in itemOreDict)
+            if(itemOreDict.contains(part))
             {
                 itemPart = part;
-                resultCount = partCount;
-				print("itemPart is " ~ itemPart ~ " count is " ~ resultCount);
+                resultCount = partCount as int;
+								print("itemPart is " ~ itemPart ~ " count is " ~ resultCount);
             }
         }
 
         if (itemPart != "" && itemMaterial != "")
         {
-            result = itemPart ~ itemMaterial;
+					if(!oreDict.get("ingot" ~ itemMaterial).empty)
+					{
+							result = "ingot" ~ itemMaterial;
+					}
+					else if(!oreDict.get("gem" ~ itemMaterial).empty)
+					{
+							result = "gem" ~ itemMaterial;
+					}
         }
     }
 
@@ -246,11 +255,11 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) //as crafttwea
         if (resultDict.items.length > 0)
         {
             var resultIngredient = resultDict * (inputCount * resultCount);
-			print("Generated ingredient " ~ result ~ " with count of " ~ (inputCount * resultCount));
+						print("Generated ingredient " ~ result ~ " with count of " ~ (inputCount * resultCount));
         }
         else
         {
-			print("returned null");
+						print("returned null");
             return null;
         }
     }
