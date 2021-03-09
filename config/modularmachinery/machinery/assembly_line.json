@@ -482,7 +482,10 @@
             "y": 1,
             "z": 5,
             "elements": [
-                "modularmachinery:blockoutputbus@0"
+                "general_item_input",
+                "general_energy_input",
+                "general_fluid_input",
+                "general_item_output"
             ]
         },
         {

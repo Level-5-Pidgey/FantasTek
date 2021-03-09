@@ -615,7 +615,11 @@ function CreateAssemblyRecipe(
     var nullLessIngredients = [] as crafttweaker.item.IIngredient[];
     for inputItem in inputItems
     {
-        if(!isNull(inputItem)) { nullLessIngredients += inputItem; }
+        if(!isNull(inputItem)) {
+            print("CreateAssemblyRecipe added to not null list: " ~ inputItem.commandString);
+            nullLessIngredients += inputItem;
+
+        }
     }
 
     //Forestry Carpenter
@@ -630,28 +634,28 @@ function CreateAssemblyRecipe(
     //Advanced Rocketry Assembly Machine
     if(nullLessIngredients.length == 2)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1]);
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1]);
     } else if (nullLessIngredients.length == 3)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2]);
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2]);
     } else if (nullLessIngredients.length == 4)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3]);
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3]);
     } else if (nullLessIngredients.length == 5)
     {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4]);
+        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4]);
     } else if (nullLessIngredients.length == 6)
     {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5]);
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5]);
     } else if (nullLessIngredients.length == 7)
     {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5], inputItems[6]);
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5], nullLessIngredients[6]);
     } else if (nullLessIngredients.length == 8)
     {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5], inputItems[6], inputItems[7]);
+       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5], nullLessIngredients[6], nullLessIngredients[7]);
     }
     else if (nullLessIngredients.length == 9)
     {
-      mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, inputItems[0], inputItems[1], inputItems[2], inputItems[3], inputItems[4], inputItems[5], inputItems[6], inputItems[7], inputItems[8]);
+      mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, nullLessIngredients[0], nullLessIngredients[1], nullLessIngredients[2], nullLessIngredients[3], nullLessIngredients[4], nullLessIngredients[5], nullLessIngredients[6], nullLessIngredients[7], nullLessIngredients[8]);
     }
 }
