@@ -1,6 +1,6 @@
 {
 	title: "Boss Monsters",
-	x: -5.0d,
+	x: -1.5d,
 	y: -2.0d,
 	shape: "hexagon",
 	description: "*chuckles* You're in danger",

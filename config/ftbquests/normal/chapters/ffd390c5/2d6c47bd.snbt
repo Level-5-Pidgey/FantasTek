@@ -10,8 +10,8 @@
 		items: [{
 			id: "nuclearcraft:lithium_ion_cell",
 			tag: {
-				maxTransfer: 400000,
-				capacity: 8000000,
+				maxTransfer: 20000,
+				capacity: 400000,
 				energy: 0
 			}
 		}]
