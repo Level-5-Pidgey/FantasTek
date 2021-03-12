@@ -4,8 +4,8 @@
 	y: -2.0d,
 	description: "Not as bad as you're used to!",
 	text: [
-		"Whilst the difficulty of the environment may be much higher than you are used to, thanks to the amazing progress of technology death will be much less",
-		"punishing for you in some aspects and instead have other penalties that you may not be used to. When you die you will:",
+		"Living on scraps on an unknown planet may cause you sickness, suffering, and at times, death. Don't feel bad, as this is not an obstacle for you! Revolutionary technology discovered by FantasTek has allowed us to &bbackup your neural network and reconstruct it inside an android with your exact appearance.&r",
+		"Unfortunately, this comes with some drawbacks.",
 		"",
 		"&dLose all of your XP. &rAll levels stored on your character will be reset.",
 		"&dDrop any currency items not stored in a backpack or portable container. &rIf you have money you wanna keep secure, make sure you put it away safe!",
