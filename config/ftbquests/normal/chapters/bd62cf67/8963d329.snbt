@@ -1,21 +1,20 @@
 {
 	title: "Monster Mash",
-	x: -7.0d,
+	x: -3.5d,
 	y: 0.0d,
 	description: "It was a graveyard smash!",
 	text: [
-		"Whilst the simulations of this environment you may have encountered were good preparation for the real thing, the world you currently are occupying",
-		"may be more hostile and challenging than you expect. Compared to the normal simulations of this world, certain monsters may act differently:",
+		"Few people are prepared for the dangers of being thrown into a brand new and uncharted environment. The things that bump in the night &bwork a little differently here&r due to the composition of the atmosphere, so I've summed up some of their abilities here.",
 		"",
 		"&dZombie: &rWill apply Hunger on hit and break torches on the ground if possible.",
 		"&dSkeleton: &rUses melee attacks when in range and will shoot from further away.",
-		"&dCreeper: &rMoves faster than usual (+15%) and explodes sooner.",
+		"&dCreeper: &rMoves faster than usual and explodes sooner.",
 		"&dSpider: &rSlows on-hit and will eventually ensnare you with cobwebs if slowed enough.",
 		"",
 		"Good luck out there!"
 	],
 	dependencies: [
-		"71c44dcc"
+		"8edd4b42"
 	],
 	tasks: [{
 		uid: "9befb257",

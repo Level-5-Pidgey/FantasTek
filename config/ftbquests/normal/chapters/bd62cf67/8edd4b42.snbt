@@ -6,10 +6,10 @@
 	shape: "rsquare",
 	description: "DROP TABLE;",
 	text: [
-		"Now that you've either accidentally correctly clicked the last checkbox or used your supreme wit to pass the last intelligence assessment, we have to get down to basics.",
-		"&bThese two simple utilities will be able to keep you warm and alive for the next few moments.&r",
+		"&eHello there, Pioneer!&r I am &cThe Monitor&r and I will be your primary contact for the duration of the P.R.H.P. My job is to nudge you along in the right direction to ensure that we get all the information back here in the labs to make assessments about whether the planet you are on is suitable for habitation.",
+		"By pressing the button on the previous task, you actually took a blood test! This is the first of many invasive procedures that we need to perform to better understand you and your environment.",
 		"",
-		"&eThe tool provided to you in your inventory should do you well at the start of your journey.&r"
+		"This is your first real task, and all we're asking of you is to set yourself up with some &bsimple utilities&r that will serve as a jumping off point for us to begin working together."
 	],
 	dependencies: [
 		"71c44dcc"

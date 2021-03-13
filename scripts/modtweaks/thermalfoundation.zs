@@ -106,6 +106,11 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
 	 									[<ore:stone>, scripts.helpers.FrameTiers[1], <ore:stone>],
 	   									[<ore:gearCopper>, <ore:coilGold>, <ore:gearCopper>],
 	 									[null, <ore:ingotNickel>, <ore:plateNickel>]],
+	 <thermalexpansion:machine:8>
+	 								:	[[null, <minecraft:bucket>, null],
+	 									[<ore:blockGlass>, scripts.helpers.FrameTiers[2], <ore:blockGlass>],
+  									[<ore:gearSignalum>, scripts.helpers.FrameTiers[1], <ore:gearSignalum>],
+	  								[null, <ore:ingotBrass>, <ore:plateBrass>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in thermalfoundation_EXTENDEDCRAFTING_T2 {

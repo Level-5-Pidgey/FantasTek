@@ -1,14 +1,12 @@
 {
 	title: "Efficient Smelting",
 	icon: "futuremc:campfire",
-	x: -3.5d,
+	x: -5.5d,
 	y: 0.0d,
 	shape: "hexagon",
 	description: "Waste not want not",
 	text: [
-		"If you're short on fuel, &bcoal nuggets can be crafted from coal and will smelt 1 item per nugget.&r ",
-		"",
-		"This will result in a fuel efficiency increase of 12.5% over using coal only and we need to squeeze every ounce of efficiency out of you to make this program worth our time."
+		"Coal nuggets prove an efficiency increase of 12.5% over coal but overall take up more space in your storage, so there's pros and cons to both. Just ensure that you don't mistake them for burnt chicken nuggets if you're running low on food or you may run into digestive issues."
 	],
 	dependencies: [
 		"8edd4b42"

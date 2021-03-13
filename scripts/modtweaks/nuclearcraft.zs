@@ -15,15 +15,6 @@ mods.appliedenergistics2.Grinder.addRecipe(<nuclearcraft:ground_cocoa_nibs>, <nu
 recipes.remove(<nuclearcraft:geiger_counter>);
 mods.forestry.Carpenter.addRecipe(<nuclearcraft:geiger_counter>, [[<ore:ingotElectrotineAlloy>, <ore:ingotIron>, <ore:ingotIron>],[<ore:ingotElectrotineAlloy>, <ore:ingotGold>, <ore:ingotGold>],[<ore:dustRedstone>, <ore:ingotIron>, <ore:ingotIron>]], 160, <liquid:water> * 500);
 
-//Advanced Motor Recipe
-recipes.remove(<nuclearcraft:part:8>);
-scripts.helpers.CreateAssemblyRecipe(
-    <nuclearcraft:part:8> * 2,
-    [<ore:ingotSteel>, <ore:ingotSteel>, null, <ore:plateAluminium>, <ore:plateAluminium>, <projectred-core:resource_item:400>, <ore:ingotSteel>, <ore:ingotSteel>, null],
-    40,
-    5000
-);
-
 //Alloy Smelter Recipes
 var ncAlloySmelter =
 {
@@ -54,14 +45,14 @@ mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stonePermafrost>, 
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneMarble>, /*Output 1*/ <ore:clay>.firstItem * 2, /*Output 2*/ <biomesoplenty:white_sand>, 50, /*Output 3*/ <ore:dustSmallIron>.firstItem, 30]);
 
 //Crafting Table Recipe Changes
-val nuclearcraftRecipes_CRAFTINGTABLE = {
-	//null : [[null, null, null], [null, null, null], [null, null, null]],
-	scripts.helpers.BatteryTiers[2] : [[null, <ore:dustCobalt>, null], [<ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>], [<ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>]],
-} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+val nuclearcraftRecipes_ASSEMBLY = {
+	<nuclearcraft:lithium_ion_cell>.withTag({maxTransfer: 200, capacity: 40000, energy: 0}) : [null, <ore:dustCobalt>, null, <ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>],
+  <nuclearcraft:part:8> * 2 : [<ore:ingotSteel>, <ore:ingotSteel>, null, <ore:plateAluminium>, <ore:plateAluminium>, <projectred-core:resource_item:400>, <ore:ingotSteel>, <ore:ingotSteel>, null],
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
-for key, value in nuclearcraftRecipes_CRAFTINGTABLE {
+for key, value in nuclearcraftRecipes_ASSEMBLY {
 	recipes.remove(key.withAmount(1));
-	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+  scripts.helpers.CreateAssemblyRecipe(key, value, 60, 4000);
 }
 
 //Extended Crafting Recipes (T2 Table)

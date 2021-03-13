@@ -1,16 +1,22 @@
 {
 	title: "It's FantasTek to see you!",
 	icon: "biomesoplenty:earth",
-	x: -7.0d,
+	x: -6.0d,
 	y: 2.0d,
 	shape: "diamond",
 	description: "Welcome, Pioneer.",
 	text: [
 		"&eWelcome to FantasTek, Pioneer!&r As the lucky winner of one amongst 2 other applicants, &eyou're the one that gets to be part of our new highly experimental Planetary Resource Harvesting Program!&r",
-		"Whilst we don't quite have the funds to equip you with any sort of gear to adequately prepare you for the likely harsh and unforgiving environment of wherever you ended up, we did manage to give you this fantastic device and a helpful Pioneer's Axe.",
-		"&bConstructed and written by our finest unpaid interns, this \"R.E.E.D. I.T. device\" should tell you what to do next to ensure progress&r in the name of money hungry resource harvesting! ... Or science, I guess.",
 		"",
-		"&bTo prove that you have working hands and an IQ of over 35, please click the checkbox within this window.&r If you can't meet both of those criteria, may God help you."
+		"I am &cThe Administrator&r and I oversee the Planetory Exploration Division of FantasTek. Our goal is to research alternative planets for the survival of mankind as we have exhausted the resources available in our home galaxy.",
+		"We have picked a promising yet dangerous planet to send you to with the express purpose of observing your survival (or possibly your death). The longer you survive, the more you will contribute to the betterment of mankind.",
+		"",
+		"In order to simulate an authentic survival experience we have only equipped you with a &bPioneer's Axe&r to help you gather some simple materials, and this &bResearch and Examination of Exoplanetary Data Imaging Tool (hereby designated \"R.E.E.D.I.T\").&r",
+		"This R.E.E.D.I.T contains all you need to know about surviving on an isolated planet, including instructions for creating the building blocks of a civilisation. Over time, &bwe will provide you with periodic updates to the software to give you the latest information&r that our scientists have disovered regarding your research.",
+		"",
+		"From here on out, you will be contacted by &cThe Monitor&r for updates and requests for samples that you have found.",
+		"",
+		"Good luck, Pioneer."
 	],
 	size: 3.0d,
 	tasks: [{

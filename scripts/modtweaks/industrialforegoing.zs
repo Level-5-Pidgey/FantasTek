@@ -16,6 +16,16 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 										[<ore:barsIron>, scripts.helpers.FrameTiers[0], <ore:barsIron>],
 										[<ore:gearIron>, <ore:dustRedstone>, <ore:gearIron>],
 	 									[<thermalfoundation:bait:1>, <ore:plateSilver>, <thermalfoundation:bait:1>]],
+	 <industrialforegoing:tree_fluid_extractor>
+	 								:	[[<ore:stone>, scripts.helpers.MotorTiers[0], <ore:stone>],
+										[<ore:stone>, scripts.helpers.FrameTiers[1], <ore:stone>],
+										[<ore:stone>, <ore:gearSteel>, <ore:stone>],
+	 									[null, null, <ore:ingotSteel>]],
+	 <industrialforegoing:latex_processing_unit>
+	 								:	[[<ore:ingotIron>, scripts.helpers.MotorTiers[0], <ore:ingotIron>],
+										[null, scripts.helpers.FrameTiers[1], null],
+										[<ore:ingotIron>, <ore:gearRedstoneAlloy>, <ore:ingotIron>],
+	 									[null, <ore:ingotNickel>, <ore:plateNickel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in industrialforegoing_EXTENDEDCRAFTING_T2 {
