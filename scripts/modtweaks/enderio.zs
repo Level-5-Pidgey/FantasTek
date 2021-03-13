@@ -223,4 +223,19 @@ mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[<ore:ingotSteel>, <
 //Remove Rocket Fuel Crafting
 mods.enderio.Vat.removeRecipe(<liquid:rocket_fuel>);
 
+//Basic Capacitor Crafting Recipes
+val enderioRecipes_CONDUITS = {
+	<enderio:item_endergy_conduit> : <ore:plateCrudeSteel>,
+	<enderio:item_endergy_conduit:1> : <ore:plateIron>,
+	<enderio:item_endergy_conduit:2> : <ore:plateAluminium>,
+	<enderio:item_endergy_conduit:3> : <ore:plateGold>,
+	<enderio:item_endergy_conduit:4> : <ore:plateCopper>,
+	<enderio:item_endergy_conduit:5> : <ore:plateSilver>,
+} as crafttweaker.item.IIngredient[crafttweaker.item.IItemStack];
+
+for conduit, material in enderioRecipes_CONDUITS {
+    recipes.remove(conduit.withAmount(1));
+		mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(conduit), scripts.helpers.stages.progression2.stage, conduit * 16, [[<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>], [material, <ore:blockGlass>, material], [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>]]);
+}
+
 print("### EnderIO Init Complete ###");

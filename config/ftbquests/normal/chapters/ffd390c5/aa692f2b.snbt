@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"aa7c48d8"
+	],
+	tasks: [{
+		uid: "6a9e7f96",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:latex_processing_unit"
+		}]
+	}],
+	rewards: [{
+		uid: "4e766938",
+		type: "item",
+		item: "industrialforegoing:tree_fluid_extractor"
+	}]
+}

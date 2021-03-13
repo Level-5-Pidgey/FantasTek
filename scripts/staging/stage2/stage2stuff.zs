@@ -205,6 +205,7 @@ val stage2_stageItems = [
     <mekanism:basicblock2:3>.withTag({tier: 1}),
     <mekanism:basicblock2:4>.withTag({tier: 0}),
     <mekanism:basicblock2:4>.withTag({tier: 1}),
+    <nuclearcraft:lithium_ion_cell>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems
