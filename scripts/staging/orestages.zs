@@ -244,14 +244,17 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
 	for oreBlock, replaceWith in DenseAndPoorOres
 	{
-		//Replace each dense ore/poor ore block with their proper dimension equivalent block unless the player has the right stage for them.
-		if(oreValue <= 1)
+		if(materialString in oreBlock.ores[0].name)
 		{
-			mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[2].stage, oreBlock, replaceWith);
-		}
-		else
-		{
-			mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[oreValue].stage, oreBlock, replaceWith);
+			//Replace each dense ore/poor ore block with their proper dimension equivalent block unless the player has the right stage for them.
+			if(oreValue <= 1)
+			{
+				mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[2].stage, oreBlock, replaceWith);
+			}
+			else
+			{
+				mods.orestages.OreStages.addReplacement(scripts.helpers.StageForProcessingTier[oreValue].stage, oreBlock, replaceWith);
+			}
 		}
 	}
 }

@@ -380,8 +380,8 @@
 			"generator": {
 				"type": "cluster",
 				"block": {
-					"name": "contenttweaker:sub_block_holder_6",
-					"metadata": 2
+					"name": "contenttweaker:sub_block_holder_2",
+					"metadata": 6
 				},
 				"material": "minecraft:netherrack",
 				"cluster-size": 7,

@@ -19,12 +19,12 @@
 					"minecraft:sandstone",
 					"minecraft:cobblestone"
 				],
-				"cluster-size": 50,
+				"cluster-size": 30,
 			},
 			"cluster-count": 4,
 			"chunk-chance": 3,
-			"min-height": 45,
-			"max-height": 200,
+			"min-height": 48,
+			"max-height": 96,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
