@@ -43,6 +43,7 @@ for category in enderIOCategories
 //Remove Dark Steel Crafting Recipes
 mods.tconstruct.Alloy.removeRecipe(<liquid:dark_steel>);
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:6>);
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:6>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:ingotSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
 
@@ -97,6 +98,7 @@ val enderIOHideItems =
 	<enderio:item_inventory_remote:2>,
 	<enderio:item_inventory_remote:2>.withTag({"enderio:energy": 150000, "enderio:famount": 1500}),
 	<enderio:item_data_conduit>,
+	<enderio:item_material:22>
 ] as crafttweaker.item.IItemStack[];
 
 for item in enderIOHideItems
@@ -223,19 +225,50 @@ mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[<ore:ingotSteel>, <
 //Remove Rocket Fuel Crafting
 mods.enderio.Vat.removeRecipe(<liquid:rocket_fuel>);
 
-//Basic Capacitor Crafting Recipes
-val enderioRecipes_CONDUITS = {
+//Basic Conduits Crafting Recipes
+val enderioRecipes_BASICCONDUITS = {
 	<enderio:item_endergy_conduit> : <ore:plateCrudeSteel>,
 	<enderio:item_endergy_conduit:1> : <ore:plateIron>,
 	<enderio:item_endergy_conduit:2> : <ore:plateAluminium>,
 	<enderio:item_endergy_conduit:3> : <ore:plateGold>,
 	<enderio:item_endergy_conduit:4> : <ore:plateCopper>,
 	<enderio:item_endergy_conduit:5> : <ore:plateSilver>,
+	<enderio:item_item_conduit> : <extendedcrafting:material:37>,
+	<enderio:item_liquid_conduit> : <ore:fusedGlass>,
+	<enderio:item_liquid_conduit:1> : <ore:fusedQuartz>,
+	<enderio:item_power_conduit> : <ore:plateRedstoneAlloy>,
+	<enderio:item_redstone_conduit> : <ore:ingotRedstoneAlloy>,
+	<enderio:item_me_conduit> : <ore:gemFluix>,
+	<enderio:item_me_conduit:1> : <enderio:item_me_conduit>,
 } as crafttweaker.item.IIngredient[crafttweaker.item.IItemStack];
 
-for conduit, material in enderioRecipes_CONDUITS {
+for conduit, material in enderioRecipes_BASICCONDUITS {
     recipes.remove(conduit.withAmount(1));
-		mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(conduit), scripts.helpers.stages.progression2.stage, conduit * 16, [[<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>], [material, <ore:blockGlass>, material], [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>]]);
+	mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(conduit), scripts.helpers.stages.progression2.stage, conduit * 16, [[<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>], [material, <ore:blockGlass>, material], [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>]]);
 }
 
+//Composite Binder
+furnace.remove(<enderio:item_material:4> * 2, <enderio:item_material:22>);
+scripts.helpers.CreateAssemblyRecipe(<enderio:item_material:4> * 16, [<industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>, null, <ore:blockGlass>, null, <industrialforegoing:plastic>, <industrialforegoing:plastic>, <industrialforegoing:plastic>], 20, 3500);
+
+//Advanced Conduits Crafting Recipes
+val enderioRecipes_ADVANCEDCONDUITS = {
+	<enderio:item_power_conduit:1> : <liquid:energetic_alloy>,
+	<enderio:item_power_conduit:2> : <liquid:vibrant_alloy>,
+	<enderio:item_liquid_conduit:2> : <liquid:end_steel>,
+	<enderio:item_endergy_conduit:6> : <liquid:electrum>,
+	<enderio:item_endergy_conduit:7> : <liquid:energetic_silver>,
+	<enderio:item_endergy_conduit:8> : <liquid:crystalline_alloy>,
+	<enderio:item_endergy_conduit:9> : <liquid:crystalline_pink_slime>,
+	<enderio:item_endergy_conduit:10> : <liquid:melodic_alloy>,
+	<enderio:item_endergy_conduit:11> : <liquid:stellar_alloy>,
+	<enderio:item_gas_conduit> : <liquid:black_iron>,
+	<enderio:item_gas_conduit:1> : <liquid:steel>,
+	<enderio:item_gas_conduit:2> : <liquid:diamond>,
+} as crafttweaker.liquid.ILiquidStack[crafttweaker.item.IItemStack];
+
+for conduit, liquid in enderioRecipes_ADVANCEDCONDUITS {
+    recipes.remove(conduit.withAmount(1));
+	scripts.helpers.addInjectionRecipe(conduit, <enderio:item_material:4>, liquid * 144, 1000, false);
+}
 print("### EnderIO Init Complete ###");

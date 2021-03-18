@@ -1,0 +1,21 @@
+{
+	x: 12.0d,
+	y: -2.0d,
+	shape: "hexagon",
+	dependencies: [
+		"d3c2d75f"
+	],
+	tasks: [{
+		uid: "5e706636",
+		type: "item",
+		items: [{
+			item: "jaopca:item_dustsmalllithium"
+		}]
+	}],
+	rewards: [{
+		uid: "90a33657",
+		type: "item",
+		item: "minecraft:stone 1 5",
+		count: 64
+	}]
+}

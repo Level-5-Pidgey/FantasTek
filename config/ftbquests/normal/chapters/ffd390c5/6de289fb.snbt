@@ -1,0 +1,50 @@
+{
+	x: 12.0d,
+	y: -4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"3ff22125"
+	],
+	tasks: [{
+		uid: "e72ab3a6",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			tag: {
+				tier: 0
+			},
+			Damage: 3s
+		}]
+	},
+	{
+		uid: "92148d9f",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			tag: {
+				tier: 0
+			},
+			Damage: 4s
+		}]
+	},
+	{
+		uid: "698b7e2a",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 1 1"
+		}],
+		count: 18L
+	}],
+	rewards: [{
+		uid: "751d8422",
+		type: "item",
+		item: "jaopca:item_platequartz",
+		count: 5
+	},
+	{
+		uid: "32553446",
+		type: "item",
+		item: "mekanism:basicblock2 1 2",
+		count: 2
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 12.0d,
+	y: 0.0d,
+	dependencies: [
+		"d6d63695"
+	],
+	tasks: [{
+		uid: "ebe2c783",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:rock_crusher_idle"
+		}]
+	}],
+	rewards: [{
+		uid: "bf80b786",
+		type: "item",
+		item: "contenttweaker:material_part 1 1073",
+		count: 2
+	}]
+}

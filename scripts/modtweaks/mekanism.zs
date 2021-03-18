@@ -107,7 +107,7 @@ for item, energyCost in mekanism_MechanicalImbuement {
 val mekanismRecipes_CRAFTINGTABLE = {
 	//null : [[null, null, null], [null, null, null], [null, null, null]],
 	<mekanism:basicblock2:1> * 6 : [[<ore:dustSmallLithium>, <ore:ingotSteel>, <ore:dustSmallLithium>], [<ore:ingotSteel>, <ore:plateQuartz>, <ore:ingotSteel>], [<ore:dustSmallLithium>, <ore:ingotSteel>, <ore:dustSmallLithium>]],
-	<mekanism:basicblock2:2> * 4 : [[null, <mekanism:basicblock2:2>, null], [<mekanism:basicblock2:2>, scripts.helpers.CircuitTiers[0], <mekanism:basicblock2:2>], [null, <mekanism:basicblock2:2>, null]],
+	<mekanism:basicblock2:2> * 4 : [[null, <mekanism:basicblock2:1>, null], [<mekanism:basicblock2:1>, scripts.helpers.CircuitTiers[0], <mekanism:basicblock2:1>], [null, <mekanism:basicblock2:1>, null]],
 	<mekanism:basicblock2:3>.withTag({tier: 0}) : [[<ore:dustSmallCobalt>, scripts.helpers.BatteryTiers[1], <ore:dustSmallCobalt>], [scripts.helpers.BatteryTiers[1], scripts.helpers.FrameTiers[1], scripts.helpers.BatteryTiers[1]], [<ore:dustSmallCobalt>, scripts.helpers.BatteryTiers[1], <ore:dustSmallCobalt>]],
 	<mekanism:basicblock2:4>.withTag({tier: 0}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], scripts.helpers.FrameTiers[1], scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];

@@ -86,6 +86,11 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
 	 //									[null, null, null],
 	 //  									[null, null, null],
 	 //									[null, null, null]],
+	 <thermalexpansion:machine:15>
+ 	 								:	[[<ore:blockGlass>, scripts.helpers.CircuitTiers[1], <ore:blockGlass>],
+	 									[<ore:plateManyullyn>, scripts.helpers.FrameTiers[1], <ore:plateManyullyn>],
+	   									[<ore:blockGlass>, scripts.helpers.CircuitTiers[1], <ore:blockGlass>],
+	 									[<ore:blockGlass>, null, <ore:gearInvar>]],
 	 <thermalexpansion:machine:10>
  	 								:	[[<ore:gearTin>, scripts.helpers.MotorTiers[0], <ore:gearAluminum>],
 	 									[null, scripts.helpers.FrameTiers[1], null],
@@ -109,8 +114,8 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
 	 <thermalexpansion:machine:8>
 	 								:	[[null, <minecraft:bucket>, null],
 	 									[<ore:blockGlass>, scripts.helpers.FrameTiers[2], <ore:blockGlass>],
-  									[<ore:gearSignalum>, scripts.helpers.FrameTiers[1], <ore:gearSignalum>],
-	  								[null, <ore:ingotBrass>, <ore:plateBrass>]],
+  										[<ore:gearSignalum>, scripts.helpers.MotorTiers[1], <ore:gearSignalum>],
+	  									[null, <ore:ingotBrass>, <ore:plateBrass>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in thermalfoundation_EXTENDEDCRAFTING_T2 {

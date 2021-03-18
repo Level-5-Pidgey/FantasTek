@@ -44,14 +44,17 @@ mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneBrimstone>, /
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stonePermafrost>, /*Output 1*/ <forestry:crafting_material:5>, 50, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustNiter>.firstItem, 15]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneMarble>, /*Output 1*/ <ore:clay>.firstItem * 2, /*Output 2*/ <biomesoplenty:white_sand>, 50, /*Output 3*/ <ore:dustSmallIron>.firstItem, 30]);
 
-//Crafting Table Recipe Changes
+//Remove Lithium Ion Cell Recipe
+recipes.remove(<nuclearcraft:lithium_ion_cell>);
+
+//Assembly Line Recipe Changes
 val nuclearcraftRecipes_ASSEMBLY = {
 	<nuclearcraft:lithium_ion_cell>.withTag({maxTransfer: 200, capacity: 40000, energy: 0}) : [null, <ore:dustCobalt>, null, <ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotLithium>, <ore:ingotSteel>],
   <nuclearcraft:part:8> * 2 : [<ore:ingotSteel>, <ore:ingotSteel>, null, <ore:plateAluminium>, <ore:plateAluminium>, <projectred-core:resource_item:400>, <ore:ingotSteel>, <ore:ingotSteel>, null],
 } as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
 for key, value in nuclearcraftRecipes_ASSEMBLY {
-	recipes.remove(key.withAmount(1));
+  recipes.remove(key.withAmount(1));
   scripts.helpers.CreateAssemblyRecipe(key, value, 60, 4000);
 }
 
@@ -62,7 +65,18 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 	//									[null, null, null],
 	//  								[null, null, null],
 	//									[null, null, null]],
-<nuclearcraft:alloy_furnace_idle>:		[[<ore:plateLead>, scripts.helpers.CircuitTiers[1], <ore:plateLead>],
+	<nuclearcraft:manufactory_idle>
+									:	[[null, <thermalfoundation:material:657>, null],
+	 									[<ore:gearSteel>, scripts.helpers.FrameTiers[1], <ore:gearSteel>],
+	   									[null, scripts.helpers.CircuitTiers[0], null],
+										[null, <ore:ingotCopper>, <ore:plateLead>]],
+	<nuclearcraft:rock_crusher_idle>
+									:	[[<ore:plateSteel>, scripts.helpers.MotorTiers[1], <ore:plateSteel>],
+										[<minecraft:piston>, scripts.helpers.FrameTiers[1], <minecraft:piston>],
+	  									[<ore:plateSteel>, <thermalfoundation:material:656>, <ore:plateSteel>],
+										[null, <ore:ingotManyullyn>, scripts.helpers.BatteryTiers[1]]],
+	<nuclearcraft:alloy_furnace_idle>
+									:	[[<ore:plateLead>, scripts.helpers.CircuitTiers[1], <ore:plateLead>],
 										[<ore:plateLead>, scripts.helpers.FrameTiers[0], <ore:plateLead>],
 										[<ore:gearLead>, scripts.helpers.MotorTiers[1], <ore:gearLead>],
 										[null, null, <ore:ingotNickel>]],

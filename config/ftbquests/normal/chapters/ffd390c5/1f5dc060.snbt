@@ -1,0 +1,70 @@
+{
+	x: 18.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	dependencies: [
+		"e4ca3450"
+	],
+	tasks: [{
+		uid: "77aec465",
+		type: "item",
+		title: "Create an advanced cable",
+		items: [{
+			item: "enderio:item_power_conduit 1 1"
+		},
+		{
+			item: "enderio:item_power_conduit 1 2"
+		},
+		{
+			item: "enderio:item_liquid_conduit 1 2"
+		},
+		{
+			item: "enderio:item_endergy_conduit 1 6"
+		},
+		{
+			item: "enderio:item_endergy_conduit 1 7"
+		},
+		{
+			item: "enderio:item_endergy_conduit 1 8"
+		},
+		{
+			item: "enderio:item_endergy_conduit 1 9"
+		},
+		{
+			item: "enderio:item_endergy_conduit 1 10"
+		},
+		{
+			item: "enderio:item_endergy_conduit 1 11"
+		},
+		{
+			item: "enderio:item_gas_conduit"
+		},
+		{
+			item: "enderio:item_gas_conduit 1 1"
+		},
+		{
+			item: "enderio:item_gas_conduit 1 2"
+		},
+		{
+			item: "thermaldynamics:duct_0 1 3"
+		},
+		{
+			item: "thermaldynamics:duct_0 1 4"
+		},
+		{
+			item: "thermaldynamics:duct_0 1 2"
+		},
+		{
+			item: "thermaldynamics:duct_32 1 6"
+		},
+		{
+			item: "thermaldynamics:duct_32 1 2"
+		},
+		{
+			item: "thermaldynamics:duct_32 1 3"
+		},
+		{
+			item: "thermaldynamics:duct_32 1 7"
+		}]
+	}]
+}

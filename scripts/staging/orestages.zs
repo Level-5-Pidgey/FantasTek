@@ -244,7 +244,7 @@ for materialString, oreValue in scripts.helpers.OresWithProcessingTier
 {
 	for oreBlock, replaceWith in DenseAndPoorOres
 	{
-		if(materialString in oreBlock.ores[0].name)
+		if(oreBlock.ores.length > 0 && oreBlock.ores[0].name.contains(materialString))
 		{
 			//Replace each dense ore/poor ore block with their proper dimension equivalent block unless the player has the right stage for them.
 			if(oreValue <= 1)
@@ -562,6 +562,8 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Lumium" : stages.progression2,
   "Manasteel" : stages.Botania1,
   "Brass" : stages.progression2,
+  "EnchantedMetal" : stages.progression2,
+  "EvilMetal" : stages.progression2,
 };
 
 for materialString in ExtraMaterialsToStage

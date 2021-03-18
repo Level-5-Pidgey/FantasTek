@@ -73,7 +73,7 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 	//Generate ingots for parts that do not have ingots
 	if(needsIngot)
 	{
-		mat.registerParts(["ingot", "nugget"] as string[]);
+		mat.registerParts(["ingot", "nugget", "block"] as string[]);
 	}
 
 	//generate alternate ore types (dense, poor) if boolean is true

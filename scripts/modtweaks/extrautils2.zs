@@ -89,4 +89,29 @@ for rune in scripts.helpers.AllFireT1Items
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:passivegenerator:5> * 3, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:ingotBrickNether>, <ore:ingotBrickNether>, <ore:ingotBrickNether>], [<ore:stone>, rune, <ore:stone>]]);
 }
 
+//Use Machines to Create the exU metals
+//Demon Metal
+scripts.helpers.addInjectionRecipe(<ore:ingotDemonicMetal>.firstItem, <ore:ingotGold>, <liquid:lava> * 111, 5000, false);
+scripts.helpers.addInjectionRecipe(<ore:blockDemonicMetal>.firstItem, <ore:blockGold>, <liquid:lava> * 1000, 5000, false);
+<ticmat:xu_demonic_metal>.attackHead = 5.7; //Nerf Demonic Metal Damage
+//Enchanted Metal
+scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:essence> * 111, 10000, false);
+scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:essence> * 1000, 10000, false);
+scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:experience> * 111, 10000, false);
+scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:experience> * 1000, 10000, false);
+scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:xpjuice> * 111, 10000, false);
+scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:xpjuice> * 1000, 10000, false);
+<ticmat:xu_enchanted_metal>.attackHead = 9.1;
+<ticmat:xu_enchanted_metal>.durabilityHead = 900;
+<ticmat:xu_enchanted_metal>.miningSpeedHead = 7.45;
+<ticmat:xu_enchanted_metal>.durabilityHandle = 250;
+<ticmat:xu_enchanted_metal>.modifierHandle = 0.5;
+<ticmat:xu_enchanted_metal>.durabilityExtra = 55;
+//Evil Metal
+scripts.helpers.addInjectionRecipe(<ore:ingotEvilMetal>.firstItem, <ore:ingotGold>, <liquid:lava> * 111, 5000, false);
+scripts.helpers.addInjectionRecipe(<ore:blockEvilMetal>.firstItem, <ore:blockGold>, <liquid:lava> * 1000, 5000, false);
+
+//Turn a drop of evil into Liquid Nightmares
+scripts.helpers.addMeltingRecipe(<liquid:liquid_nightmares> * 1000, <extrautils2:ingredients:10>, 15000, false);
+
 print("### Extrautils2 Init Complete ###");

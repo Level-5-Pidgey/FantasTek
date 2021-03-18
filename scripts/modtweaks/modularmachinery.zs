@@ -461,6 +461,9 @@ recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itembluepri
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"})) ~ "_industrialMixer", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}), [[scripts.helpers.MotorTiers[1], <enderio:item_material:77>, scripts.helpers.MotorTiers[1]], [<enderio:item_material:77>, scripts.helpers.FrameTiers[1], <enderio:item_material:77>], [scripts.helpers.MotorTiers[1], <enderio:item_material:77>, scripts.helpers.MotorTiers[1]]]);
 //Mechanical Imbuer
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mechanical_imbuer"})) ~ "_mechanicalimbuer", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mechanical_imbuer"}), [[<ore:dustBlizz>, <enderio:item_material:77>, <ore:dustBlitz>], [<enderio:item_material:77>, scripts.helpers.CircuitTiers[1], <enderio:item_material:77>], [<ore:dustBasalz>, <enderio:item_material:77>, <contenttweaker:magma_powder>]]);
+//Assembly Line
+recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_line"})) ~ "_assembly_line", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_line"}), [[scripts.helpers.CircuitTiers[2], <enderio:item_material:77>, scripts.helpers.CircuitTiers[2]], [<enderio:item_material:77>, scripts.helpers.FrameTiers[1], <enderio:item_material:77>], [scripts.helpers.CircuitTiers[2], <enderio:item_material:77>, scripts.helpers.CircuitTiers[2]]]);
+
 
 
 print("### Modular Machinery Init Complete ###");

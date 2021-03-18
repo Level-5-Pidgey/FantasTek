@@ -127,9 +127,6 @@ for materialString, molten in chunkMaterials
 	}
 }
 
-//Nerf Demonic Metal Damage
-<ticmat:xu_demonic_metal>.attackHead = 5.7;
-
 //Remove Default Grout Crafting Recipes
 recipes.removeByRecipeName("tconstruct:smeltery/grout");
 recipes.removeByRecipeName("tconstruct:smeltery/grout_simple");

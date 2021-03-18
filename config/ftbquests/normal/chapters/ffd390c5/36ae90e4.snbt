@@ -1,0 +1,42 @@
+{
+	x: 12.0d,
+	y: 4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"d6d63695"
+	],
+	tasks: [{
+		uid: "8acf5a9e",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:machine",
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				SideCache: [B;
+					1b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				],
+				Level: 0b
+			},
+			Damage: 15s
+		}]
+	}],
+	rewards: [{
+		uid: "f8bfd027",
+		type: "item",
+		item: "enderio:item_alloy_ingot 1 4",
+		count: 16
+	},
+	{
+		uid: "2978feb4",
+		type: "item",
+		item: "projectred-core:resource_item 1 104",
+		count: 5
+	}]
+}

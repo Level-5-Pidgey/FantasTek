@@ -206,6 +206,10 @@ val stage2_stageItems = [
     <mekanism:basicblock2:4>.withTag({tier: 0}),
     <mekanism:basicblock2:4>.withTag({tier: 1}),
     <nuclearcraft:lithium_ion_cell>,
+    <nuclearcraft:rock_crusher_idle>,
+    <nuclearcraft:rock_crusher_active>,
+    <nuclearcraft:manufactory_active>,
+    <nuclearcraft:manufactory_idle>
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems
@@ -224,7 +228,8 @@ mods.recipestages.Recipes.setRecipeStage(stageString, <forestry:bronze_pickaxe>)
 val stage2_modularMachinery = [
     <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ore_washing_factory"}),
     <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mechanical_imbuer"}),
-    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"})
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}),
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_line"}),
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_modularMachinery

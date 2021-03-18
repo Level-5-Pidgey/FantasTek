@@ -1,0 +1,18 @@
+{
+	x: 16.0d,
+	y: 4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"6c280ff9"
+	],
+	tasks: [{
+		uid: "10cfbccb",
+		type: "item",
+		items: [{
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:assembly_line"
+			}
+		}]
+	}]
+}

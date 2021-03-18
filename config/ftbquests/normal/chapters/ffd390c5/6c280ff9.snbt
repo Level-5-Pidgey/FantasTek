@@ -1,5 +1,5 @@
 {
-	x: 14.0d,
+	x: 16.0d,
 	y: 2.0d,
 	dependencies: [
 		"d6d63695"
@@ -12,7 +12,7 @@
 			tag: {
 				ench: [{
 					lvl: 1s,
-					id: 72
+					id: 12
 				}]
 			},
 			Damage: 8s
@@ -22,7 +22,7 @@
 			tag: {
 				ench: [{
 					lvl: 1s,
-					id: 72
+					id: 12
 				}]
 			}
 		}]

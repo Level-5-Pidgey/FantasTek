@@ -49,5 +49,7 @@ var elemental_mix = VanillaFactory.createFluid("elemental_mix", Color.fromHex("e
 elemental_mix.stillLocation = "contenttweaker:fluids/elemental_mix_still";
 elemental_mix.flowingLocation = "contenttweaker:fluids/elemental_mix";
 elemental_mix.register();
+var liquid_nightmares = VanillaFactory.createFluid("liquid_nightmares", Color.fromHex("4b2b54"));
+liquid_nightmares.register();
 
 print("### Custom Fluid Creator Init Complete ###");

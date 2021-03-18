@@ -2,7 +2,6 @@
 	"priority": 1000000000000,
 	"populate": {
 		"dirt": {
-
 			"distribution": "uniform",
 			"generator": {
 				"block": "dirt",
@@ -53,11 +52,7 @@
 					},
 					{
 						"name": "minecraft:grass",
-						"weight": 10
-					},
-					{
-						"name": "minecraft:dirt",
-						"weight": 10
+						"weight": 23
 					},
 					{
 						"name": "minecraft:mossy_cobblestone",
@@ -69,13 +64,13 @@
 					},
 					{
 						"name": "minecraft:stone",
-						"weight": 75
+						"weight": 30
 					}
 				],
 				"material": "minecraft:stone",
 				"cluster-size": 35
 			},
-			"cluster-count": 10,
+			"cluster-count": 15,
 			"min-height": 0,
 			"max-height": 256,
 			"retrogen": false,
@@ -208,14 +203,14 @@
 				"cluster-size": 12
 			},
 			"cluster-count": 4,
-			"min-height": 50,
-			"max-height": 128,
+			"min-height": 63,
+			"max-height": 30,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [{
 					"type": "dictionary",
-					"entry": "RIVER"
+					"entry": "WATER"
 				}]
 			},
 			"dimension": {
@@ -348,6 +343,357 @@
 			"min-height": 0,
 			"max-height": 64,
 			"retrogen": false,
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_white": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 0
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_red": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 1
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_orange": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 2
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_yellow": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 3
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_green": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 4
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_blue": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 5
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_indigo": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 6
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_violet": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 7
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"cave_crystal_black": {
+			"distribution": "cave",
+			"generator": {
+					"type": "stalactite",
+					"block": [{
+							"name": "quark:crystal",
+							"metadata": 8
+						}
+					],
+					"material": [
+						"minecraft:obsidian",
+						"minecraft:stone"
+					],
+					"gen-body": [
+						"minecraft:air",
+						"minecraft:water",
+						"minecraft:lava"
+					],
+					"fat": false,
+					"min-height": 7,
+					"height-variance": 4,
+					"height-mod": 3,
+					"gen-size": 3,
+					"size-variance": 1
+				},
+			"cluster-count": 1,
+			"chunk-chance" : 10,
+			"ceiling": true,
+			"retrogen": false,
+			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [

@@ -191,17 +191,23 @@ for item, fluidAmount in lubricantOutput
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:lubricant> * fluidAmount, item, 1500);
 }
 
-//Create Elemental Motes (or turn them into liquids)
-val contenttweaker_ElementalMotes = {
-	<liquid:elemental_water_fire> : <contenttweaker:elemental_mote_fire>,
-	<liquid:elemental_water_water> : <contenttweaker:elemental_mote_water>,
-	<liquid:elemental_water_earth> : <contenttweaker:elemental_mote_earth>,
-	<liquid:elemental_water_air> : <contenttweaker:elemental_mote_air>,
-} as crafttweaker.item.IItemStack[crafttweaker.liquid.ILiquidStack];
-
-for elementalLiquid, elementalMote in contenttweaker_ElementalMotes {
-	scripts.helpers.addMeltingRecipe(elementalLiquid * 1000, elementalMote, 2500, false);
-}
+//Create Elemental Liquids from Motes/Mod Items (or turn them into liquids)
+for elementalItem in scripts.helpers.AllFireT1Items
+{
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_fire> * 1000, elementalItem, 2500, false);
+} //Fire
+for elementalItem in scripts.helpers.AllWaterT1Items
+{
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_water> * 1000, elementalItem, 2500, false);
+} //Water
+for elementalItem in scripts.helpers.AllAirT1Items
+{
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_air> * 1000, elementalItem, 2500, false);
+} //Air
+for elementalItem in scripts.helpers.AllEarthT1Items
+{
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_earth> * 1000, elementalItem, 2500, false);
+} //Earth
 
 //Create elemental mix
 scripts.mmhelper.IndustrialMixerFactoryRecipe("elemental_mix", 10000, 100, <liquid:elemental_mix> * 1000, null, <liquid:elemental_water_fire> * 1000, <liquid:elemental_water_water> * 1000, <liquid:elemental_water_earth> * 1000, <liquid:elemental_water_air> * 1000, null, null, null);

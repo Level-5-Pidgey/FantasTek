@@ -135,8 +135,12 @@
       "5": "necrodermis_poor_ore_minecraft_stone",
       "6": "lithium_poor_ore_minecraft_stone",
       "7": "magnesium_dense_ore_minecraft_end_stone",
+      "8": "necrodermis_block",
       "9": "iron_dense_ore_minecraft_netherrack",
+      "10": "chrome_block",
+      "11": "zinc_block",
       "12": "iridium_dense_ore_minecraft_netherrack",
+      "13": "vibranium_block",
       "14": "coal_poor_ore_minecraft_stone",
       "15": "redstone_poor_ore_minecraft_netherrack"
     },

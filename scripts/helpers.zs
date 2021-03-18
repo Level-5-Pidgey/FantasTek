@@ -402,14 +402,14 @@ static CircuitTiers as crafttweaker.item.IItemStack[int] =
 {
     0 : <advancedrocketry:ic>,
     1 : <mekanism:controlcircuit>,
-    2 : <mekanism:controlcircuit>.withTag({ench: [{lvl: 1 as short, id: 72}]}),
+    2 : <mekanism:controlcircuit>.withTag(scripts.mmhelper.mechImbuementData),
 };
 
 static FrameTiers as crafttweaker.item.IItemStack[int]=
 {
     0 : <enderio:item_material>,
     1 : <mekanism:basicblock:8>,
-    2 : <mekanism:basicblock:8>.withTag({ench: [{lvl: 1 as short, id: 72}]}),
+    2 : <mekanism:basicblock:8>.withTag(scripts.mmhelper.mechImbuementData),
 };
 
 static ElectronicTiers as crafttweaker.item.IIngredient[int]=
@@ -565,10 +565,36 @@ function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIn
     }
 
     //Industrial Mixer (basic melting)
-    scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(inputAsStack), energyCost, energyCost / 200, output, null, null, null, null, null, inputAsStack, null, null);
+    scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(inputAsStack) ~ output.name, energyCost, energyCost / 200, output, null, null, null, null, null, inputAsStack, null, null);
 
     //Magma Crucible
     mods.thermalexpansion.Crucible.addRecipe(output, inputAsStack, energyCost);
+}
+
+function addInjectionRecipe(output as crafttweaker.item.IItemStack, inputItem as crafttweaker.item.IIngredient, inputFluid as ILiquidStack, energyCost as int, allowBasicInjection as bool)
+{
+    var inputAsStack as crafttweaker.item.IItemStack = inputItem.items[0];
+
+    //Nuclearcraft Fluid Injector
+    mods.nuclearcraft.infuser.addRecipe(inputItem, inputFluid, output);
+
+    //Fluid Transposer
+    mods.thermalexpansion.Transposer.addFillRecipe(output, inputAsStack, inputFluid, energyCost);
+
+    //Tinkers Construct Casting
+    if(allowBasicInjection)
+    {
+        mods.tconstruct.Casting.addBasinRecipe(output, inputItem, inputFluid * 1, inputFluid.amount, true, energyCost / 100);
+    }
+
+    //Throwing item in Fluid
+    if (inputFluid.amount <= 1000)
+    {
+        mods.inworldcrafting.FluidToItem.transform(output, inputFluid * 1, [inputItem], true);
+    }
+
+    //Industrial Mixer Factory
+    scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(output) ~ inputFluid.name, energyCost, energyCost / 200, null, null, inputFluid, null, null, null, inputAsStack, null, output);
 }
 
 function createAdvancedCraftingRecipe(
@@ -608,12 +634,20 @@ function createAdvancedCraftingRecipe(
 function combineRecipeItems(inputItems as crafttweaker.item.IIngredient[]) as crafttweaker.item.IIngredient[]
 {
     var returnItems as crafttweaker.item.IIngredient[] = [];
-	if(inputItems.length > 0)
-	{
-		returnItems += inputItems[0].items[0].withAmount(1);
-	}
 
-	//Now that all possible items have been simplified, get their count and add them as ingredients
+    //Add the first non-null item to the returnItems list.
+    var firstItemIndex as int = 0;
+    var foundNull as bool = false;
+    for i, inputItem in inputItems
+    {
+        if (!isNull(inputItem) && !isNull(inputItem.items) && !foundNull)
+        {
+            firstItemIndex = i;
+            foundNull = true;
+        }
+    }
+    returnItems += inputItems[firstItemIndex].items[0].withAmount(1);
+
 	for inputItem in inputItems
 	{
         if(!isNull(inputItem))
@@ -685,32 +719,4 @@ function CreateAssemblyRecipe(
 
     //Modular Machinery Assembly Line
     scripts.mmhelper.AssemblyLineRecipe(createRecipeName(output), energyCost, craftingTime, output, combinedItems);
-
-    //Advanced Rocketry Assembly Machine
-    if(combinedItems.length == 2)
-    {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0]);
-    } else if (combinedItems.length == 3)
-    {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0]);
-    } else if (combinedItems.length == 4)
-    {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0]);
-    } else if (combinedItems.length == 5)
-    {
-        mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0]);
-    } else if (combinedItems.length == 6)
-    {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0]);
-    } else if (combinedItems.length == 7)
-    {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0], combinedItems[6].items[0]);
-    } else if (combinedItems.length == 8)
-    {
-       mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0], combinedItems[6].items[0], combinedItems[7].items[0]);
-    }
-    else if (combinedItems.length == 9)
-    {
-      mods.advancedrocketry.PrecisionAssembler.addRecipe(output, craftingTime, energyCost / craftingTime, combinedItems[0].items[0], combinedItems[1].items[0], combinedItems[2].items[0], combinedItems[3].items[0], combinedItems[4].items[0], combinedItems[5].items[0], combinedItems[6].items[0], combinedItems[7].items[0], combinedItems[8].items[0]);
-    }
 }

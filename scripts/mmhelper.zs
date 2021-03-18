@@ -120,6 +120,9 @@ function IndustrialMixerFactoryRecipe(recipeName as string, energyCost as int, c
 	RecipeToAdd.build();
 }
 
+//Store the Mechanical Imbuement IData for use elsewhere
+static mechImbuementData as crafttweaker.data.IData = {ench: [{lvl: 1 as short, id: 12}]};
+
 //Mechanical Imbuer
 function AddMechanicalImbuerRecipe(recipeName as string, item as crafttweaker.item.IItemStack, energyCost as int)
 {
@@ -129,7 +132,7 @@ function AddMechanicalImbuerRecipe(recipeName as string, item as crafttweaker.it
 	var RecipeToAdd = RecipeBuilder.newBuilder(recipeName, "mechanical_imbuer", tickTime);
 	RecipeToAdd.addItemInput(item);
 	RecipeToAdd.addFluidInput(<liquid:elemental_mix> * 1000);
-	RecipeToAdd.addItemOutput(item.withTag({ench: [{lvl: 1 as short, id: 72}]}));
+	RecipeToAdd.addItemOutput(item.withTag(mechImbuementData));
 	RecipeToAdd.addEnergyPerTickInput(energyCost / tickTime);
 	RecipeToAdd.build();
 }
