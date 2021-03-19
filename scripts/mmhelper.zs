@@ -121,7 +121,7 @@ function IndustrialMixerFactoryRecipe(recipeName as string, energyCost as int, c
 }
 
 //Store the Mechanical Imbuement IData for use elsewhere
-static mechImbuementData as crafttweaker.data.IData = {ench: [{lvl: 1 as short, id: 12}]};
+static mechImbuementData as crafttweaker.data.IData = {ench: [{lvl: 1 as short, id: 72}]};
 
 //Mechanical Imbuer
 function AddMechanicalImbuerRecipe(recipeName as string, item as crafttweaker.item.IItemStack, energyCost as int)

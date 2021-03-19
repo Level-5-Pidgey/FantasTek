@@ -495,6 +495,9 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
     {
         mods.advancedrocketry.ArcFurnace.addRecipe(output, 1200, energyCost / 1200, input1, input2, <minecraft:sand>);
     }
+
+    //Nuclearcraft Alloy Smelter
+    mods.nuclearcraft.alloy_furnace.addRecipe([input1, input2, output, 1.0, 0.4]);
 }
 
 function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, allowBasicAlloy as bool)

@@ -68,12 +68,12 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 	<nuclearcraft:manufactory_idle>
 									:	[[null, <thermalfoundation:material:657>, null],
 	 									[<ore:gearSteel>, scripts.helpers.FrameTiers[1], <ore:gearSteel>],
-	   									[null, scripts.helpers.CircuitTiers[0], null],
+	   								[null, scripts.helpers.CircuitTiers[0], null],
 										[null, <ore:ingotCopper>, <ore:plateLead>]],
 	<nuclearcraft:rock_crusher_idle>
 									:	[[<ore:plateSteel>, scripts.helpers.MotorTiers[1], <ore:plateSteel>],
 										[<minecraft:piston>, scripts.helpers.FrameTiers[1], <minecraft:piston>],
-	  									[<ore:plateSteel>, <thermalfoundation:material:656>, <ore:plateSteel>],
+	  								[<ore:plateSteel>, <thermalfoundation:material:656>, <ore:plateSteel>],
 										[null, <ore:ingotManyullyn>, scripts.helpers.BatteryTiers[1]]],
 	<nuclearcraft:alloy_furnace_idle>
 									:	[[<ore:plateLead>, scripts.helpers.CircuitTiers[1], <ore:plateLead>],
@@ -86,5 +86,9 @@ for key, value in magneticraft_EXTENDEDCRAFTING_T2 {
 	recipes.remove(key.withAmount(1));
 	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
 }
+
+//Change Dimensional Blend Recipe
+recipes.remove(<nuclearcraft:compound:8>);
+mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(<nuclearcraft:compound:8>), scripts.helpers.stages.progression2.stage, <nuclearcraft:compound:8>, [<ore:shulkerShell>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>]);
 
 print("### NuclearCraft Init Complete ###");
