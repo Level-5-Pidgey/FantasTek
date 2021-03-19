@@ -108,10 +108,12 @@ scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blo
 <ticmat:xu_enchanted_metal>.modifierHandle = 0.5;
 <ticmat:xu_enchanted_metal>.durabilityExtra = 55;
 //Evil Metal
-scripts.helpers.addInjectionRecipe(<ore:ingotEvilMetal>.firstItem, <ore:ingotGold>, <liquid:lava> * 111, 5000, false);
-scripts.helpers.addInjectionRecipe(<ore:blockEvilMetal>.firstItem, <ore:blockGold>, <liquid:lava> * 1000, 5000, false);
+scripts.helpers.addInjectionRecipe(<ore:ingotEvilMetal>.firstItem * 4, <minecraft:nether_star>, <liquid:liquid_nightmares> * 1000, 20000, false);
+<ticmat:xu_evil_metal>.durabilityHandle = 400;
+<ticmat:xu_evil_metal>.modifierHandle = 0.9;
 
 //Turn a drop of evil into Liquid Nightmares
 scripts.helpers.addMeltingRecipe(<liquid:liquid_nightmares> * 1000, <extrautils2:ingredients:10>, 15000, false);
+
 
 print("### Extrautils2 Init Complete ###");

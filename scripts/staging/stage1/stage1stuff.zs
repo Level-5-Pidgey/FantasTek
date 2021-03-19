@@ -631,6 +631,7 @@ val StageLessItems = [
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "draco"}]}),
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}),
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),
+	<industrialforegoing:item_splitter>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

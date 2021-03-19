@@ -410,6 +410,8 @@ static FrameTiers as crafttweaker.item.IItemStack[int]=
     0 : <enderio:item_material>,
     1 : <mekanism:basicblock:8>,
     2 : <mekanism:basicblock:8>.withTag(scripts.mmhelper.mechImbuementData),
+    3 : <enderio:item_material:1>,
+    4 : <enderio:item_material:66>
 };
 
 static ElectronicTiers as crafttweaker.item.IIngredient[int]=

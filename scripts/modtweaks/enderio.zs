@@ -46,14 +46,14 @@ mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:6>);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:6>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:ingotSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustSteel>.firstItem, <ore:dustObsidian>.firstItem * 4);
-scripts.helpers.addInjectionRecipe(<enderio:item_alloy_ingot:6>, <ore:ingotSteel>, <liquid:liquid_nightmares> * 250, 10000, false);
+scripts.helpers.addInjectionRecipe(<enderio:item_alloy_ingot:6>, <ore:ingotSteel>, <liquid:liquid_nightmares> * 100, 5000, false);
 
 //Change End Steel Crafting Recipes
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:8>);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:8>);
 scripts.helpers.addAlloySmeltingRecipe(<enderio:item_alloy_ingot:8> * 4, <enderio:item_alloy_ingot:6> * 4, <nuclearcraft:compound:8>, 15000, false);
 mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_ingot:8> * 4, [<enderio:item_alloy_ingot:6> * 4, <ore:endstone> * 8, <ore:shulkerShell>], 17000);
-scripts.mmhelper.IndustrialMixerFactoryRecipe(scripts.helpers.createRecipeName(<enderio:item_alloy_ingot:8>), 12500, 40, <liquid:end_steel> * 4000, null, <liquid:dark_steel> * 4000, null, null, null, <ore:endstone>.firstItem * 8, <ore:shulkerShell>.firstItem, null);
+scripts.mmhelper.IndustrialMixerFactoryRecipe(scripts.helpers.createRecipeName(<enderio:item_alloy_ingot:8>), 12500, 40, <liquid:end_steel> * 4000, null, <liquid:dark_steel> * 4000, null, null, null, <ore:endstone>.firstItem * 8, <minecraft:shulker_shell>, null);
 
 //Change Soularium Crafting Recipes
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>);
@@ -64,6 +64,7 @@ scripts.mmhelper.IndustrialMixerFactoryRecipe(scripts.helpers.createRecipeName(<
 scripts.helpers.addAlloySmeltingRecipe(<enderio:item_alloy_ingot:7>, <ore:dustManyullyn>.firstItem, <minecraft:soul_sand>, 6000, false);
 scripts.helpers.addAlloySmeltingRecipe(<enderio:item_alloy_ingot:7>, <ore:ingotManyullyn>.firstItem, <minecraft:soul_sand>, 7000, false);
 scripts.helpers.addInjectionRecipe(<enderio:item_alloy_ingot:7>, <minecraft:soul_sand>, <liquid:manyullyn> * 1000, 5000, false);
+mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(<enderio:item_material:74>), scripts.helpers.stages.progression2.stage, <enderio:item_material:74>, [<minecraft:soul_sand>, <ore:dustManyullyn>]);
 
 //remove endercore slabs to bricks recipes
 val slabstoblocks =
@@ -295,11 +296,11 @@ mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:54>); //Enhanced M
 //TODO add me back in Stage 3!
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>); //Industrial Machine Chassis
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:51>);
-mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:66>, [[<enderio:block_end_iron_bars>, <ore:ingotDarkSteel>, <enderio:block_end_iron_bars>], [<ore:ingotDarkSteel>, null, <ore:ingotDarkSteel>], [<enderio:block_end_iron_bars>, <ore:ingotDarkSteel>, <enderio:block_end_iron_bars>]], 90);
+mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:1>, [[<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[2], <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>]], 90);
 recipes.remove(<enderio:item_material:55>); //Soulless Machine Chassis
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>); //Soul Machine Chassis
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:52>);
 recipes.remove(<enderio:item_material:66>); //End Steel Chassis
-mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:66>, [[<enderio:block_end_iron_bars>, <ore:ingotEndSteel>, <enderio:block_end_iron_bars>], [<ore:ingotEndSteel>, null, <ore:ingotEndSteel>], [<enderio:block_end_iron_bars>, <ore:ingotEndSteel>, <enderio:block_end_iron_bars>]], 90);
+mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:66>, [[<enderio:block_end_iron_bars>, <ore:ingotEndSteel>, <enderio:block_end_iron_bars>], [<ore:ingotEndSteel>, scripts.helpers.CircuitTiers[2], <ore:ingotEndSteel>], [<enderio:block_end_iron_bars>, <ore:ingotEndSteel>, <enderio:block_end_iron_bars>]], 90);
 
 print("### EnderIO Init Complete ###");

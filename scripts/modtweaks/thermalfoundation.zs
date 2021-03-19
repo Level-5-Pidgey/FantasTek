@@ -174,4 +174,8 @@ for elementalLiquid, elementalPowder in thermal_elementalPowders {
 	}
 }
 
+//Change Hardened Glass Recipe
+mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustLead>.firstItem, <ore:dustObsidian>.firstItem * 4);
+scripts.helpers.addAlloySmeltingRecipe(<thermalfoundation:glass:3> * 2, <ore:blockGlass>.firstItem, <ore:dustObsidian>.firstItem * 4, 8000, true);
+
 print("### Thermal Foundation Init Complete ###");

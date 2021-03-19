@@ -84,6 +84,12 @@ val toolForges =
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:glowstone", Count: 1 as byte, Damage: 0 as short}}),
 	<tconstruct:toolforge>.withTag({textureBlock: {id: "minecraft:redstone_block", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "contenttweaker:sub_block_holder_7", Count: 1 as byte, Damage: 11 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "nuclearcraft:ingot_block", Count: 1 as byte, Damage: 5 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "nuclearcraft:ingot_block", Count: 1 as byte, Damage: 3 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "nuclearcraft:ingot_block", Count: 1 as byte, Damage: 7 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "nuclearcraft:ingot_block", Count: 1 as byte, Damage: 9 as short}}),
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "nuclearcraft:ingot_block", Count: 1 as byte, Damage: 11 as short}}),
 ] as crafttweaker.item.IItemStack[];
 
 for item in toolForges
@@ -194,6 +200,16 @@ var tconForges as Stage[string]=
 	"Malachite" : stages.progression1,
 	"Tanzanite" : stages.progression1,
 	"Topaz" : stages.progression1,
+	"Cobalt" : stages.progression2,
+	"Ardite" : stages.progression2,
+	"Manyullyn" : stages.progression2,
+	"Steel" : stages.progression2,
+	"Copper" : stages.progression2,
+	"Tin" : stages.progression2,
+	"Lead" : stages.progression2,
+	"Aluminium" : stages.progression2,
+	"Nickel" : stages.progression2,
+	"Electrum" : stages.progression2,
 };
 
 for materialString, stageToSet in tconForges
