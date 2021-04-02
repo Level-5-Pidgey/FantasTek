@@ -5,12 +5,7 @@
 	shape: "hexagon",
 	description: "*chuckles* You're in danger",
 	text: [
-		"To add a bit of \"spice\" to your experience, there will be various randomly generated boss monsters that spawn within the world.",
-		"",
-		"&eThese boss monsters will have additional health and damage, alongside perks that give them bonus abilities.&r",
-		"",
-		"Should you defeat these monsters, &bthey will drop tokens&e, depending on the difficulty of the boss monster&r. Villagers will regularly put up bounties for",
-		"defeating these monsters, and they can be traded in for a nice stack of cash."
+		"It would appear that some monsters in the world have genetic mutations that make them &emore powerful than other monsters.&r As a reward for defeating the monsters, you will be granted &btokens that can be traded for cash&r at the nearest native settlement."
 	],
 	dependencies: [
 		"8963d329"

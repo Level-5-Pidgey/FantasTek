@@ -6,7 +6,9 @@
 	shape: "hexagon",
 	description: "Some of your favourites have returned!",
 	text: [
-		"Using our experimental time travel technology we've brought some cool stuff from the future that seems like it could be useful to you. Although not necessarily 100% functional, the inventor got stuck in the timespace continuum and can't be here with us today to explain their uses.",
+		"Another department has informed me that they have been able to send a probe into the future and have brought it back with some technology that we are yet to develop.",
+		"",
+		"An attempt was made to bring the inventor of the technology as well to explain it's function, but it appears our quantum tunneling technology was not capable of transporting organic matter. &bAs a result, not all future tech will be fully functional.&r",
 		"",
 		"- &4Optional Quests&e : Quests with a hexagonal icon (like this one) are optional, although they may open up some more options for you."
 	],

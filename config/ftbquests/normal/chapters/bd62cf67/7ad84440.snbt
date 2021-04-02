@@ -6,7 +6,7 @@
 	shape: "hexagon",
 	description: "Waste not want not",
 	text: [
-		"Coal nuggets prove an efficiency increase of 12.5% over coal but overall take up more space in your storage, so there's pros and cons to both. Just ensure that you don't mistake them for burnt chicken nuggets if you're running low on food or you may run into digestive issues."
+		"At FantasTek we &bput a lot of emphasis on the efficiency of our employees&r. We want you to do everything you can to squeeze every droplet of productivity out of the resources that you're able to gather. Coal nuggets are a simple way to &eincrease your productivity by 12.5% when smelting&r so we strongly advise you make use of this knowledge."
 	],
 	dependencies: [
 		"8edd4b42"

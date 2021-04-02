@@ -4,11 +4,9 @@
 	y: 4.0d,
 	description: "Documentation is vital!",
 	text: [
-		"Since we can only legally work the interns 60 hour weeks, &ethere's not going to be complete documentation for your own survival available.&r",
-		"That being said, there is existing documentation out there that will help you understand and explore the whimsical and quirky qualities of this new world.",
+		"As soon as I found out that I would be The Monitor for the P.R.H.P. I tasked the interns with writing a guide for surviving on exoplanets like the one you have found yourself on now. Unfortunately due to their terrible work ethic we have discharged them and have &etherefore been left with incomplete documentation.&r",
 		"",
-		"&bFrom what we've seen, it would appear that all magical processes on this world function in parallel without interfering with each other, so you will only be required to study one of these strange energies and report back to us.",
-		"You are welcome to study more if you wish to become a valuable asset for FantasTek.&r"
+		"Despite these circumstances, there is existing documentation that will help you understand some of the more whimsical and quirky qualities of this new world. &bAll magical processes on this world appear to function in parallel without interfering with one another&r, so you will only need to understand one in order to report back to us with the necessary information."
 	],
 	dependencies: [
 		"8edd4b42"

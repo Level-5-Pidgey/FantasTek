@@ -5,9 +5,7 @@
 	y: 4.0d,
 	description: "Things are gettin' dirty",
 	text: [
-		"&bThere are some materials necessary for life that you should be able to find on different planets.&r Since you're reading this, we assume your planet has some of these elements so &eit would be helpful to us if you could go and seek them out so that we can test how they differ from what we've got in the lab. &r",
-		"",
-		"If you aren't reading this you must be dead. Our condolences."
+		"&bThere are some materials necessary for life that you should be able to find on different planets.&r Since you're reading this, we assume your planet has some of these elements so &eit would be helpful to us if you could go and seek them out so that we can test how they differ from what we've got in the lab. &r"
 	],
 	dependencies: [
 		"8edd4b42"
