@@ -1,0 +1,21 @@
+{
+	x: 20.0d,
+	y: -4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"3a706317"
+	],
+	tasks: [{
+		uid: "441edb8c",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:ore_sieve"
+		}]
+	}],
+	rewards: [{
+		uid: "b4dc7e30",
+		type: "item",
+		item: "thermalfoundation:material 1 164",
+		count: 4
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	x: 18.0d,
+	y: -4.0d,
+	dependencies: [
+		"22997482"
+	],
+	tasks: [{
+		uid: "324dc22a",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:pink_slime"
+		}]
+	}],
+	rewards: [{
+		uid: "1b25d4f1",
+		type: "item",
+		item: "tconstruct:ore",
+		count: 12
+	},
+	{
+		uid: "1d17932d",
+		type: "item",
+		item: "tconstruct:ore 1 1",
+		count: 12
+	}]
+}

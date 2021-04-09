@@ -91,4 +91,13 @@ for key, value in magneticraft_EXTENDEDCRAFTING_T2 {
 recipes.remove(<nuclearcraft:compound:8>);
 mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(<nuclearcraft:compound:8>), scripts.helpers.stages.progression2.stage, <nuclearcraft:compound:8>, [<ore:shulkerShell>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>]);
 
+//Chemical Reactor Recipe Changes
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:sulfuric_acid>, <liquid:ethene>]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:carbon_monoxide>, <liquid:hydrogen>]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:methanol>, <liquid:hydrofluoric_acid>]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane>, <liquid:koh>]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane>, <liquid:naoh>]);
+
+
+
 print("### NuclearCraft Init Complete ###");

@@ -60,7 +60,6 @@ mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:7>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:ingotGold>.firstItem, <minecraft:soul_sand>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustGold>.firstItem, <minecraft:soul_sand>);
-scripts.mmhelper.IndustrialMixerFactoryRecipe(scripts.helpers.createRecipeName(<enderio:item_alloy_ingot:7>), 6000, 20, <liquid:soularium> * 1000, null, <liquid:manyullyn> * 1000, null, null, null, <minecraft:soul_sand>, null, null);
 scripts.helpers.addAlloySmeltingRecipe(<enderio:item_alloy_ingot:7>, <ore:dustManyullyn>.firstItem, <minecraft:soul_sand>, 6000, false);
 scripts.helpers.addAlloySmeltingRecipe(<enderio:item_alloy_ingot:7>, <ore:ingotManyullyn>.firstItem, <minecraft:soul_sand>, 7000, false);
 scripts.helpers.addInjectionRecipe(<enderio:item_alloy_ingot:7>, <minecraft:soul_sand>, <liquid:manyullyn> * 1000, 5000, false);
@@ -300,6 +299,7 @@ mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:1>, [[<ore:
 recipes.remove(<enderio:item_material:55>); //Soulless Machine Chassis
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>); //Soul Machine Chassis
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:52>);
+mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:53>, [[<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>], [<ore:ingotSoularium>, scripts.helpers.CircuitTiers[2], <ore:ingotSoularium>], [<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>]], 90);
 recipes.remove(<enderio:item_material:66>); //End Steel Chassis
 mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:66>, [[<enderio:block_end_iron_bars>, <ore:ingotEndSteel>, <enderio:block_end_iron_bars>], [<ore:ingotEndSteel>, scripts.helpers.CircuitTiers[2], <ore:ingotEndSteel>], [<enderio:block_end_iron_bars>, <ore:ingotEndSteel>, <enderio:block_end_iron_bars>]], 90);
 

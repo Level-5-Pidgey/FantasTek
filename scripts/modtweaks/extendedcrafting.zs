@@ -14,6 +14,8 @@ mods.tconstruct.Casting.addTableRecipe(<extendedcrafting:material:2>, <tconstruc
 mods.tconstruct.Casting.addBasinRecipe(<ore:blockBlackIron>.firstItem, null, <liquid:black_iron>, 1296);
 //Machines
 scripts.helpers.addAlloySmeltingRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <ore:obsidian>.firstItem, 3000, true);
+scripts.helpers.addInjectionRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <liquid:obsidian> * 288, 2500, false);
+
 //Crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<extendedcrafting:material:2>), <extendedcrafting:material:2> * 2, [<embers:tinker_hammer>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>]);
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:ingotBlackIron>.firstItem), <ore:ingotBlackIron>.firstItem, [<embers:tinker_hammer>, <ore:ingotIron>, <ore:obsidian>]);

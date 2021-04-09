@@ -263,6 +263,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[
 mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:sanguine_gem_water>, <ore:paper>, <contenttweaker:sanguine_gem_fire>], [null, <ore:plateConductiveIron>, null]]);
 mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:crystal_ember_water>, <ore:paper>, <contenttweaker:crystal_ember_fire>], [null, <ore:plateConductiveIron>, null]]);
 mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:salis_mundus_water>, <ore:paper>, <contenttweaker:salis_mundus_fire>], [null, <ore:plateConductiveIron>, null]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <magneticraft:steam_engine>, [[null, <ore:plateConductiveIron>, null], [<contenttweaker:elemental_mote_water>, <ore:paper>, <contenttweaker:elemental_mote_fire>], [null, <ore:plateConductiveIron>, null]]);
 
 //Battey Box
 recipes.remove(<magneticraft:battery>);
@@ -276,5 +277,8 @@ for circuit in scripts.helpers.CircuitTiers[0].items
 <magneticraft:sluice_box>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 1, false, " Ores, with a 2.5x output rate."));
 <magneticraft:sieve>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 2.75x output rate."));
 <magneticraft:grinder>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 2.0x output rate."));
+
+//Stage 2 Conveyors
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:conveyor_belt>) ~ scripts.helpers.stages.progression2.stage, scripts.helpers.stages.progression2.stage, <magneticraft:conveyor_belt> * 32, [[null, null, null], [<ore:ingotSteel>, motor, <ore:ingotSteel>], [<ore:ingotSteel>, null, <ore:ingotSteel>]]);
 
 print("### Magneticraft Init Complete ###");

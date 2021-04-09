@@ -403,6 +403,12 @@ static CircuitTiers as crafttweaker.item.IItemStack[int] =
     0 : <advancedrocketry:ic>,
     1 : <mekanism:controlcircuit>,
     2 : <mekanism:controlcircuit>.withTag(scripts.mmhelper.mechImbuementData),
+    3 : <mekanism:controlcircuit:1>,
+    4 : <mekanism:controlcircuit:1>.withTag(scripts.mmhelper.mechImbuementData),
+    5 : <mekanism:controlcircuit:2>,
+    6 : <mekanism:controlcircuit:2>.withTag(scripts.mmhelper.mechImbuementData),
+    7 : <mekanism:controlcircuit:3>,
+    8 : <mekanism:controlcircuit:3>.withTag(scripts.mmhelper.mechImbuementData),
 };
 
 static FrameTiers as crafttweaker.item.IItemStack[int]=
@@ -411,7 +417,6 @@ static FrameTiers as crafttweaker.item.IItemStack[int]=
     1 : <mekanism:basicblock:8>,
     2 : <mekanism:basicblock:8>.withTag(scripts.mmhelper.mechImbuementData),
     3 : <enderio:item_material:1>,
-    4 : <enderio:item_material:66>
 };
 
 static ElectronicTiers as crafttweaker.item.IIngredient[int]=
@@ -600,6 +605,12 @@ function addInjectionRecipe(output as crafttweaker.item.IItemStack, inputItem as
 
     //Industrial Mixer Factory
     scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(output) ~ inputFluid.name, energyCost, energyCost / 200, null, null, inputFluid, null, null, null, inputAsStack, null, output);
+
+    if (inputFluid.amount <= 300)
+    {
+        //Industrial Foregoing FLuid Sieving Machine
+        mods.industrialforegoing.FluidSievingMachine.add(inputFluid, output, inputAsStack);
+    }
 }
 
 function createAdvancedCraftingRecipe(

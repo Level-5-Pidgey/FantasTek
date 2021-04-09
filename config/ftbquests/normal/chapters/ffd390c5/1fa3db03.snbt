@@ -1,0 +1,21 @@
+{
+	x: 20.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	dependencies: [
+		"f83c7dff"
+	],
+	tasks: [{
+		uid: "15e67bda",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:wither_builder"
+		}]
+	}],
+	rewards: [{
+		uid: "08913404",
+		type: "item",
+		item: "minecraft:soul_sand",
+		count: 12
+	}]
+}

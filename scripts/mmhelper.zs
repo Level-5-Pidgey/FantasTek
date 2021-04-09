@@ -146,11 +146,12 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
         "Chrome",
         "Zinc",
         "Copper",
+		"Steel",
         "Tin",
+		"Platinum",
         "Silver",
         "Lead",
         "Nickel",
-        "Platinum",
         "Iridium",
         "Mithril",
         "Aluminium",
@@ -191,8 +192,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
         "Coal",
         "Quartz",
         "Ardite",
-        "Cobalt",
-		"Steel",
+        "Cobalt"
     ];
 
     var partsList as int[string] = {
@@ -216,7 +216,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
         var itemMaterial = "";
         var itemPart = "";
 
-				//Obtain the Material
+		//Obtain the Material
         for material in materialsList
         {
             if(itemOreDict.contains(material))

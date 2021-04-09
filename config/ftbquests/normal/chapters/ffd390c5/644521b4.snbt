@@ -1,0 +1,25 @@
+{
+	x: 22.0d,
+	y: -4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"17090278"
+	],
+	tasks: [{
+		uid: "e1b969aa",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:ore_fermenter"
+		}]
+	}],
+	rewards: [{
+		uid: "09255b29",
+		type: "item",
+		item: {
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:ore_washing_factory"
+			}
+		}
+	}]
+}

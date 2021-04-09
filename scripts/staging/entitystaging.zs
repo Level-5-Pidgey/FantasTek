@@ -423,11 +423,11 @@ var entityStages as mods.zenstages.Stage[string] =
 	"thermaldynamics:transport" : stages.progression1,
 	"thermalexpansion:florb" : stages.progression1,
 	"thermalexpansion:morb" : stages.progression1,
-	"thermalfoundation:basalz" : stages.progression2,
+	"thermalfoundation:basalz" : stages.progression3,
 	"thermalfoundation:basalz_bolt" : stages.progression2,
-	"thermalfoundation:blitz" : stages.progression2,
+	"thermalfoundation:blitz" : stages.progression3,
 	"thermalfoundation:blitz_bolt" : stages.progression2,
-	"thermalfoundation:blizz" : stages.progression2,
+	"thermalfoundation:blizz" : stages.progression3,
 	"thermalfoundation:blizz_bolt" : stages.progression2,
 };
 

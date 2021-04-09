@@ -6,13 +6,16 @@
 		"6c280ff9"
 	],
 	tasks: [{
-		uid: "7266d5b7",
+		uid: "f49d817f",
 		type: "item",
 		items: [{
 			item: "enderio:item_material 1 1"
 		},
 		{
 			item: "enderio:item_material 1 66"
+		},
+		{
+			item: "enderio:item_material 1 53"
 		}]
 	}]
 }

@@ -1,0 +1,28 @@
+{
+	x: 16.0d,
+	y: -2.0d,
+	dependencies: [
+		"f69c67e8"
+	],
+	tasks: [{
+		uid: "ce6eabe8",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "3d974217",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "elemental_mix",
+				Amount: 1000
+			}
+		}
+	}]
+}

@@ -1,3 +1,4 @@
+import mods.industrialforegoing.FluidSievingMachine;
 
 print("~~~ Begin Industrial Foregoing Init ~~~");
 
@@ -29,7 +30,7 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 										[null, <ore:ingotElectrum>, <ore:ingotElectrum>]],
 	<industrialforegoing:enchantment_refiner>
 									:	[[<ore:blockGlass>, <ore:enderpearl>, <ore:blockGlass>],
-										[<ore:book>, scripts.helpers.FrameTiers[1], <ore:book>],
+										[<ore:book>, scripts.helpers.FrameTiers[0], <ore:book>],
 										[<ore:blockGlass>, <ore:gearDiamond>, <ore:blockGlass>],
 										[null, <ore:ingotGold>, <ore:book>]],
 	<industrialforegoing:enchantment_extractor>
@@ -61,7 +62,7 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 									:	[[<ore:plateApatite>, <ore:plateApatite>, <ore:plateApatite>],
 										[<ore:plateApatite>, scripts.helpers.FrameTiers[3], <ore:plateApatite>],
 										[<ore:gearDiamond>, scripts.helpers.CircuitTiers[2], <ore:gearDiamond>],
-										[null, <ore:plateAluminium>, <ore:plateAluminium>]],
+										[null, <ore:ingotAluminium>, <ore:ingotAluminium>]],
 	<industrialforegoing:crop_enrich_material_injector>
 									:	[[<ore:plateAluminium>, <ore:gearApatite>, <ore:plateAluminium>],
 										[<ore:gearApatite>, scripts.helpers.FrameTiers[2], <ore:gearApatite>],
@@ -168,9 +169,9 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 										[<ore:ingotAluminium>, <ore:foodMeat>, <ore:ingotAluminium>],
 										[null, <ore:ingotAluminium>, <minecraft:egg>]],
 	<industrialforegoing:protein_generator>
-									:	[[<ore:ingotAluminium>, scripts.helpers.BatteryTiers[2], <ore:ingotAluminium>],
+									:	[[<ore:ingotAluminium>, scripts.helpers.BatteryTiers[1], <ore:ingotAluminium>],
 										[<minecraft:piston>, scripts.helpers.FrameTiers[1], <minecraft:piston>],
-										[<ore:ingotAluminium>, scripts.helpers.BatteryTiers[2], <ore:ingotAluminium>],
+										[<ore:ingotAluminium>, scripts.helpers.BatteryTiers[1], <ore:ingotAluminium>],
 										[<ore:ingotAluminium>, <ore:foodMeat>, <minecraft:egg>]],
 	<industrialforegoing:hydrator>
 									:	[[<ore:plateAluminium>, <ore:gearApatite>, <ore:plateAluminium>],
@@ -179,7 +180,7 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 										[null, <ore:ingotAluminium>, <industrialforegoing:fertilizer>]],
 	<industrialforegoing:wither_builder>
 									:	[[<ore:plateAluminium>, <extendedcrafting:material:40>, <ore:plateAluminium>],
-										[<minecraft:skull:1>, scripts.helpers.FrameTiers[4], <minecraft:skull:1>],
+										[<minecraft:skull:1>, <enderio:item_material:66>, <minecraft:skull:1>],
 										[<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>],
 										[null, <ore:plateAluminium>, <ore:ingotSoularium>]],
 	<industrialforegoing:fluid_pump>
@@ -224,6 +225,19 @@ for key, value in industrialforegoing_EXTENDEDCRAFTING_T2 {
 	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
 }
 
+//Tier 1 Extended Crafting Recipes (for more simple machines)
+val industrialforegoingRecipes_EXTENDEDCRAFTING = {
+	<industrialforegoing:block_destroyer> : [[<ore:ingotAluminium>, null, <ore:ingotAluminium>], [<ore:ingotAluminium>, scripts.helpers.FrameTiers[0], <ore:ingotAluminium>], [<ore:ingotAluminium>, <thermalfoundation:material:656>, <ore:ingotAluminium>]],
+	<industrialforegoing:block_placer> : [[<ore:ingotAluminium>, null, <ore:ingotAluminium>], [<ore:ingotAluminium>, scripts.helpers.FrameTiers[0], <ore:ingotAluminium>], [<ore:ingotAluminium>, <minecraft:piston>, <ore:ingotAluminium>]],
+	<industrialforegoing:item_splitter> : [[<ore:ingotGold>, null, <ore:ingotGold>], [<minecraft:hopper>, scripts.helpers.FrameTiers[0], <minecraft:hopper>], [<ore:ingotGold>, null, <ore:ingotGold>]],
+	<industrialforegoing:pitiful_fuel_generator> : [[<ore:ingotAluminium>, <minecraft:furnace>, <ore:ingotAluminium>], [null, scripts.helpers.FrameTiers[1], null], [<ore:ingotAluminium>, <ore:gearCopper>, <ore:ingotAluminium>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in industrialforegoingRecipes_EXTENDEDCRAFTING {
+	recipes.remove(key.withAmount(1));
+	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
+}
+
 //Upgrade Aquatic Entangler to Resources Fisher
 mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:water_resources_collector>, [[<ore:plateSilver>, <thermalfoundation:bait:1>, <ore:plateSilver>], [<thermalfoundation:bait:1>, <thermalexpansion:device:4>, <thermalfoundation:bait:1>], [<ore:plateSilver>, <thermalfoundation:bait:1>, <ore:plateSilver>]]);
 
@@ -234,21 +248,61 @@ for rune in scripts.helpers.AllWaterT1Items
 	mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:water_condensator>, [[<ore:plateAluminium>, rune, <ore:plateAluminium>], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:plateAluminium>, <ore:ingotGold>, <ore:plateAluminium>]]);
 }
 
-//Block Destroyer
-recipes.remove(<industrialforegoing:block_destroyer>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:block_destroyer>, [[<ore:ingotAluminium>, null, <ore:ingotAluminium>], [<ore:ingotAluminium>, scripts.helpers.FrameTiers[0], <ore:ingotAluminium>], [<ore:ingotAluminium>, <thermalfoundation:material:656>, <ore:ingotAluminium>]]);
+//Change recipes for other mod items
+val industrialforegoingRecipes_CRAFTINGTABLE = {
+		<industrialforegoing:conveyor> * 48 : [[<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], [<ore:ingotSteel>, scripts.helpers.MotorTiers[0], <ore:ingotSteel>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor_upgrade> * 4 : [[<ore:ingotSteel>, null, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:dispenser>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor_upgrade:1> * 4 : [[<ore:ingotSteel>, null, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:hopper>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor_upgrade:2> * 4 : [[<ore:ingotSteel>, null, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:comparator>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor_upgrade:3> * 4 : [[<ore:ingotSteel>, <ore:blockSlime>, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:piston>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor_upgrade:4> * 4 : [[<ore:ingotSteel>, <ore:barsIron>, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:dropper>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor_upgrade:5> * 4 : [[<ore:ingotSteel>, <minecraft:chorus_fruit>, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:sticky_piston>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor_upgrade:6> * 6 : [[<ore:ingotSteel>, <ore:barsIron>, <ore:ingotSteel>], [<ore:dustRedstone>, null, <ore:dustRedstone>], [<ore:ingotSteel>, <ore:barsIron>, <ore:ingotSteel>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
-//Block Placer
-recipes.remove(<industrialforegoing:block_placer>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:block_placer>, [[<ore:ingotAluminium>, null, <ore:ingotAluminium>], [<ore:ingotAluminium>, scripts.helpers.FrameTiers[0], <ore:ingotAluminium>], [<ore:ingotAluminium>, <minecraft:piston>, <ore:ingotAluminium>]]);
+for key, value in industrialforegoingRecipes_CRAFTINGTABLE {
+	recipes.remove(key.withAmount(1));
+	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
+}
 
-//Item Splitter
-recipes.remove(<industrialforegoing:item_splitter>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:item_splitter>, [[<ore:ingotGold>, null, <ore:ingotGold>], [<minecraft:hopper>, scripts.helpers.FrameTiers[0], <minecraft:hopper>], [<ore:ingotGold>, null, <ore:ingotGold>]]);
+//Re-colour white conveyors
+recipes.addShaped(scripts.helpers.createRecipeName(<industrialforegoing:conveyor>) ~ "_toWhite", <industrialforegoing:conveyor> * 8, [[<industrialforegoing:conveyor:*>, <industrialforegoing:conveyor:*>, <industrialforegoing:conveyor:*>], [<industrialforegoing:conveyor:*>, <ore:dyeWhite>, <industrialforegoing:conveyor:*>], [<industrialforegoing:conveyor:*>, <industrialforegoing:conveyor:*>, <industrialforegoing:conveyor:*>]]);
+//Give them a tooltip too
+scripts.helpers.AddTooltip(<industrialforegoing:conveyor>, ["These conveyors are entity-based, be warned!.", "Looks great and functions fine, but will lag if used with high-throughput systems!!"]);
 
-//Pitiful Fuel Generator
-recipes.remove(<industrialforegoing:pitiful_fuel_generator>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <industrialforegoing:pitiful_fuel_generator>, [[<ore:ingotAluminium>, <minecraft:furnace>, <ore:ingotAluminium>], [null, scripts.helpers.FrameTiers[1], null], [<ore:ingotAluminium>, <ore:gearCopper>, <ore:ingotAluminium>]]);
+//Assembly Line Recipe Changes
+val industrialforegoingRecipes_ASSEMBLY = {
+	<industrialforegoing:adult_filter> : [<ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:egg>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>],
+	<industrialforegoing:range_addon> : [<ore:stone>, <ore:plateSteel>, <ore:stone>, <ore:stone>, scripts.helpers.CircuitTiers[1], <ore:stone>, <ore:stone>, <ore:plateSteel>, <ore:stone>],
+	<industrialforegoing:range_addon:1> : [<ore:plateLapis>, <ore:plateSteel>, <ore:plateLapis>, <ore:plateLapis>, scripts.helpers.CircuitTiers[1], <ore:plateLapis>, <ore:plateLapis>, <ore:plateSteel>, <ore:plateLapis>],
+	<industrialforegoing:range_addon:2> : [<ore:plateIron>, <ore:plateSteel>, <ore:plateIron>, <ore:plateIron>, scripts.helpers.CircuitTiers[1], <ore:plateIron>, <ore:plateIron>, <ore:plateSteel>, <ore:plateIron>],
+	<industrialforegoing:range_addon:3> : [<ore:plateTin>, <ore:plateSteel>, <ore:plateTin>, <ore:plateTin>, scripts.helpers.CircuitTiers[1], <ore:plateTin>, <ore:plateTin>, <ore:plateSteel>, <ore:plateTin>],
+	//<industrialforegoing:range_addon:4> : [<ore:plateCopper>, <ore:plateSteel>, <ore:plateCopper>, <ore:plateCopper>, scripts.helpers.CircuitTiers[2], <ore:plateCopper>, <ore:plateCopper>, <ore:plateSteel>, <ore:plateCopper>],
+	//<industrialforegoing:range_addon:5> : [<ore:plateBronze>, <ore:plateSteel>, <ore:plateBronze>, <ore:plateBronze>, scripts.helpers.CircuitTiers[2], <ore:plateBronze>, <ore:plateBronze>, <ore:plateSteel>, <ore:plateBronze>],
+	//<industrialforegoing:range_addon:6> : [<ore:plateElectricalSteel>, <ore:plateSteel>, <ore:plateElectricalSteel>, <ore:plateElectricalSteel>, scripts.helpers.CircuitTiers[2], <ore:plateElectricalSteel>, <ore:plateElectricalSteel>, <ore:plateSteel>, <ore:plateElectricalSteel>],
+	//<industrialforegoing:range_addon:7> : [<ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>, <ore:plateElectrum>, scripts.helpers.CircuitTiers[2], <ore:plateElectrum>, <ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>],
+	//<industrialforegoing:range_addon:8> : [<ore:plateLithium>, <ore:plateSteel>, <ore:plateLithium>, <ore:plateLithium>, scripts.helpers.CircuitTiers[2], <ore:plateLithium>, <ore:plateLithium>, <ore:plateSteel>, <ore:plateLithium>],
+	//<industrialforegoing:range_addon:9> : [<ore:plateDiamond>, <ore:plateSteel>, <ore:plateDiamond>, <ore:plateDiamond>, scripts.helpers.CircuitTiers[2], <ore:plateDiamond>, <ore:plateDiamond>, <ore:plateSteel>, <ore:plateDiamond>],
+	//<industrialforegoing:range_addon:10> : [<ore:plateCobalt>, <ore:plateSteel>, <ore:plateCobalt>, <ore:plateCobalt>, scripts.helpers.CircuitTiers[2], <ore:plateCobalt>, <ore:plateCobalt>, <ore:plateSteel>, <ore:plateCobalt>],
+	//<industrialforegoing:range_addon:11> : [<ore:plateEndSteel>, <ore:plateSteel>, <ore:plateEndSteel>, <ore:plateEndSteel>, scripts.helpers.CircuitTiers[2], <ore:plateEndSteel>, <ore:plateEndSteel>, <ore:plateSteel>, <ore:plateEndSteel>],
+	//<industrialforegoing:energy_field_addon> : [<industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>, scripts.helpers.BatteryTiers[2], scripts.helpers.CircuitTiers[2], scripts.helpers.BatteryTiers[2], <industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>],
+	<industrialforegoing:leaf_shearing> : [<ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:toolShears>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>],
+	<industrialforegoing:itemstack_transfer_addon_pull> * 2 : [<ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:sticky_piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>],
+	<industrialforegoing:itemstack_transfer_addon_push> * 2 : [<ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>],
+	<industrialforegoing:fluid_transfer_addon_pull> : [<ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>],
+	<industrialforegoing:fluid_transfer_addon_push> : [<ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>],
+	//<industrialforegoing:fortune_addon> : [<industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:pink_slime_ingot>, scripts.helpers.CircuitTiers[2], <industrialforegoing:pink_slime_ingot>, <industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>],
+	<industrialforegoing:meat_feeder> : [<ore:plateSteel>, <ore:ingotAluminium>, <ore:plateSteel>, <minecraft:glass_bottle>, <ore:ingotAluminium>, <minecraft:glass_bottle>, null, <ore:ingotAluminium>, null],
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+
+for key, value in industrialforegoingRecipes_ASSEMBLY {
+  recipes.remove(key.withAmount(1));
+  scripts.helpers.CreateAssemblyRecipe(key, value, 60, 4000);
+}
+
+//Change Pink Slime Ingot Crafting
+FluidSievingMachine.remove(<industrialforegoing:pink_slime_ingot>);
+scripts.helpers.addInjectionRecipe(<industrialforegoing:pink_slime_ingot>, <ore:ingotManyullyn>, <liquid:if.pink_slime> * 1000, 25000, false);
 
 //TODO machines for later stages
 /*

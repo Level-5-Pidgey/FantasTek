@@ -341,4 +341,7 @@ for lootTable, lootRate in mechanicalLootPools {
 	lootPool.addEmptyEntry(10, "empty_tech");
 }
 
+//Make Data Models drop from Mutant Monsters
+
+
 print("### Loottweaker Init Complete ###");

@@ -1,0 +1,45 @@
+{
+	x: 20.0d,
+	y: -6.0d,
+	shape: "hexagon",
+	dependencies: [
+		"66f441a6"
+	],
+	tasks: [{
+		uid: "d3fc5a68",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:energy_field_provider"
+		}]
+	}],
+	rewards: [{
+		uid: "1c010647",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "industrialforegoing:energy_field_addon"
+		}
+	},
+	{
+		uid: "4e95d6e4",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "industrialforegoing:energy_field_addon"
+		}
+	},
+	{
+		uid: "4fc90f7a",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "industrialforegoing:energy_field_addon"
+		}
+	}]
+}

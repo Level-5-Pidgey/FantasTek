@@ -1,0 +1,21 @@
+{
+	x: 16.0d,
+	y: -6.0d,
+	shape: "hexagon",
+	dependencies: [
+		"22997482"
+	],
+	tasks: [{
+		uid: "5e346a7a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"industrialforegoing:meat_feeder": {},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "industrialforegoing:meat_feeder"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
