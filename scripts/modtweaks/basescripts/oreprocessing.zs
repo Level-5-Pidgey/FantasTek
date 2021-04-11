@@ -833,24 +833,83 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 function AddMeltedRecipes(craftingMaterial as string, tier as int, molten as ILiquidStack)
 {
 	var oreBlock = oreDict.get("ore" ~ craftingMaterial);
+	var oreDense = oreDict.get("denseOre" ~ craftingMaterial);
+	var oreGem = oreDict.get("gem" ~ craftingMaterial);
+	var oreIngot = oreDict.get("ingot" ~ craftingMaterial);
 
-	if(!oreBlock.empty)
+	var outputValue = 144;
+
+	if(oreIngot.empty && !oreGem.empty)
 	{
-		if(tier <= 1)
+		outputValue = 666;
+	}
+
+	//Multiply outputs for certain materials
+	if(craftingMaterial == "Apatite")
+	{
+		outputValue *= 8;
+	}
+	else if(craftingMaterial == "Redstone")
+	{
+		outputValue *= 4;
+	}
+	else if(craftingMaterial == "Coal")
+	{
+		outputValue = 200;
+	}
+	else if(craftingMaterial == "Lapis")
+	{
+		outputValue *= 2;
+	}
+
+	//TCon Smeltery -- Tier 1 (1x)
+	//Embers Melter -- Tier 1 (2x)
+	if(tier <= 1)
+	{
+		//Standard Ores
+		if(!oreBlock.empty)
 		{
 			for ore in oreBlock.items
 			{
-				//TCon Smeltery -- Tier 1 (1x)
-				mods.tconstruct.Melting.addRecipe(molten * ((2 - tier) * 144), ore);
+				mods.tconstruct.Melting.addRecipe(molten * ((2 - tier) * outputValue), ore);
 
-				//Embers Melter -- Tier 1 (2x)
-				mods.embers.Melter.add(molten * 288, ore);
+				mods.embers.Melter.add(molten * outputValue, ore);
+			}
+		}
+
+		//Dense Ores
+		if (!oreDense.empty)
+		{
+			for oreDouble in oreDense.items
+ 			{
+
+				mods.tconstruct.Melting.addRecipe(molten * ((2 - tier) * (outputValue * 2)), oreDouble);
+
+				mods.embers.Melter.add(molten * (outputValue * 2), oreDouble);
 			}
 		}
 	}
-	else
+
+	//Nuclearcraft Melter -- Tier 2 (3x)
+	if(tier <= 2)
 	{
-		print("Could not add melting recipes for " ~ craftingMaterial ~ " as no ore blocks were found.");
+		//Standard Ores
+		if(!oreBlock.empty)
+		{
+			for ore in oreBlock.items
+			{
+				mods.nuclearcraft.melter.addRecipe([ore, molten * (outputValue * 3)]);
+			}
+		}
+
+		//Dense Ores
+		if (!oreDense.empty)
+		{
+			for oreDouble in oreDense.items
+ 			{
+				mods.nuclearcraft.melter.addRecipe([oreDouble, molten * (outputValue * 6)]);
+			}
+		}
 	}
 }
 
