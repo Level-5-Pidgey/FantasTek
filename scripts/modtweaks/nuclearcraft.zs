@@ -92,12 +92,12 @@ recipes.remove(<nuclearcraft:compound:8>);
 mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(<nuclearcraft:compound:8>), scripts.helpers.stages.progression2.stage, <nuclearcraft:compound:8>, [<ore:shulkerShell>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>, <ore:endstone>]);
 
 //Chemical Reactor Recipe Changes
-mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:sulfuric_acid>, <liquid:ethene>]);
-mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:carbon_monoxide>, <liquid:hydrogen>]);
-mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:methanol>, <liquid:hydrofluoric_acid>]);
-mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane>, <liquid:koh>]);
-mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane>, <liquid:naoh>]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:sulfuric_acid> * 1000, <liquid:ethene> * 1000]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:carbon_monoxide> * 1000, <liquid:hydrogen> * 2000]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:methanol> * 1000, <liquid:hydrofluoric_acid> * 1000]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane> * 1000, <liquid:koh> * 666]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane> * 1000, <liquid:naoh> * 666]);
 
-
-
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:bio.ethanol> * 1000, <liquid:sulfuric_acid> * 1000, <liquid:ethene> * 1000, <liquid:sulfur_trioxide> * 500, 0.5]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:ethanol> * 1000, <liquid:sulfuric_acid> * 1000, <liquid:ethene> * 1000, <liquid:sulfur_trioxide> * 500, 0.5]);
 print("### NuclearCraft Init Complete ###");

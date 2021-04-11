@@ -27,32 +27,6 @@ for ore in lapisPoorOres
 	<ore:poorOreLapis>.add(ore);
 }
 
-//Function to give dense ores crafting recipes
-function denseOreCrafting(material as string)
-{
-	//Variables
-	val regularOre = "ore" ~ material;
-	val denseOre = "denseOre" ~ material;
-
-	if(!oreDict.get(denseOre).empty)
-	{
-		for ore in oreDict.get(denseOre).items
-		{
-			//Furnace
-			if(!oreDict.get(regularOre).empty)
-			{
-				furnace.addRecipe(oreDict.get(regularOre).firstItem * 2, ore, 1.5);
-				mods.futuremc.BlastFurnace.addRecipe(ore, oreDict.get(regularOre).firstItem * 2);
-				print("Added furnace recipe for dense " ~ material ~ " ore.");
-			}
-			else
-			{
-				print("Could not add furnace recipe for " ~ material ~ " ore as no regular oreDict was found.");
-			}
-		}
-	}
-}
-
 //Function to give poor ores crafting recipes
 function poorOreCrafting(material as string)
 {
@@ -120,9 +94,6 @@ val denseAndPoorOresList =
 
 for ore in denseAndPoorOresList
 {
-	//Make Dense ore crafting recipes for each ore material
-	denseOreCrafting(ore);
-
 	//Make Poor ore crafting recipes for each ore material
 	poorOreCrafting(ore);
 }
