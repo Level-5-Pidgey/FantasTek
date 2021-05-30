@@ -90,7 +90,7 @@ val reliquaryRecrafting = {
 	<minecraft:prismarine_crystals> * 4 : [<xreliquary:mob_ingredient:16>, <xreliquary:mob_ingredient:16>],
 	<minecraft:prismarine_shard> * 8 : [<xreliquary:mob_ingredient:16>],
 	<minecraft:snowball> * 16 : [<xreliquary:mob_ingredient:10>],
-	<minecraft:packed_ice> * 3 : [<xreliquary:mob_ingredient:10>, <ore:ice>.firstItem, <ore:ice>.firstItem, <ore:ice>.firstItem, <ore:ice>.firstItem, <ore:ice>.firstItem],
+	<minecraft:packed_ice> * 8 : [<xreliquary:mob_ingredient:10>, <ore:ice>.firstItem, <ore:ice>.firstItem, <ore:ice>.firstItem, <ore:ice>.firstItem, <ore:ice>.firstItem],
 	<ore:enderpearl>.firstItem * 4 : [<xreliquary:mob_ingredient:11>],
 	<minecraft:dye> * 8 : [<xreliquary:mob_ingredient:12>],
 	<minecraft:gunpowder> * 4 : [<xreliquary:witch_hat>, <minecraft:gunpowder>],
@@ -103,16 +103,87 @@ for key, value in reliquaryRecrafting {
 	mods.bloodmagic.AlchemyTable.addRecipe(key, value, 128, 40, 0);
 }
 
+//Hide useless crafting components
+val xreliquaryHide =
+[
+	<xreliquary:mob_ingredient:13>,
+	<xreliquary:mob_ingredient:14>
+] as crafttweaker.item.IItemStack[];
+
+for xreliquaryItem in xreliquaryHide
+{
+	scripts.helpers.unstageAndHide(xreliquaryItem);
+}
 
 //Basic Crafting Table Items
 val xreliquaryRecipes_EXTENDEDCRAFTING = {
 	<xreliquary:fortune_coin> : [[<ore:ingotNetherite>, <ore:plateGold>, <ore:ingotNetherite>], [<ore:plateGold>, <minecraft:shulker_shell>, <ore:plateGold>], [<ore:ingotNetherite>, <ore:plateGold>, <ore:ingotNetherite>]],
-	<xreliquary:handgun> : [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateCrudeSteel>, <xreliquary:gun_part>, <ore:plateCrudeSteel>]]
+	<xreliquary:handgun> : [[<xreliquary:gun_part:1>, <ore:ingotIron>, <xreliquary:gun_part:2>], [<ore:ingotIron>, <ore:gemDiamond>, <ore:ingotIron>], [<ore:plateCrudeSteel>, <xreliquary:gun_part>, <ore:plateCrudeSteel>]],
+	<xreliquary:angelheart_vial> : [[<ore:paneGlass>, <ore:plankWood>, <ore:paneGlass>], [<ore:paneGlass>, <minecraft:totem_of_undying>, <ore:paneGlass>], [null, <ore:paneGlass>, null]],
+	<xreliquary:apothecary_cauldron> : [[<bountifulbaubles:spectralsilt>, <ore:dustGlowstone>, <bountifulbaubles:spectralsilt>], [<ore:dustRedstone>, <minecraft:cauldron>, <ore:dustRedstone>], [<bountifulbaubles:spectralsilt>, <ore:dustGlowstone>, <bountifulbaubles:spectralsilt>]],
+	<xreliquary:apothecary_mortar> : [[<ore:stickIron>, <bountifulbaubles:spectralsilt>, null], [<ore:ingotIron>, <ore:stickIron>, <ore:ingotIron>], [<ore:blockQuartz>, <ore:blockQuartz>, <ore:blockQuartz>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in xreliquaryRecipes_EXTENDEDCRAFTING {
 	recipes.remove(key.withAmount(1));
 	mods.extendedcrafting.TableCrafting.addShaped(0, key, value);
 }
+
+//Create Crimson Cloths
+scripts.helpers.addInjectionRecipe(<xreliquary:mob_ingredient:15>, <minecraft:wool:14> * 2, <liquid:liquid_nightmares> * 500, 15000, 3);
+
+//Create Relics w/ Fluid Injection
+val xreliquaryRecipes_INJECTION = {
+	[<xreliquary:void_tear>, <xreliquary:infernal_tear>] : <liquid:liquid_nightmares> * 1000,
+	[<xreliquary:interdiction_torch>, <minecraft:torch>] : <liquid:liquid_nightmares> * 1000,
+	[<xreliquary:wraith_node>, <xreliquary:mob_ingredient:11>] : <liquid:aerotheum> * 250,
+	[<xreliquary:hero_medallion>, <xreliquary:fortune_coin>] : <liquid:elemental_mix> * 1000,
+	[<xreliquary:shears_of_winter>, <thermalfoundation:tool.shears_diamond>] : <liquid:cryotheum> * 1000,
+} as crafttweaker.liquid.ILiquidStack[crafttweaker.item.IIngredient[]];
+
+for key, value in xreliquaryRecipes_INJECTION {
+	var inputAsStack as crafttweaker.item.IItemStack = key[0].items[0];
+	recipes.remove(key[1]);
+	scripts.helpers.addInjectionRecipe(inputAsStack, key[1], value, 15000, 3);
+}
+
+val xreliquary_EXTENDEDCRAFTING_T2 = {
+	<xreliquary:rending_gale>
+								:	[[null, <xreliquary:mob_ingredient:5>, <xreliquary:mob_ingredient:8>],
+									[null, <ore:stickGold>, <xreliquary:mob_ingredient:5>],
+  									[<ore:stickGold>, null, null],
+									[<ore:feather>, <bountifulbaubles:spectralsilt>, <ore:dustAerotheum>]],
+	<xreliquary:twilight_cloak>
+								:	[[<ore:ingotSilver>, null, <ore:ingotSilver>],
+									[<ore:woolBlack>, <xreliquary:mob_ingredient:15>, <ore:woolBlack>],
+  									[<ore:woolBlack>, <xreliquary:mob_ingredient:15>, <ore:woolBlack>],
+									[null, null, <ore:ingotEvilMetal>]],
+	<xreliquary:witherless_rose>
+								:	[[<ore:dustPetrotheum>, <thermalfoundation:fertilizer:2>, <ore:dustPetrotheum>],
+									[<thermalfoundation:fertilizer:2>, <minecraft:double_plant:4>, <thermalfoundation:fertilizer:2>],
+  									[<ore:dustPetrotheum>, <thermalfoundation:fertilizer:2>, <ore:dustPetrotheum>],
+									[null, null, <ore:ingotEvilMetal>]],
+	<xreliquary:altar>
+								:	[[<ore:obsidian>, <ore:dustRedstone>, <ore:obsidian>],
+									[<ore:dustRedstone>, <ore:glowstone>, <ore:dustRedstone>],
+  									[<ore:obsidian>, <ore:dustRedstone>, <ore:obsidian>],
+									[null, null, <ore:dustMana>]],
+	<xreliquary:fertile_lilypad>
+								:	[[<ore:plateApatite>, <ore:dustPetrotheum>, <ore:plateApatite>],
+									[<ore:dustPetrotheum>, <minecraft:waterlily>, <ore:dustPetrotheum>],
+  									[<ore:plateApatite>, <ore:dustPetrotheum>, <ore:plateApatite>],
+									[null, null, <thermalfoundation:fertilizer:2>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in xreliquary_EXTENDEDCRAFTING_T2 {
+	recipes.remove(key.withAmount(1));
+	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
+}
+
+//Add Recipe to Crimson Cloth
+recipes.remove(<xreliquary:mob_ingredient:15>);
+mods.nuclearcraft.infuser.addRecipe(<ore:woolRed> * 2, <liquid:liquid_nightmares> * 1000, <xreliquary:mob_ingredient:15>);
+mods.thermalexpansion.Transposer.addFillRecipe(<xreliquary:mob_ingredient:15>, <ore:woolRed>.firstItem * 2, <liquid:liquid_nightmares> * 1000, 25000);
+scripts.mmhelper.IndustrialMixerFactoryRecipe(scripts.helpers.createRecipeName(<xreliquary:mob_ingredient:15>) ~ <liquid:liquid_nightmares>.name, 25000, 125, null, null, <liquid:liquid_nightmares> * 1000, null, null, null, <ore:woolRed>.firstItem * 2, null, <xreliquary:mob_ingredient:15>);
 
 print("### xReliquary Init Complete ###");
