@@ -52,7 +52,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:device:10>, [
 recipes.remove(<thermalexpansion:device:4>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:device:4>, [[null, <minecraft:fishing_rod>, null], [<ore:barsIron>, scripts.helpers.FrameTiers[0], <ore:barsIron>], [<ore:gearIron>, <ore:dustRedstone>, <ore:gearIron>]]);
 //Grind up Coal Coke into Dust
-scripts.helpers.addCrushingRecipe(<contenttweaker:coke_dust>, <ore:fuelCoke>, 5000, true);
+scripts.helpers.addCrushingRecipe(<contenttweaker:coke_dust>, <ore:fuelCoke>, 5000, 1);
 
 //Aqua Chow Recipes
 recipes.remove(<thermalfoundation:bait>);
@@ -97,10 +97,10 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
 	  									[<ore:gearAluminum>, scripts.helpers.CircuitTiers[0], <ore:gearTin>],
 	 									[null, <ore:ingotSteel>, <ore:ingotConstantan>]],
 	 <thermalexpansion:machine:6>
- 									:	[[<ore:ingotBrickNether>, null, <ore:ingotBrickNether>],
-	 									[null, scripts.helpers.FrameTiers[0], null],
+ 									:	[[null, <ore:coilGold>, null],
+	 									[<ore:blockGlass>, scripts.helpers.FrameTiers[0], <ore:blockGlass>],
 	   									[<ore:gearBronze>, scripts.helpers.CircuitTiers[1], <ore:gearBronze>],
-	 									[<ore:ingotLead>, <ore:ingotNickel>, <ore:ingotBrickNether>]],
+	 									[<ore:plateNickel>, null, <ore:ingotBrickNether>]],
 	 <thermalexpansion:machine:2>
 	 								:	[[null, <thermalfoundation:material:657>, null],
 	 									[<ore:gearSteel>, scripts.helpers.FrameTiers[1], <ore:gearSteel>],
@@ -116,6 +116,16 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
 	 									[<ore:blockGlass>, scripts.helpers.FrameTiers[2], <ore:blockGlass>],
   										[<ore:gearSignalum>, scripts.helpers.MotorTiers[1], <ore:gearSignalum>],
 	  									[null, <ore:ingotBrass>, <ore:plateBrass>]],
+	 <thermalexpansion:machine:4>
+	 								:	[[null, <ore:gearLumium>, null],
+	 									[<ore:dirt>, <enderio:item_material:66>, <ore:dirt>],
+  										[<ore:gearCopper>, scripts.helpers.CircuitTiers[2], <ore:gearCopper>],
+	  									[null, <ore:ingotLumium>, <thermalfoundation:fertilizer:2>]],
+	 <thermalexpansion:machine:5>
+	 								:	[[null, <ore:gearLumium>, null],
+	 									[<ore:dirt>, <enderio:item_material:66>, <ore:dirt>],
+  										[<ore:gearCopper>, scripts.helpers.CircuitTiers[2], <ore:gearCopper>],
+	  									[null, <ore:ingotLumium>, <thermalfoundation:fertilizer:2>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in thermalfoundation_EXTENDEDCRAFTING_T2 {
@@ -168,14 +178,37 @@ val thermal_elementalPowders = {
 } as crafttweaker.item.IItemStack[crafttweaker.liquid.ILiquidStack];
 
 for elementalLiquid, elementalPowder in thermal_elementalPowders {
-	for ash in <ore:dustAsh>.items
-	{
-		mods.thermalexpansion.Transposer.addFillRecipe(elementalPowder, ash, elementalLiquid * 250, 2500);
-	}
+	scripts.helpers.addInjectionRecipe(elementalPowder, <bountifulbaubles:spectralsilt>, elementalLiquid * 250, 2500, 2);
 }
 
 //Change Hardened Glass Recipe
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustLead>.firstItem, <ore:dustObsidian>.firstItem * 4);
-scripts.helpers.addAlloySmeltingRecipe(<thermalfoundation:glass:3> * 2, <ore:blockGlass>.firstItem, <ore:dustObsidian>.firstItem * 4, 8000, true);
+scripts.helpers.addAlloySmeltingRecipe(<thermalfoundation:glass:3> * 2, <ore:blockGlass>.firstItem, <ore:dustObsidian>.firstItem * 4, 8000, 2);
+
+//Create Mana Dust by Combining All Elemental Dusts
+scripts.mmhelper.IndustrialMixerFactoryRecipe("primal_mana", 50000, 100, <liquid:mana> * 1000, null, <liquid:pyrotheum> * 250, <liquid:cryotheum> * 250, <liquid:aerotheum> * 250, <liquid:petrotheum> * 250, null, null, null);
+
+//Solidify Primal Mana into Mana Powder
+scripts.helpers.addInjectionRecipe(<thermalfoundation:material:1028>, <bountifulbaubles:spectralsilt>, <liquid:mana> * 1000, 2500, 3);
+
+//Melt Mana Powder into Primal Mana
+scripts.helpers.addMeltingRecipe(<liquid:mana> * 1000, <thermalfoundation:material:1028>, 12500, 3);
+
+//Thermal Assembly Recipes
+val thermalfoundationRecipes_ASSEMBLY = {
+	<thermalfoundation:material:640> : [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>, <ore:plateElectrum>, scripts.helpers.CircuitTiers[1], <ore:plateElectrum>, <ore:dustRedstone>, <ore:ingotSteel>, <ore:dustRedstone>],
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+
+for key, value in thermalfoundationRecipes_ASSEMBLY {
+  recipes.remove(key.withAmount(1));
+  scripts.helpers.CreateAssemblyRecipe(key, value, 40, 20000);
+}
+
+//Increase Biocrude output of Rich Bioblend
+mods.thermalexpansion.Crucible.removeRecipe(<thermalfoundation:material:819>);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:biocrude> * 200, <thermalfoundation:material:819>, 6000);
+
+//Add Tier tooltips for machines
+<thermalexpansion:machine:6>.addTooltip(scripts.helpers.createTierTooltip("Melter Tier ", 2, false, "."));
 
 print("### Thermal Foundation Init Complete ###");

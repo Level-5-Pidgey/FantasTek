@@ -10,11 +10,11 @@ recipes.removeByRecipeName("extendedcrafting:black_iron_slate");
 mods.tconstruct.Alloy.addRecipe(<liquid:black_iron> * 2, [<liquid:iron> * 1, <liquid:obsidian> * 1]);
 mods.tconstruct.Casting.addTableRecipe(<ore:ingotBlackIron>.firstItem, <tconstruct:cast_custom>, <liquid:black_iron>, 144, false);
 mods.tconstruct.Casting.addTableRecipe(<ore:nuggetBlackIron>.firstItem, <tconstruct:cast_custom:1>, <liquid:black_iron>, 16, false);
-mods.tconstruct.Casting.addTableRecipe(<extendedcrafting:material:2>, <tconstruct:cast_custom:3>, <liquid:black_iron>, 360, false);
+mods.tconstruct.Casting.addTableRecipe(<extendedcrafting:material:2>, <tconstruct:cast_custom:3>, <liquid:black_iron>, 288, false);
 mods.tconstruct.Casting.addBasinRecipe(<ore:blockBlackIron>.firstItem, null, <liquid:black_iron>, 1296);
 //Machines
-scripts.helpers.addAlloySmeltingRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <ore:obsidian>.firstItem, 3000, true);
-scripts.helpers.addInjectionRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <liquid:obsidian> * 288, 2500, false);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <ore:obsidian>.firstItem, 3000, 1);
+scripts.helpers.addInjectionRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <liquid:obsidian> * 288, 2500, 2);
 
 //Crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<extendedcrafting:material:2>), <extendedcrafting:material:2> * 2, [<embers:tinker_hammer>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>]);
@@ -58,21 +58,21 @@ mods.enderio.AlloySmelter.addRecipe(<extendedcrafting:material:36> * 2, [<ore:in
 mods.enderio.AlloySmelter.addRecipe(<extendedcrafting:material:36> * 2, [<ore:dustIron> * 2, <ore:dustEnderPearl>, <ore:dustCoal> * 4], 6500);
 for steelIngot in <ore:ingotSteel>.items
 {
-	scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:36> * 2, <ore:ingotPulsatingIron>.firstItem, steelIngot, 7000, true);
+	scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:36> * 2, <ore:ingotPulsatingIron>.firstItem, steelIngot, 7000, 1);
 }
 for steelDust in <ore:dustSteel>.items
 {
-	scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:36> * 2, <ore:dustPulsatingIron>.firstItem, steelDust, 6500, true);
+	scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:36> * 2, <ore:dustPulsatingIron>.firstItem, steelDust, 6500, 1);
 }
 //Refined Ender Iron (Refined Pulsating Steel)
 mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:40>);
 mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:48>);
-scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:40>, <minecraft:ender_eye> * 4, <ore:netherStar>.firstItem, 33000, true);
-scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:48> * 4, <extendedcrafting:material:36> * 4, <extendedcrafting:material:40>, 10000, true);
+scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:40>, <minecraft:ender_eye> * 4, <ore:netherStar>.firstItem, 33000, 1);
+scripts.helpers.addAlloySmeltingRecipe(<extendedcrafting:material:48> * 4, <extendedcrafting:material:36> * 4, <extendedcrafting:material:40>, 10000, 1);
 
 //Advanced (T2) Crafting Table + Components
 recipes.remove(<extendedcrafting:material:15>);
-mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:material:15>), scripts.staging.stages.progression2.stage, <extendedcrafting:material:15>, [[<extendedcrafting:material:2>, <extendedcrafting:material:7>], [<ore:ingotBronze>, <ore:ingotBronze>]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<extendedcrafting:material:15>), scripts.staging.stages.progression2.stage, <extendedcrafting:material:15>, [[<extendedcrafting:material:2>, <extendedcrafting:material:7>], [<ore:ingotBrass>, <ore:ingotBrass>]]);
 recipes.remove(<extendedcrafting:table_advanced>);
 for i, unused in scripts.helpers.AllFireT1Items
 {
@@ -96,7 +96,7 @@ val extendedCrafting_EXTENDEDCRAFTING_T2 = {
  	<extendedcrafting:crafting_core>		:	[[<ore:plateSteel>, scripts.helpers.CircuitTiers[0], <ore:plateSteel>],
 										 	[scripts.helpers.CircuitTiers[0], <extendedcrafting:frame>, scripts.helpers.CircuitTiers[0]],
 										 	[<ore:plateSteel>, scripts.helpers.CircuitTiers[0], <ore:plateSteel>],
-											[<ore:nuggetBronze>, <ore:ingotBlackIron>, <extendedcrafting:material:15>]],
+											[<ore:nuggetBrass>, <ore:ingotBlackIron>, <extendedcrafting:material:15>]],
 	<extendedcrafting:ender_crafter>	:	[[<minecraft:ender_eye>, <minecraft:ender_eye>, <minecraft:ender_eye>],
 										 	[<extendedcrafting:material:36>, scripts.helpers.FrameTiers[0], <extendedcrafting:material:36>],
 										 	[<extendedcrafting:material:36>, scripts.helpers.CircuitTiers[0], <extendedcrafting:material:36>],

@@ -50,6 +50,9 @@ mods.appliedenergistics2.Grinder.addRecipe(<mekanism:salt> * 2, <mekanism:saltbl
 //Remove Mekanism Paper Recipe
 recipes.removeByRecipeName("mekanism:paper");
 
+//Craft the Configurator
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:configurator>, [[null, null, <magneticraft:battery_item_medium>], [<ore:ingotElectrotineAlloy>, <ore:stickIron>, null], [<ore:stickIron>, <ore:ingotElectrotineAlloy>, null]]);
+
 //Basic Energy Cube
 recipes.remove(<mekanism:energycube>.withTag({tier: 0}));
 for circuit in scripts.helpers.CircuitTiers[0].items
@@ -87,7 +90,10 @@ for block in MekanismUtilityBlocks
 mods.mekanism.infuser.removeRecipe(scripts.helpers.CircuitTiers[1]);
 mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1], 250000, 12500, <projectred-core:resource_item:301>, [<ore:ingotElectrum>, <ore:dustRedstone>, <ore:ingotElectrum>, <ore:dustRedstone>]);
 mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1] * 9, 250000, 8000, <libvulpes:productboule:3>, [<ore:blockElectrum>, <ore:blockRedstone>, <ore:blockElectrum>, <ore:blockRedstone>]);
-mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[1], 100000, 12500, <ore:ingotElectrum>.firstItem, [<advancedrocketry:ic>, <advancedrocketry:ic>]);
+
+//Tier 2 Circuit Crafting
+recipes.remove(scripts.helpers.CircuitTiers[3]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[3], 1000000, 50000, <mekanism:polyethene:2>, [scripts.helpers.CircuitTiers[1], <mekanism:enrichedalloy>, scripts.helpers.CircuitTiers[1], <mekanism:enrichedalloy>]);
 
 //Metal Casing Crafting
 recipes.remove(<mekanism:basicblock:8>);
@@ -97,6 +103,7 @@ mods.extendedcrafting.EnderCrafting.addShaped(<mekanism:basicblock:8>, [[<ore:pl
 val mekanism_MechanicalImbuement = {
 	scripts.helpers.FrameTiers[1] : 25000,
 	scripts.helpers.CircuitTiers[1] : 25000,
+	scripts.helpers.CircuitTiers[3] : 100000,
 } as int[crafttweaker.item.IItemStack];
 
 for item, energyCost in mekanism_MechanicalImbuement {
@@ -110,6 +117,9 @@ val mekanismRecipes_CRAFTINGTABLE = {
 	<mekanism:basicblock2:2> * 4 : [[null, <mekanism:basicblock2:1>, null], [<mekanism:basicblock2:1>, scripts.helpers.CircuitTiers[0], <mekanism:basicblock2:1>], [null, <mekanism:basicblock2:1>, null]],
 	<mekanism:basicblock2:3>.withTag({tier: 0}) : [[<ore:dustSmallCobalt>, scripts.helpers.BatteryTiers[1], <ore:dustSmallCobalt>], [scripts.helpers.BatteryTiers[1], scripts.helpers.FrameTiers[1], scripts.helpers.BatteryTiers[1]], [<ore:dustSmallCobalt>, scripts.helpers.BatteryTiers[1], <ore:dustSmallCobalt>]],
 	<mekanism:basicblock2:4>.withTag({tier: 0}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], scripts.helpers.FrameTiers[1], scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
+	<mekanism:basicblock2:3>.withTag({tier: 1}) : [[<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})], [scripts.helpers.BatteryTiers[2], <enderio:item_material:66>, scripts.helpers.BatteryTiers[2]], [<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})]],
+	<mekanism:basicblock2:4>.withTag({tier: 1}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], <enderio:item_material:66>, scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
+	<mekanism:electrolyticcore> : [[<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>], [<ore:dustGold>, null, <ore:dustSilver>], [<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in mekanismRecipes_CRAFTINGTABLE {
@@ -117,6 +127,20 @@ for key, value in mekanismRecipes_CRAFTINGTABLE {
 	recipes.addShaped(scripts.helpers.createRecipeName(key), key, value);
 }
 
+//Change Mekanism HDPE Creation
+mods.mekanism.reaction.removeRecipe(<mekanism:substrate>, <gas:ethene> * 100);
+mods.mekanism.reaction.removeRecipe(<mekanism:substrate> * 8, <gas:oxygen> * 10);
+mods.mekanism.reaction.removeRecipe(<mekanism:polyethene>, <gas:oxygen> * 5);
+<ore:platePlastic>.add(<mekanism:polyethene:2>);
+<ore:stickPlastic>.add(<mekanism:polyethene:1>);
+
+//Manipulate HDPE Pellets into Plastic Items
+mods.thermalexpansion.Compactor.addPressRecipe(<mekanism:polyethene:1>, <mekanism:polyethene> * 2, 2000); //Rod
+mods.thermalexpansion.Compactor.addStorageRecipe(<mekanism:polyethene:2>, <mekanism:polyethene> * 5, 2000); //Plate
+
+//Convert other mods liquid form gases to Mek Gases
+mods.mekanism.GasConversion.register(<liquid:oxygen> * 1, <gas:oxygen> * 1);
+mods.mekanism.GasConversion.register(<liquid:hydrogen> * 1, <gas:hydrogen> * 1);
 
 
 print("### Mekanism Init Complete ###");

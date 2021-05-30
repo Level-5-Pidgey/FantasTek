@@ -36,8 +36,8 @@ mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneJasper>, /*Ou
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneSlate>, /*Output 1*/ <ore:clay>.firstItem * 4, 66, 2, /*Output 2*/ <ore:dustSmallQuartz>.firstItem, 40, /*Output 3*/ <ore:dustTinySulfur>.firstItem, 33]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneBasalt>, /*Output 1*/ <ore:dustBeryllium>.firstItem, 60, /*Output 2*/ <ore:dustCarobbiite>.firstItem, 60, /*Output 3*/ <ore:dustSmallAluminum>.firstItem * 2, 30]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <appliedenergistics2:sky_stone_block>, /*Output 1*/ <appliedenergistics2:material:45> * 2, /*Output 2*/ <ore:dustZirconium>.firstItem, 75, /*Output 3*/ <ore:dustBeryllium>.firstItem, 33]);
-mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneLimestone>, /*Output 1*/ <ore:clay>.firstItem,  /*Output 2*/ <ore:dustTinyQuartz>.firstItem * 2, 33, /*Output 3*/ <ore:dustMagnesium>.firstItem, 33]);
-mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneGranite>, /*Output 1*/ <ore:dustVilliaumite>.firstItem, 50, /*Output 2*/ <ore:dustFluorite>.firstItem, 50,/*Output 3*/ <ore:dustTinyQuartz>.firstItem * 3, 33]);
+mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneLimestone>, /*Output 1*/ <ore:clay>.firstItem,  /*Output 2*/ <ore:dustTinyQuartz>.firstItem * 2, 33, /*Output 3*/ <ore:dustSmallIron>.firstItem, 40]);
+mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneGranite>, /*Output 1*/ <ore:dustVilliaumite>.firstItem, 50, /*Output 2*/ <ore:dustFluorite>.firstItem, 50,/*Output 3*/ <ore:dustRhodochrosite>.firstItem, 15]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneAndesite>, /*Output 1*/ <ore:dustSalt>.firstItem, 80,  /*Output 2*/ <ore:dustSmallLithium>.firstItem * 2, 33,/*Output 3*/ <ore:dustSilicon>.firstItem, 33]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneDiorite>, /*Output 1*/ <ore:dustBeryllium>.firstItem, 60, /*Output 2*/ <ore:dustSmallQuartz>.firstItem * 2, 40, /*Output 3*/ <ore:dustSilicon>.firstItem, 33]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneBrimstone>, /*Output 1*/ <ore:dustBlaze>.firstItem, 33, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustSulfur>.firstItem, 15]);
@@ -65,21 +65,41 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 	//									[null, null, null],
 	//  								[null, null, null],
 	//									[null, null, null]],
+	<nuclearcraft:melter_idle>
+									:	[[<ore:ingotBrickNether>, <ore:coilGold>, <ore:ingotBrickNether>],
+	 									[<ore:blockGlass>, <enderio:item_material:1>, <ore:blockGlass>],
+	   									[<ore:gearBronze>, scripts.helpers.CircuitTiers[1], <ore:gearBronze>],
+										[<ore:ingotNickel>, <ore:ingotNickel>, <ore:plateNickel>]],
+	<nuclearcraft:chemical_reactor_idle>
+									:	[[<ore:stickSteel>, scripts.helpers.CircuitTiers[2], <ore:stickSteel>],
+										[scripts.helpers.MotorTiers[1], <enderio:item_material:1>, scripts.helpers.MotorTiers[1]],
+		  								[<ore:plateSteel>, scripts.helpers.BatteryTiers[1], <ore:plateSteel>],
+										[null, <ore:plateSteel>, <ore:stickSteel>]],
+	<nuclearcraft:ingot_former_idle>
+									:	[[<ore:stickSteel>, <minecraft:hopper>, <ore:stickSteel>],
+										[<ore:plateConstantan>, <enderio:item_material:1>, <ore:plateConstantan>],
+		  								[<ore:stickSteel>, scripts.helpers.BatteryTiers[1], <ore:stickSteel>],
+										[null, null, <ore:plateConstantan>]],
+	<nuclearcraft:dissolver_idle>
+									:	[[<ore:plateSteel>, <minecraft:hopper>, <ore:plateSteel>],
+										[ <ore:plateLapis>, <enderio:item_material:1>,  <ore:plateLapis>],
+		  								[scripts.helpers.BatteryTiers[1], scripts.helpers.MotorTiers[1], scripts.helpers.CircuitTiers[2]],
+										[null, null,<ore:plateSteel>]],
 	<nuclearcraft:manufactory_idle>
 									:	[[null, <thermalfoundation:material:657>, null],
 	 									[<ore:gearSteel>, scripts.helpers.FrameTiers[1], <ore:gearSteel>],
-	   								[null, scripts.helpers.CircuitTiers[0], null],
-										[null, <ore:ingotCopper>, <ore:plateLead>]],
+	   									[null, scripts.helpers.CircuitTiers[1], null],
+										[<ore:ingotCopper>, <ore:ingotCopper>, <ore:plateSteel>]],
 	<nuclearcraft:rock_crusher_idle>
 									:	[[<ore:plateSteel>, scripts.helpers.MotorTiers[1], <ore:plateSteel>],
 										[<minecraft:piston>, scripts.helpers.FrameTiers[1], <minecraft:piston>],
-	  								[<ore:plateSteel>, <thermalfoundation:material:656>, <ore:plateSteel>],
+	  									[<ore:plateSteel>, <thermalfoundation:material:656>, <ore:plateSteel>],
 										[null, <ore:ingotManyullyn>, scripts.helpers.BatteryTiers[1]]],
 	<nuclearcraft:alloy_furnace_idle>
 									:	[[<ore:plateLead>, scripts.helpers.CircuitTiers[1], <ore:plateLead>],
 										[<ore:plateLead>, scripts.helpers.FrameTiers[0], <ore:plateLead>],
 										[<ore:gearLead>, scripts.helpers.MotorTiers[1], <ore:gearLead>],
-										[null, null, <ore:ingotNickel>]],
+										[null, <tconstruct:materials:2>, <ore:ingotBrickNether>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in magneticraft_EXTENDEDCRAFTING_T2 {
@@ -97,7 +117,28 @@ mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:carbon_monoxid
 mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:methanol> * 1000, <liquid:hydrofluoric_acid> * 1000]);
 mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane> * 1000, <liquid:koh> * 666]);
 mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:fluoromethane> * 1000, <liquid:naoh> * 666]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([<liquid:sugar> * 144, <liquid:water> * 1000]);
+mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:bio.ethanol> * 1000, <liquid:sulfuric_acid> * 1000, <liquid:ethene> * 1000, <liquid:sulfur_trioxide> * 250, 0.5]);
 
-mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:bio.ethanol> * 1000, <liquid:sulfuric_acid> * 1000, <liquid:ethene> * 1000, <liquid:sulfur_trioxide> * 500, 0.5]);
-mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:ethanol> * 1000, <liquid:sulfuric_acid> * 1000, <liquid:ethene> * 1000, <liquid:sulfur_trioxide> * 500, 0.5]);
+//Melter Ore Processing Tooltip
+<nuclearcraft:melter_idle>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 3.0x output rate."));
+
+//Upgrade Magma Cruible to NC Melter
+mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:melter_idle>, [[<ore:plateNickel>, <ore:plateDarkSteel>, <ore:plateNickel>], [<ore:plateDarkSteel>, <thermalexpansion:machine:6>, <ore:plateDarkSteel>], [<ore:plateNickel>, scripts.helpers.CircuitTiers[2], <ore:plateNickel>]]);
+
+//Upgrade Arc Furnace to NC Alloy Furnace
+mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:alloy_furnace_idle>, [
+	[<ore:plateLead>, <ore:gearElectrum>, <ore:plateLead>],
+	[<ore:plateLead>, <advancedrocketry:arcfurnace>, <ore:plateLead>],
+	[<ore:ingotLead>, scripts.helpers.MotorTiers[1], <ore:ingotLead>]
+]);
+
+//Tier Tooltips for NC machines
+<nuclearcraft:alloy_furnace_idle>.addTooltip(scripts.helpers.createTierTooltip("Alloy Furnace Tier ", 2, false, "."));
+<nuclearcraft:manufactory_idle>.addTooltip(scripts.helpers.createTierTooltip("Crusher Tier ", 3, false, "."));
+<nuclearcraft:melter_idle>.addTooltip(scripts.helpers.createTierTooltip("Melter Tier ", 4, false, "."));
+
+//Mechanical Imbuement for Motor
+scripts.mmhelper.AddMechanicalImbuerRecipe(scripts.helpers.createRecipeName(scripts.helpers.MotorTiers[1]), scripts.helpers.MotorTiers[1], 50000);
+
 print("### NuclearCraft Init Complete ###");

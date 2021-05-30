@@ -277,8 +277,29 @@ for circuit in scripts.helpers.CircuitTiers[0].items
 <magneticraft:sluice_box>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 1, false, " Ores, with a 2.5x output rate."));
 <magneticraft:sieve>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 2.75x output rate."));
 <magneticraft:grinder>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 2.0x output rate."));
+<magneticraft:grinder>.addTooltip(scripts.helpers.createTierTooltip("Crusher Tier ", 2, false, "."));
 
 //Stage 2 Conveyors
 mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<magneticraft:conveyor_belt>) ~ scripts.helpers.stages.progression2.stage, scripts.helpers.stages.progression2.stage, <magneticraft:conveyor_belt> * 32, [[null, null, null], [<ore:ingotSteel>, motor, <ore:ingotSteel>], [<ore:ingotSteel>, null, <ore:ingotSteel>]]);
+
+//New Creation w/ Rubber or Oil + Coal Dust
+scripts.helpers.addFluidInfusionRecipe(<liquid:plastic> * 1000, <industrialforegoing:dryrubber> * 4, <liquid:ethene> * 1000, 15000, 3);
+scripts.helpers.addFluidInfusionRecipe(<liquid:plastic> * 1000, <thermalfoundation:material:768> * 2, <liquid:lpg> * 1000, 25000, 3);
+
+//Change refinery output for Petroleum Gas
+mods.magneticraft.Refinery.removeRecipe(<liquid:lpg>);
+mods.magneticraft.Refinery.addRecipe(<liquid:lpg> * 10, <liquid:refined_oil> * 6, <liquid:natural_gas> * 4, null, 1);
+
+//Form Liquid Plastic into HDPE Pellets
+mods.nuclearcraft.ingot_former.addRecipe(<liquid:plastic> * 250, <mekanism:polyethene>);
+
+//Create Tier 0 Circuits with Tier 1 Circuits
+mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(scripts.helpers.CircuitTiers[0]) ~ "_uncrafting", scripts.helpers.stages.progression2.stage, scripts.helpers.CircuitTiers[0] * 2, [scripts.helpers.CircuitTiers[1]]);
+
+//Change Pyrite Processing
+mods.thermalexpansion.Pulverizer.removeRecipe(<magneticraft:ores:4>);
+mods.enderio.SagMill.removeRecipe(<magneticraft:ores:4>);
+mods.magneticraft.Grinder.removeRecipe(<magneticraft:ores:4>);
+scripts.helpers.addCrushingRecipeWithSecondary(<ore:dustSulfur>.firstItem * 4, <magneticraft:ores:4>, 4000, <ore:dustSmallIron>.firstItem * 2, 25, 1);
 
 print("### Magneticraft Init Complete ###");

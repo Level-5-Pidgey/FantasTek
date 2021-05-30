@@ -1,24 +1,10 @@
 
 print("~~~ Begin DeepMobLearning Init ~~~");
 
-//Change Durability of Glitch Armour
-val GlitchEquipment = [
-    <deepmoblearning:glitch_infused_helmet>,
-    <deepmoblearning:glitch_infused_chestplate>,
-    <deepmoblearning:glitch_infused_leggings>,
-    <deepmoblearning:glitch_infused_boots>,
-    <deepmoblearning:glitch_infused_sword>,
-] as crafttweaker.item.IItemStack[];
-
-for equipmentItem in GlitchEquipment
-{
-	equipmentItem.maxDamage = (equipmentItem.maxDamage * 4) / 10;
-}
-
 //Change Polymer Clay Recipes
 recipes.remove(<deepmoblearning:polymer_clay>);
-scripts.helpers.addInjectionRecipe(<deepmoblearning:polymer_clay> * 2, <ore:itemClay> * 2, <liquid:ender> * 125, 3500, false);
-scripts.mmhelper.IndustrialMixerFactoryRecipe(scripts.helpers.createRecipeName(<deepmoblearning:polymer_clay>), 4000, 30, null, null, <liquid:ender> * 125, <liquid:clay> * 288, null, null, null, null, <deepmoblearning:polymer_clay> * 3);
+scripts.helpers.addInjectionRecipe(<deepmoblearning:polymer_clay> * 2, <ore:itemClay> * 2, <liquid:ender> * 125, 3500, 3);
+scripts.mmhelper.IndustrialMixerFactoryRecipe(scripts.helpers.createRecipeName(<deepmoblearning:polymer_clay>), 4000, 30, null, null, <liquid:ender> * 125, <liquid:clay> * 144, null, null, null, null, <deepmoblearning:polymer_clay> * 3);
 
 //Remove Terrestrial Matter Conversion
 var TerrestrialMatterRecipes = [
@@ -52,84 +38,87 @@ for TerrestrialMatterRecipe in TerrestrialMatterRecipes
 	recipes.removeByRecipeName(TerrestrialMatterRecipe);
 }
 
+//Blank Data Model
+recipes.remove(<deepmoblearning:data_model_blank>);
+scripts.helpers.CreateAssemblyRecipe(<deepmoblearning:data_model_blank>, [<ore:plateSoularium>, scripts.helpers.CircuitTiers[2], <ore:plateSoularium>, <ore:ingotDarkSteel>, <ore:blockGlass>, <ore:ingotDarkSteel>, <ore:plateSoularium>, scripts.helpers.CircuitTiers[2], <ore:plateSoularium>], 40, 8000);
+
 //Assembly Line Recipe Changes
 val deepmoblearningRecipes_ASSEMBLY = {
-    <deepmoblearning:data_model_blank> : [<ore:plateSoularium>, scripts.helpers.CircuitTiers[2], <ore:plateSoularium>, <ore:ingotDarkSteel>, <ore:blockGlass>, <ore:ingotDarkSteel>, <ore:plateSoularium>, scripts.helpers.CircuitTiers[2], <ore:plateSoularium>],
-    //<deepmoblearning:data_model_zombie> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_skeleton> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_creeper> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_spider> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_slime> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_witch> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_blaze> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_ghast> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_wither_skeleton> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_enderman> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_wither> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_dragon> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_shulker> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_guardian> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_thermal_elemental> : [<deepmoblearning:data_model_blank>],
-    //<deepmoblearning:data_model_tinker_slime> : [<deepmoblearning:data_model_blank>],
+    //<deepmoblearning:data_model_zombie> : [<xreliquary:mob_ingredient:6>, <xreliquary:mob_ingredient:6>, <xreliquary:mob_ingredient:6>, <xreliquary:mob_ingredient:6>, <deepmoblearning:data_model_blank>, <xreliquary:mob_ingredient:6>, <xreliquary:mob_ingredient:6>, <xreliquary:mob_ingredient:6>, <xreliquary:mob_ingredient:6>],
+    //<deepmoblearning:data_model_skeleton> : [<xreliquary:mob_ingredient>, <xreliquary:mob_ingredient>, <xreliquary:mob_ingredient>, <xreliquary:mob_ingredient>, <deepmoblearning:data_model_blank>, <xreliquary:mob_ingredient>, <xreliquary:mob_ingredient>, <xreliquary:mob_ingredient>, <xreliquary:mob_ingredient>],
+    //<deepmoblearning:data_model_creeper> : [<xreliquary:mob_ingredient:3>, <ore:dustSulfur>, <xreliquary:mob_ingredient:3>, <ore:dustSulfur>, <deepmoblearning:data_model_blank>, <ore:dustSulfur>, <xreliquary:mob_ingredient:3>, <xreliquary:mob_ingredient:3>, <ore:dustSulfur>],
+    //<deepmoblearning:data_model_spider> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_slime> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_witch> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_blaze> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_ghast> : [<xreliquary:mob_ingredient:3>, <minecraft:ghast_tear>, <xreliquary:mob_ingredient:3>, <minecraft:ghast_tear>, <deepmoblearning:data_model_blank>, <minecraft:ghast_tear>, <xreliquary:mob_ingredient:3>, <xreliquary:mob_ingredient:3>, <minecraft:ghast_tear>]
+    //<deepmoblearning:data_model_wither_skeleton> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_enderman> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_wither> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_dragon> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_shulker> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_guardian> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_thermal_elemental> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
+    //<deepmoblearning:data_model_tinker_slime> : [null, null, null, null, <deepmoblearning:data_model_blank>, null, null, null, null],
 } as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
 for key, value in deepmoblearningRecipes_ASSEMBLY {
-  recipes.remove(key.withAmount(1));
-  scripts.helpers.CreateAssemblyRecipe(key, value, 60, 4000);
+    recipes.remove(key.withAmount(1));
+    scripts.helpers.CreateAssemblyRecipe(key, value, 80, 50000);
 }
 
 //Extended Crafting Recipes (T2 Table)
 val deepmoblearning_EXTENDEDCRAFTING_T2 = {
     <deepmoblearning:simulation_chamber>
-                                    :	[[<ore:plateSoularium>, scripts.helpers.CircuitTiers[2], <ore:plateSoularium>],
-                                        [<ore:rodSteel>, <enderio:item_material:53>, <ore:rodSteel>],
-                                        [<ore:plateSoularium>, scripts.helpers.CircuitTiers[2], <ore:plateSoularium>],
-                                        [null, <ore:obsidian>, <ore:ingotSoularium>]],
+                                    :	[[<ore:plateCobalt>, scripts.helpers.CircuitTiers[2], <ore:plateCobalt>],
+                                        [<ore:stickPlastic>, <enderio:item_material:53>, <ore:stickPlastic>],
+                                        [<ore:plateCobalt>, scripts.helpers.CircuitTiers[2], <ore:plateCobalt>],
+                                        [null, <ore:obsidian>, <ore:plateSoularium>]],
     <deepmoblearning:extraction_chamber>
-                                    :	[[null, null, null],
-                                        [null, <enderio:item_material:53>, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<ore:plateArdite>,  scripts.helpers.CircuitTiers[2], <ore:plateArdite>],
+                                        [<ore:stickPlastic>, <enderio:item_material:53>, <ore:stickPlastic>],
+                                        [<ore:plateArdite>,  scripts.helpers.CircuitTiers[2], <ore:plateArdite>],
+                                        [null, <ore:obsidian>, <ore:plateSoularium>]],
     <deepmoblearning:trial_keystone>
                                     :	[[null, null, null],
-                                        [null, <enderio:item_material:53>, null],
+                                        [<thermalfoundation:material:1028>, <enderio:item_material:53>, <thermalfoundation:material:1028>],
                                         [<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>],
-                                        [null, null, null]],
+                                        [scripts.helpers.CircuitTiers[1], <ore:obsidian>, <ore:ingotCobalt>]],
     <deepmoblearning:deep_learner>
-                                    :	[[null, null, null],
-                                        [null, null, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<ore:ingotBlackIron>, <ore:ingotSoularium>, <ore:ingotBlackIron>],
+                                        [<ore:ingotSoularium>, scripts.helpers.CircuitTiers[1], <ore:ingotSoularium>],
+                                        [<ore:ingotBlackIron>, <ore:ingotSoularium>, <ore:ingotBlackIron>],
+                                        [null, null, <ore:obsidian>]],
     <deepmoblearning:glitch_infused_helmet>
-                                    :	[[null, null, null],
-                                        [null, null, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<deepmoblearning:glitch_infused_ingot>, <ore:dustMana>, <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:plateSoularium>, <enderio:item_end_steel_helmet>, <ore:plateSoularium>],
+                                        [<deepmoblearning:glitch_infused_ingot>, scripts.helpers.CircuitTiers[3], <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:obsidian>, <deepmoblearning:glitch_infused_ingot>, <ore:nuggetStellarAlloy>]],
     <deepmoblearning:glitch_infused_chestplate>
-                                    :	[[null, null, null],
-                                        [null, null, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<deepmoblearning:glitch_infused_ingot>, <ore:dustMana>, <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:plateSoularium>, <enderio:item_end_steel_chestplate>, <ore:plateSoularium>],
+                                        [<deepmoblearning:glitch_infused_ingot>, scripts.helpers.CircuitTiers[3], <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:obsidian>, <deepmoblearning:glitch_infused_ingot>, <ore:nuggetStellarAlloy>]],
     <deepmoblearning:glitch_infused_leggings>
-                                    :	[[null, null, null],
-                                        [null, null, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<deepmoblearning:glitch_infused_ingot>, <ore:dustMana>, <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:plateSoularium>, <enderio:item_end_steel_leggings>, <ore:plateSoularium>],
+                                        [<deepmoblearning:glitch_infused_ingot>, scripts.helpers.CircuitTiers[3], <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:obsidian>, <deepmoblearning:glitch_infused_ingot>, <ore:nuggetStellarAlloy>]],
     <deepmoblearning:glitch_infused_boots>
-                                    :	[[null, null, null],
-                                        [null, null, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<deepmoblearning:glitch_infused_ingot>, <ore:dustMana>, <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:plateSoularium>, <enderio:item_end_steel_boots>, <ore:plateSoularium>],
+                                        [<deepmoblearning:glitch_infused_ingot>, scripts.helpers.CircuitTiers[3], <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:obsidian>, <deepmoblearning:glitch_infused_ingot>, <ore:nuggetStellarAlloy>]],
     <deepmoblearning:glitch_infused_sword>
-                                    :	[[null, null, null],
-                                        [null, null, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<deepmoblearning:glitch_infused_ingot>, <ore:dustMana>, <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:plateSoularium>, <enderio:item_end_steel_sword>, <ore:plateSoularium>],
+                                        [<deepmoblearning:glitch_infused_ingot>, scripts.helpers.CircuitTiers[3], <deepmoblearning:glitch_infused_ingot>],
+                                        [<ore:obsidian>, <deepmoblearning:glitch_infused_ingot>, <ore:nuggetStellarAlloy>]],
     <deepmoblearning:trial_key>
-                                    :	[[null, null, null],
-                                        [null, null, null],
-                                        [null, null, null],
-                                        [null, null, null]],
+                                    :	[[<ore:dustBlitz>, null, null],
+                                        [<ore:ingotCobalt>, <ore:ingotCobalt>, <ore:ingotCobalt>],
+                                        [<ore:dustBlitz>, null, <ore:ingotCobalt>],
+                                        [null, <ore:obsidian>, <ore:ingotSoularium>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in deepmoblearning_EXTENDEDCRAFTING_T2 {
@@ -159,6 +148,18 @@ val deepmoblearningRecipes_PRISTINE = {
 
 for model, pristineMatter in deepmoblearningRecipes_PRISTINE {
   mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(model), scripts.helpers.stages.progression2.stage, model, [[null, pristineMatter, null], [pristineMatter, <deepmoblearning:data_model_blank>, pristineMatter], [null, pristineMatter, null]]);
+}
+
+//Melt Terrestrial Matters into XP Liquid
+val deepmoblearning_MATTERMELT = {
+    <deepmoblearning:living_matter_overworldian> : 200,
+    <deepmoblearning:living_matter_hellish> : 280,
+    <deepmoblearning:living_matter_extraterrestrial> : 400,
+} as int[crafttweaker.item.IItemStack];
+
+for matter, amount in deepmoblearning_MATTERMELT
+{
+    scripts.helpers.addMeltingRecipe(<liquid:xpjuice> * amount, matter, 6000, 4);
 }
 
 print("### DeepMobLearning Init Complete ###");

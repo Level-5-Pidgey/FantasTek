@@ -117,10 +117,10 @@ for key, value in advancedRocketry_EXTENDEDCRAFTING {
 
 //Extended Crafting Recipes (T2 Table)
 val advancedRocketry_EXTENDEDCRAFTING_T2 = {
-	 //<advancedrocketry:arcfurnace>	:	[[<ore:ingotBrickNether>, <tconstruct:materials:2>, <ore:ingotBrickNether>],
-	 //									[<tconstruct:materials:2>, scripts.helpers.CircuitTiers[0], <tconstruct:materials:2>],
-	 //									[<ore:ingotBrickNether>, <ore:plateCopper>, <ore:ingotBrickNether>],
-	 //									[null, <tconstruct:materials:2>, <ore:ingotBrickNether>]],
+	 <advancedrocketry:electrolyser>	:	[[<ore:ingotSteel>, null, <ore:ingotSteel>],
+	 									[null, <mekanism:electrolyticcore>, null],
+	 									[<ore:ingotSteel>, scripts.helpers.FrameTiers[2], <ore:ingotSteel>],
+	 									[null, <ore:ingotEnergeticSilver>, <libvulpes:structuremachine>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in advancedRocketry_EXTENDEDCRAFTING_T2 {
@@ -138,6 +138,7 @@ scripts.helpers.createAdvancedCraftingRecipe(<advancedrocketry:arcfurnace>, [[<o
 
 //Arc Furnace Ore Processing Tooltip
 <advancedrocketry:arcfurnace>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 1, false, " Ores, with a 2.0x output rate."));
+<advancedrocketry:arcfurnace>.addTooltip(scripts.helpers.createTierTooltip("Alloy Furnace Tier ", 1, false, "."));
 
 //Arc Furnace Alloy Creation
 val advancedRocketry = {
@@ -213,6 +214,16 @@ mods.advancedrocketry.ArcFurnace.addRecipe(<ore:ingotSteel>.firstItem, 1200, 4, 
 for dust in <ore:dustNetherQuartz>.items
 {
 	mods.advancedrocketry.ArcFurnace.addRecipe(<ore:bouleSilicon>.firstItem, 1200, 4, dust * 9);
+}
+
+//Assembly Recipes
+val enderioRecipes_ASSEMBLY = {
+	<libvulpes:structuremachine> * 4 : [<ore:stickIron>, <ore:plateSteel>, <ore:stickIron>, <ore:plateSteel>, null, <ore:plateSteel>, <ore:stickIron>, <ore:plateSteel>, <ore:stickIron>],
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+
+for key, value in enderioRecipes_ASSEMBLY {
+  recipes.removeShaped(key.withAmount(1));
+  scripts.helpers.CreateAssemblyRecipe(key, value, 60, 15000);
 }
 
 print("### Advanced Rocketry Init Complete ###");
