@@ -1,12 +1,12 @@
 {
-	x: 14.0d,
-	y: 4.0d,
+	x: 20.0d,
+	y: -2.0d,
 	shape: "hexagon",
 	dependencies: [
-		"6c280ff9"
+		"f83c7dff"
 	],
 	tasks: [{
-		uid: "f9fdd520",
+		uid: "4e787d12",
 		type: "item",
 		items: [{
 			id: "thermalexpansion:machine",
@@ -24,13 +24,7 @@
 				],
 				Level: 0b
 			},
-			Damage: 8s
+			Damage: 4s
 		}]
-	}],
-	rewards: [{
-		uid: "1e732c7f",
-		type: "item",
-		item: "minecraft:glass",
-		count: 32
 	}]
 }

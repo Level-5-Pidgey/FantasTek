@@ -1,0 +1,41 @@
+{
+	x: 20.0d,
+	y: 4.0d,
+	dependencies: [
+		"c7541429"
+	],
+	tasks: [{
+		uid: "74703a45",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:melter_idle"
+		}]
+	},
+	{
+		uid: "71d1bcec",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:chemical_reactor_idle"
+		}]
+	}],
+	rewards: [{
+		uid: "07556d92",
+		type: "item",
+		item: {
+			id: "mekanism:controlcircuit",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 12
+				}]
+			}
+		},
+		count: 2
+	},
+	{
+		uid: "88f47567",
+		type: "item",
+		item: "enderio:item_alloy_ingot 1 6",
+		count: 24
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	dependencies: [
+		"aa7c48d8",
+		"49d20292"
+	],
+	tasks: [{
+		uid: "6642bad9",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:manufactory_idle"
+		}]
+	}]
+}

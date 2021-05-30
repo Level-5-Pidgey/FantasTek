@@ -1,12 +1,12 @@
 {
-	x: 16.0d,
-	y: -6.0d,
+	x: 18.0d,
+	y: 10.0d,
 	shape: "hexagon",
 	dependencies: [
 		"22997482"
 	],
 	tasks: [{
-		uid: "5e346a7a",
+		uid: "a22e0ee7",
 		type: "item",
 		items: [{
 			ForgeCaps: {

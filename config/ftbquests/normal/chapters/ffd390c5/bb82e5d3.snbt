@@ -10,6 +10,13 @@
 		items: [{
 			item: "magneticraft:grinder"
 		}]
+	},
+	{
+		uid: "fe4efe0a",
+		type: "item",
+		items: [{
+			item: "magneticraft:sieve"
+		}]
 	}],
 	rewards: [{
 		uid: "fa8ca452",

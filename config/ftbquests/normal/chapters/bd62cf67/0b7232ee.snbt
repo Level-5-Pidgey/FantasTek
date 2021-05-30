@@ -6,7 +6,7 @@
 	shape: "hexagon",
 	description: "Shelving? Are you serious?",
 	text: [
-		"If you're looking for a &emore simple, power-based storage solution that can be upgraded later&rr, look no further than the &bModular Storage&r system",
+		"If you're looking for a &emore simple, power-based storage solution that can be upgraded later&r, look no further than the &bModular Storage&r system",
 		"offered by RFTools. These nifty blocks can store massive amounts of items and can be upgraded as needed to suit your needs.",
 		"",
 		"Simply place down a series of &bModular Storage&r blocks, add a &bStorage Module&r to each and then place your items in them in the same manner",

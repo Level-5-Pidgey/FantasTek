@@ -1,0 +1,27 @@
+{
+	x: 24.0d,
+	y: 4.0d,
+	dependencies: [
+		"80bce3c8"
+	],
+	tasks: [{
+		uid: "7bd0dd42",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:dissolver_idle"
+		}]
+	},
+	{
+		uid: "9e27d0a1",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ingot_former_idle"
+		}]
+	}],
+	rewards: [{
+		uid: "827bb53a",
+		type: "item",
+		item: "industrialforegoing:dryrubber",
+		count: 16
+	}]
+}

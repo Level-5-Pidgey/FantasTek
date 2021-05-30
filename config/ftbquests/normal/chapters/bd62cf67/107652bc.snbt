@@ -8,7 +8,7 @@
 		"There are many different types of cast -- and they &bare created by melting gold or brass in the smeltery, then pouring the liquid over an item you want to make a cast of onto a casting table.&r",
 		"e.g. to make an ingot cast, place any sort of ingot onto the casting table, then pour the gold/brass over the top.",
 		"",
-		"&eThis process can make plates slightly more efficiently than the Plate Press -- dropping the ingot requirement down to 4 ingots per plate.&r"
+		"&eThis process can make plates slightly more efficiently than the Plate Press -- dropping the ingot requirement down to 2 ingots per plate.&r"
 	],
 	dependencies: [
 		"ad5ff33d"

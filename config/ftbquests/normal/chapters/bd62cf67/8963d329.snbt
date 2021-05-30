@@ -10,6 +10,7 @@
 		"&dSkeleton: &rUses melee attacks when in range and will shoot from further away.",
 		"&dCreeper: &rMoves faster than usual and explodes sooner.",
 		"&dSpider: &rSlows on-hit and will eventually ensnare you with cobwebs if slowed enough.",
+		"&dEnderman: &rJust don't try to hide under 2-block ceilings... It really doesn't like that.",
 		"",
 		"Good luck out there!"
 	],
