@@ -17,6 +17,16 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<futuremc:honeycomb>) ~ "_
 
 //Add Blast Furnace Ore Processing Tooltips.
 <futuremc:blast_furnace>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 0, false, " Ores, with a 1.0x output rate."));
-scripts.helpers.AddTooltip(<futuremc:blast_furnace>, ["JEI Entries are bugged, be warned!", "Will only smelt Processing Tier 0 ores,", "and Dense Ore of any tier.", "Putting in higher tiered ore will just delete the ore and give no output!!"]);
+
+//Hide Blast Furnace JEI Category due to recipe removal bugs
+mods.jei.JEI.hideCategory("container.jei.futuremc.blast_furnace.name");
+
+//Create Netherite with Netherite Scrap and Gold Ingots in a Smeltery or in an Induction Furnace
+recipes.removeByRecipeName("futuremc:netherite_ingot");
+recipes.addShapeless(scripts.helpers.createRecipeName(<futuremc:netherite_ingot>), <futuremc:netherite_ingot>, [<ore:ingotDemonicMetal>, <ore:ingotDemonicMetal>, <ore:ingotDemonicMetal>, <ore:ingotDemonicMetal>, <ore:ingotAncientDebris>, <ore:ingotAncientDebris>, <ore:ingotAncientDebris>, <ore:ingotAncientDebris>]);
+mods.tconstruct.Alloy.addRecipe(<liquid:netherite> * 1, [<liquid:xu_demonic_metal> * 4, <liquid:ancient_debris> * 4]);
+mods.tconstruct.Casting.addTableRecipe(<ore:ingotNetherite>.firstItem, <tconstruct:cast_custom>, <liquid:netherite>, 144, false);
+mods.tconstruct.Casting.addBasinRecipe(<ore:blockNetherite>.firstItem, null, <liquid:netherite>, 1296);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotNetherite>.firstItem * 1, <ore:ingotDemonicMetal>.firstItem * 4, <ore:ingotAncientDebris>.firstItem * 4, 9000, 1);
 
 print("### FutureMC Init Complete ###");

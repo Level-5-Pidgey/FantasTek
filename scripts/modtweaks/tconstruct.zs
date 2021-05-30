@@ -225,4 +225,7 @@ scripts.helpers.AddTooltip(<oeintegration:excavatemodifier>, ["Uncraftable.", "E
 mods.tconstruct.Alloy.removeRecipe(<liquid:manyullyn>);
 scripts.helpers.AddTooltip(<ore:ingotManyullyn>.firstItem, ["Specialized machinery is required to alloy Cobalt and Ardite into Manyullyn.", "It cannot be alloyed in a Tinkers Smeltery!"]);
 
+//Machine Tier Tooltips
+<tconstruct:smeltery_controller>.addTooltip(scripts.helpers.createTierTooltip("Melter Tier ", 1, false, "."));
+
 print("### TConstruct Init Complete ###");

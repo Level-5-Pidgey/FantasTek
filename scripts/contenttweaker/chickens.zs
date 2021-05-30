@@ -10,25 +10,25 @@ import mods.contenttweaker.ResourceLocation;
 //Earthen Element
 var earthen_element = ChickenFactory.createChicken("earthen_element_chicken", Color.fromInt(0x82e34d), <item:contenttweaker:elemental_mote_earth>);
 earthen_element.setForegroundColor(Color.fromInt(0x82e34d));
-earthen_element.layCoefficient = 3.5f;
+earthen_element.layCoefficient = 5.0f;
 earthen_element.register();
 
 //Molten Element
 var molten_element = ChickenFactory.createChicken("molten_element_chicken", Color.fromInt(0xd44219), <item:contenttweaker:elemental_mote_fire>);
 molten_element.setForegroundColor(Color.fromInt(0xd44219));
-molten_element.layCoefficient =  3.5f;
+molten_element.layCoefficient =  5.0f;
 molten_element.register();
 
 //Aqueous Element
 var aqueous_element = ChickenFactory.createChicken("aqueous_element_chicken", Color.fromInt(0x6effd1), <item:contenttweaker:elemental_mote_water>);
 aqueous_element.setForegroundColor(Color.fromInt(0x6effd1));
-aqueous_element.layCoefficient =  3.5f;
+aqueous_element.layCoefficient =  5.0f;
 aqueous_element.register();
 
 //Aerial Element
 var aerial_element = ChickenFactory.createChicken("aerial_element_chicken", Color.fromInt(0xebe2ca), <item:contenttweaker:elemental_mote_air>);
 aerial_element.setForegroundColor(Color.fromInt(0xebe2ca));
-aerial_element.layCoefficient =  3.5f;
+aerial_element.layCoefficient =  5.0f;
 aerial_element.register();
 
 //Lubricated

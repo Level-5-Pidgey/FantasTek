@@ -44,7 +44,7 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 }
 
 //Chemical Ore Factory
-function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
+function ChemicalOreFactoryRecipe(ore as string, oreTier as int, baseMultiplier as int)
 {
 	var oreBlock = oreDict.get("ore" ~ ore);
 	var oreDouble = oreDict.get("denseOre" ~ ore);
@@ -59,7 +59,7 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 		RecipeToAdd.addFluidInput(<liquid:water> * 200);
 		RecipeToAdd.addEnergyPerTickInput(120 * (oreTier + 1));
 
-		RecipeToAdd.addItemOutput(oreCrystal.firstItem * 5);
+		RecipeToAdd.addItemOutput(oreCrystal.firstItem * (5 * baseMultiplier));
 		RecipeToAdd.build();
 	}
 	else
@@ -76,7 +76,7 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int)
 		RecipeToAdd.addFluidInput(<liquid:water> * 400);
 		RecipeToAdd.addEnergyPerTickInput(240 * (oreTier + 1));
 
-		RecipeToAdd.addItemOutput(oreCrystal.firstItem * 10);
+		RecipeToAdd.addItemOutput(oreCrystal.firstItem * (10 * baseMultiplier));
 		RecipeToAdd.build();
 	}
 }
@@ -121,7 +121,7 @@ function IndustrialMixerFactoryRecipe(recipeName as string, energyCost as int, c
 }
 
 //Store the Mechanical Imbuement IData for use elsewhere
-static mechImbuementData as crafttweaker.data.IData = {ench: [{lvl: 1 as short, id: 72}]};
+static mechImbuementData as crafttweaker.data.IData = {ench: [{lvl: 1 as short, id: 12}]};
 
 //Mechanical Imbuer
 function AddMechanicalImbuerRecipe(recipeName as string, item as crafttweaker.item.IItemStack, energyCost as int)

@@ -167,7 +167,7 @@ static OresWithProcessingTier as int[string] =
     "Tin" : 1,
     "Titanium" : 6,
     "Tungsten" : 5,
-    "Zinc" : 3,
+    "Zinc" : 1,
     "Mithril" : 3,
     "Thorium" : 4,
     "Uranium": 4,
@@ -422,13 +422,18 @@ static FrameTiers as crafttweaker.item.IItemStack[int]=
 static ElectronicTiers as crafttweaker.item.IIngredient[int]=
 {
     0 : <enderio:item_basic_capacitor>,
-    1 : <minecraft:bedrock>,
+    1 : <enderio:item_basic_capacitor:1>,
+    2 : <enderio:item_basic_capacitor:2>,
+    2 : <enderio:item_capacitor_crystalline>,
+    2 : <enderio:item_capacitor_melodic>,
+    2 : <enderio:item_capacitor_stellar>,
 };
 
 static MotorTiers as crafttweaker.item.IItemStack[int]=
 {
     0 : <magneticraft:crafting:2>,
     1 : <nuclearcraft:part:8>,
+    2 : <nuclearcraft:part:8>.withTag(scripts.mmhelper.mechImbuementData),
 };
 
 static BatteryTiers as crafttweaker.item.IItemStack[int]=
@@ -438,6 +443,7 @@ static BatteryTiers as crafttweaker.item.IItemStack[int]=
     2 : <nuclearcraft:lithium_ion_cell>,
     3 : <contenttweaker:energy_crystal>
 };
+
 
 static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =
 {
@@ -481,135 +487,204 @@ function mathMin(n1 as int, n2 as int) as int
     return n1;
 }
 
-function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float, allowBasicAlloy as bool)
+function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float, recipeTier as int)
 {
-    //Thermal Expansion Induction Smelter
-    if(chanceOutput.matches(<minecraft:bedrock>))
+    var inputArray = [input1, input2] as crafttweaker.item.IItemStack[];
+
+    //Induction Smelter
+    if(recipeTier <= 4)
     {
-        mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost);
-    }
-    else
-    {
-        mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost, chanceOutput, chanceFloat);
+        if(chanceOutput.matches(<minecraft:bedrock>))
+        {
+            mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost);
+        }
+        else
+        {
+            mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost, chanceOutput, chanceFloat);
+        }
     }
 
     //EnderIO Alloy Smelter
-    var inputArray = [input1, input2] as crafttweaker.item.IItemStack[];
-    mods.enderio.AlloySmelter.addRecipe(output, inputArray, energyCost);
-
-    //Advanced Rocketry Arc Furnace
-    if(allowBasicAlloy)
+    if(recipeTier <= 3)
     {
-        mods.advancedrocketry.ArcFurnace.addRecipe(output, 1200, energyCost / 1200, input1, input2, <minecraft:sand>);
+        mods.enderio.AlloySmelter.addRecipe(output, inputArray, energyCost);
     }
 
     //Nuclearcraft Alloy Smelter
-    mods.nuclearcraft.alloy_furnace.addRecipe([input1, input2, output, 1.0, 0.4]);
-}
-
-function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, allowBasicAlloy as bool)
-{
-    addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, <minecraft:bedrock>, 0.0f, allowBasicAlloy);
-}
-
-function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, extraOutput as crafttweaker.item.IItemStack, extraOutputChance as float, allowBasicGrinder as bool)
-{
-    if(!extraOutput.matches(<minecraft:bedrock>))
+    if(recipeTier <= 2)
     {
-        //EnderIO SAG Mill
-        var outputArray = [output] as crafttweaker.item.IItemStack[];
-        outputArray += extraOutput;
-        var chanceArray = [1.0] as float[];
-        chanceArray += (extraOutputChance / 100) as float;
-        mods.enderio.SagMill.addRecipe(outputArray, chanceArray, input, "MULTIPLY_OUTPUT", energyCost);
+        mods.nuclearcraft.alloy_furnace.addRecipe([input1, input2, output, 1.0, 0.4]);
+    }
 
-        //Thermal Expansion Pulverizer
-        mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost, extraOutput, extraOutputChance);
+    //Advanced Rocketry Arc Furnace
+    if(recipeTier <= 1)
+    {
+        mods.advancedrocketry.ArcFurnace.addRecipe(output, 1200, energyCost / 1200, input1, input2, <minecraft:sand>);
+    }
+}
 
-        if(allowBasicGrinder)
+function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, recipeTier as int)
+{
+    addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, <minecraft:bedrock>, 0.0f, recipeTier);
+}
+
+function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, extraOutput as crafttweaker.item.IItemStack, extraOutputChance as float, recipeTier as int)
+{
+    var outputArray = [output] as crafttweaker.item.IItemStack[];
+    outputArray += extraOutput;
+    var chanceArray = [1.0] as float[];
+    chanceArray += (extraOutputChance / 100) as float;
+
+    //AE Grinder (Tier 1)
+    if(recipeTier <= 1)
+    {
+        if(!extraOutput.matches(<minecraft:bedrock>))
         {
-            //Magneticraft Grinder
-            mods.magneticraft.Grinder.addRecipe(input.items[0], output, extraOutput, chanceArray[1], energyCost / 45, true);
-
-            mods.appliedenergistics2.Grinder.addRecipe(output, input.items[0], 5, extraOutput, extraOutputChance);
+            mods.appliedenergistics2.Grinder.addRecipe(output, input.items[0], 5, extraOutput, chanceArray[1]);
+        }
+        else
+        {
+            mods.appliedenergistics2.Grinder.addRecipe(output, input.items[0], 5);
         }
     }
-    else
+
+    //Magneticraft Grinder (Tier 2)
+    if(recipeTier <= 2)
     {
-        //EnderIO SAG Mill
-        var outputArray = [output] as crafttweaker.item.IItemStack[];
-        var chanceArray = [1.0] as float[];
-        mods.enderio.SagMill.addRecipe(outputArray, chanceArray, input, "MULTIPLY_OUTPUT", energyCost);
-
-        //Thermal Expansion Pulverizer
-        mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost);
-
-        if(allowBasicGrinder)
+        if(!extraOutput.matches(<minecraft:bedrock>))
         {
-            //Magneticraft Grinder
+            mods.magneticraft.Grinder.addRecipe(input.items[0], output, extraOutput, chanceArray[1], energyCost / 45, true);
+        }
+        else
+        {
             mods.magneticraft.Grinder.addRecipe(input.items[0], output, <minecraft:gravel>, 0.0, energyCost / 45, true);
+        }
+    }
 
-            mods.appliedenergistics2.Grinder.addRecipe(output, input.items[0], 5, extraOutput, extraOutputChance);
+    //Nuclearcraft manufactory
+    if (recipeTier <= 3)
+    {
+        mods.nuclearcraft.manufactory.addRecipe([input, output, 1.0, 0.5]);
+    }
+
+    //Sag Mill and Pulverizer
+    if(recipeTier <= 4)
+    {
+        if(!extraOutput.matches(<minecraft:bedrock>))
+        {
+            mods.enderio.SagMill.addRecipe(outputArray, chanceArray, input, "CHANCE_ONLY", energyCost);
+
+            mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost, extraOutput, extraOutputChance);
+        }
+        else
+        {
+            mods.enderio.SagMill.addRecipe(outputArray, chanceArray, input, "MULTIPLY_OUTPUT", energyCost);
+
+            mods.thermalexpansion.Pulverizer.addRecipe(output, input.items[0], energyCost);
         }
     }
 
     //Mekanism Crusher
-    mods.mekanism.crusher.addRecipe(input, output);
+    if(recipeTier <= 5)
+    {
+        mods.mekanism.crusher.addRecipe(input, output);
+    }
 }
 
-function addCrushingRecipe(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, allowBasicGrinder as bool)
+function addCrushingRecipe(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, recipeTier as int)
 {
-    addCrushingRecipeWithSecondary(output, input, energyCost, <minecraft:bedrock>, 0.0f, allowBasicGrinder);
+    addCrushingRecipeWithSecondary(output, input, energyCost, <minecraft:bedrock>, 0.0f, recipeTier);
 }
 
-function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIngredient, energyCost as int, allowBasicMelter as bool)
+function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIngredient, energyCost as int, recipeTier as int)
 {
     var inputAsStack as crafttweaker.item.IItemStack = input.items[0];
-    //Nuclearcraft Melter
-    mods.nuclearcraft.melter.addRecipe(input, output);
 
-    //Tcon Smeltery
-    if (allowBasicMelter)
+    //Tcon smeltery
+    if(recipeTier <= 1)
     {
         mods.tconstruct.Melting.addRecipe(output, input);
     }
 
-    //Industrial Mixer (basic melting)
-    scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(inputAsStack) ~ output.name, energyCost, energyCost / 200, output, null, null, null, null, null, inputAsStack, null, null);
-
     //Magma Crucible
-    mods.thermalexpansion.Crucible.addRecipe(output, inputAsStack, energyCost);
-}
-
-function addInjectionRecipe(output as crafttweaker.item.IItemStack, inputItem as crafttweaker.item.IIngredient, inputFluid as ILiquidStack, energyCost as int, allowBasicInjection as bool)
-{
-    var inputAsStack as crafttweaker.item.IItemStack = inputItem.items[0];
-
-    //Nuclearcraft Fluid Injector
-    mods.nuclearcraft.infuser.addRecipe(inputItem, inputFluid, output);
-
-    //Fluid Transposer
-    mods.thermalexpansion.Transposer.addFillRecipe(output, inputAsStack, inputFluid, energyCost);
-
-    //Tinkers Construct Casting
-    if(allowBasicInjection)
+    if(recipeTier <= 2)
     {
-        mods.tconstruct.Casting.addBasinRecipe(output, inputItem, inputFluid * 1, inputFluid.amount, true, energyCost / 100);
-    }
-
-    //Throwing item in Fluid
-    if (inputFluid.amount <= 1000)
-    {
-        mods.inworldcrafting.FluidToItem.transform(output, inputFluid * 1, [inputItem], true);
+        mods.thermalexpansion.Crucible.addRecipe(output, inputAsStack, energyCost);
     }
 
     //Industrial Mixer Factory
-    scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(output) ~ inputFluid.name, energyCost, energyCost / 200, null, null, inputFluid, null, null, null, inputAsStack, null, output);
-
-    if (inputFluid.amount <= 300)
+    if (recipeTier <= 3)
     {
-        //Industrial Foregoing FLuid Sieving Machine
-        mods.industrialforegoing.FluidSievingMachine.add(inputFluid, output, inputAsStack);
+        scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(inputAsStack) ~ output.name, energyCost, energyCost / 200, output, null, null, null, null, null, inputAsStack, null, null);
+    }
+
+    //Nuclearcraft Melter
+    if(recipeTier <= 4)
+    {
+        mods.nuclearcraft.melter.addRecipe(input, output);
+    }
+}
+
+function addInjectionRecipe(output as crafttweaker.item.IItemStack, inputItem as crafttweaker.item.IIngredient, inputFluid as ILiquidStack, energyCost as int, recipeTier as int)
+{
+    var inputAsStack as crafttweaker.item.IItemStack = inputItem.items[0];
+
+    //Throwing into fluid + Casting with TCon
+    if (recipeTier <= 1)
+    {
+        if (inputFluid.amount <= 1000)
+        {
+            mods.inworldcrafting.FluidToItem.transform(output, inputFluid * 1, [inputItem], true);
+        }
+
+        mods.tconstruct.Casting.addBasinRecipe(output, inputItem, inputFluid * 1, inputFluid.amount, true, energyCost / 100);
+    }
+
+    //Mixer factory and fluid sieving machine
+    if(recipeTier <= 2)
+    {
+        scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(output) ~ inputFluid.name, energyCost, energyCost / 200, null, null, inputFluid, null, null, null, inputAsStack, null, output);
+
+        if (inputFluid.amount <= 300)
+        {
+            //Industrial Foregoing FLuid Sieving Machine
+            mods.industrialforegoing.FluidSievingMachine.add(inputFluid, output, inputAsStack);
+        }
+    }
+
+    //Fluid Transposer
+    if(recipeTier <= 3)
+    {
+        mods.thermalexpansion.Transposer.addFillRecipe(output, inputAsStack, inputFluid, energyCost);
+    }
+
+    //Nuclearcraft Fluid Injector
+    if(recipeTier <= 4)
+    {
+        mods.nuclearcraft.infuser.addRecipe(inputItem, inputFluid, output);
+    }
+}
+
+function addFluidInfusionRecipe(output as ILiquidStack, inputItem as crafttweaker.item.IIngredient, inputFluid as ILiquidStack, energyCost as int, recipeTier as int)
+{
+    var inputAsStack as crafttweaker.item.IItemStack = inputItem.items[0];
+
+    //Throwing item in fluid
+    if(recipeTier <= 1)
+    {
+        mods.inworldcrafting.FluidToFluid.transform(output, inputFluid * 1, [inputItem], true);
+    }
+
+    //Industrial Mixer Factory
+    if(recipeTier <= 2)
+    {
+        scripts.mmhelper.IndustrialMixerFactoryRecipe(createRecipeName(inputAsStack) ~ "_enhanceFluid", energyCost, energyCost / 200, output, null, inputFluid, null, null, null, inputAsStack, null, null);
+    }
+
+    //NuclearCraft Fluid Enricher
+    if (recipeTier <= 3)
+    {
+        mods.nuclearcraft.dissolver.addRecipe(inputItem, inputFluid, output);
     }
 }
 

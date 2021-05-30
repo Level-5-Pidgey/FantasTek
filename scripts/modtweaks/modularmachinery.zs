@@ -10,7 +10,7 @@ recipes.addShapeless(scripts.helpers.createRecipeName(<modularmachinery:itemmodu
 //Add Modularium Alloying/Casting
 mods.tconstruct.Alloy.addRecipe(<liquid:modularium> * 288, [<liquid:black_iron> * 288, <liquid:redstone> * 50, <liquid:gold> * 144, <liquid:glowstone> * 125]);
 mods.tconstruct.Casting.addTableRecipe(<modularmachinery:itemmodularium>, <tconstruct:cast_custom>, <liquid:modularium>, 144, false);
-scripts.helpers.addInjectionRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <liquid:obsidian> * 288, 2500, false);
+scripts.helpers.addInjectionRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingotIron>.firstItem, <liquid:obsidian> * 288, 2500, 2);
 
 //Machine Parts
 //List of ores to change processing rules for
@@ -466,5 +466,8 @@ recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itembluepri
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_line"})) ~ "_assembly_line", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembly_line"}), [[scripts.helpers.CircuitTiers[2], <enderio:item_material:77>, scripts.helpers.CircuitTiers[2]], [<enderio:item_material:77>, scripts.helpers.FrameTiers[1], <enderio:item_material:77>], [scripts.helpers.CircuitTiers[2], <enderio:item_material:77>, scripts.helpers.CircuitTiers[2]]]);
 //Ore Washing Factory
 recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ore_washing_factory"})) ~ "_ore_washing_factory", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ore_washing_factory"}), [[<industrialforegoing:pink_slime_ingot>, <enderio:item_material:77>, <industrialforegoing:pink_slime_ingot>], [<enderio:item_material:77>, scripts.helpers.FrameTiers[3], <enderio:item_material:77>], [<industrialforegoing:pink_slime_ingot>, <enderio:item_material:77>, <industrialforegoing:pink_slime_ingot>]]);
+
+//Machine Tier Tooltips
+<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}).addTooltip(scripts.helpers.createTierTooltip("Melter Tier ", 3, false, "."));
 
 print("### Modular Machinery Init Complete ###");

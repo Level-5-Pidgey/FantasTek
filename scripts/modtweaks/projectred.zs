@@ -67,7 +67,7 @@ for item in <ore:ingotConductiveIron>.items
 }
 
 //Stage 2 Electrotine Smelting
-scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotConductiveIron>.firstItem, <ore:gemLapis>.firstItem * 4, 4500, true);
+scripts.helpers.addAlloySmeltingRecipe(<ore:ingotElectrotineAlloy>.firstItem, <ore:ingotConductiveIron>.firstItem, <ore:gemLapis>.firstItem * 4, 4500, 1);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotElectrotineAlloy>.firstItem, [<ore:ingotIron>, <ore:dustRedstone> * 1, <ore:gemLapis> * 4], 4500);
 
 //Remove Furnace Electrotine Recipe
@@ -77,7 +77,7 @@ furnace.remove(<ore:ingotElectrotineAlloy>.firstItem, <projectred-core:resource_
 for electrotineIngot in <ore:ingotElectrotineAlloy>.items
 {
   mods.appliedenergistics2.Grinder.addRecipe(<ore:dustElectrotine>.firstItem * 3, electrotineIngot, 2);
-  scripts.helpers.addCrushingRecipe(<ore:dustElectrotine>.firstItem * 6, electrotineIngot, 500, true);
+  scripts.helpers.addCrushingRecipe(<ore:dustElectrotine>.firstItem * 6, electrotineIngot, 500, 1);
   scripts.helpers.AddTooltip(electrotineIngot, ["A proprietary, electrically conductive magically manufactured alloy.", "Don't give the recipe up to the competition, they're still figuring out how it works!", "Used as an early substitute for the likes of Copper."]);
 }
 

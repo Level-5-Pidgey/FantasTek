@@ -91,16 +91,16 @@ for rune in scripts.helpers.AllFireT1Items
 
 //Use Machines to Create the exU metals
 //Demon Metal
-scripts.helpers.addInjectionRecipe(<ore:ingotDemonicMetal>.firstItem, <ore:ingotGold>, <liquid:lava> * 111, 5000, false);
-scripts.helpers.addInjectionRecipe(<ore:blockDemonicMetal>.firstItem, <ore:blockGold>, <liquid:lava> * 1000, 5000, false);
+scripts.helpers.addInjectionRecipe(<ore:ingotDemonicMetal>.firstItem, <ore:ingotGold>, <liquid:lava> * 111, 5000, 2);
+scripts.helpers.addInjectionRecipe(<ore:blockDemonicMetal>.firstItem, <ore:blockGold>, <liquid:lava> * 1000, 5000, 2);
 <ticmat:xu_demonic_metal>.attackHead = 5.7; //Nerf Demonic Metal Damage
 //Enchanted Metal
-scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:essence> * 111, 10000, false);
-scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:essence> * 1000, 10000, false);
-scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:experience> * 111, 10000, false);
-scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:experience> * 1000, 10000, false);
-scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:xpjuice> * 111, 10000, false);
-scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:xpjuice> * 1000, 10000, false);
+scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:essence> * 111, 10000, 3);
+scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:essence> * 1000, 10000, 3);
+scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:experience> * 111, 10000, 3);
+scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:experience> * 1000, 10000, 3);
+scripts.helpers.addInjectionRecipe(<ore:ingotEnchantedMetal>.firstItem, <ore:ingotManyullyn>, <liquid:xpjuice> * 111, 10000, 3);
+scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blockManyullyn>, <liquid:xpjuice> * 1000, 10000, 3);
 <ticmat:xu_enchanted_metal>.attackHead = 9.1;
 <ticmat:xu_enchanted_metal>.durabilityHead = 900;
 <ticmat:xu_enchanted_metal>.miningSpeedHead = 7.45;
@@ -108,12 +108,12 @@ scripts.helpers.addInjectionRecipe(<ore:blockEnchantedMetal>.firstItem, <ore:blo
 <ticmat:xu_enchanted_metal>.modifierHandle = 0.5;
 <ticmat:xu_enchanted_metal>.durabilityExtra = 55;
 //Evil Metal
-scripts.helpers.addInjectionRecipe(<ore:ingotEvilMetal>.firstItem * 4, <minecraft:nether_star>, <liquid:liquid_nightmares> * 1000, 20000, false);
+scripts.helpers.addInjectionRecipe(<ore:ingotEvilMetal>.firstItem * 4, <minecraft:nether_star>, <liquid:liquid_nightmares> * 1000, 20000, 3);
 <ticmat:xu_evil_metal>.durabilityHandle = 400;
 <ticmat:xu_evil_metal>.modifierHandle = 0.9;
 
 //Turn a drop of evil into Liquid Nightmares
-scripts.helpers.addMeltingRecipe(<liquid:liquid_nightmares> * 1000, <extrautils2:ingredients:10>, 15000, false);
+scripts.helpers.addMeltingRecipe(<liquid:liquid_nightmares> * 1000, <extrautils2:ingredients:10>, 15000, 2);
 
 
 print("### Extrautils2 Init Complete ###");

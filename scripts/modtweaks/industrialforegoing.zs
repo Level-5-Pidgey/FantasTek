@@ -277,32 +277,35 @@ val industrialforegoingRecipes_ASSEMBLY = {
 	<industrialforegoing:range_addon:1> : [<ore:plateLapis>, <ore:plateSteel>, <ore:plateLapis>, <ore:plateLapis>, scripts.helpers.CircuitTiers[1], <ore:plateLapis>, <ore:plateLapis>, <ore:plateSteel>, <ore:plateLapis>],
 	<industrialforegoing:range_addon:2> : [<ore:plateIron>, <ore:plateSteel>, <ore:plateIron>, <ore:plateIron>, scripts.helpers.CircuitTiers[1], <ore:plateIron>, <ore:plateIron>, <ore:plateSteel>, <ore:plateIron>],
 	<industrialforegoing:range_addon:3> : [<ore:plateTin>, <ore:plateSteel>, <ore:plateTin>, <ore:plateTin>, scripts.helpers.CircuitTiers[1], <ore:plateTin>, <ore:plateTin>, <ore:plateSteel>, <ore:plateTin>],
-	//<industrialforegoing:range_addon:4> : [<ore:plateCopper>, <ore:plateSteel>, <ore:plateCopper>, <ore:plateCopper>, scripts.helpers.CircuitTiers[2], <ore:plateCopper>, <ore:plateCopper>, <ore:plateSteel>, <ore:plateCopper>],
-	//<industrialforegoing:range_addon:5> : [<ore:plateBronze>, <ore:plateSteel>, <ore:plateBronze>, <ore:plateBronze>, scripts.helpers.CircuitTiers[2], <ore:plateBronze>, <ore:plateBronze>, <ore:plateSteel>, <ore:plateBronze>],
-	//<industrialforegoing:range_addon:6> : [<ore:plateElectricalSteel>, <ore:plateSteel>, <ore:plateElectricalSteel>, <ore:plateElectricalSteel>, scripts.helpers.CircuitTiers[2], <ore:plateElectricalSteel>, <ore:plateElectricalSteel>, <ore:plateSteel>, <ore:plateElectricalSteel>],
-	//<industrialforegoing:range_addon:7> : [<ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>, <ore:plateElectrum>, scripts.helpers.CircuitTiers[2], <ore:plateElectrum>, <ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>],
-	//<industrialforegoing:range_addon:8> : [<ore:plateLithium>, <ore:plateSteel>, <ore:plateLithium>, <ore:plateLithium>, scripts.helpers.CircuitTiers[2], <ore:plateLithium>, <ore:plateLithium>, <ore:plateSteel>, <ore:plateLithium>],
-	//<industrialforegoing:range_addon:9> : [<ore:plateDiamond>, <ore:plateSteel>, <ore:plateDiamond>, <ore:plateDiamond>, scripts.helpers.CircuitTiers[2], <ore:plateDiamond>, <ore:plateDiamond>, <ore:plateSteel>, <ore:plateDiamond>],
-	//<industrialforegoing:range_addon:10> : [<ore:plateCobalt>, <ore:plateSteel>, <ore:plateCobalt>, <ore:plateCobalt>, scripts.helpers.CircuitTiers[2], <ore:plateCobalt>, <ore:plateCobalt>, <ore:plateSteel>, <ore:plateCobalt>],
-	//<industrialforegoing:range_addon:11> : [<ore:plateEndSteel>, <ore:plateSteel>, <ore:plateEndSteel>, <ore:plateEndSteel>, scripts.helpers.CircuitTiers[2], <ore:plateEndSteel>, <ore:plateEndSteel>, <ore:plateSteel>, <ore:plateEndSteel>],
-	//<industrialforegoing:energy_field_addon> : [<industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>, scripts.helpers.BatteryTiers[2], scripts.helpers.CircuitTiers[2], scripts.helpers.BatteryTiers[2], <industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>],
+	<industrialforegoing:range_addon:4> : [<ore:plateCopper>, <ore:plateSteel>, <ore:plateCopper>, <ore:plateCopper>, scripts.helpers.CircuitTiers[3], <ore:plateCopper>, <ore:plateCopper>, <ore:plateSteel>, <ore:plateCopper>],
+	<industrialforegoing:range_addon:5> : [<ore:plateBronze>, <ore:plateSteel>, <ore:plateBronze>, <ore:plateBronze>, scripts.helpers.CircuitTiers[3], <ore:plateBronze>, <ore:plateBronze>, <ore:plateSteel>, <ore:plateBronze>],
+	<industrialforegoing:range_addon:6> : [<ore:plateElectricalSteel>, <ore:plateSteel>, <ore:plateElectricalSteel>, <ore:plateElectricalSteel>, scripts.helpers.CircuitTiers[3], <ore:plateElectricalSteel>, <ore:plateElectricalSteel>, <ore:plateSteel>, <ore:plateElectricalSteel>],
+	<industrialforegoing:range_addon:7> : [<ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>, <ore:plateElectrum>, scripts.helpers.CircuitTiers[3], <ore:plateElectrum>, <ore:plateElectrum>, <ore:plateSteel>, <ore:plateElectrum>],
+	<industrialforegoing:range_addon:8> : [<ore:plateLithium>, <ore:plateSteel>, <ore:plateLithium>, <ore:plateLithium>, scripts.helpers.CircuitTiers[3], <ore:plateLithium>, <ore:plateLithium>, <ore:plateSteel>, <ore:plateLithium>],
+	<industrialforegoing:range_addon:9> : [<ore:plateDiamond>, <ore:plateSteel>, <ore:plateDiamond>, <ore:plateDiamond>, scripts.helpers.CircuitTiers[3], <ore:plateDiamond>, <ore:plateDiamond>, <ore:plateSteel>, <ore:plateDiamond>],
+	<industrialforegoing:range_addon:10> : [<ore:plateCobalt>, <ore:plateSteel>, <ore:plateCobalt>, <ore:plateCobalt>, scripts.helpers.CircuitTiers[3], <ore:plateCobalt>, <ore:plateCobalt>, <ore:plateSteel>, <ore:plateCobalt>],
+	<industrialforegoing:range_addon:11> : [<ore:plateEndSteel>, <ore:plateSteel>, <ore:plateEndSteel>, <ore:plateEndSteel>, scripts.helpers.CircuitTiers[3], <ore:plateEndSteel>, <ore:plateEndSteel>, <ore:plateSteel>, <ore:plateEndSteel>],
+	<industrialforegoing:energy_field_addon> : [<industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>, scripts.helpers.BatteryTiers[2], scripts.helpers.CircuitTiers[2], scripts.helpers.BatteryTiers[2], <industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>],
 	<industrialforegoing:leaf_shearing> : [<ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:toolShears>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>],
 	<industrialforegoing:itemstack_transfer_addon_pull> * 2 : [<ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:sticky_piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>],
 	<industrialforegoing:itemstack_transfer_addon_push> * 2 : [<ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotSteel>, <ore:nuggetGold>],
 	<industrialforegoing:fluid_transfer_addon_pull> : [<ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>],
 	<industrialforegoing:fluid_transfer_addon_push> : [<ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>, <ore:nuggetGold>, <minecraft:piston>, <ore:nuggetGold>, <ore:nuggetGold>, <ore:ingotBronze>, <ore:nuggetGold>],
-	//<industrialforegoing:fortune_addon> : [<industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:pink_slime_ingot>, scripts.helpers.CircuitTiers[2], <industrialforegoing:pink_slime_ingot>, <industrialforegoing:pink_slime_ingot>, <ore:plateSteel>, <industrialforegoing:pink_slime_ingot>],
-	<industrialforegoing:meat_feeder> : [<ore:plateSteel>, <ore:ingotAluminium>, <ore:plateSteel>, <minecraft:glass_bottle>, <ore:ingotAluminium>, <minecraft:glass_bottle>, null, <ore:ingotAluminium>, null],
+	<industrialforegoing:fortune_addon> : [<industrialforegoing:pink_slime_ingot>, <ore:plateEndSteel>, <industrialforegoing:pink_slime_ingot>, <industrialforegoing:pink_slime_ingot>, scripts.helpers.CircuitTiers[4], <industrialforegoing:pink_slime_ingot>, <industrialforegoing:pink_slime_ingot>, <ore:plateEndSteel>, <industrialforegoing:pink_slime_ingot>],
 } as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
 for key, value in industrialforegoingRecipes_ASSEMBLY {
   recipes.remove(key.withAmount(1));
-  scripts.helpers.CreateAssemblyRecipe(key, value, 60, 4000);
+  scripts.helpers.CreateAssemblyRecipe(key, value, 200, 80000);
 }
+
+//Meat Feeder Assembly
+recipes.remove(<industrialforegoing:meat_feeder>);
+scripts.helpers.CreateAssemblyRecipe(<industrialforegoing:meat_feeder>, [<ore:plateSteel>, <ore:ingotAluminium>, <ore:plateSteel>, <minecraft:glass_bottle>, <ore:ingotAluminium>, <minecraft:glass_bottle>, null, <ore:ingotAluminium>, null], 60, 4000);
 
 //Change Pink Slime Ingot Crafting
 FluidSievingMachine.remove(<industrialforegoing:pink_slime_ingot>);
-scripts.helpers.addInjectionRecipe(<industrialforegoing:pink_slime_ingot>, <ore:ingotManyullyn>, <liquid:if.pink_slime> * 1000, 25000, false);
+scripts.helpers.addInjectionRecipe(<industrialforegoing:pink_slime_ingot>, <ore:ingotManyullyn>, <liquid:if.pink_slime> * 1000, 25000, 4);
 
 //TODO machines for later stages
 /*
@@ -315,4 +318,11 @@ scripts.helpers.addInjectionRecipe(<industrialforegoing:pink_slime_ingot>, <ore:
 	<industrialforegoing:material_stonework_factory>
 	<industrialforegoing:black_hole_tank>
 */
+
+//Change Plastic Sheet Creation
+furnace.remove(<industrialforegoing:plastic>, <industrialforegoing:dryrubber>);
+
+//Machine Tier Tooltips
+
+
 print("### Industrial Foregoing Init Complete ###");

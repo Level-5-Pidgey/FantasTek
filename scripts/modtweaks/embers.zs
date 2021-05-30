@@ -53,8 +53,8 @@ scripts.helpers.AddTooltip(<modularmachinery:itemblueprint>.withTag({dynamicmach
 //Change Sealed Planks/Reinforced Sealed Planks Recipes
 recipes.remove(<embers:sealed_planks>);
 recipes.remove(<embers:wrapped_sealed_planks>);
-scripts.helpers.addInjectionRecipe(<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <liquid:crude_steel> * 288, 2500, true);
-scripts.helpers.addInjectionRecipe(<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <liquid:steel> * 144, 2000, true);
+scripts.helpers.addInjectionRecipe(<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <liquid:crude_steel> * 288, 2500, 1);
+scripts.helpers.addInjectionRecipe(<embers:wrapped_sealed_planks>, <embers:sealed_planks>, <liquid:steel> * 144, 2000, 1);
 
 //Change Codex Recipe
 recipes.remove(<embers:codex>);

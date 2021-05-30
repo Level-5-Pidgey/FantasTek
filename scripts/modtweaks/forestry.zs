@@ -191,4 +191,86 @@ recipes.removeByRecipeName("forestry:propolis_to_slime");
 var propolisIngredient = <forestry:propolis:*> | <morebees:propolismetallic> | <morebees:propoliscrystal>;
 recipes.addShaped("propolis_to_slime", <minecraft:slime_ball> * 6, [[propolisIngredient, <forestry:pollen>, propolisIngredient], [propolisIngredient, <forestry:pollen>, propolisIngredient], [propolisIngredient, <forestry:pollen>, propolisIngredient]]);
 
+//Change Recipes for Fermenter
+mods.forestry.Fermenter.removeRecipe(<liquid:for.honey>);
+mods.forestry.Fermenter.removeRecipe(<liquid:juice>);
+mods.forestry.Fermenter.removeRecipe(<liquid:water>);
+mods.forestry.Fermenter.removeRecipe(<ore:treeSapling>);
+for sapling in <ore:treeSapling>.items
+{
+	mods.forestry.Fermenter.removeRecipe(sapling);
+}
+//Change Fuels for Fermenter
+mods.forestry.Fermenter.removeFuel(<forestry:mulch>);
+mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_bio>);
+mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
+mods.forestry.Fermenter.addFuel(<forestry:mulch>, 100, 32);
+mods.forestry.Fermenter.addFuel(<forestry:fertilizer_bio>, 100, 16);
+mods.forestry.Fermenter.addFuel(<forestry:fertilizer_compound>, 100, 48);
+mods.forestry.Fermenter.addFuel(<thermalfoundation:fertilizer>, 100, 64);
+mods.forestry.Fermenter.addFuel(<thermalfoundation:fertilizer:1>, 100, 100);
+mods.forestry.Fermenter.addFuel(<thermalfoundation:fertilizer:2>, 100, 133);
+//Add Back Fermenter Processing Recipes
+mods.forestry.Fermenter.addRecipe(<liquid:short.mead>, <forestry:honeydew>, <liquid:for.honey>, 500, 1);
+var biomassItems =
+{
+	<natura:materials:3> : 60,
+	<natura:materials> : 60,
+	<natura:edibles:2> : 30,
+	<natura:edibles:3> : 30,
+	<natura:edibles:4> : 30,
+	<natura:edibles:5> : 40,
+	<natura:edibles:6> : 110,
+	<natura:edibles:7> : 110,
+	<natura:edibles:8> : 110,
+	<natura:edibles:9> : 110,
+	<natura:edibles:10> : 110,
+	<natura:edibles:11> : 30,
+	<minecraft:carrot> : 60,
+	<minecraft:potato> : 60,
+	<minecraft:poisonous_potato> : 90,
+	<minecraft:reeds> : 40,
+	<minecraft:wheat> : 60,
+	<minecraft:vine> : 120,
+	<minecraft:cactus> : 75,
+	<minecraft:waterlily> : 120,
+	<contenttweaker:elemental_mote_earth> : 400,
+	<biomesoplenty:bamboo> : 45,
+	<biomesoplenty:berries> : 30,
+	<biomesoplenty:pear> : 125,
+	<biomesoplenty:peach> : 125,
+	<biomesoplenty:persimmon> : 125,
+	<biomesoplenty:filled_honeycomb> : 85,
+	<biomesoplenty:fleshchunk> : 75,
+	<minecraft:apple> : 65,
+	<minecraft:chorus_fruit> : 110,
+	<forestry:fruits> : 85,
+	<forestry:fruits:2> : 85,
+	<forestry:fruits:3> : 85,
+	<forestry:fruits:4> : 85,
+	<forestry:fruits:5> : 85,
+	<forestry:fruits:6> : 85,
+} as int[IItemStack];
+
+var biomassFluids =
+{
+	<liquid:water> : 0.6f,
+	<liquid:seed.oil> : 1.33f,
+	<liquid:seed_oil> : 1.0f,
+	<liquid:for.honey> : 1.5f,
+	<liquid:biocrude> : 2.0f,
+	<liquid:elemental_water_earth> : 3.5f,
+	<liquid:refined_biofuel> : 4.0f,
+	<liquid:elemental_mix> : 5.0f,
+
+} as float[crafttweaker.liquid.ILiquidStack];
+
+for item, fluidAmount in biomassItems
+{
+	for fluid, multiplier in biomassFluids
+	{
+		mods.forestry.Fermenter.addRecipe(<liquid:biomass> * fluidAmount, item, fluid * 100, 100, multiplier);
+	}
+}
+
 print("### Forestry Init Complete ###");

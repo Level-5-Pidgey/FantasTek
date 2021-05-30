@@ -610,7 +610,12 @@ val PlateMaterials =
 	"Boron" : <liquid:boron>,
 	"Lithium" : <liquid:lithium>,
 	"Magnesium" : <liquid:magnesium>,
-	"SealedWood" : <liquid:water>
+	"SealedWood" : <liquid:water>,
+	"MelodicAlloy" : <liquid:melodic_alloy>,
+	"CrystallineAlloy" : <liquid:crystalline_alloy>,
+	"CrystallinePinkSlime" : <liquid:crystalline_pink_slime>,
+	"StellarAlloy" : <liquid:stellar_alloy>,
+	"EnergeticSilver" : <liquid:energetic_silver>,
 } as ILiquidStack[string];
 
 for materialString, molten in PlateMaterials

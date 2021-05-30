@@ -187,26 +187,25 @@ var lubricantOutput =
 
 for item, fluidAmount in lubricantOutput
 {
-	mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:lubricant> * (fluidAmount * 1.2f), item, 2500);
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:lubricant> * fluidAmount, item, 1500);
+	scripts.helpers.addMeltingRecipe(<liquid:lubricant> * fluidAmount, item, 2500, 2);
 }
 
 //Create Elemental Liquids from Motes/Mod Items (or turn them into liquids)
 for elementalItem in scripts.helpers.AllFireT1Items
 {
-	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_fire> * 1000, elementalItem, 2500, false);
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_fire> * 1000, elementalItem, 2500, 2);
 } //Fire
 for elementalItem in scripts.helpers.AllWaterT1Items
 {
-	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_water> * 1000, elementalItem, 2500, false);
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_water> * 1000, elementalItem, 2500, 2);
 } //Water
 for elementalItem in scripts.helpers.AllAirT1Items
 {
-	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_air> * 1000, elementalItem, 2500, false);
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_air> * 1000, elementalItem, 2500, 2);
 } //Air
 for elementalItem in scripts.helpers.AllEarthT1Items
 {
-	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_earth> * 1000, elementalItem, 2500, false);
+	scripts.helpers.addMeltingRecipe(<liquid:elemental_water_earth> * 1000, elementalItem, 2500, 2);
 } //Earth
 
 //Create elemental mix

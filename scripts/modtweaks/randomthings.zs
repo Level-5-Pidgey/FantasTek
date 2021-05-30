@@ -69,6 +69,7 @@ val randomthingsRecipes_CRAFTINGTABLE = {
 	<randomthings:biomestone:3> * 8 : [[<minecraft:stonebrick:2>, <minecraft:stonebrick:2>, <minecraft:stonebrick:2>], [<minecraft:stonebrick:2>, <ore:gemMoon>, <minecraft:stonebrick:2>], [<minecraft:stonebrick:2>, <minecraft:stonebrick:2>, <minecraft:stonebrick:2>]],
 	<randomthings:biomestone:4> * 8 : [[<minecraft:stonebrick:3>, <minecraft:stonebrick:3>, <minecraft:stonebrick:3>], [<minecraft:stonebrick:3>, <ore:gemMoon>, <minecraft:stonebrick:3>], [<minecraft:stonebrick:3>, <minecraft:stonebrick:3>, <minecraft:stonebrick:3>]],
 	<randomthings:biomeglass> * 8 : [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:gemMoon>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]],
+	<randomthings:blockbreaker> : [[<minecraft:stone>, <quark:iron_rod>, <minecraft:stone>], [<minecraft:stone>, <ore:gearRedstoneAlloy>, <minecraft:stone>], [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in randomthingsRecipes_CRAFTINGTABLE {
