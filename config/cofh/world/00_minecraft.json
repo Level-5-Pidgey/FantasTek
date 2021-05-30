@@ -112,7 +112,7 @@
 				],
 				"cluster-size": 8
 			},
-			"cluster-count": 10,
+			"cluster-count": 7,
 			"center-height": 32,
 			"spread": 8,
 			"retrogen": false,

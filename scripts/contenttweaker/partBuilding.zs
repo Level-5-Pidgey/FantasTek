@@ -15,11 +15,11 @@ function RegisterMaterials(mat as mods.contenttweaker.Material, needsRegularOre 
 {
 	//Set Mining Level Strings for Ores
 	var oreMiningLevel = "4,4,4"; //Base Mining Level is 4 (copper)
-	if(mat.getName() == "Cobalt" || mat.getName() == "Ardite")
+	if(mat.getName() == "Cobalt" || mat.getName() == "Ardite" || mat.getName() == "Lithium" || mat.getName() == "Boron")
 	{
 		oreMiningLevel = "5,5,5";
 	}
-	else if(mat.getName() == "Platinum")
+	else if(mat.getName() == "Platinum" || mat.getName() == "Magnesium")
 	{
 		oreMiningLevel = "6,6,6";
 	}
@@ -172,7 +172,12 @@ for material, materialIngot in modded_oreMaterials {
 //Dense Plating, Sheet Metal, Basic Items (Plate, Gear, etc.)
 var modded_alloys as crafttweaker.oredict.IOreDictEntry[mods.contenttweaker.Material] = {
 	MaterialSystem.getMaterialBuilder().setName("Electrical Steel").setColor(mods.contenttweaker.Color.fromHex("e0dfd7")).build() : <ore:ingotElectricalSteel>,
+	MaterialSystem.getMaterialBuilder().setName("Melodic Alloy").setColor(mods.contenttweaker.Color.fromHex("905f9c")).build() : <ore:ingotMelodicAlloy>,
+	MaterialSystem.getMaterialBuilder().setName("Crystalline Alloy").setColor(mods.contenttweaker.Color.fromHex("2fb2eb")).build() : <ore:ingotCrystallineAlloy>,
+	MaterialSystem.getMaterialBuilder().setName("Crystalline Pink Slime").setColor(mods.contenttweaker.Color.fromHex("ef84f5")).build() : <ore:ingotCrystallinePinkSlime>,
+	MaterialSystem.getMaterialBuilder().setName("Stellar Alloy").setColor(mods.contenttweaker.Color.fromHex("cce0ff")).build() : <ore:ingotStellarAlloy>,
 	MaterialSystem.getMaterialBuilder().setName("Energetic Alloy").setColor(mods.contenttweaker.Color.fromHex("ff9b4a")).build() : <ore:ingotEnergeticAlloy>,
+	MaterialSystem.getMaterialBuilder().setName("Energetic Silver").setColor(mods.contenttweaker.Color.fromHex("4175b0")).build() : <ore:ingotEnergeticSilver>,
 	MaterialSystem.getMaterialBuilder().setName("Vibrant Alloy").setColor(mods.contenttweaker.Color.fromHex("a3e653")).build() : <ore:ingotVibrantAlloy>,
 	MaterialSystem.getMaterialBuilder().setName("Redstone Alloy").setColor(mods.contenttweaker.Color.fromHex("ed4e4e")).build() : <ore:ingotRedstoneAlloy>,
 	MaterialSystem.getMaterialBuilder().setName("Conductive Iron").setColor(mods.contenttweaker.Color.fromHex("ff9696")).build() : <ore:ingotConductiveIron>,

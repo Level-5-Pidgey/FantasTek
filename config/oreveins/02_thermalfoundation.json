@@ -28,7 +28,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 25
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -84,7 +84,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 30
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -140,7 +140,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 25
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -196,7 +196,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 25
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -252,7 +252,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 25
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -308,7 +308,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 25
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },

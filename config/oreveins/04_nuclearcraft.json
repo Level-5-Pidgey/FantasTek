@@ -1,0 +1,119 @@
+{
+  "boron_dense_vein": {
+    "type": "sphere",
+    "ore": [
+      {
+		"block": "nuclearcraft:ore",
+  		"meta": 5,
+        "weight": 60
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_1",
+		"meta": 4,
+        "weight": 40
+	  }
+    ],
+    "indicator": {
+      "blocks": { "block": "contenttweaker:sub_block_holder_2", "meta": 3 },
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+            { "block": "minecraft:sand" },
+    		{ "block": "minecraft:clay" }
+        ],
+      "rarity": 20
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 95,
+    "min_y": 3,
+    "max_y": 37,
+    "density": 180,
+    "vertical_size": 7,
+    "horizontal_size": 9,
+	"biomes": [
+      "ocean"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  },
+  "lithium_dense_vein": {
+    "type": "sphere",
+    "ore": [
+	  {
+	  	"block": "nuclearcraft:ore",
+		"meta": 6,
+      	"weight": 60
+      },
+      {
+        "block": "contenttweaker:sub_block_holder_3",
+		"meta": 3,
+        "weight": 40
+	  }
+    ],
+    "indicator": {
+      "blocks": { "block": "contenttweaker:sub_block_holder_7", "meta": 6 },
+      "replace_surface" : true,
+      "ignore_liquids" : true,
+      "blocks_under" : [
+    		{ "block": "minecraft:stone" },
+    		{ "block": "quark:elder_prismarine" },
+    		{ "block": "minecraft:packed_ice" },
+    		{ "block": "minecraft:grass" },
+    		{ "block": "minecraft:dirt" },
+    		{ "block": "minecraft:snow" },
+    		{ "block": "minecraft:snow_layer" },
+    		{ "block": "quark:biome_cobblestone" },
+    		{ "block": "minecraft:sandstone" },
+    		{ "block": "minecraft:sand" },
+    		{ "block": "minecraft:clay" }
+        ],
+      "rarity": 20
+    },
+    "stone": [
+		{ "block": "minecraft:stone" },
+		{ "block": "quark:elder_prismarine" },
+		{ "block": "minecraft:packed_ice" },
+		{ "block": "quark:biome_cobblestone" },
+		{ "block": "quark:limestone" },
+		{ "block": "quark:slate" },
+		{ "block": "quark:jasper" },
+		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:cobblestone" }
+	],
+    "rarity": 100,
+    "min_y": 3,
+    "max_y": 38,
+    "density": 180,
+    "vertical_size": 5,
+    "horizontal_size": 8,
+	"biomes": [
+      "snowy",
+      "ocean"
+  	],
+	"dimensions": [
+		0,
+		-11325
+	]
+  }
+}

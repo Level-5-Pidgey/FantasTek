@@ -110,9 +110,9 @@
 					"quark:jasper",
 					"minecraft:sandstone"
 				],
-				"cluster-size": 18
+				"cluster-size": 13
 			},
-			"cluster-count": 2,
+			"cluster-count": 6,
 			"min-height": 0,
 			"max-height": 256,
 			"retrogen": false,
@@ -138,7 +138,7 @@
 				"block": [{
 						"name": "biomesoplenty:dirt",
 						"metadata": 2,
-						"weight": 25
+						"weight": 15
 					},
 					{
 						"name": "minecraft:clay",
@@ -157,7 +157,7 @@
 				],
 				"cluster-size": 18
 			},
-			"cluster-count": 2,
+			"cluster-count": 4,
 			"min-height": 0,
 			"max-height": 256,
 			"retrogen": false,
@@ -178,39 +178,37 @@
 		},
 
 		"salt": {
-			"distribution": "uniform",
-			"generator": {
-				"block": [{
-						"name": "biomesoplenty:dirt",
-						"metadata": 2,
-						"weight": 25
-					},
-					{
-						"name": "mekanism:saltblock",
-						"weight": 75
-					}
-				],
-				"material": [
-					"minecraft:stone",
-					"quark:elder_prismarine",
-					"minecraft:packed_ice",
-					"quark:biome_cobblestone",
-					"quark:limestone",
-					"quark:slate",
-					"quark:jasper",
-					"minecraft:sandstone"
-				],
-				"cluster-size": 12
-			},
+			"distribution": "underfluid",
+			"fluid": "water",
+			"generator": [
+				{
+					"type": "cluster",
+					"block": "mekanism:saltblock",
+					"material": [
+						"minecraft:sand",
+						"minecraft:clay",
+						"minecraft:gravel",
+					],
+					"cluster-size": 14
+				}
+			],
+            "chunk-chance": 2,
 			"cluster-count": 4,
-			"min-height": 63,
-			"max-height": 30,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
-				"value": [{
+				"value": [
+				{
 					"type": "dictionary",
-					"entry": "WATER"
+					"entry": "RIVER"
+				},
+				{
+					"type": "dictionary",
+					"entry": "BEACH"
+				},
+				{
+					"type": "dictionary",
+					"entry": "OCEAN"
 				}]
 			},
 			"dimension": {

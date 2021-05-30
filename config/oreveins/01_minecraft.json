@@ -32,7 +32,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 30
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -52,7 +52,8 @@
     "vertical_size": 8,
     "horizontal_size": 14,
 	"biomes": [
-      "wet"
+      "wet",
+      "ocean"
   	],
 	"dimensions": [
 		0,
@@ -144,7 +145,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 25
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -155,6 +156,7 @@
 		{ "block": "quark:slate" },
 		{ "block": "quark:jasper" },
 		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:stained_hardened_clay" },
 		{ "block": "minecraft:cobblestone" }
 	],
     "rarity": 90,
@@ -200,7 +202,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 30
+      "rarity": 20
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -256,7 +258,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 15
+      "rarity": 10
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -269,12 +271,12 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 110,
+    "rarity": 105,
     "min_y": 3,
     "max_y": 24,
     "density": 180,
     "vertical_size": 7,
-    "horizontal_size": 5,
+    "horizontal_size": 6,
 	"biomes": [
       "wet"
   	],
@@ -312,7 +314,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 15
+      "rarity": 10
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -325,12 +327,12 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 110,
+    "rarity": 105,
     "min_y": 3,
     "max_y": 32,
     "density": 180,
-    "vertical_size": 5,
-    "horizontal_size": 5,
+    "vertical_size": 6,
+    "horizontal_size": 6,
 	"biomes": [
       "mountain"
   	],
@@ -372,8 +374,10 @@
     		{ "block": "minecraft:snow_layer" },
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
+    		{ "block": "minecraft:sand" },
+    		{ "block": "minecraft:clay" }
         ],
-      "rarity": 35
+      "rarity": 25
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -384,6 +388,7 @@
 		{ "block": "quark:slate" },
 		{ "block": "quark:jasper" },
 		{ "block": "minecraft:sandstone" },
+		{ "block": "minecraft:sand" },
 		{ "block": "minecraft:cobblestone" }
 	],
     "rarity": 95,

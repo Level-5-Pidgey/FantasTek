@@ -1,44 +1,87 @@
 {
-  "oil_generation": {
-    "type": "cone",
-    "ore": "magneticraft:oil_source",
-    "indicator": {
-      "blocks": { "block": "thermalfoundation:ore_fluid", "meta": 1 },
-      "replace_surface" : true,
-      "ignore_liquids" : true,
-      "blocks_under" : [
-    		{ "block": "minecraft:stone" },
-    		{ "block": "quark:elder_prismarine" },
-    		{ "block": "minecraft:packed_ice" },
-    		{ "block": "minecraft:grass" },
-    		{ "block": "minecraft:dirt" },
-    		{ "block": "minecraft:snow" },
-    		{ "block": "minecraft:snow_layer" },
-    		{ "block": "quark:biome_cobblestone" },
-    		{ "block": "minecraft:sandstone" },
+    "pyrite_vein": {
+        "type": "sphere",
+        "ore": [
+            {
+                "block": "magneticraft:ores",
+                "meta": 4,
+                "weight": 40
+            },
+            {
+                "block": "minecraft:iron_ore",
+                "weight": 30
+            },
+            {
+                "block": "contenttweaker:sub_block_holder_9",
+                "meta": 3,
+                "weight": 20
+            }
         ],
-      "rarity": 30
+        "stone": [
+            { "block": "minecraft:stone" },
+            { "block": "quark:elder_prismarine" },
+            { "block": "minecraft:packed_ice" },
+            { "block": "quark:biome_cobblestone" },
+            { "block": "quark:limestone" },
+            { "block": "quark:slate" },
+            { "block": "quark:jasper" },
+            { "block": "minecraft:sandstone" },
+            { "block": "minecraft:cobblestone" }
+        ],
+        "rarity": 85,
+        "min_y": 5,
+        "max_y": 40,
+        "density": 180,
+        "vertical_size": 12,
+        "horizontal_size": 11,
+        "biomes": [
+            "ocean"
+        ],
+        "dimensions": [
+            0,
+            -11325
+        ]
     },
-    "stone": [
-		{ "block": "minecraft:stone" },
-		{ "block": "quark:elder_prismarine" },
-		{ "block": "minecraft:packed_ice" },
-		{ "block": "quark:biome_cobblestone" },
-		{ "block": "quark:limestone" },
-		{ "block": "quark:slate" },
-		{ "block": "quark:jasper" },
-		{ "block": "minecraft:sandstone" },
-		{ "block": "minecraft:cobblestone" }
-	],
-    "rarity": 130,
-    "min_y": 15,
-    "max_y": 50,
-    "density": 400,
-    "vertical_size": 9,
-    "horizontal_size": 12,
-	"biomes": [
-      "hot",
-	  "wet"
-  	]
-  }
+    "oil_generation": {
+        "type": "cone",
+        "ore": "magneticraft:oil_source",
+        "indicator": {
+            "blocks": { "block": "thermalfoundation:ore_fluid", "meta": 1 },
+            "replace_surface" : true,
+            "ignore_liquids" : true,
+            "blocks_under" : [
+                { "block": "minecraft:stone" },
+                { "block": "quark:elder_prismarine" },
+                { "block": "minecraft:packed_ice" },
+                { "block": "minecraft:grass" },
+                { "block": "minecraft:dirt" },
+                { "block": "minecraft:snow" },
+                { "block": "minecraft:snow_layer" },
+                { "block": "quark:biome_cobblestone" },
+                { "block": "minecraft:sandstone" },
+            ],
+            "rarity": 20
+        },
+        "stone": [
+            { "block": "minecraft:stone" },
+            { "block": "quark:elder_prismarine" },
+            { "block": "minecraft:packed_ice" },
+            { "block": "quark:biome_cobblestone" },
+            { "block": "quark:limestone" },
+            { "block": "quark:slate" },
+            { "block": "quark:jasper" },
+            { "block": "minecraft:sandstone" },
+            { "block": "minecraft:cobblestone" }
+        ],
+        "rarity": 130,
+        "min_y": 15,
+        "max_y": 50,
+        "density": 400,
+        "vertical_size": 9,
+        "horizontal_size": 12,
+        "biomes": [
+            "hot",
+            "wet"
+        ]
+    }
 }

@@ -177,6 +177,7 @@ val StageLessItems = [
 	<forestry:worktable>,
 	<magneticraft:conveyor_belt>,
 	<magneticraft:inserter>,
+	<magneticraft:ores:4>,
 	<enderio:block_simple_furnace>,
 	<forestry:squeezer>,
 	<thermaldynamics:duct_0>,
@@ -632,6 +633,7 @@ val StageLessItems = [
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "fabrico"}]}),
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),
 	<industrialforegoing:item_splitter>,
+	<mekanism:configurator>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

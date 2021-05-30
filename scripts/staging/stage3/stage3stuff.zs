@@ -14,6 +14,7 @@ val stage3_stageMods = [
   "draconicevolution",
   "avaritia",
   "ae2stuff",
+  "rftools",
   "advancedrocketry",
   "libvulpes",
   "redstonearsenal",
