@@ -190,6 +190,7 @@ val thaumcraftLoot_Remove as int[][crafttweaker.item.IItemStack] = {
 	<thaumcraft:salis_mundus> : [0,1,2],
 	<thaumcraft:amulet_vis> : [0,1,2],
 	<minecraft:gold_nugget> : [0,1,2],
+	<minecraft:iron_sword> : [1,2],
 };
 
 for item, bagTiers in thaumcraftLoot_Remove {

@@ -51,6 +51,7 @@ mods.appliedenergistics2.Grinder.addRecipe(<mekanism:salt> * 2, <mekanism:saltbl
 recipes.removeByRecipeName("mekanism:paper");
 
 //Craft the Configurator
+recipes.remove(<mekanism:configurator>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:configurator>, [[null, null, <magneticraft:battery_item_medium>], [<ore:ingotElectrotineAlloy>, <ore:stickIron>, null], [<ore:stickIron>, <ore:ingotElectrotineAlloy>, null]]);
 
 //Basic Energy Cube
@@ -120,6 +121,7 @@ val mekanismRecipes_CRAFTINGTABLE = {
 	<mekanism:basicblock2:3>.withTag({tier: 1}) : [[<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})], [scripts.helpers.BatteryTiers[2], <enderio:item_material:66>, scripts.helpers.BatteryTiers[2]], [<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})]],
 	<mekanism:basicblock2:4>.withTag({tier: 1}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], <enderio:item_material:66>, scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
 	<mekanism:electrolyticcore> : [[<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>], [<ore:dustGold>, null, <ore:dustSilver>], [<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>]],
+	<mekanism:gastank>.withTag({tier: 0}) : [[<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>], [<ore:dustGold>, null, <ore:dustSilver>], [<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in mekanismRecipes_CRAFTINGTABLE {
@@ -142,5 +144,17 @@ mods.thermalexpansion.Compactor.addStorageRecipe(<mekanism:polyethene:2>, <mekan
 mods.mekanism.GasConversion.register(<liquid:oxygen> * 1, <gas:oxygen> * 1);
 mods.mekanism.GasConversion.register(<liquid:hydrogen> * 1, <gas:hydrogen> * 1);
 
+//Extended Crafting Recipes (T2 Table)
+val advancedRocketry_EXTENDEDCRAFTING_T2 = {
+	 <mekanism:machineblock2>	:		[[<ore:blockGlassColorless>, scripts.helpers.CircuitTiers[1], <ore:blockGlassColorless>],
+	 									[null, scripts.helpers.FrameTiers[0], null],
+	 									[<ore:blockGlassColorless>, scripts.helpers.CircuitTiers[1], <ore:blockGlassColorless>],
+	 									[null, <ore:ingotElectricalSteel>, <libvulpes:structuremachine>]],
+} as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
+
+for key, value in advancedRocketry_EXTENDEDCRAFTING_T2 {
+	recipes.remove(key.withAmount(1));
+	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
+}
 
 print("### Mekanism Init Complete ###");

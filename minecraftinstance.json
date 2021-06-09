@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-05-30T00:52:31.0520406Z",
-  "playedCount": 32,
+  "lastPlayed": "2021-06-09T06:50:39.1793021Z",
+  "playedCount": 53,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,8 +47,8 @@
   "name": "FantasTek",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-05-01T01:23:56.088546Z",
-  "lastRefreshAttempt": "0001-01-01T00:00:00",
+  "lastPreviousMatchUpdate": "2021-06-09T06:39:46.5742554Z",
+  "lastRefreshAttempt": "2021-06-09T16:43:58.3933776+10:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
@@ -178,113 +178,89 @@
       "addonID": 225643,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 2846950,
-        "displayName": "Botania r1.10-363.jar",
-        "fileName": "Botania r1.10-363.jar",
-        "fileDate": "2019-12-22T18:40:54.207Z",
-        "fileLength": 13814617,
+        "id": 3330934,
+        "displayName": "Botania r1.10-364.4.jar",
+        "fileName": "Botania r1.10-364.4.jar",
+        "fileDate": "2021-05-31T15:12:49.31Z",
+        "fileLength": 13817704,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2846/950/Botania r1.10-363.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3330/934/Botania r1.10-364.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 34544384,
+            "id": 0,
             "addonId": 243121,
             "type": 2,
-            "fileId": 2846950
+            "fileId": 0
           },
           {
-            "id": 34544386,
-            "addonId": 227083,
-            "type": 3,
-            "fileId": 2846950
-          },
-          {
-            "id": 34544385,
-            "addonId": 275300,
-            "type": 2,
-            "fileId": 2846950
-          },
-          {
-            "id": 34544383,
+            "id": 0,
             "addonId": 238222,
             "type": 2,
-            "fileId": 2846950
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 227083,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 156022543,
-            "type": 3,
+            "fingerprint": 4074037441,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "vazkii",
-            "fingerprint": 498055877,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2001698494,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 582579411,
-            "type": 3,
+            "fingerprint": 3675882,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1152924348,
-            "type": 3,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4206274848,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 1923406233,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3763127432,
+        "packageFingerprint": 2263235725,
         "gameVersion": [
           "Forge",
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1726350,
-        "projectId": 225643,
-        "packageFingerprintId": 390229783,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2038940,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Botania r1.10-363.jar"
+        "FileNameOnDisk": "Botania r1.10-364.4.jar"
       },
       "dateInstalled": "2020-12-24T05:41:56.7704481Z",
-      "dateUpdated": "2020-12-24T05:41:56.7704481Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-06-09T06:26:03.4375083Z",
+      "dateLastUpdateAttempted": "2021-06-09T06:26:03.4375083Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3359,14 +3335,14 @@
       "addonID": 239197,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 3294372,
-        "displayName": "CraftTweaker2-1.12-4.1.20.646.jar",
-        "fileName": "CraftTweaker2-1.12-4.1.20.646.jar",
-        "fileDate": "2021-04-30T23:02:58.48Z",
-        "fileLength": 1540699,
+        "id": 3335030,
+        "displayName": "CraftTweaker2-1.12-4.1.20.647.jar",
+        "fileName": "CraftTweaker2-1.12-4.1.20.647.jar",
+        "fileDate": "2021-06-02T13:50:16.193Z",
+        "fileLength": 1541105,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3294/372/CraftTweaker2-1.12-4.1.20.646.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3335/30/CraftTweaker2-1.12-4.1.20.647.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -3374,7 +3350,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3511383395,
+            "fingerprint": 386203292,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3386,7 +3362,7 @@
           },
           {
             "foldername": "crafttweaker",
-            "fingerprint": 567526281,
+            "fingerprint": 4201977349,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3404,7 +3380,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1516798348,
+            "fingerprint": 1802506821,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3415,7 +3391,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2423603192,
+        "packageFingerprint": 3318662535,
         "gameVersion": [
           "1.12.2"
         ],
@@ -3428,12 +3404,12 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.646.jar"
+        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.647.jar"
       },
       "dateInstalled": "2021-05-01T01:23:45.233046Z",
-      "dateUpdated": "2021-05-01T01:23:45.2390452Z",
-      "dateLastUpdateAttempted": "2021-05-01T01:23:45.2390452Z",
-      "status": 5,
+      "dateUpdated": "2021-06-09T06:30:24.9150321Z",
+      "dateLastUpdateAttempted": "2021-06-09T06:30:24.9150321Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7254,7 +7230,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7379201Z",
       "dateUpdated": "2020-12-27T06:19:52.7060839Z",
       "dateLastUpdateAttempted": "2020-12-27T06:19:52.7060839Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7537,7 +7513,7 @@
       "dateInstalled": "2020-12-29T09:44:31.4615354Z",
       "dateUpdated": "2020-12-29T09:44:31.4670404Z",
       "dateLastUpdateAttempted": "2020-12-29T09:44:31.4670404Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9354,84 +9330,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 422669,
-      "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
-      "installedFile": {
-        "id": 3200622,
-        "displayName": "memorycleaner-1.4.jar",
-        "fileName": "memorycleaner-1.4.jar",
-        "fileDate": "2021-02-11T18:02:02.643Z",
-        "fileLength": 14170,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3200/622/memorycleaner-1.4.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2464251221,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "xyz",
-            "fingerprint": 58804017,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2472275389,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 151439978,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3825270240,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1209732772,
-        "gameVersion": [
-          "Forge",
-          "1.12.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "memorycleaner-1.4.jar"
-      },
-      "dateInstalled": "2021-02-28T00:52:27.6936385Z",
-      "dateUpdated": "2021-02-28T00:52:27.6946397Z",
-      "dateLastUpdateAttempted": "2021-02-28T00:52:27.6946397Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 257356,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
@@ -9800,7 +9698,7 @@
       "dateInstalled": "2020-12-24T05:42:00.013233Z",
       "dateUpdated": "2021-01-26T04:26:37.0240278Z",
       "dateLastUpdateAttempted": "2021-01-26T04:26:37.0240278Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11039,7 +10937,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7669444Z",
       "dateUpdated": "2020-12-27T06:19:46.4689641Z",
       "dateLastUpdateAttempted": "2020-12-27T06:19:46.4689641Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11321,7 +11219,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7844601Z",
       "dateUpdated": "2020-12-27T06:19:50.4980385Z",
       "dateLastUpdateAttempted": "2020-12-27T06:19:50.4980385Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11764,7 +11662,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7349172Z",
       "dateUpdated": "2020-12-24T05:41:56.7349172Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12611,7 +12509,7 @@
       "dateInstalled": "2021-01-25T05:35:09.391745Z",
       "dateUpdated": "2021-01-25T05:35:09.3982457Z",
       "dateLastUpdateAttempted": "2021-01-25T05:35:09.3982457Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17407,8 +17305,8 @@
         "isServerPack": false,
         "FileNameOnDisk": "LibVulpes-1.12.2-0.4.2-75-universal.jar"
       },
-      "dateInstalled": "2021-05-01T01:49:53.5640465Z",
-      "dateUpdated": "2021-05-01T01:49:53.5640465Z",
+      "dateInstalled": "2021-06-09T06:39:46.3155041Z",
+      "dateUpdated": "2021-06-09T06:39:46.3155041Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 3,
       "preferenceAutoInstallUpdates": null,
@@ -17425,82 +17323,70 @@
       "addonID": 236542,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 3207952,
-        "displayName": "AdvancedRocketry 1.12.2-1.7.0-238 build -238 for 1.12.2",
-        "fileName": "AdvancedRocketry-1.12.2-1.7.0-238-universal.jar",
-        "fileDate": "2021-02-18T00:59:35.297Z",
-        "fileLength": 15120895,
-        "releaseType": 2,
-        "fileStatus": 8,
-        "downloadUrl": "https://edge.forgecdn.net/files/3207/952/AdvancedRocketry-1.12.2-1.7.0-238-universal.jar",
+        "id": 3015079,
+        "displayName": "AdvancedRocketry 1.12.2-1.7.0-232 build -232 for 1.12.2",
+        "fileName": "AdvancedRocketry-1.12.2-1.7.0-232-universal.jar",
+        "fileDate": "2020-07-26T11:59:34.017Z",
+        "fileLength": 15078619,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3015/79/AdvancedRocketry-1.12.2-1.7.0-232-universal.jar",
         "isAlternate": false,
-        "alternateFileId": 3207953,
+        "alternateFileId": 3015080,
         "dependencies": [
           {
-            "id": 57087606,
+            "id": 0,
             "addonId": 236541,
             "type": 3,
-            "fileId": 3207952
+            "fileId": 0
           }
         ],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3626957878,
-            "type": 3,
+            "fingerprint": 979698704,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "zmaster587",
-            "fingerprint": 2148742201,
-            "type": 3,
+            "fingerprint": 2271408284,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 3472427048,
-            "type": 3,
+            "fingerprint": 3713591560,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3967635666,
-            "type": 3,
+            "fingerprint": 2522294821,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 57190183,
+        "packageFingerprint": 971328790,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2177465,
-        "projectId": 236542,
-        "packageFingerprintId": 607803532,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2731359,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "AdvancedRocketry-1.12.2-1.7.0-238-universal.jar"
+        "FileNameOnDisk": "AdvancedRocketry-1.12.2-1.7.0-232-universal.jar"
       },
-      "dateInstalled": "2021-05-01T01:49:42.323259Z",
-      "dateUpdated": "2021-05-01T01:49:42.323259Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateInstalled": "2021-06-09T06:43:54.6970533Z",
+      "dateUpdated": "2021-06-09T06:43:54.715054Z",
+      "dateLastUpdateAttempted": "2021-06-09T06:43:54.715054Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18834,7 +18720,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7794554Z",
       "dateUpdated": "2020-12-27T06:19:44.0583319Z",
       "dateLastUpdateAttempted": "2020-12-27T06:19:44.0583319Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22427,82 +22313,70 @@
       "addonID": 266936,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 2722779,
-        "displayName": "JAOPCA-1.12.2-2.2.8.103.jar",
-        "fileName": "JAOPCA-1.12.2-2.2.8.103.jar",
-        "fileDate": "2019-06-10T09:44:13.993Z",
-        "fileLength": 457539,
+        "id": 3294077,
+        "displayName": "JAOPCA-1.12.2-2.2.8.105.jar",
+        "fileName": "JAOPCA-1.12.2-2.2.8.105.jar",
+        "fileDate": "2021-04-30T17:00:29.92Z",
+        "fileLength": 455083,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2722/779/JAOPCA-1.12.2-2.2.8.103.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3294/77/JAOPCA-1.12.2-2.2.8.105.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 27086253,
+            "id": 0,
             "addonId": 275153,
             "type": 3,
-            "fileId": 2722779
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 422522155,
-            "type": 3,
+            "fingerprint": 627461801,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "de",
             "fingerprint": 4170845716,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "thelm",
-            "fingerprint": 4249496509,
-            "type": 3,
+            "fingerprint": 3828320236,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 1455654317,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1126104228,
+        "packageFingerprint": 2859414566,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1573604,
-        "projectId": 266936,
-        "packageFingerprintId": 322901590,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 1831124,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "JAOPCA-1.12.2-2.2.8.103.jar"
+        "FileNameOnDisk": "JAOPCA-1.12.2-2.2.8.105.jar"
       },
       "dateInstalled": "2021-05-01T01:41:14.4403849Z",
-      "dateUpdated": "2021-05-01T01:41:14.4403849Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-06-09T06:30:18.7524343Z",
+      "dateLastUpdateAttempted": "2021-06-09T06:30:18.7524343Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22762,7 +22636,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7674454Z",
       "dateUpdated": "2020-12-24T05:41:56.7674454Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

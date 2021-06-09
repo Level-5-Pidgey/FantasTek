@@ -16,8 +16,6 @@ mods.advancedrocketry.ArcFurnace.addRecipe(<enderio:item_alloy_ingot:2>, 600, 16
 //Remove power gen options
 val enderIOGenerators =
 [
-	<enderio:block_combustion_generator>,
-	<enderio:block_enhanced_combustion_generator>,
 	<enderio:block_stirling_generator>,
 	<enderio:block_simple_stirling_generator>,
 	<enderio:block_decoration3:2>,
@@ -34,7 +32,6 @@ for generator in enderIOGenerators
 val enderIOCategories =
 [
 	"Painter",
-	"CombustionGenerator",
 	"StirlingGenerator",
 	"LavaGenerator"
 ] as string[];
@@ -448,12 +445,12 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in magneticraft_EXTENDEDCRAFTING_T2 {
-	//recipes.remove(key.withAmount(1));
-	//scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
+	recipes.remove(key.withAmount(1));
+	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
 }
 
 //Upgrade NC Alloy Furnace to EnderIO Alloy Furnace
-mods.extendedcrafting.TableCrafting.addShaped(0, <enderio:block_simple_alloy_smelter>, [
+mods.extendedcrafting.TableCrafting.addShaped(0, <enderio:block_alloy_smelter>, [
 	[<ore:plateCrystallineAlloy>, <ore:plateCrystallineAlloy>, <ore:plateCrystallineAlloy>],
 	[<ore:plateCrystallineAlloy>, <nuclearcraft:alloy_furnace_idle>, <ore:plateCrystallineAlloy>],
 	[<ore:plateCrystallineAlloy>, scripts.helpers.MotorTiers[2], <ore:plateCrystallineAlloy>]

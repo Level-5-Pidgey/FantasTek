@@ -42,6 +42,9 @@ for item in unusedItems
 	scripts.helpers.unstageAndHide(item);
 }
 
+//Remove smelting recipe for Circuit Plates
+furnace.remove(<projectred-core:resource_item> * 2);
+
 //Remove Silicon Boule -> Sandy Coal Compound Crafting
 furnace.remove(<projectred-core:resource_item:300>, <projectred-core:resource_item:250>);
 

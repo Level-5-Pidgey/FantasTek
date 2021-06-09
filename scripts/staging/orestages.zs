@@ -58,6 +58,12 @@ function GetOreDictsForMaterial(materialString as string) as IOreDictEntry[]
 var DenseAndPoorOres as crafttweaker.item.IItemStack[crafttweaker.item.IItemStack] =
 {
 	//Ender Poor Ores
+		<contenttweaker:sub_block_holder_7:2> : <minecraft:end_stone>,
+		<contenttweaker:sub_block_holder_0:15> : <minecraft:end_stone>,
+		<contenttweaker:sub_block_holder_0:1> : <minecraft:end_stone>,
+		<contenttweaker:sub_block_holder_3:5> : <minecraft:end_stone>,
+		<contenttweaker:sub_block_holder_5:3> : <minecraft:end_stone>,
+		<contenttweaker:sub_block_holder_7:7> : <minecraft:end_stone>,
 		<contenttweaker:sub_block_holder_15:2> : <minecraft:end_stone>,
 		<contenttweaker:sub_block_holder_15:3> : <minecraft:end_stone>,
 		<contenttweaker:sub_block_holder_13:12> : <minecraft:end_stone>,
@@ -117,6 +123,12 @@ var DenseAndPoorOres as crafttweaker.item.IItemStack[crafttweaker.item.IItemStac
 		<contenttweaker:sub_block_holder_8:2> : <minecraft:netherrack>,
 		<contenttweaker:sub_block_holder_8:5> : <minecraft:netherrack>,
 		<contenttweaker:sub_block_holder_8:12> : <minecraft:netherrack>,
+		<contenttweaker:sub_block_holder_0:7> : <minecraft:netherrack>,
+		<contenttweaker:sub_block_holder_0:5> : <minecraft:netherrack>,
+		<contenttweaker:sub_block_holder_6:8> : <minecraft:netherrack>,
+		<contenttweaker:sub_block_holder_5:1> : <minecraft:netherrack>,
+		<contenttweaker:sub_block_holder_0:8> : <minecraft:netherrack>,
+		<contenttweaker:sub_block_holder_1:1> : <minecraft:netherrack>,
 	//Overworld Poor Ores
 		<contenttweaker:sub_block_holder_15:5> : <minecraft:cobblestone>,
 		<contenttweaker:sub_block_holder_14> : <minecraft:cobblestone>,
@@ -146,6 +158,12 @@ var DenseAndPoorOres as crafttweaker.item.IItemStack[crafttweaker.item.IItemStac
 		<contenttweaker:sub_block_holder_9:3> : <minecraft:cobblestone>,
 		<contenttweaker:sub_block_holder_9:11> : <minecraft:cobblestone>,
 		<contenttweaker:sub_block_holder_8:15> : <minecraft:cobblestone>,
+		<contenttweaker:sub_block_holder_7:6> : <minecraft:cobblestone>,
+		<contenttweaker:sub_block_holder_3:3> : <minecraft:cobblestone>,
+		<contenttweaker:sub_block_holder_1:4> : <minecraft:cobblestone>,
+		<contenttweaker:sub_block_holder_2:3> : <minecraft:cobblestone>,
+		<contenttweaker:sub_block_holder_5:7> : <minecraft:cobblestone>,
+		<contenttweaker:sub_block_holder_3:14> : <minecraft:cobblestone>,
 	//Ender Dense Ores
 		<contenttweaker:sub_block_holder_15:1> : <minecraft:end_stone>,
 		<contenttweaker:sub_block_holder_13:13> : <minecraft:end_stone>,

@@ -74,7 +74,13 @@
 			"min-height": 0,
 			"max-height": 256,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "OCEAN"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -198,18 +204,15 @@
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
-				{
-					"type": "dictionary",
-					"entry": "RIVER"
-				},
-				{
-					"type": "dictionary",
-					"entry": "BEACH"
-				},
-				{
-					"type": "dictionary",
-					"entry": "OCEAN"
-				}]
+					{
+						"type": "dictionary",
+						"entry": [
+							"RIVER",
+							"BEACH",
+							"OCEAN"
+						]
+					}
+				]
 			},
 			"dimension": {
 				"restriction": "blacklist",

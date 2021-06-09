@@ -141,4 +141,9 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:alloy_furnace_idl
 //Mechanical Imbuement for Motor
 scripts.mmhelper.AddMechanicalImbuerRecipe(scripts.helpers.createRecipeName(scripts.helpers.MotorTiers[1]), scripts.helpers.MotorTiers[1], 50000);
 
+//Remove some Manufactory Recipes
+mods.nuclearcraft.manufactory.removeRecipeWithOutput(<nuclearcraft:part:6>);
+mods.nuclearcraft.manufactory.removeRecipeWithOutput(<thermalfoundation:material:772> * 2);
+mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productingot:3>);
+
 print("### NuclearCraft Init Complete ###");

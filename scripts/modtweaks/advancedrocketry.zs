@@ -118,9 +118,9 @@ for key, value in advancedRocketry_EXTENDEDCRAFTING {
 //Extended Crafting Recipes (T2 Table)
 val advancedRocketry_EXTENDEDCRAFTING_T2 = {
 	 <advancedrocketry:electrolyser>	:	[[<ore:ingotSteel>, null, <ore:ingotSteel>],
-	 									[null, <mekanism:electrolyticcore>, null],
-	 									[<ore:ingotSteel>, scripts.helpers.FrameTiers[2], <ore:ingotSteel>],
-	 									[null, <ore:ingotEnergeticSilver>, <libvulpes:structuremachine>]],
+		 									[null, <mekanism:electrolyticcore>, null],
+		 									[<ore:ingotSteel>, scripts.helpers.FrameTiers[0], <ore:ingotSteel>],
+		 									[null, <ore:ingotElectricalSteel>, <libvulpes:structuremachine>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in advancedRocketry_EXTENDEDCRAFTING_T2 {
@@ -225,5 +225,9 @@ for key, value in enderioRecipes_ASSEMBLY {
   recipes.removeShaped(key.withAmount(1));
   scripts.helpers.CreateAssemblyRecipe(key, value, 60, 15000);
 }
+
+//Change Water Electrolysis Output
+mods.advancedrocketry.Electrolyser.removeRecipe(<liquid:hydrogen>, <liquid:oxygen>);
+mods.advancedrocketry.Electrolyser.addRecipe(<liquid:liquidhydrogen> * 50, <liquid:liquidoxygen> * 50, 20, 125, <liquid:water> * 100);
 
 print("### Advanced Rocketry Init Complete ###");

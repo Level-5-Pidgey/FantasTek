@@ -1,8 +1,8 @@
 {
-	x: 18.0d,
+	x: 10.0d,
 	y: 6.0d,
 	dependencies: [
-		"6c280ff9"
+		"2fb5c9f4"
 	],
 	tasks: [{
 		uid: "9ee747bc",
@@ -10,5 +10,24 @@
 		items: [{
 			item: "advancedrocketry:electrolyser"
 		}]
+	}],
+	rewards: [{
+		uid: "2f7d772d",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -7321793126330253362L,
+					AS_Amulet_HolderMost: -1691932688462756616L
+				}
+			},
+			id: "mekanism:machineblock2"
+		}
+	},
+	{
+		uid: "a914c161",
+		type: "item",
+		item: "minecraft:coal",
+		count: 16
 	}]
 }

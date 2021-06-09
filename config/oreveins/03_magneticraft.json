@@ -32,8 +32,8 @@
         "min_y": 5,
         "max_y": 40,
         "density": 180,
-        "vertical_size": 12,
-        "horizontal_size": 11,
+        "vertical_size": 5,
+        "horizontal_size": 7,
         "biomes": [
             "ocean"
         ],

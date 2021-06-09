@@ -29,7 +29,7 @@ function CreateToolForgeAndStage(material as string, stageToSet as string)
 
 //Remove all casting-based sharpening kits
 recipes.removeByRecipeName("tconstruct:repair");
-scripts.helpers.AddTooltip(<tconstruct:sharpening_kit>, ["Cannot be used to repair tools in a crafting table.", "Still can be used to upgrade the mining level of a tool!"]);
+scripts.helpers.AddTooltip(<tconstruct:sharpening_kit>, ["Cannot be used to repair tools in a crafting table.", "Still can be used to upgrade the mining level of a tool!", "Can also still be used to repair in a forge."]);
 
 //Remove tool forge crafting recipes
 recipes.remove(<tconstruct:toolforge>);

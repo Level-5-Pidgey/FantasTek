@@ -239,6 +239,8 @@ val stage2_stageItems = [
     <nuclearcraft:gem_dust:11>,
     <nuclearcraft:compound:3>,
     <nuclearcraft:compound:4>,
+    <mekanism:machineblock2>,
+    <mekanism:gastank>.withTag({tier: 0}),
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems

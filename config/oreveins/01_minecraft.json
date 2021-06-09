@@ -166,7 +166,9 @@
     "vertical_size": 11,
     "horizontal_size": 14,
 	"biomes": [
-      "mesa"
+      "mesa",
+      "savanna",
+      "jungle"
   	],
 	"dimensions": [
 		0,
@@ -278,7 +280,8 @@
     "vertical_size": 7,
     "horizontal_size": 6,
 	"biomes": [
-      "wet"
+      "wet",
+      "ocean"
   	],
 	"dimensions": [
 		0,
