@@ -19,11 +19,14 @@ events.onPlayerItemPickup(function(event as crafttweaker.event.PlayerItemPickupE
     var player = event.player;
 
     //If the player picks up either of these items then they should be given a debuff that kills them
-    if(cursedItems has event.stackCopy.definition.id)
-    {
-        if(!player.isPotionActive(<potion:extrautils2:effect.xu2.doom>))
-        {
-            player.addPotionEffect(<potion:extrautils2:effect.xu2.doom>.makePotionEffect(15, 1, false, false));
-        }
-    }
+	for cursedItem in cursedItems
+	{
+		if(cursedItem == event.stackCopy.definition.id)
+		{
+			if(!player.isPotionActive(<potion:extrautils2:xu2.doom>))
+	        {
+	            player.addPotionEffect(<potion:extrautils2:xu2.doom>.makePotionEffect(100, 1, false, false));
+	        }
+		}
+	}
 });
