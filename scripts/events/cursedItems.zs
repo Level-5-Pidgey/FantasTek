@@ -21,12 +21,12 @@ events.onPlayerItemPickup(function(event as crafttweaker.event.PlayerItemPickupE
     //If the player picks up either of these items then they should be given a debuff that kills them
 	for cursedItem in cursedItems
 	{
-		if(cursedItem == event.stackCopy.definition.id)
+		if(!isNull(event.stackCopy))
 		{
-			if(!player.isPotionActive(<potion:extrautils2:xu2.doom>))
-	        {
-	            player.addPotionEffect(<potion:extrautils2:xu2.doom>.makePotionEffect(100, 1, false, false));
-	        }
+			if(cursedItem == event.stackCopy.definition.id)
+			{
+				player.attackEntityFrom(IDamageSource.OUT_OF_WORLD(), 200.0);
+			}
 		}
 	}
 });
