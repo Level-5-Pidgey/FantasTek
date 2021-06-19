@@ -3,35 +3,28 @@
 	"populate": {
 		"ore_cinnabar": {
 			"distribution": "cave",
-			"generator": [
-				{
-					"type": "cluster",
-					"block": "thaumcraft:ore_cinnabar",
-					"material": [
-						"minecraft:stone",
-						"quark:elder_prismarine",
-						"minecraft:packed_ice",
-						"quark:biome_cobblestone",
-						"quark:limestone",
-						"quark:slate",
-						"quark:jasper",
-						"minecraft:sandstone"
-					],
-					"cluster-size": 8
-				}
-			],
-			"cluster-count": 5,
+			"generator": {
+				"block": "thaumcraft:ore_cinnabar",
+				"material": [
+					"minecraft:stone",
+					"quark:elder_prismarine",
+					"minecraft:packed_ice",
+					"quark:biome_cobblestone",
+					"quark:limestone",
+					"quark:slate",
+					"quark:jasper",
+					"minecraft:sandstone"
+				],
+				"cluster-size": 8
+			},
+			"cluster-count": 3,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": [
-							"RIVER",
-							"BEACH",
-							"OCEAN"
-						]
+						"entry": "OCEAN"
 					}
 				]
 			},

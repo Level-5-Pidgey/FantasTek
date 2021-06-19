@@ -482,15 +482,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem * baseMultiplier, <minecraft:gravel>, 0.33, (tier + 2) * 20, true);
+					mods.magneticraft.Grinder.addRecipe(ore, rockyChunk.firstItem * baseMultiplier, <thermalfoundation:material:864>, 0.15, (tier + 2) * 20, true);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem * baseMultiplier, <minecraft:gravel>, 0.5, (tier + 2) * 20, true);
+					mods.magneticraft.Grinder.addRecipe(ore, nativeCluster.firstItem * baseMultiplier, <thermalfoundation:material:864>, 0.15, (tier + 2) * 20, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier), <minecraft:gravel>, 0.5, (tier + 2) * 20, true);
+					mods.magneticraft.Grinder.addRecipe(ore, oreDust.firstItem * (2 * baseMultiplier), <thermalfoundation:material:864>, 0.15, (tier + 2) * 20, true);
 				}
 				else
 				{
@@ -503,15 +503,15 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			{
 				if(!rockyChunk.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, rockyChunk.firstItem * 2, <minecraft:gravel>, 0.33, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(oreDense, rockyChunk.firstItem * 2, <thermalfoundation:material:865>, 0.15, (tier + 1) * 40, true);
 				}
 				else if (!nativeCluster.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, nativeCluster.firstItem * 2, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(oreDense, nativeCluster.firstItem * 2, <thermalfoundation:material:865>, 0.15, (tier + 1) * 40, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.Grinder.addRecipe(oreDense, oreDust.firstItem * 4, <minecraft:gravel>, 0.5, (tier + 1) * 40, true);
+					mods.magneticraft.Grinder.addRecipe(oreDense, oreDust.firstItem * 4, <thermalfoundation:material:865>, 0.15, (tier + 1) * 40, true);
 				}
 			}
 		}
@@ -556,24 +556,24 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			if(!oreGem.empty)
 			{
 				//Standard Ore
-				scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * baseMultiplier, 50, 4);
+				scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:864>, 25, 4);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
-					scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreGem.firstItem * (2 * baseMultiplier), 50, 4);
+					scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:865>, 25, 4);
 				}
 			}
 			else if(!oreDust.empty)
 			{
-				scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem * baseMultiplier, 50, 4);
+				scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:864>, 25, 4);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
 					for oreDense in oreDouble.items
 					{
-						scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), oreDust.firstItem * (2 * baseMultiplier), 50, 4);
+						scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:865>, 25, 4);
 					}
 				}
 			}

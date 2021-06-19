@@ -143,6 +143,9 @@ for pool in TConGen {
 LootTweaker.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:lexicon"); //Remove Lexica Botania
 LootTweaker.getTable("botania:inject/simple_dungeon").getPool("main").removeEntry("botania:manaBottle"); //Remove Mana Bottles from appearing too
 
+//Remove Forestry Pickaxe/Shovel kit
+LootTweaker.getTable("minecraft:chests/abandoned_mineshaft").removePool("forestry_factory_items");
+
 //Add bottled Ender Air to End Loot Tables
 LootTweaker.getTable("minecraft:chests/end_city_treasure").getPool("main").addItemEntry(<botania:manaresource:15>, 13, 1, "enderair");
 
@@ -167,18 +170,24 @@ val enderman = LootTweaker.getTable("minecraft:entities/enderman"); //Enderman (
 enderman.getPool("main").removeEntry("minecraft:ender_pearl"); //Remove main enderpearl entry
 enderman.getPool("main").addItemEntryHelper(<minecraft:ender_pearl>, 1, 0, [Functions.lootingEnchantBonus(0, 1, 0)], [Conditions.killedByPlayer()], "minecraft:ender_pearl");
 
-//Make Astral Sorcery chests not generate Aquamarine Papers
-val shrineChest = LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine");
-val astralShrineChestPools =
+//Make Astral Sorcery chests not generate Aquamarine
+val AstralPaperTables =
 	[
-		"astralsorcery:itemcraftingcomponent",
-		"astralsorcery:itemconstellationpaper"
+		"minecraft:chests/desert_pyramid",
+		"minecraft:chests/abandoned_mineshaft",
+		"minecraft:chests/igloo_chest",
+		"minecraft:chests/jungle_temple",
+		"minecraft:chests/stronghold_library",
 	] as string[];
 
-for pool in astralShrineChestPools
+for table in AstralPaperTables
 {
-	shrineChest.removeEntry(pool);
+	LootTweaker.getTable(table).getPool("main").removeEntry("astralsorcery:constellation_paper");
 }
+
+//Remove aquamarine/constellation paper from Astral Chests
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").removeEntry("astralsorcery:itemcraftingcomponent");
+LootTweaker.getTable("astralsorcery:chest_shrine").getPool("astralsorcery:chest_shrine").removeEntry("astralsorcery:itemconstellationpaper");
 
 //Random Things Summoning Pendulum
 LootTweaker.getTable("minecraft:chests/simple_dungeon").removePool("summoningpendulum");
@@ -340,8 +349,5 @@ for lootTable, lootRate in mechanicalLootPools {
 	//Adds an empty entry to the loot pool as well
 	lootPool.addEmptyEntry(10, "empty_tech");
 }
-
-//Make Data Models drop from Mutant Monsters
-
 
 print("### Loottweaker Init Complete ###");
