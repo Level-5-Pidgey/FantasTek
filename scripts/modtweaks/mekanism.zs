@@ -145,16 +145,56 @@ mods.mekanism.GasConversion.register(<liquid:oxygen> * 1, <gas:oxygen> * 1);
 mods.mekanism.GasConversion.register(<liquid:hydrogen> * 1, <gas:hydrogen> * 1);
 
 //Extended Crafting Recipes (T2 Table)
-val advancedRocketry_EXTENDEDCRAFTING_T2 = {
+val mekanism_EXTENDEDCRAFTING_T2 = {
 	 <mekanism:machineblock2>	:		[[<ore:blockGlassColorless>, scripts.helpers.CircuitTiers[1], <ore:blockGlassColorless>],
 	 									[null, scripts.helpers.FrameTiers[0], null],
 	 									[<ore:blockGlassColorless>, scripts.helpers.CircuitTiers[1], <ore:blockGlassColorless>],
 	 									[null, <ore:ingotElectricalSteel>, <libvulpes:structuremachine>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
-for key, value in advancedRocketry_EXTENDEDCRAFTING_T2 {
+for key, value in mekanism_EXTENDEDCRAFTING_T2 {
 	recipes.remove(key.withAmount(1));
 	scripts.helpers.createAdvancedCraftingRecipe(key, value, value[3][0], value[3][1], value[3][2], "", true);
+}
+
+//Mekanism Pipe Recipes
+val mekanism_PipeCrafting = {
+	<mekanism:transmitter>.withTag({tier: 0}) : <ore:ingotInvar>,
+    <mekanism:transmitter:1>.withTag({tier: 0}) : <ore:plateIron>,
+    <mekanism:transmitter:2>.withTag({tier: 0}) : <extendedcrafting:material:2>,
+    <mekanism:transmitter:3>.withTag({tier: 0}) : <ore:ingotLead>,
+    <mekanism:transmitter:6>.withTag({tier: 0}) : <ore:plateBronze>,
+} as crafttweaker.item.IIngredient[crafttweaker.item.IItemStack];
+
+for key, value in mekanism_PipeCrafting {
+	recipes.remove(key);
+	scripts.helpers.CreateAssemblyRecipe(key * 24, [null, null, null, <ore:ingotSteel>, value, <ore:ingotSteel>, null, null, null], 40, 2500);
+	mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(key), scripts.helpers.stages.progression2.stage, key * 8, [[<ore:ingotSteel>, value, <ore:ingotSteel>]]);
+}
+
+//Change how Balloons are created
+val mekanism_BalloonCrafting = {
+	<mekanism:balloon:1> : <ore:dyeRed>,
+	<mekanism:balloon:2> : <ore:dyeGreen>,
+	<mekanism:balloon:3> : <ore:dyeBrown>,
+	<mekanism:balloon:4> : <ore:dyeBlue>,
+	<mekanism:balloon:5> : <ore:dyePurple>,
+	<mekanism:balloon:6> : <ore:dyeCyan>,
+	<mekanism:balloon:7> : <ore:dyeLightGray>,
+	<mekanism:balloon:8> : <ore:dyeGray>,
+	<mekanism:balloon:9> : <ore:dyePink>,
+	<mekanism:balloon:10> : <ore:dyeLime>,
+	<mekanism:balloon:11> : <ore:dyeYellow>,
+	<mekanism:balloon:12> : <ore:dyeLightBlue>,
+	<mekanism:balloon:13> : <ore:dyeMagenta>,
+	<mekanism:balloon:14> : <ore:dyeOrange>,
+	<mekanism:balloon:15> : <ore:dyeWhite>,
+} as crafttweaker.oredict.IOreDictEntry[crafttweaker.item.IItemStack];
+
+for key, value in mekanism_BalloonCrafting {
+	recipes.remove(key);
+	mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(key) ~ "_" ~ value.name, scripts.helpers.stages.progression3.stage, key, [<mekanism:balloon:*>, value]);
+	mods.mekanism.reaction.addRecipe(value, <liquid:plastic> * 500, <gas:helium> * 250, key, null, 0.0, 40);
 }
 
 print("### Mekanism Init Complete ###");

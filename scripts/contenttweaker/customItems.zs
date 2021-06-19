@@ -7,6 +7,8 @@ import mods.contenttweaker.Commands;
 import mods.contenttweaker.IItemFoodEaten;
 import mods.contenttweaker.ItemFood;
 
+print("~~~ Begin Custom Item Creator Init ~~~");
+
 //Life Ingot
 var lifeingot = VanillaFactory.createItem("lifeingot");
 lifeingot.rarity = "UNCOMMON";
@@ -338,3 +340,5 @@ magma_powder.register();
 var energy_crystal = VanillaFactory.createItem("energy_crystal");
 energy_crystal.rarity = "RARE";
 energy_crystal.register();
+
+print("### Custom Item Creator Init Complete ###");
