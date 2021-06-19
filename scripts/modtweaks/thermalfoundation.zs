@@ -122,10 +122,10 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
   										[<ore:gearCopper>, scripts.helpers.CircuitTiers[2], <ore:gearCopper>],
 	  									[null, <ore:ingotLumium>, <thermalfoundation:fertilizer:2>]],
 	 <thermalexpansion:machine:5>
-	 								:	[[null, <ore:gearLumium>, null],
-	 									[<ore:dirt>, <enderio:item_material:66>, <ore:dirt>],
-  										[<ore:gearCopper>, scripts.helpers.CircuitTiers[2], <ore:gearCopper>],
-	  									[null, <ore:ingotLumium>, <thermalfoundation:fertilizer:2>]],
+	 								:	[[<ore:gearLumium>, <ore:gearSignalum>, <ore:gearEnderium>],
+	 									[<ore:blockGlassColorless>, <enderio:item_material:66>, <ore:blockGlassColorless>],
+  										[<ore:plateLumium>, <ore:plateSignalum>, <ore:plateEnderium>],
+	  									[<ore:ingotSteel>, null, <ore:plateSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in thermalfoundation_EXTENDEDCRAFTING_T2 {
@@ -183,7 +183,7 @@ for elementalLiquid, elementalPowder in thermal_elementalPowders {
 
 //Change Hardened Glass Recipe
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustLead>.firstItem, <ore:dustObsidian>.firstItem * 4);
-scripts.helpers.addAlloySmeltingRecipe(<thermalfoundation:glass:3> * 2, <ore:blockGlass>.firstItem, <ore:dustObsidian>.firstItem * 4, 8000, 2);
+scripts.helpers.addAlloySmeltingRecipe(<thermalfoundation:glass:3> * 3, <ore:blockGlass>.firstItem * 3, <ore:ingotTough>.firstItem * 1, 30000, 2);
 
 //Create Mana Dust by Combining All Elemental Dusts
 scripts.mmhelper.IndustrialMixerFactoryRecipe("primal_mana", 50000, 100, <liquid:mana> * 1000, null, <liquid:pyrotheum> * 250, <liquid:cryotheum> * 250, <liquid:aerotheum> * 250, <liquid:petrotheum> * 250, null, null, null);
@@ -210,5 +210,68 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:biocrude> * 200, <thermalfounda
 
 //Add Tier tooltips for machines
 <thermalexpansion:machine:6>.addTooltip(scripts.helpers.createTierTooltip("Melter Tier ", 2, false, "."));
+<thermalexpansion:machine:8>.addTooltip(scripts.helpers.createTierTooltip("Fluid Injector Tier ", 3, false, "."));
+
+//Rework Creation of Enderium (Since Platinum is not available in stage 2)
+scripts.helpers.addAlloySmeltingRecipe(<enderio:item_material:39> * 4, <ore:ingotLead>.firstItem * 3, <ore:ingotBoron>.firstItem, 50000, 2);
+scripts.helpers.addInjectionRecipe(<ore:ingotEnderium>.firstItem, <enderio:item_material:39>, <liquid:ender> * 250, 12500, 3);
+mods.enderio.AlloySmelter.addRecipe(<ore:ingotEnderium>.firstItem * 4, [<ore:ingotLead> * 3, <ore:ingotBoron>, <ore:enderpearl>.firstItem * 4], 100000);
+
+//Remove easy production of Rich Slag
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:compass>);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:clock>);
+
+//Remove Saltpeter Crafting
+mods.enderio.SagMill.removeRecipe(<minecraft:sandstone>);
+val niterSandItems = [
+	<quark:red_sandstone_smooth_slab>,
+	<minecraft:red_sandstone>,
+	<minecraft:sandstone_stairs>,
+	<biomesoplenty:white_sandstone>,
+	<quark:sandstone_smooth_slab>,
+	<quark:sandstone_new:2>,
+	<minecraft:sandstone>,
+	<quark:red_sandstone_bricks_stairs>,
+	<minecraft:stone_slab2>,
+	<quark:sandstone_new:1>,
+	<quark:sandstone_new:3>,
+	<biomesoplenty:other_slab:1>,
+	<quark:sandstone_new>,
+	<quark:red_sandstone_bricks_slab>,
+	<minecraft:red_sandstone_stairs>,
+	<biomesoplenty:white_sandstone_stairs>,
+	<minecraft:sandstone:1>,
+	<quark:sandstone_bricks_slab>,
+	<minecraft:sandstone:2>,
+	<biomesoplenty:white_sandstone:1>,
+	<minecraft:red_sandstone:1>,
+	<biomesoplenty:white_sandstone:2>,
+	<quark:sandstone_bricks_stairs>,
+	<minecraft:stone_slab:1>,
+	<minecraft:red_sandstone:2>
+] as crafttweaker.item.IItemStack[];
+
+for sandItem in niterSandItems
+{
+	mods.thermalexpansion.Pulverizer.removeRecipe(sandItem);
+}
+
+//Re-add Niter Creation
+for sawdust in <ore:dustWood>.items
+{
+	scripts.helpers.addInjectionRecipe(<thermalfoundation:material:772> * 3, sawdust * 6, <liquid:sewage> * 500, 30000, 3);
+}
+
+//Upgrade Industrial Mixer/Fluid Sieve into Fluid Transposer
+mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:machine:8>, [
+	[<ore:plateBrass>, <minecraft:bucket>, <ore:plateBrass>],
+	[<ore:blockGlassColorless>, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}), <ore:blockGlassColorless>],
+	[<ore:gearSignalum>, scripts.helpers.CircuitTiers[2], <ore:gearSignalum>]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:machine:8>, [
+	[<ore:plateBrass>, <minecraft:bucket>, <ore:plateBrass>],
+	[<ore:blockGlassColorless>, <industrialforegoing:ore_sieve>, <ore:blockGlassColorless>],
+	[<ore:gearSignalum>, scripts.helpers.CircuitTiers[2], <ore:gearSignalum>]
+]);
 
 print("### Thermal Foundation Init Complete ###");

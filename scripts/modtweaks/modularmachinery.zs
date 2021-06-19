@@ -469,5 +469,9 @@ recipes.addShaped(scripts.helpers.createRecipeName(<modularmachinery:itembluepri
 
 //Machine Tier Tooltips
 <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}).addTooltip(scripts.helpers.createTierTooltip("Melter Tier ", 3, false, "."));
+<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}).addTooltip(scripts.helpers.createTierTooltip("Fluid Injector Tier ", 2, false, "."));
+
+//Upgrade Thermal Expansion Magma Crucible to Industrial Mixer Factory
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}), [[<enderio:item_material:77>, <ore:plateSteel>, <enderio:item_material:77>], [<ore:plateSteel>, <thermalexpansion:machine:6>, <ore:plateSteel>], [<enderio:item_material:77>, scripts.helpers.MotorTiers[1], <enderio:item_material:77>]]);
 
 print("### Modular Machinery Init Complete ###");

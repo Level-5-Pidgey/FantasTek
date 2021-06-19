@@ -41,4 +41,7 @@ recipes.addShaped(scripts.helpers.createRecipeName(<mowziesmobs:painted_acacia>)
 recipes.removeByRecipeName("minecraft:bone_meal_from_bone");
 scripts.helpers.AddTooltip(<minecraft:dye:15>, ["Use a composter to create bone meal!", "Alternatively, use a hand-grinder or pulverizer!"]);
 
+//Make Hoppers Cheaper
+recipes.addShaped(scripts.helpers.createRecipeName(<minecraft:hopper>), <minecraft:hopper> * 3, [[<ore:plateIron>, null, <ore:plateIron>],[<ore:ingotIron>, <ore:chestWood>, <ore:ingotIron>], [null, <ore:ingotIron>, null]]);
+
 print("### Minecraft Init Complete ###");

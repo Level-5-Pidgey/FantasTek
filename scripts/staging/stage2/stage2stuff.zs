@@ -241,6 +241,19 @@ val stage2_stageItems = [
     <nuclearcraft:compound:4>,
     <mekanism:machineblock2>,
     <mekanism:gastank>.withTag({tier: 0}),
+    <mekanism:transmitter>.withTag({tier: 0}),
+    <mekanism:transmitter:1>.withTag({tier: 0}),
+    <mekanism:transmitter:2>.withTag({tier: 0}),
+    <mekanism:transmitter:3>.withTag({tier: 0}),
+    <mekanism:transmitter:6>.withTag({tier: 0}),
+    <mekanism:transmitter>.withTag({tier: 1}),
+    <mekanism:transmitter:1>.withTag({tier: 1}),
+    <mekanism:transmitter:2>.withTag({tier: 1}),
+    <mekanism:transmitter:3>.withTag({tier: 1}),
+    <mekanism:transmitter:6>.withTag({tier: 1}),
+    <nuclearcraft:infuser_active>,
+    <nuclearcraft:infuser_idle>,
+    <nuclearcraft:compound:7>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems

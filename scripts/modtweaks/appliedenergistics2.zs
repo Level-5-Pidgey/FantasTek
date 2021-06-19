@@ -30,6 +30,9 @@ for obsidianBlock in <ore:obsidian>.items
   mods.appliedenergistics2.Grinder.addRecipe(<ore:dustObsidian>.firstItem, obsidianBlock, 6);
 }
 
+//Remove simple grindstone for Skystone
+mods.appliedenergistics2.Grinder.removeRecipe(<appliedenergistics2:sky_stone_block>);
+
 //Machine Tier Tooltips
 <appliedenergistics2:grindstone>.addTooltip(scripts.helpers.createTierTooltip("Crusher Tier ", 1, false, "."));
 print("### AE2 Init Complete ###");

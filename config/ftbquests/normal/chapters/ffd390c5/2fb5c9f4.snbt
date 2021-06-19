@@ -10,5 +10,27 @@
 		items: [{
 			item: "nuclearcraft:alloy_furnace_idle"
 		}]
+	}],
+	rewards: [{
+		uid: "fc1ba520",
+		type: "item",
+		item: {
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:industrial_mixer"
+			}
+		}
+	},
+	{
+		uid: "9a208161",
+		type: "item",
+		item: "modularmachinery:blockcasing 1 4",
+		count: 32
+	},
+	{
+		uid: "371b4344",
+		type: "item",
+		item: "modularmachinery:blockcasing 1 1",
+		count: 19
 	}]
 }

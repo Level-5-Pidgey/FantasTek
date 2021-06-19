@@ -273,4 +273,15 @@ for item, fluidAmount in biomassItems
 	}
 }
 
+//Change Can Recipe
+recipes.remove(<forestry:can>);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:can>), scripts.helpers.stages.progression2.stage, <forestry:can> * 16, [[null, <ore:ingotTin>, null], [<ore:ingotTin>, <ore:blockGlassColorless>, <ore:ingotTin>], [null, <ore:ingotTin>, null]]);
+
+//Add Bottler Recipe
+recipes.remove(<forestry:bottler>);
+scripts.helpers.createAdvancedCraftingRecipe(<forestry:bottler>, [[null, <ore:blockGlassColorless>, null], [<ore:blockGlassColorless>, scripts.helpers.FrameTiers[0], <ore:blockGlassColorless>], [null, <ore:blockGlassColorless>, null]], null, null, <forestry:can>, "", true);
+
+//Remove Supercooling water making Crushed Ice
+mods.nuclearcraft.supercooler.removeRecipeWithInput([<liquid:water> * 1000]);
+
 print("### Forestry Init Complete ###");

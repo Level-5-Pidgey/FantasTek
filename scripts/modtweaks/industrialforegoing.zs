@@ -214,10 +214,10 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 										[<ore:plateAluminium>, <ore:ingotConstantan>, <ore:plateAluminium>],
 										[null, <ore:ingotElectrum>, <contenttweaker:sealed_wood_plate>]],
 	<industrialforegoing:ore_sieve>
-									:	[[<ore:plateAluminium>, <industrialforegoing:pink_slime>, <ore:plateAluminium>],
-										[<enderio:block_dark_iron_bars>, scripts.helpers.FrameTiers[3], <enderio:block_dark_iron_bars>],
-										[<ore:plateAluminium>, <ore:plateConstantan>, <ore:plateAluminium>],
-										[null, <enderio:block_dark_iron_bars>, <ore:plateConstantan>]],
+									:	[[<ore:blockGlassColorless>, null, <ore:blockGlassColorless>],
+										[<ore:plateAluminium>, scripts.helpers.FrameTiers[3], <ore:plateAluminium>],
+										[<ore:gearSignalum>, <industrialforegoing:pink_slime>, <ore:gearSignalum>],
+										[null, <ore:blockGlassColorless>, <ore:plateBrass>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in industrialforegoing_EXTENDEDCRAFTING_T2 {
@@ -323,6 +323,6 @@ scripts.helpers.addInjectionRecipe(<industrialforegoing:pink_slime_ingot>, <ore:
 furnace.remove(<industrialforegoing:plastic>, <industrialforegoing:dryrubber>);
 
 //Machine Tier Tooltips
-
+<industrialforegoing:ore_sieve>.addTooltip(scripts.helpers.createTierTooltip("Fluid Injector Tier ", 2, false, "."));
 
 print("### Industrial Foregoing Init Complete ###");

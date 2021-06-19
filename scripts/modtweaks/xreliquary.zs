@@ -143,8 +143,8 @@ val xreliquaryRecipes_INJECTION = {
 
 for key, value in xreliquaryRecipes_INJECTION {
 	var inputAsStack as crafttweaker.item.IItemStack = key[0].items[0];
-	recipes.remove(key[1]);
-	scripts.helpers.addInjectionRecipe(inputAsStack, key[1], value, 15000, 3);
+	recipes.remove(inputAsStack);
+	scripts.helpers.addInjectionRecipe(inputAsStack, key[1], value, 150000, 3);
 }
 
 val xreliquary_EXTENDEDCRAFTING_T2 = {

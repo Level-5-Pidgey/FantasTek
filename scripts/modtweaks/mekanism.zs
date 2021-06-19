@@ -94,7 +94,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers
 
 //Tier 2 Circuit Crafting
 recipes.remove(scripts.helpers.CircuitTiers[3]);
-mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[3], 1000000, 50000, <mekanism:polyethene:2>, [scripts.helpers.CircuitTiers[1], <mekanism:enrichedalloy>, scripts.helpers.CircuitTiers[1], <mekanism:enrichedalloy>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(scripts.helpers.CircuitTiers[3], 1000000, 50000, scripts.helpers.CircuitTiers[1], [<mekanism:enrichedalloy>, <enderio:item_basic_capacitor>, <mekanism:enrichedalloy>, <enderio:item_basic_capacitor>]);
 
 //Metal Casing Crafting
 recipes.remove(<mekanism:basicblock:8>);
@@ -121,7 +121,7 @@ val mekanismRecipes_CRAFTINGTABLE = {
 	<mekanism:basicblock2:3>.withTag({tier: 1}) : [[<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})], [scripts.helpers.BatteryTiers[2], <enderio:item_material:66>, scripts.helpers.BatteryTiers[2]], [<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})]],
 	<mekanism:basicblock2:4>.withTag({tier: 1}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], <enderio:item_material:66>, scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
 	<mekanism:electrolyticcore> : [[<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>], [<ore:dustGold>, null, <ore:dustSilver>], [<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>]],
-	<mekanism:gastank>.withTag({tier: 0}) : [[<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>], [<ore:dustGold>, null, <ore:dustSilver>], [<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>]],
+	<mekanism:gastank>.withTag({tier: 0}) : [[<ore:ingotSteel>, <ore:gearSteel>, <ore:ingotSteel>], [<ore:ingotTough>, null, <ore:ingotTough>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in mekanismRecipes_CRAFTINGTABLE {

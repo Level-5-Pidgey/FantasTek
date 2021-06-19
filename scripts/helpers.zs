@@ -487,6 +487,12 @@ function mathMin(n1 as int, n2 as int) as int
     return n1;
 }
 
+function getNcPowerRate(energyCost as int, ncBasePower as int, ncBaseTime as int) as double
+{
+    var baseRFT as double = (energyCost as double / ncBaseTime as double);
+    return (baseRFT / ncBasePower as double);
+}
+
 function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float, recipeTier as int)
 {
     var inputArray = [input1, input2] as crafttweaker.item.IItemStack[];
@@ -494,7 +500,7 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
     //Induction Smelter
     if(recipeTier <= 4)
     {
-        if(chanceOutput.matches(<minecraft:bedrock>))
+        if(isNull(chanceOutput))
         {
             mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost);
         }
@@ -513,7 +519,7 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
     //Nuclearcraft Alloy Smelter
     if(recipeTier <= 2)
     {
-        mods.nuclearcraft.alloy_furnace.addRecipe([input1, input2, output, 1.0, 0.4]);
+        mods.nuclearcraft.alloy_furnace.addRecipe([input1, input2, output, 1.0, getNcPowerRate(energyCost, 250, 50)]);
     }
 
     //Advanced Rocketry Arc Furnace
@@ -525,7 +531,7 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
 
 function addAlloySmeltingRecipe(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, recipeTier as int)
 {
-    addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, <minecraft:bedrock>, 0.0f, recipeTier);
+    addAlloySmeltingRecipeWithSecondary(output, input1, input2, energyCost, null, 0.0f, recipeTier);
 }
 
 function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, extraOutput as crafttweaker.item.IItemStack, extraOutputChance as float, recipeTier as int)
@@ -538,7 +544,7 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
     //AE Grinder (Tier 1)
     if(recipeTier <= 1)
     {
-        if(!extraOutput.matches(<minecraft:bedrock>))
+        if(!isNull(extraOutput))
         {
             mods.appliedenergistics2.Grinder.addRecipe(output, input.items[0], 5, extraOutput, chanceArray[1]);
         }
@@ -551,7 +557,7 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
     //Magneticraft Grinder (Tier 2)
     if(recipeTier <= 2)
     {
-        if(!extraOutput.matches(<minecraft:bedrock>))
+        if(!isNull(extraOutput))
         {
             mods.magneticraft.Grinder.addRecipe(input.items[0], output, extraOutput, chanceArray[1], energyCost / 45, true);
         }
@@ -564,13 +570,13 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
     //Nuclearcraft manufactory
     if (recipeTier <= 3)
     {
-        mods.nuclearcraft.manufactory.addRecipe([input, output, 1.0, 0.5]);
+        mods.nuclearcraft.manufactory.addRecipe([input, output, 1.0, getNcPowerRate(energyCost, 250, 80)]);
     }
 
     //Sag Mill and Pulverizer
     if(recipeTier <= 4)
     {
-        if(!extraOutput.matches(<minecraft:bedrock>))
+        if(!isNull(extraOutput))
         {
             mods.enderio.SagMill.addRecipe(outputArray, chanceArray, input, "CHANCE_ONLY", energyCost);
 
@@ -593,7 +599,7 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
 
 function addCrushingRecipe(output as crafttweaker.item.IItemStack, input as crafttweaker.item.IIngredient, energyCost as int, recipeTier as int)
 {
-    addCrushingRecipeWithSecondary(output, input, energyCost, <minecraft:bedrock>, 0.0f, recipeTier);
+    addCrushingRecipeWithSecondary(output, input, energyCost, null, 0.0f, recipeTier);
 }
 
 function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIngredient, energyCost as int, recipeTier as int)
@@ -621,7 +627,7 @@ function addMeltingRecipe(output as ILiquidStack, input as crafttweaker.item.IIn
     //Nuclearcraft Melter
     if(recipeTier <= 4)
     {
-        mods.nuclearcraft.melter.addRecipe(input, output);
+        mods.nuclearcraft.melter.addRecipe([input, output, 1.0, getNcPowerRate(energyCost, 450, 100)]);
     }
 }
 
@@ -661,7 +667,7 @@ function addInjectionRecipe(output as crafttweaker.item.IItemStack, inputItem as
     //Nuclearcraft Fluid Injector
     if(recipeTier <= 4)
     {
-        mods.nuclearcraft.infuser.addRecipe(inputItem, inputFluid, output);
+        mods.nuclearcraft.infuser.addRecipe([inputItem, inputFluid, output, 1.0, getNcPowerRate(energyCost, 250, 80)]);
     }
 }
 
@@ -684,7 +690,7 @@ function addFluidInfusionRecipe(output as ILiquidStack, inputItem as crafttweake
     //NuclearCraft Fluid Enricher
     if (recipeTier <= 3)
     {
-        mods.nuclearcraft.dissolver.addRecipe(inputItem, inputFluid, output);
+        mods.nuclearcraft.dissolver.addRecipe([inputItem, inputFluid, output, getNcPowerRate(energyCost, 250, 80)]);
     }
 }
 

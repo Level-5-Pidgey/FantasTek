@@ -143,7 +143,8 @@ val enderIOHideItems =
 	<enderio:item_data_conduit>,
 	<enderio:item_material:22>,
 	<enderio:block_decoration3:1>,
-	<enderio:block_simple_alloy_smelter>
+	<enderio:block_simple_alloy_smelter>,
+	<enderio:item_capacitor_grainy>
 ] as crafttweaker.item.IItemStack[];
 
 for item in enderIOHideItems
@@ -200,9 +201,6 @@ for sns in snsToRemove
 
 //Remove all Endergy conduits that use Infinity Reagent
 recipes.remove(<enderio:item_endergy_conduit:*>);
-
-//Remove Grainy Capacitor
-scripts.helpers.unstageAndHide(<enderio:item_capacitor_grainy>);
 
 //Add Alloy Dust crafting
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustConductiveIron>.firstItem), <ore:dustConductiveIron>.firstItem, [<ore:dustIron>, <ore:dustRedstone>]); //Conductive Iron Dust
@@ -332,7 +330,7 @@ mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>); //Industrial 
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:51>);
 mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:1>, [[<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[2], <ore:ingotDarkSteel>], [<ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>]], 90);
 recipes.remove(<enderio:item_material:55>); //Soulless Machine Chassis
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>); //Soul Machine Chassis
+mods.enderio.AlloySmelter.removeRecipe(<ore:itemSoulMachineChassi>.firstItem); //Soul Machine Chassis
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:52>);
 mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material:53>, [[<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>], [<ore:ingotSoularium>, scripts.helpers.CircuitTiers[2], <ore:ingotSoularium>], [<ore:ingotSoularium>, <ore:ingotSoularium>, <ore:ingotSoularium>]], 90);
 recipes.remove(<enderio:item_material:66>); //End Steel Chassis
@@ -349,19 +347,19 @@ val enderioRecipes_ASSEMBLY = {
 	<enderio:item_end_steel_pickaxe> : [<ore:plateEndSteel>, <enderio:item_material:56>, <ore:plateEndSteel>, <ore:ingotTough>, <enderio:item_dark_steel_pickaxe>, <ore:ingotTough>, <ore:plateEndSteel>, scripts.helpers.CircuitTiers[3], <ore:plateEndSteel>],
 	<enderio:item_end_steel_axe> : [<ore:plateEndSteel>, <enderio:item_material:56>, <ore:plateEndSteel>, <ore:ingotTough>, <enderio:item_dark_steel_axe>, <ore:ingotTough>, <ore:plateEndSteel>, scripts.helpers.CircuitTiers[3], <ore:plateEndSteel>],
 	<enderio:item_end_steel_bow> : [<ore:plateEndSteel>, <enderio:item_material:56>, <ore:plateEndSteel>, <ore:ingotTough>, <enderio:item_dark_steel_bow>, <ore:ingotTough>, <ore:plateEndSteel>, scripts.helpers.CircuitTiers[3], <ore:plateEndSteel>],
-	<enderio:item_dark_steel_helmet> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_helmet>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
-	<enderio:item_dark_steel_chestplate> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_chestplate>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
-	<enderio:item_dark_steel_leggings> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_leggings>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
-	<enderio:item_dark_steel_boots> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_boots>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
+	<enderio:item_dark_steel_helmet> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_helmet>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
+	<enderio:item_dark_steel_chestplate> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_chestplate>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
+	<enderio:item_dark_steel_leggings> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_leggings>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
+	<enderio:item_dark_steel_boots> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_boots>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
 	<enderio:item_dark_steel_shield> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <thermalfoundation:tool.shield_diamond>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
-	<enderio:item_dark_steel_pickaxe> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_pickaxe>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
-	<enderio:item_dark_steel_axe> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_axe>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
+	<enderio:item_dark_steel_pickaxe> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_pickaxe>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
+	<enderio:item_dark_steel_axe> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_axe>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
 	<enderio:item_dark_steel_bow> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <thermalfoundation:tool.bow_diamond>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
 	<enderio:item_dark_steel_shears> : [<ore:ingotDarkSteel>, <thermalfoundation:material:640>, <ore:ingotDarkSteel>, <ore:stickAluminium>, <thermalfoundation:tool.shears_diamond>, <ore:stickAluminium>, <ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:ingotDarkSteel>],
 	<enderio:item_dark_steel_treetap> : [<ore:ingotDarkSteel>, <thermalfoundation:material:640>, <ore:ingotDarkSteel>, <ore:stickAluminium>, <magneticraft:iron_pipe>, <ore:stickAluminium>, <ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:ingotDarkSteel>],
 	<enderio:item_dark_steel_crook> : [<ore:ingotDarkSteel>, <thermalfoundation:material:640>, <ore:ingotDarkSteel>, <ore:stickAluminium>, <inspirations:stone_crook>, <ore:stickAluminium>, <ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:ingotDarkSteel>],
-	<enderio:item_dark_steel_hand> : [<ore:ingotDarkSteel>, <thermalfoundation:material:640>, <ore:ingotDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_hoe>, <ore:stickAluminium>, <ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:ingotDarkSteel>],
-	<enderio:item_dark_steel_sword> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <minecraft:diamond_sword>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
+	<enderio:item_dark_steel_hand> : [<ore:ingotDarkSteel>, <thermalfoundation:material:640>, <ore:ingotDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_hoe>, <ore:stickAluminium>, <ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:ingotDarkSteel>],
+	<enderio:item_dark_steel_sword> : [<ore:plateDarkSteel>, <thermalfoundation:material:640>, <ore:plateDarkSteel>, <ore:stickAluminium>, <futuremc:netherite_sword>, <ore:stickAluminium>, <ore:plateDarkSteel>, scripts.helpers.CircuitTiers[1], <ore:plateDarkSteel>],
 } as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
 
 for key, value in enderioRecipes_ASSEMBLY {
@@ -455,5 +453,12 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <enderio:block_alloy_smelter>, 
 	[<ore:plateCrystallineAlloy>, <nuclearcraft:alloy_furnace_idle>, <ore:plateCrystallineAlloy>],
 	[<ore:plateCrystallineAlloy>, scripts.helpers.MotorTiers[2], <ore:plateCrystallineAlloy>]
 ]);
+
+//Remove useless enderium base
+mods.enderio.AlloySmelter.removeRecipe(<ore:ingotEnderiumBase>.firstItem);
+mods.enderio.AlloySmelter.removeRecipe(<ore:ingotEnderium>.firstItem * 2);
+
+//Machine Tier Tooltips
+<enderio:block_alloy_smelter>.addTooltip(scripts.helpers.createTierTooltip("Alloy Furnace Tier ", 3, false, "."));
 
 print("### EnderIO Init Complete ###");

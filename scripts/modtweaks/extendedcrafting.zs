@@ -20,6 +20,8 @@ scripts.helpers.addInjectionRecipe(<ore:ingotBlackIron>.firstItem * 2, <ore:ingo
 recipes.addShapeless(scripts.helpers.createRecipeName(<extendedcrafting:material:2>), <extendedcrafting:material:2> * 2, [<embers:tinker_hammer>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>, <ore:ingotBlackIron>]);
 recipes.addShapeless(scripts.helpers.createRecipeName(<ore:ingotBlackIron>.firstItem), <ore:ingotBlackIron>.firstItem, [<embers:tinker_hammer>, <ore:ingotIron>, <ore:obsidian>]);
 mods.advancedrocketry.PlatePresser.addRecipe(<extendedcrafting:material:2> * 4, <ore:blockBlackIron>.firstItem);
+mods.thermalexpansion.Compactor.addStorageRecipe(<extendedcrafting:material:2> * 2, <extendedcrafting:material> * 3, 10000);
+mods.advancedrocketry.RollingMachine.addRecipe(<extendedcrafting:material:2>, 60, 5000 / 60, 100, [<extendedcrafting:material>]);
 
 //Hide Tier 1 Component
 scripts.helpers.unstageAndHide(<extendedcrafting:material:8>);

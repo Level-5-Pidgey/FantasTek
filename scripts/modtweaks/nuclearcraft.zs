@@ -84,7 +84,7 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 									:	[[<ore:plateSteel>, <minecraft:hopper>, <ore:plateSteel>],
 										[ <ore:plateLapis>, <enderio:item_material:1>,  <ore:plateLapis>],
 		  								[scripts.helpers.BatteryTiers[1], scripts.helpers.MotorTiers[1], scripts.helpers.CircuitTiers[2]],
-										[null, null,<ore:plateSteel>]],
+										[null, <ore:stickSilver>, <ore:plateSteel>]],
 	<nuclearcraft:manufactory_idle>
 									:	[[null, <thermalfoundation:material:657>, null],
 	 									[<ore:gearSteel>, scripts.helpers.FrameTiers[1], <ore:gearSteel>],
@@ -100,6 +100,11 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 										[<ore:plateLead>, scripts.helpers.FrameTiers[0], <ore:plateLead>],
 										[<ore:gearLead>, scripts.helpers.MotorTiers[1], <ore:gearLead>],
 										[null, <tconstruct:materials:2>, <ore:ingotBrickNether>]],
+	<nuclearcraft:infuser_idle>
+									:	[[null, <minecraft:bucket>, null],
+										[scripts.helpers.CircuitTiers[4], <enderio:item_material:66>, scripts.helpers.CircuitTiers[4]],
+										[<ore:gearEnderium>, scripts.helpers.MotorTiers[2], <ore:gearEnderium>],
+										[<ore:ingotBrass>, <ore:ingotBrass>, <ore:blockGlassHardened>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in magneticraft_EXTENDEDCRAFTING_T2 {
@@ -123,8 +128,8 @@ mods.nuclearcraft.chemical_reactor.addRecipe([<liquid:bio.ethanol> * 1000, <liqu
 //Melter Ore Processing Tooltip
 <nuclearcraft:melter_idle>.addTooltip(scripts.helpers.createTierTooltip("Processes up to Tier ", 2, false, " Ores, with a 3.0x output rate."));
 
-//Upgrade Magma Cruible to NC Melter
-mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:melter_idle>, [[<ore:plateNickel>, <ore:plateDarkSteel>, <ore:plateNickel>], [<ore:plateDarkSteel>, <thermalexpansion:machine:6>, <ore:plateDarkSteel>], [<ore:plateNickel>, scripts.helpers.CircuitTiers[2], <ore:plateNickel>]]);
+//Upgrade Industrial Mixer to NC Melter
+mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:melter_idle>, [[<ore:plateNickel>, <ore:plateDarkSteel>, <ore:plateNickel>], [<ore:plateDarkSteel>, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:industrial_mixer"}), <ore:plateDarkSteel>], [<ore:plateNickel>, scripts.helpers.CircuitTiers[2], <ore:plateNickel>]]);
 
 //Upgrade Arc Furnace to NC Alloy Furnace
 mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:alloy_furnace_idle>, [
@@ -133,10 +138,19 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:alloy_furnace_idl
 	[<ore:ingotLead>, scripts.helpers.MotorTiers[1], <ore:ingotLead>]
 ]);
 
+//Upgrade Fluid Tranasposer to NC Fluid Infuser
+mods.extendedcrafting.TableCrafting.addShaped(0, <nuclearcraft:infuser_idle>, [
+	[<ore:blockGlassHardened>, <ore:gearEnderium>, <ore:blockGlassHardened>],
+	[scripts.helpers.CircuitTiers[4], <thermalexpansion:machine:8>, scripts.helpers.CircuitTiers[4]],
+	[<ore:plateEndSteel>, <ore:gearEnderium>, <ore:plateEndSteel>]
+]);
+
 //Tier Tooltips for NC machines
 <nuclearcraft:alloy_furnace_idle>.addTooltip(scripts.helpers.createTierTooltip("Alloy Furnace Tier ", 2, false, "."));
 <nuclearcraft:manufactory_idle>.addTooltip(scripts.helpers.createTierTooltip("Crusher Tier ", 3, false, "."));
+<nuclearcraft:manufactory_idle>.addTooltip("Not designed to crush ores!");
 <nuclearcraft:melter_idle>.addTooltip(scripts.helpers.createTierTooltip("Melter Tier ", 4, false, "."));
+<nuclearcraft:infuser_idle>.addTooltip(scripts.helpers.createTierTooltip("Fluid Injector Tier ", 4, false, "."));
 
 //Mechanical Imbuement for Motor
 scripts.mmhelper.AddMechanicalImbuerRecipe(scripts.helpers.createRecipeName(scripts.helpers.MotorTiers[1]), scripts.helpers.MotorTiers[1], 50000);
@@ -145,5 +159,16 @@ scripts.mmhelper.AddMechanicalImbuerRecipe(scripts.helpers.createRecipeName(scri
 mods.nuclearcraft.manufactory.removeRecipeWithOutput(<nuclearcraft:part:6>);
 mods.nuclearcraft.manufactory.removeRecipeWithOutput(<thermalfoundation:material:772> * 2);
 mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productingot:3>);
+
+//Remove Enderium Creation Nuclearcraft-style
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<nuclearcraft:alloy:9> * 4]);
+mods.nuclearcraft.infuser.removeRecipeWithOutput([<ore:ingotEnderium>.firstItem]);
+
+//Fluid Dict Mek Gasses (in fluid form) and NC Fluid Gasses
+mods.industrialforegoing.FluidDictionary.add("liquidoxygen", "oxygen", 1.0);
+mods.industrialforegoing.FluidDictionary.add("liquidhydrogen", "hydrogen", 1.0);
+
+//Mechanically Embue Advanced Motor
+scripts.mmhelper.AddMechanicalImbuerRecipe(scripts.helpers.createRecipeName(scripts.helpers.MotorTiers[1]), scripts.helpers.MotorTiers[1], 75000);
 
 print("### NuclearCraft Init Complete ###");

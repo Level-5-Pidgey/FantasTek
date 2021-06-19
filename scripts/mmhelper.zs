@@ -202,6 +202,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
         "gear" : 4,
         "rod" : 1,
         "stick" : 1,
+        "coil" : 2,
         "dust" : 1,
     };
 

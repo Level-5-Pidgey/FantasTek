@@ -29,4 +29,7 @@ mods.tconstruct.Casting.addTableRecipe(<ore:ingotNetherite>.firstItem, <tconstru
 mods.tconstruct.Casting.addBasinRecipe(<ore:blockNetherite>.firstItem, null, <liquid:netherite>, 1296);
 scripts.helpers.addAlloySmeltingRecipe(<ore:ingotNetherite>.firstItem * 1, <ore:ingotDemonicMetal>.firstItem * 4, <ore:ingotAncientDebris>.firstItem * 4, 9000, 1);
 
+//Melt Netherite in TCon Smeltery
+mods.tconstruct.Melting.addRecipe(<liquid:netherite> * 144, <ore:ingotNetherite>.firstItem);
+
 print("### FutureMC Init Complete ###");

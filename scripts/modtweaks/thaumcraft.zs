@@ -174,7 +174,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumometer", "FIRSTSTEPS"
 
 //Thaumium requires steel instead of Iron
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot>);
-mods.thaumcraft.Crucible.registerRecipe("thaumiumIngot", "BASEALCHEMY", <thaumcraft:ingot>, <ore:ingotSteel>, [<aspect:terra> * 5, <aspect:praecantatio> * 5]);
+mods.thaumcraft.Crucible.registerRecipe("thaumiumIngot", "BASEALCHEMY", <thaumcraft:ingot>, <ore:ingotSteel>, [<aspect:praecantatio> * 5]);
 mods.thaumcraft.Crucible.registerRecipe("thaumiumIngotCrude", "BASEALCHEMY", <thaumcraft:ingot>, <ore:ingotCrudeSteel>, [<aspect:terra> * 5, <aspect:praecantatio> * 5]);
 
 //Add Recipe for Thamic Energy Converter Multiblock
@@ -256,6 +256,7 @@ val thaumcraftLoot_Add as int[][crafttweaker.item.WeightedItemStack] = {
 	<ore:nuggetConductiveIron>.firstItem * 4 % 30 : [0, 1],
 	<ore:nuggetRedstoneAlloy>.firstItem * 4 % 30 : [0, 1],
 	<ore:nuggetCrudeSteel>.firstItem * 4 % 20 : [0, 1],
+	<ore:obsidian>.firstItem % 20 : [0, 1, 2],
 };
 
 for item, bagTiers in thaumcraftLoot_Add {

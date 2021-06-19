@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-06-10T04:04:39.6337877Z",
-  "playedCount": 59,
+  "lastPlayed": "2021-06-19T12:26:10.0524867Z",
+  "playedCount": 72,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -178,113 +178,89 @@
       "addonID": 225643,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 2846950,
-        "displayName": "Botania r1.10-363.jar",
-        "fileName": "Botania r1.10-363.jar",
-        "fileDate": "2019-12-22T18:40:54.207Z",
-        "fileLength": 13814617,
+        "id": 3330934,
+        "displayName": "Botania r1.10-364.4.jar",
+        "fileName": "Botania r1.10-364.4.jar",
+        "fileDate": "2021-05-31T15:12:49.31Z",
+        "fileLength": 13817704,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2846/950/Botania r1.10-363.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3330/934/Botania r1.10-364.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 34544384,
+            "id": 0,
             "addonId": 243121,
             "type": 2,
-            "fileId": 2846950
+            "fileId": 0
           },
           {
-            "id": 34544386,
-            "addonId": 227083,
-            "type": 3,
-            "fileId": 2846950
-          },
-          {
-            "id": 34544385,
-            "addonId": 275300,
-            "type": 2,
-            "fileId": 2846950
-          },
-          {
-            "id": 34544383,
+            "id": 0,
             "addonId": 238222,
             "type": 2,
-            "fileId": 2846950
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 227083,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 156022543,
-            "type": 3,
+            "fingerprint": 4074037441,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "vazkii",
-            "fingerprint": 498055877,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2001698494,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 582579411,
-            "type": 3,
+            "fingerprint": 3675882,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1152924348,
-            "type": 3,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4206274848,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 1923406233,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3763127432,
+        "packageFingerprint": 2263235725,
         "gameVersion": [
           "Forge",
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1726350,
-        "projectId": 225643,
-        "packageFingerprintId": 390229783,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2038940,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Botania r1.10-363.jar"
+        "FileNameOnDisk": "Botania r1.10-364.4.jar"
       },
       "dateInstalled": "2021-06-09T07:48:58.6058527Z",
-      "dateUpdated": "2021-06-09T07:48:58.6058527Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-06-10T06:51:29.8592321Z",
+      "dateLastUpdateAttempted": "2021-06-10T06:51:29.8592321Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3359,14 +3335,14 @@
       "addonID": 239197,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 3294372,
-        "displayName": "CraftTweaker2-1.12-4.1.20.646.jar",
-        "fileName": "CraftTweaker2-1.12-4.1.20.646.jar",
-        "fileDate": "2021-04-30T23:02:58.48Z",
-        "fileLength": 1540699,
+        "id": 3335030,
+        "displayName": "CraftTweaker2-1.12-4.1.20.647.jar",
+        "fileName": "CraftTweaker2-1.12-4.1.20.647.jar",
+        "fileDate": "2021-06-02T13:50:16.193Z",
+        "fileLength": 1541105,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3294/372/CraftTweaker2-1.12-4.1.20.646.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3335/30/CraftTweaker2-1.12-4.1.20.647.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -3374,78 +3350,66 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3511383395,
-            "type": 3,
+            "fingerprint": 386203292,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "stanhebben",
             "fingerprint": 939147020,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "crafttweaker",
-            "fingerprint": 567526281,
-            "type": 3,
+            "fingerprint": 4201977349,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 741708775,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
             "fingerprint": 2458517208,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1516798348,
-            "type": 3,
+            "fingerprint": 1802506821,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3450295029,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2423603192,
+        "packageFingerprint": 3318662535,
         "gameVersion": [
           "1.12.2"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000012.0000000002",
-            "gameVersion": "1.12.2",
-            "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2289299,
-        "projectId": 239197,
-        "packageFingerprintId": 653946656,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
-        "gameVersionMappingId": 2901455,
-        "gameVersionId": 6756,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.646.jar"
+        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.647.jar"
       },
       "dateInstalled": "2021-06-09T07:48:58.6058527Z",
-      "dateUpdated": "2021-06-09T07:48:58.6058527Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-06-10T06:51:32.1295707Z",
+      "dateLastUpdateAttempted": "2021-06-10T06:51:32.1295707Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17487,7 +17451,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 357178,

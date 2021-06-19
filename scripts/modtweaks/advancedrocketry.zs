@@ -98,7 +98,7 @@ for key, value in advancedRocketryRecipes {
 
 //Crafting Rudimentary Logic Circuit
 mods.forestry.Carpenter.addRecipe(<advancedrocketry:ic> * 2, [[null, <ore:nuggetConductiveIron>, null], [null, <projectred-core:resource_item:342>, null], [null, <ore:nuggetConductiveIron>, null]], 160, <liquid:water> * 200);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<advancedrocketry:ic> * 3, 100000, 750, <projectred-core:resource_item:342>, [<ore:nuggetConductiveIron>, <ore:nuggetConductiveIron>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<advancedrocketry:ic> * 3, 50000, 5000, <projectred-core:resource_item:342>, [<ore:nuggetConductiveIron>, <ore:nuggetConductiveIron>]);
 
 //Extended Crafting Recipes (T1 Table)
 val advancedRocketry_EXTENDEDCRAFTING = {
@@ -228,6 +228,6 @@ for key, value in enderioRecipes_ASSEMBLY {
 
 //Change Water Electrolysis Output
 mods.advancedrocketry.Electrolyser.removeRecipe(<liquid:hydrogen>, <liquid:oxygen>);
-mods.advancedrocketry.Electrolyser.addRecipe(<liquid:liquidhydrogen> * 50, <liquid:liquidoxygen> * 50, 20, 125, <liquid:water> * 100);
+mods.advancedrocketry.Electrolyser.addRecipe(<liquid:liquidhydrogen> * 2, <liquid:liquidoxygen> * 1, 2, 300, <liquid:water> * 4);
 
 print("### Advanced Rocketry Init Complete ###");

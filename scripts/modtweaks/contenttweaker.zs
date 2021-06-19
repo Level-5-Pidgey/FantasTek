@@ -4,7 +4,7 @@ print("~~~ Begin ContentTweaker recipes Init ~~~");
 <ore:dustCrudeSteel>.add(<contenttweaker:steel_blend>);
 
 //Steel Blend Crafting
-recipes.addShaped(scripts.helpers.createRecipeName(<ore:dustCrudeSteel>.firstItem), <ore:dustCrudeSteel>.firstItem * 2, [[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>],[<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>], [<contenttweaker:coke_dust>, <ore:dustIron>, <contenttweaker:coke_dust>]]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<ore:dustCrudeSteel>.firstItem), <ore:dustCrudeSteel>.firstItem * 2, [<ore:dustIron>, <ore:dustIron>, <contenttweaker:coke_dust>, <ore:dustObsidian>]);
 
 //Cast Crude Steel into Ingots or Blocks or Nuggets
 mods.tconstruct.Casting.addTableRecipe(<ore:ingotCrudeSteel>.firstItem, <tconstruct:cast_custom>, <liquid:crude_steel>, 144, false);
