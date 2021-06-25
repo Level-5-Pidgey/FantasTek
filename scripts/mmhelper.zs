@@ -213,7 +213,6 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
     if(inputItem.items[0].ores.length > 0)
     {
         var itemOreDict = inputItem.items[0].ores[0].name;
-		print("OreDict name is " ~ itemOreDict ~ " and count is " ~ inputCount);
         var itemMaterial = "";
         var itemPart = "";
 
@@ -223,7 +222,6 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
             if(itemOreDict.contains(material))
             {
                 itemMaterial = material;
-				print("Material is " ~ itemMaterial);
             }
         }
 
@@ -234,7 +232,6 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
             {
                 itemPart = part;
                 resultCount = partCount as int;
-				print("itemPart is " ~ itemPart ~ " count is " ~ resultCount);
             }
         }
 
@@ -257,18 +254,15 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
         if (resultDict.items.length > 0)
         {
             var resultIngredient as crafttweaker.item.IIngredient = resultDict.firstItem.withAmount(inputCount * resultCount);
-			print("Generated ingredient " ~ result ~ " with count of " ~ (inputCount * resultCount));
 			return resultIngredient;
         }
         else
         {
-			print("returned null");
             return null;
         }
     }
     else
     {
-        print("Could not simplify " ~ inputItem.items[0].displayName);
         return null;
     }
 }

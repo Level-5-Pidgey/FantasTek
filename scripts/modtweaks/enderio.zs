@@ -455,7 +455,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <enderio:block_alloy_smelter>, 
 ]);
 
 //Remove useless enderium base
-mods.enderio.AlloySmelter.removeRecipe(<ore:ingotEnderiumBase>.firstItem);
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:39>);
 mods.enderio.AlloySmelter.removeRecipe(<ore:ingotEnderium>.firstItem * 2);
 
 //Machine Tier Tooltips

@@ -121,7 +121,7 @@ val mekanismRecipes_CRAFTINGTABLE = {
 	<mekanism:basicblock2:3>.withTag({tier: 1}) : [[<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})], [scripts.helpers.BatteryTiers[2], <enderio:item_material:66>, scripts.helpers.BatteryTiers[2]], [<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})]],
 	<mekanism:basicblock2:4>.withTag({tier: 1}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], <enderio:item_material:66>, scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
 	<mekanism:electrolyticcore> : [[<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>], [<ore:dustGold>, null, <ore:dustSilver>], [<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>]],
-	<mekanism:gastank>.withTag({tier: 0}) : [[<ore:ingotSteel>, <ore:gearSteel>, <ore:ingotSteel>], [<ore:ingotTough>, null, <ore:ingotTough>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]],
+	<mekanism:gastank>.withTag({tier: 0}) : [[<ore:ingotSteel>, <ore:gearSteel>, <ore:ingotSteel>], [<ore:ingotFerroboron>, null, <ore:ingotFerroboron>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in mekanismRecipes_CRAFTINGTABLE {
@@ -194,7 +194,7 @@ val mekanism_BalloonCrafting = {
 for key, value in mekanism_BalloonCrafting {
 	recipes.remove(key);
 	mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(key) ~ "_" ~ value.name, scripts.helpers.stages.progression3.stage, key, [<mekanism:balloon:*>, value]);
-	mods.mekanism.reaction.addRecipe(value, <liquid:plastic> * 500, <gas:helium> * 250, key, null, 0.0, 40);
+	mods.mekanism.reaction.addRecipe(value, <liquid:plastic> * 500, <gas:helium> * 250, key, <gas:oxygen> * 10, 10000.0, 40);
 }
 
 print("### Mekanism Init Complete ###");

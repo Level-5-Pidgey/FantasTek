@@ -40,8 +40,8 @@ mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneLimestone>, /
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneGranite>, /*Output 1*/ <ore:dustVilliaumite>.firstItem, 50, /*Output 2*/ <ore:dustFluorite>.firstItem, 50,/*Output 3*/ <ore:dustRhodochrosite>.firstItem, 15]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneAndesite>, /*Output 1*/ <ore:dustSalt>.firstItem, 80,  /*Output 2*/ <ore:dustSmallLithium>.firstItem * 2, 33,/*Output 3*/ <ore:dustSilicon>.firstItem, 33]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneDiorite>, /*Output 1*/ <ore:dustBeryllium>.firstItem, 60, /*Output 2*/ <ore:dustSmallQuartz>.firstItem * 2, 40, /*Output 3*/ <ore:dustSilicon>.firstItem, 33]);
-mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneBrimstone>, /*Output 1*/ <ore:dustBlaze>.firstItem, 33, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustSulfur>.firstItem, 15]);
-mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stonePermafrost>, /*Output 1*/ <forestry:crafting_material:5>, 50, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustNiter>.firstItem, 15]);
+mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneBrimstone>, /*Output 1*/ <ore:dustBlaze>.firstItem, 33, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustSulfur>.firstItem, 8]);
+mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stonePermafrost>, /*Output 1*/ <forestry:crafting_material:5>, 50, /*Output 2*/ <ore:gravel>.firstItem, /*Output 3*/ <ore:dustNiter>.firstItem, 8]);
 mods.nuclearcraft.rock_crusher.addRecipe([/*Input Item*/ <ore:stoneMarble>, /*Output 1*/ <ore:clay>.firstItem * 2, /*Output 2*/ <biomesoplenty:white_sand>, 50, /*Output 3*/ <ore:dustSmallIron>.firstItem, 30]);
 
 //Remove Lithium Ion Cell Recipe
