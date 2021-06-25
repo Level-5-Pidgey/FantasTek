@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-06-25T00:18:32.5728147Z",
-  "playedCount": 75,
+  "lastPlayed": "2021-06-25T09:41:42.0716435Z",
+  "playedCount": 84,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -260,7 +260,7 @@
       "dateInstalled": "2021-06-09T07:48:58.6058527Z",
       "dateUpdated": "2021-06-10T06:51:29.8592321Z",
       "dateLastUpdateAttempted": "2021-06-10T06:51:29.8592321Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3335,14 +3335,14 @@
       "addonID": 239197,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 3335030,
-        "displayName": "CraftTweaker2-1.12-4.1.20.647.jar",
-        "fileName": "CraftTweaker2-1.12-4.1.20.647.jar",
-        "fileDate": "2021-06-02T13:50:16.193Z",
-        "fileLength": 1541105,
+        "id": 3357049,
+        "displayName": "CraftTweaker2-1.12-4.1.20.652.jar",
+        "fileName": "CraftTweaker2-1.12-4.1.20.652.jar",
+        "fileDate": "2021-06-19T05:33:31.58Z",
+        "fileLength": 1545751,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3335/30/CraftTweaker2-1.12-4.1.20.647.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3357/49/CraftTweaker2-1.12-4.1.20.652.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -3350,7 +3350,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 386203292,
+            "fingerprint": 2002765829,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3362,7 +3362,7 @@
           },
           {
             "foldername": "crafttweaker",
-            "fingerprint": 4201977349,
+            "fingerprint": 2388424264,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3380,7 +3380,7 @@
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 1802506821,
+            "fingerprint": 3754769264,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3391,7 +3391,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3318662535,
+        "packageFingerprint": 1310710750,
         "gameVersion": [
           "1.12.2"
         ],
@@ -3404,11 +3404,11 @@
         "gameVersionDateReleased": "2017-09-18T05:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.647.jar"
+        "FileNameOnDisk": "CraftTweaker2-1.12-4.1.20.652.jar"
       },
       "dateInstalled": "2021-06-09T07:48:58.6058527Z",
-      "dateUpdated": "2021-06-10T06:51:32.1295707Z",
-      "dateLastUpdateAttempted": "2021-06-10T06:51:32.1295707Z",
+      "dateUpdated": "2021-06-25T04:45:29.9789572Z",
+      "dateLastUpdateAttempted": "2021-06-25T04:45:29.9789572Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -7149,21 +7149,21 @@
       "addonID": 309756,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 3328809,
-        "displayName": "GasConduits - 5.3.70",
-        "fileName": "EnderIO-conduits-mekanism-1.12.2-5.3.70.jar",
-        "fileDate": "2021-05-28T23:09:27.847Z",
-        "fileLength": 155595,
+        "id": 3060489,
+        "displayName": "GasConduits-1.12.2-1.2.4.jar",
+        "fileName": "GasConduits-1.12.2-1.2.4.jar",
+        "fileDate": "2020-09-19T13:48:33.293Z",
+        "fileLength": 142197,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3328/809/EnderIO-conduits-mekanism-1.12.2-5.3.70.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3060/489/GasConduits-1.12.2-1.2.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 297197,
-            "type": 2,
+            "addonId": 268560,
+            "type": 3,
             "fileId": 0
           },
           {
@@ -7174,14 +7174,8 @@
           },
           {
             "id": 0,
-            "addonId": 297193,
+            "addonId": 297197,
             "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 268560,
-            "type": 3,
             "fileId": 0
           }
         ],
@@ -7189,25 +7183,25 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2774712005,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1266173624,
+            "fingerprint": 2464251221,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "gg",
-            "fingerprint": 1962206475,
+            "fingerprint": 572864687,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3080729124,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3529235690,
+            "fingerprint": 57296712,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -7218,7 +7212,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1611712012,
+        "packageFingerprint": 4203290202,
         "gameVersion": [
           "1.12.2"
         ],
@@ -7231,12 +7225,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "EnderIO-conduits-mekanism-1.12.2-5.3.70.jar"
+        "FileNameOnDisk": "GasConduits-1.12.2-1.2.4.jar"
       },
-      "dateInstalled": "2020-12-24T05:41:56.7379201Z",
-      "dateUpdated": "2021-06-09T06:58:56.248445Z",
-      "dateLastUpdateAttempted": "2021-06-09T06:58:56.248445Z",
-      "status": 4,
+      "dateInstalled": "2021-06-25T05:17:39.5349572Z",
+      "dateUpdated": "2021-06-25T05:17:39.5419575Z",
+      "dateLastUpdateAttempted": "2021-06-25T05:17:39.5419575Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7245,7 +7239,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 74072,
@@ -7519,7 +7513,7 @@
       "dateInstalled": "2020-12-29T09:44:31.4615354Z",
       "dateUpdated": "2021-06-09T06:58:53.674089Z",
       "dateLastUpdateAttempted": "2021-06-09T06:58:53.674089Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9420,7 +9414,7 @@
       "dateInstalled": "2021-06-09T07:48:58.6063547Z",
       "dateUpdated": "2021-06-09T07:48:58.6063547Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9802,7 +9796,7 @@
       "dateInstalled": "2020-12-24T05:42:00.013233Z",
       "dateUpdated": "2021-06-09T06:58:58.3397413Z",
       "dateLastUpdateAttempted": "2021-06-09T06:58:58.3397413Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10966,14 +10960,14 @@
       "addonID": 304346,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 3328808,
-        "displayName": "Ender IO endergy - 5.3.70",
-        "fileName": "EnderIO-endergy-1.12.2-5.3.70.jar",
-        "fileDate": "2021-05-28T23:09:25.413Z",
-        "fileLength": 118011,
+        "id": 3124450,
+        "displayName": "Ender IO endergy - 5.2.66",
+        "fileName": "EnderIO-endergy-1.12.2-5.2.66.jar",
+        "fileDate": "2020-11-27T11:43:13.59Z",
+        "fileLength": 118516,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3328/808/EnderIO-endergy-1.12.2-5.3.70.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3124/450/EnderIO-endergy-1.12.2-5.2.66.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -10994,25 +10988,25 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3754092328,
+            "fingerprint": 4081104243,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 1450966398,
+            "fingerprint": 4176719763,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "crazypants",
-            "fingerprint": 1336143683,
+            "fingerprint": 3609963738,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 2761127555,
+            "fingerprint": 2354027730,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -11023,7 +11017,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 83461531,
+        "packageFingerprint": 2252280505,
         "gameVersion": [
           "1.12.2"
         ],
@@ -11036,12 +11030,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "EnderIO-endergy-1.12.2-5.3.70.jar"
+        "FileNameOnDisk": "EnderIO-endergy-1.12.2-5.2.66.jar"
       },
-      "dateInstalled": "2020-12-24T05:41:56.7669444Z",
-      "dateUpdated": "2021-06-09T06:58:46.1114076Z",
-      "dateLastUpdateAttempted": "2021-06-09T06:58:46.1114076Z",
-      "status": 4,
+      "dateInstalled": "2021-06-25T05:13:40.8169553Z",
+      "dateUpdated": "2021-06-25T05:13:40.8239553Z",
+      "dateLastUpdateAttempted": "2021-06-25T05:13:40.8239553Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11050,7 +11044,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 318872,
@@ -11320,9 +11314,9 @@
         "isServerPack": false,
         "FileNameOnDisk": "EnderTweaker-1.12.2-1.2.2.jar"
       },
-      "dateInstalled": "2020-12-24T05:41:56.7844601Z",
-      "dateUpdated": "2021-06-09T06:58:50.4967475Z",
-      "dateLastUpdateAttempted": "2021-06-09T06:58:50.4967475Z",
+      "dateInstalled": "2021-06-25T05:09:24.689456Z",
+      "dateUpdated": "2021-06-25T05:13:12.2409573Z",
+      "dateLastUpdateAttempted": "2021-06-25T05:13:12.2409573Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -11332,7 +11326,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 255232,
@@ -12589,7 +12583,7 @@
       "dateInstalled": "2021-01-25T05:35:09.391745Z",
       "dateUpdated": "2021-06-09T06:59:19.0578008Z",
       "dateLastUpdateAttempted": "2021-06-09T06:59:19.0578008Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15827,7 +15821,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7624411Z",
       "dateUpdated": "2021-06-09T06:59:13.7467572Z",
       "dateLastUpdateAttempted": "2021-06-09T06:59:13.7467572Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17364,7 +17358,7 @@
       "dateInstalled": "2021-06-09T06:39:46.3155041Z",
       "dateUpdated": "2021-06-09T07:04:35.2508968Z",
       "dateLastUpdateAttempted": "2021-06-09T07:04:35.2508968Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18398,7 +18392,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7364189Z",
       "dateUpdated": "2021-06-09T06:58:03.1128982Z",
       "dateLastUpdateAttempted": "2021-06-09T06:58:03.1128982Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18476,7 +18470,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7594381Z",
       "dateUpdated": "2021-06-09T06:59:09.2283881Z",
       "dateLastUpdateAttempted": "2021-06-09T06:59:09.2283881Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18554,7 +18548,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7479289Z",
       "dateUpdated": "2021-06-09T06:59:05.1892647Z",
       "dateLastUpdateAttempted": "2021-06-09T06:59:05.1892647Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18569,20 +18563,20 @@
       "addonID": 64578,
       "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
       "installedFile": {
-        "id": 3328811,
-        "displayName": "Ender IO - 5.3.70",
-        "fileName": "EnderIO-1.12.2-5.3.70.jar",
-        "fileDate": "2021-05-28T23:09:34.453Z",
-        "fileLength": 8946575,
+        "id": 3124452,
+        "displayName": "Ender IO - 5.2.66",
+        "fileName": "EnderIO-1.12.2-5.2.66.jar",
+        "fileDate": "2020-11-27T11:43:19.517Z",
+        "fileLength": 8846109,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3328/811/EnderIO-1.12.2-5.3.70.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3124/452/EnderIO-1.12.2-5.2.66.jar",
         "isAlternate": false,
-        "alternateFileId": 3328812,
+        "alternateFileId": 3124453,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 220318,
+            "addonId": 222880,
             "type": 2,
             "fileId": 0
           },
@@ -18600,91 +18594,13 @@
           },
           {
             "id": 0,
-            "addonId": 227083,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 223794,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 59751,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 222880,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
             "addonId": 306028,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 225561,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 231951,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 61811,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 231868,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 242638,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 267602,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 245211,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 243076,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 223008,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 228404,
+            "addonId": 74072,
             "type": 2,
             "fileId": 0
           },
@@ -18696,7 +18612,49 @@
           },
           {
             "id": 0,
+            "addonId": 243076,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 231868,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 225561,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 223008,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 242638,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 250277,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 220318,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 245211,
             "type": 2,
             "fileId": 0
           },
@@ -18708,7 +18666,43 @@
           },
           {
             "id": 0,
-            "addonId": 74072,
+            "addonId": 59751,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 228404,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 227083,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 61811,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 223794,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 267602,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 231951,
             "type": 2,
             "fileId": 0
           }
@@ -18717,25 +18711,25 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3279576490,
+            "fingerprint": 328978791,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 1755672418,
+            "fingerprint": 4256864700,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "crazypants",
-            "fingerprint": 248345352,
+            "fingerprint": 1168368675,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mcmod.info",
-            "fingerprint": 3584556454,
+            "fingerprint": 513835683,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -18746,7 +18740,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3310876847,
+        "packageFingerprint": 3206776571,
         "gameVersion": [
           "1.12.2"
         ],
@@ -18759,12 +18753,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "EnderIO-1.12.2-5.3.70.jar"
+        "FileNameOnDisk": "EnderIO-1.12.2-5.2.66.jar"
       },
-      "dateInstalled": "2020-12-24T05:41:56.7794554Z",
-      "dateUpdated": "2021-06-09T06:58:43.3773905Z",
-      "dateLastUpdateAttempted": "2021-06-09T06:58:43.3773905Z",
-      "status": 4,
+      "dateInstalled": "2021-06-25T05:13:26.7224557Z",
+      "dateUpdated": "2021-06-25T05:13:26.7349564Z",
+      "dateLastUpdateAttempted": "2021-06-25T05:13:26.7349564Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18773,7 +18767,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 243298,
@@ -19418,116 +19412,6 @@
       },
       "dateInstalled": "2020-12-24T05:41:56.7369192Z",
       "dateUpdated": "2020-12-24T05:41:56.7369192Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 318160,
-      "gameInstanceID": "617f9720-2ad4-4d3b-9825-0a346bfcc9b4",
-      "installedFile": {
-        "id": 2756813,
-        "displayName": "1.0.0-rc.3",
-        "fileName": "cotton-1.0.0-rc.3.jar",
-        "fileDate": "2019-08-07T22:08:01.87Z",
-        "fileLength": 461647,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2756/813/cotton-1.0.0-rc.3.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 29248211,
-            "addonId": 323710,
-            "type": 1,
-            "fileId": 2756813
-          },
-          {
-            "id": 29248212,
-            "addonId": 306612,
-            "type": 3,
-            "fileId": 2756813
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "LICENSE",
-            "fingerprint": 3853609366,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "fabric.mod.json",
-            "fingerprint": 1680743937,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "icon.png",
-            "fingerprint": 2014143835,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2745997186,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1251196806,
-        "gameVersion": [
-          "1.14.4",
-          "1.14.3",
-          "Fabric"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000014.0000000004",
-            "gameVersion": "1.14.4",
-            "gameVersionReleaseDate": "2019-07-19T00:00:00Z",
-            "gameVersionName": "1.14.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000014.0000000003",
-            "gameVersion": "1.14.3",
-            "gameVersionReleaseDate": "2019-06-24T00:00:00Z",
-            "gameVersionName": "1.14.3"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Fabric"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1617980,
-        "projectId": 318160,
-        "packageFingerprintId": 341953205,
-        "gameVersionDateReleased": "2019-06-24T00:00:00Z",
-        "gameVersionMappingId": 1888015,
-        "gameVersionId": 7413,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "cotton-1.0.0-rc.3.jar"
-      },
-      "dateInstalled": "2020-12-24T05:41:56.7324152Z",
-      "dateUpdated": "2020-12-24T05:41:56.7324152Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
@@ -22666,7 +22550,7 @@
       "dateInstalled": "2020-12-24T05:41:56.7674454Z",
       "dateUpdated": "2021-06-09T06:59:21.2868684Z",
       "dateLastUpdateAttempted": "2021-06-09T06:59:21.2868684Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
