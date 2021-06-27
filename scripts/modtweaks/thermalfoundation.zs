@@ -274,4 +274,80 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:machine:8>, [
 	[<ore:gearSignalum>, scripts.helpers.CircuitTiers[2], <ore:gearSignalum>]
 ]);
 
+//Remove Niter Creation from Nether blocks
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:soul_sand>, <minecraft:netherrack> * 2);
+val sulfurSandItems = [
+	<quark:soul_sandstone_bricks_stairs>,
+	<quark:soul_sandstone_smooth_slab>,
+	<quark:soul_sandstone_slab>,
+	<minecraft:netherrack>,
+	<quark:sandstone_new:5>,
+	<quark:sandstone_new:4>,
+	<quark:soul_sandstone_bricks_slab>,
+	<quark:soul_sandstone_stairs>,
+	<quark:soul_sandstone>
+] as crafttweaker.item.IItemStack[];
+
+for sandItem in sulfurSandItems
+{
+	mods.thermalexpansion.Pulverizer.removeRecipe(sandItem);
+}
+
+//Duct Crafting Injections
+recipes.remove(<thermaldynamics:duct_0:3>);
+recipes.remove(<thermaldynamics:duct_0:4>);
+recipes.remove(<thermaldynamics:duct_0:9>);
+recipes.remove(<thermaldynamics:duct_32:6>);
+recipes.remove(<thermaldynamics:duct_32:7>);
+scripts.helpers.CreateAssemblyRecipe(<thermaldynamics:duct_0:9>, [<ore:ingotEndSteel>, <ore:blockGlassHardened>, <ore:ingotEndSteel>, <ore:blockGlassHardened>, <thermaldynamics:duct_0:4>, <ore:blockGlassHardened>, <ore:ingotEndSteel>, <ore:blockGlassHardened>, <ore:ingotEndSteel>], 20, 10000);
+
+val thermalRecipes_ADVANCEDCONDUITS = {
+	[/*Output*/<thermaldynamics:duct_16:2>, /*Input*/<thermaldynamics:duct_16>] : <liquid:invar>,
+	[/*Output*/<thermaldynamics:duct_16:3>, /*Input*/<thermaldynamics:duct_16:1>] : <liquid:invar>,
+	[/*Output*/<thermaldynamics:duct_16:4>, /*Input*/<thermaldynamics:duct_16:2>] : <liquid:signalum>,
+	[/*Output*/<thermaldynamics:duct_16:5>, /*Input*/<thermaldynamics:duct_16:3>] : <liquid:signalum>,
+	[/*Output*/<thermaldynamics:duct_16:6>, /*Input*/<thermaldynamics:duct_16:2>] : <liquid:tough>,
+	[/*Output*/<thermaldynamics:duct_16:7>, /*Input*/<thermaldynamics:duct_16:3>] : <liquid:tough>,
+	[/*Output*/<thermaldynamics:duct_32:2>, /*Input*/<thermaldynamics:duct_32>] : <liquid:glowstone>,
+	[/*Output*/<thermaldynamics:duct_32:3>, /*Input*/<thermaldynamics:duct_32:1>] : <liquid:glowstone>,
+	[/*Output*/<thermaldynamics:duct_32:4>, /*Input*/<thermaldynamics:duct_32>] : <liquid:signalum>,
+	[/*Output*/<thermaldynamics:duct_32:5>, /*Input*/<thermaldynamics:duct_32:1>] : <liquid:signalum>,
+} as crafttweaker.liquid.ILiquidStack[crafttweaker.item.IItemStack[]];
+
+for conduit, liquid in thermalRecipes_ADVANCEDCONDUITS {
+    recipes.remove(conduit[0].withAmount(1));
+	if(liquid.name != "glowstone")
+	{
+		scripts.helpers.addInjectionRecipe(conduit[0], conduit[1], liquid * 144, 1000, 3);
+	}
+	else
+	{
+		scripts.helpers.addInjectionRecipe(conduit[0], conduit[1], liquid * 200, 1000, 3);
+	}
+}
+
+val thermalRecipes_SHAPELESS = {
+	<thermaldynamics:duct_32>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32>, <ore:nuggetLead>],
+	<thermaldynamics:duct_32:1>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32:1>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32:1>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32:1>, <ore:nuggetLead>],
+	<thermaldynamics:duct_32:2>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32:2>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32:2>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32:2>, <ore:nuggetLead>],
+	<thermaldynamics:duct_32:3>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32:3>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32:5>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32:5>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32:5>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32:5>, <ore:nuggetLead>],
+	<thermaldynamics:duct_32:4>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32:4>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32:4>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32:4>, <ore:nuggetLead>],
+	<thermaldynamics:duct_32:6>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32:6>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32:6>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32:6>, <ore:nuggetLead>],
+	<thermaldynamics:duct_32:7>.withTag({DenseType: 2 as byte}) : [<thermaldynamics:duct_32:7>, <ore:nuggetSilver>],
+	<thermaldynamics:duct_32:7>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32:7>, <ore:nuggetLead>],
+	<thermaldynamics:duct_32:3>.withTag({DenseType: 1 as byte}) : [<thermaldynamics:duct_32:3>, <ore:nuggetLead>],
+} as crafttweaker.item.IIngredient[][crafttweaker.item.IItemStack];
+
+for key, value in thermalRecipes_SHAPELESS {
+	recipes.remove(key.withAmount(1));
+	mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(key), scripts.helpers.stages.progression2.stage, key, value);
+}
+
 print("### Thermal Foundation Init Complete ###");
