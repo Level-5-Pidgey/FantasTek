@@ -262,9 +262,10 @@ for key, value in enderioRecipes_EXTENDEDCRAFTING {
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:3>);
 furnace.addRecipe(<enderio:item_material:3>, <enderio:item_material:38>);
 
-//Carpenter Simple Machine Chassis
+//Simple Machine Chassis Crafting
 mods.forestry.Carpenter.addRecipe(<enderio:item_material>, [[<ore:ingotCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotCrudeSteel>],[<ore:ingotElectrotineAlloy>, null, <ore:ingotElectrotineAlloy>],[<ore:ingotCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotCrudeSteel>]], 400, <liquid:water> * 1000);
 mods.forestry.Carpenter.addRecipe(<enderio:item_material> * 2, [[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],[<ore:ingotSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotSteel>],[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]], 400, <liquid:water> * 1000);
+mods.extendedcrafting.EnderCrafting.addShaped(<enderio:item_material> * 3, [[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],[<ore:ingotSteel>, <ore:ingotElectrotineAlloy>, <ore:ingotSteel>],[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]], 40);
 
 //Remove Rocket Fuel Crafting
 mods.enderio.Vat.removeRecipe(<liquid:rocket_fuel>);
@@ -368,7 +369,7 @@ for key, value in enderioRecipes_ASSEMBLY {
 }
 
 //Blank EnderIO Item Upgrade
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_dark_steel_upgrade>);
+mods.enderio.AlloySmelter.removeByInputs(<enderio:block_dark_iron_bars>, <minecraft:clay_ball>, <minecraft:string> * 4);
 scripts.helpers.CreateAssemblyRecipe(<enderio:item_dark_steel_upgrade>, [<ore:ingotDarkSteel>, <ore:plateSilver>, <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, scripts.helpers.CircuitTiers[2], <ore:ingotDarkSteel>, <ore:ingotDarkSteel>, <ore:plateSilver>, <ore:ingotDarkSteel>], 80, 25000);
 
 //Enderio Tool and Armour Upgrades
@@ -455,8 +456,8 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <enderio:block_alloy_smelter>, 
 ]);
 
 //Remove useless enderium base
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:39>);
-mods.enderio.AlloySmelter.removeRecipe(<ore:ingotEnderium>.firstItem * 2);
+mods.enderio.AlloySmelter.removeByInputs(<enderio:item_material:39> * 2, <minecraft:sand>);
+mods.enderio.AlloySmelter.removeByInputs(<ore:ingotLead>.firstItem * 3, <ore:ingotPlatinum>.firstItem, <ore:enderpearl>.firstItem * 4);
 
 //Machine Tier Tooltips
 <enderio:block_alloy_smelter>.addTooltip(scripts.helpers.createTierTooltip("Alloy Furnace Tier ", 3, false, "."));

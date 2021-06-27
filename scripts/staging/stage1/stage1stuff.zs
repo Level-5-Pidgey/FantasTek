@@ -634,6 +634,11 @@ val StageLessItems = [
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),
 	<industrialforegoing:item_splitter>,
 	<mekanism:configurator>,
+	<mekanism:dictionary>,
+	<thermalexpansion:device:6>,
+	<thermalexpansion:device:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[]}),
+	<thermalexpansion:device:5>,
+	<thermalexpansion:device:5>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[]}),
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

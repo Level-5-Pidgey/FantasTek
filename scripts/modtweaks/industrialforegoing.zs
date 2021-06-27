@@ -106,7 +106,7 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 	<industrialforegoing:lava_fabricator>
 									:	[[<ore:plateInvar>, <ore:obsidian>, <ore:plateInvar>],
 										[<ore:plateInvar>, scripts.helpers.FrameTiers[3], <ore:plateInvar>],
-										[<contenttweaker:magma_powder>, <ore:gearLumium>, <contenttweaker:magma_powder>],
+										[<ore:plateBronze>, <ore:gearLumium>, <ore:plateBronze>],
 										[null, <minecraft:magma_cream>, <ore:dustPyrotheum>]],
 	<industrialforegoing:bioreactor>
 									:	[[<ore:plateApatite>, <ore:ingotCopper>, <ore:plateApatite>],

@@ -281,17 +281,17 @@ val foodStrings as double[][string] =
 for foodName, foodRestorationArray in foodStrings {
 	var foodItem = VanillaFactory.createItemFood(foodName, foodRestorationArray[0]);
 	foodItem.saturation = foodRestorationArray[1];
-	foodItem.maxStackSize = 4; //Typical Stack Sizes
+	foodItem.maxStackSize = 16; //Typical Stack Sizes
 
 	//Custom Stack Sizes for foods
 	if (foodName == "meat_pie" || foodName == "steak_and_chips")
 	{
-		foodItem.maxStackSize = 2;
+		foodItem.maxStackSize = 8;
 	}
 
 	if (foodName == "pocky")
 	{
-		foodItem.maxStackSize = 24;
+		foodItem.maxStackSize = 64;
 	}
 
 	foodItem.register();

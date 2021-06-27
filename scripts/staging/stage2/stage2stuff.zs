@@ -254,6 +254,7 @@ val stage2_stageItems = [
     <nuclearcraft:infuser_active>,
     <nuclearcraft:infuser_idle>,
     <nuclearcraft:compound:7>,
+    <mekanism:machineblock3:3>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems

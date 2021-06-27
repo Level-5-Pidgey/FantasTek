@@ -496,10 +496,6 @@ function getNcPowerRate(energyCost as int, ncBasePower as int, ncBaseTime as int
 function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemStack, input1 as crafttweaker.item.IItemStack, input2 as crafttweaker.item.IItemStack, energyCost as int, chanceOutput as crafttweaker.item.IItemStack, chanceFloat as float, recipeTier as int)
 {
     var inputArray = [input1, input2] as crafttweaker.item.IItemStack[];
-    var zeroedRecipeTier = 4 - mathMax(0, (recipeTier - 1));
-    var chanceInt = (chanceFloat * 100);
-    var cappedChance = mathMin((chanceFloat * 100) * (zeroedRecipeTier * 1.2), 100);
-    var cappedChanceFloat as float = cappedChance / 100;
 
     //Induction Smelter
     if(recipeTier <= 4)
@@ -510,7 +506,7 @@ function addAlloySmeltingRecipeWithSecondary(output as crafttweaker.item.IItemSt
         }
         else
         {
-            mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost, chanceOutput, cappedChanceFloat);
+            mods.thermalexpansion.InductionSmelter.addRecipe(output, input1, input2, energyCost, chanceOutput, chanceFloat);
         }
     }
 
@@ -543,9 +539,9 @@ function addCrushingRecipeWithSecondary(output as crafttweaker.item.IItemStack, 
     var outputArray = [output] as crafttweaker.item.IItemStack[];
     outputArray += extraOutput;
     var chanceArray = [1.0] as float[];
-    var zeroedRecipeTier = 4 - mathMax(0, (recipeTier - 1));
-    var tierInfluencedChance = mathMin(extraOutputChance * (zeroedRecipeTier * 1.25), 100);
-    chanceArray += (tierInfluencedChance / 100) as float;
+    var tierBonus as float = ((recipeTier - 1) as float * 0.25);
+    var tierInfluencedChance as int = mathMin(extraOutputChance * (1.0 + tierBonus), 80);
+    chanceArray += (tierInfluencedChance as float / 100) as float;
 
     //AE Grinder (Tier 1)
     if(recipeTier <= 1)

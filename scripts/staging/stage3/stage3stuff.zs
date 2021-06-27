@@ -34,6 +34,13 @@ val stage3_stageItems = [
     <magneticraft:pumpjack>,
     <magneticraft:oil_heater>,
     <magneticraft:refinery>,
+    <thermalexpansion:augment:128>,
+    <thermalexpansion:augment:129>,
+    <thermalexpansion:augment:368>,
+    <thermalexpansion:augment:512>,
+    <thermalexpansion:augment:513>,
+    <thermalexpansion:augment:673>,
+    <thermalexpansion:augment:674>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage3_stageItems

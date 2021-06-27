@@ -19,4 +19,7 @@ recipes.addShaped(scripts.helpers.createRecipeName(<natura:nether_glass>), <natu
 	[<ore:blockGlassWhite>, <ore:blockGlassWhite>, <ore:blockGlassWhite>]
 ]);
 
+//Remove Sulfur -> Gunpowder
+recipes.removeByRecipeName("natura:common/gunpowder");
+
 print("### Natura Init Complete ###");

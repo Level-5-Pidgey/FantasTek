@@ -121,6 +121,7 @@ val mekanismRecipes_CRAFTINGTABLE = {
 	<mekanism:basicblock2:3>.withTag({tier: 1}) : [[<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})], [scripts.helpers.BatteryTiers[2], <enderio:item_material:66>, scripts.helpers.BatteryTiers[2]], [<mekanism:basicblock2:3>.withTag({tier: 0}), scripts.helpers.BatteryTiers[2], <mekanism:basicblock2:3>.withTag({tier: 0})]],
 	<mekanism:basicblock2:4>.withTag({tier: 1}) : [[<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>], [scripts.helpers.CircuitTiers[0], <enderio:item_material:66>, scripts.helpers.CircuitTiers[0]], [<ore:dustSmallArdite>, scripts.helpers.CircuitTiers[0], <ore:dustSmallArdite>]],
 	<mekanism:electrolyticcore> : [[<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>], [<ore:dustGold>, null, <ore:dustSilver>], [<ore:ingotSteel>, <ore:plateAluminium>, <ore:ingotSteel>]],
+	<mekanism:dictionary> : [[<ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>, <ore:nuggetPulsatingIron>], [null, <ore:book>, null], [<ore:nuggetConductiveIron>, <ore:nuggetConductiveIron>, <ore:nuggetConductiveIron>]],
 	<mekanism:gastank>.withTag({tier: 0}) : [[<ore:ingotSteel>, <ore:gearSteel>, <ore:ingotSteel>], [<ore:ingotFerroboron>, null, <ore:ingotFerroboron>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
@@ -168,7 +169,7 @@ val mekanism_PipeCrafting = {
 
 for key, value in mekanism_PipeCrafting {
 	recipes.remove(key);
-	scripts.helpers.CreateAssemblyRecipe(key * 24, [null, null, null, <ore:ingotSteel>, value, <ore:ingotSteel>, null, null, null], 40, 2500);
+	scripts.helpers.CreateAssemblyRecipe(key * 16, [null, null, null, <ore:ingotSteel>, value, <ore:ingotSteel>, null, null, null], 40, 2500);
 	mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(key), scripts.helpers.stages.progression2.stage, key * 8, [[<ore:ingotSteel>, value, <ore:ingotSteel>]]);
 }
 
