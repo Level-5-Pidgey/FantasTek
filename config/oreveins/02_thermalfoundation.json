@@ -308,7 +308,7 @@
     		{ "block": "quark:biome_cobblestone" },
     		{ "block": "minecraft:sandstone" },
         ],
-      "rarity": 20
+      "rarity": 15
     },
     "stone": [
 		{ "block": "minecraft:stone" },
@@ -321,7 +321,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 95,
+    "rarity": 90,
     "min_y": 5,
     "max_y": 35,
     "density": 180,
