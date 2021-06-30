@@ -279,7 +279,7 @@ mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<forestry:c
 
 //Add Bottler Recipe
 recipes.remove(<forestry:bottler>);
-scripts.helpers.createAdvancedCraftingRecipe(<forestry:bottler>, [[null, <ore:blockGlassColorless>, null], [<ore:blockGlassColorless>, scripts.helpers.FrameTiers[0], <ore:blockGlassColorless>], [null, <ore:blockGlassColorless>, null]], null, null, <forestry:can>, "", true);
+scripts.helpers.createAdvancedCraftingRecipe(<forestry:bottler>, [[null, <ore:blockGlassColorless>, null], [<ore:blockGlassColorless>, scripts.helpers.FrameTiers[0], <ore:blockGlassColorless>], [<ore:ingotTin>, <ore:blockGlassColorless>, <ore:ingotTin>]], null, null, <forestry:can>, "", true);
 
 //Remove Supercooling water making Crushed Ice
 mods.nuclearcraft.supercooler.removeRecipeWithInput([<liquid:water> * 1000]);

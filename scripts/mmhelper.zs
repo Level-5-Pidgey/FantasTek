@@ -158,6 +158,7 @@ function simplifyItem(inputItem as crafttweaker.item.IIngredient) as crafttweake
 		"Aluminum",
         "Draconium",
         "Titanium",
+		"Apatite",
         "Thorium",
         "Uranium",
         "Boron",

@@ -61,8 +61,8 @@ mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:7>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:ingotGold>.firstItem, <minecraft:soul_sand>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<ore:dustGold>.firstItem, <minecraft:soul_sand>);
-scripts.helpers.addAlloySmeltingRecipe(<enderio:item_alloy_ingot:7>, <ore:ingotNetherite>.firstItem, <minecraft:soul_sand>, 7000, 2);
-scripts.helpers.addInjectionRecipe(<enderio:item_alloy_ingot:7>, <minecraft:soul_sand>, <liquid:netherite> * 144, 5000, 2);
+scripts.helpers.addAlloySmeltingRecipe(<enderio:item_alloy_ingot:7> * 3, <ore:ingotNetherite>.firstItem, <minecraft:soul_sand> * 3, 7000, 2);
+scripts.helpers.addInjectionRecipe(<enderio:item_alloy_ingot:7> * 3, <minecraft:soul_sand> * 3, <liquid:netherite> * 144, 5000, 2);
 
 //Change Energetic Steel Crafting Recipes
 mods.tconstruct.Alloy.removeRecipe(<liquid:energetic_silver>);
@@ -144,7 +144,11 @@ val enderIOHideItems =
 	<enderio:item_material:22>,
 	<enderio:block_decoration3:1>,
 	<enderio:block_simple_alloy_smelter>,
-	<enderio:item_capacitor_grainy>
+	<enderio:item_capacitor_grainy>,
+	<enderio:item_material:69>,
+	<enderio:block_simple_sag_mill>,
+	<enderio:block_simple_crafter>,
+	<enderio:item_material:68>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in enderIOHideItems
@@ -241,6 +245,7 @@ for key, value in enderioRecipes_CRAFTINGTABLE {
 
 val enderioRecipes_EXTENDEDCRAFTING = {
 	<enderio:block_simple_furnace> : [[<ore:ingotIron>, <minecraft:furnace>, <ore:ingotIron>], [<ore:bricksStone>, scripts.helpers.FrameTiers[0], <ore:bricksStone>], [<ore:bricksStone>, scripts.helpers.MotorTiers[0], <ore:bricksStone>]],
+	<enderio:item_xp_transfer> : [[null, null, <ore:gearVibrantAlloy>], [null, <ore:ingotVibrantAlloy>, null], [<ore:blockEnchantedMetal>, null, null]],
 	<enderio:block_simple_wired_charger> : [[<ore:bricksStone>, <ore:ingotElectrotineAlloy>, <ore:bricksStone>], [<magneticraft:battery_item_low>, scripts.helpers.FrameTiers[0], <magneticraft:battery_item_low>], [<ore:bricksStone>, <ore:ingotRedstoneAlloy>, <ore:bricksStone>]],
 	<enderio:block_solar_panel> * 3 : [[<enderio:item_material:3>, <enderio:item_material:3>, <enderio:item_material:3>], [<ore:gemQuartz>, <ore:gemQuartz>, <ore:gemQuartz>]],
 	<enderio:item_material> : [[<ore:plateCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:plateCrudeSteel>], [<ore:ingotElectrotineAlloy>, null, <ore:ingotElectrotineAlloy>], [<ore:plateCrudeSteel>, <ore:ingotElectrotineAlloy>, <ore:plateCrudeSteel>]],
@@ -436,6 +441,41 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 	//									[null, null, null],
 	//  								[null, null, null],
 	//									[null, null, null]],
+	<enderio:block_slice_and_splice>
+									:	[[<ore:ingotSoularium>, <ore:itemSkull>, <ore:ingotSoularium>],
+										[<ore:ingotSoularium>, <enderio:item_material:53>, <ore:ingotSoularium>],
+										[<ore:plateDarkSteel>, scripts.helpers.MotorTiers[1], <ore:plateDarkSteel>],
+										[null, <ore:ingotEnergeticAlloy>, scripts.helpers.CircuitTiers[1]]],
+	<enderio:block_inhibitor_obelisk>
+									:	[[null, <enderio:item_material:16>, null],
+										[<ore:ingotEnergeticAlloy>, <ore:gearElectricalSteel>, <ore:ingotEnergeticAlloy>],
+										[<ore:ingotSoularium>, scripts.helpers.FrameTiers[1], <ore:ingotSoularium>],
+										[null, null, <ore:ingotEnergeticAlloy>]],
+	<enderio:block_experience_obelisk>
+									:	[[null, <enderio:item_xp_transfer>, null],
+										[<ore:ingotEnergeticAlloy>, <minecraft:bucket>, <ore:ingotEnergeticAlloy>],
+										[<ore:ingotSoularium>, scripts.helpers.FrameTiers[1], <ore:ingotSoularium>],
+										[null, null, <ore:ingotVibrantAlloy>]],
+	<enderio:block_aversion_obelisk>
+									:	[[null, <enderio:block_enderman_skull>, null],
+										[<ore:ingotEnergeticAlloy>, <ore:gearVibrantAlloy>, <ore:ingotEnergeticAlloy>],
+										[<ore:ingotSoularium>, scripts.helpers.FrameTiers[1], <ore:ingotSoularium>],
+										[null, null, <ore:enderpearl>]],
+	<enderio:block_attractor_obelisk>
+									:	[[null, <enderio:item_material:17>, null],
+										[<ore:ingotEnergeticAlloy>, <ore:gearWood>, <ore:ingotEnergeticAlloy>],
+										[<ore:ingotSoularium>, scripts.helpers.FrameTiers[1], <ore:ingotSoularium>],
+										[<ore:gemEmerald>, null, null]],
+	<enderio:block_soul_binder>
+									:	[[<ore:plateSoularium>, <enderio:block_enderman_skull>, <ore:plateSoularium>],
+										[<ore:gearVibrantAlloy>, <enderio:item_material:53>, <ore:gearVibrantAlloy>],
+										[<ore:plateSoularium>, <ore:gearVibrantAlloy>, <ore:plateSoularium>],
+										[null, null, <ore:itemSkull>]],
+	<enderio:block_farm_station>
+									:	[[scripts.helpers.CircuitTiers[1], <enderio:item_material:14>, scripts.helpers.CircuitTiers[1]],
+										[<ore:plateSoularium>, <enderio:item_material:53>, <ore:plateSoularium>],
+										[<enderio:item_material:15>, scripts.helpers.MotorTiers[2], <enderio:item_material:15>],
+										[null, <ore:treeLeaves>, <thermalfoundation:fertilizer:2>]],
 	<enderio:block_alloy_smelter>
 									:	[[<ore:plateCrystallineAlloy>, null, <ore:plateCrystallineAlloy>],
 										[<ore:plateCrystallineAlloy>, <enderio:item_material:1>, <ore:plateCrystallineAlloy>],

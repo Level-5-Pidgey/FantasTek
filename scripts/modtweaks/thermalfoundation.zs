@@ -65,6 +65,7 @@ val thermalRecipes_EXTENDEDCRAFTING = {
 	<thermalexpansion:device:1> : [[<ore:stone>, null, <ore:stone>], [<ore:stone>, <ore:dustRedstone>, <ore:stone>], [<ore:stone>, <ore:chestWood>, <ore:stone>]],
 	<thermalexpansion:device:10> : [[null, <ore:workbench>, null], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]],
 	<thermalexpansion:device:4> : [[null, <minecraft:fishing_rod>, null], [<ore:barsIron>, scripts.helpers.FrameTiers[0], <ore:barsIron>], [<ore:gearIron>, <ore:dustRedstone>, <ore:gearIron>]],
+	<thermalexpansion:machine:11> : [[null, <ore:workbench>, null], [<ore:nuggetConductiveIron>, <ore:plateCrudeSteel>, <ore:nuggetConductiveIron>], [<ore:nuggetConductiveIron>, <ore:gearWood>, <ore:nuggetConductiveIron>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in thermalRecipes_EXTENDEDCRAFTING {
@@ -107,6 +108,26 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
 	 //									[null, null, null],
 	 //  									[null, null, null],
 	 //									[null, null, null]],
+	 <thermalexpansion:machine:14>
+ 	 								:	[[<ore:blockGlassHardened>, <minecraft:piston>, <ore:blockGlassHardened>],
+	 									[<ore:plateInvar>, scripts.helpers.FrameTiers[1], <ore:plateInvar>],
+	   									[<ore:ingotCopper>, <ore:dustRedstone>, <ore:ingotCopper>],
+	 									[null, null, <ore:dustCryotheum>]],
+	 <thermalexpansion:machine:13>
+ 	 								:	[[null, <minecraft:enchanting_table>, null],
+	 									[<ore:plateLapis>, scripts.helpers.FrameTiers[3], <ore:plateLapis>],
+	   									[<ore:ingotElectrumFlux>, scripts.helpers.CircuitTiers[2], <ore:ingotElectrumFlux>],
+	 									[null, <ore:ingotEnchantedMetal>, <ore:ingotEnchantedMetal>]],
+	 <thermalexpansion:machine:12>
+ 	 								:	[[null, <minecraft:brewing_stand>, null],
+	 									[<ore:blockGlass>, scripts.helpers.FrameTiers[0], <ore:blockGlass>],
+	   									[<ore:ingotConstantan>, <ore:ingotConductiveIron>, <ore:ingotConstantan>],
+	 									[null, <ore:dustRedstone>, <ore:dustGlowstone>]],
+	 <thermalexpansion:machine:9>
+ 	 								:	[[<ore:blockGlass>, <ore:coilCopper>, <ore:blockGlass>],
+	 									[scripts.helpers.BatteryTiers[0], scripts.helpers.FrameTiers[0], scripts.helpers.BatteryTiers[0]],
+	   									[<ore:blockGlass>, <ore:coilCopper>, <ore:blockGlass>],
+	 									[null, null, <ore:ingotGold>]],
 	 <thermalexpansion:machine:15>
  	 								:	[[<ore:blockGlass>, scripts.helpers.CircuitTiers[1], <ore:blockGlass>],
 	 									[<ore:plateManyullyn>, scripts.helpers.FrameTiers[1], <ore:plateManyullyn>],
@@ -244,7 +265,7 @@ val thermalfoundationRecipes_ASSEMBLY = {
 	<thermalexpansion:augment:320> : [<ore:blockGlassHardened>, <ore:ingotLumium>, <ore:blockGlassHardened>, <thermalfoundation:fertilizer:2>, scripts.helpers.CircuitTiers[3], <thermalfoundation:fertilizer:2>, <ore:blockGlassHardened>, <ore:ingotLumium>, <ore:blockGlassHardened>],
 	<thermalexpansion:augment:324> : [<ore:blockGlassHardened>, <ore:gearNickel>, <ore:blockGlassHardened>, <thermalfoundation:fertilizer:2>, scripts.helpers.CircuitTiers[3], <thermalfoundation:fertilizer:2>, <ore:blockGlassHardened>, <ore:gearNickel>, <ore:blockGlassHardened>],
 	<thermalexpansion:augment:352> : [<minecraft:nether_brick>, <ore:ingotInvar>, <minecraft:nether_brick>, <ore:ingotLead>, scripts.helpers.CircuitTiers[1], <ore:ingotLead>, <minecraft:nether_brick>, <ore:ingotInvar>, <minecraft:nether_brick>],
-	<thermalexpansion:augment:369> : [null, <ore:gearSignalum>, null, null, <ore:plateLead>, scripts.helpers.CircuitTiers[0], <ore:plateLead>, <minecraft:cauldron>, null],
+	<thermalexpansion:augment:369> : [null, <ore:gearSignalum>, null, <ore:plateLead>, scripts.helpers.CircuitTiers[0], <ore:plateLead>, null, <minecraft:cauldron>, null],
 	<thermalexpansion:augment:400> : [null, scripts.helpers.BatteryTiers[2], null, <ore:coilGold>, scripts.helpers.CircuitTiers[1], <ore:coilGold>, <ore:ingotLead>, <ore:ingotLead>, <ore:ingotLead>],
 	<thermalexpansion:augment:401> : [<ore:blockGlassHardened>, <ore:obsidian>, <ore:blockGlassHardened>, <ore:ingotEnchantedMetal>, scripts.helpers.CircuitTiers[2], <ore:ingotEnchantedMetal>, <ore:blockGlassHardened>, <ore:obsidian>, <ore:blockGlassHardened>],
 	<thermalexpansion:augment:497> : [null, <ore:gearNickel>, null, <ore:blockGlass>, scripts.helpers.CircuitTiers[1], <ore:blockGlass>, <ore:plateEnergeticAlloy>, <ore:dustAerotheum>, <ore:plateEnergeticAlloy>],
@@ -253,9 +274,10 @@ val thermalfoundationRecipes_ASSEMBLY = {
 	<thermalexpansion:augment:576> : [<ore:gearBronze>, <minecraft:bucket>, <ore:gearBronze>, <ore:blockGlass>, scripts.helpers.CircuitTiers[1], <ore:blockGlass>, <ore:blockGlass>, <ore:coilCopper>, <ore:blockGlass>],
 	<thermalexpansion:augment:640> : [null, <ore:ingotIron>, null, <ore:plateCopper>, scripts.helpers.CircuitTiers[1], <ore:plateCopper>, <ore:plateCopper>, <ore:ingotIron>, <ore:plateCopper>],
 	<thermalexpansion:augment:656> : [null, <ore:gearSignalum>, null, <ore:plateInvar>, scripts.helpers.CircuitTiers[2], <ore:plateInvar>, null, <ore:dustCryotheum>, null],
-	<thermalexpansion:augment:672> : [null, <ore:gearInvar>, null, <ore:plateInvar>, scripts.helpers.CircuitTiers[2], <ore:plateInvar>, null, <ore:dustCryotheum>, null],
+	<thermalexpansion:augment:672> : [null, <ore:gearNickel>, null, <ore:plateInvar>, scripts.helpers.CircuitTiers[2], <ore:plateInvar>, null, <ore:dustCryotheum>, null],
 	<thermalexpansion:augment:688> : [<ore:dustPetrotheum>, <ore:ingotLead>, <ore:dustCryotheum>, <ore:ingotLead>, scripts.helpers.CircuitTiers[1], <ore:ingotLead>, <ore:dustPyrotheum>, <ore:ingotLead>, <ore:dustAerotheum>],
 	<thermalexpansion:augment:704> : [<ore:plateLapis>, <ore:ingotEnchantedMetal>, <ore:plateLapis>, <ore:gearGold>, scripts.helpers.CircuitTiers[2], <ore:gearGold>, <ore:plateLapis>, <ore:ingotEnchantedMetal>, <ore:plateLapis>],
+	<thermalexpansion:augment:720> : [<ore:plateLapis>, <ore:ingotEnchantedMetal>, <ore:plateLapis>, <ore:gearGold>, scripts.helpers.CircuitTiers[2], <ore:gearGold>, <ore:plateLapis>, <ore:ingotEnchantedMetal>, <ore:plateLapis>],
 	// <thermalexpansion:augment:128> : [null, null, null, null, null, null, null, null, null],
 	// <thermalexpansion:augment:129> : [null, null, null, null, null, null, null, null, null],
 	// <thermalexpansion:augment:368> : [null, null, null, null, null, null, null, null, null],
@@ -267,7 +289,7 @@ val thermalfoundationRecipes_ASSEMBLY = {
 
 for key, value in thermalfoundationRecipes_ASSEMBLY {
   recipes.remove(key.withAmount(1));
-  scripts.helpers.CreateAssemblyRecipe(key, value, 40, 20000);
+  scripts.helpers.CreateAssemblyRecipe(key, value, 120, 40000);
 }
 
 //Increase Biocrude output of Rich Bioblend
@@ -282,6 +304,10 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:biocrude> * 200, <thermalfounda
 scripts.helpers.addAlloySmeltingRecipe(<enderio:item_material:39> * 4, <ore:ingotLead>.firstItem * 3, <ore:ingotBoron>.firstItem, 50000, 2);
 scripts.helpers.addInjectionRecipe(<ore:ingotEnderium>.firstItem, <enderio:item_material:39>, <liquid:ender> * 250, 12500, 3);
 mods.enderio.AlloySmelter.addRecipe(<ore:ingotEnderium>.firstItem * 4, [<ore:ingotLead> * 3, <ore:ingotBoron>, <ore:enderpearl>.firstItem * 4], 100000);
+mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:103>);
+mods.thermalexpansion.Centrifuge.addRecipe([<ore:dustLead>.firstItem * 3, <ore:dustBoron>.firstItem], <thermalfoundation:material:103> * 4, <liquid:ender> * 1000, 8000);
+mods.tconstruct.Alloy.removeRecipe(<liquid:enderium>);
+mods.tconstruct.Alloy.addRecipe(<liquid:enderium> * 1000, [<liquid:ender> * 250, <liquid:lead> * 108, <liquid:boron> * 36]);
 
 //Remove easy production of (Rich) Slag
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:compass>);
