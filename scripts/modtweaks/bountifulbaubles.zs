@@ -63,8 +63,8 @@ val siltItems = [
 ] as crafttweaker.item.IItemStack[];
 
 for siltItem in siltItems {
-	recipes.addShapeless(scripts.helpers.createRecipeName(siltItem) ~ "_siltCreate", <bountifulbaubles:spectralsilt> * 8, [<bountifulbaubles:disintegrationtablet>.reuse(), siltItem]);
-	scripts.helpers.addCrushingRecipeWithSecondary(<bountifulbaubles:spectralsilt> * 12, siltItem, 12500, <bountifulbaubles:spectralsilt> * 4, 50, 3);
+	recipes.addShapeless(scripts.helpers.createRecipeName(siltItem) ~ "_siltCreate", <bountifulbaubles:spectralsilt> * 4, [<bountifulbaubles:disintegrationtablet>.reuse(), siltItem]);
+	scripts.helpers.addCrushingRecipeWithSecondary(<bountifulbaubles:spectralsilt> * 5, siltItem, 12500, <bountifulbaubles:spectralsilt>, 50, 3);
 }
 
 

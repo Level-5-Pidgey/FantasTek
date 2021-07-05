@@ -28,7 +28,7 @@ SummoningDirector.addSummonInfo(
 SummoningDirector.addSummonInfo(
     SummoningInfo.create()
         .setCatalyst(<thermalfoundation:material:2049>)
-        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
+        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
         .addMob(MobInfo.create()
             .setMob("thermalfoundation:blizz")
             .setCount(4)
@@ -40,7 +40,7 @@ SummoningDirector.addSummonInfo(
 SummoningDirector.addSummonInfo(
     SummoningInfo.create()
         .setCatalyst(<thermalfoundation:material:2053>)
-        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
+        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
         .addMob(MobInfo.create()
             .setMob("thermalfoundation:basalz")
             .setCount(4)
@@ -52,7 +52,7 @@ SummoningDirector.addSummonInfo(
 SummoningDirector.addSummonInfo(
     SummoningInfo.create()
         .setCatalyst(<thermalfoundation:material:2051>)
-        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
+        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
         .addMob(MobInfo.create()
             .setMob("thermalfoundation:blitz")
             .setCount(4)
@@ -64,7 +64,7 @@ SummoningDirector.addSummonInfo(
 SummoningDirector.addSummonInfo(
     SummoningInfo.create()
         .setCatalyst(<contenttweaker:magma_powder>)
-        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
+        .setReagents([<bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>, <bountifulbaubles:spectralsilt>])
         .addMob(MobInfo.create()
             .setMob("minecraft:blaze")
             .setCount(4)
