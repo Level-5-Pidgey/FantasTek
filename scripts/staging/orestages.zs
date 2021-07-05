@@ -1,4 +1,4 @@
-#priority -1
+
 import scripts.staging.stages;
 import mods.zenstages.Stage;
 import crafttweaker.oredict.IOreDict;
@@ -597,6 +597,7 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Graphite" : stages.progression2,
   "Arsenic" : stages.progression2,
   "Silicon" : stages.progression1,
+  "ElectrumFlux" : stages.progression1,
 };
 
 for materialString in ExtraMaterialsToStage

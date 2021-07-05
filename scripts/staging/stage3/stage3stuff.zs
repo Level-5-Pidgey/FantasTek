@@ -2,32 +2,9 @@
 import mods.zenstages.Stage;
 import scripts.staging.stages;
 
-print("~~~ Begin Stage 2 Staging ~~~");
+print("~~~ Begin Stage 3 Staging ~~~");
 
 var stageString = stages.progression3.stage;
-
-//Mods to restrict to this stage
-val stage3_stageMods = [
-  "mekanism",
-  "mekanismtools",
-  "mekanismgenerators",
-  "draconicevolution",
-  "avaritia",
-  "ae2stuff",
-  "rftools",
-  "advancedrocketry",
-  "libvulpes",
-  "redstonearsenal",
-  "compactmachines3",
-  "iceandfire",
-  "reccomplex",
-  "nuclearcraft"
-] as string[];
-
-for modTag in stage3_stageMods
-{
-	mods.ItemStages.stageModItems(stageString, modTag);
-}
 
 //Stage Stubborn Items.
 val stage3_stageItems = [
@@ -87,4 +64,4 @@ mods.jmapstages.JMapStages.setFullscreenStage(stageString);
 mods.jmapstages.JMapStages.setDeathpointStage(stageString);
 mods.jmapstages.JMapStages.setMinimapStage(stageString);
 
-print("### Stage 2 Staging Complete ###");
+print("### Stage 3 Staging Complete ###");

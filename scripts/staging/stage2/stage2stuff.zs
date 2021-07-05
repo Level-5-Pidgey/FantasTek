@@ -6,35 +6,6 @@ print("~~~ Begin Stage 2 Staging ~~~");
 
 var stageString = stages.progression2.stage;
 
-//Mods to restrict to this stage
-val stage2_stageMods = [
-  "forestry",
-  "industrialforegoing",
-  "thermalexpansion",
-  "thermaldynamics",
-  "thermalfoundation",
-  "thermalinnovation",
-  "thermalcultivation",
-  "appliedenergistics2",
-  "extracells",
-  "ae2stuff",
-  "psi",
-  "enderio",
-  "compactmachines3",
-  "magneticraft",
-  "deepmoblearning",
-  "deepmoblearningbm",
-  "scannable",
-  "reccomplex",
-  "witherskelefix",
-  "packagedauto"
-] as string[];
-
-for modTag in stage2_stageMods
-{
-	mods.ItemStages.stageModItems(stageString, modTag);
-}
-
 //Add Cinderpearl to Blaze Powder crafting to stage 2.
 mods.recipestages.Recipes.setRecipeStage(stageString, "thaumcraft:cinderpearltoblazepowder");
 

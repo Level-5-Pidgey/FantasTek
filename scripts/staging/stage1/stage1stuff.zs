@@ -178,6 +178,7 @@ val StageLessItems = [
 	<magneticraft:conveyor_belt>,
 	<magneticraft:inserter>,
 	<magneticraft:ores:4>,
+	<magneticraft:iron_pipe>,
 	<enderio:block_simple_furnace>,
 	<forestry:squeezer>,
 	<thermaldynamics:duct_0>,
