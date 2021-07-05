@@ -361,11 +361,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Native Cluster Based output
 				if (!oreGem.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreGem.firstItem * (2 * baseMultiplier), 0.5, oreGem.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreGem.firstItem * (2 * baseMultiplier), 0.5, oreGem.firstItem * baseMultiplier, 0.15, <minecraft:gravel>, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(nativeCluster.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * baseMultiplier, 0.15, <minecraft:gravel>, true);
 				}
 				else
 				{
@@ -378,11 +378,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				//Rocky Chunk Based Output
 				if (!oreGem.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreGem.firstItem * baseMultiplier, 0.5, oreGem.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreGem.firstItem * baseMultiplier, 0.5, oreGem.firstItem * baseMultiplier, 0.15, <minecraft:gravel>, true);
 				}
 				else if (!oreDust.empty)
 				{
-					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * baseMultiplier, 0.15, <minecraft:cobblestone>, true);
+					mods.magneticraft.SluiceBox.addRecipe(rockyChunk.firstItem, 1.0, oreDust.firstItem * (2 * baseMultiplier), 0.5, oreDust.firstItem * baseMultiplier, 0.15, <minecraft:gravel>, true);
 				}
 				else
 				{
@@ -556,24 +556,24 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 			if(!oreGem.empty)
 			{
 				//Standard Ore
-				scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:864>, 25, 4);
+				scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 14000), <thermalfoundation:material:864>, 25, 4);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
-					scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:865>, 25, 4);
+					scripts.helpers.addCrushingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 14000), <thermalfoundation:material:865>, 25, 4);
 				}
 			}
 			else if(!oreDust.empty)
 			{
-				scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:864>, 25, 4);
+				scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (3 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 14000), <thermalfoundation:material:864>, 25, 4);
 
 				//Dense Ore
 				if(!oreDouble.empty)
 				{
 					for oreDense in oreDouble.items
 					{
-						scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 1500), <thermalfoundation:material:865>, 25, 4);
+						scripts.helpers.addCrushingRecipeWithSecondary(oreDust.firstItem * (6 * baseMultiplier), oreBlock.firstItem, ((tier + 1) * 14000), <thermalfoundation:material:865>, 25, 4);
 					}
 				}
 			}
@@ -593,9 +593,9 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					//Standard Ores
 					//Normal Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, ore, ((tier + 1) * 5000), oreGem.firstItem * baseMultiplier, 33, 4);
+					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, ore, ((tier + 1) * 20000), oreGem.firstItem * baseMultiplier, 33, 4);
 					//Rich Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, ore, ((tier + 1) * 5000), oreGem.firstItem * baseMultiplier, 33, 4);
+					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, ore, ((tier + 1) * 20000), oreGem.firstItem * baseMultiplier, 33, 4);
 				}
 
 				//Dense Ore
@@ -604,9 +604,9 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 					for oreDense in oreDouble.items
 					{
 						//Normal Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 5000), oreGem.firstItem * (2 * baseMultiplier), 33, 4);
+						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (6 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 20000), oreGem.firstItem * (2 * baseMultiplier), 33, 4);
 						//Rich Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 5000), oreGem.firstItem * (2 * baseMultiplier), 33, 4);
+						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreGem.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 20000), oreGem.firstItem * (2 * baseMultiplier), 33, 4);
 					}
 				}
 			}
@@ -616,9 +616,9 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 				{
 					//Standard Ores
 					//Normal Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, ore, ((tier + 1) * 5000), oreIngot.firstItem * baseMultiplier, 33, 4);
+					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (3 * baseMultiplier), <thermalfoundation:material:864>, ore, ((tier + 1) * 20000), oreIngot.firstItem * baseMultiplier, 33, 4);
 					//Rich Slag
-					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, ore, ((tier + 1) * 5000), oreIngot.firstItem * baseMultiplier, 33, 4);
+					scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (4 * baseMultiplier), <thermalfoundation:material:865>, ore, ((tier + 1) * 20000), oreIngot.firstItem * baseMultiplier, 33, 4);
 				}
 
 				//Dense Ores
@@ -627,9 +627,9 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 					for oreDense in oreDouble.items
 					{
 						//Normal Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (8 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 5000), oreIngot.firstItem * (2 * baseMultiplier), 33, 4);
+						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (8 * baseMultiplier), <thermalfoundation:material:864>, oreDense, ((tier + 1) * 20000), oreIngot.firstItem * (2 * baseMultiplier), 33, 4);
 						//Rich Slag
-						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 5000), oreIngot.firstItem * (2 * baseMultiplier), 33, 4);
+						scripts.helpers.addAlloySmeltingRecipeWithSecondary(oreIngot.firstItem * (8 * baseMultiplier), <thermalfoundation:material:865>, oreDense, ((tier + 1) * 20000), oreIngot.firstItem * (2 * baseMultiplier), 33, 4);
 					}
 				}
 			}
@@ -1249,7 +1249,10 @@ val SagMillOres =
 	<magneticraft:ores>,
 	<minecraft:gold_ore>,
 	<minecraft:iron_ore>,
-	<rftools:dimensional_shard_ore>
+	<rftools:dimensional_shard_ore>,
+	<contenttweaker:sub_block_holder_13>,
+	<contenttweaker:sub_block_holder_12:14>,
+	<contenttweaker:sub_block_holder_12:15>
 ] as crafttweaker.item.IItemStack[];
 
 for oreBlock in SagMillOres

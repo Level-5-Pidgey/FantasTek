@@ -150,6 +150,7 @@ var modded_oreMaterials as crafttweaker.oredict.IOreDictEntry[mods.contenttweake
 	MaterialSystem.getMaterialBuilder().setName("Thorium").setColor(mods.contenttweaker.Color.fromHex("685f5f")).build() : <ore:ingotThorium>,
 	MaterialSystem.getMaterialBuilder().setName("Uranium").setColor(mods.contenttweaker.Color.fromHex("a5a500")).build() : <ore:ingotTitanium>,
 	MaterialSystem.getMaterialBuilder().setName("Boron").setColor(mods.contenttweaker.Color.fromHex("797979")).build() : <ore:ingotTitanium>,
+	MaterialSystem.getMaterialBuilder().setName("Tungsten").setColor(mods.contenttweaker.Color.fromHex("2e2933")).build() : <ore:ingotTungsten>,
 	MaterialSystem.getMaterialBuilder().setName("Lithium").setColor(mods.contenttweaker.Color.fromHex("f5edda")).build() : <ore:ingotTitanium>,
 	MaterialSystem.getMaterialBuilder().setName("Magnesium").setColor(mods.contenttweaker.Color.fromHex("f5dada")).build() : <ore:ingotTitanium>,
 	MaterialSystem.getMaterialBuilder().setName("Dilithium").setColor(mods.contenttweaker.Color.fromHex("ddcecb")).build() : <ore:gemDilithium>,

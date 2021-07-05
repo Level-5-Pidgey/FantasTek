@@ -18,7 +18,7 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore, "ore_washing_factory", 60);
 		RecipeToAdd.addItemInput(oreBlock);
 		RecipeToAdd.addFluidInput(<liquid:meat> * 200);
-		RecipeToAdd.addEnergyPerTickInput(75 * (oreTier + 1));
+		RecipeToAdd.addEnergyPerTickInput(450 * (oreTier + 1));
 
 		//Create IData tag for ore type
 		RecipeToAdd.addFluidOutput(<liquid:if.ore_fluid_raw>.withTag(oreFluidData) * 150);
@@ -32,10 +32,10 @@ function AddOreWashingRecipe(ore as string, oreTier as int)
 	//Dense Ore
 	if(!oreDouble.empty)
 	{
-		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore ~ "_double", "ore_washing_factory", 120);
+		var RecipeToAdd = RecipeBuilder.newBuilder("orewashing_" ~ ore ~ "_double", "ore_washing_factory", 60);
 		RecipeToAdd.addItemInput(oreDouble);
 		RecipeToAdd.addFluidInput(<liquid:meat> * 400);
-		RecipeToAdd.addEnergyPerTickInput(150 * (oreTier + 1));
+		RecipeToAdd.addEnergyPerTickInput(450 * (oreTier + 1));
 
 		//Create IData tag for ore type
 		RecipeToAdd.addFluidOutput(<liquid:if.ore_fluid_raw>.withTag(oreFluidData) * 300);
@@ -57,7 +57,7 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int, baseMultiplier 
 		RecipeToAdd.addItemInput(oreBlock);
 		RecipeToAdd.addGasInput("sulfuricacid", 100);
 		RecipeToAdd.addFluidInput(<liquid:water> * 200);
-		RecipeToAdd.addEnergyPerTickInput(120 * (oreTier + 1));
+		RecipeToAdd.addEnergyPerTickInput(20000 * (oreTier + 1));
 
 		RecipeToAdd.addItemOutput(oreCrystal.firstItem * (5 * baseMultiplier));
 		RecipeToAdd.build();
@@ -70,11 +70,11 @@ function ChemicalOreFactoryRecipe(ore as string, oreTier as int, baseMultiplier 
 	//Dense Ore
 	if(!oreDouble.empty & !oreCrystal.empty)
 	{
-		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore ~ "_double", "chemical_ore_factory", 80);
+		var RecipeToAdd = RecipeBuilder.newBuilder("chemicalorefactory_" ~ ore ~ "_double", "chemical_ore_factory", 40);
 		RecipeToAdd.addItemInput(oreDouble);
 		RecipeToAdd.addGasInput("sulfuricacid", 200);
 		RecipeToAdd.addFluidInput(<liquid:water> * 400);
-		RecipeToAdd.addEnergyPerTickInput(240 * (oreTier + 1));
+		RecipeToAdd.addEnergyPerTickInput(20000 * (oreTier + 1));
 
 		RecipeToAdd.addItemOutput(oreCrystal.firstItem * (10 * baseMultiplier));
 		RecipeToAdd.build();
