@@ -29,6 +29,9 @@ val thermalRecipes_CRAFTINGTABLE = {
 	<thermaldynamics:duct_64:3> * 32 : [[<ore:ingotBronze>, <ore:blockGlassColorless>, <ore:ingotBronze>], [<ore:blockGlassColorless>, null, <ore:blockGlassColorless>], [<ore:ingotBronze>, <ore:blockGlassColorless>, <ore:ingotBronze>]],
 	<thermaldynamics:duct_64:1> * 32 : [[<ore:plateLead>, <ore:blockGlassColorless>, <ore:plateLead>], [<ore:blockGlassColorless>, null, <ore:blockGlassColorless>], [<ore:plateLead>, <ore:blockGlassColorless>, <ore:plateLead>]],
 	<thermalfoundation:tome_lexicon> : [[<ore:nuggetCopper>, <ore:ingotCopper>, <ore:plateCopper>], [<ore:dustRedstone>, <ore:book>, <ore:dustRedstone>], [<ore:plateTin>, <ore:ingotTin>, <ore:nuggetTin>]],
+	<thermalfoundation:material:513> : [[null, <ore:ingotRedstoneAlloy>, <ore:stickGold>], [<ore:ingotRedstoneAlloy>, <ore:ingotGold>, <ore:ingotRedstoneAlloy>], [<ore:stickGold>, <ore:ingotRedstoneAlloy>, null]],
+	<thermalfoundation:material:514> : [[null, <ore:ingotRedstoneAlloy>, <ore:stickSilver>], [<ore:ingotRedstoneAlloy>, <ore:ingotSilver>, <ore:ingotRedstoneAlloy>], [<ore:stickSilver>, <ore:ingotRedstoneAlloy>, null]],
+	<thermalfoundation:material:515> : [[<ore:ingotElectrum>, <ore:ingotRedstoneAlloy>, null], [<ore:ingotRedstoneAlloy>, <ore:plateElectrum>, <ore:ingotRedstoneAlloy>], [null, <ore:ingotRedstoneAlloy>, <ore:ingotElectrum>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in thermalRecipes_CRAFTINGTABLE {
@@ -65,7 +68,9 @@ val thermalRecipes_EXTENDEDCRAFTING = {
 	<thermalexpansion:device:1> : [[<ore:stone>, null, <ore:stone>], [<ore:stone>, <ore:dustRedstone>, <ore:stone>], [<ore:stone>, <ore:chestWood>, <ore:stone>]],
 	<thermalexpansion:device:10> : [[null, <ore:workbench>, null], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]],
 	<thermalexpansion:device:4> : [[null, <minecraft:fishing_rod>, null], [<ore:barsIron>, scripts.helpers.FrameTiers[0], <ore:barsIron>], [<ore:gearIron>, <ore:dustRedstone>, <ore:gearIron>]],
-	<thermalexpansion:machine:11> : [[null, <ore:workbench>, null], [<ore:nuggetConductiveIron>, <ore:plateCrudeSteel>, <ore:nuggetConductiveIron>], [<ore:nuggetConductiveIron>, <ore:gearWood>, <ore:nuggetConductiveIron>]],
+	<thermalexpansion:machine:11> : [[null, <ore:workbench>, null], [<ore:nuggetConductiveIron>, <ore:dustElectrotine>, <ore:nuggetConductiveIron>], [<ore:nuggetConductiveIron>, <ore:gearWood>, <ore:nuggetConductiveIron>]],
+	<thermalexpansion:dynamo> : [[null, <ore:coilCopper>, null], [<ore:ingotSteel>, scripts.helpers.FrameTiers[0], <ore:ingotSteel>], [<ore:ingotCopper>, scripts.helpers.MotorTiers[0], <ore:ingotCopper>]],
+	<thermalexpansion:dynamo:1> : [[null, <ore:plateInvar>, null], [<ore:ingotSteel>, scripts.helpers.FrameTiers[1], <ore:ingotSteel>], [<ore:ingotInvar>, scripts.helpers.MotorTiers[0], <ore:ingotInvar>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in thermalRecipes_EXTENDEDCRAFTING {
