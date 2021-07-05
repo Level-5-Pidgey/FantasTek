@@ -106,13 +106,34 @@ val thermalfoundation_EXTENDEDCRAFTING_T2 = {
 	 //null
  	 //								:	[[null, null, null],
 	 //									[null, null, null],
-	 //  									[null, null, null],
+ 	 //  								[null, null, null],
 	 //									[null, null, null]],
-	 <thermalexpansion:machine:14>
- 	 								:	[[<ore:blockGlassHardened>, <minecraft:piston>, <ore:blockGlassHardened>],
+	 <thermalexpansion:dynamo:5>
+ 	 								:	[[null, scripts.helpers.CircuitTiers[1], null],
+	 									[<ore:plateCrystallineAlloy>, scripts.helpers.FrameTiers[2], <ore:plateCrystallineAlloy>],
+ 	   									[scripts.helpers.BatteryTiers[2], scripts.helpers.MotorTiers[1], scripts.helpers.BatteryTiers[2]],
+	 									[null, <ore:ingotSignalum>, <ore:gearRedstoneAlloy>]],
+	 <thermalexpansion:dynamo:4>
+ 	 								:	[[null, scripts.helpers.CircuitTiers[1], null],
+	 									[<ore:plateElectrumFlux>, scripts.helpers.FrameTiers[1], <ore:plateElectrumFlux>],
+ 	   									[<ore:coilIron>, scripts.helpers.MotorTiers[1], <ore:coilIron>],
+	 									[null, <ore:ingotElectrum>, <ore:gearRedstoneAlloy>]],
+	 <thermalexpansion:dynamo:3>
+ 	 								:	[[null, scripts.helpers.CircuitTiers[1], null],
+	 									[<ore:plateSignalum>, scripts.helpers.FrameTiers[1], <ore:plateSignalum>],
+ 	   									[<ore:coilGold>, scripts.helpers.MotorTiers[1], <ore:coilGold>],
+	 									[null, <ore:dustGlowstone>, <ore:gearAluminum>]],
+	 <thermalexpansion:dynamo:2>
+ 	 								:	[[null, scripts.helpers.CircuitTiers[1], null],
 	 									[<ore:plateInvar>, scripts.helpers.FrameTiers[1], <ore:plateInvar>],
-	   									[<ore:ingotCopper>, <ore:dustRedstone>, <ore:ingotCopper>],
-	 									[null, null, <ore:dustCryotheum>]],
+ 	   									[<ore:coilCopper>, scripts.helpers.MotorTiers[1], <ore:coilCopper>],
+	 									[null, <ore:dustRedstone>, <ore:gearTin>]],
+	 <thermalexpansion:machine:14>
+ 	 								:	[[<ore:plateCopper>, <ore:dustBlizz>, <ore:plateCopper>],
+										[<ore:dustBlizz>, scripts.helpers.FrameTiers[1], <ore:dustBlizz>],
+										[<ore:plateCopper>, scripts.helpers.CircuitTiers[1], <ore:plateCopper>],
+										[null, <ore:ingotInvar>, <minecraft:snowball>]],
+
 	 <thermalexpansion:machine:13>
  	 								:	[[null, <minecraft:enchanting_table>, null],
 	 									[<ore:plateLapis>, scripts.helpers.FrameTiers[3], <ore:plateLapis>],
@@ -447,6 +468,285 @@ val thermalRecipes_SHAPELESS = {
 for key, value in thermalRecipes_SHAPELESS {
 	recipes.remove(key.withAmount(1));
 	mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(key), scripts.helpers.stages.progression2.stage, key, value);
+}
+
+//Magmatic Dynamo Burnables
+mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:fire_water> * 1000, 550000);
+mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:elemental_water_fire> * 1000, 750000);
+
+//Compression Dynamo Burnables
+val removeCompressionFuels = [
+	<liquid:bio.ethanol>,
+	<liquid:rocket_fuel>,
+	<liquid:fire_water>,
+	<liquid:gasoline>,
+	<liquid:refined_biofuel>,
+	<liquid:coal>,
+	<liquid:crude_oil>,
+	<liquid:refined_oil>,
+	<liquid:tree_oil>,
+	<liquid:creosote>,
+	<liquid:seed_oil>,
+	<liquid:hootch>,
+	<liquid:diesel>,
+	<liquid:oil>,
+	<liquid:refined_fuel>,
+] as crafttweaker.liquid.ILiquidStack[];
+
+for dynamoLiquidRemove in removeCompressionFuels
+{
+	mods.thermalexpansion.CompressionDynamo.removeFuel(dynamoLiquidRemove);
+}
+
+val addCompressionFuels = {
+	<liquid:bio.ethanol> : 350000,
+	<liquid:rocket_fuel> : 2500000,
+	<liquid:gasoline> : 1750000,
+	<liquid:refined_biofuel> : 2750000,
+	<liquid:coal> : 150000,
+	<liquid:crude_oil> : 300000,
+	<liquid:refined_oil> : 450000,
+	<liquid:tree_oil> : 250000,
+	<liquid:creosote> : 50000,
+	<liquid:seed_oil> : 90000,
+	<liquid:hootch> : 250000,
+	<liquid:diesel> : 2250000,
+	<liquid:oil> : 300000,
+	<liquid:refined_fuel> : 3000000,
+} as int[crafttweaker.liquid.ILiquidStack];
+
+for key, value in addCompressionFuels {
+	mods.thermalexpansion.CompressionDynamo.addFuel(key * 1000, value);
+}
+
+//Reactant Dynamo Burnables
+val removeReactantFuels = {
+	<liquid:glowstone> : <minecraft:ghast_tear>,
+	<liquid:redstone> : <minecraft:sugar>,
+	<liquid:glowstone> : <minecraft:gunpowder>,
+	<liquid:redstone> : <minecraft:gunpowder>,
+	<liquid:glowstone> : <minecraft:sugar>,
+	<liquid:glowstone> : <minecraft:blaze_powder>,
+	<liquid:redstone> : <minecraft:blaze_powder>,
+	<liquid:redstone> : <minecraft:ghast_tear>,
+	<liquid:glowstone> : <minecraft:nether_wart>,
+	<liquid:redstone> : <minecraft:nether_wart>,
+	<liquid:cryotheum> : <thermalfoundation:material:1024>,
+	<liquid:pyrotheum> : <thermalfoundation:material:1025>,
+	<liquid:petrotheum> : <thermalfoundation:material:1026>,
+	<liquid:aerotheum> : <thermalfoundation:material:1027>,
+} as crafttweaker.item.IItemStack[crafttweaker.liquid.ILiquidStack];
+
+for key, value in removeReactantFuels {
+	mods.thermalexpansion.ReactantDynamo.removeReaction(value, key);
+}
+
+val reactantDynamoSolids = {
+	<minecraft:sugar> : 1.05f,
+	<minecraft:glowstone_dust> : 1.25f,
+	<minecraft:redstone> : 1.1f,
+	<minecraft:nether_wart> : 1.2f,
+	<forestry:fertilizer_compound> : 1.3f,
+	<thermalfoundation:material:1027> : 3.3f,
+	<thermalfoundation:material:1026> : 3.3f,
+	<thermalfoundation:material:1025> : 3.3f,
+	<thermalfoundation:material:1024> : 3.3f,
+	<thermalfoundation:material:2049> : 1.4f,
+	<thermalfoundation:material:2051> : 1.4f,
+	<thermalfoundation:material:2053> : 1.4f,
+	<thermalfoundation:material:1028> : 4.0f,
+	<contenttweaker:magma_powder> : 1.4f,
+} as float[crafttweaker.item.IItemStack];
+
+val reactantDynamoLiquids = {
+	<liquid:redstone> : 60000.0f,
+	<liquid:glowstone> : 75000.0f,
+	<liquid:ender> : 100000.0f,
+	<liquid:aerotheum> : 350000.0f,
+	<liquid:petrotheum> : 350000.0f,
+	<liquid:cryotheum> : 350000.0f,
+	<liquid:pyrotheum> : 350000.0f,
+	<liquid:elemental_mix> : 1400000.0f,
+	<liquid:mana> : 2100000.0f,
+} as float[crafttweaker.liquid.ILiquidStack];
+
+for solid, factor in reactantDynamoSolids {
+	for liquid, power in reactantDynamoLiquids {
+		if(!(solid.displayName.contains(liquid.name))) {
+			var calculatedPower = (power * factor) as int;
+
+			mods.thermalexpansion.ReactantDynamo.addReaction(solid, liquid * 100, calculatedPower);
+		}
+	}
+}
+
+//Ennervating Dynamo Burnables
+val removeEnnervatingFuels = [
+	<minecraft:redstone>,
+	<minecraft:redstone_block>,
+] as crafttweaker.item.IItemStack[];
+
+for ennervatingItemRemove in removeEnnervatingFuels
+{
+	mods.thermalexpansion.EnervationDynamo.removeFuel(ennervatingItemRemove);
+}
+
+val addEnnervatingFuels = {
+	<minecraft:redstone> : 60000,
+	<minecraft:redstone_block> : 540000,
+} as int[crafttweaker.item.IItemStack];
+
+for key, value in addEnnervatingFuels {
+	mods.thermalexpansion.EnervationDynamo.addFuel(key, value);
+}
+
+//Numismatic Dynamo Burnables (Coin)
+val removeNumismaticCoinFuels = [
+	<jaopca:item_coinastralstarmetal>,
+	<thermalfoundation:coin:96>,
+	<jaopca:item_coinvibranium>,
+	<thermalfoundation:coin:1>,
+	<thermalfoundation:coin:67>,
+	<jaopca:item_coinchromium>,
+	<jaopca:item_cointitanium>,
+	<thermalfoundation:coin:98>,
+	<thermalfoundation:coin:71>,
+	<jaopca:item_coincobalt>,
+	<thermalfoundation:coin:97>,
+	<jaopca:item_coinboron>,
+	<thermalfoundation:coin:64>,
+	<jaopca:item_coinancientdebris>,
+	<thermalfoundation:coin:68>,
+	<thermalfoundation:coin:66>,
+	<thermalfoundation:coin:101>,
+	<jaopca:item_cointungsten>,
+	<thermalfoundation:coin:100>,
+	<jaopca:item_coindraconium>,
+	<jaopca:item_coinosmium>,
+	<thermalfoundation:coin:70>,
+	<thermalfoundation:coin:99>,
+	<jaopca:item_coinzinc>,
+	<thermalfoundation:coin>,
+	<thermalfoundation:coin:102>,
+	<jaopca:item_coinmagnesium>,
+	<jaopca:item_coinlithium>,
+	<thermalfoundation:coin:72>,
+	<thermalfoundation:coin:69>,
+	<jaopca:item_coinardite>,
+	<minecraft:emerald>,
+	<thermalfoundation:coin:103>,
+	<jaopca:item_coinuranium>,
+	<jaopca:item_cointhorium>,
+	<jaopca:item_coinnecrodermis>,
+	<thermalfoundation:coin:65>,
+] as crafttweaker.item.IItemStack[];
+
+for numismaticCoin in removeNumismaticCoinFuels
+{
+	mods.thermalexpansion.NumisticDynamo.removeFuel(numismaticCoin);
+}
+
+val addNumismaticCoinFuels = {
+	<thermalfoundation:coin> : 			15000,
+	<thermalfoundation:coin:1> : 		32500,
+	<thermalfoundation:coin:64> : 		40000,
+	<thermalfoundation:coin:68> : 		40000,
+	<thermalfoundation:coin:65> : 		40000,
+	<thermalfoundation:coin:66> : 		45000,
+	<thermalfoundation:coin:67> : 		55000,
+	<thermalfoundation:coin:69> : 		60000,
+	<jaopca:item_coinastralstarmetal> : 65000,
+	<jaopca:item_coinzinc> : 			65000,
+	<thermalfoundation:coin:96> : 		75000,
+	<jaopca:item_coinlithium> : 		75000,
+	<thermalfoundation:coin:98> : 		80000,
+	<thermalfoundation:coin:99> : 		80000,
+	<thermalfoundation:coin:100> : 		80000,
+	<thermalfoundation:coin:97> : 		80000,
+	<jaopca:item_coinboron> : 			80000,
+	<jaopca:item_coinardite> : 			85000,
+	<jaopca:item_coincobalt> : 			85000,
+	<thermalfoundation:coin:101> : 		90000,
+	<thermalfoundation:coin:102> : 		95000,
+	<jaopca:item_coinmagnesium> : 		105000,
+	<thermalfoundation:coin:70> : 		115000,
+	<thermalfoundation:coin:103> : 		120000,
+	<thermalfoundation:coin:72> : 		130000,
+	<jaopca:item_coinancientdebris> : 	150000,
+	<jaopca:item_coinosmium> : 			157500,
+	<jaopca:item_coinuranium> : 		165000,
+	<jaopca:item_cointhorium> : 		165000,
+	<jaopca:item_cointungsten> : 		1000000,
+	<jaopca:item_coinchromium> : 		1000000,
+	<thermalfoundation:coin:71> : 		1000000,
+	<jaopca:item_cointitanium> : 		3750000,
+	<jaopca:item_coindraconium> : 		5000000,
+	<jaopca:item_coinnecrodermis> : 	12500000,
+	<jaopca:item_coinvibranium> : 		12500000,
+} as int[crafttweaker.item.IItemStack];
+
+for key, value in addNumismaticCoinFuels {
+	mods.thermalexpansion.NumisticDynamo.addFuel(key, value);
+}
+
+//Numismatic Dynamo Burnables (Gem)
+val removeNumismaticGemFuels = [
+	<biomesoplenty:gem>,
+	<minecraft:dye:4>,
+	<biomesoplenty:gem:7>,
+	<redstonearsenal:material:160>,
+	<forestry:apatite>,
+	<biomesoplenty:gem:1>,
+	<biomesoplenty:gem:2>,
+	<minecraft:diamond>,
+	<biomesoplenty:gem:6>,
+	<minecraft:quartz>,
+	<minecraft:prismarine_shard>,
+	<biomesoplenty:gem:4>,
+	<minecraft:emerald>,
+	<biomesoplenty:gem:5>,
+	<biomesoplenty:gem:3>,
+] as crafttweaker.item.IItemStack[];
+
+for numismaticGem in removeNumismaticGemFuels
+{
+	mods.thermalexpansion.NumisticDynamo.removeGemFuel(numismaticGem);
+}
+
+val addNumismaticGemFuels = {
+	<minecraft:coal> : 30000,
+	<minecraft:diamond> : 80000,
+	<minecraft:dye:4> : 12000,
+	<minecraft:emerald> : 80000,
+	<minecraft:quartz> : 40000,
+	<minecraft:prismarine_shard> : 50000,
+	<appliedenergistics2:material> : 75000,
+	<appliedenergistics2:material:1> : 85000,
+	<appliedenergistics2:material:7> : 100000,
+	<biomesoplenty:gem> : 50000,
+	<biomesoplenty:gem:1> : 50000,
+	<biomesoplenty:gem:2> : 50000,
+	<biomesoplenty:gem:3> : 50000,
+	<biomesoplenty:gem:4> : 50000,
+	<biomesoplenty:gem:5> : 50000,
+	<biomesoplenty:gem:6> : 50000,
+	<biomesoplenty:gem:7> : 50000,
+	<extrautils2:ingredients:5> : 100000,
+	<forestry:apatite> : 10000,
+	<nuclearcraft:gem> : 1200000,
+	<nuclearcraft:gem:1> : 4000000,
+	<nuclearcraft:gem:2> : 600000,
+	<nuclearcraft:gem:3> : 600000,
+	<nuclearcraft:gem:4> : 500000,
+	<nuclearcraft:gem:5> : 1100000,
+	<quark:biotite> : 100000,
+	<rftools:dimensional_shard> : 1800000,
+	<redstonearsenal:material:160> : 400000,
+	<libvulpes:productgem> : 7000000,
+} as int[crafttweaker.item.IItemStack];
+
+for key, value in addNumismaticGemFuels {
+	mods.thermalexpansion.NumisticDynamo.addGemFuel(key, value);
 }
 
 print("### Thermal Foundation Init Complete ###");
