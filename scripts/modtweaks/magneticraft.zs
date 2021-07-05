@@ -139,7 +139,7 @@ val magneticraftRecipes_CRAFTINGTABLE = {
 	<magneticraft:multiblock_parts:5> * 8 : [[<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>], [<ore:ingotIron>, null, <ore:ingotIron>], [<ore:plateIron>, <ore:nuggetIron>, <ore:plateIron>]],
 	<magneticraft:multiblock_parts:1> * 8 : [[<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>], [<ore:blockQuartz>, <advancedrocketry:ic>, <ore:blockQuartz>], [<ore:plateLapis>, <ore:blockQuartz>, <ore:plateLapis>]],
 	<magneticraft:multiblock_parts> * 4 : [[<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>], [<ore:ingotIron>, motor, <ore:ingotIron>], [<ore:ingotConductiveIron>, <ore:plateConductiveIron>, <ore:ingotConductiveIron>]],
-	<magneticraft:iron_pipe> * 16 : [[<ore:ingotBronze>, null, <ore:ingotBronze>], [<ore:nuggetBronze>, <ore:blockGlassColorless>, <ore:nuggetBronze>], [<ore:ingotBronze>, null, <ore:ingotBronze>]],
+	<magneticraft:iron_pipe> * 8 : [[<ore:ingotIron>, <ore:nuggetIron>, <ore:ingotIron>], [<ore:plankSealedWood>, <ore:plankSealedWood>, <ore:plankSealedWood>], [<ore:ingotIron>, <ore:nuggetIron>, <ore:ingotIron>]],
 	<magneticraft:heat_pipe> * 5 : [[null, <ore:ingotIron>, null], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [null, <ore:ingotIron>, null]],
 	<magneticraft:insulated_heat_pipe> * 5 : [[<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>], [<ore:ingotIron>, <ore:plateConductiveIron>, <ore:ingotIron>], [<ore:ingotBrick>, <ore:ingotIron>, <ore:ingotBrick>]],
 	<magneticraft:feeding_trough> : [[<ore:stickWood>, null, <ore:stickWood>], [<ore:plateWood>, null, <ore:plateWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]],
