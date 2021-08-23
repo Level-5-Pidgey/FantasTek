@@ -204,10 +204,10 @@ val industrialforegoing_EXTENDEDCRAFTING_T2 = {
 										[<ore:nuggetBronze>, <ore:ingotBronze>, <ore:blockBronze>],
 										[null, null, <ore:ingotSteel>]],
 	<industrialforegoing:froster>
-									:	[[<ore:ingotAluminium>, <minecraft:snowball>, <ore:ingotAluminium>],
-										[<minecraft:snowball>, scripts.helpers.FrameTiers[1], <minecraft:snowball>],
-										[<ore:ingotAluminium>, <ore:ingotGold>, <ore:ingotAluminium>],
-										[null, <ore:ingotGold>, <ore:dustBlizz>]],
+									:	[[<ore:plateAluminium>, <ore:dustBlizz>, <ore:plateAluminium>],
+										[<ore:dustBlizz>, scripts.helpers.FrameTiers[1], <ore:dustBlizz>],
+										[<ore:plateAluminium>, scripts.helpers.CircuitTiers[1], <ore:plateAluminium>],
+										[null, <ore:ingotGold>, <minecraft:snowball>]],
 	<industrialforegoing:ore_fermenter>
 									:	[[<ore:plateAluminium>, <ore:ingotConstantan>, <ore:plateAluminium>],
 										[<ore:ingotConstantan>, scripts.helpers.FrameTiers[3], <ore:ingotConstantan>],
@@ -250,7 +250,7 @@ for rune in scripts.helpers.AllWaterT1Items
 
 //Change recipes for other mod items
 val industrialforegoingRecipes_CRAFTINGTABLE = {
-		<industrialforegoing:conveyor> * 48 : [[<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], [<ore:ingotSteel>, scripts.helpers.MotorTiers[0], <ore:ingotSteel>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]],
+		<industrialforegoing:conveyor> * 32 : [[<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>], [<ore:ingotSteel>, scripts.helpers.MotorTiers[0], <ore:ingotSteel>], [<ore:ingotSteel>, <ore:dustRedstone>, <ore:ingotSteel>]],
 		<industrialforegoing:conveyor_upgrade> * 4 : [[<ore:ingotSteel>, null, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:dispenser>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
 		<industrialforegoing:conveyor_upgrade:1> * 4 : [[<ore:ingotSteel>, null, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:hopper>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],
 		<industrialforegoing:conveyor_upgrade:2> * 4 : [[<ore:ingotSteel>, null, <ore:ingotSteel>], [<ore:dustRedstone>, <minecraft:comparator>, <ore:dustRedstone>], [<ore:ingotSteel>, null, <ore:ingotSteel>]],

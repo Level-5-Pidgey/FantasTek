@@ -43,6 +43,8 @@ scripts.helpers.AddTooltip(<minecraft:dye:15>, ["Use a composter to create bone 
 
 //Make Hoppers Cheaper
 recipes.addShaped(scripts.helpers.createRecipeName(<minecraft:hopper>), <minecraft:hopper> * 3, [[<ore:plateIron>, null, <ore:plateIron>],[<ore:ingotIron>, <ore:chestWood>, <ore:ingotIron>], [null, <ore:ingotIron>, null]]);
+furnace.remove(<ore:nuggetIron>.firstItem * 15, <minecraft:hopper>);
+furnace.addRecipe(<ore:nuggetIron>.firstItem * 13, <minecraft:hopper>, 1.0);
 
 //Remove Sulfur from Blaze Rods
 mods.magneticraft.Grinder.removeRecipe(<minecraft:blaze_rod>);

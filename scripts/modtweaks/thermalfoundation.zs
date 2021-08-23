@@ -56,7 +56,7 @@ for rune in scripts.helpers.AllWaterT1Items
 
 //Thermal expansion Extended Crafting recipes
 val thermalRecipes_EXTENDEDCRAFTING = {
-	<thermalexpansion:device:12> : [[null, <ore:nuggetPulsatingIron>, null], [<ore:nuggetPulsatingIron>, <minecraft:hopper>, <ore:nuggetPulsatingIron>], [null, scripts.helpers.FrameTiers[0], null]],
+	<thermalexpansion:device:12> : [[null, scripts.helpers.CircuitTiers[0], null], [<ore:ingotPulsatingIron>, <minecraft:hopper>, <ore:ingotPulsatingIron>], [<ore:dustObsidian>, scripts.helpers.FrameTiers[0], <ore:dustObsidian>]],
 	<thermalexpansion:device:11> : [[null, <thermalexpansion:morb>, null], [<ore:blockGlass>, scripts.helpers.FrameTiers[0], <ore:blockGlass>], [<ore:ingotSteel>, <ore:gearConductiveIron>, <ore:ingotSteel>]],
 	<thermalexpansion:device:9> : [[null, <minecraft:dispenser>, null], [<ore:gearSilver>, scripts.helpers.FrameTiers[0], <ore:gearSilver>], [<ore:ingotSteel>, <ore:gearConductiveIron>, <ore:ingotSteel>]],
 	<thermalexpansion:device:8> : [[null, <ore:ingotEnchantedMetal>, null], [<ore:book>, scripts.helpers.FrameTiers[0], <ore:book>], [<ore:obsidian>, <ore:ingotEnchantedMetal>, <ore:obsidian>]],
@@ -68,7 +68,6 @@ val thermalRecipes_EXTENDEDCRAFTING = {
 	<thermalexpansion:device:1> : [[<ore:stone>, null, <ore:stone>], [<ore:stone>, <ore:dustRedstone>, <ore:stone>], [<ore:stone>, <ore:chestWood>, <ore:stone>]],
 	<thermalexpansion:device:10> : [[null, <ore:workbench>, null], [<ore:ingotIron>, scripts.helpers.FrameTiers[0], <ore:ingotIron>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]],
 	<thermalexpansion:device:4> : [[null, <minecraft:fishing_rod>, null], [<ore:barsIron>, scripts.helpers.FrameTiers[0], <ore:barsIron>], [<ore:gearIron>, <ore:dustRedstone>, <ore:gearIron>]],
-	<thermalexpansion:machine:11> : [[null, <ore:workbench>, null], [<ore:nuggetConductiveIron>, <ore:dustElectrotine>, <ore:nuggetConductiveIron>], [<ore:nuggetConductiveIron>, <ore:gearWood>, <ore:nuggetConductiveIron>]],
 	<thermalexpansion:dynamo> : [[null, <ore:coilCopper>, null], [<ore:ingotSteel>, scripts.helpers.FrameTiers[0], <ore:ingotSteel>], [<ore:ingotCopper>, scripts.helpers.MotorTiers[0], <ore:ingotCopper>]],
 	<thermalexpansion:dynamo:1> : [[null, <ore:plateInvar>, null], [<ore:ingotSteel>, scripts.helpers.FrameTiers[1], <ore:ingotSteel>], [<ore:ingotInvar>, scripts.helpers.MotorTiers[0], <ore:ingotInvar>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
@@ -341,6 +340,7 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:cauldron>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:minecart>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:chest_minecart>);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:hopper_minecart>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:furnace_minecart>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:anvil>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:hopper>);

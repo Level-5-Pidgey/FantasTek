@@ -40,6 +40,9 @@ val stage3_stageItems = [
     <enderio:block_enhanced_wired_charger>,
     <enderio:block_enhanced_wireless_charger>,
     <enderio:block_powered_spawner>,
+    <enderio:block_tele_pad>,
+    <enderio:block_enhanced_wireless_charger>,
+    <enderio:block_dialing_device>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage3_stageItems

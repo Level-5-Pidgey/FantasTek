@@ -444,6 +444,13 @@ static BatteryTiers as crafttweaker.item.IItemStack[int]=
     3 : <contenttweaker:energy_crystal>
 };
 
+static MachinePartsTiers as crafttweaker.item.IItemStack[int]=
+{
+    0 : <enderio:item_material:69>,
+    1 : <enderio:item_material:2>,
+    2 : <enderio:item_material:68>,
+};
+
 
 static BiomeGemMaterial as crafttweaker.item.IIngredient[string] =
 {

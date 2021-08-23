@@ -347,7 +347,7 @@ for lootTable, lootRate in mechanicalLootPools {
 	}
 
 	//Adds an empty entry to the loot pool as well
-	lootPool.addEmptyEntry(10, "empty_tech");
+	lootPool.addEmptyEntry(18, "empty_tech");
 }
 
 print("### Loottweaker Init Complete ###");

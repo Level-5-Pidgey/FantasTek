@@ -198,4 +198,16 @@ for key, value in mekanism_BalloonCrafting {
 	mods.mekanism.reaction.addRecipe(value, <liquid:plastic> * 500, <gas:helium> * 250, key, <gas:oxygen> * 10, 10000.0, 40);
 }
 
+//Create Dynamic Tank Parts in Stage 1/2
+recipes.remove(<mekanism:basicblock:9>);
+recipes.remove(<mekanism:basicblock:11>);
+recipes.remove(<mekanism:basicblock:10>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:10> * 8, [[<ore:plateCrudeSteel>, <ore:blockGlassColorless>, <ore:plateCrudeSteel>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:plateCrudeSteel>, <ore:blockGlassColorless>, <ore:plateCrudeSteel>]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:11> * 2, [[null, <ore:ingotCrudeSteel>, null], [<ore:ingotCrudeSteel>, scripts.helpers.CircuitTiers[0], <ore:ingotCrudeSteel>], [null, <ore:ingotCrudeSteel>, null]]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:basicblock:9> * 12, [[<ore:ingotCrudeSteel>, <ore:plateCrudeSteel>, <ore:ingotCrudeSteel>], [<ore:plateCrudeSteel>, <minecraft:bucket>, <ore:plateCrudeSteel>], [<ore:ingotCrudeSteel>, <ore:plateCrudeSteel>, <ore:ingotCrudeSteel>]]);
+
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<mekanism:basicblock:9>), scripts.helpers.stages.progression2.stage, <mekanism:basicblock:9> * 12, [[<ore:ingotSteel>, <ore:plateSteel>, <ore:ingotSteel>], [<ore:plateSteel>, <minecraft:bucket>, <ore:plateSteel>], [<ore:ingotSteel>, <ore:plateSteel>, <ore:ingotSteel>]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<mekanism:basicblock:11>), scripts.helpers.stages.progression2.stage, <mekanism:basicblock:11> * 2, [[null, <ore:ingotSteel>, null], [<ore:ingotSteel>, scripts.helpers.CircuitTiers[0], <ore:ingotSteel>], [null, <ore:ingotSteel>, null]]);
+mods.recipestages.Recipes.addShaped(scripts.helpers.createRecipeName(<mekanism:basicblock:10>), scripts.helpers.stages.progression2.stage, <mekanism:basicblock:10> * 8, [[<ore:plateSteel>, <ore:blockGlassColorless>, <ore:plateSteel>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:plateSteel>, <ore:blockGlassColorless>, <ore:plateSteel>]]);
+
 print("### Mekanism Init Complete ###");

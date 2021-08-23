@@ -97,4 +97,11 @@ for rune in scripts.helpers.AllEarthT1Items
 	mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:fertilizeddirt> * 4, [[<forestry:fertilizer_compound>, <ore:dirt>, <forestry:fertilizer_compound>], [<ore:dirt>, rune, <ore:dirt>], [<forestry:fertilizer_compound>, <ore:dirt>, <forestry:fertilizer_compound>]]);
 }
 
+//Item Collector
+recipes.remove(<randomthings:advanceditemcollector>);
+for rune in scripts.helpers.AllAirT1Items
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:advanceditemcollector>, [[<ore:dustGlowstone>, rune, <ore:dustGlowstone>], [<ore:ingotPulsatingIron>, <minecraft:hopper>, <ore:ingotPulsatingIron>], [<ore:obsidian>, scripts.helpers.FrameTiers[0], <ore:obsidian>]]);
+}
+
 print("### Random Things Init Complete ###");

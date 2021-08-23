@@ -640,8 +640,16 @@ val StageLessItems = [
 	<thermalexpansion:device:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[]}),
 	<thermalexpansion:device:5>,
 	<thermalexpansion:device:5>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[]}),
-	<thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}),
-	<thermalexpansion:machine:11>,
+	<thermalexpansion:device:12>,
+	<thermalexpansion:device:12>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]}),
+	<enderio:block_detector_block>,
+	<enderio:block_detector_block_silent>,
+	<enderio:block_simple_crafter>,
+	<enderio:block_impulse_hopper>,
+	<enderio:block_omni_reservoir>,
+	<mekanism:basicblock:10>,
+	<mekanism:basicblock:9>,
+	<mekanism:basicblock:11>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in StageLessItems

@@ -14,7 +14,7 @@ for openblocksToHide in openblocksItem
 
 //Crafting Table Recipes
 val openblocksRecipes_CRAFTINGTABLE = {
-	<openblocks:vacuum_hopper> : [[null, <ore:ingotPulsatingIron>, null], [<ore:ingotPulsatingIron>, <minecraft:hopper>, <ore:ingotPulsatingIron>], [null, <ore:ingotPulsatingIron>, null]],
+
 	<openblocks:block_placer> : [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:stone>, <minecraft:piston>, <ore:stone>], [<ore:stone>, <minecraft:piston>, <ore:stone>]],
 	<openblocks:hang_glider> : [[<ore:nuggetSteel>, <ore:ingotSteel>, <ore:nuggetSteel>], [<openblocks:generic>, <ore:nuggetSteel>, <openblocks:generic>], [<ore:nuggetSteel>, <ore:ingotSteel>, <ore:nuggetSteel>]],
 	<openblocks:generic> : [[<ore:itemLeather>, <ore:nuggetSteel>, null], [<ore:itemLeather>, <ore:itemLeather>, <ore:nuggetSteel>], [<ore:itemLeather>, <ore:itemLeather>, <ore:itemLeather>]],
@@ -30,6 +30,7 @@ val openblocksRecipes_EXTENDEDCRAFTING = {
 	<openblocks:projector> : [[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [<ore:dustGlowstone>, scripts.helpers.CircuitTiers[0], <ore:gemLapis>], [<ore:slabStone>, <ore:slabStone>, <ore:slabStone>]],
 	<openblocks:generic:6> : [[null, <ore:dustElectrotine>, null], [<ore:dustElectrotine>, <ore:ingotGold>, <ore:dustElectrotine>], [null, <ore:dustElectrotine>, null]],
 	<openblocks:generic:7> : [[<ore:dustElectrotine>, <ore:nuggetIron>, null], [<ore:dustElectrotine>, <ore:nuggetIron>, null], [<ore:dustElectrotine>, <ore:nuggetIron>, null]],
+	<openblocks:vacuum_hopper> : [[null, scripts.helpers.CircuitTiers[0], null], [<extendedcrafting:material:37>, <minecraft:hopper>, <extendedcrafting:material:37>], [<extendedcrafting:material:37>, scripts.helpers.FrameTiers[0], <extendedcrafting:material:37>]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in openblocksRecipes_EXTENDEDCRAFTING {
