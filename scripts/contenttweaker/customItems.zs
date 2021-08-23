@@ -18,6 +18,10 @@ lifeingot.register();
 var cokeDust = VanillaFactory.createItem("coke_dust");
 cokeDust.register();
 
+//Magnetic Blend
+var magnetic_blend = VanillaFactory.createItem("magnetic_blend");
+magnetic_blend.register();
+
 //Steel Blend
 var steelBlend = VanillaFactory.createItem("steel_blend");
 steelBlend.register();

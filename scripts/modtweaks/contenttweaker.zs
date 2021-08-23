@@ -23,7 +23,7 @@ for prismarine in <ore:prismarine>.items
 	mods.advancedrocketry.PlatePresser.addRecipe(<contenttweaker:prismarine_nugget> * 20, prismarine);
 	scripts.helpers.AddTooltip(prismarine, ["Prismarine can be found in Ocean Monuments,", "or obtained by mining Prismarine Boulders", "found on the seabed."]);
 }
-recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:prismarine_nugget>), <contenttweaker:prismarine_nugget> * 2, [<embers:tinker_hammer>, <ore:shardPrismarine>]);
+recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:prismarine_nugget>), <contenttweaker:prismarine_nugget> * 2, [<embers:tinker_hammer>, <ore:gemPrismarine>]);
 
 //Add Tooltip for Artifact
 scripts.helpers.AddTooltip(<contenttweaker:strange_treasure>, ["Rare treasure that villagers may have a bounty for!", "Can be sold for a high price."]);
@@ -210,5 +210,8 @@ for elementalItem in scripts.helpers.AllEarthT1Items
 
 //Create elemental mix
 scripts.mmhelper.IndustrialMixerFactoryRecipe("elemental_mix", 10000, 100, <liquid:elemental_mix> * 1000, null, <liquid:elemental_water_fire> * 1000, <liquid:elemental_water_water> * 1000, <liquid:elemental_water_earth> * 1000, <liquid:elemental_water_air> * 1000, null, null, null);
+
+//Create Magnetic Blend
+mods.recipestages.Recipes.addShapeless(scripts.helpers.createRecipeName(<contenttweaker:magnetic_blend>), scripts.helpers.stages.progression3.stage, <contenttweaker:magnetic_blend> * 3, [<ore:dustIron>, <ore:dustIron>, <ore:dustSmallTitanium>, <ore:dustSmallCobalt>, <ore:dustSmallSulfur>]);
 
 print("### ContentTweaker recipes Init Complete ###");
