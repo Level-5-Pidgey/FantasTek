@@ -182,6 +182,7 @@ val enderIOHideItems =
 	<enderio:block_decoration2:11>,
 	<enderio:block_decoration2:12>,
 	<enderio:block_decoration2:13>,
+	<enderio:block_enderman_skull:2>,
 ] as crafttweaker.item.IItemStack[];
 
 for item in enderIOHideItems
@@ -218,19 +219,6 @@ val recipesToRemove=
 for item in recipesToRemove
 {
 	recipes.remove(item);
-}
-
-//Remove Slice 'N Splice recipes
-val snsToRemove=
-[
-	<enderio:item_capacitor_totemic>,
-	<enderio:block_enderman_skull:2>,
-	<enderio:item_material:40>
-] as crafttweaker.item.IItemStack[];
-
-for sns in snsToRemove
-{
-	mods.enderio.SliceNSplice.removeRecipe(sns);
 }
 
 //Remove all Endergy conduits that use Infinity Reagent
@@ -411,7 +399,7 @@ val enderioRecipes_ASSEMBLY = {
 
 for key, value in enderioRecipes_ASSEMBLY {
   recipes.removeShaped(key.withAmount(1));
-  scripts.helpers.CreateAssemblyRecipe(key, value, 600, 400000);
+  scripts.helpers.CreateAssemblyRecipe(key, value, 600, 425000);
 }
 
 //Blank EnderIO Item Upgrade
@@ -582,11 +570,6 @@ val magneticraft_EXTENDEDCRAFTING_T2 = {
 										[<ore:ingotElectricalSteel>, <ore:dustBedrock>, <ore:ingotElectricalSteel>],
 										[<ore:ingotIron>, null, <ore:ingotIron>],
 										[null, null, <ore:ingotIron>]],
-	<enderio:block_slice_and_splice>
-									:	[[<ore:ingotSoularium>, <ore:itemSkull>, <ore:ingotSoularium>],
-										[<ore:ingotSoularium>, <enderio:item_material:53>, <ore:ingotSoularium>],
-										[<ore:plateDarkSteel>, scripts.helpers.MotorTiers[1], <ore:plateDarkSteel>],
-										[null, <ore:ingotEnergeticAlloy>, scripts.helpers.CircuitTiers[1]]],
 	<enderio:block_inhibitor_obelisk>
 									:	[[null, <enderio:item_material:16>, null],
 										[<ore:ingotEnergeticAlloy>, <ore:gearElectricalSteel>, <ore:ingotEnergeticAlloy>],
@@ -642,5 +625,35 @@ mods.enderio.AlloySmelter.removeByInputs(<ore:ingotLead>.firstItem * 3, <ore:ing
 
 //Machine Tier Tooltips
 <enderio:block_alloy_smelter>.addTooltip(scripts.helpers.createTierTooltip("Alloy Furnace Tier ", 3, false, "."));
+
+
+//Remove Slice 'N Splice recipes
+val snsToRemove=
+[
+	<enderio:item_capacitor_totemic>,
+	<enderio:block_enderman_skull:2>,
+	<enderio:item_material:40>,
+	<enderio:item_material:41>,
+	<enderio:item_material:43>,
+	<enderio:item_material:45>,
+	<enderio:item_material:56>,
+] as crafttweaker.item.IItemStack[];
+
+for sns in snsToRemove
+{
+	mods.enderio.SliceNSplice.removeRecipe(sns);
+}
+
+//Slice and Splice Circuitry
+mods.extendedcrafting.CombinationCrafting.addRecipe(<enderio:item_material:40>, 50000, <minecraft:skull:2>, [<ore:ingotElectricalSteel>, <ore:nuggetRedstoneAlloy>, <ore:ingotElectricalSteel>, <ore:nuggetRedstoneAlloy>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<enderio:item_material:41>, 80000, <enderio:item_material:40>, [<ore:ingotSoularium>, <ore:nuggetElectricalSteel>, <ore:ingotSoularium>, <ore:nuggetElectricalSteel>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<enderio:item_material:43>, 250000, <enderio:block_enderman_skull>, [<ore:nuggetDarkSteel>, <extendedcrafting:material:36>, <ore:nuggetDarkSteel>, <extendedcrafting:material:36>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<enderio:item_material:45>, 60000, <minecraft:skull>, [<ore:ingotVibrantAlloy>, <ore:ingotSteel>, <ore:ingotVibrantAlloy>, <ore:ingotSteel>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<enderio:item_material:56>, 300000, <xreliquary:mob_ingredient:16>, [<ore:plateVibrantAlloy>, <ore:gemCrystalFlux>, <ore:plateVibrantAlloy>, <ore:gemCrystalFlux>]);
+
+//TODO Stage 3
+//<enderio:block_tele_pad>
+//<enderio:block_enhanced_wireless_charger>
+//<enderio:block_dialing_device>
 
 print("### EnderIO Init Complete ###");
