@@ -28,7 +28,13 @@
 			"center-height": 45,
 			"spread": 45,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "WET"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -63,11 +69,16 @@
 				"cluster-size": 8
 			},
 			"cluster-count": 7,
-			"chunk-chance" : 2,
 			"center-height": 48,
 			"spread": 30,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "PLAINS"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -99,11 +110,16 @@
 				"cluster-size": 8
 			},
 			"cluster-count": 4,
-			"chunk-chance" : 2,
 			"center-height": 30,
 			"spread": 10,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "SNOWY"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -140,11 +156,16 @@
 				"cluster-size": 8
 			},
 			"cluster-count": 3,
-			"chunk-chance" : 2,
 			"center-height": 16,
 			"spread": 16,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "HILLS"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -178,12 +199,17 @@
 				],
 				"cluster-size": 4
 			},
-			"cluster-count": 1,
-			"chunk-chance" : 2,
+			"cluster-count": 3,
 			"center-height": 48,
 			"spread": 30,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "COLD"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -218,11 +244,16 @@
 				"cluster-size": 8
 			},
 			"cluster-count": 4,
-			"chunk-chance" : 2,
 			"min-height": 20,
 			"max-height": 96,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "FOREST"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -259,7 +290,13 @@
 			"min-height": 96,
 			"max-height": 250,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "WET"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -296,7 +333,13 @@
 			"min-height": 96,
 			"max-height": 250,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "PLAINS"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -333,7 +376,13 @@
 			"min-height": 96,
 			"max-height": 250,
 			"retrogen": "true",
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [{
+					"type": "dictionary",
+					"entry": "FOREST"
+				}]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [

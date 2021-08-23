@@ -102,7 +102,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 80,
+    "rarity": 75,
     "min_y": 10,
     "max_y": 70,
     "density": 180,
@@ -159,7 +159,7 @@
 		{ "block": "minecraft:stained_hardened_clay" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 90,
+    "rarity": 85,
     "min_y": 20,
     "max_y": 40,
     "density": 180,
@@ -217,7 +217,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 110,
+    "rarity": 105,
     "min_y": 20,
     "max_y": 36,
     "density": 180,
@@ -273,7 +273,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 105,
+    "rarity": 100,
     "min_y": 3,
     "max_y": 24,
     "density": 180,
@@ -330,7 +330,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 105,
+    "rarity": 100,
     "min_y": 3,
     "max_y": 32,
     "density": 180,
@@ -394,7 +394,7 @@
 		{ "block": "minecraft:sand" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 100,
+    "rarity": 95,
     "min_y": 24,
     "max_y": 40,
     "density": 180,

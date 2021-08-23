@@ -104,19 +104,11 @@ function addNewRecipe(craftingMaterial as string, tier as int)
 	var baseMultiplier = 1;
 
 	//Modify Base Output for certain ores
-	if(craftingMaterial == "Apatite")
-	{
-		baseMultiplier = 8;
-	}
-	else if(craftingMaterial == "Redstone")
+	if(craftingMaterial == "Apatite" || craftingMaterial == "Redstone")
 	{
 		baseMultiplier = 4;
 	}
-	else if(craftingMaterial == "Coal")
-	{
-		baseMultiplier = 2;
-	}
-	else if(craftingMaterial == "Lapis")
+	else if(craftingMaterial == "Coal" || craftingMaterial == "Lapis")
 	{
 		baseMultiplier = 2;
 	}
@@ -1251,8 +1243,6 @@ val SagMillOres =
 	<minecraft:iron_ore>,
 	<rftools:dimensional_shard_ore>,
 	<contenttweaker:sub_block_holder_13>,
-	<contenttweaker:sub_block_holder_12:14>,
-	<contenttweaker:sub_block_holder_12:15>
 ] as crafttweaker.item.IItemStack[];
 
 for oreBlock in SagMillOres

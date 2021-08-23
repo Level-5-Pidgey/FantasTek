@@ -41,7 +41,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 70,
+    "rarity": 60,
     "min_y": 0,
     "max_y": 90,
     "density": 180,
@@ -97,7 +97,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 80,
+    "rarity": 70,
     "min_y": 18,
     "max_y": 78,
     "density": 180,
@@ -153,7 +153,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 110,
+    "rarity": 100,
     "min_y": 20,
     "max_y": 40,
     "density": 180,
@@ -209,14 +209,14 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 95,
+    "rarity": 80,
     "min_y": 0,
     "max_y": 32,
     "density": 180,
     "vertical_size": 11,
     "horizontal_size": 12,
 	"biomes": [
-      "savanna"
+      "hills"
   	],
 	"dimensions": [
 		0,
@@ -265,7 +265,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 85,
+    "rarity": 75,
     "min_y": 20,
     "max_y": 96,
     "density": 180,
@@ -321,7 +321,7 @@
 		{ "block": "minecraft:sandstone" },
 		{ "block": "minecraft:cobblestone" }
 	],
-    "rarity": 90,
+    "rarity": 80,
     "min_y": 5,
     "max_y": 35,
     "density": 180,
