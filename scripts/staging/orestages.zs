@@ -598,6 +598,17 @@ var ExtraMaterialsToStage as mods.zenstages.Stage[string] =
   "Arsenic" : stages.progression2,
   "Silicon" : stages.progression1,
   "ElectrumFlux" : stages.progression1,
+  "CrystallinePinkSlime" : stages.progression2,
+  "StellarAlloy" : stages.progression2,
+  "EnergeticSilver" : stages.progression2,
+  "CrystallineAlloy" : stages.progression2,
+  "MelodicAlloy" : stages.progression2,
+  "Soularium" : stages.progression2,
+  "VibrantAlloy" : stages.progression2,
+  "ElectricalSteel" : stages.progression2,
+  "ConstructionAlloy" : stages.progression2,
+  "EnergeticAlloy" : stages.progression2,
+  "Infinity" : stages.progression3,
 };
 
 for materialString in ExtraMaterialsToStage

@@ -227,6 +227,8 @@ val stage2_stageItems = [
     <nuclearcraft:compound:7>,
     <mekanism:machineblock3:3>,
     <openblocks:vacuum_hopper>,
+    <contenttweaker:energy_crystal>,
+    <contenttweaker:magma_powder>
 ] as crafttweaker.item.IItemStack[];
 
 for item in stage2_stageItems
