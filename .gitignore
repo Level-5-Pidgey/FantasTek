@@ -21,7 +21,7 @@
 #Never ignore script files
 !/[Ss]cripts/**/*.zs
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
 #Other root directory files
@@ -38,15 +38,16 @@ config/jei/worldSettings.cfg
 config/splash.properties
 config/InvTweaks.cfg
 seen_buildersbag_addons.txt
-
 config/defaultoptions/optionsof.txt
-
 mods/OptiFine_1.12.2_HD_U_F5.jar
-
 optionsof.txt
-
 optionsshaders.txt
-
 shaderpacks/
-
 config/thaumicjei_itemstack_aspects.json
+
+# Automatically updated files that we don't need constantly committed
+/[Cc]onfig/[Aa]ppliedEnergistics2/VersionChecker.cfg
+/[Cc]onfig/[Aa]ppliedEnergistics2/CustomRecipes.cfg
+/[Cc]onfig/[Aa]ppliedEnergistics2/[Ii]tems.csv
+/[Cc]onfig/[Aa]stralsorcery/amulet_enchantments.cfg
+/[Cc]onfig/[Ee]nderio/[Rr]ecipes/

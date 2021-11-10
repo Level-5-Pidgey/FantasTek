@@ -82,7 +82,6 @@ val randomthingsRecipes_EXTENDEDCRAFTING = {
 	<randomthings:irondropper> : [[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [<ore:nuggetIron>, <minecraft:dropper>, <ore:nuggetIron>], [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]],
 	<randomthings:igniter> : [[<ore:netherrack>, <ore:stone>, <ore:stone>], [<ore:netherrack>, <minecraft:flint_and_steel>, <ore:stone>], [<ore:netherrack>, <ore:stone>, <ore:stone>]],
 	<randomthings:advanceditemcollector> : [[null, <ore:dustGlowstone>, null], [<ore:dustGlowstone>, <openblocks:vacuum_hopper>, <ore:dustGlowstone>], [null, <ore:dustGlowstone>, null]],
-	//<openblocks:projector> : [[null, null, null], [null, null, null], [null, null, null]],
 } as crafttweaker.item.IIngredient[][][crafttweaker.item.IItemStack];
 
 for key, value in randomthingsRecipes_EXTENDEDCRAFTING {
