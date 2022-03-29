@@ -17,6 +17,30 @@
 					{id:"minecraft:red_sandstone",Count:1}
 				]
             },
+            {
+                action:"add", CareerLevel:1,
+				buy:
+					{id:"contenttweaker:currency_4",Count:{min:1,max:4}},
+                sell:
+				[
+					{id:"minecraft:stone",Damage:1,Count:3},
+					{id:"minecraft:stone",Damage:3,Count:3},
+					{id:"minecraft:stone",Damage:5,Count:3},
+					{id:"chisel:basalt2",Damage:7,Count:{min:1,max:3}},
+					{id:"chisel:basalt2",Damage:7,Count:{min:1,max:3}}
+				]
+            },
+            {
+                action:"add", CareerLevel:1,
+				buy:
+					{id:"contenttweaker:currency_4",Count:{min:2,max:4}},
+                sell:
+				[
+					{id:"minecraft:gravel",Count:4},
+					{id:"minecraft:snow",Count:4},
+					{id:"minecraft:clay_ball",Count:{min:1,max:2}}
+				]
+            },
 			{
                 action:"add", CareerLevel:2, Chance:0.5,
                 buy:{
@@ -47,30 +71,6 @@
 					{id:"contenttweaker:currency_4",Count:{min:1,max:4}},
                 sell:
 					{id:"minecraft:stone",Count:4}
-            },
-			{
-                action:"add", CareerLevel:1,
-				buy:
-					{id:"contenttweaker:currency_4",Count:{min:1,max:4}},
-                sell:
-				[
-					{id:"minecraft:stone",Damage:1,Count:3},
-					{id:"minecraft:stone",Damage:3,Count:3},
-					{id:"minecraft:stone",Damage:5,Count:3},
-					{id:"chisel:basalt2",Damage:7,Count:{min:1,max:3}},
-					{id:"chisel:basalt2",Damage:7,Count:{min:1,max:3}}
-				]
-            },
-            {
-                action:"add", CareerLevel:1,
-				buy:
-					{id:"contenttweaker:currency_4",Count:{min:2,max:4}},
-                sell:
-				[
-					{id:"minecraft:gravel",Count:4},
-					{id:"minecraft:snow",Count:4},
-					{id:"minecraft:clay_ball",Count:{min:1,max:2}}
-				]
             },
 			{
                 action:"add", CareerLevel:2,
